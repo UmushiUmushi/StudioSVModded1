@@ -1,0 +1,11 @@
+{
+  "Name": "DynamicTimeSpeed",
+  "Author": "Server",
+  "Version": "1.0.0",
+  "Description": "Dynamically adjusts time speed based on the number of connected players. Designed for 24/7 headless multiplayer servers.",
+  "UniqueID": "Server.DynamicTimeSpeed",
+  "EntryDll": "DynamicTimeSpeed.dll",
+  "MinimumApiVersion": "4.0.0",
+  "MinimumGameVersion": "1.6.0",
+  "UpdateKeys": []
+}
