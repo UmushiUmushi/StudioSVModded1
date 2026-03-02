@@ -338,7 +338,12 @@ echo -e "  ${GREEN}Download complete!${NC}"
 # Extract the zip
 echo -e "${YELLOW}Extracting mods...${NC}"
 mkdir -p "$temp_extract"
-unzip -q -o "$temp_zip" -d "$temp_extract" &
+if [ "$OS" = "Darwin" ]; then
+    # macOS: use ditto to correctly handle CJK/Unicode filenames in zip
+    ditto -x -k "$temp_zip" "$temp_extract" &
+else
+    unzip -q -o "$temp_zip" -d "$temp_extract" &
+fi
 spinner $! "Extracting archive..."
 wait $!
 rm -f "$temp_zip"
