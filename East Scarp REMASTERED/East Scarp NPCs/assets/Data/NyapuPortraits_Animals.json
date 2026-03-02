@@ -1,0 +1,14 @@
+	{
+		"Changes": [
+			{
+				"Action": "EditImage",
+				"Target": " Portraits/Gremlin, Portraits/Abyssrooster, Portraits/BlueJay, Portraits/DuckNPC, Portraits/Duck2NPC, Portraits/HappySlime, Portraits/LadySheba, Portraits/LittleGruff, Portraits/Munchboi, Portraits/PepperPup, Portraits/RichieTheMacaw, Portraits/Munchboi_hat, Portraits/MisterGinger",
+				"FromFile": "assets/NyapuPortraits/Animals/{{TargetWithoutPath}}.png"
+			},
+				{
+				"Action": "EditImage",
+				"Target": " Characters/MisterGinger, Characters/MisterGinger_Fish",
+				"FromFile": "assets/NyapuPortraits/Animals/{{Target}}.png"
+			}
+		]
+	}

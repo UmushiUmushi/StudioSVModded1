@@ -1,0 +1,11 @@
+{
+  "Format": "2.1",
+  "Changes": [
+       {
+          "Action": "Load",
+          "Target": "TerrainFeatures/grass.xnb",
+          "FromFile": "Content/TerrainFeatures/grass.png"
+       },
+       
+    ]
+}

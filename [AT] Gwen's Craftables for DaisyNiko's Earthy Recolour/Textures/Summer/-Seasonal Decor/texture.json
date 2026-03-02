@@ -1,0 +1,15 @@
+{
+	"ItemName": "Seasonal Decor",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+		"Seasons": ["Summer"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		"Keywords": ["Outdoors"],
+		},
+	]
+}

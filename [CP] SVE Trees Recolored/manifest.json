@@ -1,0 +1,14 @@
+{
+"Name": "SVE Trees Recolored",
+"Author": "Morghoula",
+"Version": "1.0.1",
+"Description": "Recolor options of SVE's new trees for popular recolor mods.",
+"UniqueID": "Morghoula.SVETreesRecolored",
+"MinimumApiVersion": "1.19.1",
+"UpdateKeys": [ "Nexus:28798" ],
+"ContentPackFor": 
+    { 
+        "UniqueID": "Pathoschild.ContentPatcher",
+        "MinimumVersion": "2.0"
+    }
+}

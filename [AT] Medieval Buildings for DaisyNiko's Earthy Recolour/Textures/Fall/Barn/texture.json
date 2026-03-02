@@ -1,0 +1,8 @@
+{
+	"ItemName": "Barn",
+	"Type": "Building",
+		"Seasons": ["Fall"],
+	"TextureWidth": 112,
+	"TextureHeight": 128,
+	"Variations": 4,
+}

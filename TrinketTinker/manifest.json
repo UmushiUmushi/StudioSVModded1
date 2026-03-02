@@ -1,0 +1,29 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "mushymato.TrinketTinker",
+  "Name": "TrinketTinker",
+  "Author": "mushymato",
+  "Version": "1.7.1",
+  "Description": "Trinket & Companion framework.",
+  "MinimumApiVersion": "4.3",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "TrinketTinker.dll",
+  "Dependencies": [
+    {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "2.8.1",
+      "IsRequired": false
+    }
+  ],
+  "UpdateKeys": [
+    "Nexus:29073",
+    "GitHub:Mushymato/TrinketTinker"
+  ]
+}

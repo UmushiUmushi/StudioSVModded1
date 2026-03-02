@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueSam",
+			"Entries":
+				{
+					"Good_3": "Wow, you look really {{Lowercase: {{Random: {{Hana.GNMTokens/Adjective}} }} }} today! Did you do something with your hair?$l"
+				},
+			"LogName":"Fix MarriageDialogueSam"
+		}
+	]
+}

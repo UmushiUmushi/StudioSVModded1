@@ -1,0 +1,14 @@
+{
+  "Name": "Forage Settings East Scarp",
+  "Author": "Lemurkat",
+  "Description": "Controls forage and monster spawns in East Scarp",
+    "Version": "3.0.6",
+  "UniqueID": "Lemurkat.EastScarpe.FTM",
+   "UpdateKeys": ["Nexus:???"],
+  "MinimumApiVersion": "2.5",
+  "ContentPackFor": {
+    "UniqueID": "Esca.FarmTypeManager",
+    "MinimumVersion": "1.4.4"
+                }
+   
+}

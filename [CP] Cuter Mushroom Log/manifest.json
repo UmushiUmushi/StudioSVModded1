@@ -1,0 +1,14 @@
+{
+  "Name": "[CP] Cuter Mushroom Log",
+  "Author": "Hadi",
+  "Version": "1.0.1",
+  "Description": "A cute desaturated log for shroom buddies.",
+  "UniqueID": "hadi.shroomlog",
+  "MinimumApiVersion": "1.2.0",
+  "MinimumGameVersion": "1.2.0",
+  "ContentPackFor":{
+		"UniqueID": "Pathoschild.ContentPatcher"
+	},
+  "UpdateKeys": [ "Nexus:33667" ]
+
+}

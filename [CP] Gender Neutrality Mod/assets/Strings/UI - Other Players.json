@@ -1,0 +1,40 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Strings/UI",
+			"Entries":
+				{
+					"AskedToDance_Male": "{0} has asked you to dance with {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}. Will you dance with {0}?",
+					"AskedToDance_Female": "{0} has asked you to dance with {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}. Will you dance with {0}?",
+					"AskedToMarry_Male": "{0} has asked you to marry {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}! Will you accept {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} offer of marriage?",
+					"AskedToMarry_Female": "{0} has asked you to marry {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}! Will you accept {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} offer of marriage?",
+					"AskedToHaveBaby_Male": "{0} has asked you to have a baby with {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}! Do you want to have a baby?",
+					"AskedToHaveBaby_Female": "{0} has asked you to have a baby with {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}! Do you want to have a baby?",
+					"AskedToAdoptBaby_Male": "{0} has asked you to have a baby with {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}! Do you want to have a baby?",
+					"AskedToAdoptBaby_Female": "{0} has asked you to have a baby with {{Lowercase: {{Random: {{OtherPlayerObjectivePronoun}} }} }}! Do you want to have a baby?",
+					"AskedToHaveBaby_Rejected_Male": "{0} has decided {{Lowercase: {{Random: {{OtherPlayerSubjectivePronoun}} }} }}'d rather not have a baby at this point.",
+					"AskedToHaveBaby_Rejected_Female": "{0} has decided {{Lowercase: {{Random: {{OtherPlayerSubjectivePronoun}} }} }}'d rather not have a baby at this point.",
+					"AskedToAdoptBaby_Rejected_Male": "{0} has decided {{Lowercase: {{Random: {{OtherPlayerSubjectivePronoun}} }} }}'d rather not have a baby at the moment.",
+					"AskedToAdoptBaby_Rejected_Female": "{0} has decided {{Lowercase: {{Random: {{OtherPlayerSubjectivePronoun}} }} }}'d rather not have a baby at the moment.",
+					"GivenGift_Male": "{0} is offering you {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} {1}. Will you accept it?",
+					"GivenGift_Female": "{0} is offering you {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} {1}. Will you accept it?",
+					"Chat_SoloEarned1mil_Male": "{0} has earned 1,000,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_SoloEarned100k_Male": "{0} has earned 100,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_SoloEarned10k_Male": "{0} has earned 10,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_SoloEarned1k_Male": "{0} has earned 1,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_SoloEarned1mil_Female": "{0} has earned 1,000,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_SoloEarned100k_Female": "{0} has earned 100,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_SoloEarned10k_Female": "{0} has earned 10,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_SoloEarned1k_Female": "{0} has earned 1,000g on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} own.",
+					"Chat_HouseUpgrade": "{0} has requested construction on {{Lowercase: {{Random: {{OtherPlayerPossessivePronoun}} }} }} home!"
+				},
+			"LogName": "Fix UI - Other Players",
+			"When": 
+				{
+					"FixOtherPlayers": true
+				}
+		}
+	]
+}

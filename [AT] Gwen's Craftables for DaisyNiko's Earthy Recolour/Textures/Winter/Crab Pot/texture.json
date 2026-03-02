@@ -1,0 +1,14 @@
+{
+	"ItemName": "Crab Pot",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+		"Seasons": ["Winter"],
+	"TextureWidth": 16,
+	"TextureHeight": 16,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		},
+	]
+}

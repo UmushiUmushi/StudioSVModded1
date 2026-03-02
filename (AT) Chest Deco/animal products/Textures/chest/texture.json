@@ -1,0 +1,93 @@
+{
+ "CollectiveNames":
+[
+"Chest",
+"Stone Chest",
+"Junimo Chest",
+"Big Chest",
+"Big Stone Chest"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "Keywords": [ "Animal Products" ],
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name" : "Dinosaur Egg"
+    },
+    {
+      "Id": 1,
+      "Name" : "Duck Egg"
+    },
+    {
+      "Id": 2,
+      "Name" : "Duck Feather"
+    },
+    {
+      "Id": 3,
+      "Name" : "Egg"
+    },
+    {
+      "Id": 4,
+      "Name" : "Egg"
+    },
+    {
+      "Id": 5,
+      "Name" : "Goat Milk"
+    },
+    {
+      "Id": 6,
+      "Name" : "Milk"
+    },
+    {
+      "Id": 7,
+      "Name" : "Ostrich Egg"
+    },
+    {
+      "Id": 8,
+      "Name" : "Rabbit's Foot"
+    },
+    {
+      "Id": 9,
+      "Name": "Roe"
+    },
+    {
+      "Id": 10,
+      "Name" : "Slime"
+    },
+    {
+      "Id": 11,
+      "Name" : "Slime"
+    },
+    {
+      "Id": 12,
+      "Name" : "Slime"
+    },
+    {
+      "Id": 13,
+      "Name" : "Slime"
+    },
+    {
+      "Id": 14,
+      "Name" : "Slime"
+    },
+    {
+      "Id": 15,
+      "Name" : "Slime"
+    },
+    {
+      "Id": 16,
+      "Name" : "Truffle"
+    },
+    {
+      "Id": 17,
+      "Name" : "Void Egg"
+    },
+    {
+      "Id": 18,
+      "Name" : "Wool"
+    }
+]
+}

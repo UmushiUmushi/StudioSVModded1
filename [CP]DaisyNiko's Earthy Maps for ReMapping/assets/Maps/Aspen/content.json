@@ -1,0 +1,48 @@
+{
+	"Changes": [
+    {
+      "LogName": "Aspen Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Aspen/Aspen_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=invatorzen.AspenCP": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "N3cro_92.ReMappingEarthySync/Aspen": "true"
+      },
+
+      "ToArea": {
+        "X": 90,
+        "Y": 0,
+        "Width": 111,
+        "Height": 20
+      }
+    },
+    {
+      "LogName": "Aspen Map Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Aspen/Aspen_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=invatorzen.AspenCP": true,
+		"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "N3cro_92.ReMappingEarthySync/Aspen": "true"
+      },
+
+      "ToArea": {
+        "X": 90,
+        "Y": 0,
+        "Width": 111,
+        "Height": 20
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+   "Name": "AT_Medieval_Buildings",
+   "Author": "Gweniaczek",
+   "Version": "1.0.0",
+   "Description": "Some of my buildings retextures for Alternative Textures mod. DaisyNiko's Earthy Recolour colour matching version",
+   "UniqueID": "Gweniaczek.AT_Medieval_Buildings",
+   "UpdateKeys": ["Nexus:10567"],
+   "ContentPackFor": {
+		"UniqueID": "PeacefulEnd.AlternativeTextures",
+		"MinimumVersion": "5.0.0"
+	},
+}

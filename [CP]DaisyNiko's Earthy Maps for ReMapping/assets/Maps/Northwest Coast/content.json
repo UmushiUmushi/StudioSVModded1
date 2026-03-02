@@ -1,0 +1,226 @@
+{
+  "Changes": [
+    {
+      "LogName": "Northwest Coast Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Northwest Coast/Northwest.Coast_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=MK215.Northwestcoast": true,
+		"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+		"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+        "N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 56,
+        "Width": 222,
+        "Height": 302
+      }
+    },
+    {
+      "LogName": "Northwest Coast Map Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Northwest Coast/Northwest.Coast_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=MK215.Northwestcoast": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+		"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+        "FarmType |contains=FrontierFarm": "false",
+        "N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 56,
+        "Width": 222,
+        "Height": 304
+      }
+    },
+    {
+			"LogName": " Northwest Coast Frontier Farm",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+			"FromFile": "assets/Farms/FrontierFarm/Northwest.Coast.FF_{{season}}.png",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+		
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod:|contains=flashshifter.FrontierFarm": true,
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+				"FarmType |contains=FrontierFarm": "true",
+				"HasMod: |contains=MK215.Northwestcoast": true,
+        		"N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+      },
+
+      "ToArea": {
+        "X": 0, 
+        "Y": 56, 
+        "Width": 91, 
+        "Height": 48
+      }
+		
+	},
+    {
+			"LogName": "Northwest Coast Meadowlands",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"FromFile": "assets/Farms/Meadowlands/Northwest.Coast.MD_{{season}}.png",
+
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod:|contains=MK215.Northwestcoast": true,
+        		"N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 14,
+        "Width": 92,
+        "Height": 42
+      }
+		
+	},
+    {
+			"LogName": "RMP Northwest Coast Meadowlands SVE",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+			"FromFile": "assets/Farms/MeadowlandsSVE/Northwest.Coast.MD_{{season}}_SVE.png",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod:|contains=CC.MK215.Northwestcoast": true,
+        		"N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+			},
+
+      "ToArea": {
+        "X": 0,
+        "Y": 14,
+        "Width": 92,
+        "Height": 44
+      }	
+		
+	},
+    {
+			"LogName": "RMP  Northwest Coast Waterfall",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        		"HasMod:|contains=MK215.Northwestcoast": true,
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        		"N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+      },
+			"Entries": {
+			   	"RMP Northwest Coast": {
+					"Id": "MK215.Northwestcoast",
+					"PixelArea": { "X": 100,	"Y": 43, "Width": 31, "Height": 13 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WF/Northwest.Coast.WF_{{season}}.png}}",
+						"SourceRect": { "X": 0,	"Y": 34, "Width": 31, "Height": 13  } }]
+				}
+			}
+		},
+    {
+			"LogName": "Northwest Coast Waterfall SVE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        		"HasMod:|contains=MK215.Northwestcoast": true,
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        		"N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+			},
+			"Entries": {
+			   	"RMP Northwest Coast SVE": {
+					"Id": "MK215.Northwestcoast_SVE",
+					"PixelArea": { "X": 0, "Y": 47, "Width": 94, "Height": 52 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WFSVE/Northwest.Coast.WF_{{season}}_SVE.png}}",
+						"SourceRect": { "X": 0, "Y": 0, "Width": 94, "Height": 52  } }]
+				}
+			}
+		},
+    {
+			"LogName": "Northwest Coast Waterfall LE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        		"HasMod:|contains=MK215.Northwestcoast": true,
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+        		"N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+      },
+			"Entries": {
+			   	"RMP Northwest Coast": {
+					"Id": "MK215.Northwestcoast",
+					"PixelArea": { "X": 0, "Y": 48, "Width": 93, "Height": 51 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WF/Northwest.Coast.WF_{{season}}.png}}",
+						"SourceRect": { "X": 0, "Y": 0, "Width": 93, "Height": 51  } }]
+				}
+			}
+		},
+    {
+			"LogName": "Northwest Coast Waterfall LE SVE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        		"HasMod:|contains=MK215.Northwestcoast": true,
+				"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+				"N3cro_92.ReMappingEarthySync/NorthwestCoast": "true"
+      },
+			"Entries": {
+			   	"RMP Northwest Coast SVE": {
+					"Id": "MK215.Northwestcoast_SVE",
+					"PixelArea": { "X": 0, "Y": 47, "Width": 94, "Height": 52 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WFSVE/Northwest.Coast.WF_{{season}}_SVE.png}}",
+						"SourceRect": { "X": 0, "Y": 0, "Width": 94, "Height": 52  } }]
+				}
+			}
+		}
+  	]
+}

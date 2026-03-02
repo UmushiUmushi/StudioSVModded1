@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Marnie",
+			"Entries":
+				{
+					"Mon": "I just love animals, {{Random: {{Hana.GNMTokens/Title}} }} @. Treat them kindly and we'll become friends, I'm sure!"
+				},
+			"LogName":"Fix Marnie"
+		}
+	]
+}

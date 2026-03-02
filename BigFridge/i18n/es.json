@@ -1,0 +1,16 @@
+{
+  "DisplayName": "Nevera",
+  "Description": "Permite almacenar incluso más ingredientes para cocinar.",
+  "Config_HouseFridgeProgressive_Name": "Nevera Progresiva en casa",
+  "Config_HouseFridgeProgressive_Tooltip": "Activa: Casa con Mini-Nevera en la primera mejora, Nevera en la segunda.\nInactiva: Casa siempre con Nevera.",
+  "Config_ItemFridgeWithHearths_Name": "Neveras con amistad",
+  "Config_ItemFridgeWithHearths_Tooltip": "Activa: Compra Neveras con la primera mejora y algunos corazones con Robin.\nInactiva: Solo se pueden comprar luego de la segunda mejora.",
+  "Config_HearthsWithRobin_Name": "Corazones para compra anticipada",
+  "Config_HearthsWithRobin_Tooltip": "Solo útil si \"Neveras con amistad\" está Activa.",
+  "Config_Price_Name": "Precio",
+  "Config_Price_Tooltip": "Precio de una Nevera en la tienda de Robin.",
+  "Config_ReskinMiniFridge_Name": "Cambiar Mini-Fridge",
+  "Config_ReskinMiniFridge_Tooltip": "Cambiar la textura de la Mini-Nevera para hacerla mini.",
+  "Assets_To_Use_Name": "Imagen a usar",
+  "Assets_To_Use_Tooltip": "Cambia la imagen de las Neveras."
+}

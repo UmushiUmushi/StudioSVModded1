@@ -1,0 +1,72 @@
+{
+  "Changes": [
+    {
+      "LogName": "Mineral Town Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Mineral Town/Mineral.Town_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Rexstrife20.MineralTownCP": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "N3cro_92.ReMappingEarthySync/MineralTown": "true"
+      },
+
+      "ToArea": {
+        "X": 136,
+        "Y": 47,
+        "Width": 164,
+        "Height": 14
+      }
+    },
+    {
+      "LogName": "Miner Town Map Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Mineral Town/Mineral.Town_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Rexstrife20.MineralTownCP": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "N3cro_92.ReMappingEarthySync/MineralTown": "true"
+      },
+
+      "ToArea": {
+        "X": 141,
+        "Y": 42,
+        "Width": 159,
+        "Height": 22
+      }
+    },
+    {
+			"LogName": "Mineral Town Grampleton Fields",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Custom_GrampletonFields", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod: |contains=flashshifter.GrampletonFields": true,
+				"HasMod: |contains=Rexstrife20.MineralTownCP": true,
+        "N3cro_92.ReMappingEarthySync/MineralTown": "true"
+      },
+			"Entries": {
+			   	"RMP Mineral Town Grampleton Fields": {
+					"Id": "Mineral_Town_Grampleton_Fields",
+					"PixelArea": { "X": 31, "Y": 19, "Width": 40, "Height": 45},
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Maps/Mineral Town/Mineral.Town.GF_{{season}}.png}}",
+						"SourceRect": { "X": 0, "Y": 0, "Width": 40, "Height": 45  } }]
+				}
+			}
+		}
+  ]
+}

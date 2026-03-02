@@ -1,0 +1,31 @@
+{
+    "Changes": [
+        {
+            "LogName": "Cameron Portraits",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/CameronLK",
+            "FromFile": "assets/Portraits/CameronLK/Cameron.png"
+        },
+        {
+            "LogName": "Cameron Sprites",
+            "Action": "Load",
+            "Target": "Characters/CameronLK",
+            "FromFile": "assets/Characters/CameronLK/CameronF.png"
+        },
+        {
+            "LogName": "Cameron Sprites",
+            "Action": "EditImage",
+            "Target": "Characters/CameronLK",
+            "FromFile": "assets/Characters/CameronLK/CameronM.png",
+            "When": {
+                "PlayerGender": "male"
+            },
+        },
+               {
+            "LogName": "Cameron Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Cameron.json"
+        },
+    ]
+}

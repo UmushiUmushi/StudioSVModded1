@@ -1,0 +1,153 @@
+{
+  "Changes": [
+    {
+      "LogName": "MySubmarine Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/My Submarine/MySubmarine_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tikamin557.CP.MySubmarine": true,
+        "N3cro_92.ReMappingEarthySync/MySubmarine": "true"
+      },
+
+      "ToArea": {
+        "X": 234,
+        "Y": 154,
+        "Width": 8,
+        "Height": 5
+      }
+    },
+    {
+      "LogName": "MySubmarine Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/My Submarine/MySubmarine2_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tikamin557.CP.MySubmarine": true,
+        "HasReadLetter": "MySubmarine.AvailableMailId",
+        "N3cro_92.ReMappingEarthySync/MySubmarine": "true"
+      },
+
+      "ToArea": {
+        "X": 235,
+        "Y": 156,
+        "Width": 10,
+        "Height": 6
+      }
+    },
+    {
+			"LogName": "MySubmarine Island",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map_island", 
+			"FromFile": "assets/Maps/My Submarine/MySubmarine5.png", 
+			"PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=VoidWitchCult.CP.TheFishmongerNPC": true,
+        "HasMod:|contains=Tikamin557.CP.MySubmarine": true,
+				"HasReadLetter": "MySubmarine.AvailableMailId",
+				"N3cro_92.ReMappingEarthySync/MySubmarine": "true"
+			},
+
+      "ToArea": {
+        "X": 156, 
+        "Y": 139, 
+        "Width": 8, 
+        "Height": 9
+      }
+		},
+    {
+			"LogName": "MySubmarine Island",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map_island", 
+			"FromFile": "assets/Maps/My Submarine/MySubmarine3.png", 
+			"PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=VoidWitchCult.CP.TheFishmongerNPC": true,
+        "HasMod:|contains=Tikamin557.CP.MySubmarine": true,
+				"N3cro_92.ReMappingEarthySync/MySubmarine": "true"
+			},
+
+      "ToArea": {
+        "X": 159, 
+        "Y": 127, 
+        "Width": 11, 
+        "Height": 20
+      }
+		},
+    {
+			"LogName": "MySubmarine Island",
+			"Action": "EditImage",
+			"Target": "LooseSprites/map_island", 
+			"FromFile": "assets/Maps/My Submarine/MySubmarine4.png", 
+			"PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=VoidWitchCult.CP.TheFishmongerNPC": true,
+        "HasMod:|contains=Tikamin557.CP.MySubmarine": true,
+        "HasReadLetter": "MySubmarine.AvailableMailId",
+				"N3cro_92.ReMappingEarthySync/MySubmarine": "true"
+			},
+
+      "ToArea": {
+        "X": 164, 
+        "Y": 146, 
+        "Width": 9, 
+        "Height": 6
+      }
+		},
+    {
+			"LogName": "MySubmarine Ilha",
+			"Action": "EditImage",
+			"Target": "Minigames/{{season}}_boatJourneyMap", 
+			"FromFile": "assets/Maps/My Submarine/MySubmarine_{{season}}.png", 
+			"PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tikamin557.CP.MySubmarine": true,
+				"N3cro_92.ReMappingEarthySync/MySubmarine": "true"
+			},
+
+      "ToArea": {
+        "X": 300, 
+        "Y": 47, 
+        "Width": 8, 
+        "Height": 5
+      }
+		},
+    {
+			"LogName": "MySubmarine Ilha",
+			"Action": "EditImage",
+			"Target": "Minigames/{{season}}_boatJourneyMap", 
+			"FromFile": "assets/Maps/My Submarine/MySubmarine2_{{season}}.png", 
+			"PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tikamin557.CP.MySubmarine": true,
+        "HasReadLetter": "MySubmarine.AvailableMailId",
+				"N3cro_92.ReMappingEarthySync/MySubmarine": "true"
+			},
+
+      "ToArea": {
+        "X": 301, 
+        "Y": 48, 
+        "Width": 10, 
+        "Height": 6
+      }
+		}
+  ]
+}

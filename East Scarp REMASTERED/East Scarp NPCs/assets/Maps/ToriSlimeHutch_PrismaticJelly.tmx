@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="10">
+ <properties>
+  <property name="AmbientLight" value="100 100 45"/>
+  <property name="Warp" value="15 1 Custom_EastScarpe 9 62 16 1 Custom_EastScarpe 9 62"/>
+ </properties>
+ <tileset firstgid="1" name="springobjects" tilewidth="16" tileheight="16" tilecount="936" columns="24">
+  <image source="springobjects.png" width="384" height="624"/>
+ </tileset>
+ <layer id="5" name="Front" width="1" height="1">
+  <data encoding="csv">
+877
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

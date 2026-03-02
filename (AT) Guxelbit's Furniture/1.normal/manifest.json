@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Guxelbit's Furniture : normal",
+  "Author": "guxelbit",
+  "Version": "1.2",
+  "Description": "Furniture",
+  "UniqueID": "gxbuatmod.fnormal",
+  "UpdateKeys": ["Nexus:20268"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "6.9.0"
+  }
+}

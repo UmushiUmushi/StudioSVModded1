@@ -1,0 +1,337 @@
+{
+    "Changes": [
+        { // Expanded/Water Filled Gorge
+            "Action": "EditMap",
+            "Target": "Maps/Mountain",
+            "FromFile": "assets/Patches/MountainEastScarpeSVE.tmx",
+            "ToArea": {
+                "X": 86,
+                "Y": 35,
+                "Width": 9,
+                "Height": 6
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP, megmom84.waterfilledgorge": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Crossing",
+            "FromFile": "assets/Locations/Outdoors/ScarpCrossing_SVE.tmx",
+            "When": {
+                "HasFlag |contains=Jade_ButterflyGarden": false
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Crossing",
+            "FromFile": "assets/Locations/Outdoors/ScarpCrossing_SVE_Flowers.tmx",
+            "When": {
+                "HasFlag": "Jade_ButterflyGarden"
+            }
+        },
+        //Adventure Summit > Deep Mountains
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_AdventurerSummit",
+            "FromFile": "assets/Patches/AdventurerSummit_DeepMountain.tmx",
+            "ToArea": {
+                "X": 63,
+                "Y": 5,
+                "Width": 2,
+                "Height": 10
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 64,
+                        "Y": 8
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_DeepMountains 7 60"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 64,
+                        "Y": 9
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_DeepMountains 7 60"
+                    }
+                },
+            ]
+        },
+        // Deep Mountains > Adventure Summit
+        {
+            "LogName": "Adds the Warp from ES to AdventurerSummit",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_DeepMountains",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_AdventurerSummit 64 8"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 7,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_AdventurerSummit 64 9"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 8,
+                        "Y": 61
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp Custom_AdventurerSummit 64 9"
+                    }
+                }
+            ],
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Patches/EastScarpVillage_SVEPatch.tmx",
+            "ToArea": {
+                "X": 0,
+                "Y": 31,
+                "Width": 5,
+                "Height": 4
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "-1 70 Custom_ShearwaterBridge 59 19 -1 71 Custom_ShearwaterBridge 59 20 -1 72 Custom_ShearwaterBridge 59 21 -1 73 Custom_ShearwaterBridge 59 22 -1 74 Custom_ShearwaterBridge 59 23 -1 31 EastScarp_Crossing 54 21 -1 32 EastScarp_Crossing 54 21 -1 33 EastScarp_Crossing 54 22",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Crossing",
+            "MapProperties": {
+                "Warp": "55 20 EastScarp_Village 0 32 55 21 EastScarp_Village 0 32 55 22 EastScarp_Village 0 33 60 23 EastScarp_Village 0 33",
+                "Viewport Clamp": "0 0 56 30"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ShearwaterBridge",
+            "FromFile": "assets/Patches/ES_ShearwaterBridgestrip.tmx",
+            "ToArea": {
+                "X": 59,
+                "Y": 14,
+                "Width": 1,
+                "Height": 12
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Warp"
+                    ],
+                    "Value": "-1 70 Custom_ShearwaterBridge 59 19 -1 71 Custom_ShearwaterBridge 59 20 -1 72 Custom_ShearwaterBridge 59 21 -1 73 Custom_ShearwaterBridge 59 22 -1 74 Custom_ShearwaterBridge 59 23",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        { // Needs to overwrite so Grampleton isn't patched as well
+            "Action": "EditMap",
+            "Target": "Maps/Custom_ShearwaterBridge",
+            "MapProperties": {
+                "Warp": "-1 19 Town 118 72 -1 20 Town 118 72 -1 21 Town 118 72 -1 22 Town 118 72 -1 23 Town 118 72 60 19 EastScarp_Village 0 70 60 20 EastScarp_Village 0 71 60 21 EastScarp_Village 0 72 60 22 EastScarp_Village 0 73 60 23 EastScarp_Village 0 74"
+                // 60 24 EastScarp_Village 0 74 60 25 EastScarp_Village 0 74 60 26 EastScarp_Village 0 74"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Patches/SVE_GrampletonPatch.tmx",
+            "ToArea": {
+                "X": 93,
+                "Y": 32,
+                "Width": 7,
+                "Height": 6
+            },
+            "When": {
+                "HasMod |contains=flashshifter.GrampletonFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Custom_GrampletonFields",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 110
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_Village 98 34"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 111
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_Village 98 34"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 112
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_Village 98 35"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 1,
+                        "Y": 113
+                    },
+                    "Layer": "Back",
+                    "SetProperties": {
+                        "TouchAction": "Warp EastScarp_Village 98 35"
+                    }
+                }
+            ],
+            "When": {
+                "HasMod |contains=flashshifter.GrampletonFields": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        //Adds letter trigger to Aideen's 14 heart
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "ToArea": {
+                "X": "66",
+                "Y": "17",
+                "Width": 1,
+                "Height": 1
+            },
+            "FromFile": "assets/Patches/GardenScrap.tmx",
+            "PatchMode": "Overlay",
+            "When": {
+                "HasSeenEvent": "57871014",
+                "HasSeenEvent |contains=57871015": false,
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/Town",
+            "When": {
+                "HasSeenEvent": "57871014",
+                "HasSeenEvent |contains=57871015": false,
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 66,
+                        "Y": 17
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "MessageOnce 57871015 '{{i18n:aideen.scrappaper}}'"
+                    }
+                }
+            ]
+        },
+        //Fixes Charlie's schedule for Community Day
+        { //Charlie Community Day schedule
+            "Action": "EditData",
+            "Target": "characters/schedules/CharlieChicken",
+            "When": {
+                "HasSeenEvent |contains=191393": true,
+                "HasSeenEvent |contains=3900074": true,
+                "HasMod |contains=LemurKat.CommunityCenter.CP": false
+            },
+            "Entries": {
+                "22": "0 Custom_Charlie_WarpRoom 2 3 3/800 AnimalShop 23 15 1/1030 AnimalShop 16 14 2/1100 CommunityCenter 17 22 2 Charlie_Sleep/1800 CommunityCenter 9 26 3/1850 AnimalShop 26 6 2 Charlie_Sleep",
+            },
+        },
+        {
+            "LogName": "JojaMart till number sign fix",
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "FromFile": "assets/Patches/JojaMart-TillSignFix.tbin",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 1,
+                "Height": 1
+            },
+            "ToArea": {
+                "X": 5,
+                "Y": 22,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "IsCommunityCenterComplete": false
+            }
+        },
+        //Sells stuff at Juliet's till
+        {
+            "Action": "EditMap",
+            "Target": "Maps/JojaMart",
+            "When": {
+                "Day |contains=22": false,
+                "HasFlag |contains=ccMovieTheaterJoja": false
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 24
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "JojaShop"
+                    }
+                },
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 25
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "JojaShop"
+                    }
+                }
+            ]
+        },
+    ]
+}

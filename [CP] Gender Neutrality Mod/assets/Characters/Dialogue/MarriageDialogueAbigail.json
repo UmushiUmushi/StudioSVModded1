@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueAbigail",
+			"Entries":
+				{
+					"Rainy_Night_5": "Hey! You look like you've been hard at work. You know, you look cute when you're a little exhausted.$h"
+				},
+			"LogName":"Fix MarriageDialogueAbigail"
+		}
+	]
+}

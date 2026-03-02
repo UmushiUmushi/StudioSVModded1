@@ -1,0 +1,304 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "FriendableAnimals |contains=HappySlime": true
+            },
+            "Entries": {
+                "HappySlime": "{{i18n:gift.happyslime.love}}/EastScarp_FrostBerry_Bliss_Balls 60 68/{{i18n:gift.happyslime.like}}/557 slime_egg_item 72 78 88/{{i18n:gift.happyslime.dislike}}//{{i18n:gift.happyslime.hate}}/766/{{i18n:gift.happyslime.neutral}}//"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "torilk_read": "16 17 19/18/19 17 16",
+                "torilk_sit": "20/20/20",
+                "torilk_sleep": "24/24/24",
+                "happyslime_bounce": "0/0 0 0 1 1 1 2 2 2 3 3 3/0",
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/ToriLK",
+            "FromFile": "assets/Characters/ToriLK/Tori.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/ToriLK",
+            "FromFile": "assets/Portraits/ToriLK/Tori.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/schedules/ToriLK",
+            "FromFile": "assets/{{Target}}.json"
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/ToriLK.json"
+        },
+        {
+            "LogName": "Loads Blank Strings",
+            "Action": "Load",
+            "Target": "Strings/schedules/ToriLK",
+            "FromFile": "assets/blank.json"
+        },
+        {
+            "LogName": "Tori Schedule",
+            "Action": "EditData",
+            "Target": "Strings/schedules/ToriLK",
+            "Entries": {
+                "Tori_phone": "{{i18n:strings.tori.toriphone}}",
+                "Tori_bookseller": "{{i18n:strings.Tori_bookseller}}"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/HappySlime",
+            "FromFile": "assets/Characters/Menagerie/HappySlime.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/HappySlime",
+            "FromFile": "assets/Portraits/Menagerie/HappySlime_Portrait.png"
+        },
+        //Temporary Maps
+        {
+            "Action": "Load",
+            "Target": "Maps/ESZuzuWedding1",
+            "FromFile": "assets/Maps/ZuzuWedding1.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/ESZuzuWedding2",
+            "FromFile": "assets/Maps/ZuzuWedding2.tmx"
+        },
+        //Temporary Actors
+        {
+            "LogName": "Wedding Characters - sprites",
+            "Action": "Load",
+            "Target": "Characters/HarryAshworth, Characters/BarbaraAshworth, Characters/TerenceAshworth, Characters/RickiMartinez, Characters/ZuzuCelebrant",
+            "FromFile": "assets/Characters/TempActors/{{targetwithoutpath}}.png"
+        },
+        {
+            "LogName": "Wedding Characters - portraits",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/BarbaraAshworth, Portraits/TerenceAshworth",
+            "FromFile": "assets/{{target}}.png"
+        },
+        { // SEts a prismatic jelly in Tori's basement
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_ToriSlimeBasement",
+            "FromFile": "assets/Maps/ToriSlimeHutch_PrismaticJelly.tmx",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange",
+            "ToArea": {
+                "X": 17,
+                "Y": 17,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasFlag": "Tori.PrismaticJelly"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Saloon",
+            "Entries": {
+                "57878001/f ToriLK 250/t 1700 2200": "Saloon1/14 18/Emily 14 17 0 ToriLK 14 20 0 Gus 10 18 2 farmer -100 -100 0 Shane 21 17 2 Pam 7 18 1/skippable/animate Gus false true 120 18 18 18 19 19 20 20 19 19/warp farmer 14 24/faceDirection Emily 2/move Emily 0 1 2/speak Emily \"{{i18n:57878001.01}}\"/addObject 14 18 903 1/speak Emily \"{{i18n:57878001.02}}\"/speak ToriLK \"{{i18n:57878001.03}}\"/pause 500/emote Emily 8/pause 1000/jump ToriLK 5/emote ToriLK 60/pause 500/emote Emily 32/pause 500/faceDirection Emily 0 true/faceDirection ToriLK 2 true/faceDirection Emily 0/move Emily 0 -1 0/move farmer 0 -2 0 true/emote ToriLK 28/speak ToriLK \"{{i18n:57878001.04}}\"/quickQuestion #{{i18n:57878001.05}}#{{i18n:57878001.06}}#{{i18n:57878001.07}}(break)emote ToriLK 28\\speak ToriLK \"{{i18n:57878001.08}}\"(break)emote ToriLK 12\\speak ToriLK \"{{i18n:57878001.09}}\"(break)emote ToriLK 16\\speak ToriLK \"{{i18n:57878001.10}}\"/pause 500/faceDirection ToriLK 0/playSound pickUpItem/removeSprite 14 18/faceDirection ToriLK 2/speak ToriLK \"{{i18n:57878001.11}}\"/emote farmer 8/speak ToriLK \"{{i18n:57878001.12}}\"/move farmer 1 0 3/move ToriLK 0 4 2 true/pause 500/faceDirection farmer 2/pause 1000/faceDirection ToriLK 0/emote ToriLK 60/pause 500/faceDirection ToriLK 2/pause 500/warp ToriLK -100 -100/pause 1000/end",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "57878003/f ToriLK 750/t 900 1800/d Tue Wed Fri": "libraryTheme/-1000 -1000/ToriLK 4 10 0 {{GuntherPosition}} farmer -100 -100 0/skippable/viewport 4 10 clamp true/pause 500/speak ToriLK \"{{i18n:57878003.01}}\"/pause 500/speak Gunther \"{{i18n:57878003.02}}\"/emote ToriLK 28/pause 500/speak ToriLK \"{{i18n:57878003.03}}\"/speak Gunther \"{{i18n:57878003.04}}\"/pause 500/textAboveHead ToriLK \"{{i18n:57878003.05}}\"/playSound doorOpen/warp farmer 3 13/move farmer 0 -3 0 true/pause 500/faceDirection ToriLK 2/pause 1000/faceDirection ToriLK 3/emote Gunther 32/pause 500/speak Gunther \"{{i18n:57878003.06.{{GenderNeutral}} }}\"/faceDirection Gunther 0/faceDirection ToriLK 0/playSound Ship/faceDirection farmer 1/emote farmer 8/faceDirection ToriLK 3/emote ToriLK 60/pause 500/speak ToriLK \"{{i18n:57878003.07}}\"/question null \"{{i18n:57878003.08}}#{{i18n:57878003.09}}#{{i18n:57878003.10}}#\"/emote ToriLK 32/pause 500/speak ToriLK \"{{i18n:57878003.11}}\"/emote ToriLK 28/speak ToriLK \"{{i18n:57878003.12}}\"/quickQuestion #{{i18n:57878003.13}}#{{i18n:57878003.14}}(break)emote ToriLK 16\\jump ToriLK 5\\speak ToriLK \"{{i18n:57878003.15}}\"(break)emote ToriLK 28\\speak ToriLK \"{{i18n:57878003.16}}\"/pause 500/speak ToriLK \"{{i18n:57878003.17}}\"/pause 500/faceDirection Gunther 2/addObject 4 8 102 1/playSound ship/textAboveHead Gunther \"{{i18n:57878003.18}}\"/jump ToriLK 3 true/jump farmer 3 true/faceDirection ToriLK 0 true/faceDirection farmer 0/pause 1000/speak ToriLK \"{{i18n:57878003.19}}\"/removeSprite 4 8/pause 500/faceDirection ToriLK 3/faceDirection farmer 1/speak ToriLK \"{{i18n:57878003.20}}\"/pause 500/move ToriLK 0 1 3/move ToriLK -1 0 2/faceDirection farmer 2/move ToriLK 0 3 2/warp ToriLK -100 -100/faceDirection farmer 0/textAboveHead Gunther \"{{i18n:57878003.21}}\"/pause 1000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57878004/f ToriLK 1000/t 900 1500/w sunny": "breezy/-1000 -1000/farmer 15 69 0 ToriLK 9 62 2 HappySlime -100 -100 2 LumaJunimo -100 -100 2/skippable/animate HappySlime true true 200 0 1 2 3/viewport 9 62 clamp true/advancedMove farmer false 0 -5 3 1000/pause 2250/textAboveHead ToriLK \"{{i18n:57878004.01}} {{PlayerName}}\"/pause 50/emote farmer 32/pause 500/speak ToriLK \"{{i18n:57878004.02}}\"/quickQuestion #{{i18n:57878004.03}}#{{i18n:57878004.04}}#{{i18n:57878004.05}}(break)emote ToriLK 32\\pause 500\\speak ToriLK \"{{i18n:57878004.06}}\"(break)emote ToriLK 40\\speak ToriLK \"{{i18n:57878004.07}}\"(break)switchEvent rejectTori/pause 500/advancedMove farmer false -6 0 4 1000/pause 1000/speak ToriLK \"{{i18n:57878004.08}}\"/pause 500/emote farmer 32/pause 500/speak ToriLK \"{{i18n:57878004.09}}\"/faceDirection ToriLK 0/playSound doorOpen/warp ToriLK -100 -100/advancedMove farmer false 0 -2 4 1000/pause 1000/playSound doorOpen/fade/stopAdvancedMoves/viewport -1000 -1000/changeLocation EastScarp_ToriSlimeBasement/warp ToriLK 12 5/faceDirection ToriLK 2/warp HappySlime 10 19/viewport 12 7 clamp true/pause 500/warp farmer 12 8/advancedMove farmer false  0 -1 4 1000/textAboveHead ToriLK \"{{i18n:57878004.10}}\"/pause 500/emote farmer 32/faceDirection ToriLK 1/advancedMove ToriLK false 4 0 0 12 2 1000/advancedMove farmer false 0 -1 3 0 0 10 2 1000/viewport move 2 0 2000 true/pause 2000/viewport move 0 2 6000 true/textAboveHead ToriLK \"{{i18n:57878004.11}}\"/pause 6000/emote farmer 16/pause 500/speak ToriLK \"{{i18n:57878004.12}}\"/faceDirection farmer 3/stopAnimation HappySlime/emote HappySlime 32/faceDirection  farmer 1/speed HappySlime 5/advancedMove HappySlime false 6 0 0 -1 4 1000/pause 1000/faceDirection farmer 2/pause 500/jump ToriLK 5/emote farmer 16/textAboveHead ToriLK \"{{i18n:57878004.13}}\"/pause 500/speak ToriLK \"{{i18n:57878004.14}}\"/emote HappySlime 28/animate HappySlime true true 200 8 9 10 11/pause 500/advancedMove ToriLK false 0 -1 3 1000/speak ToriLK \"{{i18n:57878004.15}}\"/emote farmer 40/pause 500/speak ToriLK \"{{i18n:57878004.16}}\"/faceDirection ToriLK 2/speak ToriLK \"{{i18n:57878004.17}}\"/pause 500/emote HappySlime 60/pause 500/speak ToriLK \"{{i18n:57878004.18}}\"/emote HappySlime 16/stopAnimation HappySlime/advancedMove HappySlime false 0 1 -12 0 1 1000/advancedMove ToriLK false 0 2 -2 0 4 1000/pause 4000/animate HappySlime true true 200 0 1 2 3/speak ToriLK \"{{i18n:57878004.19}}\"/pause 500/emote farmer 56/advancedMove ToriLK false 0 1 -10 0 3 1000/advancedMove farmer false 0 1 2 1000/textAboveHead ToriLK \"{{i18n:57878004.20}}\"/pause 1500/warp LumaJunimo 12 16/temporarySprite 12 16 5 8 50 false 1/playSound coin/animate LumaJunimo true true 70 16 17 18 19/pause 1000/faceDirection farmer 3/warp LumaJunimo -100 -100/temporarySprite 12 16 6 8 30 false 1/stopAnimation LumaJunimo/playSound dwop/faceDirection farmer 2/animate farmer false true 200 102 103/pause 2000/end dialogue ToriLK \"{{i18n:57878004.21}}\"",
+                "rejectTori": "pause 500/textAboveHead ToriLK \"{{i18n:57878004.rejectTori.01}}\"/pause 500/speak ToriLK \"{{i18n:57878004.rejectTori.02}}\"/pause 500/faceDirection ToriLK 0/playSound doorOpen/warp ToriLK -100 -100/pause 500/emote farmer 8/pause 1000/end dialogue ToriLK \"{{i18n:57878004.rejectTori.03}}\"",
+                "57878006/e 57878005/d Tue Wed Fri/A VictoriaWatchingEloise/w sunny": "{{season}}_day_ambient/20 63/farmer 17 70 1 Eloise 20 62 2 ToriLK 19 61 2/skippable/addMailReceived ToriEloiseBirds/addTemporaryActor MandarinDuck 16 32 22 65 3 false/swimming MandarinDuck/addTemporaryActor Duck 16 16 19 62 1 false Animal Duck1/addTemporaryActor Duck 16 16 20 63 2 false Animal Duck2/speed MandarinDuck 2/advancedMove MandarinDuck false 2 0 0 3 -2 0 0 -3 4 1000/pause 500/speak Eloise \"{{i18n:57878006.0}}\"/faceDirection Eloise 3/pause 500/speak ToriLK \"{{i18n:57878006.1}}\"/pause 500/speak Eloise \"{{i18n:57878006.2}}\"/faceDirection Eloise 2/speak Eloise \"{{i18n:57878006.3}}\"/pause 500/textAboveHead ToriLK \"{{i18n:57878006.4}}\"/pause 500/speak Eloise \"{{i18n:57878006.5}}\"/move farmer 0 -8 1/playSound Duck/pause 500/playSound Duck/move Duck1 -1 0 3/move Duck2 -2 0 3/playSound Duck/pause 500/playSound Duck/pause 1000/playSound Duck/pause 500/playSound Duck/faceDirection ToriLK 3/faceDirection Eloise 3/textAboveHead Eloise \"{{i18n:57878006.6}} {{playerName}}!\"/pause 1000/speak Eloise \"{{i18n:57878006.7}}\"/pause 500/emote farmer 60/pause 500/question null \"{{i18n:57878006.8}}\"/emote ToriLK 32/speak Eloise \"{{i18n:57878006.9}}\"/pause 500/faceDirection ToriLK 2/speak ToriLK \"{{i18n:57878006.10}}\"/pause 500/speak Eloise \"{{i18n:57878006.11}}\"/faceDirection Duck1 2/playSound Duck/advancedMove Duck2 false 0 4 2 0 3 100/pause 500/advancedMove Duck1 false 0 6 2 0 3 100/speak ToriLK \"{{i18n:57878006.12}}\"/move Eloise -1 0 3/speak Eloise \"{{i18n:57878006.13}}\"/pause 500/emote farmer 60/pause 2000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_VetHouse",
+            "Entries": {
+                "57878002/f ToriLK 1500/t 900 1500/d Tue": "breezy/8 21/Jacob 8 23 1 farmer 9 22 2 ToriLK -100 -100 0 Eloise -100 -100 2 RichieTheMacaw 8 21 2 HappySlime -100 -100 2 LumaJunimo -100 -100 2/addConversationTopic HappySlimeRescue 7/skippable/showFrame HappySlime 19/pause 1000/textAboveHead Jacob \"{{i18n:57878002.01}}\"/pause 1000/playSound stairsdown/pause 500/textAboveHead RichieTheMacaw \"{{i18n:57878002.02}}\"/warp ToriLK 12 26/speed ToriLK 5/advancedMove ToriLK false 0 -2 -2 0 0 -1 3 1000/textAboveHead ToriLK \"{{i18n:57878002.03}}\"/pause 1000/emote Jacob 16 true/emote farmer 8 true/pause 1000/speak ToriLK \"{{i18n:57878002.04}}\"/pause 500/warp HappySlime 9 23/shake HappySlime 10000/faceDirection Jacob 1/textAboveHead ToriLK \"{{i18n:57878002.05}}\"/speak ToriLK \"{{i18n:57878002.06}}\"/emote Jacob 28/speak Jacob \"{{i18n:57878002.07}}\"/pause 1000/textAboveHead ToriLK \"{{i18n:57878002.08}}\"/speak Jacob \"{{i18n:57878002.09}}\"/textAboveHead ToriLK \"{{i18n:57878002.10}}\"/speak Jacob \"{{i18n:57878002.11}}\"/jump farmer 4/emote farmer 56/pause 500/emote Jacob 32/playSound pickUpItem/warp HappySlime -100 -100/move Jacob -1 0 0/move Jacob 0 -1 3/move Jacob -2 0 0/textAboveHead RichieTheMacaw \"{{i18n:57878002.12}}\"/doAction 5 21/move Jacob 0 -4 0/emote ToriLK 12 true/doAction 5 17/move Jacob 0 -6 3/warp HappySlime 4 12/speed ToriLK 2/advancedMove ToriLK false -1 0 4 1000/playMusic desolate/speak ToriLK \"{{i18n:57878002.13}}\"/quickQuestion #{{i18n:57878002.14}}#{{i18n:57878002.15}}#{{i18n:57878002.16}}(break)emote ToriLK 32\\speak ToriLK \"{{i18n:57878002.17}}\"(break)emote ToriLK 12\\friendship ToriLK -250\\speak ToriLK \"{{i18n:57878002.18}}\"(break)emote ToriLK 28\\speak ToriLK \"{{i18n:57878002.19}}\"/speak ToriLK \"{{i18n:57878002.20}}\"/advancedMove ToriLK false 0 1 2 2000/emote ToriLK 28/faceDirection farmer 2/speak ToriLK \"{{i18n:57878002.21}}\"/textAboveHead RichieTheMacaw \"{{i18n:57878002.22}}\"/speak ToriLK \"{{i18n:57878002.23}}\"/pause 1000/speak ToriLK \"{{i18n:57878002.24}}\"/advancedMove ToriLK false -2 0 0 -2 -2 0 4 1000/pause 1000/textAboveHead RichieTheMacaw \"{{i18n:57878002.25}}\"/faceDirection farmer 3/pause 1000/advancedMove farmer false 0 1 -2 0 0 -1 -1 0 3 1000/pause 500/pause 1000/speak ToriLK \"{{i18n:57878002.26}}\"/emote ToriLK 28/pause 500/viewport move 0 -2 2750/emote Jacob 40/pause 1000/advancedMove Jacob false 0 -1 1 0 1 1000/pause 500/warp LumaJunimo 4 11/temporarySprite 4 11 5 8 50 false 1/positionOffset LumaJunimo 0 6/playSound coin/animate LumaJunimo true true 70 16 17 18 19/pause 100/jump LumaJunimo 3/faceDirection HappySlime 0/stopAnimation LumaJunimo 24/pause 500/temporaryAnimatedSprite EastScarp\\TAS 0 0 16 16 100 8 1 4 12 false false 1 0 1 0 0 0/playSound reward/pause 500/showFrame LumaJunimo 0/emote Jacob 8/animate HappySlime false true 1000 0 1 2 3/speak ToriLK \"{{i18n:57878002.27}}\"/warp LumaJunimo -100 -100/temporarySprite 4 11 6 8 30 false 1/playSound dwop/faceDirection Jacob 3 true/textAboveHead ToriLK \"{{i18n:57878002.28}}\"/emote Jacob 16 true/advancedMove Jacob false -1 0 0 1 3 1000/pause 1000/emote Jacob 32/pause 500/advancedMove Jacob false 0 6 2 1000/pause 1000/speak Jacob \"{{i18n:57878002.29}}\"/emote ToriLK 20/speed ToriLK 3/advancedMove ToriLK false 0 -10 3 1000/advancedMove Jacob false 0 -7 3 1000/advancedMove farmer false -1 0 4 1000/viewport move 0 -2 2500 true/faceDirection HappySlime 1/pause 2000/speak HappySlime \"{{i18n:57878002.30}}\"/pause 1000/viewport move 0 2 2500/pause 1500/warp LumaJunimo 10 22/temporarySprite 10 22 5 8 50 false 1/playSound coin/animate LumaJunimo true true 70 16 17 18 19/emote farmer 8/pause 500/faceDirection farmer 1/warp LumaJunimo -100 -100/temporarySprite 10 22 6 8 30 false 1/playSound dwop/pause 500/textAboveHead RichieTheMacaw \"{{i18n:57878002.31}}\"/pause 1000/end dialogue Jacob \"{{i18n:57878002.32}}\""
+            }
+        },
+        {
+            "LogName": "Victoria House events",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_NTHouse",
+            "Entries": {
+                "57878005/f ToriLK 2000/e 57878003/e 57878002/f Eloise 1000/d Mon Tue Thu": "breezy/22 20/ToriLK 22 17 0 farmer 14 21 1/skippable/addConversationTopic VictoriaWatchingEloise 0/advancedMove farmer false 8 0 4 100/pause 1000/textAboveHead ToriLK \"{{i18n:57878005.0}}\"/pause 1000/textAboveHead ToriLK \"{{i18n:57878005.1}}\"/pause 1000/textAboveHead ToriLK \"{{i18n:57878005.2}}\"/pause 2000/faceDirection ToriLK 2/emote ToriLK 28/proceedPosition farmer/pause 500/jump ToriLK 5/speak ToriLK \"{{i18n:57878005.3}}\"/advancedMove ToriLK false 0 2 2 100/pause 1000/question null \"{{i18n:57878005.4}}\"/pause 1000/speak ToriLK \"{{i18n:57878005.5}}\"/emote farmer 8/pause 500/faceDirection ToriLK 0/pause 500/faceDirection ToriLK 2/pause 500/speak ToriLK \"{{i18n:57878005.6}}\"/pause 500/emote ToriLK 28/pause 500/speak ToriLK \"{{i18n:57878005.7}}\"/pause 500/emote farmer 16/pause 500/jump ToriLK 5/speak ToriLK \"{{i18n:57878005.8}}\"/quickQuestion {{i18n:57878005.9}}(break)emote ToriLK 12\\speak ToriLK \"{{i18n:57878005.10}}\"(break)emote ToriLK 60\\speak ToriLK \"{{i18n:57878005.11}}\"\\emote farmer 32(break)emote ToriLK 28\\speak ToriLK \"{{i18n:57878005.12}}\"/pause 500/speak ToriLK \"{{i18n:57878005.13}}\"/pause 500/emote farmer 56/pause 500/speak ToriLK \"{{i18n:57878005.14}}\"/pause 2000/end"
+            }
+        },
+        //***** Dating
+        {
+            "LogName": "Victoria House events",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "57878007/D ToriLK/f ToriLK 2500": "continue/64 15/farmer 64 16 2 ToriLK 64 18 0/addConversationTopic ToriWeddingInvite 0/speak ToriLK \"{{i18n:57878007.0}}\"/pause 500/emote farmer 32/pause 500/emote ToriLK 40/pause 1000/speak ToriLK \"{{i18n:57878007.1}}\"/pause 500/emote ToriLK 28/pause 500/speak ToriLK \"{{i18n:57878007.2}}\"/question fork0 \"{{i18n:57878007.3}}\"/fork ToriWeddingAccept/pause 500/speak ToriLK \"{{i18n:57878007.4}}\"/faceDirection ToriLK 2/pause 500/emote farmer 60/pause 1000/end",
+                "ToriWeddingAccept": "pause 500/addMailReceived ToriWeddingAccept/emote ToriLK 32/jump ToriLK 5/pause 500/speak ToriLK \"{{i18n:ToriWeddingAccept.0}}\"/pause 500/emote ToriLK 32/pause 500/speak ToriLK \"{{i18n:ToriWeddingAccept.1}}\"/pause 1000/faceDirection ToriLK 2/pause 1000/emote ToriLK 28/pause 1000/faceDirection ToriLK 0/speak ToriLK \"{{i18n:ToriWeddingAccept.2}}\"/pause 500/emote ToriLK 20/pause 500/emote farmer 20/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "Meeting Victoria's Parents",
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                "57878008/D ToriLK/f ToriLK 2500/t 1650 1800/w sunny": "{{season}}_day_ambient/22 15/Pam 21 10 2 ToriLK 22 15 2 farmer 23 21 0/skippable/advancedMove farmer false 0 -6 3 100/pause 1000/emote farmer 56/proceedPosition farmer/faceDirection ToriLK 1/speak ToriLK \"{{i18n:57878008.0}}\"/emote farmer 60/pause 500/faceDirection ToriLK 0/faceDirection farmer 0/pause 500/emote ToriLK 28/pause 1000/faceDirection ToriLK 1/speak ToriLK \"{{i18n:57878008.1}}\"/pause 500/facedirection farmer 3/pause 500/emote farmer 8/pause 500/speak ToriLK \"{{i18n:57878008.2}}\"/pause 500/textAboveHead ToriLK \"{{i18n:57878008.3}}\"/pause 500/speak ToriLK \"{{i18n:57878008.4}}\"/faceDirection ToriLK 0/pause 500/faceDirection ToriLK 1/speak ToriLK \"{{i18n:57878008.5}}\"/faceDirection ToriLK 0/speak ToriLK \"{{i18n:57878008.6}}\"/pause 500/faceDirection ToriLK 1/pause 500/speak ToriLK \"{{i18n:57878008.7}}\"/pause 500/textAboveHead ToriLK \"{{i18n:57878008.8}}\"/pause 2500/emote farmer 40/pause 500/emote Pam 16/pause 500/speak Pam \"{{i18n:57878008.9}}\"/pause 500/jump ToriLK 5/textAboveHead ToriLK \"{{i18n:57878008.10}}\"/advancedMove ToriLK false 0 -6 4 100/pause 500/advancedMove farmer false -1 0 0 -6/pause 3000/fade/viewport -100 -100/stopAdvancedMoves/pause 500/playSound busDriveOff/pause 1000/warp farmer 26 26 true/faceDirection farmer 0 true/warp ToriLK 25 26 true/warp Pam -1000 999/changeToTemporaryMap ESZuzuWedding1/viewport -100 -100/addTemporaryActor HarryAshworth 16 32 27 21 1 true/addTemporaryActor RickiMartinez 16 32 28 21 3/addTemporaryActor BarbaraAshworth 16 32 25 24 0 true/addTemporaryActor TerenceAshworth 16 32 26 24 0 true/addTemporaryActor ZuzuCelebrant 16 32 27 20 2 true/positionOffset ZuzuCelebrant 20 0/positionOffset farmer 0 16/pause 3000/viewport 27 24/playMusic sweet/pause 1000/textAboveHead ZuzuCelebrant \"{{i18n:57878008.11}}\"/pause 500/faceDirection ToriLK 1/faceDirection farmer 3/emote ToriLK 32/pause 1000/faceDirection ToriLK 0 true/faceDirection farmer 0 true/pause 1500/fade/viewport -1000 -1000/pause 500/message \"{{i18n:57878008.12}}\"/fade unfade/viewport 27 24/pause 2000/textAboveHead ZuzuCelebrant \"{{i18n:57878008.13}}\"/pause 2500/textAboveHead ZuzuCelebrant \"{{i18n:57878008.14}}\"/pause 1000/showFrame HarryAshworth 18/showFrame RickiMartinez 18/specificTemporarySprite heart 28 62/playSound dwop/pause 2500/specificTemporarySprite wed/pause 1000/emote ToriLK 20 true/emote BarbaraAshworth 32 true/pause 3000/speed HarryAshworth 1/speed RickiMartinez 1/advancedMove HarryAshworth false 0 5 1 100/advancedMove RickiMartinez false 0 5 3 100/pause 5000/fade/viewport -100 -100/stopAdvancedMoves/message \"{{i18n:57878008.15}}\"/pause 500/viewport -100 -100/changeToTemporaryMap ESZuzuWedding2/viewport -100 -100/warp HarryAshworth 27 21/warp RickiMartinez 28 21/warp ZuzuCelebrant -100 -999/showFrame HarryAshworth 16/showFrame RickiMartinez 16/warp farmer 29 28/positionOffset farmer 0 16/warp ToriLK 30 28/warp BarbaraAshworth 29 24/faceDirection BarbaraAshworth 2/warp TerenceAshworth 30 24/faceDirection TerenceAshworth 2/viewport 29 29 clamp true/pause 1000/changeName BarbaraAshworth Barbara/changeName TerenceAshworth Terence/advancedMove BarbaraAshworth false 0 3 2 100/advancedMove TerenceAshworth false 0 3 2 100/pause 1000/textAboveHead BarbaraAshworth \"{{i18n:57878008.16}}\"/pause 500/speak BarbaraAshworth \"{{i18n:57878008.17}}\"/pause 1000/emote farmer 60/pause 500/faceDirection ToriLK 3/speak ToriLK \"{{i18n:57878008.18}}\"/pause 500/faceDirection ToriLK 0/speak BarbaraAshworth \"{{i18n:57878008.19}}\"/faceDirection BarbaraAshworth 0/speak BarbaraAshworth \"{{i18n:57878008.20}}\"/pause 500/faceDirection BarbaraAshworth 2/emote ToriLK 40/pause 1000/speak ToriLK \"{{i18n:57878008.21}}\"/pause 500/textAboveHead BarbaraAshworth \"{{i18n:57878008.22}}\"/pause 500/speak BarbaraAshworth \"{{i18n:57878008.23}}\"/pause 500/emote ToriLK 12/pause 1500/speak BarbaraAshworth \"{{i18n:57878008.24}}\"/textAboveHead TerenceAshworth \"{{i18n:57878008.25}}\"/pause 1000/faceDirection ToriLK 3/emote ToriLK 28/pause 500/question fork0 \"{{i18n:57878008.26}}\"/fork BeRudeToBarbara/pause 500/faceDirection farmer 1/emote farmer 20/pause 1000/emote ToriLK 60/pause 1000/faceDirection ToriLK 0/pause 500/speak ToriLK \"{{i18n:57878008.27}}\"/pause 500/emote BarbaraAshworth 16/pause 500/advancedMove TerenceAshworth false 1 0 0 2 -1 0 3 100 0 1 -2 0 3 1000/advancedMove ToriLK false 0 -1 3 100/proceedPosition ToriLK/faceDirection BarbaraAshworth 1/proceedPosition TerenceAshworth/advancedMove farmer false 0 1 -2 0 0 1 1 1000/pause 2000/speak ToriLK \"{{i18n:57878008.28}}\"/pause 500/emote BarbaraAshworth 40/pause 500/speak BarbaraAshworth \"{{i18n:57878008.29}}\"/pause 500/speak ToriLK \"{{i18n:57878008.30}}\"/pause 500/speak ToriLK \"{{i18n:57878008.31}}\"/pause 500/emote BarbaraAshworth 60/speak BarbaraAshworth \"{{i18n:57878008.32}}\"/pause 500/emote ToriLK 20/pause 500/speak ToriLK \"{{i18n:57878008.33}}\"/pause 500/speak BarbaraAshworth \"{{i18n:57878008.34}}\"/pause 1000/end",
+            }
+        },
+        {
+            "LogName": "Meeting Victoria's Parents",
+            "Action": "EditData",
+            "Target": "Data/Events/Temp",
+            "Entries": {
+                "BeRudeToBarbara": "pause 500/jump BarbaraAshworth 5/emote BarbaraAshworth 16/pause 1000/speak BarbaraAshworth \"{{i18n:BeRudeToBarbara.0}}\"/emote ToriLK 12/faceDirection BarbaraAshworth 0/emote BarbaraAshworth 12/advancedMove BarbaraAshworth false 0 -3 -3 0 4 100/pause 500/faceDirection TerenceAshworth 0/speak BarbaraAshworth \"{{i18n:BeRudeToBarbara.1}}\"/pause 500/emote TerenceAshworth 40/faceDirection ToriLK 0/pause 500/faceDirection TerenceAshworth 2/pause 500/speak TerenceAshworth \"{{i18n:BeRudeToBarbara.2}}\"/faceDirection ToriLK 3/faceDirection farmer 1/pause 500/emote ToriLK 20/pause 500/emote farmer 32/pause 500/faceDirection ToriLK 0/faceDirection farmer 0/speak ToriLK \"{{i18n:BeRudeToBarbara.3}}\"/pause 500/textAboveHead TerenceAshworth \"{{i18n:BeRudeToBarbara.4}}\"/pause 500/speak TerenceAshworth \"{{i18n:BeRudeToBarbara.5}}\"/pause 500/speak ToriLK \"{{i18n:BeRudeToBarbara.6}}\"/pause 500/emote TerenceAshworth 20/pause 3000/end"
+            }
+        },
+        // Marriage Stuff
+        // engagement dialogue
+        {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "ToriLK0": "{{i18n:Tori_engagement.0}}",
+                "ToriLK1": "{{i18n:Tori_engagement.1}}"
+            }
+        },
+        //Moves the Slime Basement entrance to the farm
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_ToriSlimeBasement",
+            "MapProperties": {
+                "Warp": "12 9 Farm {{SpousePatioExit}}",
+                "NPCWarp": "12 8 BusStop 10 23"
+            },
+            "When": {
+                "Relationship:ToriLK": "Married"
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/BusStop",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "NPCWarp"
+                    ],
+                    "Value": "10 22 EastScarp_ToriSlimeBasement 12 7",
+                    "Delimiter": " "
+                }
+            ],
+            "When": {
+                "Relationship:ToriLK": "Married"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Lemurkat.Victoria_MagicQuiverEquipped": {
+                    "ID": "Lemurkat.Victoria_MagicQuiverEquipped",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_TRINKET Current MagicQuiver",
+                    "Action": "AddConversationTopic VictoriaMagicQuiver 7"
+                },
+                "Lemurkat.Victoria_MagicFrogEquipped": {
+                    "ID": "Lemurkat.Victoria_MagicFrogEquipped",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_TRINKET Current FrogEgg",
+                    "Action": "AddConversationTopic VictoriaMagicFrog 7"
+                },
+            }
+        },
+        {
+            "LogName": "Tori Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/ToriLK",
+            "When": {
+                "spacechase0.SpaceCore/BooksellerInTown": true
+            },
+            "Entries": {
+                "spring": "800 EastScarp_Village 13 67 0/900 EastScarp_Village 19 64 1/1000 Town 108 27 0 \"Strings\\schedules\\ToriLK:Tori_bookseller\"/1400 EastScarp_NTHouse 9 17 0/2000 EastScarp_NTHouse 26 17 0/2030 EastScarp_NTHouse 26 19 3/2200 EastScarp_NTHouse 8 7 3",
+            }
+        },
+        {
+            "LogName": "Tori Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/HappySlime",
+            "Entries": {
+                "spring": "610 EastScarp_ToriSlimeBasement 6 16 square_9_1/1800 EastScarp_ToriSlimeBasement 11 15 2 happyslime_bounce",
+            }
+        },
+        {
+            "LogName": "Happy Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/HappySlime",
+            "Entries": {
+                "spring": "{{Random:610 EastScarp_ToriSlimeBasement 6 16 square_9_2/1800 EastScarp_ToriSlimeBasement 11 15 2 happyslime_bounce++0 EastScarp_ToriSlimeBasement 13 18 2/610 EastScarp_ToriSlimeBasement 7 19 square_11_1/1200 EastScarp_ToriSlimeBasement 14 6 2 square_5_2/1800 EastScarp_ToriSlimeBasement 13 18 2 happyslime_bounce++0 EastScarp_Village 9 62 2 happyslime_bounce/700 EastScarp_Village 2 62 2 happyslime_bounce/900 EastScarp_Village 7 64 2 square_9_4/1800 EastScarp_ToriSlimeBasement 13 18 2 |inputSeparator=++}}",
+            },
+            "When": {
+                "HasSeenEvent:hostPlayer": "57871105",
+            },
+        },
+        { // Sets a felt slime to Tori's room
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_NTHouse",
+            "FromFile": "assets/Maps/ToriHouse_FeltSlime.tmx",
+            "Update": "OnLocationChange",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 9,
+                "Y": 5,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasFlag": "Tori.FeltSlimeGift",
+                "HasMod": "appleseed.BCPTS"
+            }
+        },
+    ]
+}
+/*
+Tori is very excited! She's been asked to interview for Slime Fanciers Quarterly - they want to check out her slime hutch and meet Happy.
+She's also, ofc, absolutely nervous.
+
+When the day comes, who should turn up on the doorstep but Kataryna, with her photographer, Rangi, in tow (or I suppose, Shane if Rangi is temporarily unavailable)
+Farmer can greet her warmly, surprised, or coldly.
+quickQuestion #What are you doing here?#Don't you work for Cryptozoology Today?
+(break)speak KatarynaLK \"What do you think I'm doing? I'm working.$5\"
+(break)speak KatarynaLK \"I do, but I'm always open for a little freelance work.\"/
+speak KatarynaLK \"I was in the neighborhood, so Suzette called in a favor.\"/
+She turns to face her associate:
+speak KatarynaLK \"This is Rangi.\"/
+textAboveHead RangiLK \"Ki ora, miss\"/
+speak ToriLK \"Nice to meet you.\"/
+speak KatarynaLK \"He'll be taking photographs today, and I'll be asking questions.\"/
+textAboveHead ToriLK \"Okay.\"/
+speak KatarynaLK \"We'll get right onto it then, shall we?#$b#Would you like to introduce us to your slimes, Victoria?\"/
+speak ToriLK \"Please, you can call me Tori. Everyone does.#$b#Follow me, and don't take too much noise - they're shy.\"/
+
+
+*/

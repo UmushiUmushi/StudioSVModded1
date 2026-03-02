@@ -1,0 +1,46 @@
+{
+  "Changes": [
+    {
+      "LogName": "Sydney Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Sydney/Sydney_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Lex.Sydney": true,
+        "N3cro_92.ReMappingEarthySync/Sydney": "true"
+      },
+
+      "ToArea": {
+        "X": 189,
+        "Y": 139,
+        "Width": 6,
+        "Height": 9
+      }
+    },
+    {
+      "LogName": "Sydney Map Overlay (BoatJourney)",
+      "Action": "EditImage",
+      "Target": "Minigames/{{season}}_boatJourneyMap",
+      "FromFile": "assets/Maps/Sydney/Sydney_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Lex.Sydney": true,
+        "N3cro_92.ReMappingEarthySync/Sydney": "true"
+      },
+
+      "ToArea": {
+        "X": 255,
+        "Y": 32,
+        "Width": 6,
+        "Height": 9
+      }
+    }
+  ]
+}

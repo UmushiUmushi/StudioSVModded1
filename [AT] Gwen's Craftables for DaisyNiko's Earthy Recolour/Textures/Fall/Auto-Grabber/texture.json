@@ -1,0 +1,14 @@
+{
+	"ItemName": "Auto-Grabber",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+		"Seasons": ["Fall"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "Auto-Grabber-Indoors",
+		},
+	]
+}

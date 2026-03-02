@@ -1,0 +1,336 @@
+{ 
+ "CollectiveNames":
+[
+"Chest",
+"Stone Chest",
+"Junimo Chest",
+"Big Chest",
+"Big Stone Chest"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name": "Amaranth",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 1,
+      "Name": "Artichoke",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 2,
+      "Name": "Beet",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 3,
+      "Name": "Bok Choy",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 4,
+      "Name": "Broccoli",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 5,
+      "Name": "Cauliflower",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 6,
+      "Name": "Carrot",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 7,
+      "Name": "Coffee Bean",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 8,
+      "Name": "Corn",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 9,
+      "Name": "Eggplant",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 10,
+      "Name": "Fiddlehead Fern",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 11,
+      "Name": "Garlic",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 12,
+      "Name": "Green Bean",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 13,
+      "Name": "Hops",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 14,
+      "Name": "Kale",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 15,
+      "Name": "Parsnip",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 16,
+      "Name": "Potato",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 17,
+      "Name": "Pumpkin",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 18,
+      "Name": "Radish",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 19,
+      "Name": "Red Cabbage",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 20,
+      "Name": "Summer Squash",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 21,
+      "Name": "Tomato",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 22,
+      "Name": "Unmilled Rice",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 23,
+      "Name": "Yam",
+	  "Keywords": [ "Vegetables" ]
+    },
+    {
+      "Id": 24,
+      "Name": "Ancient Fruit",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 25,
+      "Name": "Apple",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 26,
+      "Name": "Apricot",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 27,
+      "Name": "Banana",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 28,
+      "Name": "Blackberry",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 29,
+      "Name": "Blueberry",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 30,
+      "Name": "Cactus Fruit",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 31,
+      "Name": "Cherry",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 32,
+      "Name": "Coconut",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 33,
+      "Name": "Cranberries",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 34,
+      "Name": "Crystal Fruit",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 35,
+      "Name": "Grape",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 36,
+      "Name": "Hot Pepper",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 37,
+      "Name": "Mango",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 38,
+      "Name": "Melon",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 39,
+      "Name": "Orange",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 40,
+      "Name": "Peach",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 41,
+      "Name": "Pineapple",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 42,
+      "Name": "Pomegranate",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 43,
+      "Name": "Powdermelon",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 44,
+      "Name": "Rhubarb",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 45,
+      "Name": "Spice Berry",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 46,
+      "Name": "Star Fruit",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 47,
+      "Name": "Strawberry",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 48,
+      "Name": "Wild Plum",
+	  "Keywords": [ "Fruits" ]
+    },
+    {
+      "Id": 49,
+      "Name": "Daffodil",
+	  "Keywords": [ "Forage" ]
+    },
+    {
+      "Id": 50,
+      "Name": "Dandelion",
+	  "Keywords": [ "Forage" ]
+    },
+    {
+      "Id": 51,
+      "Name": "Leek",
+	  "Keywords": [ "Forage" ]
+    },
+    {
+      "Id": 52,
+      "Name": "Mushroom",
+	  "Keywords": [ "Forage" ]
+    },
+    {
+      "Id": 53,
+      "Name": "Morel",
+	  "Keywords": [ "Forage" ]
+    },
+    {
+      "Id": 54,
+      "Name": "Spring Onion",
+	  "Keywords": [ "Forage" ]
+    },
+    {
+      "Id": 55,
+      "Name": "Wild Horseradish",
+	  "Keywords": [ "Forage" ]
+    },
+    {
+      "Id": 56,
+      "Name": "Sweet Pea",
+	  "Keywords": [ "Flower" ]
+    },
+    {
+      "Id": 57,
+      "Name": "Crocus",
+	  "Keywords": [ "Flower" ]
+    },
+    {
+      "Id": 58,
+      "Name": "Tulip",
+	  "Keywords": [ "Flower" ]
+    },
+    {
+      "Id": 59,
+      "Name": "Blue Jazz",
+	  "Keywords": [ "Flower" ]
+    },
+    {
+      "Id": 60,
+      "Name": "Summer Spangle",
+	  "Keywords": [ "Flower" ]
+    },
+    {
+      "Id": 61,
+      "Name": "Poppy",
+	  "Keywords": [ "Flower" ]
+    },
+    {
+      "Id": 62,
+      "Name": "Sunflower",
+	  "Keywords": [ "Flower" ]
+    },
+    {
+      "Id": 63,
+      "Name": "Fairy Rose",
+	  "Keywords": [ "Flower" ]
+    }
+]
+}

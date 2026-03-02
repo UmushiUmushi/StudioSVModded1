@@ -1,0 +1,68 @@
+{
+   "Format": "2.0.0",
+
+	  "Changes": [
+      {
+        "Action": "Load",
+        "Target": "Maps/Farm_FourCorners",
+        "FromFile": "assets/Everything Map.tmx"
+      },
+	  	{
+        "LogName": "Remove Rain from Warp Area",
+        "Action": "EditImage",
+        "Target": "Tilesheets/rain",
+		"FromFile": "assets/rainreplacer.png",
+		"When": {
+		"Weather": "Rain, Storm",
+		"LocationName": "Draylon.WarpRoom"
+				},
+		"Update": "OnLocationChange",
+	},
+      {
+        "Action": "Load",
+        "Target": "Maps/Farm_Greenhouse_Dirt_FourCorners",
+        "FromFile": "assets/Farm_Greenhouse_Dirt_FourCorners.tmx"
+      },
+	  		{
+        "Action": "Load",
+        "Target": "Maps/Draylon.WarpRoom",
+        "FromFile": "assets/Warp Map.tmx"
+    },
+    {
+        "Action": "EditData",
+        "Target": "Data/Locations",
+        "Entries": {
+            "Draylon.WarpRoom": {
+				"DisplayName": "Warp Room",
+                "CreateOnLoad": {
+					"MapPath": "Maps/Draylon.WarpRoom",
+					"AlwaysActive": "True"},
+				"CanPlantHere": "True",
+                "FormerLocationNames": [ "Custom_EverFarm_Warp" ]
+            }
+        }
+    },
+{
+	"Action": "EditData",
+	"Target": "Mods/Bouhm.NPCMapLocations/Locations",
+	"Entries": {
+		"Farm_FourCorners": {
+      "MapVectors": [
+    {
+     "TileX": 0,
+	 "TileY": 0,
+	 "MapX": 324,
+	 "MapY": 264
+	},
+	{
+	 "TileX": 199,
+	 "TileY": 154,
+	 "MapX": 504,
+	 "MapY": 388
+	}
+				]
+			}
+		}
+	}
+	]
+}

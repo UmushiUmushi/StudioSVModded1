@@ -1,0 +1,18 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/George",
+			"Entries":
+				{
+					"married_Alex": "...Hmmph.",
+					"Wed_inlaw_Alex": "You're part of the family, now. I'm glad that my grandson found such a nice {{Lowercase: {{Random: {{Hana.GNMTokens/SpouseNoun}} }} }}.}$",
+					"Wed10_inlaw_Alex": "You're part of the family, now... and I couldn't be more proud.",
+					"Thu": "I can't talk right now, {{Lowercase: {{Random: {{Hana.GNMTokens/ElderInformalNoun}} }} }}.#$e#My favorite program is on.",
+					"Fri10": "You know, I really have been a grumpy old man to everyone. But now I feel like I'm softening up like an old ripe fruit. Hehe!$h#$e#Take care, {{Lowercase: {{Random: {{Hana.GNMTokens/ElderInformalNoun}} }} }}."
+				},
+			"LogName":"Fix George"
+		}
+	]
+}

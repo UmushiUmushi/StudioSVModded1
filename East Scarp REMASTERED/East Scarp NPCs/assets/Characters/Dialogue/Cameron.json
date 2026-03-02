@@ -1,0 +1,66 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/CameronLK",
+            "Entries": {
+                "{{Season}}_{{day}}": "$1 CameronMet#You're from Pelican Town?$2#$b#A... hmmm... close friend grew up near there, and talked fondly of the Scarp. I always wondered what it was like.",
+                "{{Season}}_{{day}}_2": "$1 CameronMet#You're from Pelican Town?$2#$b#A... hmmm... close friend grew up near there, and talked fondly of the Scarp. I always wondered what it was like."
+            },
+            "When": {
+                "HasFlag |contains=CameronMet": false
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/CameronLK",
+            "Entries": {
+                "ArchaeologyHouse": "{{i18n:Cameron_ArchaeologyHouse}}",
+                "ArchaeologyHouse_Wed": "{{i18n:Cameron_ArchaeologyHouse_Wed}}",
+                //Mountain specific dialogue: send them to the quarry if possible? They can probably access it as long as they stay on the path.
+                "Mountain_summer": "{{i18n:Cameron_Mountain_summer}}", //"i18n:key_{{season}}" Summer
+                "Mountain_Mon": "{{i18n:Cameron_Mountain_Mon}}",
+                "Mountain_Tue": "{{i18n:Cameron_Mountain_Tue}}",
+                "Mountain_Thu": "{{i18n:Cameron_Mountain_Thu}}",
+                "Mountain_Fri": "{{i18n:Cameron_Mountain_Fri}}",
+                "Mountain_Sat": "{{i18n:Cameron_Mountain_Sat}}",
+                "Mountain_Sun": "{{i18n:Cameron_Mountain_Sun}}",
+                //East Scarp
+                "EastScarp_Village": "{{i18n:Cameron_EastScarp_Village}}",
+                "EastScarp_Village_Wed": "{{i18n:Cameron_EastScarp_Village_Wed}}",
+                "EastScarp_Village_Thu": "{{i18n:Cameron_Mountain_Sun}}",
+                //Town
+                "Town_Mon": "{{i18n:Cameron_Town_Mon}}",
+                "Town_Wed": "{{i18n:Cameron_Town_Wed}}",
+                "Town_Thu": "{{i18n:Cameron_Town_Thu}}",
+                "Town_Fri": "{{i18n:Cameron_Town_Fri}}",
+                //Generic
+                "Mon": "{{i18n:Cameron_Mon}}",
+                "fall_Mon": "{{i18n:Cameron_fall_Mon}}", //Overwrite this somehow if you've rekindled their relationship with Jasper
+                "Tue": "{{i18n:Cameron_Tue}}",
+                "summer_Tue": "{{i18n:Cameron_summer_Tue}}",
+                "fall_Tue": "{{i18n:Cameron_fall_Tue}}",
+                "winter_Tue": "{{i18n:Cameron_winter_Tue}}",
+                "Wed": "{{i18n:Cameron_Wed}}",
+                "summer_Wed": "{{i18n:Cameron_summer_Wed}}",
+                "fall_Wed": "{{i18n:Cameron_fall_Wed}}",
+                "winter_Wed": "{{i18n:Cameron_winter_Wed}}",
+                "Fri": "{{i18n:Cameron_Fri}}",
+                "summer_Fri": "{{i18n:Cameron_summer_Fri}}",
+                "fall_Fri": "{{i18n:Cameron_fall_Fri}}",
+                "Sat": "{{i18n:Cameron_Sat}}",
+                "summer_Sat": "{{i18n:Cameron_summer_Sat}}",
+                "fall_Sat": "{{i18n:Cameron_fall_Sat}}",
+                "Sun": "{{i18n:Cameron_Sun}}",
+                //Conversation Topics
+                //"KatarynaStillHere": "{{i18n:Cameron_KatarynaStillHere}}",
+                //Inn specific: removed
+                //"Tue": "{{i18n:Cameron_Tue2}}",
+                //"fall_Tue6": "{{i18n:Cameron_fall_Tue6}}",
+                // "Custom_EastScarpeInn": "{{i18n:Cameron_Custom_EastScarpeInn}}",
+            }
+        }
+    ]
+}

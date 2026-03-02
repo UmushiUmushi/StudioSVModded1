@@ -1,0 +1,13 @@
+﻿{
+  "Name": "FS - Lighter Oversized Sleeves",
+  "Author": "starrybonns",
+  "Version": "1.0.0",
+  "Description": "Lighter Versions of the original oversized sleeves.",
+  "UniqueID": "sb.lightersleeves",
+  "UpdateKeys": [ "Nexus:13393" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.11.3"
+  }
+}

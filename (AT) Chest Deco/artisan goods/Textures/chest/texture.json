@@ -1,0 +1,97 @@
+{ 
+ "CollectiveNames":
+[
+"Chest",
+"Stone Chest",
+"Junimo Chest",
+"Big Chest",
+"Big Stone Chest"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "Keywords": [ "Artisan Goods" ],
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name": "Aged Roe"
+    },
+    {
+      "Id": 1,
+      "Name": "Caviar"
+    },
+    {
+      "Id": 2,
+      "Name": "Cheese"
+    },
+    {
+      "Id": 3,
+      "Name": "Cloth"
+    },
+    {
+      "Id": 4,
+      "Name": "Dinosaur Mayonnaise"
+    },
+    {
+      "Id": 5,
+      "Name": "Duck Mayonnaise"
+    },
+    {
+      "Id": 6,
+      "Name": "Goat Cheese"
+    },
+    {
+      "Id": 7,
+      "Name": "Honey"
+    },
+    {
+      "Id": 8,
+      "Name": "Jellies"
+    },
+    {
+      "Id": 9,
+      "Name": "Pickles"
+    },
+    {
+      "Id": 10,
+      "Name": "Juice"
+    },
+    {
+      "Id": 11,
+      "Name": "Mapple Syrup"
+    },
+    {
+      "Id": 12,
+      "Name": "Mayonnaise"
+    },
+    {
+      "Id": 13,
+      "Name": "Mead"
+    },
+    {
+      "Id": 14,
+      "Name": "Oak Resin"
+    },
+    {
+      "Id": 15,
+      "Name": "Oil"
+    },
+    {
+      "Id": 16,
+      "Name": "Pine Tar"
+    },
+    {
+      "Id": 17,
+      "Name": "Truffle Oil"
+    },
+    {
+      "Id": 18,
+      "Name": "Void Mayonnaise"
+    },
+    {
+      "Id": 19,
+      "Name": "Wine"
+    }
+]
+}

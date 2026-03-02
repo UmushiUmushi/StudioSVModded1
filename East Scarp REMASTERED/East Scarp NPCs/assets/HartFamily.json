@@ -1,0 +1,172 @@
+{
+    "Changes": [
+        // michaelhart loves: Coconut (88), Jelly (344), Tulip (591), Salmon dinner (212)
+        // michaelhart likes: Hazelnut (408), Duck feather (444), Nautilus shell (382), Rainbow shell (394), Rabbit's foot (446), Dandelion (22), Fish (-2), Prismatic shard (74)
+        // michaelhart dislikes: Mineral (-12)
+        // michaelhart hates: Cave carrot (78)
+        // michaelhart neutral: Carp (142)
+        // edithhart loves: Maple syrup (724), Oyster (723), Roe (812), Rainbow shell (394), Vegetable medley (200), Fruit salad (610), Coffee (395)
+        // edithhart likes: Morel (257), Chantrelle (281), Commmon mushroom (404), Milk (-6) 
+        // edithhart dislikes: Garlic (248), Wild horseradish (16), Pepper Poppers (215), Spicy eel (226)
+        // edithhart hates: Hot pepper (260)
+        // edithhart neutral: Rabbit's foot (446)
+        // Stella loves: Triple shot espresso (253), Coffee (395), Summer spangle (593), Lucky lunch (204), Beer (346)
+        // Stella likes: Joja cola (167)
+        // Stella dislikes: Forage (-81)
+        // Stella hates: Cave carrot (78)
+        // Stella neutral:
+        // ethanhart loves: Maple syrup (724), Complete Breakfast (201), Vegetable medley (200), Hazelnut (408)
+        // ethanhart likes: Egg (-5), Milk (-6), Forage (-81), Field snack (403)
+        // ethanhart dislikes: Hot pepper (260), Sap (92), Red mushroom (420), Fried calamary (202)
+        // ethanhart hates: Squid (151), Midnight squid (798)
+        // ethanhart neutral: Spring onion (399)
+        {
+            "LogName": "Gift tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "When": {
+                "FriendableZuzuNPCs |contains=Stella": true
+            },
+            "Entries": {
+                "StellaHart": "{{i18n:gift.stella.love}}/253 395 593 204 346/{{i18n:gift.stella.like}}/167/{{i18n:gift.stella.dislike}}/-81/{{i18n:gift.stella.hate}}/78/{{i18n:gift.stella.neutral}}//"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "EthanHart": "{{i18n:rain.ethan}}",
+                "EdithHart": "{{i18n:rain.edith}}",
+                "MichaelHart": "{{i18n:rain.michael}}",
+                "StellaHart": "{{i18n:rain.stella}}"
+            }
+        },
+        {
+            "LogName": "Landscape Art",
+            "Action": "Load",
+            "Priority": "low",
+            "Target": "Maps/MountEvermore_Landscape",
+            "FromFile": "assets/Maps/MountEvermore_Landscape.tmx"
+        },
+        {
+            "LogName": "Dialogues Edit Include",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/EthanHart.json, assets/Characters/Dialogue/EdithHart.json, assets/Characters/Dialogue/MichaelHart.json, assets/Characters/Dialogue/StellaHart.json,  assets/Characters/schedules/EdithHart.json,  assets/Characters/schedules/MichaelHart.json,  assets/Characters/schedules/EthanHart.json,  assets/Characters/schedules/StellaHart.json",
+        },
+        {
+            "LogName": "Edith portraits",
+            "Action": "Load",
+            "Priority": "low",
+            "Target": "Portraits/EdithHart, Characters/EdithHart, Portraits/EdithHart_Winter, Characters/EdithHart_Winter, Portraits/EdithHart_SpiritsEve, Characters/EdithHart_SpiritsEve, Portraits/EdithHart_FlowerDance, Characters/EdithHart_FlowerDance, Characters/EdithHart_Camera",
+            "FromFile": "assets/{{targetPathOnly}}/EdithHart/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Michael portraits",
+            "Action": "Load",
+            "Priority": "low",
+            "Target": "Portraits/MichaelHart, Characters/MichaelHart, Portraits/MichaelHart_Winter, Characters/MichaelHart_Winter, Portraits/MichaelHart_SpiritsEve, Characters/MichaelHart_SpiritsEve, Portraits/MichaelHart_FlowerDance, Characters/MichaelHart_FlowerDance",
+            "FromFile": "assets/{{targetPathOnly}}/MichaelHart/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Ethan portraits",
+            "Action": "Load",
+            "Priority": "low",
+            "Target": "Portraits/EthanHart, Characters/EthanHart,Portraits/EthanHart_Winter, Characters/EthanHart_Winter, Portraits/EthanHart_SpiritsEve, Characters/EthanHart_SpiritsEve, Portraits/EthanHart_FlowerDance, Characters/EthanHart_FlowerDance",
+            "FromFile": "assets/{{targetPathOnly}}/EthanHart/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Stella portraits",
+            "Action": "Load",
+            "Priority": "low",
+            "Target": "Portraits/StellaHart, Characters/StellaHart, Portraits/StellaHart_Winter, Portraits/StellaHart_SpiritsEve, Characters/StellaHart_SpiritsEve",
+            "FromFile": "assets/{{targetPathOnly}}/StellaHart/{{TargetWithoutPath}}.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "michael_sleep": "19/19/19",
+                "stella_sleep": "19/19/19",
+                "ethan_sleep": "19/19/19",
+                "edith_sleep": "19/19/19",
+                "michael_dishes": "20/20 21/20",
+                "ethan_dishes": "20/20 21 21 20 21/20",
+                "edith_dishes": "20/20 21/20",
+                "stella_computer": "24/24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 26 27 26 27 26 27 26 25 24 24 24/24",
+                "ethan_computer": "24/24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 26 27 26 27 26 27 26 25 24 24 24/24",
+                "michael_newspaper": "18/18/18",
+                "michael_note": "24/24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 24 25 26 25 26 25 26 25 26 25 26 25 26 25 26 25 26 24 24 24 24 24 24 24 24 25 26 25 26 25 26 25 26 25 26/24",
+                "michael_painting": "32/32 32 32 32 32 33 33 33 33 33 33 33 33/32",
+                "stella_exercise": "20/20 20 20 20 20 21 22 23 24 24 23 22 21 20 19 19 20 21 22 23 24 24 23 22 21 20 21 22 23 22 21 20 22 23 22 21 20/20",
+                "ethan_sweep": "28/28 28 29 29 30 30 29 29/28",
+                "ethan_read": "26/25/26",
+                "ethan_squat": "18/18/18",
+                "ethan_forageleft": "22/23 23 22 22/22",
+                "ethan_forageright": "20/21 21 20 20/20",
+                "edith_exercise": "25 25 26 25 25 25 26 25 25 26/24 25 24 25 24 24 25 24 24 25 25 25 24 24 25 24 25 26 26 27 28 27 26 25 24 24 25 25 24 25 24 24 25 24 24 25 25 25 24 24 25 27 28 29 28 29 28 27 26 25 24 24 25 24 24 25 25 24 25 24 24 25 26 27 28 29 27 26 25 24 24 25 24 24 25 25 24 24 25 24 25 24/26 26 25 25 25 25 26 26 26 26 25",
+                "michael_drink": "20/20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 23 23 23 23 23 23 22 21 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 23 23 23 23 23 23 23 23 22 21 20 20 20 20 20/20",
+                "edith_drink": "20/20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 23 23 23 23 23 23 22 21 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 21 22 23 23 23 23 23 23 23 23 22 21 20 20 20 20 20/20"
+            }
+        },
+        {
+            "LogName": "Crossing Events",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Crossing",
+            "Entries": {
+                "57871600/w sunny/f EthanHart 250/DayOfWeek Sat Sun/t 1000 1600": "{{season}}2/23 17/EthanHart 24 12 1 farmer 19 20 1/skippable/addObject 23 17 {{SeasonalForage}}/move farmer 4 0 0/emote farmer 32/faceDirection EthanHart 2/move farmer 0 -2 0/playSound pickUpItem/removeSprite 23 17/emote EthanHart 12/pause 500/speed EthanHart 4/move EthanHart 0 6 3 true/pause 500/textAboveHead EthanHart \"{{i18n:57871600.0}}\"/pause 500/jump farmer 3/faceDirection farmer 1/pause 500/emote farmer 8/pause 500/speak EthanHart \"{{i18n:57871600.1}}\"/faceDirection EthanHart 2/pause 500/faceDirection EthanHart 1/pause 500/faceDirection EthanHart 3/pause 500/speak EthanHart \"{{i18n:57871600.2}}\"/pause 500/quickQuestion #{{i18n:57871600.q1}}#{{i18n:57871600.q2}}#{{i18n:57871600.q3}}(break)emote EthanHart 12\\speak EthanHart \"{{i18n:57871600.3}}\"(break)emote EthanHart 12\\speak EthanHart \"{{i18n:57871600.4}}\"(break)emote EthanHart 12\\pause 500\\speak EthanHart \"{{i18n:57871600.5}}\"/pause 500/speak EthanHart \"{{i18n:57871600.6}}\"/pause 500/quickQuestion #{{i18n:57871600.q4}}#{{i18n:57871600.q5}}(break)friendship EthanHart 125\\emote farmer 56\\pause 500\\playSound coin\\speak EthanHart \"{{i18n:57871600.7}}\"(break)friendship EthanHart -50\\addItem {{SeasonalForage}}\\speak EthanHart \"{{i18n:57871600.8}}\"/pause 500/speak EthanHart \"{{i18n:57871600.9}}\"/pause 500/advancedMove EthanHart false 0 2 20 0/pause 1000/faceDirection farmer 2/emote farmer 40/pause 2000/end",
+                "57871604/f EthanHart 2500/t 1000 1600": "continue/30 19/EthanHart 37 20 3 farmer 14 20 1/skippable/advancedMove EthanHart false -7 0 0 -1 2 1000/advancedMove farmer false 7 0 1 1000/proceedPosition EthanHart/emote EthanHart 28/pause 1000/faceDirection EthanHart 0/warp EthanHart -100 -100/emote farmer 8/pause 1000/end invisible EthanHart"
+            }
+        },
+        {
+            "LogName": "Mt Evermore Events",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_MtEvermore",
+            "Entries": {
+                "57871607/season Summer/e sunny/t 900 1600": "summer1/-100 -100/MichaelHart 41 8 3 farmer 41 16 0/viewport 41 10 clamp true/skippable/advancedMove farmer false 0 -6 4 100/pause 1000/faceDirection MichaelHart 2/speak MichaelHart \"{{i18n:57871607.0}}\"/pause 500/emote farmer 32/pause 1000/faceDirection MichaelHart 3/speak MichaelHart \"{{i18n:57871607.1}}\"/pause 1000/faceDirection MichaelHart 2/speak MichaelHart \"{{i18n:57871607.2}}\"/pause 500/emote farmer 8/pause 1000/speak MichaelHart \"{{i18n:57871607.3}}\"/pause 1000/move MichaelHart 1 0 3/advancedMove farmer false 0 -2 3 100/proceedPosition farmer/fade/viewport -100 -100/warp farmer -1000 -100 true/warp MichaelHart -1000 -100 true/changeToTemporaryMap MountEvermore_Landscape/viewport 27 10 clamp true/pause 2000/speak MichaelHart \"{{i18n:57871607.4}}\"/pause 1000/quickQuestion {{i18n:57871607.5}}#{{i18n:57871607.6}}#{{i18n:57871607.7}}#{{i18n:57871607.8}}(break)friendship MichaelHart 100\\speak MichaelHart \"{{i18n:57871607.9}}\"(break)friendship MichaelHart 25\\speak MichaelHart \"{{i18n:57871607.10}}\"(break)switchEvent 57871607.NoPainting/pause 500/mail MichaeHart_Painting/pause 1000/end",
+                "57871607.NoPainting": "pause 500/friendship MichaelHart -50/speak MichaelHart \"I know it's no Lupini, but that's harsh.$2\"/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Inn Events",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_VillageInn",
+            "Entries": {
+                "57871601/DayOfWeek Sat Sun/t 1100 1700": "breezy/-100 -100/Rosa 45 31 2 EdithHart 28 30 1 MichaelHart 28 26 2 StellaHart 29 30 3 Juliet 45 33 0 farmer -1000 -100 0/skippable/showFrame MichaelHart 18/viewport 44 34 clamp true/changeName StellaHart ???/pause 500/warp farmer 44 36/move farmer 0 -2 0/faceDirection Juliet 2/textAboveHead Rosa \"{{i18n:57871601.0}}\"/pause 500/speak Juliet \"{{i18n:57871601.1}}\"/pause 500/emote farmer 32/pause 500/speak StellaHart \"{{i18n:57871601.2}}\"/pause 1000/faceDirection farmer 3 true/faceDirection Juliet 3 true/emote farmer 8/pause 1000/speak Juliet \"{{i18n:57871601.3}}\"/faceDirection Juliet 0/pause 500/speak Juliet \"{{i18n:57871601.4}}\"/pause 500/emote Rosa 60/pause 500/advancedMove farmer false -8 0 3 100/viewport move -2 0 7000/pause 2000/speak EdithHart \"{{i18n:57871601.5}}\"/pause 1000/speak StellaHart \"{{i18n:57871601.6}}\"/pause 1500/emote MichaelHart 40/pause 1000/advancedMove MichaelHart false 0 3 2 100/proceedPosition MichaelHart/faceDirection StellaHart 0 true/faceDirection EdithHart 0 true/speak StellaHart \"{{i18n:57871601.7}}\"/pause 500/emote MichaelHart 28/advancedMove EdithHart false -1 0 1 100/pause 500/speak MichaelHart \"{{i18n:57871601.8}}\"/pause 500/pause 1000/speak StellaHart \"{{i18n:57871601.9}}\"/emote StellaHart 12/pause 500/advancedMove StellaHart false 0 4 6 0 1 100/viewport move 2 0 3000/advancedMove MichaelHart false 0 1 3 100/emote MichaelHart 60/proceedPosition StellaHart/speak StellaHart \"{{i18n:57871601.10}}\"/quickQuestion #{{i18n:57871601.11}}#{{i18n:57871601.12}}#{{i18n:57871601.13}}(break)emote StellaHart 12\\speak StellaHart \"{{i18n:57871601.14}}\"(break)emote StellaHart 32\\speak StellaHart \"{{i18n:57871601.15}}\"(break)emote StellaHart 40\\speak StellaHart \"{{i18n:57871601.16}}\"/pause 500/changeName StellaHart {{i18n:Name.Stella}}/speak StellaHart \"{{i18n:57871601.17}}\"/faceDirection StellaHart 3/pause 500/speak StellaHart \"{{i18n:57871601.18}}\"/pause 500/emote farmer 60/pause 1000/end",
+                "57871603/f EdithHart 500/f MichaelHart 500/w sunny/z summer/t 1200 1800": "breezy/45 33/EdithHart 47 31 2 MichaelHart -100 -100 0 farmer -100 -100 0 Rosa 38 34 3 Juliet 37 34 1/skippable/pause 1000/warp farmer 44 36/playSound doorOpen/advancedMove farmer false 0 -2 4 100/pause 500/emote EdithHart 12/speak EdithHart \"{{i18n:57871603.0}}\"/pause 500/emote farmer 8/speak EdithHart \"{{i18n:57871603.1}}\"/advancedMove farmer false -2 0 0 -4 4 0 0 1 1 1000/pause 1000/textAboveHead EdithHart \"{{i18n:57871603.2}}\"/proceedPosition farmer/pause 1000/quickQuestion #{{i18n:57871603.3}}#{{i18n:57871603.4}}#{{i18n:57871603.5}}(break)speak EdithHart \"{{i18n:57871603.6}}\"(break)speak EdithHart \"{{i18n:57871603.7}}\"(break)speak EdithHart \"{{i18n:57871603.8}}\"/pause 500/playSound doorOpen/pause 500/warp MichaelHart 44 36/faceDirection farmer 2/advancedMove MichaelHart false 0 -1 4 100/proceedPosition MichaelHart/textAboveHead EdithHart \"{{i18n:57871603.9}}\"/pause 1000/speak EdithHart \"{{i18n:57871603.10}}\"/emote MichaelHart 16/pause 500/speak MichaelHart \"{{i18n:57871603.11}}\"/question null \"{{i18n:57871603.12}}\"/pause 500/textAboveHead MichaelHart \"{{i18n:57871603.13}}\"/advancedMove MichaelHart false 0 -2 3 0 4 100/proceedPosition MichaelHart/speak MichaelHart \"{{i18n:57871603.14}}\"/pause 1000/advancedMove MichaelHart false -1 0 4 100/faceDirection farmer 2/proceedPosition MichaelHart/speak MichaelHart  \"{{i18n:57871603.15}}\"/pause 500/emote farmer 56/pause 1000/advancedMove MichaelHart false 1 0 4 100/speak MichaelHart \"{{i18n:57871603.16}}\"/pause 500/textAboveHead EdithHart \"{{i18n:57871603.17}}\"/speak EdithHart \"{{i18n:57871603.18}}\"/pause 1000/advancedMove farmer false 0 -1 2 2000 0 1 1 0 2 100/advancedMove EdithHart false -2 0 0 -1 -3 0 0 3 2 0 1 1000/pause 4500/textAboveHead MichaelHart \"{{i18n:57871603.19}}\"/pause 1000/advancedMove MichaelHart false -2 0 3 100/proceedPosition EdithHart/pause 1500/emote MichaelHart 20/pause 1000/emote EdithHart 20/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "Village Events",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57871602/e 86571101/f EthanHart 750/t 1700 2000/w sunny": "{{season}}2/38 50/EthanHart 34 52 1 farmer -100 -100 1 Jessie -100 -100 2 Gremlin 28 52 1/skippable/advancedMove EthanHart false 3 0 4 100/pause 500/textAboveHead EthanHart \"{{i18n:57871602.0}}\"/pause 500/speak EthanHart \"{{i18n:57871602.1}}\"/pause 1000/speed Gremlin 4/advancedMove Gremlin false 4 0 1 100/proceedPosition Gremlin/shake Gremlin 4000/playSound dog_bark/pause 500/playSound dog_bark/pause 500/emote EthanHart 16/faceDirection EthanHart 3/pause 500/textAboveHead EthanHart \"{{i18n:57871602.2}}\"/pause 500/speak EthanHart \"{{i18n:57871602.3}}\"/pause 500/playSound doorOpen/warp Jessie 31 49/pause 500/textAboveHead Jessie \"{{i18n:57871602.4}}\"/pause 500/advancedMove Jessie false 0 3 1 100/advancedMove Gremlin false -2 0 0 -3 1 0 0 2 1 100/pause 500/speak Jessie \"{{i18n:57871602.5}}\"/pause 500/shake EthanHart 1000/speak EthanHart \"{{i18n:57871602.6}}\"/pause 100/speak Jessie \"{{i18n:57871602.7}}\"/advancedMove Jessie false 5 0 4 100/advancedMove EthanHart false 1 0 3 100/proceedPosition Jessie/advancedMove EthanHart false -1 0 4 100/pause 500/speak Jessie \"{{i18n:57871602.8}}\"/pause 500/emote EthanHart 16/pause 500/speak Jessie \"{{i18n:57871602.9}}\"/pause 500/faceDirection EthanHart 3/speak EthanHart \"{{i18n:57871602.10}}\"/faceDirection Jessie 1/speak Jessie \"{{i18n:57871602.11}}\"/textAboveHead EthanHart \"{{i18n:57871602.12}}\"/pause 500/speak Jessie \"{{i18n:57871602.13}}\"/advancedMove EthanHart false 1 0 4 100/advancedMove Jessie false 1 0 4 100/pause 1000/speak Jessie \"{{i18n:57871602.14}}\"/pause 500/playSound scissors/pause 500/faceDirection Jessie 1/faceDirection EthanHart 3/pause 500/speak Jessie \"{{i18n:57871602.15}}\"/pause 500/emote EthanHart 32/pause 500/speak EthanHart \"{{i18n:57871602.16}}\"/pause 500/speak Jessie \"{{i18n:57871602.17}}\"/pause 500/textAboveHead EthanHart \"{{i18n:57871602.18}}\"/pause 2000/end",
+                "57871605/e 57871604": "{{season}}2/16 71/EdithHart 16 63 2 farmer 8 71 1 MichaelHart 22 72 3/skippable/addConversationTopic EthanBackToSchool 7/advancedMove EdithHart false 0 7 3 100/advancedMove farmer false 6 0 0 -1 1 100/pause 500/emote farmer 40/pause 1000/proceedPosition farmer/question null \"{{i18n:57871605.0}}\"/pause 500/jump EdithHart 5/emote EdithHart 12/pause 1000/speak EdithHart \"{{i18n:57871605.1}}\"/pause 500/emote farmer 8/pause 1000/speak EdithHart \"{{i18n:57871605.2}}\"/pause 1000/emote EdithHart 28/pause 1000/speak EdithHart \"{{i18n:57871605.3}}\"/advancedMove MichaelHart false -6 0 4 100//textAboveHead EdithHart \"{{i18n:57871605.4}}\"/speak EdithHart \"{{i18n:57871605.5}}\"/proceedPosition MichaelHart/pause 500/speak MichaelHart \"{{i18n:57871605.6}}\"/faceDirection EdithHart 2/jump EdithHart 5/textAboveHead EdithHart \"{{i18n:57871605.7}}\"/speak MichaelHart \"{{i18n:57871605.8}}\"/advancedMove farmer false 0 1 1 100/speak EdithHart \"{{i18n:57871605.9}}\"/pause 1000/speak MichaelHart \"{{i18n:57871605.10}}\"/pause 1000/emote EdithHart 16/speak EdithHart \"{{i18n:57871605.11}}\"/pause 500/textAboveHead MichaelHart \"{{i18n:57871605.12}}\"/pause 500/speak MichaelHart \"{{i18n:57871605.13}}\"/emote EdithHart 12/pause 500/speak MichaelHart \"{{i18n:57871605.14}}\"/pause 2000/emote EdithHart 40/pause 2000/textAboveHead EdithHart \"{{i18n:57871605.15}}\"/speak EdithHart \"{{i18n:57871605.16}}\"/pause 1500/faceDirection EdithHart 1/pause 1000/advancedMove EdithHart false 1 0 0 2 18 0 1 100/pause 1000/advancedMove farmer false 0 1 1 100/faceDirection MichaelHart 1/speak MichaelHart \"{{i18n:57871605.17}}\"/pause 1000/faceDirection MichaelHart 3/speak MichaelHart \"{{i18n:57871605.18}}\"/pause 500/emote farmer 60/pause 2000/advancedMove MichaelHart false 19 0 1 100/pause 2000/emote farmer 8/pause 2000/end"
+            }
+        }
+    ]
+}
+/*
+EdithHart 16 64 2 farmer 9 71 1 MichaelHart 22 72 3
+...#I saw Ethan getting on a bus.#Ethan's running away!
+EdithHart \"He's gone to his sister's. We had an... erm, heated disagreement. About his schooling.#$b#I don't know what to do about him... I know teenagers can be a nightmare - Stella certainly was - but... I thought we had a couple more years first...$2\"
+Michael walks up.
+speak MichaelHart \"I think we both know what we need to do...\"
+faceDirection EdithHart 2/
+speak EdithHart \"No\"/
+MichaelHart \"He needs to go back to school.\"/
+EdithHart \"But the bullies...\"/
+MichaelHart \"... have been expelled.#$b#He misses his friends, Eddie. We can't protect him from the real world forever.\"
+EdithHart \"We can try!\"/
+MichaelHart \"Eddie...\"/
+MichaelHart \"We have a rare gift here - a child that actually wants to go to school. Not all education comes from books.\"
+MichaelHart \"Besides? Wouldn't you like to have your weekdays back?\"
+EdithHart \"Fine\"
+EdithHart \"I'll call Stella... but, if I hear word of any transgressions, I'm pulling him straight out again.\"
+She stalks off
+MichaelHart \"Of course you are, dear.\"
+Turns to farmer.
+MichaelHart \"Thanks for helping us get that sorted out.\"
+Follows after her.
+Farmer looks thoroughly confused. (emote farmer 8/pause 600/emote farmer 16/pause 2000/end)
+*/

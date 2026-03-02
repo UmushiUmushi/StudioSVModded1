@@ -1,0 +1,11 @@
+{
+	"Format": "1.29",
+	"Changes": [
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/walls_and_floors",
+		"FromFile": "assets/walls_and_floors.png"
+		}
+	]
+}

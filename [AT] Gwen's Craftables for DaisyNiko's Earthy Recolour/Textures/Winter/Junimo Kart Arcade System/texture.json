@@ -1,0 +1,15 @@
+{
+	"ItemName": "Junimo Kart Arcade System",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+		"Seasons": ["Winter"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		"Keywords": ["Outdoors"],
+		},
+	]
+}

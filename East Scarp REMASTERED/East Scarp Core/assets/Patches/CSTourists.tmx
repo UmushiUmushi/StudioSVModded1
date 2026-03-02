@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="8" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="28" nextobjectid="88">
+ <tileset firstgid="1" name="CSTourists" tilewidth="16" tileheight="16" tilecount="16" columns="4">
+  <image source="CSTourists.png" width="64" height="64"/>
+ </tileset>
+ <layer id="7" name="Buildings" width="8" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,
+5,6,7,8,13,14,15,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Front" width="8" height="6">
+  <data encoding="csv">
+1,2,3,4,9,10,11,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>

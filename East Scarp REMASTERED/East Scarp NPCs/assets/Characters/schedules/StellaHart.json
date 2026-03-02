@@ -1,0 +1,20 @@
+{
+    "Changes": [
+        {
+            "LogName": "stella schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/StellaHart",
+            "Entries": {
+                "spring": "630 EastScarp_KenStellaHouse 15 19 0/830 EastScarp_KenStellaHouse 16 19 2/930 EastScarp_KenStellaHouse 17 6 1 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1100 EastScarp_TNPCWaitingWarpRoom 6 9 0/1620 EastScarp_KenStellaHouse 17 6 1 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1700 EastScarp_KenStellaHouse 16 19 2/2400 13 5 0 Stella_Sleep",
+                "rain": "GOTO spring",
+                "Sat_A": "630 EastScarp_KenStellaHouse 15 19 0/830 EastScarp_KenStellaHouse 16 19 2/930 EastScarp_VillageInn 47 31 2 \"Strings\\schedules\\StellaHart:spring.000\"/1300 SeedShop 13 26 1/1330 SeedShop 13 28 1 \"Strings\\schedules\\StellaHart:Sat.000.{{Random:a, b, c}}\"/1400 EastScarp_VillageInn 65 23 1 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/2000 EastScarp_VillageInn 33 28 0",
+                "Sun": "0 EastScarp_VillageInn 64 21 3/800 EastScarp_VillageInn 46 18 2/930 EastScarp_VillageInn 65 23 0 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1130 EastScarp_Village 25 70 0/1400 EastScarp_VillageInn 64 7 3 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1630 Saloon 37 18 0/1800 Saloon 26 22 3/2000 EastScarp_KenStellaHouse 13 5 0 Stella_Sleep",
+                "Sat": "MAIL EastScarp.SpecialOrders.ScarpGreenHouse_Complete/GOTO Sat_A/630 EastScarp_KenStellaHouse 15 19 0/830 EastScarp_CommunityGreenhouse 4 20 1 square_1_11_3/1300 EastScarp_CommunityGreenhouse 19 20 3 square_1_11_1/1600 EastScarp_CommunityGreenhouse 14 13 3/1800 EastScarp_VillageInn 65 23 1 Stella_Computer/2200 EastScarp_VillageInn 33 28 0"
+                //800 EastScarp_Crossing 44 8 2/1100 
+            }
+        }
+    ]
+}
+/* "winter_17": "630 EastScarp_VillageInn 45 12 3/830 EastScarp_VillageInn 61 8 0/930 EastScarp_VillageInn 62 8 0 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1000 EastScarp_VillageInn 61 8 0/1030 EastScarp_VillageInn 62 8 0 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1100 EastScarp_VillageInn 61 8 0/1130 EastScarp_VillageInn 61 8 0/1130 EastScarp_VillageInn 62 8 0 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1300 EastScarp_VillageInn 61 8 0/1730 Beach 14 39 1 \"Strings\\schedules\\StellaHart:winter_17.000\"/2400 EastScarp_VillageInn 66 8 0 Stella_Sleep",
+             "Fri": "630 EastScarp_VillageInn 46 18 2/830 EastScarp_VillageInn 61 8 0/930 EastScarp_VillageInn 62 8 0 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1200 EastScarp_VillageInn 46 18 2/1300 EastScarp_VillageInn 62 8 0 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1600 EastScarp_VillageInn 61 8 0/1620 EastScarp_VillageInn 62 8 0 Stella_Computer \"Strings\\schedules\\StellaHart:spring.000\"/1700 Saloon 26 22 3/2400 EastScarp_VillageInn 66 8 0 Stella_Sleep",
+       */

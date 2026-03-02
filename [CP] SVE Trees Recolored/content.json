@@ -1,0 +1,69 @@
+{
+	"Format": "2.0.0",
+
+	"ConfigSchema": {	
+			"Recolor": {
+				"AllowValues": "none, VPR, Starblue, Earthy, Naturally, Wittily",
+				"Default": "none"
+			},
+			"WinterLeaves": {
+				"AllowValues": "true, false",
+				"Default": "false"
+			}
+		},
+
+	"Changes": [
+		//SVE Trees
+		{
+			"LogName": "SVE Trees - Birch",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Mods\\FlashShifter.StardewValleyExpandedCP/{{season}}_Birch_Tree",
+			"FromFile": "assets/{{Recolor}}/Trees/{{season}}_Birch_Tree.png",
+			"PatchMode": "Replace",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+		{
+			"LogName": "SVE Trees - Fir",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Mods\\FlashShifter.StardewValleyExpandedCP/{{season}}_Fir_Tree",
+			"FromFile": "assets/{{Recolor}}/Trees/{{season}}_Fir_Tree.png",
+			"PatchMode": "Replace",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+
+		//SVE Trees - Winter Leaves on Birch Trees
+		{
+			"LogName": "SVE Trees - Birch (Winter)",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Mods\\FlashShifter.StardewValleyExpandedCP/winter_Birch_Tree",
+			"FromFile": "assets/{{Recolor}}/Trees/winter_Birch_TreeLeaves.png",
+			"PatchMode": "Replace",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true, "WinterLeaves": true, "Season": "winter" }
+		},
+
+		//SVE Fruit Trees
+		{
+			"LogName": "SVE Fruit Trees",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Mods\\FlashShifter.StardewValleyExpandedCP/SVEFruitTrees",
+			"FromFile": "assets/{{Recolor}}/Trees/SVE_Fruit_Trees.png",
+			"PatchMode": "Replace",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		},
+
+		//SVE Tilesheets
+		{
+			"LogName": "SVE Tilesheets",
+			"Action": "EditImage",
+            "Priority": "Late",
+			"Target": "Maps/{{season}}_SVE_Tilesheet2",
+			"FromFile": "assets/{{Recolor}}/Tilesheets/{{season}}_SVE_Tilesheet2.png",
+			"PatchMode": "Overlay",
+			"When": { "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true }
+		}
+	] 
+}

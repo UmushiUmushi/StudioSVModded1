@@ -1,0 +1,346 @@
+{ 
+ "CollectiveNames":
+[
+"Chest",
+"Stone Chest",
+"Junimo Chest",
+"Big Chest",
+"Big Stone Chest"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name": "Clam",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 1,
+      "Name": "Cockle",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 2,
+      "Name": "Coral",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 3,
+      "Name": "Crab",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 4,
+      "Name": "Crayfish",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 5,
+      "Name": "Lobster",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 6,
+      "Name": "Mussel",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 7,
+      "Name": "Nautilus Shell",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 8,
+      "Name": "Oyster",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 9,
+      "Name": "Periwinkle",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 10,
+      "Name": "Rainbow Shell",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 11,
+      "Name": "Snail",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 12,
+      "Name": "Shrimp",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 13,
+      "Name": "Seaweed",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 14,
+      "Name": "Green Algae",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 15,
+      "Name": "White Algae",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 16,
+      "Name": "River Jelly",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 17,
+      "Name": "Cave Jelly",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 18,
+      "Name": "Sea Jelly",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 19,
+      "Name": "Pufferfish",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 20,
+      "Name": "Anchovy",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 21,
+      "Name": "Tuna",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 22,
+      "Name": "Sardine",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 23,
+      "Name": "Bream",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 24,
+      "Name": "Largemouth Bass",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 25,
+      "Name": "Smallmouth Bass",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 26,
+      "Name": "Rainbow Trout",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 27,
+      "Name": "Salmon",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 28,
+      "Name": "Walleye",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 29,
+      "Name": "Perch",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 30,
+      "Name": "Carp",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 31,
+      "Name": "Catfish",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 32,
+      "Name": "Pike",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 33,
+      "Name": "Sunfish",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 34,
+      "Name": "Red Mullet",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 35,
+      "Name": "Herring",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 36,
+      "Name": "Eel",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 37,
+      "Name": "Octopus",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 38,
+      "Name": "Red Snapper",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 39,
+      "Name": "Squid",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 40,
+      "Name": "Sea Cucumber",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 41,
+      "Name": "Super Cucumber",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 42,
+      "Name": "Ghost Fish",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 43,
+      "Name": "Ice Pip",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 44,
+      "Name": "Lava Eel",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 45,
+      "Name": "Scorpion Carp",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 46,
+      "Name": "Flounder",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 47,
+      "Name": "Midnight Carp",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 48,
+      "Name": "Sturgeon",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 49,
+      "Name": "Tiger Trout",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 50,
+      "Name": "Bullhead",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 51,
+      "Name": "Tilapia",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 52,
+      "Name": "Chub",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 53,
+      "Name": "Dorado",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 54,
+      "Name": "Albacore",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 55,
+      "Name": "Shad",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 56,
+      "Name": "Lingcod",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 57,
+      "Name": "Halibut",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 58,
+      "Name": "Woodskip",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 59,
+      "Name": "Void Salmon",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 60,
+      "Name": "Slimejack",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 61,
+      "Name": "Lionfish",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 62,
+      "Name": "Goby",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 63,
+      "Name": "Midnight Squid",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 64,
+      "Name": "Spook Fish",
+	  "Keywords": [ "Fish" ]
+    },
+    {
+      "Id": 65,
+      "Name": "Blobfish",
+	  "Keywords": [ "Fish" ]
+    }
+]
+}

@@ -1,0 +1,10 @@
+{
+    "Name": "Skip Intro",
+    "Author": "Pathoschild",
+    "Version": "1.9.24",
+    "MinimumApiVersion": "4.1.10",
+    "Description": "Skips the game's loading intro.",
+    "UniqueID": "Pathoschild.SkipIntro",
+    "EntryDll": "SkipIntro.dll",
+    "UpdateKeys": [ "Nexus:533" ]
+}

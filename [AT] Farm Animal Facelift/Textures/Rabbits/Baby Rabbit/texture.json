@@ -1,0 +1,52 @@
+{
+  "ItemName": "BabyRabbit",
+  "Type": "Character",
+  "TextureWidth": 64,
+  "TextureHeight": 112,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0,
+    },
+    {
+      "Id": 0,
+      "Keywords": [ "Black Blaze" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Black Spots" ]
+    },
+    {
+      "Id": 2,
+      "Keywords": [ "Black" ]
+    },
+    {
+      "Id": 3,
+      "Keywords": [ "Blonde Blaze" ]
+    },
+    {
+      "Id": 4,
+      "Keywords": [ "Blonde" ]
+    },
+    {
+      "Id": 5,
+      "Keywords": [ "Brown Blaze" ]
+    },
+    {
+      "Id": 6,
+      "Keywords": [ "Brown Spots" ]
+    },
+    {
+      "Id": 7,
+      "Keywords": [ "Brown" ]
+    },
+    {
+      "Id": 8,
+      "Keywords": [ "White" ]
+    },
+    {
+      "Id": 9,
+      "Keywords": [ "Void" ]
+    }
+  ]
+}

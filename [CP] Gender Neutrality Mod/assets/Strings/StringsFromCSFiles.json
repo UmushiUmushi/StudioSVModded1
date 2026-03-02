@@ -1,0 +1,105 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries":
+				{
+					"Event.cs.1308": "You've done well, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}.#$b#%farm Farm has never looked better. It's an honor to the family name.#$b#Grandpa is pleased.#$b#I must return to the other world, now... but feel free to call on me again when you're ready.",
+					"Event.cs.1309": "I'm so proud of you, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}!#$b#You've really turned the place around since we last spoke!#$b#You're a better farmer than I ever was, and you've brought great honor to the family name.#$b#I can feel it now... My spirit is finally put to rest. Bless you.",
+					"Event.cs.1317": "You've done well, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}.#$b#%farm Farm has never looked better. It's an honor to the family name.#$b#Grandpa is pleased.",
+					"Event.cs.1318": "I'm so proud of you, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}!#$b#You're a better farmer than I ever was, and you've brought great honor to the family name.#$b#I can feel it now... My spirit is finally put to rest. Bless you.",
+					"GrandpaStory.cs.12026": "...and for my very special grand{{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}:",
+					"GrandpaStory.cs.12028": "...and for my very special grand{{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}:",
+					"GrandpaStory.cs.12036": "When that happens, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}, you'll be ready for this gift.",
+					"GrandpaStory.cs.12038": "When that happens, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}, you'll be ready for this gift.",
+					"GrandpaStory.cs.12051": "Dear {0},^^If you're reading this, you must be in dire need of a change.^^The same thing happened to me, long ago. I'd lost sight of what mattered most in life... real connections with other people and nature. So I dropped everything and moved to the place I truly belong.^^^I've enclosed the deed to that place... my pride and joy: {1} Farm. It's located in Stardew Valley, on the southern coast. It's the perfect place to start your new life.^^This was my most precious gift of all, and now it's yours. I know you'll honor the family name, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}. Good luck.^^Love, Grandpa^^P.S. If Lewis is still alive say hi to the old guy for me, will ya?",
+					"GrandpaStory.cs.12055": "Dear {0},^^If you're reading this, you must be in dire need of a change.^^The same thing happened to me, long ago. I'd lost sight of what mattered most in life... real connections with other people and nature. So I dropped everything and moved to the place I truly belong.^^^I've enclosed the deed to that place... my pride and joy: {1} Farm. It's located in Stardew Valley, on the southern coast. It's the perfect place to start your new life.^^This was my most precious gift of all, and now it's yours. I know you'll honor the family name, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}. Good luck.^^Love, Grandpa^^P.S. If Lewis is still alive say hi to the old guy for me, will ya?",
+					"TV.cs.13128": "Ah... I sense that a new viewer has joined us. A young {{Lowercase: {{Random: {{Hana.GNMTokens/GenericNoun}} }} }} from... Stardew Valley? Welcome, welcome!",
+					"TV.cs.13130": "Ah... I sense that a new viewer has joined us. A young {{Lowercase: {{Random: {{Hana.GNMTokens/GenericNoun}} }} }} from... Stardew Valley? Welcome, welcome!",
+					"Utility.cs.5367": "When @ first arrived in Pelican Town, no one knew if {{Lowercase: {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }} }}'d fit in with our community...#$b#But from this day forward, @ is going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite @ and %spouse in the bonds of marriage.",
+					"Utility.cs.5369": "When @ first arrived in Pelican Town, no one knew if {{Lowercase: {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }} }}'d fit in with our community...#$b#But from this day forward, @ is going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite @ and %spouse in the bonds of marriage.",
+					"Utility.cs.5371": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5373": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5375": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5377": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5229": " {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'ve worked hard on {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} farm, ",
+					"Utility.cs.5230": " {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'ve worked hard on {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} farm, ",
+					"MultiplayerUtility.cs.12478": "{0} changed {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} name to '{1}'",
+					"MultiplayerUtility.cs.12479": "{0} changed {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} name to '{1}'",
+					"DesertTrader4_male": "The camel seems to like you, {{Lowercase: {{Random: {{Hana.GNMTokens/TraderNoun}} }} }}. That is indeed a very good sign.",
+					"DesertTrader4_female": "The camel seems to like you, {{Lowercase: {{Random: {{Hana.GNMTokens/TraderNoun}} }} }}. That is indeed a very good sign.",
+					"Farmer.cs.2023": "Farmer",
+					"Farmer.cs.2024": "Farmer",
+					"ItemDeliveryQuest.cs.13560": "Looking for a sweetheart to bring me {0}.       -Haley",
+					"ItemDeliveryQuest.cs.13563": "Looking for a sweetheart to bring me {0}.       -Haley",
+					"ItemDeliveryQuest.cs.13571": "Looking for a cutie to bring me {0}.       -Sam",
+					"ItemDeliveryQuest.cs.13574": "Looking for a cutie to bring me {0}.       -Sam"
+				},
+			"LogName": "Fix StringsFromCSFiles - Plural"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries":
+				{
+					"Event.cs.1308": "You've done well, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}.#$b#%farm Farm has never looked better. It's an honor to the family name.#$b#Grandpa is pleased.#$b#I must return to the other world, now... but feel free to call on me again when you're ready.",
+					"Event.cs.1309": "I'm so proud of you, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}!#$b#You've really turned the place around since we last spoke!#$b#You're a better farmer than I ever was, and you've brought great honor to the family name.#$b#I can feel it now... My spirit is finally put to rest. Bless you.",
+					"Event.cs.1317": "You've done well, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}.#$b#%farm Farm has never looked better. It's an honor to the family name.#$b#Grandpa is pleased.",
+					"Event.cs.1318": "I'm so proud of you, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}!#$b#You're a better farmer than I ever was, and you've brought great honor to the family name.#$b#I can feel it now... My spirit is finally put to rest. Bless you.",
+					"GrandpaStory.cs.12026": "...and for my very special grand{{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}:",
+					"GrandpaStory.cs.12028": "...and for my very special grand{{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}:",
+					"GrandpaStory.cs.12036": "When that happens, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}, you'll be ready for this gift.",
+					"GrandpaStory.cs.12038": "When that happens, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}, you'll be ready for this gift.",
+					"GrandpaStory.cs.12051": "Dear {0},^^If you're reading this, you must be in dire need of a change.^^The same thing happened to me, long ago. I'd lost sight of what mattered most in life... real connections with other people and nature. So I dropped everything and moved to the place I truly belong.^^^I've enclosed the deed to that place... my pride and joy: {1} Farm. It's located in Stardew Valley, on the southern coast. It's the perfect place to start your new life.^^This was my most precious gift of all, and now it's yours. I know you'll honor the family name, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}. Good luck.^^Love, Grandpa^^P.S. If Lewis is still alive say hi to the old guy for me, will ya?",
+					"GrandpaStory.cs.12055": "Dear {0},^^If you're reading this, you must be in dire need of a change.^^The same thing happened to me, long ago. I'd lost sight of what mattered most in life... real connections with other people and nature. So I dropped everything and moved to the place I truly belong.^^^I've enclosed the deed to that place... my pride and joy: {1} Farm. It's located in Stardew Valley, on the southern coast. It's the perfect place to start your new life.^^This was my most precious gift of all, and now it's yours. I know you'll honor the family name, my {{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }}. Good luck.^^Love, Grandpa^^P.S. If Lewis is still alive say hi to the old guy for me, will ya?",
+					"TV.cs.13128": "Ah... I sense that a new viewer has joined us. A young {{Lowercase: {{Random: {{Hana.GNMTokens/GenericNoun}} }} }} from... Stardew Valley? Welcome, welcome!",
+					"TV.cs.13130": "Ah... I sense that a new viewer has joined us. A young {{Lowercase: {{Random: {{Hana.GNMTokens/GenericNoun}} }} }} from... Stardew Valley? Welcome, welcome!",
+					"Utility.cs.5367": "When @ first arrived in Pelican Town, no one knew if {{Lowercase: {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }} }}'d fit in with our community...#$b#But from this day forward, @ is going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite @ and %spouse in the bonds of marriage.",
+					"Utility.cs.5369": "When @ first arrived in Pelican Town, no one knew if {{Lowercase: {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }} }}'d fit in with our community...#$b#But from this day forward, @ is going to be as much a part of this town as any of us!$h#$b#It is my great honor on this day {0} of {1}, to unite @ and %spouse in the bonds of marriage.",
+					"Utility.cs.5371": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5373": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5375": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5377": "@... %spouse... #$b# As the mayor of Pelican Town, and regional bearer of the matrimonial seal, I now pronounce you married!$h",
+					"Utility.cs.5229": " {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'s worked hard on {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} farm, ",
+					"Utility.cs.5230": " {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'s worked hard on {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} farm, ",
+					"MultiplayerUtility.cs.12478": "{0} changed {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} name to '{1}'",
+					"MultiplayerUtility.cs.12479": "{0} changed {{Lowercase: {{Random: {{Hana.GNMTokens/PossessivePronoun}} }} }} name to '{1}'",
+					"DesertTrader4_male": "The camel seems to like you, {{Lowercase: {{Random: {{Hana.GNMTokens/TraderNoun}} }} }}. That is indeed a very good sign.",
+					"DesertTrader4_female": "The camel seems to like you, {{Lowercase: {{Random: {{Hana.GNMTokens/TraderNoun}} }} }}. That is indeed a very good sign.",
+					"Farmer.cs.2023": "Farmer",
+					"Farmer.cs.2024": "Farmer",
+					"ItemDeliveryQuest.cs.13560": "Looking for a sweetheart to bring me {0}.       -Haley",
+					"ItemDeliveryQuest.cs.13563": "Looking for a sweetheart to bring me {0}.       -Haley",
+					"ItemDeliveryQuest.cs.13571": "Looking for a cutie to bring me {0}.       -Sam",
+					"ItemDeliveryQuest.cs.13574": "Looking for a cutie to bring me {0}.       -Sam"
+				},
+			"LogName": "Fix StringsFromCSFiles - Singular",
+			"When": 
+				{
+					"Hana.GNMTokens/Singular": true
+				}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries":
+				{
+					"NPC.cs.4440": "{0}, I hope our adoption request gets approved. I want a baby.$l",
+					"NPC.cs.4441": "{0}, I filed our adoption papers. Now all we can do is cross our fingers and wait.$l",
+					"NPC.cs.4442": "Ugh...$s",
+					"NPC.cs.4443": "Ugh... can't you make your own breakfast?$s",
+					"NPC.cs.4444": "{0}, I hope our adoption request gets approved. I want a baby.$l",
+					"NPC.cs.4445": "{0}, I filed our adoption papers. Now all we can do is cross our fingers and wait.$l",
+					"NPC.cs.4447": "{0}, I hope our adoption request gets approved. I want a baby.$l",
+					"NPC.cs.4448": "{0}, I filed our adoption papers. Now all we can do is cross our fingers and wait.$l"
+				},
+				"LogName": "Fix StringsFromCSFiles - Baby Dialogue",
+				"When": 
+					{
+						"NoDetectPregnancyRole": true
+					}
+		}
+	]
+}

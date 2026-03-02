@@ -1,0 +1,22 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Strings/Events",
+			"Entries":
+				{
+					"BirthMessage_Adoption": "During the night, the adoption agency dropped off your new baby {0}.",
+					"BirthMessage_PlayerMother": "During the night, the adoption agency dropped off your new baby {0}.",
+					"BirthMessage_SpouseMother": "During the night, the adoption agency dropped off your new baby {0}.",
+					"HaveBabyQuestion": "Should we adopt a baby, {0}?",
+					"HaveBabyQuestion_Adoption": "Should we adopt a baby, {0}?"
+				},
+			"LogName": "Fix Events",
+			"When": 
+			{
+				"NoDetectPregnancyRole": true
+			}
+		}
+	]
+}

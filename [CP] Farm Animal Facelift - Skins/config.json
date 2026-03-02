@@ -1,0 +1,23 @@
+{
+  "White Cow Default": "white",
+  "White Cow Skins": "white, solid, holstein",
+  "Brown Cow Default": "brown",
+  "Brown Cow Skins": "brown, solid, black, highland",
+  "Pig Default": "pink",
+  "Pig Skins": "pink, black, white, tamworth, black spots, brown spots",
+  "Goat Default": "blonde",
+  "Goat Skins": "blonde, white, black, brown, white blaze, black blaze",
+  "Sheep Default": "suffolk",
+  "Sheep Skins": "suffolk, black, white",
+  "Duck Default": "white",
+  "Duck Skins": "mallard, brown, black, white",
+  "Rabbit Default": "blonde",
+  "Rabbit Skins": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots, void",
+  "Void Chicken Default": "void",
+  "Void Chicken Skins": "void",
+  "Chicken Default": "edited",
+  "Dinosaur Default": "green",
+  "Dinosaur Skins": "green",
+  "Ostrich Default": "brown",
+  "Ostrich Skins": "brown"
+}

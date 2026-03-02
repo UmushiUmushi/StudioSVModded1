@@ -1,0 +1,22 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "focustense.StardewUI",
+  "Name": "StardewUI",
+  "Author": "focustense",
+  "Version": "0.6.1",
+  "Description": "Declarative UI framework",
+  "MinimumApiVersion": "4.1.10",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "StardewUI.dll",
+  "UpdateKeys": [
+    "Nexus:28870",
+    "GitHub:focustense/StardewUI"
+  ]
+}

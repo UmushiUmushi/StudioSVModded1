@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries":
+				{
+					"BathHouse_WomensLocker.1": "Hygiene Items."
+				},
+			"LogName": "Fix StringsFromMaps"
+		}
+	]
+}

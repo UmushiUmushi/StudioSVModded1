@@ -1,0 +1,18 @@
+{
+   "Name": "GenderNeutralityMod",
+   "Author": "Hana",
+   "Version": "5.2.0",
+   "Description": "Makes Stardew Valley nonbinary friendly!",
+   "UniqueID": "Hana.GenderNeutralityMod",
+   "MinimumApiVersion": "4.0.0",
+   "UpdateKeys": ["Nexus:722"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher",
+      "MinimumVersion": "2.0.0"
+   },
+   "Dependencies": [
+   {
+      "UniqueID": "Hana.GNMTokens"
+   }
+]
+}

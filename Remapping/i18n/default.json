@@ -1,0 +1,234 @@
+//REMAPPING
+
+{
+	//CONFIGS   //1.5.2
+	"config.section.RMPCONF1.name": "Extra Settings",
+	"config.RMP Fishing Trawle Old Trawler Sprite.name": "Fishing Trawle: Boat Model",
+	"config.RMP Fishing Trawle Old Trawler Sprite.description": "Choose which boat model you want to use in the Fishing Trawle mod.",
+	"config.RMP Fishing Trawle Old Trawler Sprite.values.Default":"Default",
+	"config.RMP Fishing Trawle Old Trawler Sprite.values.Old":"Old",
+
+	"config.RMPRedSchoolLazyVersion.name": "Little Red School: Version",
+	"config.RMPRedSchoolLazyVersion.description": "Choose which version of the mod you are using\nDefault: The school starts destroyed and is repaired later\nLazy Version: The school is already built from the beginning.",
+	"config.RMPRedSchoolLazyVersion.values.Default":"Default",
+	"config.RMPRedSchoolLazyVersion.values.LazyVersion":"Lazy Version", //Keep this topic in english
+
+	"config.RMPRidgesideVillageMapIcone.name": "Ridgeside: Icone On Minimap",
+	"config.RMPRidgesideVillageMapIcone.description": "Disable the RSV icon on the minimap if the mod itself has also been removed in the settings.",
+
+	"config.RMPWalkDesertExtraRoad.name": "Walk Desert: Extra Road",
+	"config.RMPWalkDesertExtraRoad.description": "Enable this if you want the road leading to Ridgeside Village to appear on the map.\nNote: It may make the map look very crowded; It only appears when Ridgeside is installed.",
+
+	"config.section.RMPCONF2.name": "Enable and Disable",
+	"config.RMPEnableAspen.name": "Enable Aspen",
+	"config.RMPEnableAspen.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableAyeisha.name": "Enable Ayeisha",
+	"config.RMPEnableAyeisha.description": "Uncheck to disable the mod",
+	
+	"config.RMPEnableBeachAdditionalStorage.name": "Enable Beach Additional Storage",
+	"config.RMPEnableBeachAdditionalStorage.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableBeachExtensionForCrab.name": "Enable Beach Extension For Crab",
+	"config.RMPEnableBeachExtensionForCrab.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableBridgetoBlueMoon.name": "Enable Bridge to Blue Moon",
+	"config.RMPEnableBridgetoBlueMoon.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableCapeStardew.name": "Enable Cape Stardew",
+	"config.RMPEnableCapeStardew.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableDam.name": "Enable Dam",
+	"config.RMPEnableDam.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableDemonSlayer.name": "Enable Demon Slayer",
+	"config.RMPEnableDemonSlayer.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableDownhill.name": "Enable Downhill",
+	"config.RMPEnableDownhill.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableFIASA.name": "Enable FISA",
+	"config.RMPEnableFIASA.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableFishingPond.name": "Enable Fishing Pond",
+	"config.RMPEnableFishingPond.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableFishingTrawler.name": "Enable Fishing Trawler",
+	"config.RMPEnableFishingTrawler.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableGardenVillage.name": "Enable Garden Village",
+	"config.RMPEnableGardenVillage.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableGMMJosephSeed.name": "Enable GMM Joseph Seed",
+	"config.RMPEnableGMMJosephSeed.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableGMMLouvierFromagerie.name": "Enable GMM Louvier Fromagerie",
+	"config.RMPEnableGMMLouvierFromagerie.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableGMMPaisleyBoutique.name": "Enable GMM Paisley Boutique",
+	"config.RMPEnableGMMPaisleyBoutique.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableHaleyBakery.name": "Enable Haley Bakery",
+	"config.RMPEnableHaleyBakery.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableIsla.name": "Enable Isla",
+	"config.RMPEnableIsla.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableJane.name": "Enable Jane",
+	"config.RMPEnableJane.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableJuliet.Jessie.name": "Enable Juliet Jessie",
+	"config.RMPEnableJuliet.Jessie.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableJuna.name": "Enable Juna",
+	"config.RMPEnableJuna.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableLawOrder.name": "Enable Law Order",
+	"config.RMPEnableLawOrder.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableLittleRedSchool.name": "Enable Little Red School",
+	"config.RMPEnableLittleRedSchool.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableLouisGarage.name": "Enable Louis Garage",
+	"config.RMPEnableLouisGarage.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableLunna.name": "Enable Lunna",
+	"config.RMPEnableLunna.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableMineralTown.name": "Enable Mineral Town",
+	"config.RMPEnableMineralTown.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableNorthwestCoast.name": "Enable Northwest Coast",
+	"config.RMPEnableNorthwestCoast.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableSubmarine.name": "Enable Submarine",
+	"config.RMPEnableSubmarine.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableOrnithologistGuild.name": "Enable Ornithologist Guild",
+	"config.RMPEnableOrnithologistGuild.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableRangerTaro.name": "Enable Ranger Taro",
+	"config.RMPEnableRangerTaro.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableRidgesideVillage.name": "Enable Ridgeside Village",
+	"config.RMPEnableRidgesideVillage.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableSunberryVillage.name": "Enable Sunberry Village",
+	"config.RMPEnableSunberryVillage.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableSydney.name": "Enable Sydney",
+	"config.RMPEnableSydney.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableTheBackwoodHill.name": "Enable The Backwood Hill",
+	"config.RMPEnableTheBackwoodHill.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableTheFishmonger.name": "Enable The Fishmonger",
+	"config.RMPEnableTheFishmonger.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableTherapist.name": "Enable Therapist",
+	"config.RMPEnableTherapist.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableATheStrayCatfe.name": "Enable The Stray Catfe",
+	"config.RMPEnableATheStrayCatfe.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableAWalktotheDesert.name": "Enable A Walk to the Desert",
+	"config.RMPEnableAWalktotheDesert.description": "Uncheck to disable the mod",
+
+	"config.RMPEnableWilford.name": "Enable Wilford",
+	"config.RMPEnableWilford.description": "Uncheck to disable the mod",
+
+	//MESSAGES
+
+	"RMP.aspen": "Aspen's Farm", //1.3.0
+	"RMP.aspen1": "Aspen's House", //1.3.0
+	"RMP.alecto": "Witch Alecto's Cabin", //1.2.0
+	"RMP.ayeish": "Van Road",
+	"RMP.backwood.hill": "Backwood Hill", //1.1.1
+	"RMP.beach.additional": "Beach Storage Space",
+	"RMP.cape.stardew": "Annetta's House",
+	"RMP.cape.stardew1": "Cape Forest",
+	"RMP.cape.stardew2": "Sea Cape",
+	"RMP.cape.stardew3": "Cape Stardew",
+	"RMP.cape.stardew4": "Cape Bus Stop",
+	"RMP.cape.stardew5": "Tunnel Cape",
+	"RMP.cape.stardew6": "Cape Cave", //2.0
+	"RMP.cape.stardew7": "Cape Islan",  //2.0
+	"RMP.cape.stardew8": "Caverna do Cabo", //2.0
+	"RMP.dam": "The Dam", //2.0
+	"RMP.dam1": "Dam Road", //2.0
+	"RMP.dam2": "The Cliff", //2.0
+	"RMP.dam3": "Afforestation Area", //2.0
+	"RMP.dam4": "Dumped Farm", //2.0
+	"RMP.dam5": "Pasture Farmhouse", //2.0
+	"RMP.dam6": "Pasture Mines", //2.0
+	"RMP.dam7": "Dam Mine", //2.0
+	"RMP.dam8": "Rest Cabin", //2.0
+	"RMP.dam9": "Hiking Course", //2.0
+	"RMP.dam10": "Quarry Cave", //2.0
+	"RMP.dam11": "The East Cliff", //2.0
+	"RMP.dam12": "Restarted Farm", //2.0
+	"RMP.demon.slayer": "Gyomei Himejima's estate", //1.4.0
+	"RMP.demon.slayer1": "Muichiro Tokito's estate", //1.4.0
+	"RMP.demon.slayer2": "Giyu Tomiok's estate", //1.4.0
+	"RMP.demon.slayer3": "Mitsuri Kanroji's estate", //1.4.0
+	"RMP.demon.slayer4": "Butterfly estate", //1.4.0
+	"RMP.demon.slayer5": "Rengoku Kyojuro's estate", //1.5.2
+	"RMP.demon.slayer6": "Sanemi Shinazugawa's estate", //1.5.2
+	"RMP.demon.slayer7": "Obanai Iguro's estate", //1.5.2
+	"RMP.demon.slayer8": "Tengen Uzui's estate", //1.5.2
+	"RMP.desert": "Calico Desert", //2.0
+	"RMP.desert1": "Skull Cavern", //2.0
+	"RMP.desert2": "Oasis", //2.0
+	"RMP.desert3": "Desert Trader", //2.0
+	"RMP.desert4": "Sand Dragon", //2.0
+	"RMP.downhill.project": "Destroyed Church", //1.5.0
+	"RMP.downhill.project1": "Valley Church", //1.5.0
+	"RMP.downhill.project2": "Julia's House", //1.5.0
+	"RMP.downhill.project3": "Priest's House", //1.5.0
+	"RMP.downhill.project4": "Arthur's House", //1.5.0
+	"RMP.downhill.project5": "Coal Mines", //1.5.0
+	"RMP.downhill.project6": "Monte Mor", //1.5.0
+	"RMP.fiasa": "FIASA", //1.4.0
+	"RMP.fishing.pond": "Fishing Pond",
+	"RMP.fishing.pond1": "Fishing Pond Facilities",
+	"RMP.fishmonger": "Constance's Fishmonger", //1.2.0
+	"RMP.garden.village": "Garden Village",
+	"RMP.haley.bakery": "Haley's Bakery\n(Open Tuesday to Friday from 9am-3pm)",
+	"RMP.isla": "Underwater Cove", //1.3.0
+	"RMP.isla1": "Isla's Cove", //1.3.0
+	"RMP.jane": "Jane's Trailer",
+	"RMP.juliet": "Jessie's House", //1.1.0
+	"RMP.juna": "Juna's Cave",
+	"RMP.kid.treehouse": "Kid's Treehouse", //1.2.0
+	"RMP.law.order": "Closed Office", //1.1.4
+	"RMP.law.order1": "Sheriff's Office", //1.1.4
+	"RMP.louis.garage": "Louis's Garage\n(Open every day, from 8am-7pm)", //1.1.0
+	"RMP.lunna.house": "Lunna's Shed",
+	"RMP.lunna.lake": "Lake",
+	"RMP.mineral.town": "Highway Entrance", //1.2.0
+	"RMP.mineral.town1": "Underground Tunnel", //1.2.0
+	"RMP.my.submarine": "Submarine",
+	"RMP.northwest.coast": "Northwest Coast", //1.3.0
+	"RMP.ornithologist.guild": "Ornithologists Guild",
+	"RMP.ranger.taro": "Meadow", //1.3.0
+	"RMP.ranger.taro1": "Taro's Tent", //1.3.0
+	"RMP.ranger.taro2": "Train", //1.3.0
+	"RMP.red.school.old": "Old School House",
+	"RMP.red.school.new": "Red School House",
+	"RMP.RSV": "Cable Car",
+	"RMP.stray.catfe": "Stray Catfe\n(Open Tuesday to Sunday from 7am-2pm)",
+	"RMP.stray.catfe1": "Cafe Outdoors",
+	"RMP.sunberry": "Sunberry Village", //1.4.0
+	"RMP.sunberry1": "Sunberry Road", //1.4.0
+	"RMP.sunberry2": "Florest Shortcut", //1.4.0
+	"RMP.sydney": "Sydney's House",
+	"RMP.therapist": "Grey's Home", //1.5.0
+	"RMP.wilford": "Wilford's Greenhouse",
+	"RMP.wilford1": "East Woods",
+	"RMP.walk.desert": "Forest Road",
+	"RMP.walk.desert1": "Winding Road",
+	"RMP.walk.desert2": "Interchange",
+	"RMP.walk.desert3": "Ghost Town",
+	"RMP.walk.desert4": "Ghost Shop" //1.2.0
+
+}

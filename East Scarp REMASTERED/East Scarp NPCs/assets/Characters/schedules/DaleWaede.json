@@ -1,0 +1,35 @@
+{
+    "Changes": [
+        {
+            "LogName": "Dale",
+            "Action": "EditData",
+            "Target": "Characters/schedules/DaleWaede",
+            "Entries": {
+                "spring": "1000 EastScarp_Village 46 34 2 DaleWaede_sittingfootsies/1200 EastScarp_DaleHouse 17 7 1/1300 EastScarp_DaleHouse 15 5 0/1500 EastScarp_DaleHouse 12 4 2/1600 EastScarp_DaleHouse 13 5 1/1700 EastScarp_DaleHouse 7 5 0/1800 EastScarp_Village 46 41 2/2200 EastScarp_DaleHouse 1 5 1",
+                "Mon": "1000 EastScarp_Village 46 34 2 DaleWaede_sittingfootsies/1200 EastScarp_DaleHouse 17 7 1/1300 EastScarp_DaleHouse 15 5 0/1500 EastScarp_DaleHouse 12 4 2/1600 EastScarp_DaleHouse 13 5 1/1700 EastScarp_DaleHouse 7 5 0/1800 EastScarp_DaleHouse 5 8 2 DaleWaede_sit/2200 EastScarp_DaleHouse 1 5 1",
+                "EastScarpe_SpiritsEve": "1000 EastScarp_Village 46 34 2 DaleWaede_sittingfootsies/1200 EastScarp_VillageInn 15 35 0/1600 EastScarp_VillageInn 35 27 3 DaleWaede_sittingleft/1730 EastScarp_VillageInn 23 10 1/2020 Town 19 81 3/2200 EastScarp_DaleHouse 1 5 1",
+                "Wed": "GOTO Mon",
+                "Fri": "GOTO Mon",
+                "rain": "1000 EastScarp_DaleHouse 17 7 1/1300 EastScarp_DaleHouse 15 5 0/1500 EastScarp_DaleHouse 12 4 2/1600 EastScarp_DaleHouse 13 5 1/1700 EastScarp_DaleHouse 7 5 0/1800 EastScarp_Village 46 41 2/2200 EastScarp_DaleHouse 1 5 1",
+                "Sat": "1000 EastScarp_DaleHouse 7 5 0/1200 EastScarp_Village 25 103 DaleWaede_sittingfootsies/1510 EastScarp_DaleHouse 5 8 2 DaleWaede_sit/2200 EastScarp_DaleHouse 1 5 1",
+                "Sun": "GOTO Sat"
+            }
+        },
+        {
+            "LogName": "Valkyrie",
+            "Action": "EditData",
+            "Target": "Characters/schedules/ValkyrieDog",
+            "Entries": {
+                "spring": "1000 EastScarp_Village 45 35 1 ValkyrieDog_sitting/1200 EastScarp_DaleHouse 14 9 1 ValkyrieDog_snooze/1600 EastScarp_DaleHouse 14 7 1 square_7_1/1700 EastScarp_DaleHouse 6 5 0 ValkyrieDog_sitting/1800 EastScarp_Village 47 41 2 ValkyrieDog_sitting/2200 EastScarp_DaleHouse 2 8 1",
+                "Mon": "1000 EastScarp_Village 45 35 1 ValkyrieDog_sitting/1200 EastScarp_DaleHouse 14 9 1 ValkyrieDog_snooze/1600 EastScarp_DaleHouse 14 7 1 square_7_1/1700 EastScarp_DaleHouse 6 5 0 ValkyrieDog_sitting/1800 EastScarp_DaleHouse 2 8 1",
+                "EastScarpe_SpiritsEve": "1000 EastScarp_Village 45 35 1 ValkyrieDog_sitting/1200 EastScarp_VillageInn 14 34 1 ValkyrieDog_sitting/1600 EastScarp_VillageInn 34 27 3 ValkyrieDog_sitting/1730 EastScarp_VillageInn 23 11 1/2020 Town 18 82 3/2200 EastScarp_DaleHouse 2 8 1",
+                "Wed": "GOTO Mon",
+                "Fri": "GOTO Mon",
+                "rain": "1000 EastScarp_DaleHouse 14 9 1 ValkyrieDog_snooze/1600 EastScarp_DaleHouse 14 7 1 square_7_1/1700 EastScarp_DaleHouse 6 5 0 ValkyrieDog_sitting/1800 EastScarp_Village 47 41 2 square_5_1/2200 EastScarp_DaleHouse 2 8 1",
+                "Sat": "1000 EastScarp_DaleHouse 5 5 ValkyrieDog_sitting/1200 EastScarp_Village 24 104 ValkyrieDog_sitting_forward/1330 EastScarp_Village 24 111 square_10_8/1500 24 100 ValkyrieDog_sitting/1510 EastScarp_DaleHouse 14 7 1 square_7_1/1700 EastScarp_DaleHouse 6 5 0 ValkyrieDog_sitting/1800 EastScarp_DaleHouse 2 8 1 ValkyrieDog_snooze",
+                "Sun": "GOTO Sat"
+                //"EastScarpe_SpiritsEve": "1000 EastScarp_Village 45 35 1 ValkyrieDog_sitting/1200 EastScarp_VillageInn 15 35 0/1600 EastScarp_VillageInn 35 27 3 DaleWaede_sittingleft/1730 EastScarp_VillageInn 23 10 1/2020 Town 19 81 3/2200 EastScarp_DaleHouse 2 8 1"
+            }
+        }
+    ]
+}

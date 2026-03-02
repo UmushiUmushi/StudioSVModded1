@@ -1,0 +1,2534 @@
+{
+  "ForageSpawnEnabled": true,
+  "LargeObjectSpawnEnabled": true,
+  "OreSpawnEnabled": true,
+  "MonsterSpawnEnabled": true,
+  "Forage_Spawn_Settings": {
+    "Areas": [
+      {
+        "SpringItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "SummerItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "FallItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "WinterItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "UniqueAreaID": "LoresCoveBeach_Nova",
+        "MapName": "EastScarp_LoresCove",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "13,54/45,58",
+          "30,59/49,63"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "TenebrousNova.EliDylan.CP"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Fairy Stone",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Fairy Stone",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Fairy Stone",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Fairy Stone",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Secret Cave",
+        "MapName": "EastScarp_SecretCave",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "6,10;6,10"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          16,
+          20,
+          22,
+          18,
+          "EastScarp_Blue_Jay_Feather"
+        ],
+        "SummerItemIndex": [
+          396,
+          398,
+          402
+        ],
+        "FallItemIndex": [
+          281,
+          406,
+          420,
+          408,
+          "EastScarp_Blue_Jay_Feather"
+        ],
+        "WinterItemIndex": [
+          283,
+          412,
+          418
+        ],
+        "UniqueAreaID": "EastScarpeLand",
+        "MapName": "EastScarp_Village",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "0,0/76,79"
+        ],
+        "ExcludeCoordinates": [
+          "0,53/12,89"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          372,
+          718,
+          719,
+          723,
+          "EastScarp_SeaGlass",
+          "EastScarp_Pelican_Feather"
+        ],
+        "SummerItemIndex": [
+          372,
+          394,
+          718,
+          719,
+          723,
+          "EastScarp_SeaGlass"
+        ],
+        "FallItemIndex": [
+          372,
+          718,
+          719,
+          723,
+          "EastScarp_SeaGlass",
+          "EastScarp_Pelican_Feather"
+        ],
+        "WinterItemIndex": [
+          392,
+          718,
+          719,
+          723,
+          "EastScarp_SeaGlass"
+        ],
+        "UniqueAreaID": "EastScarpeBeach",
+        "MapName": "EastScarp_Village",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "0,98/66,123",
+          "40,79/67,103"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "SummerItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "FallItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "WinterItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "UniqueAreaID": "EastScarpeBeach_Nova",
+        "MapName": "EastScarp_Village",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 2,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "0,98/66,123",
+          "40,79/67,103"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "TenebrousNova.EliDylan.CP"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": [
+          "EastScarp_Wood_Duck_Feather"
+        ],
+        "SummerItemIndex": [],
+        "FallItemIndex": [
+          "EastScarp_Wood_Duck_Feather"
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "EastScarpePond",
+        "MapName": "EastScarp_Village",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "18,59/32,70"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasSeenEvent": "57870002"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": null,
+        "SummerItemIndex": [
+          372,
+          394,
+          718,
+          719,
+          723
+        ],
+        "FallItemIndex": null,
+        "WinterItemIndex": null,
+        "UniqueAreaID": "EastScarpe (summer extras)",
+        "MapName": "EastScarp_Village",
+        "MinimumSpawnsPerDay": 4,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "0,98/66,123",
+          "40,79/67,103"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [
+            "Summer"
+          ],
+          "Days": [
+            "12-14"
+          ],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_male"
+          },
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_female"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_male"
+          },
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_female"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "EastScarp_Pheasant_Feather"
+          }
+        ],
+        "WinterItemIndex": [],
+        "UniqueAreaID": "MountEvermore",
+        "MapName": "EastScarp_MtEvermore",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "22,28;27,31"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_female"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_female"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_female"
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "Object",
+            "Name": "EastScarp_PheasantEgg_female"
+          }
+        ],
+        "UniqueAreaID": "MtEvermoreEgg1",
+        "MapName": "EastScarp_MtEvermore",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "20,33;20,33"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PheasantEgg_female",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PheasantEgg_female",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PheasantEgg_female",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PheasantEgg_female",
+                "Stack": 1
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "MtEvermoreEggs",
+        "MapName": "EastScarp_MtEvermore",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "55,26;55,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Low",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          404,
+          80
+        ],
+        "SummerItemIndex": [
+          404,
+          80
+        ],
+        "FallItemIndex": [
+          404,
+          80
+        ],
+        "WinterItemIndex": [
+          404,
+          80
+        ],
+        "UniqueAreaID": "DeepDark Foraging Area 1",
+        "MapName": "EastScarp_DeepDark",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "33,31/39,44"
+        ],
+        "ExcludeCoordinates": [
+          "38,34/38,44"
+        ],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 8,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 3,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wine",
+                "Stack": 1,
+                "PercentChanceToSpawn": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 2,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Cave Carrot",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_BiteBackMelon_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 8,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 3,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Lobster",
+                "Stack": 1,
+                "PercentChanceToSpawn": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 2,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Cave Carrot",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PuckerWort_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 8,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 3,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Cloth",
+                "Stack": 1,
+                "PercentChanceToSpawn": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 2,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Cave Carrot",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_Cuccaroot_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 2
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "breakable",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 8,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Sap",
+                "Stack": 3,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Wood",
+                "Stack": 5,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Mead",
+                "Stack": 1,
+                "PercentChanceToSpawn": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Mixed Seeds",
+                "Stack": 2,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "Cave Carrot",
+                "Stack": 1,
+                "PercentChanceToSpawn": 5
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_FrostBerry_Seed",
+                "Stack": 5,
+                "PercentChanceToSpawn": 2
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 2
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Underground1 forage area 1",
+        "MapName": "EastScarp_DeepDark",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "34,18/40,24",
+          "42,36/46,40",
+          "41,48/45,52"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_BiteBackMelon_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_PuckerWort_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_Cuccaroot_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "category": "buried",
+            "contents": [
+              {
+                "Category": "Object",
+                "Name": "coal",
+                "Stack": 1
+              },
+              {
+                "Category": "Object",
+                "Name": "EastScarp_FrostBerry_Seed",
+                "Stack": 3,
+                "PercentChanceToSpawn": 25
+              },
+              {
+                "Category": "Object",
+                "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                "Stack": 1,
+                "PercentChanceToSpawn": 25
+              }
+            ]
+          }
+        ],
+        "UniqueAreaID": "Deepdark Buried area 1",
+        "MapName": "EastScarp_DeepDark",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "35,19/40,24",
+          "43,36/45,39",
+          "40,48/45,52"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "High",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "SpringItemIndex": [
+          440
+        ],
+        "SummerItemIndex": [
+          440
+        ],
+        "FallItemIndex": [
+          440
+        ],
+        "WinterItemIndex": [
+          440
+        ],
+        "UniqueAreaID": "JacobBarn",
+        "MapName": "EastScarp_JacobBarn",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "1,7/10,7",
+          "7,3/7,6"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": [
+          152
+        ],
+        "SummerItemIndex": [
+          152
+        ],
+        "FallItemIndex": [
+          152
+        ],
+        "WinterItemIndex": [
+          152
+        ],
+        "UniqueAreaID": "ESOrchard Beach",
+        "MapName": "EastScarp_Orchard",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "9,61/40,66",
+          "9,67/31,73"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "SummerItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "FallItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "WinterItemIndex": [
+          "TenebrousNova.EliDylan.CP_FrogspawnCoral",
+          "TenebrousNova.EliDylan.CP_TorchCoral",
+          "TenebrousNova.EliDylan.CP_DuncanCoral",
+          "TenebrousNova.EliDylan.CP_Trachyphyllia",
+          "TenebrousNova.EliDylan.CP_Scolymia",
+          "TenebrousNova.EliDylan.CP_AcanCoral",
+          "TenebrousNova.EliDylan.CP_ToadstoolCoral",
+          "TenebrousNova.EliDylan.CP_CandycaneCoral",
+          "TenebrousNova.EliDylan.CP_AcroporaCoral",
+          "TenebrousNova.EliDylan.CP_EleganceCoral",
+          "TenebrousNova.EliDylan.CP_Gorgonian"
+        ],
+        "UniqueAreaID": "ESOrchard Beach_Nova",
+        "MapName": "EastScarp_Orchard",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "9,61/40,66",
+          "9,67/31,73"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {
+            "HasMod": "TenebrousNova.EliDylan.CP"
+          },
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "SpringItemIndex": [
+          {
+            "Category": "item",
+            "Name": "EastScarp_Vintage_Ruby_Ring"
+          }
+        ],
+        "SummerItemIndex": [
+          {
+            "Category": "item",
+            "Name": "EastScarp_Vintage_Ruby_Ring"
+          }
+        ],
+        "FallItemIndex": [
+          {
+            "Category": "item",
+            "Name": "EastScarp_Vintage_Ruby_Ring"
+          }
+        ],
+        "WinterItemIndex": [
+          {
+            "Category": "item",
+            "Name": "EastScarp_Vintage_Ruby_Ring"
+          }
+        ],
+        "UniqueAreaID": "SmugglerDen",
+        "MapName": "EastScarp_SmugglerDen",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "33,7;33,7"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "SpringItemIndex": [
+          597,
+          591
+        ],
+        "SummerItemIndex": [
+          376,
+          593
+        ],
+        "FallItemIndex": [
+          421,
+          595
+        ],
+        "WinterItemIndex": [
+          418
+        ],
+        "UniqueAreaID": "ZuzuPark",
+        "MapName": "EastScarp_ZuzuBurb",
+        "MinimumSpawnsPerDay": -1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "1,1/13,10"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 2
+      },
+      {
+        "SpringItemIndex": [
+          109
+        ],
+        "SummerItemIndex": [
+          109
+        ],
+        "FallItemIndex": [
+          109
+        ],
+        "WinterItemIndex": [
+          109
+        ],
+        "UniqueAreaID": "EastScarp_SmugglerDen forage area 1",
+        "MapName": "EastScarp_SmugglerDen",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "5,7;5,7"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      }
+    ],
+    "PercentExtraSpawnsPerForagingLevel": 0,
+    "SpringItemIndex": [
+      440
+    ],
+    "SummerItemIndex": [
+      440
+    ],
+    "FallItemIndex": [
+      440
+    ],
+    "WinterItemIndex": [
+      440
+    ],
+    "CustomTileIndex": []
+  },
+  "Large_Object_Spawn_Settings": {
+    "Areas": [
+      {
+        "ObjectTypes": [
+          "Stump"
+        ],
+        "FindExistingObjectLocations": false,
+        "PercentExtraSpawnsPerSkillLevel": 0,
+        "RelatedSkill": "Foraging",
+        "UniqueAreaID": "ESOrchard",
+        "MapName": "EastScarp_Orchard",
+        "MinimumSpawnsPerDay": -2,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "12,20/27,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Medium",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 1
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "Ore_Spawn_Settings": {
+    "Areas": [
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": null,
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "DeepDark Ore Area 1",
+        "MapName": "EastScarp_DeepDark",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 15,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "1,9/31,54"
+        ],
+        "ExcludeCoordinates": [
+          "16,15/31,45"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": 3
+      },
+      {
+        "MiningLevelRequired": null,
+        "StartingSpawnChance": {
+          "Stone": 65,
+          "Copper": 5,
+          "Iron": 5,
+          "Gold": 3,
+          "Iridium": 1,
+          "Geode": 5,
+          "FrozenGeode": 2,
+          "MagmaGeode": 2,
+          "OmniGeode": 2,
+          "Gem": 2,
+          "Mystic": 0,
+          "Radioactive": 0,
+          "Diamond": 1,
+          "Ruby": 1,
+          "Jade": 1,
+          "Amethyst": 1,
+          "Topaz": 1,
+          "Emerald": 1,
+          "Aquamarine": 1,
+          "Mussel": 0,
+          "Fossil": 0,
+          "Clay": 0,
+          "CinderShard": 0
+        },
+        "LevelTenSpawnChance": null,
+        "UniqueAreaID": "EastScarp_SmugglerDen ore area 1",
+        "MapName": "EastScarp_SmugglerDen",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 4,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "24,11/29,15"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "PercentExtraSpawnsPerMiningLevel": 0,
+    "MiningLevelRequired": {
+      "Stone": 0,
+      "Geode": 0,
+      "FrozenGeode": 0,
+      "MagmaGeode": 0,
+      "OmniGeode": 0,
+      "Gem": 0,
+      "Copper": 0,
+      "Iron": 0,
+      "Gold": 0,
+      "Iridium": 0,
+      "Mystic": 0,
+      "Radioactive": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 0,
+      "Amethyst": 0,
+      "Topaz": 0,
+      "Emerald": 0,
+      "Aquamarine": 0,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
+    },
+    "StartingSpawnChance": {
+      "Stone": 80,
+      "Geode": 4,
+      "FrozenGeode": 0,
+      "MagmaGeode": 0,
+      "OmniGeode": 0,
+      "Gem": 1,
+      "Copper": 10,
+      "Iron": 1,
+      "Gold": 0,
+      "Iridium": 0,
+      "Mystic": 0,
+      "Radioactive": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 1,
+      "Amethyst": 1,
+      "Topaz": 1,
+      "Emerald": 0,
+      "Aquamarine": 1,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
+    },
+    "LevelTenSpawnChance": {
+      "Stone": 68,
+      "Geode": 10,
+      "FrozenGeode": 0,
+      "MagmaGeode": 0,
+      "OmniGeode": 0,
+      "Gem": 1,
+      "Copper": 5,
+      "Iron": 5,
+      "Gold": 1,
+      "Iridium": 0,
+      "Mystic": 0,
+      "Radioactive": 0,
+      "Diamond": 0,
+      "Ruby": 0,
+      "Jade": 2,
+      "Amethyst": 2,
+      "Topaz": 2,
+      "Emerald": 2,
+      "Aquamarine": 2,
+      "Mussel": 0,
+      "Fossil": 0,
+      "Clay": 0,
+      "CinderShard": 0
+    },
+    "CustomTileIndex": []
+  },
+  "Monster_Spawn_Settings": {
+    "Areas": [
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Lava Crab",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "EastScarpe monster area 1",
+        "MapName": "EastScarp_Village",
+        "MinimumSpawnsPerDay": 5,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "39,81/66,124"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 1800,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 3,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "!PLAYER_HAS_SEEN_EVENT host 63079050"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Lava Crab",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "EastScarpe monster Active Special Order",
+        "MapName": "EastScarp_Village",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 30,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "39,81/66,124"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 1700,
+          "EndTime": 2600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 5,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "PLAYER_SPECIAL_ORDER_ACTIVE host EastScarp.SpecialOrders.SlayCrabs"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Rock Crab",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Wilderness Golem",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Bat",
+            "Settings": {
+              "RelatedSkill": "Combat",
+              "MaximumSkillLevel": 6
+            }
+          },
+          {
+            "MonsterName": "Lava Bat",
+            "Settings": {
+              "Sprite": "Characters/Monsters/ESMineBat",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 7,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Void Essence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Coal",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Frost Bat",
+            "Settings": {
+              "Sprite": "Characters/Monsters/ESMineBat",
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 6,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 90
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "Stack": 2,
+                  "PercentChanceToSpawn": 50
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Void Essence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 2
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Coal",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Bat",
+            "Settings": {
+              "Sprite": "Characters/Monsters/ESMineBatIridium",
+              "HP": 300,
+              "Damage": 30,
+              "Defense": 3,
+              "DodgeChance": 2,
+              "EXP": 30,
+              "RelatedSkill": "Combat",
+              "MinimumSkillLevel": 8,
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 90
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Bat Wing",
+                  "Stack": 2,
+                  "PercentChanceToSpawn": 50
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Void Essence",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 5
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Coal",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 10
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iridium Ore",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 1
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iridium Ore",
+                  "Stack": 2,
+                  "PercentChanceToSpawn": 0.6
+                },
+                {
+                  "Category": "Object",
+                  "Name": "Iridium Ore",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 0.3
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "Underground Monster Area",
+        "MapName": "EastScarp_DeepDark",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "1,9/46,59"
+        ],
+        "ExcludeCoordinates": [
+          "16,16/32,45"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 2400,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 12,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 90
+                },
+                {
+                  "Category": "Object",
+                  "Name": "EastScarp_CherryPit",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Blue Slime",
+            "Settings": {
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 90
+                },
+                {
+                  "Category": "Object",
+                  "Name": "EastScarp_CherryPit",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Purple Slime",
+            "Settings": {
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 90
+                },
+                {
+                  "Category": "Object",
+                  "Name": "EastScarp_CherryPit",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          },
+          {
+            "MonsterName": "Red Slime",
+            "Settings": {
+              "Loot": [
+                {
+                  "Category": "Object",
+                  "Name": "Slime",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 90
+                },
+                {
+                  "Category": "Object",
+                  "Name": "EastScarp_CherryPit",
+                  "Stack": 1,
+                  "PercentChanceToSpawn": 50
+                }
+              ]
+            }
+          }
+        ],
+        "UniqueAreaID": "ESOrchard monster area 1",
+        "MapName": "EastScarp_Orchard",
+        "MinimumSpawnsPerDay": 3,
+        "MaximumSpawnsPerDay": 10,
+        "IncludeTerrainTypes": [],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "15,5/48,28"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 1800,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 6,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": "slime"
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "!PLAYER_HAS_SEEN_EVENT host 63078004"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Blue Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Red Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Purple Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Green Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Blue Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Red Slime",
+            "Settings": {}
+          },
+          {
+            "MonsterName": "Big Purple Slime",
+            "Settings": {}
+          }
+        ],
+        "UniqueAreaID": "Smugglers Den",
+        "MapName": "EastScarp_SmugglerDen",
+        "MinimumSpawnsPerDay": 10,
+        "MaximumSpawnsPerDay": 20,
+        "IncludeTerrainTypes": [
+          "All"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [],
+        "ExcludeCoordinates": [
+          "24,11/29,15"
+        ],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": null,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": 1
+        },
+        "DaysUntilSpawnsExpire": 0
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {
+              "InstantKillImmunity": true,
+              "HP": 9999,
+              "DodgeChance": 9999
+            }
+          }
+        ],
+        "UniqueAreaID": "EastScarp_ToriSlimeBasement",
+        "MapName": "EastScarp_ToriSlimebasement",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "4,22/7,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Red Slime",
+            "Settings": {
+              "Gender": "M",
+              "InstantKillImmunity": true,
+              "HP": 9999,
+              "DodgeChance": 9999
+            }
+          }
+        ],
+        "UniqueAreaID": "EastScarp_ToriSlimebasement monster area 1",
+        "MapName": "EastScarp_ToriSlimebasement",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "9,22/12,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Blue Slime",
+            "Settings": {
+              "Gender": "F",
+              "InstantKillImmunity": true,
+              "HP": 9999,
+              "DodgeChance": 9999
+            }
+          }
+        ],
+        "UniqueAreaID": "EastScarp_ToriSlimebasement monster area 2",
+        "MapName": "EastScarp_ToriSlimebasement",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "14,22/17,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Purple Slime",
+            "Settings": {
+              "Gender": "M",
+              "InstantKillImmunity": true,
+              "HP": 9999,
+              "DodgeChance": 9999
+            }
+          }
+        ],
+        "UniqueAreaID": "EastScarp_ToriSlimebasement monster area 3",
+        "MapName": "EastScarp_ToriSlimebasement",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 3,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "19,22/22,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {
+              "Gender": "F",
+              "InstantKillImmunity": true,
+              "HP": 9999,
+              "DodgeChance": 9999
+            }
+          }
+        ],
+        "UniqueAreaID": "EastScarp_ToriSlimebasement monster area 4",
+        "MapName": "EastScarp_ToriSlimebasement",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 5,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "24,22/27,26"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 2,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Prismatic Slime",
+            "Settings": {
+              "Gender": "F",
+              "InstantKillImmunity": true,
+              "HP": 9999,
+              "DodgeChance": 9999
+            }
+          }
+        ],
+        "UniqueAreaID": "EastScarp_ToriSlimebasement monster area 5",
+        "MapName": "EastScarp_ToriSlimebasement",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Stone"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "19,16/29,16"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [
+            "PLAYER_HAS_MAIL Any Tori.PrismaticJelly"
+          ],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      },
+      {
+        "MonsterTypes": [
+          {
+            "MonsterName": "Green Slime",
+            "Settings": {
+              "Color": "255 127 0",
+              "Gender": "M",
+              "InstantKillImmunity": true,
+              "HP": 9999,
+              "DodgeChance": 9999
+            }
+          }
+        ],
+        "UniqueAreaID": "EastScarp_ToriSlimeBasement monster area 6",
+        "MapName": "EastScarp_ToriSlimebasement",
+        "MinimumSpawnsPerDay": 1,
+        "MaximumSpawnsPerDay": 1,
+        "IncludeTerrainTypes": [
+          "Grass"
+        ],
+        "ExcludeTerrainTypes": [],
+        "IncludeCoordinates": [
+          "1,16/10,17"
+        ],
+        "ExcludeCoordinates": [],
+        "StrictTileChecking": "Maximum",
+        "SpawnTiming": {
+          "StartTime": 600,
+          "EndTime": 600,
+          "MinimumTimeBetweenSpawns": 10,
+          "MaximumSimultaneousSpawns": 1,
+          "OnlySpawnIfAPlayerIsPresent": false,
+          "SpawnSound": ""
+        },
+        "ExtraConditions": {
+          "Years": [],
+          "Seasons": [],
+          "Days": [],
+          "WeatherYesterday": [],
+          "WeatherToday": [],
+          "WeatherTomorrow": [],
+          "GameStateQueries": [],
+          "CPConditions": {},
+          "EPUPreconditions": [],
+          "LimitedNumberOfSpawns": null
+        },
+        "DaysUntilSpawnsExpire": null
+      }
+    ],
+    "CustomTileIndex": []
+  },
+  "QuarryTileIndex": [
+    556,
+    558,
+    583,
+    606,
+    607,
+    608,
+    630,
+    635,
+    636,
+    680,
+    681,
+    685
+  ],
+  "File_Conditions": {
+    "FarmTypes": [],
+    "FarmerNames": [],
+    "SaveFileNames": [],
+    "OtherMods": {}
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "Changes": [
+    /*Loves: fried calamari, salmon dinner, fish taco , fried eel, spicy eel, sashimi, maki roll, Dish O’ The Sea, Seafoam Pudding, Poi, Tropical Curry, any and all items from the PPJA Cannabis pack
+Likes: Fish category, shells, Algae Soup, Chowder, Fish Stew, tom kha soup, Baked fish, Crab cakes, shrimp cocktail, Squid Ink Ravioli, common mushrooms
+Dislikes: Most forage, other than common mushrooms
+Hates: Dairy
+*/ // "Keanu_Surfboard": "16/16/16",
+    {
+      "LogName": "Animations",
+      "Action": "EditData",
+      "Target": "Data/animationDescriptions",
+      "Entries": {
+        "keanuavis_sleep": "23/23/23",
+        "keanuavis_sleepin": "23/23/23"
+      }
+    },
+    {
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/ScheduleAnimationExtensionData",
+      "Entries": {
+        "keanuavis_surfboard": {
+          "SourceRectSize": "32, 32",
+          "DrawOffset": "0, 0",
+          // "OnStart": { "Emote": 56, "PlaySound": "dwop" },
+          // "OnEnd": { "Emote": null, "PlaySound": "dwop" }
+        }
+      }
+    },
+    {
+      "LogName": "Dialogue",
+      "Action": "Include",
+      "FromFile": "assets/Characters/Dialogue/KeanuAvis.json",
+    },
+    {
+      "LogName": "Scheules",
+      "Action": "Include",
+      "FromFile": "assets/Characters/schedules/KeanuAvis.json",
+    },
+    {
+      "Action": "Load",
+      "Target": "Characters/AlanaAvis",
+      "FromFile": "assets/Characters/TempActors/AlanaAvis.png"
+    },
+    {
+      "Action": "Load",
+      "Target": "Portraits/AlanaAvis",
+      "FromFile": "assets/Portraits/AlanaAvis.png"
+    },
+    {
+      "LogName": "Load Keanu  Portraits",
+      "Action": "Load",
+      "Target": "Portraits/KeanuAvis, Portraits/KeanuAvis_Summer, Portraits/KeanuAvis_Fall, Portraits/KeanuAvis_Winter, Portraits/KeanuAvis_Beach, Portraits/KeanuAvis_Wetsuit, Portraits/KeanuAvis_FlowerDance, Characters/KeanuAvis,  Characters/KeanuAvis_Summer,  Characters/KeanuAvis_Fall,  Characters/KeanuAvis_Winter,  Characters/KeanuAvis_Beach,  Characters/KeanuAvis_Wetsuit,  Characters/KeanuAvis_FlowerDance",
+      "FromFile": "assets/{{TargetPathOnly}}/KeanuAvis/{{TargetWithoutPath}}.png"
+    },
+    {
+      "LogName": "Keanu Intro Event",
+      "Action": "EditData",
+      "Target": "Data/Events/Saloon",
+      "Entries": {
+        "57871800/t 1800 2400": "Saloon1/-100 -100/farmer -100 -100 0 KeanuAvis 14 20 0 Gus 14 18 2 Emily 17 17 0 Willy 17 22 2 Clint 19 23 3 Pierre 11 20 0 Shane 21 17 2 Pam 7 18 1 Leah 2 20 1 Elliott 4 19 2 Harvey 18 20 0/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/animate Elliott false true 200 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 18 18 19 19 18 18 19 19 18 17 16 16 16 16 16 16 16 16 16 16 16 16/animate Gus false true 200 18 18 19 19 20 20 19 19/skippable/addConversationTopic KeanuIntro 3/viewport 14 18/pause 250/speak KeanuAvis \"{{i18n:57871800.0}}\"/speak Gus \"{{i18n:57871800.1}}\"/textAboveHead Gus \"{{i18n:57871800.2}}\"/textAboveHead KeanuAvis \"{{i18n:57871800.3}}\"/speak KeanuAvis \"{{i18n:57871800.4}}\"/playSound doorOpen/warp farmer 14 24/pause 500/advancedMove farmer false 0 -2 4 100/speak Gus \"{{i18n:57871800.5}}\"/speak KeanuAvis \"{{i18n:57871800.6}}\"/pause 500/faceDirection KeanuAvis 2/advancedMove KeanuAvis false 0 1 0 3 2 100/advancedMove farmer false 1 0 3 200/proceedPosition KeanuAvis/stopAnimation Gus 0/speak Gus \"{{i18n:57871800.7}}\"/warp KeanuAvis -100 -100/advancedMove farmer false -1 0 0 -2 4 100/pause 1000/textAboveHead Gus \"{{i18n:57871800.8}}\"/pause 1000/emote farmer 8/speak Gus \"{{i18n:57871800.9}}\"/pause 500/emote Gus 28/pause 500/speak Gus \"{{i18n:57871800.10}}\"/pause 500/message \"{{i18n:57871800.11}}\"/fade/viewport -100 -1000/end"
+      }
+    },
+    {
+      "LogName": "Keanu Alana Intro",
+      "Action": "EditData",
+      "Target": "Data/Events/BusStop",
+      "Entries": {
+        "57871802/e 57871800/f KeanuAvis 500/t 600 2400": "continue/24 12/farmer 24 24 0 KeanuAvis 27 11 0 Abigail 999 999 2 Sam 999 999 2 Sebastian 999 999 2/viewport 24 14 clamp true/skippable/playSound busDoorOpen/advancedMove KeanuAvis false -3 0 2 3000 3 0 2 10 -3 0 2 3000/warp Sam 22 10/advancedMove Sam false 0 10 1 0 0 3 25 0 1 10/pause 1000/warp Abigail 22 10/advancedMove Abigail false 0 9 2 0 0 3 25 0 1 10/pause 1000/warp Sebastian 22 10/advancedMove Sebastian false 0 7 1 0 0 4 1 20/pause 1000/advancedMove farmer false 0 -12 4 10/pause 500/proceedPosition farmer/faceDirection KeanuAvis 2/speak KeanuAvis \"{{i18n:57871802.0}}\"/pause 250/speak KeanuAvis \"{{i18n:57871802.1}}\"/advancedMove Sebastian false 0 1 25 0 1 10/pause 250/speak KeanuAvis \"{{i18n:57871802.2}}\"/pause 500/emote farmer 8/pause 1000/speak KeanuAvis \"{{i18n:57871802.3}}\"/textAboveHead Sebastian \"{{i18n:57871802.4}}\"/speak KeanuAvis \"{{i18n:57871802.5}}\"/pause 500/emote KeanuAvis 28/pause 500/speak KeanuAvis \"{{i18n:57871802.6}}\"/warp Abigail -3000 -3000/warp Sam -3000 -3000/warp Sebastian -3000 -3000/pause 500/quickQuestion {{i18n:57871802.7}}#{{i18n:57871802.8}}#{{i18n:57871802.9}}#{{i18n:57871802.10}}(break)emote KeanuAvis 28\\pause 500\\speak KeanuAvis \"{{i18n:57871802.11}}\"(break)emote KeanuAvis 32\\pause 500\\speak KeanuAvis \"{{i18n:57871802.12}}\"(break)emote KeanuAvis 32\\pause 500\\speak KeanuAvis \"{{i18n:57871802.13}}\"/pause 500/faceDirection KeanuAvis 0/pause 1000/faceDirection KeanuAvis 2/speak KeanuAvis \"{{i18n:57871802.14}}\"/pause 500/message \"{{i18n:57871802.15}}\"/pause 1000/speak KeanuAvis \"{{i18n:57871802.16}}\"/pause 500/message \"{{i18n:57871802.17}}\"/pause 1000/emote farmer 60/pause 500/textAboveHead KeanuAvis \"{{i18n:57871802.18}}\"/pause 500/advancedMove farmer false 0 12/pause 500/faceDirection KeanuAvis 2/pause 2000/faceDirection KeanuAvis 0/pause 2000/proceedPosition farmer/addTemporaryActor AlanaAvis 16 32 22 10 2 true/changeName AlanaAvis Alana/pause 500/textAboveHead AlanaAvis \"{{i18n:57871802.19}}\"/faceDirection farmer 0/advancedMove farmer false 0 -2 4 100/advancedMove AlanaAvis false 0 1 1 1000/pause 1000/faceDirection KeanuAvis 3/speak KeanuAvis \"{{i18n:57871802.20}}\"/pause 500/emote KeanuAvis 28/pause 1000/speak AlanaAvis \"{{i18n:57871802.21}}\"/pause 500/speak KeanuAvis \"{{i18n:57871802.22}}\"/pause 2000/end"
+      }
+    },
+    {
+      "LogName": "Keanu's Beach Events",
+      "Action": "EditData",
+      "Target": "Data/Events/Beach",
+      "Entries": {
+        "57871804/f KeanuAvis 1000/t 1300 1700/w Sunny/Season Summer/DayOfWeek Mon Thu": "ocean/42 21/KeanuAvis 39 20 2 Jas 38 22 0 Vincent 40 22 0 farmer 38 8 2/skippable/emote KeanuAvis 16/speak KeanuAvis \"{{i18n:57871804.0}}\"/pause 500/textAboveHead Jas \"{{i18n:57871804.1}}\"/pause 500/jump Vincent 5/speak Vincent \"{{i18n:57871804.2}}\"/speak KeanuAvis \"{{i18n:57871804.3}}\"/pause 500/speak Vincent \"{{i18n:57871804.4}}\"/pause 500/speak KeanuAvis \"{{i18n:57871804.5}}\"/speak Jas \"{{i18n:57871804.6}}\"/textAboveHead KeanuAvis \"{{i18n:57871804.7}}\"/pause 500/jump Vincent 5/emote Vincent 16/speak Vincent \"{{i18n:57871804.8}}\"/textAboveHead Jas \"{{i18n:57871804.9}}\"/pause 500/emote KeanuAvis 28/pause 500/speak KeanuAvis \"{{i18n:57871804.10}}\"/speak Vincent \"{{i18n:57871804.11}}\"/pause 500/faceDirection Jas 1/faceDirection Vincent 3/speak Jas \"{{i18n:57871804.12}}\"/textAboveHead Vincent \"{{i18n:57871804.13}}\"/speak Vincent \"{{i18n:57871804.14}}\"/jump Vincent 5 true/jump Jas 5 true/advancedMove farmer false 0 12 1 100/pause 1000/speed Jas 5/speed Vincent 5/advancedMove Jas false -1 0 0 -18/advancedMove Vincent false 0 -9 -1 0 0 -9/pause 1500/textAboveHead Vincent \"{{i18n:57871804.15}}\"/emote KeanuAvis 28/proceedPosition farmer/faceDirection KeanuAvis 3/pause 500/speak KeanuAvis \"{{i18n:57871804.16}}\"/pause 500/faceDirection farmer 2/emote farmer 8/pause 1000/end"
+      }
+    },
+    {
+      "LogName": "Keanu's 6 heart event",
+      "Action": "EditData",
+      "Target": "Data/Events/EastScarp_Crossing",
+      "Entries": {
+        "57871806/f KeanuAvis 1500/t 1600 2000/w Sunny": "{{season}}_day_ambient/31 21/AlanaAvis 31 21 1 KeanuAvis 32 21 3 farmer 14 21 1/skippable/advancedMove farmer false 12 0 1 100/speak KeanuAvis \"{{i18n:57871806.0}}\"/speak AlanaAvis \"{{i18n:57871806.1}}\"/pause 500/speak KeanuAvis \"{{i18n:57871806.2}}\"/pause 500/emote KeanuAvis 32/pause 500/emote AlanaAvis 32/advancedMove AlanaAvis false -1 0 0 -2 2 100/proceedPosition AlanaAvis/faceDirection KeanuAvis 0/pause 1000/textAboveHead AlanaAvis \"{{i18n:57871806.3}}\"/pause 500/textAboveHead KeanuAvis \"{{i18n:57871806.4}}\"/pause 1000/faceDirection AlanaAvis 0/pause 500/warp AlanaAvis -100 -100/pause 500/advancedMove farmer false 5 0 1 100/pause 1500/faceDirection KeanuAvis 3/proceedPosition farmer/pause 500/emote farmer 8/pause 1000/speak KeanuAvis \"{{i18n:57871806.5}}\"/playSound shwip/message \"{{i18n:57871806.6}}\"/playMusic desolate/pause 1000/message \"{{i18n:57871806.7}}\"/pause 1000/playSound shwip/emote farmer 8/speak KeanuAvis \"{{i18n:57871806.8}}\"/pause 500/textAboveHead KeanuAvis \"{{i18n:57871806.9}}\"/speak KeanuAvis \"{{i18n:57871806.10}}\"/pause 500/emote farmer 40/pause 500/speak KeanuAvis \"{{i18n:57871806.11}}\"/pause 500/emote farmer 32/pause 500/emote KeanuAvis 32/pause 1500/advancedMove KeanuAvis false 12 0 1 100/pause 2000/end"
+      }
+    },
+    {
+      "LogName": "Keanu's 6 heart event",
+      "Action": "EditData",
+      "Target": "Data/Events/EastScarp_LoresCove",
+      "Entries": {
+        "57871807/e 57871806": "ocean/28 74/KeanuAvis 27 74 2 farmer 28 68 2/skippable/advancedMove farmer false 0 6 3 100/proceedPosition farmer/faceDirection KeanuAvis 1/emote KeanuAvis 32/pause 500/speak KeanuAvis \"{{i18n:57871807.0}}\"/pause 500/emote farmer 40/quickQuestion {{i18n:57871807.1}}#{{i18n:57871807.2}}#{{i18n:57871807.3}}#{{i18n:57871807.4}}(break)pause 500\\emote KeanuAvis 40\\pause 1000\\speak KeanuAvis \"{{i18n:57871807.5}}\"(break)speak KeanuAvis \"{{i18n:57871807.6}}\"(break)switchEvent 57871807_WalkAway/pause 500/speak KeanuAvis \"{{i18n:57871807.7}}\"/pause 500/emote farmer 32/pause 500/emote KeanuAvis 32/pause 500/faceDirection KeanuAvis 2/pause 500/faceDirection farmer 2/temporaryAnimatedSprite TileSheets\\critters 0 32 32 32 100 4 99 42 76 false false 50 0 1 0 0 0 motion -5 0/pause 2000/playSound seagulls/pause 3500/playMusic echos/faceDirection KeanuAvis 1/speak KeanuAvis \"{{i18n:57871807.8}}\"/pause 500/emote farmer 16 true/faceDirection farmer 3 true/speak KeanuAvis \"{{i18n:57871807.9}}\"/pause 500/emote farmer 8/pause 1000/textAboveHead KeanuAvis \"{{i18n:57871807.10}}\"/pause 500/faceDirection KeanuAvis 2/pause 500/speak KeanuAvis \"{{i18n:57871807.11}}\"/pause 500/quickQuestion {{i18n:57871807.12}}#{{i18n:57871807.13}}#{{i18n:57871807.14}}(break)faceDirection KeanuAvis 1\\pause 500\\speak KeanuAvis \"{{i18n:57871807.15}}\"(break)faceDirection KeanuAvis 1\\pause 500\\speak KeanuAvis \"{{i18n:57871807.16}}\"/pause 500/speak KeanuAvis \"{{i18n:57871807.17}}\"/faceDirection KeanuAvis 2/pause 500/emote KeanuAvis 28/pause 500/speak KeanuAvis \"{{i18n:57871807.18}}\"/speak KeanuAvis \"{{i18n:57871807.19}}\"/faceDirection KeanuAvis 1/pause 500/speak KeanuAvis \"{{i18n:57871807.20}}\"/pause 500/faceDirection KeanuAvis 2/pause 500/speak KeanuAvis \"{{i18n:57871807.21}}\"/temporaryAnimatedSprite TileSheets\\critters 0 32 32 32 100 4 99 42 76 false false 50 0 1 0 0 0 motion -5 0/pause 2000/playSound seagulls/pause 1500/faceDirection KeanuAvis 1/pause 500/speak KeanuAvis \"{{i18n:57871807.22}}\"/pause 500/jump farmer 5 true/emote farmer 36 true/pause 1500/faceDirection KeanuAvis 2/pause 500/speak KeanuAvis \"{{i18n:57871807.23}}\"/pause 2000/end",
+        //temporaryAnimatedSprite TileSheets\\critters 0 32 32 32 500 4 99 42 76 false false 50 0 1 0 0 0 motion -5 0/
+        "57871808/e 57871807/w sunny/DayOfWeek Sat Sun/t 1000 1700/!Season winter": "ocean/25 56/Sam 19 54 2 farmer 25 48 1 KeanuAvis 24 58 2 Jas 23 58 2 Vincent 25 58 2/skippable/addTemporaryActor AlanaAvis 16 32 25 42 2 true/changeName AlanaAvis Alana/animate Sam false true 120 52 53/temporaryAnimatedSprite EastScarp\\TAS 0 64 64 32 100 1 1 19 55 false false 1 0 1 0 0 0 hold_last_frame/playMusic EastScarpAppleCider/advancedMove farmer false 0 6 2 100/proceedPosition farmer/emote farmer 56/faceDirection Vincent 0 true/faceDirection KeanuAvis 0 true/faceDirection Jas 0 true/textAboveHead KeanuAvis \"{{playerName}}!\"/textAboveHead Vincent \"{{i18n:57871808.1}}\"/speed Vincent 5/advancedMove Vincent false 0 -3 4 100/advancedMove KeanuAvis false 0 -4 1 100/proceedPosition Vincent/advancedMove AlanaAvis false 0 6 2 100/pause 500/speak Vincent \"{{i18n:57871808.2}}\"/pause 500/emote farmer 8/pause 1000/speak Vincent \"{{i18n:57871808.3}}\"/pause 500/speak KeanuAvis \"{{i18n:57871808.4}}\"/pause 500/textAboveHead AlanaAvis \"{{i18n:57871808.5}}\"/pause 500/faceDirection KeanuAvis 0/faceDirection farmer 0/textAboveHead KeanuAvis \"{{i18n:57871808.6}}\"/pause 500/textAboveHead Vincent \"{{i18n:57871808.7}}\"/advancedMove AlanaAvis false 0 6 3 100/advancedMove Vincent false 0 3 2 100/emote farmer 32/advancedMove farmer false 0 3 -1 0 0 1 2 500 3 1000/proceedPosition farmer/faceDirection Jas 1/emote Jas 32/pause 2000/faceDirection farmer 2/faceDirection Jas 2/faceDirection KeanuAvis 1/speak AlanaAvis \"{{i18n:57871808.8}}\"/pause 500/speak KeanuAvis \"{{i18n:57871808.9}}\"/pause 500/speak AlanaAvis \"{{i18n:57871808.10}}\"/pause 500/textAboveHead KeanuAvis \"{{i18n:57871808.11}}\"/pause 500/speak KeanuAvis \"{{i18n:57871808.12}}\"/pause 500/speak AlanaAvis \"{{i18n:57871808.13}}\"/pause 500/emote KeanuAvis 8/pause 500/speak KeanuAvis \"{{i18n:57871808.14}}\"/pause 500/speak AlanaAvis \"{{i18n:57871808.15}}\"/pause 500/emote KeanuAvis 28/pause 500/faceDirection Jas 0 true/faceDirection Vincent 0 true/faceDirection farmer 0/speak Jas \"{{i18n:57871808.16}}\"/jump Vincent 5/textAboveHead Vincent \"{{i18n:57871808.17}}\"/speak Vincent \"{{i18n:57871808.18}}\"/faceDirection KeanuAvis 2/pause 500/speak KeanuAvis \"{{i18n:57871808.19}}\"/pause 500/faceDirection KeanuAvis 1/speak KeanuAvis \"{{i18n:57871808.20}}\"/jump AlanaAvis 5/textAboveHead AlanaAvis \"{{i18n:57871808.21}}\"/pause 3000/textAboveHead KeanuAvis \"{{i18n:57871808.22}}\"/pause 500/speak AlanaAvis \"{{i18n:57871808.23}}\"/pause 500/speak KeanuAvis \"{{i18n:57871808.24}}\"/speak AlanaAvis \"{{i18n:57871808.25}}\"/speak KeanuAvis \"{{i18n:57871808.26}}\"/speak AlanaAvis \"{{i18n:57871808.27}}\"/speak KeanuAvis \"{{i18n:57871808.28}}\"/pause 1000/textAboveHead Jas \"{{i18n:57871808.29}}\"/pause 500/speak Vincent \"{{i18n:57871808.30}}\"/pause 500/faceDirection AlanaAvis 2 true/faceDirection KeanuAvis 2 true/pause 500/emote KeanuAvis 32/pause 1000/fade/viewport -100 -100/faceDirection farmer 2/stopAnimation Sam 0/removeTemporarySprites/temporaryAnimatedSprite EastScarp\\TAS 0 64 48 32 100 1 1 19 55 false false 1 0 1 0 0 0 hold_last_frame/temporaryAnimatedSprite EastScarp\\TAS 32 64 32 32 100 1 1 23 59 false false 1 0 1 0 0 0 hold_last_frame/changeSprite Sam Beach/swimming Sam/warp Sam 21 63/warp Jas 22 59/warp Vincent 24 59/faceDirection Sam 0/warp AlanaAvis 23 57/warp KeanuAvis 21 74/warp farmer 22 74/positionOffset farmer 0 16/viewport 22 63/pause 500/faceDirection Vincent 0/pause 500/textAboveHead Vincent \"{{i18n:57871808.31}}\"/pause 500/faceDirection Jas 0/pause 500/textAboveHead Jas \"{{i18n:57871808.32}}\"/pause 500/emote AlanaAvis 60/pause 1000/viewport move 0 2 6000/pause 4000/speak KeanuAvis \"{{i18n:57871808.33}}\"/pause 500/emote farmer 8/faceDirection KeanuAvis 1/faceDirection farmer 3/pause 2000/speak KeanuAvis \"{{i18n:57871808.34}}\"/pause 500/emote farmer 16/pause 500/jump KeanuAvis 5/pause 2000/speak KeanuAvis \"{{i18n:57871808.35}}\"/pause 500/emote farmer 32/pause 1000/faceDirection KeanuAvis 2/speak KeanuAvis \"{{i18n:57871808.36}}\"/faceDirection farmer 2/pause 2000/fade/viewport -100 -100/end"
+      }
+    }
+  ]
+}

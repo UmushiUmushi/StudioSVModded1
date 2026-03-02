@@ -1,0 +1,25 @@
+{
+	"ItemName": "Dried Sunflowers",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors" ],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors",
+		},
+		{
+		"Id": 1,
+		"Name": "2-Indoors",
+		},
+		{
+		"Id": 2,
+		"Name": "3-Indoors",
+		},
+		{
+		"Id": 3,
+		"Name": "4-Indoors",
+		},
+	]
+}

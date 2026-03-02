@@ -1,0 +1,21 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "ES.BarberShop",
+  "Name": "East Scarp: Barber Shop",
+  "Author": "mushymato",
+  "Version": "3.0.6",
+  "Description": "East Scarp's Barber Shop - not compatible with Android",
+  "MinimumApiVersion": "4.3.2",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "ESBarberShop.dll",
+  "UpdateKeys": [
+    "GitHub:Mushymato/ESBarberShop"
+  ]
+}

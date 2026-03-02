@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="20" height="15" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="29">
+ <properties>
+  <property name="AmbientLight" value="255 255 255"/>
+  <property name="Warp" value="10 14 EastScarp_ZuzuBurb 53 14 11 14 EastScarp_ZuzuBurb 53 14"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2213" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <tileset firstgid="5263" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="3264" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1632"/>
+ </tileset>
+ <tileset firstgid="8527" name="walls_and_floors" tilewidth="16" tileheight="16" tilecount="560" columns="16">
+  <image source="walls_and_floors.png" width="256" height="560"/>
+ </tileset>
+ <tileset firstgid="9087" name="EScameos" tilewidth="16" tileheight="16" tilecount="384" columns="8">
+  <image source="EScameos.png" width="128" height="768"/>
+ </tileset>
+ <layer id="1" name="Back" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYMANlHGwCYG9fNixMwMmmxhwjQ87TmbAZJMLmoD4BBCfRKJbkNyrjOavfUh2oeuD0S+A+CUSfQLJvc5o/rqOZB66PhiNLvYCj38+8OE3CxeNyy/PoeZyMDIwcDIST+PzCznuw2UPCFPTfeTSpNpPqfsIpRlS3QcDIP5hdgj2YIBgfOopBej+wQUAQMt+IA==
+  </data>
+ </layer>
+ <layer id="9" name="Back1" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKANsJZnYLCRp5553lBMK9AEpVvQ2IMNHAWG6TEgPgHEJ/GEbw4S+5MIgl0J1FMFxDVQvU+B9DMgfgHEL5HMyweyC4DYQ46BwROIe3DYMxOoZhYQz4HqZVVgYGADYg4g5lRAqOsHyk8A4olAPAnN3Q+lGBgeAfFjIN4JlNsFxHsImLceKL8BiDcC8SY08xilGRiYgJhZGsIvQ5JXBZqhBsQaQKypwIATKGORK5WHmFUOxBVUSNtTgWZMA+LpQDwDiI9zA+OVG1VNIhcDQxIaTubCbt5WoBnbgHg7EO8A4gdAsx6imVcF1FuNhmuwmAeK/8PsqBgGNKVJ9yty/GNLA8QCANz0OvM=
+  </data>
+ </layer>
+ <layer id="12" name="Back2" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFwwlkQzG1QIA8A0OgPBUNHAWjgAIAAKPyAbY=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJylk98rQ2Ecxr/LVtqm3cw0q52jtdzsghDJDXJFYTUUN0oh4sq4XFwq/whu+AtIYcUoLvEPKEq59jm979sZds4m3/rUc8553uc87/kRFpEINDWA44tCwIdhqT0D8JoW6de6ovVYA3njMG+JLFhKO8w5XTie1fotrfS5R/eg7uHkrdVgB3LkbWsd09r0Fa3N5CCr84opvGDZIg9JkUfIJpRvMyxiR5S2bbfvRkhps58J/SycvKVmkSsy0mRYCY8Hqsf0PQgp3UXvblivytsPeq+fpNMUTEMeTuh7GtbXyOllX32Qt9y8Q/KO4Ngnt95k2ty8ctLbR6cS3Up0LNG1ZM4HW0XO4t+9Ju+v80lOgQ4z8B5X98jYbt5QTPleuL7M+1iBVZ/30kO3LbxF+CBvhJ9mNPo77wnfM2RbRAb52C/ocRv3zv05Tt4iFMi78VnX2e7qCj3u4B6uoQyX0MF+98T975zZTbnrjA7oe5qpXvMfzNTzfQE5mEPh
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="28" name="TileData" x="32" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="OpenShop Lemurkat.EastScarp_ZuzuThriftStore none 1000 1800"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJyNkj1PwkAcxp9STLWQOEAhCAlNnHRBGUTdTDTqF4DFRfwIfoGiq2466GKMDIZExMQXFnXwdTSauCt8AeNooj5Nz1wl9MI/+aXX/u9+9xyHCSBC9B5w50WhrhmSSAPJtPdeCAGTIdl/DwOtsOhlgLkefBN0FYRvKwVsp2R/ygambW9cyqhdmvAV6SqRnyxwStcZ6Ut4c4omYETEAnrLA8AKafJ1ic9j9hvm/3yz/cAhHd8WnZY6g8O1FTO47/qe48H9HDONkXGSJzt07QpfjueJ81wWyWelz60N/uabYXU2VelJ6aulgucxk8NsDjM6zOr8fW/zTPu+c7U68rm1p/D661V4arynp7i3h25L3/CgN76mb573ukAWE8G+GO/sg3/sG/pe6BvheDQqfbpYe8l5V2RV7FVljrrirvz15jtvm7mOuqx74P6PxBiS386Z44I0SYOckDrRRIZlckfuSZn3/sl9vrLe+Fb0Dnx7VMW3briliWfFANZIjPukbW+8bkiPf42qtB5Ax1hVvzUuSSM=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgF6KCTY6BdMApGwSjABgAQIgCS
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="10" name="AlwaysFront" width="20" height="15">
+  <data encoding="base64" compression="zlib">
+   eJxjYKAP2EQHOx7I08GSUTDkQLDCQLsAN7gMTLO3oenWjpeBwR6In0oOrJuQQRM7BA8WAABOnga4
+  </data>
+ </layer>
+ <objectgroup id="11" name="AlwaysFront"/>
+</map>

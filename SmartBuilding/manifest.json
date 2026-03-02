@@ -1,0 +1,27 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "DecidedlyHuman.SmartBuilding",
+  "Name": "Smart Building",
+  "Author": "DecidedlyHuman",
+  "Version": "1.9.3",
+  "Description": "Allows you to build fences/walls/paths, etc. in a much more streamlined way.",
+  "MinimumApiVersion": "4.0.0",
+  "EntryDll": "SmartBuilding.dll",
+  "Dependencies": [
+    {
+      "UniqueID": "furyx639.ToolbarIcons",
+      "MinimumVersion": "2.7.1",
+      "IsRequired": false
+    }
+  ],
+  "UpdateKeys": [
+    "Nexus:11158"
+  ]
+}

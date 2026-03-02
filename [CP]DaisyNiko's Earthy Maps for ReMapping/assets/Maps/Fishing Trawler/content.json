@@ -1,0 +1,113 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fishing Trawler Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Fishing Trawler/{{N3cro_92.ReMappingEarthySync/FishingTrawlerSprite}}_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true,
+        "DayOfWeek|contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+        "N3cro_92.ReMappingEarthySync/FishingTrawler": "true"
+      },
+
+      "ToArea": {
+        "X": 225,
+        "Y": 165,
+        "Width": 24,
+        "Height": 12
+      }
+    },
+    {
+      "LogName": "Fishing Trawler Map Overlay (OLD)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Fishing Trawler/{{N3cro_92.ReMappingEarthySync/FishingTrawlerSprite}}_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true,
+        "DayOfWeek|contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+        "N3cro_92.ReMappingEarthySync/FishingTrawler": "true"
+      },
+
+      "ToArea": {
+        "X": 225,
+        "Y": 165,
+        "Width": 24,
+        "Height": 12
+      }
+    },
+    {
+      "LogName": "Fishing Trawler Map Overlay (Island)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map_island",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Novo.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true,
+        "DayOfWeek|contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+        "N3cro_92.ReMappingEarthySync/FishingTrawler": "true"
+      },
+
+      "ToArea": {
+        "X": 176,
+        "Y": 137,
+        "Width": 11,
+        "Height": 10
+      }
+    },
+    {
+      "LogName": "Fishing Trawler Map Overlay (Island)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map_island",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Ponte.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true,
+        "N3cro_92.ReMappingEarthySync/FishingTrawler": "true"
+      },
+
+      "ToArea": {
+        "X": 175,
+        "Y": 126,
+        "Width": 9,
+        "Height": 13
+      }
+    },
+    {
+      "LogName": "Fishing Trawler Map Overlay (Island)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map_island",
+      "FromFile": "assets/Maps/Fishing Trawler/Fishing.Trawle.Velho.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=PeacefulEnd.FishingTrawler.NewHorizons.CP": true,
+        "DayOfWeek|contains={{PeacefulEnd.FishingTrawler.NewHorizons/MurphyAppearanceDay}}": "true",
+        "N3cro_92.ReMappingEarthySync/FishingTrawler": "true"
+      },
+
+      "ToArea": {
+        "X": 176,
+        "Y": 137,
+        "Width": 11,
+        "Height": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/GenderSymbolsReplacer/GenderSymbolsReplacer.png",
+			"ToArea": { "X": 129, "Y": 192, "Width": 31, "Height": 16 },
+			"LogName": "Replace Gender Symbols - Late",
+			"Priority": "Late",
+			"When":
+				{
+					"ReplaceGenderSymbols": true,
+					"Priority": "Late"
+				}
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/LeahHouse",
+			"Entries":
+				{
+					"51/f Leah 1000/p Leah": "sadpiano/-1000 -1000/farmer 7 9 0 Leah 13 8 0/skippable/showFrame Leah 20/changeMapTile Front 14 7 1453/viewport 12 8/move farmer 0 -1 1/speak Leah \"Kel...How many times do I have to tell you? I don't want to come back to the city!$8#$b#Stop calling me... I don't want to hear from you anymore! *click*$8\"/playSound openBox/faceDirection Leah 1/changeMapTile Front 14 7 1454/emote Leah 12/pause 1000/move farmer 4 0 1/faceDirection Leah 3/speak Leah \"@...$6\"/pause 300/emote Leah 28/speak Leah \"So I guess you heard me yelling on the phone?$s\"/faceDirection Leah 2/move farmer 1 0 1/pause 1000/playMusic desolate/speak Leah \"That was my ex...$s\"/faceDirection Leah 3/emote farmer 16/pause 600/speak Leah \"I guess I'd better tell you a little about it...$u\"/pause 500/faceDirection Leah 2/pause 500/speak Leah \"We had an apartment together, back in the city.$u#$b#I did odd jobs during the day and spent all night working on art projects... we barely made enough to scrape by.$u#$b#They were always nagging me to go back to school and study business or medicine... something with a lot of money in it.$a#$b#I guess the idea was to save up for a normal life. You know... a house in the suburbs, kids, PTA meetings... that sort of thing.$u\"/faceDirection Leah 3/speak Leah \"I wasn't ready for that kind of life, @... I had to leave. So I came here to pursue my dream of being an artist.\"/pause 900/faceDirection Leah 2/speak Leah \"$q 83 null#Was that selfish of me, @?$s#$r 83 0 event_parents1#No, it had to be done.#$r 83 0 event_parents2#No, and your ex sounds like an idiot.#$r 83 -20 event_parents3#No, but you would've been better off staying in the city.#$r 83 -20 event_parents4#Yeah, a little.#$r 83 -20 event_parents5#Yeah, but it's natural to care about yourself first.\"/faceDirection Leah 3/fork angry/pause 200/fork LeahInternet internet2/fork LeahArtShowSuggestion artShowSuggest/speak Leah \"Well, thanks for listening to me. It's good to have a friend.\"/pause 1500/globalFade/viewport -1000 -1000/end dialogueWarpOut Leah \"Hey, thanks for listening to me so patiently earlier.\""
+				},
+			"LogName": "Fix LeahHouse"
+		}
+	]
+}

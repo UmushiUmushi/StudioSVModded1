@@ -1,0 +1,11 @@
+{
+  "Format": "2.0.0",
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "Tilesheets/craftables",
+      "FromFile": "assets/mushlog.png",
+      "ToArea": { "X": 48, "Y": 1120, "Width": 32, "Height": 32 },
+    }
+  ]
+}

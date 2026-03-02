@@ -1,0 +1,12 @@
+{
+    "Changes": [
+        {
+            "LogName": "Question Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KeanuAvis",
+            "Entries": {
+                "spring": "610 EastScarp_LoresCove 58 66 keanuavis_surfboard/1000 EastScarp_KeanuHouse 23 17 2 square_5_2/1200 Saloon 14 20 0/1500 EastScarp_KeanuHouse 10 28 0/1700 EastScarp_LoresCove 54 61 2/2000 EastScarp_KeanuHouse 17 7 2/2200 EastScarp_KeanuHouse 15 5 1 keanu_sleep",
+        }
+        }
+    ]
+}

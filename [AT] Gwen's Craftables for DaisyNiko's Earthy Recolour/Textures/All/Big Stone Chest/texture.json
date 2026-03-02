@@ -1,0 +1,19 @@
+{
+	"ItemName": "Big Stone Chest",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors-Bronze",
+		"Keywords": ["Bronze"],
+		},
+		{
+		"Id": 1,
+		"Name": "1-Indoors-Steel",
+		"Keywords": ["Steel"],
+		},
+	]
+}

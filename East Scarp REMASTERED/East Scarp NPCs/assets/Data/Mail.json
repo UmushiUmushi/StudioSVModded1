@@ -1,0 +1,566 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                //Letter from Eloise
+                "Lemurkat.EastScarp_IntroMail": {
+                    "ID": "mail.Lemurkat.EastScarp_IntroMail",
+                    "Trigger": "DayEnding",
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Current 57870000",
+                    "Actions": [
+                        "AddMail Current EastScarp_IntroMail",
+                        "MarkEventSeen Current 57870000 true"
+                    ]
+                },
+                "Lemurkat.EastScarp_IntroMail_Stall": {
+                    "ID": "mail.Lemurkat.EastScarp_IntroMail_Stall",
+                    "Trigger": "DayEnding",
+                    "Condition": "DAYS_PLAYED 4",
+                    "Action": "AddMail Current EastScarp_IntroMail2"
+                },
+                //Aideen
+                "Lemurkat.EastScarp_Aideen_FlowerRequest": {
+                    "ID": "mail.Lemurkat.EastScarp_Aideen_FlowerRequest",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Aideen 1000, !PLAYER_HAS_SEEN_EVENT Current 57871002",
+                    "Actions": [
+                        "AddMail Current AideenFlowerRequest",
+                        "MarkEventSeen Current 57871002 true"
+                    ]
+                },
+                "Lemurkat.EastScarp_Aideen_SendsFlowerSeedsSpring": {
+                    "ID": "mail.Lemurkat.EastScarp_Aideen_SendsFlowerSeedsSpring",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Aideen 750, SEASON Spring, !PLAYER_HAS_SEEN_EVENT Current 57871003",
+                    "Actions": [
+                        "AddMail Current AideenSendsFlowerSeedsSpring",
+                        "MarkEventSeen Current 57871003 true"
+                    ]
+                },
+                "Lemurkat.EastScarp_Aideen_SendsFlowerSeedsSummer": {
+                    "ID": "mail.Lemurkat.EastScarp_Aideen_SendsFlowerSeedsSummer",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Aideen 1250, SEASON Summer, !PLAYER_HAS_SEEN_EVENT Current 57871004",
+                    "Actions": [
+                        "AddMail Current AideenSendsFlowerSeedsSummer",
+                        "MarkEventSeen Current 57871004 true"
+                    ]
+                },
+                "Lemurkat.EastScarp_Aideen_SendsFlowerSeedsFall": {
+                    "ID": "mail.Lemurkat.EastScarp_Aideen_SendsFlowerSeedsFall",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Aideen 1750, SEASON Fall, !PLAYER_HAS_SEEN_EVENT Current 57871005",
+                    "Actions": [
+                        "AddMail Current AideenSendsFlowerSeedsFall",
+                        "MarkEventSeen Current 57871005 true"
+                    ]
+                },
+                "Lemurkat.EastScarp_Aideen_SpecialOrdersBOP": {
+                    "ID": "mail.Lemurkat.EastScarp_Aideen_SpecialOrdersBOP",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"PLAYER_HAS_MAIL Current EastScarp.SpecialOrders.AideenFlowers1Mail\" \"PLAYER_HAS_MAIL Current EastScarp.SpecialOrders.AideenFlowers2Mail\" \"PLAYER_HAS_MAIL Current EastScarp.SpecialOrders.AideenFlowers3Mail\", !PLAYER_HAS_SEEN_EVENT Current 57879901",
+                    "Actions": [
+                        "AddMail Current EastScarp.SpecialOrders.AideenFlowersMail"
+                    ]
+                },
+                "Lemurkat.EastScarp_Aideen_10HeartInvite_Dating": {
+                    "ID": "mail.Lemurkat.EastScarp_Aideen_10HeartInvite_Dating",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Aideen 2500, !SEASON Winter, PLAYER_NPC_RELATIONSHIP Current Aideen Dating Engaged Married, PLAYER_HAS_SEEN_EVENT Current 57871008, !PLAYER_HAS_SEEN_EVENT Current 57871009",
+                    "Actions": [
+                        "AddMail Current Aideen_10HeartInvite_Dating",
+                        "MarkEventSeen Current 57871009 true"
+                    ]
+                },
+                // Eyvind
+                "EastScarp.MarnieSellsVoidGoats": {
+                    "ID": "mail.EastScarp.MarnieSellsVoidGoats",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 57877008",
+                    "Action": "AddMail Current MarnieSellsVoidGoats Tomorrow",
+                },
+                "EastScarp.AideenSellsNewFlowers": {
+                    "ID": "mail.EastScarp.AideenSellsNewFlowers",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 57877008",
+                    "Action": "AddMail Current AideenSellsNewFlowers Tomorrow",
+                },
+                // Jacob and Eloise
+                "Lemurkat.EastScarp_Jacob_DinnerDate": {
+                    "ID": "mail.Lemurkat.EastScarp_Jacob_DinnerDate",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Jacob 2500, PLAYER_FRIENDSHIP_POINTS Current Eloise 2500, !PLAYER_HAS_SEEN_EVENT Current 57870012",
+                    "Actions": [
+                        "AddMail Current JacobDinnerDate",
+                        "MarkEventSeen Current 57870012 true"
+                    ]
+                },
+                // Jade
+                "Lemurkat.Jade_IronBar": {
+                    "ID": "mail.Lemurkat.Jade_IronBar",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57871204",
+                    "Action": "AddMail Current Jade_IronBar Now"
+                },
+                "Lemurkat.Jade_FairyPool": {
+                    "ID": "mail.Lemurkat.Jade_FairyPool",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current JadeMalic 2000",
+                    "Action": "AddMail Current Jade_FairyPool Now"
+                },
+                /* "Lemurkat.Jade_FairyRing_1": {
+                    "ID": "mail.Lemurkat.Jade_FairyRing_1",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current EastScarp.SpecialOrders.JadeFairyRing_Complete",
+                    "Actions": [
+                        "AddConversationTopic JadeFairyRing 3",
+                        "AddMail Current EastScarp.SpecialOrders.JadeFairyRing1 Received"
+                    ]
+                },
+                "Lemurkat.Jade_FairyRing_2": {
+                    "ID": "mail.Lemurkat.Jade_FairyRing_2",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current EastScarp.SpecialOrders.JadeFairyRing1, !PLAYER_HAS_CONVERSATION_TOPIC Current JadeFairyRing, !SEASON Winter",
+                    "Action": "AddMail Current EastScarp.SpecialOrders.JadeFairyRing2 Now"
+                },*/
+                "Lemurkat.Jade_10heartmail": {
+                    "ID": "mail.Lemurkat.Jade_10heartmail",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current JadeMalic 2500, PLAYER_NPC_RELATIONSHIP Current JadeMalic Dating Engaged, !PLAYER_HAS_SEEN_EVENT Current 57960097",
+                    "Actions": [
+                        "AddMail Current jade_10heartmail Now",
+                        "MarkEventSeen Current 57960097 true"
+                    ],
+                },
+                //Juliet
+                "Lemurkat.Juliet_invite": {
+                    "ID": "mail.Lemurkat.Juliet_invite",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 6398421, PLAYER_FRIENDSHIP_POINTS Current Juliet 2502, !PLAYER_HAS_CONVERSATION_TOPIC Current Juliet_Prop, !PLAYER_HAS_SEEN_EVENT Current 86571130",
+                    "Actions": [
+                        "AddMail Current Juliet_invite",
+                        "MarkEventSeen Current 86571130 true"
+                    ]
+                },
+                "Lemurkat.Juliet_Vet": {
+                    "ID": "mail.Lemurkat.Juliet_Vet",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 86571141, !PLAYER_HAS_SEEN_EVENT Current 8651137",
+                    "Actions": [
+                        "AddMail Current Juliet_Vet",
+                        "MarkEventSeen Current 86571137 true"
+                    ]
+                },
+                //Kataryna
+                "Lemurkat.Kataryna_voidegg": {
+                    "ID": "mail.Lemurkat.Kataryna_voidegg",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current KatarynaLK 1000, !PLAYER_HAS_SEEN_EVENT Current 57876013",
+                    "Actions": [
+                        "AddMail Current Kataryna_voidegg",
+                        "MarkEventSeen Current 57876013 true"
+                    ]
+                },
+                "Lemurkat.Kataryna_VoidEggHatching": {
+                    "ID": "mail.Lemurkat.Kataryna_VoidEggHatching",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current Kataryna_voidegg2, !PLAYER_HAS_SEEN_EVENT Current 57876019",
+                    "Actions": [
+                        "AddMail Current Kataryna_VoidEggHatching",
+                        "MarkEventSeen Current 57876019 true"
+                    ]
+                },
+                "Lemurkat.Juliet_InvitationToSeance": {
+                    "ID": "mail.Lemurkat.Juliet_InvitationToSeance",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57876008, !PLAYER_HAS_CONVERSATION_TOPIC Current KatarynaPrank2, !PLAYER_HAS_SEEN_EVENT Current 57876017",
+                    "Actions": [
+                        "AddMail Current JulietInvitationToSeance",
+                        "MarkEventSeen Current 57876017 true"
+                    ]
+                },
+                //Oliver
+                "Lemurkat.Oliver_CryptoToday": {
+                    "ID": "mail.Lemurkat.Oliver_CryptoToday",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57873015, !PLAYER_HAS_CONVERSATION_TOPIC Current KennedyLexi, !PLAYER_HAS_SEEN_EVENT Current 57873017",
+                    "Actions": [
+                        "AddMail Current CryptoToday_Oliver",
+                        "MarkEventSeen Current 57873017 true"
+                    ]
+                },
+                //Josephine
+                "Lemurkat.Josephine_GiftMailed": {
+                    "ID": "mail.Lemurkat.Josephine_GiftMailed",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57873005, !PLAYER_HAS_CONVERSATION_TOPIC Current JosephineLeavesTown,PLAYER_FRIENDSHIP_POINTS Current OliverK 2500, !PLAYER_HAS_SEEN_EVENT Current 57873017",
+                    "Actions": [
+                        "AddMail Current Josephine_GiftMailed",
+                        "MarkEventSeen Current 57873017 true"
+                    ]
+                },
+                "Lemurkat.Rosa_Ingredients_Kale": {
+                    "ID": "mail.Lemurkat.Rosa_Ingredients_Kale",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57874007, SEASON Spring, !PLAYER_HAS_SEEN_EVENT Current 57874090",
+                    "Actions": [
+                        "AddMail Current Rosa_Ingredients_Kale",
+                        "MarkEventSeen Current 57874090 true"
+                    ]
+                },
+                "Lemurkat.Rosa_Ingredients_Amaranth": {
+                    "ID": "mail.Lemurkat.Rosa_Ingredients_Amaranth",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57874007, SEASON Fall, !PLAYER_HAS_SEEN_EVENT Current 57874091",
+                    "Actions": [
+                        "AddMail Current Rosa_Ingredients_Amaranth",
+                        "MarkEventSeen Current 57874091 true"
+                    ]
+                },
+                "Lemurkat.Rosa_Ingredients_GoatCheese": {
+                    "ID": "mail.Lemurkat.Rosa_Ingredients_GoatCheese",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57874007, SEASON Summer Winter, !PLAYER_HAS_SEEN_EVENT Current 57874091",
+                    "Actions": [
+                        "AddMail Current Rosa_Ingredients_GoatCheese",
+                        "MarkEventSeen Current 57874091 true"
+                    ]
+                },
+                "Lemurkat.Rosa_10HeartInvite": {
+                    "ID": "mail.Lemurkat.Rosa_10HeartInvite",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 86571101, SEASON Spring Summer Fall, PLAYER_FRIENDSHIP_POINTS Current Rosa 2500, !PLAYER_HAS_SEEN_EVENT Current 57874093",
+                    "Actions": [
+                        "AddMail Current Rosa_10HeartInvite",
+                        "MarkEventSeen Current 57874093 true"
+                    ]
+                },
+                "Lemurkat.Eloise_PuppyInvite": {
+                    "ID": "mail.Lemurkat.Eloise_PuppyInvite",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57874014, PLAYER_HAS_SEEN_EVENT Current 57874015, !PLAYER_HAS_SEEN_EVENT Current 57870018",
+                    "Actions": [
+                        "AddMail Current EloisePuppyInvite",
+                        "MarkEventSeen Current 57870018 true"
+                    ]
+                },
+                "Lemurkat.Vivienne_LetterInviteOrchard": {
+                    "ID": "mail.Lemurkat.Vivienne_LetterInviteOrchard",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Current VivienneRingReturn, PLAYER_FRIENDSHIP_POINTS Current VivienneLK 2500, {{LavrilInstalled2}}, !PLAYER_HAS_SEEN_EVENT Current 57875010",
+                    "Actions": [
+                        "AddMail Current Vivienne_LetterInviteOrchard",
+                        "MarkEventSeen Current 57875010 true"
+                    ]
+                },
+                "Lemurkat.Jasper_Peasbody1": {
+                    "ID": "mail.Lemurkat.Jasper_Peasbody1",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50709911, !PLAYER_HAS_CONVERSATION_TOPIC Current JasperGone2, !PLAYER_HAS_SEEN_EVENT Current 50709913",
+                    "Actions": [
+                        "AddMail Current Jasper_Peasbody1",
+                        "MarkEventSeen Current 50709913 true"
+                    ]
+                },
+                "Lemurkat.Jasper_Home": {
+                    "ID": "mail.Lemurkat.Jasper_Home",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50709914, !PLAYER_HAS_CONVERSATION_TOPIC Current JasperHurt, !PLAYER_HAS_SEEN_EVENT Current 50709915",
+                    "Actions": [
+                        "AddMail Current Jasper_Home",
+                        "MarkEventSeen Current 50709915 true",
+                        "AddConversationTopic TalkJasperHome 7"
+                    ]
+                },
+                "Lemurkat.Jasper_Home1": {
+                    "ID": "mail.Lemurkat.Jasper_Home1",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50709915, !PLAYER_HAS_CONVERSATION_TOPIC Current JasperHome1, !PLAYER_HAS_SEEN_EVENT Current 50709916",
+                    "Actions": [
+                        "AddMail Current Jasper_Home1",
+                        "MarkEventSeen Current 50709916 true"
+                    ]
+                },
+                "Lemurkat.Jasper_HomeA": {
+                    "ID": "mail.Lemurkat.Jasper_HomeA",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50709919, !PLAYER_HAS_CONVERSATION_TOPIC Current JasperHomeA, !PLAYER_HAS_SEEN_EVENT Current 50709929",
+                    "Actions": [
+                        "AddMail Current Jasper_HomeA",
+                        "MarkEventSeen Current 50709929 true"
+                    ]
+                },
+                "Lemurkat.Jasper_HomeB": {
+                    "ID": "mail.Lemurkat.Jasper_HomeB",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50709920, !PLAYER_HAS_SEEN_EVENT Current 50709930",
+                    "Actions": [
+                        "AddMail Current Jasper_HomeB",
+                        "MarkEventSeen Current 50709930 true"
+                    ]
+                },
+                "Lemurkat.Jasper_Picnic": {
+                    "ID": "mail.Lemurkat.Jasper_Picnic",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50709921, SEASON Spring Summer, PLAYER_FRIENDSHIP_POINTS Current Jasper 2500, PLAYER_NPC_RELATIONSHIP Current Jasper Dating Engaged Married, !PLAYER_HAS_SEEN_EVENT Current 50709932",
+                    "Actions": [
+                        "AddMail Current Jasper_Picnic",
+                        "MarkEventSeen Current 50709932 true"
+                    ]
+                },
+                "Lemurkat.Jasper_LoveLetter": {
+                    "ID": "mail.Lemurkat.Jasper_LoveLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current Jasper Engaged, !PLAYER_HAS_SEEN_EVENT Current 50709932",
+                    "Actions": [
+                        "AddMail Current Jasper_LoveLetter",
+                        "MarkEventSeen Current 50709932 true",
+                        "AddConversationTopic JasperEngaged 2"
+                    ]
+                },
+                "EastScarp.TristanYarnBombing": {
+                    "ID": "mail.EastScarp.TristanYarnBombing",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 5295018, !PLAYER_HAS_CONVERSATION_TOPIC Current ScarfAroundLampPost, !PLAYER_NPC_RELATIONSHIP Current TristanLK Married",
+                    "Actions": [
+                        "AddMail Current Tristan_YarnBombing tomorrow",
+                        "MarkEventSeen Current 5295019"
+                    ]
+                },
+                /*"EastScarp.TristanYarnBombing_Spouse": {
+                    "ID": "mail.EastScarp.TristanYarnBombing_Spouse",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 5295018, !PLAYER_HAS_CONVERSATION_TOPIC Current ScarfAroundLampPost, PLAYER_NPC_RELATIONSHIP Current TristanLK Married",
+                    "Actions": [
+                        "AddConversationTopic Tristan_YarnBombing_Spouse_Invite 14",
+                        "MarkEventSeen Current 5295019"
+                    ]
+                },*/
+                "EastScarp.BeatriceCorwinInvite": {
+                    "ID": "mail.EastScarp.BeatriceCorwinInvite",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57871505, PLAYER_FRIENDSHIP_POINTS Current CorwinLK 2000, PLAYER_FRIENDSHIP_POINTS Current Beatrice 2500",
+                    "Action": "AddMail Current BeatriceCorwin_InviteRaoul tomorrow",
+                },
+                "EastScarp.JessieRecipeSoothingCure": {
+                    "ID": "mail.EastScarp.JessieRecipeSoothingCure",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Jessie 750",
+                    "Action": "AddMail Current Jessie_SoothingCureRecipe tomorrow",
+                },
+                "EastScarp.LumaSendsPrismaticEgg": {
+                    "ID": "mail.EastScarp.LumaSendsPrismaticEgg",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current 57871108.10, {{HasMod|contains=selph.ExtraMachineConfig}}\" \"PLAYER_HAS_SEEN_EVENT Current 57871108.25, {{HasMod|contains=selph.ExtraMachineConfig}}\" \"PLAYER_HAS_SEEN_EVENT Current 57871108.50, {{HasMod|contains=selph.ExtraMachineConfig}}\"",
+                    "Action": "AddMail Current Luma_PrismaticEgg Tomorrow",
+                },
+                "EastScarp.LumaBribeRaisins": {
+                    "ID": "mail.EastScarp.LumaBribeRaisins",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SECRET_NOTE Current 24",
+                    "Action": "AddMail Current HasSeenSecretNote24 received",
+                },
+                "EastScarp.JasperPlatonicDwarfEvent": {
+                    "ID": "mail.EastScarp.JasperPlatonicDwarfEvent",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 55990002_Platonic, !PLAYER_HAS_SEEN_EVENT Current 55990002",
+                    "Action": "MarkEventSeen Current 55990002",
+                },
+                "EastScarp.HasCherryPitInInventory": {
+                    "ID": "mail.EastScarp.HasCherryPitInInventory",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_ITEM Current (O)EastScarp_CherryPit",
+                    "Action": "AddMail Current HasCherryPitInInventory received",
+                },
+                "EastScarp.DaleInviteGraduationParty": {
+                    "ID": "mail.EastScarp.DaleInviteGraduationParty",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current DaleWaede 2000, PLAYER_HAS_SEEN_EVENT Current 57871706",
+                    "Action": "AddMail Current DaleInviteGraduationParty tomorrow",
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "HasMod | contains=Arknir27.Lavril": false
+            },
+            "Entries": {
+                //Rosa
+                "Lemurkat.Rosa_Rebuild_Bridge": {
+                    "ID": "mail.Lemurkat.Rosa_Rebuild_Bridge",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 57874002, !PLAYER_HAS_SEEN_EVENT Any 63070010",
+                    "Actions": [
+                        "AddMail Current Rosa_Rebuild_Bridge",
+                        "AddSpecialOrder EastScarp.SpecialOrders.RebuildBridge"
+                    ]
+                },
+                "Lemurkat.Rosa_Rebuild_Bridge_Complete": {
+                    "ID": "mail.Lemurkat.Rosa_Rebuild_Bridge_Complete",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Any EastScarp.SpecialOrders.RebuildBridge",
+                    "Actions": [
+                        "MarkEventSeen All 57874027"
+                    ]
+                }
+            }
+        },
+        //55990002_Platonic
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Lemurkat.EastScarp_Aideen_10HeartInvite_Platonic": {
+                    "ID": "mail.Lemurkat.EastScarp_Aideen_10HeartInvite_Platonic",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Aideen 2500, !SEASON Winter, !PLAYER_NPC_RELATIONSHIP Current Aideen Dating Engaged Married, PLAYER_HAS_SEEN_EVENT Current 57871008, !PLAYER_HAS_SEEN_EVENT Current 57871009",
+                    "Actions": [
+                        "AddMail Aideen_10HeartInvite_Platonic",
+                        "MarkEventSeen Current 57871009 true"
+                    ]
+                },
+            },
+            "When": {
+                "KeepNonDatable": "Aideen"
+            }
+        },
+        //Loads the mail if you miss Juliet's vet appointment
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "HasFlag": "Juliet_Vet"
+            },
+            "Entries": {
+                "Lemurkat.Juliet_VetDone": {
+                    "ID": "mail.Lemurkat.Juliet_VetDone",
+                    "Trigger": "DayEnding",
+                    "Condition": "!PLAYER_HAS_SEEN_EVENT Current 86571142, !PLAYER_HAS_CONVERSATION_TOPIC Current JulietVet, PLAYER_HAS_MAIL Current Juliet_Vet, !PLAYER_HAS_SEEN_EVENT Current 86571138",
+                    "Actions": [
+                        "AddMail Current Juliet_VetDone",
+                        "MarkEventSeen Current 86571138 true"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Lemurkat.Juliet_invite_Platonic": {
+                    "ID": "mail.Lemurkat.Juliet_invite_Platonic",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Juliet 2502, !PLAYER_HAS_SEEN_EVENT Current 86571133",
+                    "Actions": [
+                        "AddMail Current Juliet_invite",
+                        "MarkEventSeen Current 86571133 true"
+                    ]
+                }
+            },
+            "When": {
+                "KeepNonDatable": "Juliet"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "EastScarp_IntroMail": "{{i18n:ES_IntroMail}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][textcolor black][#]{{i18n:ES_IntroMail.Title}}",
+                "EastScarp_IntroMail2": "{{i18n:Mail.ES_IntroMail2}} %item object (O)EastScarp_BiteBackMelon_Seed 4 %% [letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 4][textcolor black][#]{{i18n:Mail.ES_IntroMail2.Title}}",
+                "Rosa_10HeartInvite": "{{i18n:ES_Rosa10HeartMail}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 1][textcolor black][#]{{i18n:ES_Rosa10HeartMail.Title}}",
+                "fall_25": "{{i18n:ES_SpiritsEve_Invite_1}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 2][textcolor black][#]{{i18n:ES_SpiritsEve_Invite.Title_1}}",
+                "passedOutScarp": "{{i18n:passedOut.mail}}[#]{{i18n:passedOut.mail.name}}",
+                "passedOutEyvind": "{{i18n:passedOut.mailEyvind}}[#]{{i18n:passedOut.mail.name}}",
+                "MarnieSellsVoidGoats": "{{i18n:mail.MarnieSellsVoidGoats}}[#]{{i18n:mail.MarnieSellsVoidGoats.name}}",
+                "AideenSellsNewFlowers": "{{i18n:mail.AideenSellsNewFlowers}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 4][textcolor black][#]{{i18n:mail.AideenSellsNewFlowers.name}}",
+                "AideenFlowerRequest": "{{i18n:AideenFlowerRequest}} %item quest 578 %% [#]{{i18n:AideenFlowerRequest.Title}}",
+                "AideenSendsFlowerSeedsSpring": "{{i18n:AideenSendsFlowerSeedsSpring}} %item object 429 5 %% [#]{{i18n:AideenSendsFlowerSeedsSpring.Title}}",
+                "AideenSendsFlowerSeedsSummer": "{{i18n:AideenSendsFlowerSeedsSummer}}. %item object 455 5 %% [#]{{i18n:AideenSendsFlowerSeedsSummer.Title}}",
+                "AideenSendsFlowerSeedsFall": "{{i18n:AideenSendsFlowerSeedsFall}} %item object 425 3 %% [#]{{i18n:AideenSendsFlowerSeedsFall.Title}}",
+                "Aideen_10HeartInvite_Dating": "{{i18n:Aideen_10HeartInvite}}[#]{{i18n:Aideen_10HeartInvite.Title}}",
+                "Aideen_10HeartInvite_Platonic": "{{i18n:Aideen_10HeartInvite}}[#]{{i18n:Aideen_10HeartInvite.Title}}",
+                "BeatriceCooking": "{{i18n:Mail.Beatrice_Recipe_Curry}}%item cookingRecipe %%[#]{{i18n:Mail.Beatrice_Recipe_Curry_name}}",
+                "JacobDinnerDate": "{{i18n:JacobDinnerDate}} %item conversationTopic Jacob_DinnerDate 0%% [#]{{i18n:JacobDinnerDate.Title}}",
+                "EloisePuppyInvite": "{{i18n:EloisePuppyInvite}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][textcolor black] %item conversationTopic EloisePuppyTalk 5%% [#]{{i18n:EloisePuppyInvite.Title}}",
+                "EloiseCooking": "{{i18n:Mail.Eloise_Recipe_CheesyJellyToast}}%item cookingRecipe %%[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][textcolor black][#]{{i18n:Mail.Eloise_CheesyJellyToast_name}}",
+                "JacobCooking": "{{i18n:Mail.Jacob_Recipe_CandiedRoot}}%item cookingRecipe %%[#]{{i18n:Mail.Jacob_Recipe_CandiedRoot.name}}",
+                "ToriLKCooking": "{{i18n:Mail.Tori_Recipe_BlissBalls}}%item cookingRecipe %%[#]{{i18n:Mail.Tori_Recipe_BlissBalls_name}}",
+                "JosephineKCooking": "{{i18n:Mail.Josephine_Recipe_ZinfazuFruit}}%item cookingRecipe %%[#]{{i18n:Mail.Josephine_Recipe_ZinfazuFruit_name}}",
+                "EdithHartCooking": "{{i18n:Mail.Edith_Recipe_ButtonFruitCake}}%item cookingRecipe %%[#]{{i18n:Mail.Edith_Recipe_ButtonFruitCake_name}}",
+                "JessieCooking": "{{i18n:Mail.Jessie_Recipe_Smoothie}}%item cookingRecipe %%[#]{{i18n:Mail.Jessie_Recipe_Smoothie_name}}",
+                "Jessie_SoothingCureRecipe": "{{i18n:Mail.Jessie_Recipe_SoothingCure}}%item cookingRecipe Lemurkat.EastScarp_SoothingCure %%[#]{{i18n:Mail.Jessie_Recipe_SoothingCure_name}}", //
+                "JadeMalicCooking": "{{i18n:Mail.Jade_Recipe_FairyCapAmbrosia}}%item cookingRecipe %%[#]{{i18n:Mail.Jade_Recipe_FairyCapAmbrosia_name}}",
+                "CorwinLKCooking": "{{i18n:Mail.Corwin_Recipe_YohoHash}}%item cookingRecipe %%[#]{{i18n:Mail.Corwin_Recipe_YohoHash_name}}",
+                "MichaelHartCooking": "{{i18n:Mail.Michael_Recipe_HotChoco}}%item cookingRecipe %%[#]{{i18n:Mail.Michael_Recipe_HotChoco_name}}",
+                "JulietCooking": "{{i18n:Mail.Juliet_Recipe_ChocoBun}}%item cookingRecipe %%[#]{{i18n:Mail.Juliet_Recipe_ChocoBun_name}}",
+                "JasperCooking": "{{i18n:Mail.Jasper_Recipe_GiggleSmoothie}}%item cookingRecipe %%[#]{{i18n:Mail.Jasper_Recipe_GiggleSmoothie_name}}",
+                "Juliet_invite": "{{i18n:juliet_invite}}[#]{{i18n:juliet_invite.title}}",
+                "Juliet_Vet": "{{i18n:juliet_vet}}%item conversationTopic JulietVet 7 %% [#]{{i18n:juliet_vet.title}}",
+                "Juliet_VetDone": "{{i18n:juliet_vetdone}}[#]{{i18n:juliet_vetdone.title}}",
+                "Jade_IronBar": "{{i18n:Mail.Jade_IronBar}}%item quest EastScarp_578744 %%[#]{{i18n:Mail.Jade_IronBar_name}}",
+                "Jade_FairyPool": "{{i18n:Mail.Jade_FairyPool}}%item quest EastScarp_578745 %%[#]{{i18n:Mail.Jade_FairyPool_name}}",
+                "EastScarp.SpecialOrders.JadeFairyRing1": "{{i18n:Mail.EastScarp.SpecialOrders.JadeFairyRing1}}[#]{{i18n:Mail.EastScarp.SpecialOrders.JadeFairyRing1_name}}",
+                "EastScarp.SpecialOrders.JadeFairyRing2": "{{i18n:Mail.EastScarp.SpecialOrders.JadeFairyRing2}}[#]{{i18n:Mail.EastScarp.SpecialOrders.JadeFairyRing2_name}}",
+                "Jade_10heartmail": "{{i18n:Mail.Jade_10heartmail}}[#]{{i18n:Mail.Jade_10heartmail_name}}",
+                "JulietInvitationToSeance": "{{i18n:JulietInvitationToSeance}}[#]{{i18n:JulietInvitationToSeance.title}}",
+                "Kataryna_JunkMail": "{{i18n:Kataryna_Junkmail}}[#]{{i18n:Kataryna_Junkmail.title}}",
+                "Kataryna_voidegg": "{{i18n:Kataryna_voidegg}} %item quest 578760 %% [#]{{i18n:Kataryna_voidegg.title}}",
+                "Kataryna_VoidEggHatching": "{{i18n:kataryna_voidegghatching}}%item conversationTopic VoidEggHatching 5 %% [letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][textcolor black][#]{{i18n:kataryna_voidegghatching.title}}",
+                "CryptoToday_Oliver": "{{i18n:CryptoToday_Oliver}} %item conversationTopic TalkOllyLexi 7 %%[#]{{i18n:CryptoToday_Oliver.Title}}",
+                "Josephine_GiftMailed": "{{i18n:Josephine_GiftMailed1}} %item bigobject 111 %%[#]{{i18n:Josephine_GiftMailed1.Title}}",
+                "Rosa_Ingredients_Kale": "{{i18n:Mail.Rosa_Ingredients_Kale}}%item quest 578741 %%[#]{{i18n:Mail.Rosa_Ingredients_Kale_name}}",
+                "Rosa_Ingredients_Amaranth": "{{i18n:Mail.Rosa_Ingredients_Amaranth}}%item quest 578742 %%[#]{{i18n:Mail.Rosa_Ingredients_Amaranth_name}}",
+                "Rosa_Ingredients_GoatCheese": "{{i18n:Mail.Rosa_Ingredients_GoatCheese}}%item quest 578743 %%[#]{{i18n:Mail.Rosa_Ingredients_GoatCheese_name}}",
+                "RosaCooking": "{{i18n:Mail.Rosa_Recipe_Baklava}}%item cookingRecipe %%[#]{{i18n:Mail.Rosa_Recipe_Baklava_name}}",
+                "Rosa": "{{i18n:Mail.Rosa_gift}}%item object 651 1 731 1 223 1 234 1 222 1 %%[#]{{i18n:Mail.Rosa_gift_name}}",
+                "Vivienne_LetterInviteOrchard": "{{i18n:Vivienne_LetterInvite}}[#]{{i18n:Vivienne_LetterInvite.Title}}",
+                "Jasper_Peasbody1": "{{i18n:Mail.Jasper_Peasbody}}[#]{{i18n:Mail.Jasper_Peasbody_name}}",
+                "Jasper_Home": "{{i18n:Mail.Jasper_Home}}[#]{{i18n:Mail.Jasper_Home_name}}",
+                "Jasper_Home1": "{{i18n:Mail.Jasper_Home1}}[#]{{i18n:Mail.Jasper_Home1_name}}",
+                "Jasper_HomeA": "{{i18n:Mail.Jasper_HomeA}}[#]{{i18n:Mail.Jasper_HomeA_name}}",
+                "Jasper_Picnic": "{{i18n:Mail.Jasper_Picnic}}[#]{{i18n:Mail.Jasper_Picnic_name}}",
+                "Jasper_LoveLetter": "{{i18n:Mail.Jasper_LoveLetter}}[#]{{i18n:Mail.Jasper_LoveLetter_name}}",
+                "Gunther_Letter": "{{i18n:Mail.Gunther_Letter}}%item object 563 1 %%[#]{{i18n:Mail.Gunther_Letter_name}}",
+                "Gunther_Letter2": "{{i18n:Mail.Gunther_Letter2}}%item conversationTopic FarmerPregnantJasper 14 %%[#]{{i18n:Mail.Gunther_Letter2_name}}",
+                "Jasper_BabyArrives": "{{i18n:Mail.Jasper_BabyArrives}}%item furniture EastScarp_PlushLemur %%[#]{{i18n:Mail.Jasper_BabyArrives_name}}",
+                "Jasper_BabyCrawling": "{{i18n:Mail.Jasper_BabyCrawling}}%item conversationTopic Jasper_BabyCrawler 28 %%[#]{{i18n:Mail.Jasper_BabyCrawling_name}} ",
+                "Jasper_Todd": "{{i18n:Mail.Jasper_Todd}}[#]{{i18n:Mail.Jasper_Todd_name}}",
+                "Parent_Letter": "{{i18n:Mail.Parent_Letter}}[#]{{i18n:Mail.Parent_Letter_name}}",
+                "Parent_Letter2": "{{i18n:Mail.Parent_Letter2}}%item conversationTopic Farmer_BabySleep2 28 %%[#]{{i18n:Mail.Parent_Letter2_name}}",
+                "Parent_Letter3": "{{i18n:Mail.Parent_Letter3}}%item conversationTopic Jasper_BabyCrib2 28 %%[#]{{i18n:Mail.Parent_Letter3_name}}",
+                "Jasper": "{{i18n:Mail.Jasper_MineralGift}}%item object 60 1 64 1 66 1 %%[#]{{i18n:Mail.Jasper_MineralGift_name}}",
+                "Tristan_YarnBombing": "{{i18n:Mail.Tristan_YarnBombing}}[#]{{i18n:Mail.Tristan_YarnBombing_name}}",
+                "BeatriceCorwin_InviteRaoul": "{{i18n:Mail.BeatriceCorwin_InviteRaoul}}[#]{{i18n:Mail.BeatriceCorwin_InviteRaoul_name}}",
+                "Luma_PrismaticEgg": "{{i18n:Mail.Luma_PrismaticEgg}}%item object (O)Lemurkat.EastScarp_Prismatic_Slime_Egg 1 %%[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 5][#]{{i18n:Mail.Luma_PrismaticEgg_name}}",
+                "MichaeHart_Painting": "{{i18n:Mail.MichaeHart_Painting}}%item furniture EastScarp_MountainLandscape %%[#]{{i18n:Mail.MichaeHart_Painting.name}}",
+                "DaleInviteGraduationParty": "{{i18n:Mail.DaleInviteGraduationParty}}[#]{{i18n:Mail.DaleInviteGraduationParty.name}}",
+                "Rosa_Rebuild_Bridge": "{{i18n:Mail.Rosa_Rebuild_Bridge}}[#]{{i18n:Mail.Rosa_Rebuild_Bridge.name}}"
+            }
+        },
+        //Do Not Merge the below as they have conditions
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "Jasper_HomeB": "{{i18n:Mail.Jasper_HomeB_Host}}[#]{{i18n:Jasper_HomeB_Host_name}}"
+            },
+            "When": {
+                "IsMainPlayer": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "Jasper_HomeB": "{{i18n:Mail.Jasper_HomeB_Hand}}[#]{{i18n:Jasper_HomeB_Hand_name}}"
+            },
+            "When": {
+                "IsMainPlayer": false
+            }
+        },
+    ]
+}

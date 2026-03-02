@@ -1,0 +1,130 @@
+{
+  "Changes": [
+    {
+      "Action": "EditData",
+      "Target": "Data/IncomingPhoneCalls",
+      "Entries": {
+        "EastScarp.Eloise": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "Eloise",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.eloise}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": -1,
+          "CustomFields": {}
+        },
+        "EastScarp.Aideen": {
+          "TriggerCondition": "!PLAYER_NPC_RELATIONSHIP Current Aideen Married",
+          "RingCondition": null,
+          "FromNpc": "Aideen",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.aideen}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "EastScarp.Kataryna": {
+          "TriggerCondition": "PLAYER_HAS_SEEN_EVENT Any 57872020",
+          "RingCondition": "PLAYER_HAS_SEEN_EVENT Current 57872020",
+          "FromNpc": "KatarynaLK",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.kataryna}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "EastScarp.Victoria1": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "ToriLK",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.victoria}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": -1,
+          "CustomFields": {}
+        },
+        "EastScarp.Victoria2": {
+          "TriggerCondition": "BUILDINGS_CONSTRUCTED All \"Slime Hutch\"",
+          "RingCondition": null,
+          "FromNpc": "ToriLK",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.victoria2}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "EastScarp.Jade": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "Jade",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.jade}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": -1,
+          "CustomFields": {}
+        },
+        "EastScarp.Juliet1": {
+          "TriggerCondition": "!IS_COMMUNITY_CENTER_COMPLETE",
+          "RingCondition": null,
+          "FromNpc": "Juliet",
+          "FromPortrait": "Juliet_Joja",
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.juliet1}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "EastScarp.Juliet2": {
+          "TriggerCondition": null,
+          "RingCondition": null,
+          "FromNpc": "Juliet",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.juliet2}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "EastScarp.Jasper": {
+          "TriggerCondition": "PLAYER_HAS_SEEN_EVENT Host 50709914",
+          "RingCondition": "PLAYER_HEARTS Current Jasper 8",
+          "FromNpc": "Jasper",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.jasper1}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+        "EastScarp.Jessie": {
+          "TriggerCondition":null,
+          "RingCondition": null,
+          "FromNpc": "Jessie",
+          "FromPortrait": null,
+          "FromDisplayName": null,
+          "Dialogue": "{{i18n:phonecall.eastscarp.jessie}}",
+          "IgnoreBaseChance": false,
+          "SimpleDialogueSplitBy": null,
+          "MaxCalls": 1,
+          "CustomFields": {}
+        },
+      }
+    }
+  ]
+}

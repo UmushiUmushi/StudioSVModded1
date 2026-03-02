@@ -1,0 +1,48 @@
+{
+  "Changes": [
+    {
+      "LogName": "Bridge to Blue Moon Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Bridge to Blue Moon/Bridge.Blue.Moon_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod:|contains=AndrewJC.SVEBeachBridge": true,
+        "N3cro_92.ReMappingEarthySync/BlueMoon": "true"
+      },
+
+      "ToArea": {
+        "X": 180,
+        "Y": 137,
+        "Width": 10,
+        "Height": 9
+      }
+    },
+    {
+      "LogName": "Bridge to Blue Moon Map Overlay (BoatJourney)",
+      "Action": "EditImage",
+      "Target": "Minigames/{{season}}_boatJourneyMap",
+      "FromFile": "assets/Maps/Bridge to Blue Moon/Bridge.Blue.Moon_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod:|contains=AndrewJC.SVEBeachBridge": true,
+        "N3cro_92.ReMappingEarthySync/BlueMoon": "true"
+      },
+
+      "ToArea": {
+        "X": 246,
+        "Y": 30,
+        "Width": 10,
+        "Height": 9
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Cozy Mittens",
+  "Author": "PeacefulEnd",
+  "Version": "1.1.0",
+  "Description": "Cozy mittens for the Fashion Sense framework.",
+  "UniqueID": "PeacefulEnd.FashionSense.CozyMittens",
+  "UpdateKeys": [ "Nexus:14490" ],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "4.11.3"
+  }
+}

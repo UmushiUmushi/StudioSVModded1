@@ -1,0 +1,72 @@
+//REMAPPING
+
+{
+    //MESSAGES
+    "RMP.aspen": "Ferme d’Aspen",
+    "RMP.aspen1": "Maison d’Aspen",
+    "RMP.alecto": "Cabine de la sorcière Alecto",
+    "RMP.ayeish": "Route des Vans",
+    "RMP.backwood.hill": "Colline de la forêt inexploitée",
+    "RMP.beach.additional": "Espace de stockage de plage",
+    "RMP.cape.stardew": "La maison d'Annetta",
+    "RMP.cape.stardew1": "Forêt du Cap",
+    "RMP.cape.stardew2": "Mer du Cap",
+    "RMP.cape.stardew3": "Cap Stardew",
+    "RMP.cape.stardew4": "Arrêt de bus du Cap",
+    "RMP.cape.stardew5": "Tunnel du Cap",
+    "RMP.demon.slayer": "Gyomei Himejima's estate", //1.4.0
+	"RMP.demon.slayer1": "Muichiro Tokito's estate", //1.4.0
+	"RMP.demon.slayer2": "Giyu Tomiok's estate", //1.4.0
+	"RMP.demon.slayer3": "Mitsuri Kanroji's estate", //1.4.0
+	"RMP.demon.slayer4": "Butterfly estate", //1.4.0
+	"RMP.demon.slayer5": "Obanai Iguro's estate", //1.4.0
+	"RMP.demon.slayer6": "Tengen Uzui's estate", //1.4.0
+	"RMP.demon.slayer7": "Rengoku Kyojuro's estate", //1.4.0
+	"RMP.demon.slayer8": "Sanemi Shinazugawa's estate", //1.4.0
+	"RMP.fiasa": "FIASA", //1.4.0
+    "RMP.fishing.pond": "Étang de pêche",
+    "RMP.fishing.pond1": "Installations d’étang de pêche",
+    "RMP.fishmonger": "Poissonnerie de Constance",
+    "RMP.garden.village": "Village-jardin",
+    "RMP.haley.bakery": "Boulangerie d’Haley\n(Ouvert du mardi au vendredi / 9h-15h)",
+    "RMP.isla": "Grotte souterraine",
+    "RMP.isla1": "Grotte de l’île",
+    "RMP.jane": "La caravane de Jane",
+    "RMP.juliet": "La maison de Jessie",
+    "RMP.juna": "La grotte de Juna",
+    "RMP.kid.treehouse": "Arbre-maison de l’enfant",
+    "RMP.law.order": "Bureau fermé",
+    "RMP.law.order1": "Bureau du shérif",
+    "RMP.louis.garage": "Le garage de Louis\n(Ouvert tous les jours / 8h-19h)",
+    "RMP.lunna.house": "Le hangar de Lunna",
+    "RMP.lunna.lake": "Lac",
+    "RMP.mineral.town": "Entrée de l’autoroute",
+    "RMP.mineral.town1": "Tunnel souterrain",
+    "RMP.my.submarine": "Sous-marin",
+    "RMP.northwest.coast": "Côté nord-ouest",
+    "RMP.ornithologist.guild": "Guilde des ornithologues",
+    "RMP.ranger.taro": "Prairies",
+    "RMP.ranger.taro1": "Tente de Taro",
+    "RMP.ranger.taro2": "Train",
+    "RMP.red.school.old": "Ancienne école",
+    "RMP.red.school.new": "École rouge",
+    "RMP.RSV": "Téléphérique",
+    "RMP.stray.catfe": "Le chat errant\n(Ouvert du mardi au dimanche / 7h-14h)",
+    "RMP.stray.catfe1": "Café en plein air",
+    "RMP.sunberry": "Sunberry Village", //1.4.0
+	"RMP.sunberry1": "Sunberry Road", //1.4.0
+	"RMP.sunberry2": "Florest Shortcut", //1.4.0
+    "RMP.sydney": "La maison de Sydney",
+    "RMP.wilford": "La serre de Wilford",
+    "RMP.wilford1": "Bois de l'Est",
+    "RMP.walk.desert": "Route forestière",
+    "RMP.walk.desert1": "Route sinueuse",
+    "RMP.walk.desert2": "Croisement",
+    "RMP.walk.desert3": "Ville morte",
+    "RMP.walk.desert4": "Ghost Shop",
+
+    "RMP.cape.stardew6": "Cave du Cape", 
+    "RMP.cape.stardew7": "Île du Cape", 
+    "RMP.cape.stardew8": "Caverne du Cape"
+
+}

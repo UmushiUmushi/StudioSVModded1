@@ -1,0 +1,12 @@
+{
+	"Name": "Custom Silo Hay Capacity",
+	"Author": "SquidJesus",
+	"Version": "1.0",
+	"Description": "Lets you set the capacity of the silo with Content Patcher.",
+	"UniqueID": "SquidJesus.silohaycapacity",
+        "UpdateKeys": [ "Nexus:21260" ],
+	"ContentPackFor": {
+	"UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "1.1.0"
+	}
+}

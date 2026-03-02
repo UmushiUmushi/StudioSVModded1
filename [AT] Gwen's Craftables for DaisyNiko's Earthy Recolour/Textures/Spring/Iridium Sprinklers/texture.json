@@ -1,0 +1,22 @@
+{
+	"ItemName": "Iridium Sprinkler",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors" ],
+		"Seasons": ["Spring"],
+	"TextureWidth": 16,
+	"TextureHeight": 16,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors",
+		},
+		{
+		"Id": 2,
+		"Name": "3-Outdoors",
+		},
+	]
+}

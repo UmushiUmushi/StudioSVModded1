@@ -1,0 +1,29 @@
+{
+	"ItemName": "Heavy Tapper",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors" ],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors",
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 1,
+		"Name": "2-Indoors",
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 2,
+		"Name": "3-Indoors",
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 3,
+		"Name": "4-Indoors",
+		"ChanceWeight": 0,
+		},
+	]
+}

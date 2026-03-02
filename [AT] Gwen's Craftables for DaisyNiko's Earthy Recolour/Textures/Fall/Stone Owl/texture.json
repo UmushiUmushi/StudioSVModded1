@@ -1,0 +1,18 @@
+{
+	"ItemName": "Stone Owl",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Fall"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors",
+		},
+	]
+}

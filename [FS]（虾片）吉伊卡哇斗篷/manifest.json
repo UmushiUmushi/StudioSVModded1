@@ -1,0 +1,13 @@
+﻿{
+  "Name": "[FS] 虾片有点腻的衣服",
+  "Author": "虾片有点腻",
+  "Version": "1.0.0",
+  "Description": "小红书ID：虾片有点腻",
+  "UniqueID": "yx.1",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.FashionSense",
+    "MinimumVersion": "3.0.1"
+  }
+}

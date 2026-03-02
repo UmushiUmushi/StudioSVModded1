@@ -1,0 +1,84 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Gift Tastes - Dwarf likes milk",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Fields": {
+                "Dwarf": {
+                    "4": "554 60 62 64 66 68 70 749 -6"
+                }
+            },
+            "When": {
+                "HasSeenEvent": "55990007"
+            }
+        },
+        { //New dialogue for Dwarf
+            "LogName": "Dwarf Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "Entries": {
+                "Mon2": "{{i18n:Dwarf_Dialogue_Mon2}}",
+                "summer_Mon4": "{{i18n:Dwarf_Dialogue_summer_Mon4}}",
+                "Mon6": "{{i18n:Dwarf_Dialogue_Mon6}}",
+                "winter_Mon8": "{{i18n:Dwarf_Dialogue_winter_Mon8}}",
+                "Mon10": "{{i18n:Dwarf_Dialogue_Mon10}}",
+                "Tue2": "{{i18n:Dwarf_Dialogue_Tue2}}",
+                "summer_Tue4": "{{i18n:Dwarf_Dialogue_summer_Tue4}}",
+                "Tue6": "{{i18n:Dwarf_Dialogue_Tue6}}",
+                "winter_Tue8": "{{i18n:Dwarf_Dialogue_winter_Tue8}}",
+                "Tue10": "{{i18n:Dwarf_Dialogue_Tue10}}",
+                "Wed2": "{{i18n:Dwarf_Dialogue_Wed2}}",
+                "summer_Wed4": "{{i18n:Dwarf_Dialogue_summer_Wed4}}",
+                "winter_Wed8": "{{i18n:Dwarf_Dialogue_winter_Wed8}}",
+                "Wed10": "{{i18n:Dwarf_Dialogue_Wed10}}",
+                "Thu6": "{{i18n:Dwarf_Dialogue_Thu6}}",
+                "Thu8": "{{i18n:Dwarf_Dialogue_Thu8}}",
+                "Thu10": "{{i18n:Dwarf_Dialogue_Thu10}}",
+                "Fri4": "{{i18n:Dwarf_Dialogue_Fri4}}",
+                "Fri6": "{{i18n:Dwarf_Dialogue_Fri6}}",
+                "fall_Fri8": "{{i18n:Dwarf_Dialogue_fall_Fri8}}",
+                "Fri10": "{{i18n:Dwarf_Dialogue_Fri10}}",
+                "Sat4": "{{i18n:Dwarf_Dialogue_Sat4}}",
+                "Sat8": "{{i18n:Dwarf_Dialogue_Sat8}}",
+                "Sat10": "{{i18n:Dwarf_Dialogue_Sat10}}",
+                "Sun": "{{i18n:Dwarf_Dialogue_Sun}}",
+                "Sun8": "{{i18n:Dwarf_Dialogue_Sun8}}",
+                "Sun10": "{{i18n:Dwarf_Dialogue_Sun10}}",
+                "summer_Mon10": "{{i18n:Dwarf_Dialogue_summer_Mon10}}",
+                "summer_Tue_8": "{{i18n:Dwarf_Dialogue_summer_Tue_8}}",
+                "summer_Wed10": "{{i18n:Dwarf_Dialogue_summer_Wed10}}",
+                "Fri_inlaw_Jasper": "{{i18n:Dwarf_Dialogue_Fri_inlaw_Jasper}}",
+                "DwarfVisit": "{{i18n:Dwarf_Dialogue_DwarfVisit}}",
+                "JasperHome1": "{{i18n:Dwarf_Dialogue_JasperHome1}}",
+                "JasperHomeA": "{{i18n:Dwarf_Dialogue_JasperHomeA}}",
+            }
+        },
+        {
+            "LogName": "Dwarf dialogue related to Jasper",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Dwarf",
+            "When": {
+                "HasSeenEvent": "55990005"
+            },
+            "Entries": {
+                "winter_Fri_inlaw_Jasper": "{{i18n:Dwarf_Dialogue_JasperSpouse_winter_Fri_inlaw_Jasper}}",
+                "summer_Fri_inlaw_Jasper": "{{i18n:Dwarf_Dialogue_JasperSpouse_summer_Fri_inlaw_Jasper}}#$b#{{i18n:Dwarf_Dialogue_JasperSpouse_summer_Fri_inlaw_Jasper2.{{random:a,b,c,d,e}} }}",
+                "fall_Fri_inlaw_Jasper": "{{i18n:Dwarf_Dialogue_JasperSpouse_fall_Fri_inlaw_Jasper}}",
+                "spring_Fri_inlaw_Jasper": "{{i18n:Dwarf_Dialogue_JasperSpouse_spring_Fri_inlaw_Jasper}}",
+            }
+        },
+        {
+            "LogName": "Mine Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "55990001/k 50709914": "EarthMine/18 7/Dwarf -100 -100 0 farmer 18 12 0/skippable/pause 500/move farmer 0 -4 0/pause 500/playSound stairsdown/emote farmer 16/warp Dwarf 23 9/pause 500/move Dwarf 0 -1 3/pause 500/jump Dwarf 1/faceDirection farmer 1/speak Dwarf \"{{i18n:55990001.01}}\"/pause 500/quickQuestion {{i18n:55990001.q0}}(break)emote Dwarf 16\\speak Dwarf \"{{i18n:55990001.q1}}\"(break)emote Dwarf 16\\speak Dwarf \"{{i18n:55990001.q2}}\"(break)emote Dwarf 16\\speak Dwarf \"{{i18n:55990001.q3}}\"(break)emote Dwarf 12\\speak Dwarf \"{{i18n:55990001.q4}}\"/pause 500/speak Dwarf \"{{i18n:55990001.02}}\"/pause 500/faceDirection Dwarf 1/pause 500/emote Dwarf 28/pause 500/move Dwarf -2 0 3/pause 500/speak Dwarf \"{{i18n:55990001.03}}\"/pause 500/emote farmer 16/pause 500/speak Dwarf \"{{i18n:55990001.04}}\"/shake Dwarf 1050/message \"{{i18n:55990001.05}}\"/question null \"{{i18n:55990001.06}}#{{i18n:55990001.07}}#{{i18n:55990001.08}}\"/pause 500/emote Dwarf 32/pause 1000/speak Dwarf \"{{i18n:55990001.09}}\"/faceDirection Dwarf 1/move Dwarf 5 0 1 true/pause 500/playSound healSound/Message \"{{i18n:55990001.10}}\"/pause 1000/end",
+                //"55990007/i 184": "EarthMine/41 11/farmer 35 8 1 Dwarf 43 6 2/skippable/pause 500/move farmer 7 0 0/jump Dwarf 4/move Dwarf 0 1 2/speak Dwarf \"{{i18n:55990007.01}}\"/quickQuestion {{i18n:55990007.q0}}(break)speak Dwarf \"{{i18n:55990007.q1}}\"(break)speak Dwarf \"{{i18n:55990007.q2}}\"(break)speak Dwarf \"{{i18n:55990007.q3}}\"/pause 500/speak Dwarf \"{{i18n:55990007.02}}\"/emote farmer 60/pause 1500/speak Dwarf \"{{i18n:55990007.03}}\"/emote farmer 40/faceDirection farmer 1/addObject 43 8 184/removeItem 184/pause 500/emote Dwarf 12/speak Dwarf \"{{i18n:55990007.04}}\"/pause 500/quickQuestion {{i18n:55990007.q4}}(break)speak Dwarf \"{{i18n:55990007.q5}}\"(break)speak Dwarf \"{{i18n:55990007.q6}}\"(break)speak Dwarf \"{{i18n:55990007.q7}}\"/pause 500/removeSprite 43 8/playSound sipTea/pause 500/jump Dwarf 5/emote Dwarf 20/speak Dwarf \"{{i18n:55990007.05}}\"/emote farmer 32/pause 1000/end"
+            },
+            "When": {
+                "HasWalletItem |contains=DwarvishTranslationGuide": true
+            }
+        }
+    ]
+}

@@ -1,0 +1,95 @@
+{
+    "Changes": [
+        //Events = 578714..
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+              "When": {
+                "FriendableZuzuNPCs |contains=Kennedy": true
+            },
+            "Entries": {
+                "KennedyLK": "{{i18n: gift.kennedy.love}}/306 307/{{i18n: gift.kennedy.like}}/-75 -4 -79 203/{{i18n: gift.kennedy.dislike}}/food_sweet/{{i18n: gift.kennedy.hate}}//{{i18n: gift.kennedy.neutral}}//"
+            }
+        },
+        //Loves Mayonnaise
+        // Likes vegetables, fish, fruit, strange bun
+        { // Sets up the Inn room for Kennedy
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_VillageInn",
+            "FromFile": "assets/Maps/EastScarpeInn_Kataryna_Kennedy.tmx",
+            "Update": "OnLocationChange",
+            "FromArea": {
+                "X": 13,
+                "Y": 5,
+                "Width": 7,
+                "Height": 8
+            },
+            "ToArea": {
+                "X": 13,
+                "Y": 5,
+                "Width": 7,
+                "Height": 8
+            },
+            "When": {
+                "HasSeenEvent |contains=57871401": "True",
+                "Day": "12,13,14,26,27,28"
+            }
+        },
+        {
+            "LogName": "NPC Sprite",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/KennedyLK, Portraits/KennedyLK",
+            "FromFile": "assets/{{target}}/Kennedy.png"
+        },
+        {
+            "LogName": "Load kennedy schedule File",
+            "Action": "Load",
+            "Target": "Characters/schedules/KennedyLK",
+            "FromFile": "assets/Characters/schedules/KennedyLK.json",
+        },
+        {
+            "LogName": "Kennedy Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/KennedyLK.json",
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57871400/d Mon Tue Wed Thu/f OliverK 2500/H/e 57873005": "continue/-100 -100/farmer 11 71 1 OliverK 17 65 2 KennedyLK -1000 -100 1/skippable/viewport 11 72 clamp true/advancedMove OliverK false 0 5 2 100/advancedMove farmer false 5 0 1 100/proceedposition farmer/pause 500/speak OliverK \"Hey @... have you seen Ayeisha around? Mom said she was sending me a surprise... but it hasn't arrived yet.$2\"/emote farmer 36/pause 500/speak OliverK \"Oh... well I guess it's been delayed. Guess that's what you get when you live out in the boondocks.\"/warp KennedyLK 0 72/advancedMove KennedyLK false 15 0 1 100/emote farmer 60/pause 500/speak OliverK \"Maybe it'll arrive Monday.\"/proceedPosition KennedyLK/textAboveHead KennedyLK \"Olly!\"/jump OliverK 5/emote OliverK 16/pause 500/speed OliverK 6/advancedMove OliverK false 0 2 3 100/pause 500/pause 500/advancedMove farmer false 0 -4 2 100/speak OliverK \"Kendi!$1\"/speak KennedyLK \"The one and only.$1\"/speak OliverK \"What are you doing here?$1#$b#Wait... did Mom send you?$3\"/emote KennedyLK 60/pause 500/speak KennedyLK \"Nah... I wanted to come!$1#$b#ZuCU's great and all... but I've missed you.$2\"/emote OliverK 60/pause 500/speak KennedyLK \"'Sides, I had to see this place for myself.#$b#The sleepy seaside town that stole our Olly away.$1\"/pause 500/faceDirection KennedyLK 2/pause 1000/faceDirection KennedyLK 3/pause 1000/faceDirection KennedyLK 0/pause 500/jump KennedyLK 3/faceDirection KennedyLK 1/pause 500/speak KennedyLK \"I know you're shocked to see me and all, and you've been living out here in the sticks for like, ever, so maybe you've forgotten your manners...#$b#...but are you gonna introduce me to your friend?\"/pause 500/emote OliverK 28/faceDirection OliverK 0 true/faceDirection KennedyLK 0 true/pause 500/advancedMove farmer false 0 4 2 100/pause 500/emote farmer 32/pause 1500/end"
+            }
+        },
+        {
+            "LogName": "Load kennedy schedule File",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KennedyLK",
+            "When": {
+                "HasSeenEvent": "57871400"
+            },
+            "Entries": {
+                "12": "GOTO 14", //start in flat > Waiting room > arrive in inn in evening
+                "13": "GOTO 14", //start in inn > hang out with Oliver
+                //"12": "700 EastScarp_VillageInn ",
+                //"13": "0 EastScarp_VillageInn 18 11 3/.../1600 EastScarp_VillageInn 23 10 1/1900 EastScarp_VetHouse 22 25 1",
+                "14": "0 EastScarp_VillageInn 18 11 3/a900 EastScarp_Village 42 37 1/1000 EastScarp_SeaCave 29 24 0/1700 EastScarp_Crossing 31 21 1/1900 EastScarp_TNPCWaitingWarpRoom 7 8",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "IsMainPlayer": false
+            },
+            "Entries": {
+                "Lemurkat.Oliver_UnlockingKennedyFarmhand": {
+                    "ID": "mail.Lemurkat.Oliver_UnlockingKennedyFarmhand",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 57871400",
+                    "Action": "MarkEventSeen Current 57871401"
+                },
+            }
+        },
+    ]
+}

@@ -1,0 +1,347 @@
+{
+  "Name": "斗篷537",
+  "FrontAccessory": {
+	"Scale": 2, 
+	"DisableGrayscale":"true",
+	"DrawOrderOverride":  { 
+    "Preposition":"Before",   
+    "AppearanceType":"Sleeves"},
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "HeadPosition": {
+      "X": 32,
+      "Y": 54
+    },
+    "AccessorySize": {
+      "Width": 96,
+      "Length": 96
+    },
+    "IdleAnimation": [
+     {
+         "Frame": 1,
+         "Duration": 0
+     },
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -6, "Y": 0 },
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": 0, "Y": -12 },
+        "Conditions": [
+          {
+            "Name": "IsSitting",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+             {
+                 "Name": "RidingHorse",
+                 "Independent": true,
+                 "Value": false
+             },
+             {
+                 "Name": "IsSitting",
+                 "Independent": true,
+                 "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -6, "Y": 0 },
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": false
+          }
+        ]
+      },
+    ]
+  },
+  "RightAccessory": {
+	"Scale": 2,
+	"DisableGrayscale":"true",
+	"DrawOrderOverride":  { 
+    "Preposition":"Before",   
+    "AppearanceType":"Sleeves"},
+    "StartingPosition": {
+      "X": 0,
+      "Y": 96
+    },
+    "HeadPosition": {
+      "X": 32,
+      "Y": 54
+    },
+    "AccessorySize": {
+      "Width": 96,
+      "Length": 96
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -4, "Y": 0},
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -4, "Y": -8 },
+        "Conditions": [
+          {
+            "Name": "IsSitting",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+             {
+                 "Name": "RidingHorse",
+                 "Independent": true,
+                 "Value": false
+             },
+             {
+                 "Name": "IsSitting",
+                 "Independent": true,
+                 "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -4, "Y": 0},
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": false
+          }
+        ]
+      },
+    ]
+  },
+  "LeftAccessory": {
+	"Scale": 2, 
+	"DisableGrayscale":"true",
+	"DrawOrderOverride":  { 
+    "Preposition":"Before",   
+    "AppearanceType":"Sleeves"},
+    "StartingPosition": {
+      "X": 0,
+      "Y": 192
+    },
+    "HeadPosition": {
+      "X": 32,
+      "Y": 54
+    },
+    "AccessorySize": {
+      "Width": 96,
+      "Length": 96
+    },
+    "IdleAnimation": [
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -12, "Y": 0},
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": 4, "Y": -8 },
+        "Conditions": [
+          {
+            "Name": "IsSitting",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+             {
+                 "Name": "RidingHorse",
+                 "Independent": true,
+                 "Value": false
+             },
+             {
+                 "Name": "IsSitting",
+                 "Independent": true,
+                 "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -12, "Y": 0},
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": false
+          }
+        ]
+      },
+    ]	
+  },
+  "BackAccessory": {
+	"Scale": 2, 
+	"DisableGrayscale":"true",
+	"DrawOrderOverride":  { 
+    "Preposition":"Before",   
+    "AppearanceType":"Hair"},
+    "StartingPosition": {
+      "X": 0,
+      "Y": 288
+    },
+    "HeadPosition": {
+      "X": 32,
+      "Y": 50
+    },
+    "AccessorySize": {
+      "Width": 96,
+      "Length": 96
+    },
+    "IdleAnimation": [
+     {
+         "Frame": 1,
+         "Duration": 0
+     },
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -6, "Y": 0},
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 1,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": 0, "Y": -10 },
+        "Conditions": [
+          {
+            "Name": "IsSitting",
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+             {
+                 "Name": "RidingHorse",
+                 "Independent": true,
+                 "Value": false
+             },
+             {
+                 "Name": "IsSitting",
+                 "Independent": true,
+                 "Value": false
+          }
+        ]
+      }
+    ],
+    "MovementAnimation": [
+      {
+        "Frame": 2,
+        "EndWhenFarmerFrameUpdates": true,
+        "Offset": { "X": -6, "Y": 0},
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": true
+          }
+        ]
+      },
+      {
+        "Frame": 0,
+        "EndWhenFarmerFrameUpdates": true,
+        "Conditions": [
+          {
+            "Name": "RidingHorse",
+            "Independent": true,
+            "Value": false
+          }
+        ]
+      },
+    ]	
+  },
+}

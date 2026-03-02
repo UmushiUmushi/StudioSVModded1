@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Shane",
+			"Entries":
+				{
+					"event_noLoan2": "Okay, fine...$s"
+				},
+			"LogName":"Fix Shane"
+		}
+	]
+}

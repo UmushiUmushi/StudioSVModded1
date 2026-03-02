@@ -1,0 +1,13 @@
+{
+  "CollectiveNames":
+[
+"Oak Dresser",
+"Walnut Dresser",
+"Birch Dresser",
+"Mahogany Dresser"
+],
+  "Type": "Furniture",
+  "TextureWidth": 80,
+  "TextureHeight": 48,
+  "Variations": 2
+}

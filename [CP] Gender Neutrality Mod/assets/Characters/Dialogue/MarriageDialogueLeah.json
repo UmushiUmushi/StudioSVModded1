@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueLeah",
+			"Entries":
+				{
+					"Good_3": "Wow, you look full of energy today!$l"
+				},
+			"LogName":"Fix MarriageDialogueLeah"
+		}
+	]
+}

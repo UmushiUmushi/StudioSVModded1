@@ -1,0 +1,25 @@
+{
+  "Changes": [
+    {
+      "LogName": "Fishmonger Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map_island",
+      "FromFile": "assets/Maps/Fishmonger/Fishmonger.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=VoidWitchCult.CP.TheFishmongerNPC": true,
+        "N3cro_92.ReMappingEarthySync/Fishmonger": "true"
+      },
+
+      "ToArea": {
+        "X": 159,
+        "Y": 129,
+        "Width": 11,
+        "Height": 11
+      }
+    }
+  ]
+}

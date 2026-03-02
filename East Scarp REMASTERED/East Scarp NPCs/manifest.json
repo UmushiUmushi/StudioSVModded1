@@ -1,0 +1,59 @@
+{
+    "Name": "East Scarp: NPCs",
+    "Author": "Lemurkat",
+    "Description": "Adds a cast of characters to East Scarp.",
+    "Version": "3.0.6",
+    "UniqueID": "Lemurkat.EastScarpNPCs",
+    "UpdateKeys": [
+        "Nexus:???"
+    ],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    },
+    "DH.MEEP": "2.0.0",
+    "DH.MEEP.FarmAnimalSpawns": "",
+    "Dependencies": [
+        {
+            "UniqueID": "Lemurkat.EastScarp"
+        },
+        {
+            "UniqueID": "DecidedlyHuman.MappingExtensionsAndExtraProperties",
+            "IsRequired": true
+        },
+        {
+            "UniqueID": "spacechase0.SpaceCore"
+        },
+        {
+            "UniqueID": "DN.SnS",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "DN.SnS.CP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "LemurKat.Mr.Ginger.NPC",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Rafseazz.RSVCP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lemurkat.JasRanchPack.CP",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "CC.Taro",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "TheFrenchDodo.RodneyOBrien",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "TheFrenchDodo.WWWA",
+            "IsRequired": false
+        },
+    ]
+}

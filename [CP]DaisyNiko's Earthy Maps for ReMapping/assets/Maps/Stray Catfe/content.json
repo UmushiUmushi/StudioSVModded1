@@ -1,0 +1,182 @@
+{
+  "Changes": [
+    {
+      "LogName": "Stray Catfe Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Stray Catfe/Stray.Catfe_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=ch20youk.TSCCP": true,
+		"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFF": "false",
+		"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+        "N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+      },
+
+      "ToArea": {
+        "X": 120,
+        "Y": 76,
+        "Width": 142,
+        "Height": 274
+      }
+    },
+    {
+      "LogName": "Stray Catfe Map Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Stray Catfe/Stray.Catfe_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=ch20youk.TSCCP": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+      },
+
+      "ToArea": {
+        "X": 129,
+        "Y": 74,
+        "Width": 133,
+        "Height": 281
+      }
+    },
+    {
+			"LogName": "Stray Catfe Meadowlands",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+			"FromFile": "assets/Maps/Stray Catfe/Stray.Catfe_{{season}}.png",
+			"FromArea": {	"X": 0,	"Y": 0,	"Width": 11, "Height": 15},
+			"ToArea": {"X": 120, "Y": 33, "Width": 11, "Height": 15},
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod:|contains=ch20youk.TSCCP": true,
+        		"N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+			}
+		},
+    {
+			"LogName": "Stray Catfe Meadowlands SVE",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+			"FromFile": "assets/Maps/Stray Catfe/Stray.Catfe_{{season}}_SVE.png",
+			"FromArea": {	"X": 0,	"Y": 0,	"Width": 2, "Height": 26}, 
+			"ToArea": {"X": 129, "Y": 32, "Width": 2, "Height": 26},
+			"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod:|contains=ch20youk.TSCCP": true,
+        		"N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+			}
+		},
+    {
+			"LogName": "Stray Catfe Waterfall",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod:|contains=ch20youk.TSCCP": true,
+        		"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        		"N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+      },
+			"Entries": {
+			   	"RMP Stray Catfe Waterfall": {
+					"Id": "Stray_Catfe_Farm_Waterfall",
+					"PixelArea": { "X": 120,	"Y": 76,	"Width": 13,	"Height": 15 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WF/Stray.Catfe.WF_{{season}}.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 13,	"Height": 15 } }]
+				}
+			}
+		},
+    {
+			"LogName": "Stray Catfe Waterfall SVE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP":true,
+				"HasMod:|contains=ch20youk.TSCCP": true,
+        		"FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        		"N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+      },
+			"Entries": {
+				"RMP Stray Catfe Waterfall SVE": {
+					"Id": "Stray_Catfe_Farm_Waterfall_SVE",
+					"PixelArea": { "X": 129,	"Y": 74,	"Width": 14,	"Height": 26 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WFSVE/Stray.Catfe.WF_{{season}}_SVE.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 14,	"Height": 26 } }]
+				}
+			}
+		},
+    {
+			"LogName": "Stray Catfe Waterfall LE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod:|contains=ch20youk.TSCCP": true,
+        		"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+        		"N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+      },
+			"Entries": {
+			   	"RMP Stray Catfe Waterfall": {
+					"Id": "Stray_Catfe_Farm_Waterfall",
+					"PixelArea": { "X": 120,	"Y": 76,	"Width": 13,	"Height": 15 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WF/Stray.Catfe.WF_{{season}}.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 13,	"Height": 15 } }]
+				}
+			}
+		},
+    {
+			"LogName": "Stray Catfe Waterfall LE SVE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      		"PatchMode": "Overlay",
+      		"Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP":true,
+				"HasMod:|contains=ch20youk.TSCCP": true,
+        		"FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+        		"N3cro_92.ReMappingEarthySync/TheStrayCatfe": "true"
+      },
+			"Entries": {
+			   	"RMP Stray Catfe Waterfall SVE": {
+					"Id": "Stray_Catfe_Farm_Waterfall_SVE",
+					"PixelArea": { "X": 129,	"Y": 74,	"Width": 14,	"Height": 26 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WFSVE/Stray.Catfe.WF_{{season}}_SVE.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 14,	"Height": 26 } }]
+				}
+			}
+		}
+  	]
+}

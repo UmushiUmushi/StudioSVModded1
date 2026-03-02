@@ -1,0 +1,80 @@
+//REMAPPING
+
+{
+	//MESSAGES
+	"RMP.aspen": "Granja de Aspen", 
+	"RMP.aspen1": "Casa de Aspen", 
+	"RMP.alecto": "Cabaña de la Bruja Alecto", 
+	"RMP.ayeish": "Furgoneta",
+	"RMP.backwood.hill": "Colina Trasera", 
+	"RMP.beach.additional": "Almacén en la Playa",
+	"RMP.cape.stardew": "Casa de Anetta",
+	"RMP.cape.stardew1": "Bosque Cabo",
+	"RMP.cape.stardew2": "Mar del Cabo",
+	"RMP.cape.stardew3": "Cabo Stardew",
+	"RMP.cape.stardew4": "Estación de Bus del Cabo",
+	"RMP.cape.stardew5": "Túnel del Cabo",
+	"RMP.demon.slayer": "La finca de Gyomei Himejima", 
+	"RMP.demon.slayer1": "La finca de Muichiro Tokito",
+	"RMP.demon.slayer2": "La finca de Giyu Tomiok",
+	"RMP.demon.slayer3": "La finca de Mitsuri Kanroji",
+	"RMP.demon.slayer4": "La finca Mariposa",
+	"RMP.demon.slayer5": "La finca de Obanai Iguro",
+	"RMP.demon.slayer6": "La finca de Tengen Uzui",
+	"RMP.demon.slayer7": "La finca de Rengoku Kyojuro",
+	"RMP.demon.slayer8": "La finca de Sanemi Shinazugawa",
+	"RMP.downhill.project": "Destroyed Church", //1.5.0
+	"RMP.downhill.project1": "Valley Church", //1.5.0
+	"RMP.downhill.project2": "Julia's House", //1.5.0
+	"RMP.downhill.project3": "Priest's House", //1.5.0
+	"RMP.downhill.project4": "Arthur's House", //1.5.0
+	"RMP.downhill.project5": "Coal Mines", //1.5.0
+	"RMP.downhill.project6": "Monte Mor", //1.5.0
+	"RMP.fiasa": "FIASA",
+	"RMP.fishing.pond": "Estanque de Pesca",
+	"RMP.fishing.pond1": "Instalaciones del Estanque de Pesca",
+	"RMP.fishmonger": "Pescadería de Constance",
+	"RMP.garden.village": "Villa Jardín",
+	"RMP.haley.bakery": "Pastelería de Haley (Abierto de Martes a Viernes de 9 am-3 pm)",
+	"RMP.isla": "Caleta Submarina",
+	"RMP.isla1": "Caleta de Isla",
+	"RMP.jane": "Trailer de Jane",
+	"RMP.juliet": "Casa de Jessie",
+	"RMP.juna": "Cueva de Juna",
+	"RMP.kid.treehouse": "Casa del Árbol de los niños",
+	"RMP.law.order": "Oficina Cerrada",
+	"RMP.law.order1": "Oficina del Sheriff",
+	"RMP.louis.garage": "Garaje de Louis (Abierto todos los días, de 8 am-7 pm)",
+	"RMP.lunna.house": "Cabaña de Lunna",
+	"RMP.lunna.lake": "Lago",
+	"RMP.mineral.town": "Entrada a la Autopista",
+	"RMP.mineral.town1": "Túnel subterráneo",
+	"RMP.my.submarine": "Submarino",
+	"RMP.northwest.coast": "Costa Noroeste",
+	"RMP.ornithologist.guild": "Gremio de Ornitólogos.",
+	"RMP.ranger.taro": "Pradera",
+	"RMP.ranger.taro1": "Tienda de Taro",
+	"RMP.ranger.taro2": "Tren",
+	"RMP.red.school.old": "Escuelita Vieja",
+	"RMP.red.school.new": "Escuelita Roja",
+	"RMP.RSV": "Teleférico",
+	"RMP.stray.catfe": "Catfe Callejero (Abierto de Martes a Domingo de 7 am-2 pm)",
+	"RMP.stray.catfe1": "Exterior del Café",
+	"RMP.sunberry": "Sunberry Village",
+	"RMP.sunberry1": "Sunberry Road",
+	"RMP.sunberry2": "Florest Shortcut",
+	"RMP.sydney": "Casa de Sydney",
+	"RMP.therapist": "Grey's Home", //1.5.0
+	"RMP.wilford": "Invernadero de Wilford",
+	"RMP.wilford1": "Bosque Este",
+	"RMP.walk.desert": "Camino Forestal",
+	"RMP.walk.desert1": "Camino Sinuoso",
+	"RMP.walk.desert2": "Intersección",
+	"RMP.walk.desert3": "Pueblo Fantasma",
+	"RMP.walk.desert4": "Tienda Fantasma",
+
+	"RMP.cape.stardew6": "Cueva del Cabo", 
+	"RMP.cape.stardew7": "Isla del Cabo", 
+	"RMP.cape.stardew8": "Cueva del Cabo"
+
+}

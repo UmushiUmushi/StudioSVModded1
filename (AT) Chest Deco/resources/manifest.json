@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Chest Deco : resources",
+  "Author": "guxelbit",
+  "Version": "1.3",
+  "Description": "Chest",
+  "UniqueID": "guxelchestdeco.resources",
+  "UpdateKeys": ["Nexus:20384"],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "6.9.0"
+  }
+}

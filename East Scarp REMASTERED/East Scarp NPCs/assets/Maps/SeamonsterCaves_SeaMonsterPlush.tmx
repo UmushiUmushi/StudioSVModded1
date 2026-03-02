@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="16" nextobjectid="189">
+ <editorsettings>
+  <export format="tmx"/>
+ </editorsettings>
+ <tileset firstgid="1" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="z_BaubleObjects" tilewidth="16" tileheight="16" tilecount="143" columns="11">
+  <image source="BaublesObjects.png" width="176" height="208"/>
+ </tileset>
+ <layer id="5" name="Buildings" width="1" height="1">
+  <data encoding="csv">
+87
+</data>
+ </layer>
+ <objectgroup id="14" name="Buildings">
+  <object id="188" name="TileData" x="0" y="0" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;SeaCave.11&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="15" name="Paths" width="1" height="1">
+  <data encoding="csv">
+9
+</data>
+ </layer>
+</map>

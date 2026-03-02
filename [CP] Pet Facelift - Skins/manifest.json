@@ -1,0 +1,12 @@
+{
+   "Name": "Pet Facelift - Skins",
+   "Author": "siamece",
+   "Version": "1.1.1",
+   "Description": "Touches up and adds breeds + colours to pets without replacing the original 6.",
+   "UniqueID": "siamece.PetFacelift",
+   "MinimumApiVersion": "3.0.0",
+   "UpdateKeys": [ "Nexus:9097" ],
+   "ContentPackFor":{
+   "UniqueID": "Pathoschild.ContentPatcher"
+	},
+}

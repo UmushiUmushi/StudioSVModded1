@@ -1,0 +1,152 @@
+{
+    "Changes": [ //Fixing Beatrice's pathing	and adding resort dialogue .................................
+
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationdescriptions",
+            "Entries": {
+                "Beatrice_sit": "0/16/0",
+                "Beatrice_read": "0/17/0",
+                "Beatrice_stool": "0/18/0",
+                "Beatrice_shop": "12/24/12",
+                "Beatrice_pjs": "0/26/13",
+                "Beatrice_chair": "12/25/12",
+                "Beatrice_telescope": "0/20 20 20 20 20 20 20 20 20 20 20 20 20 20 20 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 22 22 22 22 22 22 22 22 22 22 22 22 22 22 22/0"
+            }
+        },
+        {
+            "LogName": "Beatrice Portrait",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Beatrice, Characters/Beatrice_Summer, Characters/Beatrice_Fall, Characters/Beatrice_Winter, Portraits/Beatrice, Portraits/Beatrice_Summer, Portraits/Beatrice_Fall, Portraits/Beatrice_Winter",
+            "FromFile": "assets/{{TargetPathOnly}}/Beatrice/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "Beatrice Sprites",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Beatrice_Beach, Portraits/Beatrice_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Beatrice/Beatrice_summer.png",
+        },
+        {
+            "LogName": "Festival Portraits",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Beatrice_EggFestival, Characters/Beatrice_FlowerDance, Characters/Beatrice_Luau, Characters/Beatrice_SVFair, Characters/Beatrice_IceFestival, Characters/Beatrice_WinterStar, Portraits/Beatrice_EggFestival, Portraits/Beatrice_FlowerDance, Portraits/Beatrice_Luau, Portraits/Beatrice_SVFair, Portraits/Beatrice_IceFestival, Portraits/Beatrice_WinterStar,  ",
+            "FromFile": "assets/{{TargetPathOnly}}/Beatrice/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "Beatrice Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/schedules/Beatrice.json"
+        },
+        {
+            "LogName": "Beatrice Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Beatrice.json"
+        },
+        {
+            "LogName": "Beatrice Summer",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Beatrice",
+            "Entries": {
+                "Resort_Entering": "{{i18n:Beatrice.Resort_Entering}}",
+                "Resort_Leaving": "{{i18n:Beatrice.Resort_Leaving}}",
+                "Resort_Shore": "{{i18n:Beatrice.Resort_Shore}}",
+                "Resort_Umbrella": "{{i18n:Beatrice.Resort_Umbrella}}",
+                "Resort_Wander": "{{i18n:Beatrice.Resort_Wander}}",
+                "Resort_Bar": "{{i18n:Beatrice.Resort_Bar}}",
+                "Resort": "{{i18n:Beatrice.Resort}}"
+            },
+        },
+        //Captain Rod
+        {
+            "LogName": "Loads Captain Rodrique",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/CaptainRod, Portraits/CaptainRod",
+            "FromFile": "assets/{{target}}.png",
+        },
+        {
+            "LogName": "Loads Captain Rodrique",
+            "Action": "Load",
+            "Target": "Characters/schedules/CaptainRod",
+            "FromFile": "assets/{{target}}.json",
+        },
+        {
+            "LogName": "Loads Captain Rodrique",
+            "Action": "Load",
+            "Target": "Characters/Dialogue/CaptainRod",
+            "FromFile": "assets/blank.json",
+        },
+        {
+            "LogName": "Beatrice Summer",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/CaptainRod",
+            "Entries": {
+                "summer_10": "{{i18n:CaptainRod.summer_10}}",
+                "summer_11": "{{i18n:CaptainRod.summer_11}}",
+                "summer_27": "{{i18n:CaptainRod.summer_27}}",
+                "summer_28": "{{i18n:CaptainRod.summer_28}}",
+                "spring_23": "{{i18n:CaptainRod.spring_23}}",
+                "spring_24": "{{i18n:CaptainRod.spring_24}}",
+                "summer_10_2": "{{i18n:CaptainRod.summer_10_2}}",
+                "summer_11_2": "{{i18n:CaptainRod.summer_11_2}}",
+                "summer_27_2": "{{i18n:CaptainRod.summer_27_2}}",
+                "summer_28_2": "{{i18n:CaptainRod.summer_28_2}}",
+                "spring_23_2": "{{i18n:CaptainRod.spring_23_2}}",
+                "spring_24_2": "{{i18n:CaptainRod.spring_24_2}}",
+            },
+        },
+        {
+            "LogName": "Loads Albatross Telescope view",
+            "Action": "Load",
+            "Target": "Maps/ESAlbatrossTelescope",
+            "FromFile": "assets/Maps/AlbatrossTelescope.tmx"
+        },
+        { // Sets the Urn on Beatrice's Table
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Lighthouse",
+            "FromFile": "assets/Maps/Lighthouse_Interior_Urn.tmx",
+            "Update": "OnLocationChange",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 4,
+                "Y": 20,
+                "Width": 1,
+                "Height": 2
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 4,
+                        "Y": 22
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"ESLighthouse.2\""
+                    }
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57871500"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57871301/w sunny/f Beatrice 500/f Eloise 500/d Tue Wed Fri/t 1000 1600": "ocean/-100 -100/Eloise 73 131 2 Beatrice 74 130 2 farmer 78 129 3/skippable/viewport 73 130 clamp true/showFrame Beatrice 22/showFrame Eloise 21/speak Beatrice \"{{i18n:57871301.0}}\"/textAboveHead Eloise \"{{i18n:57871301.1}}\"/pause 500/speak Beatrice \"{{i18n:57871301.2}}\"/pause 500/speak Eloise \"{{i18n:57871301.3}}\"/pause 500/speak Beatrice \"{{i18n:57871301.4}}\"/move farmer -3 0 2/move farmer 0 1 2/pause 500/speak Beatrice \"{{i18n:57871301.5}}\"/showFrame Eloise 0/jump Eloise 5/pause 1000/speak Eloise \"{{i18n:57871301.6}}\"/faceDirection Beatrice 3/textAboveHead Beatrice \"{{i18n:57871301.7}}\"/faceDirection Beatrice 1/speak Beatrice \"{{i18n:57871301.8}}\"/emote Eloise 32/pause 500/jump Eloise 5/speak Eloise \"{{i18n:57871301.9}}\"/pause 1000/speed Eloise 5/advancedMove Eloise false 0 -3 -3 0 0 -5 2 0 0 -20/pause 500/textAboveHead Eloise \"{{i18n:57871301.10}}\"/faceDirection Beatrice 0/faceDirection farmer 0/pause 2000/faceDirection Beatrice 1/faceDirection farmer 3/speak Beatrice \"{{i18n:57871301.11}}\"/emote farmer 56/showframe 84/fade/viewport -100 -100/changeToTemporaryMap ESAlbatrossTelescope/viewport 4 4/pause 500/speak Beatrice \"{{i18n:57871301.12}}\"/pause 1000/fade/viewport -100 -100/changeLocation EastScarp_Village/viewport 73 130 clamp true/pause 500/faceDirection farmer 3/pause 1000/speak Beatrice \"{{i18n:57871301.13}}\"/pause 500/emote farmer 20/pause 1000/end",
+                "57871302/w sunny/!d Wed Fri Sat/f Beatrice 1000/t 1100 1400": "{{season}}2/23 51/Jessie 23 49 2 Beatrice 22 51 0 farmer 39 57 3 Aideen 14 50 3/skippable/addTemporaryActor Munchboi 32 32 12 50 1 false/advancedMove farmer false -15 0 4 100/speak Jessie \"{{i18n:57871302.0}}\"/addObject 23 49 351 1/speak Jessie \"{{i18n:57871302.1}}\"/pause 1500/playSound pickUpItem/removeSprite 23 49/speak Beatrice \"{{i18n:57871302.2}}\"/pause 500/emote Jessie 28/pause 500/speak Beatrice \"{{i18n:57871302.3}}\"/faceDirection Beatrice 2/speed Beatrice 1/advancedMove Beatrice false 0 3 2 100/pause 1000/textAboveHead Jessie \"{{i18n:57871302.4}}\"/faceDirection Aideen 1/proceedPosition Beatrice/showFrame Munchboi 19/speed Jessie 4/advancedMove Jessie false 2 0 0 3 -2 0 3 100/pause 1000/advancedMove Beatrice false 0 -2 1 100/proceedPosition Jessie/speak Jessie \"{{i18n:57871302.5}}\"/pause 500/emote Jessie 28/pause 500/speak Jessie \"{{i18n:57871302.6}}\"/pause 500/emote Beatrice 16/pause 500/speak Beatrice \"{{i18n:57871302.7}}\"/textAboveHead Beatrice \"{{i18n:57871302.8}}\"/pause 500/speak Jessie \"{{i18n:57871302.9}}\"/pause 500/speak Beatrice \"{{i18n:57871302.10}}\"/pause 500/faceDirection Beatrice 2/advancedMove Beatrice false 0 6 2 0 4 100/faceDirection Jessie 2/emote Jessie 28/proceedPosition Beatrice/faceDirection farmer 2/pause 100/textAboveHead Beatrice \"{{i18n:57871302.11}}\"/pause 1000/advancedMove Beatrice false 15 0/emote farmer 8/pause 1000/advancedMove farmer false -2 0 0 -4 1 100/faceDirection Aideen 3/textAboveHead Jessie \"{{i18n:57871302.12}}\"/proceedPosition farmer/pause 1000/speak Jessie \"{{i18n:57871302.13}}\"/pause 500/emote farmer 60/pause 2000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Lighthouse",
+            "Entries": {
+                "57871303/t 2000 2400/f Beatrice 1500": "ocean/13 16/Eloise 21 7 3 Beatrice 20 6 2 farmer 13 16 1/skippable/showFrame Beatrice 17/positionOffset Eloise 0 -14/advancedMove farmer false 5 0 4 1000/viewport move 2 0 2500/proceedPosition farmer/speak Beatrice \"{{i18n:57871303.0}}\"/pause 500/emote farmer 8/advancedMove farmrer false 0 -2 4 100/viewport move 0 -2 4500/pause 4500/advancedMove Beatrice false 0 1 1 100/pause 1000/speak Beatrice \"{{i18n:57871303.1}}\"/pause 500/speak Eloise \"{{i18n:57871303.2}}\"/pause 500/emote Beatrice 20/pause 1000/faceDirection Eloise 1/positionOffset Eloise 0 4/pause 1000/emote Eloise 24/textAboveHead Beatrice \"{{i18n:57871303.3}}\"/pause 1000/advancedMove Beatrice false -2 0 0 6 2 1000 0 3 2 300/viewport move 0 2 4000/proceedPosition Beatrice/advancedMove farmer false 1 0 0 1 3 100/proceedPosition farmer/pause 1000/speak Beatrice \"{{i18n:57871303.4}}\"/faceDirection Beatrice 0/pause 2000/faceDirection Beatrice 2/speak Beatrice \"{{i18n:57871303.5}}\"/pause 1000/quickQuestion #{{i18n:57871303.6}}#{{i18n:57871303.7}}(break)speak Beatrice \"{{i18n:57871303.8}}\"(break)speak Beatrice \"{{i18n:57871303.9.{{GenderNeutral}} }}\"/pause 500/speak Beatrice \"{{i18n:57871303.10}}\"/pause 1000/faceDirection Beatrice 0/pause 1000/faceDirection Beatrice 2/speak Beatrice \"{{i18n:57871303.11}}\"/pause 500/emote farmer 32/pause 2000/end"
+            }
+        }
+    ]
+}

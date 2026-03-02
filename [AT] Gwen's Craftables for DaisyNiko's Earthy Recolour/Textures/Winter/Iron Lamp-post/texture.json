@@ -1,0 +1,100 @@
+{
+	"ItemName": "Iron Lamp-post",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors" ],
+		"Seasons": ["Winter"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 2,
+		"Name": "3-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 3,
+		"Name": "4-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 4,
+		"Name": "5-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 5,
+		"Name": "6-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 6,
+		"Name": "7-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 7,
+		"Name": "8-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 8,
+		"Name": "9-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 9,
+		"Name": "1-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 10,
+		"Name": "2-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 11,
+		"Name": "3-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 12,
+		"Name": "4-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 13,
+		"Name": "5-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 14,
+		"Name": "6-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 15,
+		"Name": "7-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 16,
+		"Name": "8-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 17,
+		"Name": "9-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+	]
+}

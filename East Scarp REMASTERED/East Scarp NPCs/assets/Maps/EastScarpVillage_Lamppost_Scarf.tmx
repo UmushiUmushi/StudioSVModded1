@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="1" height="1" tilewidth="16" tileheight="16" infinite="0" nextlayerid="25" nextobjectid="277">
+ <editorsettings>
+  <export format="tmx"/>
+ </editorsettings>
+ <tileset firstgid="1" name="spring_EastScarp" tilewidth="16" tileheight="16" tilecount="1975" columns="25">
+  <image source="spring_EastScarp" width="400" height="1264"/>
+  <tile id="917">
+   <animation>
+    <frame tileid="917" duration="200"/>
+    <frame tileid="871" duration="200"/>
+    <frame tileid="946" duration="200"/>
+    <frame tileid="1021" duration="200"/>
+    <frame tileid="1096" duration="200"/>
+    <frame tileid="1171" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="918">
+   <animation>
+    <frame tileid="918" duration="200"/>
+    <frame tileid="872" duration="200"/>
+    <frame tileid="947" duration="200"/>
+    <frame tileid="1022" duration="200"/>
+    <frame tileid="1097" duration="200"/>
+    <frame tileid="1172" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="919">
+   <animation>
+    <frame tileid="919" duration="200"/>
+    <frame tileid="873" duration="200"/>
+    <frame tileid="948" duration="200"/>
+    <frame tileid="1023" duration="200"/>
+    <frame tileid="1098" duration="200"/>
+    <frame tileid="1173" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="920">
+   <animation>
+    <frame tileid="920" duration="200"/>
+    <frame tileid="874" duration="200"/>
+    <frame tileid="949" duration="200"/>
+    <frame tileid="1024" duration="200"/>
+    <frame tileid="1099" duration="200"/>
+    <frame tileid="1174" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="942">
+   <animation>
+    <frame tileid="942" duration="200"/>
+    <frame tileid="896" duration="200"/>
+    <frame tileid="971" duration="200"/>
+    <frame tileid="1046" duration="200"/>
+    <frame tileid="1121" duration="200"/>
+    <frame tileid="1196" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="943">
+   <animation>
+    <frame tileid="943" duration="200"/>
+    <frame tileid="897" duration="200"/>
+    <frame tileid="972" duration="200"/>
+    <frame tileid="1047" duration="200"/>
+    <frame tileid="1122" duration="200"/>
+    <frame tileid="1197" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="944">
+   <animation>
+    <frame tileid="944" duration="200"/>
+    <frame tileid="898" duration="200"/>
+    <frame tileid="973" duration="200"/>
+    <frame tileid="1048" duration="200"/>
+    <frame tileid="1123" duration="200"/>
+    <frame tileid="1198" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="945">
+   <animation>
+    <frame tileid="945" duration="200"/>
+    <frame tileid="899" duration="200"/>
+    <frame tileid="974" duration="200"/>
+    <frame tileid="1049" duration="200"/>
+    <frame tileid="1124" duration="200"/>
+    <frame tileid="1199" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="967">
+   <animation>
+    <frame tileid="967" duration="200"/>
+    <frame tileid="921" duration="200"/>
+    <frame tileid="996" duration="200"/>
+    <frame tileid="1071" duration="200"/>
+    <frame tileid="1146" duration="200"/>
+    <frame tileid="1221" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="968">
+   <animation>
+    <frame tileid="968" duration="200"/>
+    <frame tileid="922" duration="200"/>
+    <frame tileid="997" duration="200"/>
+    <frame tileid="1072" duration="200"/>
+    <frame tileid="1147" duration="200"/>
+    <frame tileid="1222" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="969">
+   <animation>
+    <frame tileid="969" duration="200"/>
+    <frame tileid="923" duration="200"/>
+    <frame tileid="998" duration="200"/>
+    <frame tileid="1073" duration="200"/>
+    <frame tileid="1148" duration="200"/>
+    <frame tileid="1223" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="970">
+   <animation>
+    <frame tileid="970" duration="200"/>
+    <frame tileid="924" duration="200"/>
+    <frame tileid="999" duration="200"/>
+    <frame tileid="1074" duration="200"/>
+    <frame tileid="1149" duration="200"/>
+    <frame tileid="1224" duration="200"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="11" name="AlwaysFront" width="1" height="1">
+  <data encoding="csv">
+1662
+</data>
+ </layer>
+</map>

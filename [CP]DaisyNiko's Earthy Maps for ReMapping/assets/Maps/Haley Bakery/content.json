@@ -1,0 +1,47 @@
+{
+  "Changes": [
+    {
+      "LogName": "Haley Bakery Map Overlay (Velho)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Haley Bakery/Haley.Bakery.Velho_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=kabulla.bakery": true,
+        "N3cro_92.ReMappingEarthySync/HaleyBakery": "true"
+      },
+
+      "ToArea": {
+        "X": 167,
+        "Y": 82,
+        "Width": 4,
+        "Height": 7
+      }
+    },
+    {
+      "LogName": "Haley Bakery Map Overlay (Novo)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Haley Bakery/Haley.Bakery.Novo_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=kabulla.bakery": true,
+        "HasSeenEvent: anyPlayer|contains=80801010": true,
+        "N3cro_92.ReMappingEarthySync/HaleyBakery": "true"
+      },
+
+      "ToArea": {
+        "X": 167,
+        "Y": 82,
+        "Width": 4,
+        "Height": 7
+      }
+    }
+  ]
+}

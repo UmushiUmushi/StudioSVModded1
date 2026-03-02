@@ -1,0 +1,57 @@
+{
+	"Changes": [
+		{
+			"LogName": "Ethan Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/EthanHart",
+			"Entries": {
+				"default": "700 EastScarp_VillageInn 39 11 1/800 EastScarp_Village 33 65 3/1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_VillageInn 21 20 2 ethan_sweep \"Strings\\schedules\\EthanHart:spring.000{{Random:a, b, c}}\"/1600 EastScarp_VillageInn 42 18 1/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"spring": "700 EastScarp_VillageInn 39 11 1/a900 EastScarp_VillageInn 62 22 0/1200 45 10 0/1300 59 19 2 ethan_read/1530 EastScarp_Village 69 19 2 square_5_3/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"rain": "700 EastScarp_VillageInn 39 11 1/1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_VillageInn 21 20 2 ethan_sweep \"Strings\\schedules\\EthanHart:spring.000{{Random:a, b, c}}\"/1600 EastScarp_VillageInn 42 18 1/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"rain2": "1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_VillageInn 54 8 0 \"Strings\\schedules\\EthanHart:rain2.000\"/1600 EastScarp_VillageInn 42 18 1/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				//"Wed": "700 EastScarp_VillageInn 39 11 1/1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_VillageInn 21 20 2 ethan_sweep \"Strings\\schedules\\EthanHart:spring.000{{Random:a, b, c}}\"/1600 EastScarp_VillageInn 42 18 1/1730 EastScarp_VillageInn 45 26 2 ethan_read/1900 EastScarp_VillageInn 44 10 0 ethan_dishes/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				//"Thu": "620 EastScarp_VillageInn 45 10 0/700 EastScarp_Village 33 65 3/1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_Village 55 89 2 ethan_squat \"Strings\\schedules\\EthanHart:Thu.000\"/1600 EastScarp_Village 55 114 2/1800 EastScarp_InnBath 13 18 2 \"Strings\\schedules\\EthanHart:Thu.001\"/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"Sat_A": "620 EastScarp_VillageInn 45 10 0/700 EastScarp_Village 33 65 3/800 EastScarp_Crossing 46 6 0 square_3_3/1100 EastScarp_Crossing 57 5 1 ethan_forageright/1300 EastScarp_Crossing 55 13 0/1500 EastScarp_Crossing 45 5 3/1600 EastScarp_Crossing 46 18 2/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"Sun": "700 EastScarp_VillageInn 39 11 1/800 EastScarp_Village 33 65 3/1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_VillageInn 21 20 2 ethan_sweep \"Strings\\schedules\\EthanHart:spring.000{{Random:a, b, c}}\"/1600 EastScarp_VillageInn 42 18 1/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				//"Mon": "620 EastScarp_VillageInn 45 10 0/700 EastScarp_Village 33 65 3/830 EastScarp_Village 49 68 3 ethan_forageleft/1120 EastScarp_Village 24 83 0/1300 EastScarp_Village 34 79 0/1400 EastScarp_Village 54 71 0/1500 EastScarp_Village 63 76 3 ethan_forageleft/1700 EastScarp_Village 56 33 0 square_3_3_0/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"winter_Sat": "{{Random:GOTO rain, GOTO rain2}}",
+				"winter_Sun": "{{Random:GOTO rain, GOTO rain2}}",
+				"EastScarpe_SpiritsEve": "620 EastScarp_VillageInn 45 10 0/700 EastScarp_Village 33 65 3/800 EastScarp_Crossing 46 6 0 square_3_3/1100 EastScarp_VillageInn 33 9 0/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				//Berry Season
+				//"spring_15": "620 EastScarp_VillageInn 45 10 0/730 EastScarp_Village 33 65 3/1000 EastScarp_VillageInn 57 8 0/1300 Forest 95 74 0/1500 Forest 53 71 1/1600 Town 33 75 2 \"Strings\\schedules\\EthanHart:spring_15.000.{{season}}\"/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				//"spring_16": "620 EastScarp_VillageInn 45 10 0/730 EastScarp_Village 33 65 3/1000 EastScarp_VillageInn 57 8 0/1230 BusStop 28 12 0/1300 BusStop 13 3 1/1310 BusStop 11 2 3/1330 Town 12 10 0/1400 Town 20 9 0/1410 Town 22 18 0/1430 Town 28 21 2/1440 Town 74 20 0/1600 Town 78 84 3 \"Strings\\schedules\\EthanHart:spring_16.000.{{season}}\"/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				//"spring_17": "GOTO spring_15",
+				//"fall_8": "GOTO spring_15",
+				//"fall_9": "GOTO spring_16",
+				//"fall_10": "GOTO spring_15",
+				//Night Market
+				"winter_15": "700 EastScarp_VillageInn 39 11 1/730 EastScarp_Village 33 65 3/1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_VillageInn 21 20 2 ethan_sweep \"Strings\\schedules\\EthanHart:winter_15.000\"/1600 EastScarp_VillageInn 42 18 1/1730 Beach 36 33 1 \"Strings\\schedules\\EthanHart:winter_15.001\"/2200 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"winter_16": "700 EastScarp_VillageInn 39 11 1/730 EastScarp_Village 33 65 3/1000 EastScarp_VillageInn 57 8 0/1300 EastScarp_VillageInn 21 20 2 ethan_sweep \"Strings\\schedules\\EthanHart:winter_16.000\"/1600 EastScarp_VillageInn 42 18 1/1730 Beach 36 33 1 \"Strings\\schedules\\EthanHart:winter_16.001\"/2200 EastScarp_VillageInn 53 8 3 ethan_sleep",
+				"Sat": "MAIL EastScarp.SpecialOrders.ScarpGreenHouse_Complete/GOTO Sat_A/620 EastScarp_VillageInn 45 10 0/700 EastScarp_Village 33 65 3/800 EastScarp_Crossing 44 11 0 square_3_5/1100 EastScarp_CommunityGreenhouse 2 20 1 ethan_forageright/1300 EastScarp_CommunityGreenhouse 21 18 3 square_1_5_3/1600 EastScarp_CommunityGreenhouse 13 13 2/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep"
+			}
+		},
+		{
+			"LogName": "Ethan Schedule rain on school days",
+			"Action": "EditData",
+			"Target": "Characters/schedules/EthanHart",
+			"When": {
+				"DayOfWeek |contains=saturday, sunday": false
+			},
+			"Entries": {
+				"rain": "GOTO spring",
+				"rain2": "GOTO Spring"
+			}
+		},
+		{
+			"LogName": "Ethan School Schedule",
+			"Action": "EditData",
+			"Target": "Characters/schedules/EthanHart",
+			"When": {
+				"HasSeenEvent": "57871605"
+			},
+			"Entries": {
+				"spring": "700 EastScarp_VillageInn 39 11 1/a900 EastScarp_TNPCWaitingWarpRoom 9 5 2 ethan_read/1530 EastScarp_Village 69 19 2 square_5_3/1800 EastScarp_VillageInn 39 11 1/1930 EastScarp_VillageInn 54 8 2/2130 EastScarp_VillageInn 53 8 3 ethan_sleep",
+			}
+		},
+	]
+}

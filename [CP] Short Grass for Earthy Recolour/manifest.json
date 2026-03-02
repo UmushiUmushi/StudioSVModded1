@@ -1,0 +1,13 @@
+{
+   "Name": "Earthy Short Grass",
+   "Author": "Stephanieisit",
+   "Version": "1.0",
+   "Description": "Short Grass for DaisyNiko's Earthy Recolour",
+   "UniqueID": "stephanieisit.shortgrass",
+   "UpdateKeys": [ "Nexus:30067" ],
+   "MinimumApiVersion": "4.0",
+   "ContentPackFor": {
+   "UniqueID": "Pathoschild.ContentPatcher",
+   "MinimumVersion": "2.4.4"
+   }
+}

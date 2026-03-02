@@ -1,0 +1,374 @@
+{
+	"Changes": [
+	//VANILLA NOMES E LOCCALIZAÇÕES DE REGIÕES
+        //ADIÇÃO DO NOVO MAPA
+    	{
+			"LogName": "RMP Cape World Map",
+			"Action": "Load",
+			"Target": "LooseSprites/CapeWorld",
+			"FromFile": "assets/NewMaps/LooseSprites/CapeWorld_{{season}}.png",
+            "When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod: |contains=dreamy.kickitspot": true
+            }
+		},
+        {
+			"LogName": "RMP Cape World Map SVE",
+			"Action": "Load",
+			"Target": "LooseSprites/CapeWorld",
+			"FromFile": "assets/NewMaps/LooseSprites/CapeWorldSVE_{{season}}.png",
+            "When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+                "HasMod: |contains=dreamy.kickitspot": true
+            }
+		},
+
+        //VANILLA
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod: |contains=dreamy.kickitspot": true
+            },
+            "Entries": {
+                "RMPCapeWorld": {
+                    "BaseTexture": [{
+                        "Id": "RMP_Cape_Texture",
+                        "Texture": "LooseSprites/CapeWorld"
+                    }],
+                    "MapAreas": [{
+                        "Id": "Custom_CapeStardew",
+                        "PixelArea": {
+                            "X": 111,
+                            "Y": 43,
+                            "Width": 27,
+                            "Height": 46
+                        },
+                        "ScrollText": "{{i18n: RMP.cape.stardew3}}",
+                        "Textures": [],
+                        "Tooltips": [{
+                            "Id": "Custom_AnnettaHouse", 
+                            "Text": "{{i18n: RMP.cape.stardew}}",
+                            "PixelArea": { "X": 117, "Y": 42, "Width": 6, "Height": 6 }
+                        },
+                        {
+                            "Id": "Custom_AnnettaForest", 
+                            "Text": "{{i18n: RMP.cape.stardew1}}",
+                            "PixelArea": { "X": 106, "Y": 21, "Width": 32, "Height": 21 }
+                        },
+                        {
+                            "Id": "Custom_Cape", 
+                            "Text": "{{i18n: RMP.cape.stardew6}}",
+                            "PixelArea": { "X": 123, "Y": 50, "Width": 3, "Height": 3 }
+                        },
+                        {
+                            "Id": "Custom_CapeIslandEntry", 
+                            "Text": "{{i18n: RMP.cape.stardew7}}",
+                            "PixelArea": { "X": 113, "Y": 80, "Width": 7, "Height": 8 }
+                        }],
+                        "WorldPositions": [
+                        {
+                            "Id": "Custom_CapeStardew",
+                            "LocationNames": ["Custom_CapeStardew", "Custom_CapeStardewBoatShore"]
+                        },
+                        {
+                            "Id": "Custom_AnnettaForest",
+                            "LocationName": "Custom_AnnettaForest",
+                            "MapPixelArea": {
+                                "X": 124,
+                                "Y": 25,
+                                "Width": 21,
+                                "Height": 19
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew1}}"
+                        },
+                        {
+                            "Id": "Custom_AnnettaHouse",
+                            "LocationNames": ["Custom_AnnettaHouse", "Custom_CapeHouse2ndroom", "Custom_CapeHouse"],
+                            "MapPixelArea": {
+                                "X": 119,
+                                "Y": 45,
+                                "Width": 1,
+                                "Height": 1
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew}}"
+                        },
+                        {
+                            "Id": "Custom_AbandonedHauntedHouse",
+                            "LocationNames": ["Custom_AbandonedHauntedHouse", "Custom_CapeAbandonedFixed"],
+                            "MapPixelArea": {
+                                "X": 112,
+                                "Y": 42,
+                                "Width": 3,
+                                "Height": 3
+                            }
+                        },
+                        {
+                            "Id": "Custom_CapeBusStop",
+                            "LocationNames": ["Custom_CapeBusStop", "Custom_CapeBusStopBuildable", "Custom_CapeBusStopCustom"],
+                            "MapPixelArea": {
+                                "X": 113,
+                                "Y": 31,
+                                "Width": 10,
+                                "Height": 6
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew4}}"
+                        },
+                        {
+                            "Id": "Custom_CapeBusStop2",
+                            "LocationName": "Custom_CapeBusStop2",
+                            "MapPixelArea": {
+                                "X": 108,
+                                "Y": 30,
+                                "Width": 7,
+                                "Height": 5
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew4}}"
+                        },
+                        {
+                            "Id": "Custom_TunnelCape",
+                            "LocationName": "Custom_TunnelCape",
+                            "MapPixelArea": {
+                                "X": 108,
+                                "Y": 35,
+                                "Width": 4,
+                                "Height": 4
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew5}}"
+                        },
+                        {
+                            "Id": "Custom_SeaCape",
+                            "LocationName": "Custom_SeaCape",
+                            "MapPixelArea": {
+                                "X": 132,
+                                "Y": 42,
+                                "Width": 8,
+                                "Height": 8
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew2}}"
+                        },
+                        {
+                            "Id": "Custom_CapeCaveLi",
+                            "LocationNames": ["Custom_Cape", "Custom_CapeCaveLi", "Custom_AreaSecretBoss", "Custom_AreaSecretBossLit", "Custom_AreaSecretBoss2Lit","Custom_AreaSecretBoss3Lit", "Custom_AreaSecretBossLvl2", "Custom_AreaSecretBossLvl3",  "Custom_AreaSecretBossLvl4", "Custom_AreaSecretBossLvl4Fixed", "Custom_AreaSecretBossLvl5", "Custom_AreaSecretCalibur", "Custom_AreaSecretTrapRoomLit", "Custom_CapeCave", "Custom_CapeCaveScene", "Custom_CapeCaveWarp", "Custom_CapeCaveLit", "Custom_CapeCaveScene", "Custom_CapeSecretBase", "Custom_CapeSecretBase2ndArea", "Custom_CapeSecretBase2ndAreaLit", "Custom_CapeSecretBaseDropArea", "Custom_CapeSecretBaseDropAreaLit", "Custom_CapeSecretBaseDropAreaScene", "Custom_CapeSecretBaseLit", "Custom_CapeSecretBaseRoom", "Custom_CapeSecretBaseRoomLit", "Custom_CapeTreasureRoom", "Custom_DarkCave", "Custom_DarkCave2", "Custom_DarkCave2Lit", "Custom_DarkCave3", "DarkCave3Unlock", "Custom_DarkCave4", "Custom_DarkCaveLit", "Custom_RealSecretBase", "Custom_RealSecretBase2", "Custom_RealSecretBase2.tmx", "Custom_RealSecretBase2Unlocked", "Custom_SecretBase", "Custom_SecretBase2"],
+                            "MapPixelArea": {
+                                "X": 123,
+                                "Y": 50,
+                                "Width": 3,
+                                "Height": 3
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew6}}"
+                        },
+                        {
+                            "Id": "Custom_CapeIslandEntry",
+                            "LocationNames": ["Custom_CapeIslandEntry", "Custom_CapeIslandLadder", "Custom_CapeKeyMaze", "Custom_CapeKeyMaze2", "Custom_CapeKeyMaze3", "Custom_tripy", "Custom_UnlockSecretBase", "Custom_UnlockSecretBaseLit", "Custom_SeaCavernDepths", "Custom_SeaCavernDepths2", "Custom_SeaCavernDepths3", "Custom_SeaCavernDepths4", "Custom_SeaCavernDepths5", "Custom_SeaCavernDepths6", "Custom_SeaCaveSecrets", "Custom_SeaCaveSecretsUnlocked"],
+                            "MapPixelArea": {
+                                "X": 113,
+                                "Y": 83,
+                                "Width": 2,
+                                "Height": 2
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew7}}"
+                        },
+                        {
+                            "Id": "Custom_CapeCaving",
+                            "LocationNames": ["Custom_CapeCaving", "Custom_CapeCavingArea2", "Custom_CapeCavingArea1", "Custom_CapeCavingArea1Lit", "Custom_CapeCavingArea2Lit", "Custom_CapeCavingArea3", "Custom_CapeCavingArea3chest"],
+                            "MapPixelArea": {
+                                "X": 132,
+                                "Y": 46,
+                                "Width": 2,
+                                "Height": 3
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew6}}"
+                        },
+                        {
+                            "Id": "Custom_CapeForestHomestead",
+                            "LocationNames": ["Custom_CapeForestHomestead", "Custom_CapeMineCart", "Custom_CapeMineCartOn", "Custom_CapeMineCartScene", "Custom_CapeMineForest", "Custom_MeadowForestSouth"],
+                            "MapPixelArea": {
+                                "X": 115,
+                                "Y": 28,
+                                "Width": 5,
+                                "Height": 3
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew1}}"
+                        }]
+                    }]
+		        }
+            }
+        },
+
+        //EXPANDED
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": true,
+				"HasMod: |contains=dreamy.kickitspot": true
+            },
+            "Entries": {
+                "RMPCapeWorld": {
+                    "BaseTexture": [{
+                        "Id": "RMP_Cape_Texture",
+                        "Texture": "LooseSprites/CapeWorld"
+                    }],
+                    "MapAreas": [{
+                        "Id": "Custom_CapeStardew",
+                        "PixelArea": {
+                            "X": 86,
+                            "Y": 29,
+                            "Width": 27,
+                            "Height": 46
+                        },
+                        "ScrollText": "{{i18n: RMP.cape.stardew3}}",
+                        "Textures": [],
+                        "Tooltips": [{
+                            "Id": "Custom_AnnettaHouse", 
+                            "Text": "{{i18n: RMP.cape.stardew}}",
+                            "PixelArea": { "X": 92, "Y": 28, "Width": 6, "Height": 6 }
+                        },
+                        {
+                            "Id": "Custom_AnnettaForest", 
+                            "Text": "{{i18n: RMP.cape.stardew1}}",
+                            "PixelArea": { "X": 70, "Y": 7, "Width": 40, "Height": 22 }
+                        },
+                        {
+                            "Id": "Custom_Cape", 
+                            "Text": "{{i18n: RMP.cape.stardew6}}",
+                            "PixelArea": { "X": 98, "Y": 36, "Width": 3, "Height": 3 }
+                        },
+                        {
+                            "Id": "Custom_CapeIslandEntry", 
+                            "Text": "{{i18n: RMP.cape.stardew7}}",
+                            "PixelArea": { "X": 88, "Y": 66, "Width": 7, "Height": 8 }
+                        }],
+                        "WorldPositions": [
+                        {
+                            "Id": "Custom_CapeStardew",
+                            "LocationNames": ["Custom_CapeStardew", "Custom_CapeStardewBoatShore"]
+                        },
+                        {
+                            "Id": "Custom_AnnettaForest",
+                            "LocationName": "Custom_AnnettaForest",
+                            "MapPixelArea": {
+                                "X": 97,
+                                "Y": 16,
+                                "Width": 22,
+                                "Height": 13
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew1}}"
+                        },
+                        {
+                            "Id": "Custom_AnnettaHouse",
+                            "LocationNames": ["Custom_AnnettaHouse", "Custom_CapeHouse2ndroom", "Custom_CapeHouse"],
+                            "MapPixelArea": {
+                                "X": 95,
+                                "Y": 31,
+                                "Width": 1,
+                                "Height": 1
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew}}"
+                        },
+                        {
+                            "Id": "Custom_AbandonedHauntedHouse",
+                            "LocationNames": ["Custom_AbandonedHauntedHouse", "Custom_CapeAbandonedFixed"],
+                            "MapPixelArea": {
+                                "X": 87,
+                                "Y": 28,
+                                "Width": 3,
+                                "Height": 3
+                            }
+                        },
+                        {
+                            "Id": "Custom_CapeBusStop",
+                            "LocationNames": ["Custom_CapeBusStop", "Custom_CapeBusStopBuildable", "Custom_CapeBusStopCustom"],
+                            "MapPixelArea": {
+                                "X": 76,
+                                "Y": 23,
+                                "Width": 10,
+                                "Height": 6
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew4}}"
+                        },
+                        {
+                            "Id": "Custom_CapeBusStop2",
+                            "LocationName": "Custom_CapeBusStop2",
+                            "MapPixelArea": {
+                                "X": 67,
+                                "Y": 23,
+                                "Width": 9,
+                                "Height": 9
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew4}}"
+                        },
+                        {
+                            "Id": "Custom_TunnelCape",
+                            "LocationName": "Custom_TunnelCape",
+                            "MapPixelArea": {
+                                "X": 65,
+                                "Y": 45,
+                                "Width": 4,
+                                "Height": 10
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew5}}"
+                        },
+                        {
+                            "Id": "Custom_SeaCape",
+                            "LocationName": "Custom_SeaCape",
+                            "MapPixelArea": {
+                                "X": 107,
+                                "Y": 28,
+                                "Width": 8,
+                                "Height": 8
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew2}}"
+                        },
+                        {
+                            "Id": "Custom_CapeCaveLi",
+                            "LocationNames": ["Custom_Cape", "Custom_CapeCaveLi", "Custom_AreaSecretBoss", "Custom_AreaSecretBossLit", "Custom_AreaSecretBoss2Lit","Custom_AreaSecretBoss3Lit", "Custom_AreaSecretBossLvl2", "Custom_AreaSecretBossLvl3",  "Custom_AreaSecretBossLvl4", "Custom_AreaSecretBossLvl4Fixed", "Custom_AreaSecretBossLvl5", "Custom_AreaSecretCalibur", "Custom_AreaSecretTrapRoomLit", "Custom_CapeCave", "Custom_CapeCaveScene", "Custom_CapeCaveWarp", "Custom_CapeCaveLit", "Custom_CapeCaveScene", "Custom_CapeSecretBase", "Custom_CapeSecretBase2ndArea", "Custom_CapeSecretBase2ndAreaLit", "Custom_CapeSecretBaseDropArea", "Custom_CapeSecretBaseDropAreaLit", "Custom_CapeSecretBaseDropAreaScene", "Custom_CapeSecretBaseLit", "Custom_CapeSecretBaseRoom", "Custom_CapeSecretBaseRoomLit", "Custom_CapeTreasureRoom", "Custom_DarkCave", "Custom_DarkCave2", "Custom_DarkCave2Lit", "Custom_DarkCave3", "DarkCave3Unlock", "Custom_DarkCave4", "Custom_DarkCaveLit", "Custom_RealSecretBase", "Custom_RealSecretBase2", "Custom_RealSecretBase2.tmx", "Custom_RealSecretBase2Unlocked", "Custom_SecretBase", "Custom_SecretBase2"],
+                            "MapPixelArea": {
+                                "X": 98,
+                                "Y": 36,
+                                "Width": 3,
+                                "Height": 3
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew6}}"
+                        },
+                        {
+                            "Id": "Custom_CapeIslandEntry",
+                            "LocationNames": ["Custom_CapeIslandEntry", "Custom_CapeIslandLadder", "Custom_CapeKeyMaze", "Custom_CapeKeyMaze2", "Custom_CapeKeyMaze3", "Custom_tripy", "Custom_UnlockSecretBase", "Custom_UnlockSecretBaseLit", "Custom_SeaCavernDepths", "Custom_SeaCavernDepths2", "Custom_SeaCavernDepths3", "Custom_SeaCavernDepths4", "Custom_SeaCavernDepths5", "Custom_SeaCavernDepths6", "Custom_SeaCaveSecrets", "Custom_SeaCaveSecretsUnlocked"],
+                            "MapPixelArea": {
+                                "X": 88,
+                                "Y": 69,
+                                "Width": 2,
+                                "Height": 2
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew7}}"
+                        },
+                        {
+                            "Id": "Custom_CapeCaving",
+                            "LocationNames": ["Custom_CapeCaving", "Custom_CapeCavingArea2", "Custom_CapeCavingArea1", "Custom_CapeCavingArea1Lit", "Custom_CapeCavingArea2Lit", "Custom_CapeCavingArea3", "Custom_CapeCavingArea3chest"],
+                            "MapPixelArea": {
+                                "X": 106,
+                                "Y": 32,
+                                "Width": 2,
+                                "Height": 3
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew6}}"
+                        },
+                        {
+                            "Id": "Custom_CapeForestHomestead",
+                            "LocationNames": ["Custom_CapeForestHomestead", "Custom_CapeMineCart", "Custom_CapeMineCartOn", "Custom_CapeMineCartScene", "Custom_CapeMineForest", "Custom_MeadowForestSouth"],
+                            "MapPixelArea": {
+                                "X": 81,
+                                "Y": 18,
+                                "Width": 6,
+                                "Height": 4
+                            },
+                            "ScrollText": "{{i18n: RMP.cape.stardew1}}"
+                        }]
+                    }]
+		        }
+            }
+        }
+	]
+}

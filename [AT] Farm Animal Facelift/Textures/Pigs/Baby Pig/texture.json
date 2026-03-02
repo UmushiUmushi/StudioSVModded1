@@ -1,0 +1,40 @@
+{
+  "ItemName": "BabyPig",
+  "Type": "Character",
+  "TextureWidth": 128,
+  "TextureHeight": 160,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0,
+    },
+    {
+      "Id": 0,
+      "Keywords": [ "Black Spots" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Black" ]
+    },
+    {
+      "Id": 2,
+      "Keywords": [ "Brown Spots" ]
+    },
+    {
+      "Id": 3,
+      "Keywords": [ "Pink" ]
+    },
+    {
+      "Id": 4,
+      "Keywords": [ "Tamworth" ]
+    },
+    {
+      "Id": 5,
+      "Keywords": [ "White" ]
+    },
+  {
+      "Id": 6,
+      "Keywords": [ "Void" ]
+    }
+  ]
+}

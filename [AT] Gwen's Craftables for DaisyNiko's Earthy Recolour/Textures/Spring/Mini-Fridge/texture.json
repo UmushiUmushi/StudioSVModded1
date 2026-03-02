@@ -1,0 +1,22 @@
+{
+	"ItemName": "Mini-Fridge",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Spring"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 1,
+		"Name": "1-Outdoors-Extra",
+		"Keywords": ["Extra"],
+		"ChanceWeight": 0,
+		},
+	]
+}

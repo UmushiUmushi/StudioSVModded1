@@ -1,0 +1,33 @@
+{
+  "ItemName": "Sheep",
+  "Type": "Character",
+  "TextureWidth": 128,
+  "TextureHeight": 160,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0,
+    },
+    {
+      "Id": 0,
+      "Keywords": [ "Black" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Suffolk" ]
+    },
+    {
+      "Id": 2,
+      "Keywords": [ "White" ]
+    },
+    {
+      "Id": 3,
+      "Keywords": [ "Void" ]
+    },
+    {
+      "Id": 4,
+      "Keywords": [ "Bighorn" ]
+    }
+
+  ]
+}

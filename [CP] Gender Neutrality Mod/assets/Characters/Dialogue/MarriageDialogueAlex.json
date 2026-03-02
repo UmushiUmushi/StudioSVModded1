@@ -1,0 +1,16 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueAlex",
+			"Entries":
+				{
+					"Indoor_Day_0": "Ahh... there's nothing like a good night's sleep next to my {{Lowercase: {{Random: {{Hana.GNMTokens/SpouseNoun}} }} }}!$h",
+					"Outdoor_3": "Look at us, with our little farm. We make a cute couple.$h",
+					"Good_1": "You're very {{Random: {{Hana.GNMTokens/Adjective}} }}... have I told you that?$l"
+				},
+			"LogName":"Fix MarriageDialogueAlex"
+		}
+	]
+}

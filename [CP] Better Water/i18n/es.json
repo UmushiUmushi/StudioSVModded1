@@ -1,0 +1,74 @@
+{
+	// translated by Hayato2236
+	// for mod version 1.9.2
+	"config.section.Color and Transparency.name": "Color y Transparencia",
+	"config.section.extra.name": "Extra",
+	"config.section.advanced.name": "Avanzado",
+	
+    "config.color.name": "Color",
+    "config.color.values.teal": "Verde azulado",
+    "config.color.values.blue": "Azul",
+    "config.color.values.bright": "Brillante",
+    "config.color.values.dark": "Oscuro",
+    "config.color.values.disabled": "Desactivado",
+	"config.color.description": "Color de la animación del agua",
+	
+    "config.color island.name": "Color en la Isla",
+    "config.color island.values.island": "Isla",
+    "config.color island.values.teal": "Verde azulado",
+    "config.color island.values.blue": "Azul",
+    "config.color island.values.bright": "Brillante",
+    "config.color island.values.dark": "Oscuro",
+    "config.color island.values.disabled": "Desactivado",
+	"config.color island.description": "Color de la animación del agua, pero en la Isla Jengibre\nIsla tiene un tono turquesa", 
+	
+    "config.Map Tiles Transparency.name": "Transparencia de Baldosas del Mapa",
+    "config.Map Tiles Transparency.values.Mixed": "Mixto",
+    "config.Map Tiles Transparency.values.Translucent": "Translúcido",
+    "config.Map Tiles Transparency.values.Semi-opaque": "Semiopaco",
+    "config.Map Tiles Transparency.values.opaque": "Opaco",
+    "config.Map Tiles Transparency.values.disabled": "Desactivado",
+	"config.Map Tiles Transparency.description": "Qué tan clara es la profundidad del agua:\nMixto: En la playa es Semiopaco, en el resto Translúcido\nTranslúcido: El agua es clara y todo lo sumergido conserva su color\nSemiopaco: No se ve bajo el agua, más oscuro en las partes profundas\nOpaco: La profundidad del agua es uniforme\nDesactivado: Básicamente desactiva el mod pero mantiene las demás funciones",
+	
+    "config.White water lines.name": "Líneas blancas en el agua",
+    "config.White water lines Bath House.name": "Líneas blancas en el agua de la Casa de Baños",
+	
+    "config.Caves.name": "Cuevas",
+    "config.Caves White water lines.name": "Líneas blancas en el agua de las Cuevas",
+    "config.Sewers.name": "Alcantarillas",
+    "config.Sewers White water lines.name": "Líneas blancas en el agua de las Alcantarillas",
+    "config.Fountain.name": "Fuente",
+    "config.Fountain White water lines.name": "Líneas blancas en el agua de la Fuente",
+    "config.Fill bridge holes.name": "Rellenar huecos de los puentes",
+    "config.Fill bridge holes.description": "Los puentes de madera tienen algunos píxeles azules, esta opción los rellena con un marrón sin saturar",
+	
+    "config.Witch Swamp.name": "Pantano de la Bruja",
+    "config.Witch Swamp.values.green": "Verde",
+    "config.Witch Swamp.values.blue": "Azul",
+    "config.Witch Swamp.values.brown": "Marrón",
+    "config.Witch Swamp.values.disabled": "Desactivado",
+	
+    "config.Mutant Bug Lair.name": "Guarida de Bichos Mutantes",
+    "config.Mutant Bug Lair.values.dark": "Oscuro",
+    "config.Mutant Bug Lair.values.blue": "Azul",
+    "config.Mutant Bug Lair.values.disabled": "Desactivado",
+	
+    "config.desert.name": "Desierto",
+    "config.Fish pond.name": "Estanque de peces",
+    "config.Fish pond.description": "Desactivar si usas un mod de estanque de peces",
+	
+    "config.Caves mode.name": "Modo de cuevas",
+    "config.Caves mode.values.default": "Predeterminado",
+    "config.Caves mode.values.dirt": "Tierra",
+    "config.Caves mode.values.seasonal": "Estacional",
+    "config.Caves mode.values.disabled": "Desactivado",
+	"config.Caves mode.description": "Predeterminado: Usa Transparencia de Baldosas del Mapa\nTierra: Agua transparente con tierra marrón\nEstacional (experimental): El color coincide con el agua estacional al aire libre, también afecta a la isla\nDesactivar si el agua se ve mal con un mod de cuevas", 
+	
+    "config.Waterfalls mode.name": "Modo de cascadas",
+    "config.Waterfalls mode.values.Replace": "Reemplazar",
+    "config.Waterfalls mode.values.Overlay": "Superposición",
+	"config.Waterfalls mode.description": "Usa la opción Color\nReemplazar (Recomendado):\n Sustituye los sprites, se ve mejor sin recolores de mapa\nSuperposición (antiguo):\n Superpone los sprites\n Las cascadas se verán más brillantes y menos transparentes\n Puede verse diferente si tienes un mod de recolor de mapa activado",
+	
+    "config.Beach Farm sand.name": "Arena de la Granja Playa",
+    "config.Beach Farm sand.description": "Usa la opción Transparencia de Baldosas del Mapa\nCambia la arena bajo el agua más cercana en la Granja Playa\nDesactivar si se ve mal con un mod de follaje\n* Si aún hay un error de animación, no es culpa de mi mod"
+}

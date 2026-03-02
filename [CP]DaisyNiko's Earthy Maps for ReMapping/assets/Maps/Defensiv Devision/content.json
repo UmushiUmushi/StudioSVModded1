@@ -1,0 +1,60 @@
+{
+	"Changes": [
+    {
+      "LogName": "Defensiv Devision Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Defensiv Devision/Casa.Cx_{{season}}.png",
+      "PatchMode": "Overlay",
+
+      "When": {
+        "HasMod:|contains=DD.DefenseDivision": true,
+      },
+
+      "ToArea": {
+        "X": 147,
+        "Y": 76,
+        "Width": 10,
+        "Height": 10
+      }
+    },
+    {
+      "LogName": "Defensiv Devision Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Defensiv Devision/Casa.Loja.Comu.Cx_{{season}}.png",
+      "PatchMode": "Overlay",
+
+      "When": {
+        "HasMod:|contains=DD.DefenseDivision": true,
+				"HasSeenEvent |contains=61743015": true,
+      },
+
+      "ToArea": {
+        "X": 147,
+        "Y": 76,
+        "Width": 10,
+        "Height": 10
+      }
+    },
+    {
+      "LogName": "Defensiv Devision Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Defensiv Devision/Casa.Loja.Joja.Cx_{{season}}.png",
+      "PatchMode": "Overlay",
+
+      "When": {
+        "HasMod:|contains=DD.DefenseDivision": true,
+				"HasSeenEvent |contains=61743017": true,
+      },
+
+      "ToArea": {
+        "X": 147,
+        "Y": 76,
+        "Width": 10,
+        "Height": 10
+      }
+    }
+  ]
+}

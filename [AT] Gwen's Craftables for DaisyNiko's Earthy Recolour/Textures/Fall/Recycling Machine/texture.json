@@ -1,0 +1,20 @@
+{
+	"ItemName": "Recycling Machine",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+		"Seasons": ["Fall"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		"Keywords": ["Outdoors"],
+		},
+		{
+		"Id": 1,
+		"Name": "1-Indoors",
+		"Keywords": ["Indoors"],
+		},
+	]
+}

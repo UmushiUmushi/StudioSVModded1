@@ -1,0 +1,19 @@
+{
+	"ItemName": "Log Section",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 1,
+		"Name": "1-Indoors-Extra",
+		"Keywords": ["Extra"],
+		},
+	]
+}

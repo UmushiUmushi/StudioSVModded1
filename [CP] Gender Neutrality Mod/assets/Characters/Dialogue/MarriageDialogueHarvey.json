@@ -1,0 +1,16 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueHarvey",
+			"Entries":
+				{
+					"Rainy_Night_2": "You look a little soggy, love. Why don't you warm yourself by the fire?",
+					"Good_2": "I knew you were the one from the moment you moved here... $l",
+					"Good_3": "Oh, my... you look {{Lowercase: {{Random: {{Hana.GNMTokens/Adjective}} }} }} today.$l"
+				},
+			"LogName":"Fix MarriageDialogueHarvey"
+		}
+	]
+}

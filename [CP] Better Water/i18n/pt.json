@@ -1,0 +1,74 @@
+{
+	// translated by me
+	// for mod version 1.9.2
+	"config.section.Color and Transparency.name": "Cor & Transparência",
+	"config.section.extra.name": "Extra",
+	"config.section.advanced.name": "Avançados",
+	
+    "config.color.name": "Cor",
+    "config.color.values.teal": "Verde Água",
+    "config.color.values.blue": "Azul",
+    "config.color.values.bright": "Claro",
+    "config.color.values.dark": "Escuro",
+    "config.color.values.disabled": "Desativado",
+	"config.color.description": "Cor da animação da água",
+	
+    "config.color island.name": "Cor Ilha",
+    "config.color island.values.island": "Ilha",
+    "config.color island.values.teal": "Verde Água",
+    "config.color island.values.blue": "Azul",
+    "config.color island.values.bright": "Claro",
+    "config.color island.values.dark": "Escuro",
+    "config.color island.values.disabled": "Desativado",
+	"config.color island.description": "Cor da animação da água, porém na Ilha\nIlha tem um tom turquesa", 
+	
+    "config.Map Tiles Transparency.name": "Transparência do Tileset",
+    "config.Map Tiles Transparency.values.Mixed": "Misto",
+    "config.Map Tiles Transparency.values.Translucent": "Translúcido",
+    "config.Map Tiles Transparency.values.Semi-opaque": "Semi-opaco",
+    "config.Map Tiles Transparency.values.opaque": "Opaco",
+    "config.Map Tiles Transparency.values.disabled": "Desativado",
+	"config.Map Tiles Transparency.description": "Quão transparente é a água\n Misto: Combina Semi-opaco na praia e Translúcido no resto\n Translúcido: Água é transparente mas tudo debaixo é da cor dela\n Semi-opaco: Não da para ver em baixo da água, escuro nas partes mais profundas \n Opaco: A profundidade é uniforme \n Desativado: Basicamente desativa o mod mas você pode usar o resto que quiser",
+	
+    "config.White water lines.name": "Linhas brancas n'água",
+    "config.White water lines Bath House.name": "Linhas brancas n'água Spa",
+	
+    "config.Caves.name": "Cavernas",
+    "config.Caves White water lines.name": "Cavernas Linhas brancas n'água",
+    "config.Sewers.name": "Esgotos",
+    "config.Sewers White water lines.name": "Esgotos Linhas brancas n'água",
+    "config.Fountain.name": "Fonte",
+    "config.Fountain White water lines.name": "Fonte Linhas brancas n'água",
+    "config.Fill bridge holes.name": "Preencher buracos das pontes",
+    "config.Fill bridge holes.description": "Pontes de madeira tem uns buracos com pixels azuis, esta opção preenche eles com um marrom desaturado",
+	
+    "config.Witch Swamp.name": "Pântano da Bruxa",
+    "config.Witch Swamp.values.green": "Verde",
+    "config.Witch Swamp.values.blue": "Azul",
+    "config.Witch Swamp.values.brown": "Marrom",
+    "config.Witch Swamp.values.disabled": "Desativado",
+	
+    "config.Mutant Bug Lair.name": "Covil dos Insetos Mutantes",
+    "config.Mutant Bug Lair.values.dark": "Escuro",
+    "config.Mutant Bug Lair.values.blue": "Azul",
+    "config.Mutant Bug Lair.values.disabled": "Desativado",
+	
+    "config.desert.name": "Deserto",
+    "config.Fish pond.name": "Lago de Peixes",
+    "config.Fish pond.description": "Desative caso tenha um mod que altere ele",
+	
+    "config.Caves mode.name": "Modo das cavernas",
+    "config.Caves mode.values.default": "Padrão",
+    "config.Caves mode.values.dirt": "Terra",
+    "config.Caves mode.values.seasonal": "Estacional",
+    "config.Caves mode.values.disabled": "Desativado",
+	"config.Caves mode.description": "Padrão: Usa a opção Transparência do Tileset\nTerra: Água transparente com terra marrom\nEstacional (experimental): Cor combina com a estação da água do ar livre, porém afeta a Ilha\nDesative se a água tem aparência ruim com um mod de caverna", 
+	
+    "config.Waterfalls mode.name": "Modo das cachoeiras",
+    "config.Waterfalls mode.values.Replace": "Substituir",
+    "config.Waterfalls mode.values.Overlay": "Sobrepor",
+    "config.Waterfalls mode.description": "Usa a opção Cor\nSubstituir (Recomendado):\n Substitui as imagens, tem aparência melhor sem mod de recolorir o mapa\nSobrepor (Antigo):\n Sobrepõe as imagens\n Cachoeiras ficarão menos transparentes e mais brilhantes\n Talvez tenha a aparência diferente dependendo do seu mod de recolorir o mapa",
+	
+    "config.Beach Farm sand.name": "Areia da Fazenda da Praia",
+    "config.Beach Farm sand.description": "Usa a opção Transparência do Tileset\nAltera a mais próxima areia de baixo d'água na Fazenda da Praia\nDesative se a areia estiver feia com um mod de árvores\n*Caso ainda tenha um erro de animação, não é culpa do meu mod",
+}

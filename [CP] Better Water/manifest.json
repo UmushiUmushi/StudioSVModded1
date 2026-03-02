@@ -1,0 +1,9 @@
+{
+  "Name": "Better Water",
+  "Author": "Neopffe",
+  "Version": "1.9.2",
+  "Description": "Water is more realistic",
+  "UniqueID": "Neopffe.BetterWater",
+  "UpdateKeys": ["Nexus:15079"],
+  "ContentPackFor": {"UniqueID": "Pathoschild.ContentPatcher"},
+}

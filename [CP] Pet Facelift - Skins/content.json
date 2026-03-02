@@ -1,0 +1,1339 @@
+{"Format": "2.0.0",
+ 
+"ConfigSchema": {
+    "Cat Breeds": {
+    "AllowValues": "black bicolor, black bicolor tabby, black tabby, black under, black solid, brown bicolor, brown bicolor tabby, brown tabby, brown under, brown solid, calico dilute, calico, chimera, ghost, grey bicolor, grey bicolor tabby, grey tabby, grey under, grey solid, halloween, lykoi, orange bicolor, orange bicolor tabby, orange tabby, orange under, orange solid, pitch black, siamese fawn, siamese flame, siamese seal, torbie dilute, torbie, white, scottish fold, american curl, purple, pink, blue, tortoiseshell, vanilla",
+    "AllowMultiple": true,
+    "Default": "black bicolor, black bicolor tabby, black tabby, black under, black solid, brown bicolor, brown bicolor tabby, brown tabby, brown under, brown solid, calico dilute, calico, chimera, ghost, grey bicolor, grey bicolor tabby, grey tabby, grey under, grey solid, halloween, lykoi, orange bicolor, orange bicolor tabby, orange tabby, orange under, orange solid, pitch black, siamese fawn, siamese flame, siamese seal, torbie dilute, torbie, white, scottish fold, american curl, purple, pink, blue, tortoiseshell, vanilla",
+    "Description": "The list of cat breeds to add separated by commas. See config guide for names."
+    },
+    "Dog Breeds": {
+    "AllowValues": "doberman, german shepherd black, german shepherd, ghost, great dane black, great dane, grey wolf, halloween, husky red, husky, lab black, lab chocolate, lab yellow, retriever cream, retriever golden, retriever red, rottweiler, scooby doo, timber wolf, weimaraner, vanilla",
+    "AllowMultiple": true,
+    "Default": "doberman, german shepherd black, german shepherd, ghost, great dane black, great dane, grey wolf, halloween, husky red, husky, lab black, lab chocolate, lab yellow, retriever cream, retriever golden, retriever red, rottweiler, scooby doo, timber wolf, weimaraner, vanilla",
+    "Description": "The list of dog breeds to add separated by commas. See config guide for names."
+    }
+},
+ 
+"Changes": [
+    //Load images
+    {
+    "LogName": "Load cat images",
+    "Action": "Load",
+    "Target": "Mods\\siamece.PetFacelift\\cat\\american curl, Mods\\siamece.PetFacelift\\cat\\black bicolor tabby, Mods\\siamece.PetFacelift\\cat\\black bicolor, Mods\\siamece.PetFacelift\\cat\\black solid, Mods\\siamece.PetFacelift\\cat\\black tabby, Mods\\siamece.PetFacelift\\cat\\black under, Mods\\siamece.PetFacelift\\cat\\blue, Mods\\siamece.PetFacelift\\cat\\brown bicolor tabby, Mods\\siamece.PetFacelift\\cat\\brown bicolor, Mods\\siamece.PetFacelift\\cat\\brown solid, Mods\\siamece.PetFacelift\\cat\\brown tabby, Mods\\siamece.PetFacelift\\cat\\brown under, Mods\\siamece.PetFacelift\\cat\\calico dilute, Mods\\siamece.PetFacelift\\cat\\calico, Mods\\siamece.PetFacelift\\cat\\chimera, Mods\\siamece.PetFacelift\\cat\\ghost, Mods\\siamece.PetFacelift\\cat\\grey bicolor tabby, Mods\\siamece.PetFacelift\\cat\\grey bicolor, Mods\\siamece.PetFacelift\\cat\\grey solid, Mods\\siamece.PetFacelift\\cat\\grey tabby, Mods\\siamece.PetFacelift\\cat\\grey under, Mods\\siamece.PetFacelift\\cat\\halloween, Mods\\siamece.PetFacelift\\cat\\lykoi, Mods\\siamece.PetFacelift\\cat\\orange bicolor tabby, Mods\\siamece.PetFacelift\\cat\\orange bicolor, Mods\\siamece.PetFacelift\\cat\\orange solid, Mods\\siamece.PetFacelift\\cat\\orange tabby, Mods\\siamece.PetFacelift\\cat\\orange under, Mods\\siamece.PetFacelift\\cat\\pink, Mods\\siamece.PetFacelift\\cat\\pitch black, Mods\\siamece.PetFacelift\\cat\\purple, Mods\\siamece.PetFacelift\\cat\\scottish fold, Mods\\siamece.PetFacelift\\cat\\siamese fawn, Mods\\siamece.PetFacelift\\cat\\siamese flame, Mods\\siamece.PetFacelift\\cat\\siamese seal, Mods\\siamece.PetFacelift\\cat\\torbie dilute, Mods\\siamece.PetFacelift\\cat\\torbie, Mods\\siamece.PetFacelift\\cat\\tortoiseshell, Mods\\siamece.PetFacelift\\cat\\white",
+    "FromFile": "assets/cat/{{TargetWithoutPath}}.png"
+    },
+    {
+    "LogName": "Load dog images",
+    "Action": "Load",
+    "Target": "Mods\\siamece.PetFacelift\\dog\\doberman, Mods\\siamece.PetFacelift\\dog\\german shepherd black, Mods\\siamece.PetFacelift\\dog\\german shepherd, Mods\\siamece.PetFacelift\\dog\\ghost, Mods\\siamece.PetFacelift\\dog\\great dane black, Mods\\siamece.PetFacelift\\dog\\great dane, Mods\\siamece.PetFacelift\\dog\\grey wolf, Mods\\siamece.PetFacelift\\dog\\halloween, Mods\\siamece.PetFacelift\\dog\\husky red, Mods\\siamece.PetFacelift\\dog\\husky, Mods\\siamece.PetFacelift\\dog\\lab black, Mods\\siamece.PetFacelift\\dog\\lab chocolate, Mods\\siamece.PetFacelift\\dog\\lab yellow, Mods\\siamece.PetFacelift\\dog\\retriever cream, Mods\\siamece.PetFacelift\\dog\\retriever golden, Mods\\siamece.PetFacelift\\dog\\retriever red, Mods\\siamece.PetFacelift\\dog\\rottweiler, Mods\\siamece.PetFacelift\\dog\\scooby doo, Mods\\siamece.PetFacelift\\dog\\timber wolf, Mods\\siamece.PetFacelift\\dog\\weimaraner",
+    "FromFile": "assets/dog/{{TargetWithoutPath}}.png"
+    },
+    {
+    "LogName": "Load icons",
+    "Action": "Load",
+    "Target": "Mods\\siamece.PetFacelift\\icons",
+    "FromFile": "assets/{{TargetWithoutPath}}.png"
+    },
+    //Cat data
+    {
+    "LogName": "cat - american curl",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_americancurl": {
+        "Id": "siamece.PetFacelift_cat_americancurl",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\american curl",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "american curl" },
+    },
+    {
+    "LogName": "cat - black bicolor tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_blackbicolortabby": {
+        "Id": "siamece.PetFacelift_cat_blackbicolortabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\black bicolor tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "black bicolor tabby" },
+    },
+    {
+    "LogName": "cat - black bicolor",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_blackbicolor": {
+        "Id": "siamece.PetFacelift_cat_blackbicolor",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\black bicolor",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "black bicolor" },
+    },
+    {
+    "LogName": "cat - black solid",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_blacksolid": {
+        "Id": "siamece.PetFacelift_cat_blacksolid",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\black solid",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "black solid" },
+    },
+    {
+    "LogName": "cat - black tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_blacktabby": {
+        "Id": "siamece.PetFacelift_cat_blacktabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\black tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 64,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "black tabby" },
+    },
+    {
+    "LogName": "cat - black under",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_blackunder": {
+        "Id": "siamece.PetFacelift_cat_blackunder",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\black under",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 80,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "black under" },
+    },
+    {
+    "LogName": "cat - blue",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_blue": {
+        "Id": "siamece.PetFacelift_cat_blue",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\blue",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 96,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "blue" },
+    },
+    {
+    "LogName": "cat - brown bicolor tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_brownbicolortabby": {
+        "Id": "siamece.PetFacelift_cat_brownbicolortabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\brown bicolor tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 112,
+                "Y": 0,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "brown bicolor tabby" },
+    },
+    {
+    "LogName": "cat - brown bicolor",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_brownbicolor": {
+        "Id": "siamece.PetFacelift_cat_brownbicolor",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\brown bicolor",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "brown bicolor" },
+    },
+    {
+    "LogName": "cat - brown solid",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_brownsolid": {
+        "Id": "siamece.PetFacelift_cat_brownsolid",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\brown solid",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "brown solid" },
+    },
+    {
+    "LogName": "cat - brown tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_browntabby": {
+        "Id": "siamece.PetFacelift_cat_browntabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\brown tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "brown tabby" },
+    },
+    {
+    "LogName": "cat - brown under",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_brownunder": {
+        "Id": "siamece.PetFacelift_cat_brownunder",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\brown under",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "brown under" },
+    },
+    {
+    "LogName": "cat - calico dilute",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_calicodilute": {
+        "Id": "siamece.PetFacelift_cat_calicodilute",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\calico dilute",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 64,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "calico dilute" },
+    },
+    {
+    "LogName": "cat - calico",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_calico": {
+        "Id": "siamece.PetFacelift_cat_calico",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\calico",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 80,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "calico" },
+    },
+    {
+    "LogName": "cat - chimera",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_chimera": {
+        "Id": "siamece.PetFacelift_cat_chimera",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\chimera",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 96,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "chimera" },
+    },
+    {
+    "LogName": "cat - ghost",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_ghost": {
+        "Id": "siamece.PetFacelift_cat_ghost",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\ghost",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 112,
+                "Y": 16,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "ghost" },
+    },
+    {
+    "LogName": "cat - grey bicolor tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_greybicolortabby": {
+        "Id": "siamece.PetFacelift_cat_greybicolortabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\grey bicolor tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "grey bicolor tabby" },
+    },
+    {
+    "LogName": "cat - grey bicolor",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_greybicolor": {
+        "Id": "siamece.PetFacelift_cat_greybicolor",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\grey bicolor",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "grey bicolor" },
+    },
+    {
+    "LogName": "cat - grey solid",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_greysolid": {
+        "Id": "siamece.PetFacelift_cat_greysolid",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\grey solid",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "grey solid" },
+    },
+    {
+    "LogName": "cat - grey tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_greytabby": {
+        "Id": "siamece.PetFacelift_cat_greytabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\grey tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "grey tabby" },
+    },
+    {
+    "LogName": "cat - grey under",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_greyunder": {
+        "Id": "siamece.PetFacelift_cat_greyunder",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\grey under",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 64,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "grey under" },
+    },
+    {
+    "LogName": "cat - halloween",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_halloween": {
+        "Id": "siamece.PetFacelift_cat_halloween",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\halloween",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 80,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "halloween" },
+    },
+    {
+    "LogName": "cat - lykoi",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_lykoi": {
+        "Id": "siamece.PetFacelift_cat_lykoi",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\lykoi",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 96,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "lykoi" },
+    },
+    {
+    "LogName": "cat - orange bicolor tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_orangebicolortabby": {
+        "Id": "siamece.PetFacelift_cat_orangebicolortabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\orange bicolor tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 112,
+                "Y": 32,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "orange bicolor tabby" },
+    },
+    {
+    "LogName": "cat - orange bicolor",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_orangebicolor": {
+        "Id": "siamece.PetFacelift_cat_orangebicolor",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\orange bicolor",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "orange bicolor" },
+    },
+    {
+    "LogName": "cat - orange solid",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_orangesolid": {
+        "Id": "siamece.PetFacelift_cat_orangesolid",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\orange solid",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "orange solid" },
+    },
+    {
+    "LogName": "cat - orange tabby",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_orangetabby": {
+        "Id": "siamece.PetFacelift_cat_orangetabby",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\orange tabby",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "orange tabby" },
+    },
+    {
+    "LogName": "cat - orange under",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_orangeunder": {
+        "Id": "siamece.PetFacelift_cat_orangeunder",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\orange under",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "orange under" },
+    },
+    {
+    "LogName": "cat - pink",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_pink": {
+        "Id": "siamece.PetFacelift_cat_pink",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\pink",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 64,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "pink" },
+    },
+    {
+    "LogName": "cat - pitch black",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_pitchblack": {
+        "Id": "siamece.PetFacelift_cat_pitchblack",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\pitch black",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 80,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "pitch black" },
+    },
+    {
+    "LogName": "cat - purple",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_purple": {
+        "Id": "siamece.PetFacelift_cat_purple",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\purple",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 96,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "purple" },
+    },
+    {
+    "LogName": "cat - scottish fold",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_scottishfold": {
+        "Id": "siamece.PetFacelift_cat_scottishfold",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\scottish fold",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 112,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "scottish fold" },
+    },
+    {
+    "LogName": "cat - siamese fawn",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_siamesefawn": {
+        "Id": "siamece.PetFacelift_cat_siamesefawn",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\siamese fawn",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 64,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "siamese fawn" },
+    },
+    {
+    "LogName": "cat - siamese flame",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_siameseflame": {
+        "Id": "siamece.PetFacelift_cat_siameseflame",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\siamese flame",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 64,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "siamese flame" },
+    },
+    {
+    "LogName": "cat - siamese seal",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_siameseseal": {
+        "Id": "siamece.PetFacelift_cat_siameseseal",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\siamese seal",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 64,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "siamese seal" },
+    },
+    {
+    "LogName": "cat - torbie dilute",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_torbiedilute": {
+        "Id": "siamece.PetFacelift_cat_torbiedilute",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\torbie dilute",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 64,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "torbie dilute" },
+    },
+    {
+    "LogName": "cat - torbie",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_torbie": {
+        "Id": "siamece.PetFacelift_cat_torbie",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\torbie",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 64,
+                "Y": 64,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "torbie" },
+    },
+    {
+    "LogName": "cat - tortoiseshell",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_tortoiseshell": {
+        "Id": "siamece.PetFacelift_cat_tortoiseshell",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\tortoiseshell",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 80,
+                "Y": 64,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "tortoiseshell" },
+    },
+    {
+    "LogName": "cat - white",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Cat", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_cat_white": {
+        "Id": "siamece.PetFacelift_cat_white",
+            "Texture": "Mods\\siamece.PetFacelift\\cat\\white",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 96,
+                "Y": 64,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Cat Breeds": "white" },
+    },
+    //Dog data
+    {
+    "LogName": "dog - doberman",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_doberman": {
+        "Id": "siamece.PetFacelift_dog_doberman",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\doberman",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "doberman" },
+    },
+    {
+    "LogName": "dog - german shepherd black",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_germanshepherdblack": {
+        "Id": "siamece.PetFacelift_dog_germanshepherdblack",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\german shepherd black",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "german shepherd black" },
+    },
+    {
+    "LogName": "dog - german shepherd",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_germanshepherd": {
+        "Id": "siamece.PetFacelift_dog_germanshepherd",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\german shepherd",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "german shepherd" },
+    },
+    {
+    "LogName": "dog - ghost",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_ghost": {
+        "Id": "siamece.PetFacelift_dog_ghost",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\ghost",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "ghost" },
+    },
+    {
+    "LogName": "dog - great dane black",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_greatdaneblack": {
+        "Id": "siamece.PetFacelift_dog_greatdaneblack",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\great dane black",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 64,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "great dane black" },
+    },
+    {
+    "LogName": "dog - great dane",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_greatdane": {
+        "Id": "siamece.PetFacelift_dog_greatdane",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\great dane",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 80,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "great dane" },
+    },
+    {
+    "LogName": "dog - grey wolf",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_greywolf": {
+        "Id": "siamece.PetFacelift_dog_greywolf",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\grey wolf",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 96,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "grey wolf" },
+    },
+    {
+    "LogName": "dog - halloween",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_halloween": {
+        "Id": "siamece.PetFacelift_dog_halloween",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\halloween",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 112,
+                "Y": 80,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "halloween" },
+    },
+    {
+    "LogName": "dog - husky red",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_huskyred": {
+        "Id": "siamece.PetFacelift_dog_huskyred",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\husky red",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "husky red" },
+    },
+    {
+    "LogName": "dog - husky",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_husky": {
+        "Id": "siamece.PetFacelift_dog_husky",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\husky",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "husky" },
+    },
+    {
+    "LogName": "dog - lab black",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_labblack": {
+        "Id": "siamece.PetFacelift_dog_labblack",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\lab black",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "lab black" },
+    },
+    {
+    "LogName": "dog - lab chocolate",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_labchocolate": {
+        "Id": "siamece.PetFacelift_dog_labchocolate",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\lab chocolate",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "lab chocolate" },
+    },
+    {
+    "LogName": "dog - lab yellow",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_labyellow": {
+        "Id": "siamece.PetFacelift_dog_labyellow",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\lab yellow",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 64,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "lab yellow" },
+    },
+    {
+    "LogName": "dog - retriever cream",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_retrievercream": {
+        "Id": "siamece.PetFacelift_dog_retrievercream",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\retriever cream",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 80,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "retriever cream" },
+    },
+    {
+    "LogName": "dog - retriever golden",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_retrievergolden": {
+        "Id": "siamece.PetFacelift_dog_retrievergolden",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\retriever golden",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 96,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "retriever golden" },
+    },
+    {
+    "LogName": "dog - retriever red",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_retrieverred": {
+        "Id": "siamece.PetFacelift_dog_retrieverred",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\retriever red",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 112,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "retriever red" },
+    },
+    {
+    "LogName": "dog - rottweiler",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_rottweiler": {
+        "Id": "siamece.PetFacelift_dog_rottweiler",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\rottweiler",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 0,
+                "Y": 112,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "rottweiler" },
+    },
+    {
+    "LogName": "dog - scooby doo",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_scoobydoo": {
+        "Id": "siamece.PetFacelift_dog_scoobydoo",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\scooby doo",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 16,
+                "Y": 112,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "scooby doo" },
+    },
+    {
+    "LogName": "dog - timber wolf",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_timberwolf": {
+        "Id": "siamece.PetFacelift_dog_timberwolf",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\timber wolf",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 32,
+                "Y": 112,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "timber wolf" },
+    },
+    {
+    "LogName": "dog - weimaraner",
+    "Action": "EditData",
+    "Target": "Data/Pets",
+    "TargetField": [ "Dog", "Breeds" ],
+    "Entries": {
+    "siamece.PetFacelift_dog_weimaraner": {
+        "Id": "siamece.PetFacelift_dog_weimaraner",
+            "Texture": "Mods\\siamece.PetFacelift\\dog\\weimaraner",
+            "IconTexture": "Mods\\siamece.PetFacelift\\icons",
+            "IconSourceRect": {
+                "X": 48,
+                "Y": 112,
+                "Width": 16,
+                "Height": 16
+                },
+            "BarkOverride": null,
+            "VoicePitch": 1.0
+            },
+        },
+    "When": { "Dog Breeds": "weimaraner" },
+    },
+    ]
+}

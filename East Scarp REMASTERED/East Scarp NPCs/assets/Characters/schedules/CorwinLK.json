@@ -1,0 +1,29 @@
+{
+    "Changes": [
+        { //Corwin before he moves into the lighthouse
+            "LogName": "Corwin",
+            "Action": "EditData",
+            "Target": "Characters/schedules/CorwinLK",
+            "Entries": {
+                "spring": "610 EastScarp_Village 75 131 2/800 47 113 1 square_15_2/1100 Saloon 18 22 2 corwinlk_drink/1700 EastScarp_LoresCove 44 44 0 square_15_2/2100 50 63 2 corwinlk_shovel/2300 EastScarp_VillageInn 2 25 1 corwinlk_sleep",
+                "Wed":"610 EastScarp_Village 75 131 2/800 47 113 1 square_15_2/1100 Saloon 18 22 2 corwinlk_drink/1700 EastScarp_FairyPool 10 29 2 square_7_3/2100 14 24 2 corwinlk_shovel/2300 EastScarp_VillageInn 2 25 1 corwinlk_sleep",
+                "Fri":"610 EastScarp_Village 75 131 2/800 47 113 1 square_15_2/1000 Saloon 18 22 2 corwinlk_drink/1400 EastScarp_DeepMountains 67 53 2 square_12_10/2100 66 55 2 corwinlk_shovel/2300 EastScarp_VillageInn 2 25 1 corwinlk_sleep",
+                "Mon":"610 EastScarp_Village 75 131 2/800 47 113 1 square_15_2/1100 Saloon 18 22 2 corwinlk_drink/1700 EastScarp_Orchard 28 68 2 square_13_6/2100 28 59 2 corwinlk_shovel/2300 EastScarp_VillageInn 2 25 1 corwinlk_sleep",
+                "rain": "700 31 32 1 corwinlk_drink/1000 EastScarp_Village 47 113 1 square_15_2/1200 EastScarp_Village 48 130 2/1700 Saloon 18 22 2 corwinlk_drink/2100 EastScarp_VillageInn 2 25 1 corwinlk_sleep",
+                "EastScarpe_SpiritsEve":"610 EastScarp_Village 75 131 2/800 47 113 1 square_15_2/1100 EastScarp_VillageInn 14 34 1/1630 EastScarp_VillageInn 13 34 3/2010 Town 19 80 3/2400 EastScarp_VillageInn 2 25 1 corwinlk_sleep",
+            }
+        },
+        { //Corwin after he moves into the lighthouse
+            "LogName": "Corwin",
+            "Action": "EditData",
+            "Target": "Characters/schedules/CorwinLK",
+            "When": {
+                "HasSeenEvent": "57871505"
+            },
+            "Entries": {
+                "spring": "610 EastScarp_Village 75 131 2/1000 Saloon 18 22 2 corwinlk_drink/1600 EastScarp_LanternRoom 7 5 1/2400 EastScarp_LanternRoom 5 10 2",
+                "rain": "700 EastScarp_Lighthouse 1 15 1 corwinlk_drink/1000 EastScarp_Village 47 113 1 square_15_2/1200 Saloon 18 22 2 corwinlk_drink/1600 EastScarp_LanternRoom 7 5 1/2400 EastScarp_LanternRoom 5 10 2"
+            }
+        },
+    ]
+}

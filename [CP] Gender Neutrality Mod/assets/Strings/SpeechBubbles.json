@@ -1,0 +1,29 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpeechBubbles",
+			"Entries":
+				{
+						"AdventureGuild_Marlon_Greeting_Male": "{{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'re back!",
+						"AdventureGuild_Marlon_Greeting_Female": "{{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'re back!"
+				},
+			"LogName": "Fix SpeechBubbles - Plural"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Strings/SpeechBubbles",
+			"Entries":
+				{
+						"AdventureGuild_Marlon_Greeting_Male": "{{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'s back!",
+						"AdventureGuild_Marlon_Greeting_Female": "{{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'s back!"
+				},
+			"LogName": "Fix SpeechBubbles - Singular",
+			"When": 
+				{
+					"Hana.GNMTokens/Singular": true
+				}
+		}
+	]
+}

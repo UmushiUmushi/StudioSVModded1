@@ -1,0 +1,43 @@
+{
+  "Format": "2.1.0",
+  "ConfigSchema": {
+    "Bog/DaisyNiko compatible Recolor": {
+      "AllowValues": "true, false",
+      "Default": "false"
+    }
+  },
+  "Changes": [
+    {
+      "Action": "EditImage",
+      "Target": "Buildings/Mailbox",
+      "FromFile": "assets/mailbox{{season}}.png"
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Buildings/Mailbox",
+      "FromFile": "assets/mailboxgr.png",
+      "When": {
+        "Weather": "GreenRain"
+      }
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Buildings/Mailbox",
+      "FromFile": "assets/earthymailbox{{season}}.png",
+      "When": {
+        "Bog/DaisyNiko compatible Recolor": true
+      },
+    },
+    {
+      "Action": "EditImage",
+      "Target": "Buildings/Mailbox",
+      "FromFile": "assets/earthymailboxgr.png",
+      "When": {
+        "Weather": "GreenRain"
+      },
+      "When": {
+        "Bog/DaisyNiko compatible Recolor": true
+      },
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+    "Format": "1.28.3",
+    "ConfigSchema": {
+    	"ChangeSecretNotes":{
+		"AllowValues": "True, False",
+		"Default": "True"
+	},
+	"SecretNotesType": {
+      		"AllowValues": "slightlychange, slightlychange_pink, slightlychange_blue, feather_pink, feather_yellow, feather_blue",
+      		"Default": "slightlychange"
+    	}
+    },
+
+    "Changes": [
+        	{
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/{{SecretNotesType}}.png",
+		"ToArea": { "X": 112, "Y": 48, "Width": 16, "Height": 16 },
+		"When": { "ChangeSecretNotes": "True", "HasFile:assets/{{SecretNotesType}}.png": "true" }
+        	        }
+     ]
+}

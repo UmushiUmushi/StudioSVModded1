@@ -1,0 +1,18 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Data/ExtraDialogue",
+			"Entries":
+				{
+					"Island_willy_rescue": "Are you okay? I found you washed up on the shore, {{Lowercase: {{Random: {{Hana.GNMTokens/ElderAntiquatedNoun}} }} }}.$s.$s#$b#You really had me worried... I thought you were a goner! Be a little more careful out there...$s#$b#The island can be a dangerous place.",
+					"Mines_PlayerKilled_Spouse_PlayerMale": "You were gone so long I started to get worried about you! I almost had a heart attack when I saw your limp body...$s",
+					"Mines_PlayerKilled_Spouse_PlayerFemale": "You were gone so long I started to get worried about you! I almost had a heart attack when I saw your limp body...$a",
+					"Morris_CommunityDevelopmentForm_PlayerMale": "$q -1 -1#I've got the Joja Community Development Form right here for you, {{Lowercase: {{Random: {{Hana.GNMTokens/ServiceFormalNoun}} }} }}. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No",
+					"Morris_CommunityDevelopmentForm_PlayerFemale": "$q -1 -1#I've got the Joja Community Development Form right here for you, {{Lowercase: {{Random: {{Hana.GNMTokens/ServiceFormalNoun}} }} }}. Care to take a look?#$r -1 -1 Yes#Yes#$r -1 -1 No#No"
+				},
+			"LogName": "Fix ExtraDialogue"
+		}
+	]
+}

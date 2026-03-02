@@ -1,0 +1,655 @@
+{
+
+/* 					
+					Hi there!
+
+					Editing anything here changes how the mod works.
+					If you want to choose different recolour/fall palette edit config.json instead!
+					It will be generated after SMAPI loads the mods first time into the game c:
+					
+*/
+
+	"Format": "1.29.0",
+
+	"ConfigSchema": {
+					
+		"DoghouseOption": {"AllowValues": "1, 2",
+					"Default": "1" }, 
+		"DesertFenceOption": {"AllowValues": "stone, wood, false",
+					"Default": "stone" }, 
+		"IndoorsFenceOption": {"AllowValues": "stone, wood, false",
+					"Default": "stone" }, 
+		"FallColor":{"AllowValues": "1, 2",
+					"Default": "1",
+					"Description": "To match recolor mods that have that option -> green(1) orange(2)" },
+		"RecolourOverwrite":{"AllowValues": "Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed",
+					"AllowBlank": true,
+					"Default": "",
+					"Description": "If you want to manually change recolor palette" },
+		
+	},
+	
+	
+	"DynamicTokens": [
+	//checking what recolour is used
+		{
+		"Name": "Recolour",
+		"Value": "Vanilla",
+		},
+		{
+		"Name": "Recolour",
+		"Value": "DNEarthyRecolour",
+			"When": { "HasMod": "DaisyNiko.EarthyRecolour" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "Eemie's",
+			"When": { "HasMod": "minervamaga.CP.eemieMapRecolour" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "FoliageRedone",
+			"When": { "HasMod": "stardewfoliageredone" },
+		},{
+		"Name": "Recolour",
+		"Value": "Starblue",
+			"When": { "HasMod": "Lita.StarblueValley" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "VibrantPastoral",
+			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "WittilyNamed",
+			"When": { "HasMod": "Acerbicon.Recolor" },
+		},
+
+	//recolor overwrite
+		{
+		"Name": "Recolour",
+		"Value": "{{RecolourOverwrite}}",
+			"When": { "RecolourOverwrite |contains=Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, FoliageRedoneReshade, Starblue, VibrantPastoral, WittilyNamed": true },
+		},
+	//fall color overwrite
+		{
+		"Name": "Recolour",
+		"Value": "{{Recolour}}/{{FallColor}}",
+			"When": { "Recolour |contains=Eemie's, VibrantPastoral": true,
+					"Season": "fall" },
+		},
+	],
+
+	"Changes": [
+	
+/*	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+					Cave Edits
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+ 
+		{
+		"LogName": "Cave overlay",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras_overlay.png",
+        },
+		{
+		"LogName": "Cave 1",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 0, "Width": 48, "Height": 32 },
+        },
+		{
+		"LogName": "Cave 2",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 48, "Y": 64, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 48, "Y": 64, "Width": 16, "Height": 32 },
+        },
+		{
+		"LogName": "Cave 3",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 64, "Y": 48, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 64, "Y": 48, "Width": 48, "Height": 48 },
+        },
+		{
+		"LogName": "Cave 4",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 48, "Y": 96, "Width": 112, "Height": 32 },
+			"ToArea": { "X": 48, "Y": 96, "Width": 112, "Height": 32 },
+        },
+		{
+		"LogName": "Cave 5",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 128, "Y": 128, "Width": 64, "Height": 32 },
+			"ToArea": { "X": 128, "Y": 128, "Width": 64, "Height": 32 },
+        },
+		{
+		"LogName": "Cave 6",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 96, "Y": 160, "Width": 64, "Height": 16 },
+			"ToArea": { "X": 96, "Y": 160, "Width": 64, "Height": 16 },
+        },
+		{
+		"LogName": "Cave 7",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 48, "Y": 176, "Width": 112, "Height": 48 },
+			"ToArea": { "X": 48, "Y": 176, "Width": 112, "Height": 48 },
+        },
+		{
+		"LogName": "Cave 8",
+        "Action": "EditImage",
+        "Target": "Maps/cave_daisyextras",
+        "FromFile": "assets/cave_daisyextras.png",
+			"FromArea": { "X": 48, "Y": 224, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 48, "Y": 224, "Width": 32, "Height": 48 },
+        },
+		
+/*	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+					Desert Edits
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+		{
+		"LogName": "Desert 1",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 16, "Y": 0, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 0, "Width": 48, "Height": 32 },
+        },
+		{
+		"LogName": "Desert 2",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 240, "Y": 0, "Width": 16, "Height": 64 },
+			"ToArea": { "X": 240, "Y": 0, "Width": 16, "Height": 64 },
+        },
+		{
+		"LogName": "Desert 3",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 64, "Width": 96, "Height": 48 },
+			"ToArea": { "X": 0, "Y": 64, "Width": 96, "Height": 48 },
+        },
+		{
+		"LogName": "Desert 4",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 112, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 112, "Width": 16, "Height": 16 },
+        },
+		{
+		"LogName": "Desert 5",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 128, "Width": 16, "Height": 64 },
+			"ToArea": { "X": 0, "Y": 128, "Width": 16, "Height": 64 },
+        },
+		{
+		"LogName": "Desert 6",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 48, "Y": 112, "Width": 144, "Height": 32 },
+			"ToArea": { "X": 48, "Y": 112, "Width": 144, "Height": 32 },
+        },
+		{
+		"LogName": "Desert 7",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 64, "Y": 144, "Width": 96, "Height": 16 },
+			"ToArea": { "X": 64, "Y": 144, "Width": 96, "Height": 16 },
+        },
+		{
+		"LogName": "Desert 8",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 96, "Y": 160, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 96, "Y": 160, "Width": 16, "Height": 16 },
+        },
+		{
+		"LogName": "Desert 9",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/desert_daisyextras.png",
+			"FromArea": { "X": 208, "Y": 112, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 208, "Y": 112, "Width": 48, "Height": 48 },
+        },
+		{
+		"LogName": "Desert fence 1",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/{{DesertFenceOption}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 144, "Y": 64, "Width": 48, "Height": 32 },
+		"When": { "DesertFenceOption": "stone, wood" },
+        },
+		{
+		"LogName": "Desert fence 2",
+        "Action": "EditImage",
+        "Target": "Maps/desert_daisyextras",
+        "FromFile": "assets/{{DesertFenceOption}}.png",
+			"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 64 },
+			"ToArea": { "X": 192, "Y": 64, "Width": 16, "Height": 64 },
+		"When": { "DesertFenceOption": "stone, wood" },
+        },
+/*	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+					Indoors Edits
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+		{
+		"LogName": "Indoors 1",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 64, "Width": 64, "Height": 48 },
+			"ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 48 },
+        },
+		{
+		"LogName": "Indoors 2",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 256, "Y": 32, "Width": 16, "Height": 64 },
+			"ToArea": { "X": 256, "Y": 32, "Width": 16, "Height": 64 },
+        },
+		{
+		"LogName": "Indoors 3",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 256, "Y": 96, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 256, "Y": 96, "Width": 48, "Height": 48 },
+        },
+		{
+		"LogName": "Indoors 4",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 16, "Y": 192, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 16, "Y": 192, "Width": 32, "Height": 48 },
+        },
+		{
+		"LogName": "Indoors 5",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 48, "Y": 192, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 48, "Y": 192, "Width": 16, "Height": 16 },
+        },
+		{
+		"LogName": "Indoors 6",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 256, "Y": 192, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 192, "Width": 16, "Height": 16 },
+        },
+		{
+		"LogName": "Indoors 7",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 16, "Y": 0, "Width": 0, "Height": 0 },
+			"ToArea": { "X": 16, "Y": 0, "Width": 0, "Height": 0 },
+        },
+		{
+		"LogName": "Indoors fence 1",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/{{IndoorsFenceOption}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 256, "Y": 144, "Width": 48, "Height": 32 },
+		"When": { "IndoorsFenceOption": "stone, wood" },
+        },
+		{
+		"LogName": "Indoors fence 2",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/{{IndoorsFenceOption}}.png",
+			"FromArea": { "X": 48, "Y": 0, "Width": 16, "Height": 64 },
+			"ToArea": { "X": 304, "Y": 144, "Width": 16, "Height": 64 },
+		"When": { "IndoorsFenceOption": "stone, wood" },
+        },
+		{
+		"LogName": "Indoors vines 1",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/{{Recolour}}/summer_daisyextras.png",
+			"FromArea": { "X": 432, "Y": 112, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 112, "Width": 48, "Height": 32 },
+        },
+		{
+		"LogName": "Indoors vines 2",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/{{Recolour}}/summer_daisyextras.png",
+			"FromArea": { "X": 336, "Y": 112, "Width": 64, "Height": 48 },
+			"ToArea": { "X": 0, "Y": 144, "Width": 64, "Height": 48 },
+        },
+		{
+		"LogName": "Indoors vines 3",
+        "Action": "EditImage",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/{{Recolour}}/summer_daisyextras.png",
+			"FromArea": { "X": 336, "Y": 160, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 192, "Width": 16, "Height": 16 },
+        },
+		{
+		"LogName": "Indoors vines fowers 1",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 112, "Width": 64, "Height": 80 },
+			"ToArea": { "X": 0, "Y": 112, "Width": 64, "Height": 80 },
+        },
+		{
+		"LogName": "Indoors vines fowers 2",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/indoor_daisyextras",
+        "FromFile": "assets/indoor_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 192, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 0, "Y": 192, "Width": 16, "Height": 16 },
+        },
+				
+/*	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+					Doghouse Edits
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+		{
+		"LogName": "Doghoue 1-1",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{DoghouseOption}}_{{season}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 64, "Y": 192, "Width": 48, "Height": 48 },
+        },
+		{
+		"LogName": "Doghoue 1-2",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{DoghouseOption}}_{{season}}.png",
+			"FromArea": { "X": 0, "Y": 16, "Width": 48, "Height": 32 },
+			"ToArea": { "X": 64, "Y": 240, "Width": 48, "Height": 32 },
+        },
+		{
+		"LogName": "Doghoue 2",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{DoghouseOption}}_{{season}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 176, "Y": 320, "Width": 48, "Height": 48 },
+        },
+		{
+		"LogName": "Doghoue 3",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{DoghouseOption}}_{{season}}.png",
+			"FromArea": { "X": 16, "Y": 48, "Width": 32, "Height": 48 },
+			"ToArea": { "X": 0, "Y": 272, "Width": 32, "Height": 48 },
+        },
+				
+/*	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+					Main Tilesheet Edits
+	
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+*/
+
+
+		{
+		"LogName": "Overlay 1",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 48, "Y": 0, "Width": 32, "Height": 64 },
+			"ToArea": { "X": 48, "Y": 0, "Width": 32, "Height": 64 },
+        },
+		{
+		"LogName": "Overlay 2",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 432, "Y": 48, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 432, "Y": 48, "Width": 16, "Height": 32 },
+        },
+		{
+		"LogName": "Barrel small",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 0, "Y": 208, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 0, "Y": 208, "Width": 16, "Height": 32 },
+        },
+		{
+		"LogName": "Barrel big",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 16, "Y": 192, "Width": 32, "Height": 32 },
+			"ToArea": { "X": 16, "Y": 192, "Width": 32, "Height": 32 },
+        },
+		{
+		"LogName": "Book, flipped stool",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 112, "Y": 176, "Width": 32, "Height": 16 },
+			"ToArea": { "X": 112, "Y": 176, "Width": 32, "Height": 16 },
+        },
+		{
+		"LogName": "Basket, bottle",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 160, "Y": 208, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 160, "Y": 208, "Width": 16, "Height": 32 },
+        },
+		{
+		"LogName": "Boats",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 112, "Y": 240, "Width": 96, "Height": 32 },
+			"ToArea": { "X": 112, "Y": 240, "Width": 96, "Height": 32 },
+        },
+		{
+		"LogName": "Flamingo",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 208, "Y": 208, "Width": 16, "Height": 32 },
+			"ToArea": { "X": 208, "Y": 208, "Width": 16, "Height": 32 },
+        },
+		{
+		"LogName": "Table with benches",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 208, "Y": 240, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 208, "Y": 240, "Width": 48, "Height": 48 },
+        },
+		{
+		"LogName": "Lamppost top",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 256, "Y": 112, "Width": 16, "Height": 16 },
+			"ToArea": { "X": 256, "Y": 112, "Width": 16, "Height": 16 },
+        },
+		{
+		"LogName": "Lamppost, table with chair, vines",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 272, "Y": 112, "Width": 96, "Height": 64 },
+			"ToArea": { "X": 272, "Y": 112, "Width": 96, "Height": 64 },
+        },
+		{
+		"LogName": "Vines, tools 1",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 368, "Y": 112, "Width": 112, "Height": 48 },
+			"ToArea": { "X": 368, "Y": 112, "Width": 112, "Height": 48 },
+        },
+		{
+		"LogName": "Vines, tools 2, stools, top potted",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 416, "Y": 160, "Width": 64, "Height": 32 },
+			"ToArea": { "X": 416, "Y": 160, "Width": 64, "Height": 32 },
+        },
+		{
+		"LogName": "bottom potted, hammer, vines",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 432, "Y": 192, "Width": 48, "Height": 16},
+			"ToArea": { "X": 432, "Y": 192, "Width": 48, "Height": 16},
+        },
+		{
+		"LogName": "Lamp, tool, table with kettle, pot",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 224, "Y": 176, "Width": 32, "Height": 48},
+			"ToArea": { "X": 224, "Y": 176, "Width": 32, "Height": 48},
+        },
+		{
+		"LogName": "Round table with flowers, sign, record player",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 256, "Y": 176, "Width": 16, "Height": 128},
+			"ToArea": { "X": 256, "Y": 176, "Width": 16, "Height": 128},
+        },
+		{
+		"LogName": "Round table with flowers, sign, record player",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 256, "Y": 176, "Width": 16, "Height": 128},
+			"ToArea": { "X": 256, "Y": 176, "Width": 16, "Height": 128},
+        },
+		{
+		"LogName": "Table",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 272, "Y": 176, "Width": 48, "Height": 48},
+			"ToArea": { "X": 272, "Y": 176, "Width": 48, "Height": 48},
+        },
+		{
+		"LogName": "Oval table",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 320, "Y": 176, "Width": 32, "Height": 32},
+			"ToArea": { "X": 320, "Y": 176, "Width": 32, "Height": 32},
+        },
+		{
+		"LogName": "Displays",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 272, "Y": 224, "Width": 192, "Height": 64},
+			"ToArea": { "X": 272, "Y": 224, "Width": 192, "Height": 64},
+        },
+		{
+		"LogName": "Anvil",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 368, "Y": 288, "Width": 32, "Height": 32},
+			"ToArea": { "X": 368, "Y": 288, "Width": 32, "Height": 32},
+        },
+		{
+		"LogName": "Campfire",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 400, "Y": 288, "Width": 32, "Height": 48},
+			"ToArea": { "X": 400, "Y": 288, "Width": 32, "Height": 48},
+        },
+		{
+		"LogName": "dino skull",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 272, "Y": 288, "Width": 32, "Height": 32},
+			"ToArea": { "X": 272, "Y": 288, "Width": 32, "Height": 32},
+        },
+		{
+		"LogName": "dino bone",
+        "Action": "EditImage",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 304, "Y": 288, "Width": 16, "Height": 48},
+			"ToArea": { "X": 304, "Y": 288, "Width": 16, "Height": 48},
+        },
+		{
+		"LogName": "Overlay for WBPT comp",
+        "Action": "EditImage",
+			"PatchMode": "Overlay",
+        "Target": "Maps/{{season}}_daisyextras",
+        "FromFile": "assets/{{Recolour}}/{{season}}_daisyextras.png",
+			"FromArea": { "X": 160, "Y": 304, "Width": 112, "Height": 96 },
+			"ToArea": { "X": 160, "Y": 304, "Width": 112, "Height": 96 },
+		"When":{ "HasMod": "Gweniaczek.WayBackPT" },
+        },
+	]
+}

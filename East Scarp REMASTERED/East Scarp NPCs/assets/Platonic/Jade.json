@@ -1,0 +1,31 @@
+{
+    "Changes": [
+        {
+            "LogName": "Jade becomes non-datable",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "JadeMalic"
+            ],
+            "Entries": {
+                "CanBeRomanced": false
+            }
+        },
+        {
+            "LogName": "Jade - Platonic doorstep event",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "57871208/f JadeMalic 2500/!D JadeMalic/t 600 1200": "continue/64 15/farmer 64 16 2 JadeMalic 64 18 0/changePortrait JadeMalic Academia/changeSprite JadeMalic Academia/faceDirection JadeMalic 0/addConversationTopic Jade_Away 1/pause 1500/speak JadeMalic \"{{i18n:57871208.0}}\"/emote farmer 8/pause 500/speak JadeMalic \"{{i18n:57871208.1}}\"/pause 500/emote JadeMalic 28/pause 500/speak JadeMalic \"{{i18n:57871208.2}}\"/pause 500/emote farmer 56/pause 500/speak JadeMalic \"{{i18n:57871208.3}}\"/pause 500/faceDirection JadeMalic 2/pause 1000/end invisible JadeMalic",
+            }
+        },
+        {
+            "LogName": "JadeMalic - high hearts",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Crossing",
+            "Entries": {
+                "57871211/e 57871208/!D JadeMalic/A Jade_Away": "{{season}}3/-100 -100/farmer 44 17 2 JadeMalic -1000 -1000 2/skippable/changePortrait JadeMalic AcademiaJoja/changeSprite JadeMalic AcademiaJoja/showFrame farmer 70/viewport 44 17 clamp true/pause 1000/playSound busDoorOpen/jump farmer 5/advancedMove farmer false 0 1 2 100/faceDirection farmer 2/proceedPosition farmer/warp JadeMalic 30 19/pause 500/speed farmer 4/advancedMove farmer false 0 2 -7 0 3 100/speed JadeMalic 4/advancedMove JadeMalic false 0 1 6 0 1 100/pause 250/viewport move -4 0 2000 true/emote JadeMalic 32 true/emote farmer 32 true/proceedPosition JadeMalic/speak JadeMalic \"{{i18n:57871210.0}}\"/pause 2000/speed JadeMalic 2/speed farmer 2/advancedMove JadeMalic false 0 7 1 100/advancedMove farmer false 0 7 3 100/viewport move 0 2 3500 true/proceedPosition JadeMalic/emote farmer 32/pause 1000/speak JadeMalic \"{{i18n:57871210.1}}\"/pause 500/emote farmer 56/textAboveHead JadeMalic \"{{i18n:57871210.2}}\"/speak JadeMalic \"{{i18n:57871210.3}}\"/pause 500/emote farmer 32/emote JadeMalic 32/pause 500/speak JadeMalic \"{{i18n:57871210.4}}\"/animate JadeMalic false false 500 0 12 8 4/pause 1000/speak JadeMalic \"{{i18n:57871210.5}}\"/pause 500/emote farmer 16/speak JadeMalic \"{{i18n:57871210.6}}\"/pause 500/faceDirection JadeMalic 2/faceDirection farmer 2/speak JadeMalic \"{{i18n:57871210.7}}\"/faceDirection JadeMalic 1 true/faceDirection farmer 3/speak JadeMalic \"{{i18n:57871210.8}}\"/pause 500/emote JadeMalic 32/pause 500/speak JadeMalic \"{{i18n:57871210.9p}}\"/speak JadeMalic \"{{i18n:57871210.10p}}\"/emote farmer 32 true/emote JadeMalic 32 true/pause 1000/jump JadeMalic 5/pause 500/speak JadeMalic \"{{i18n:57871210.11p}}\"/emote farmer 32/pause 500/advancedMove JadeMalic false 0 -6 15 0/pause 500/textAboveHead JadeMalic \"{{i18n:57871210.12}}\"/jump farmer 5/pause 500/advancedMove farmer false 0 -6 15 0/pause 4000/end"
+            }
+        }
+    ]
+}

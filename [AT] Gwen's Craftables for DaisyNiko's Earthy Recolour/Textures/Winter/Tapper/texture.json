@@ -1,0 +1,35 @@
+{
+	"ItemName": "Tapper",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors" ],
+		"Seasons": ["Winter"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 2,
+		"Name": "3-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 3,
+		"Name": "4-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 4,
+		"Name": "Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+	]
+}

@@ -1,0 +1,7 @@
+{
+  "Enabled": true,
+  "FocusedPriority": "High",
+  "UnfocusedPriority": "Normal",
+  "LogSuccess": true,
+  "LogFailure": true
+}

@@ -1,0 +1,186 @@
+{ 
+ "CollectiveNames":
+[
+"Chest",
+"Stone Chest",
+"Junimo Chest",
+"Big Chest",
+"Big Stone Chest"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name": "Quartz",
+	  "Keywords": [ "Minerals" ]
+    },
+    {
+      "Id": 1,
+      "Name": "Earth Crystal",
+	  "Keywords": [ "Minerals" ]
+    },
+    {
+      "Id": 2,
+      "Name": "Frozen Tear",
+	  "Keywords": [ "Minerals" ]
+    },
+    {
+      "Id": 3,
+      "Name": "Fire Quartz",
+	  "Keywords": [ "Minerals" ]
+    },
+    {
+      "Id": 4,
+      "Name": "Emerald",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 5,
+      "Name": "Aquamarine",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 6,
+      "Name": "Ruby",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 7,
+      "Name": "Amethyst",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 8,
+      "Name": "Topaz",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 9,
+      "Name": "Jade",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 10,
+      "Name": "Diamond",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 11,
+      "Name": "Prismatic Shard",
+	  "Keywords": [ "Gems" ]
+    },
+    {
+      "Id": 12,
+      "Name": "Geode",
+	  "Keywords": [ "Geodes" ]
+    },
+    {
+      "Id": 13,
+      "Name": "Frozen Geode",
+	  "Keywords": [ "Geodes" ]
+    },
+    {
+      "Id": 14,
+      "Name": "Magma Geode",
+	  "Keywords": [ "Geodes" ]
+    },
+    {
+      "Id": 15,
+      "Name": "Omni Geode",
+	  "Keywords": [ "Geodes" ]
+    },
+    {
+      "Id": 16,
+      "Name": "Battery Pack",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 17,
+      "Name": "Bone Fragment",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 18,
+      "Name": "Cinder Shard",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 19,
+      "Name": "Clay",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 20,
+      "Name": "Coal",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 21,
+      "Name": "Fiber",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 22,
+      "Name": "Moss",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 23,
+      "Name": "Stone",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 24,
+      "Name": "Wood",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 25,
+      "Name": "Refined Quartz",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 26,
+      "Name": "Copper Ore",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 27,
+      "Name": "Copper Bar",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 28,
+      "Name": "Iron Ore",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 29,
+      "Name": "Iron Bar",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 30,
+      "Name": "Gold Ore",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 31,
+      "Name": "Gold Bar",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 32,
+      "Name": "Iridium Ore",
+	  "Keywords": [ "Resources" ]
+    },
+    {
+      "Id": 33,
+      "Name": "Iridium Bar",
+	  "Keywords": [ "Resources" ]
+    }
+]
+}

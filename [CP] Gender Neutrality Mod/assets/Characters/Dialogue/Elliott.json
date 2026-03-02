@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Elliott",
+			"Entries":
+				{
+					"event_boat1": "So am I.$l"
+				},
+			"LogName":"Fix Elliott"
+		}
+	]
+}

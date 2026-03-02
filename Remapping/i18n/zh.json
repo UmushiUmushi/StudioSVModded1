@@ -1,0 +1,71 @@
+﻿//重新映射
+{
+//消息
+	"RMP.aspen": "Aspen's Farm", //1.3.0
+	"RMP.aspen1": "Aspen's House", //1.3.0
+	"RMP.alecto": "Witch Alecto's Cabin", //1.2.0
+	"RMP.ayeish": "货车道路",
+	"RMP.backwood.hill": "魔法树林", //1.1.1
+	"RMP.beach.additional": "海滩储藏空间",
+	"RMP.cape.stardew": "Annetta's的房子",
+	"RMP.cape.stardew1": "边远森林",
+	"RMP.cape.stardew2": "海角",
+	"RMP.cape.stardew3": "星露角",
+	"RMP.cape.stardew4": "海角巴士站",
+	"RMP.cape.stardew5": "隧道角",
+	"RMP.demon.slayer": "Gyomei Himejima's estate", //1.4.0
+	"RMP.demon.slayer1": "Muichiro Tokito's estate", //1.4.0
+	"RMP.demon.slayer2": "Giyu Tomiok's estate", //1.4.0
+	"RMP.demon.slayer3": "Mitsuri Kanroji's estate", //1.4.0
+	"RMP.demon.slayer4": "Butterfly estate", //1.4.0
+	"RMP.demon.slayer5": "Obanai Iguro's estate", //1.4.0
+	"RMP.demon.slayer6": "Tengen Uzui's estate", //1.4.0
+	"RMP.demon.slayer7": "Rengoku Kyojuro's estate", //1.4.0
+	"RMP.demon.slayer8": "Sanemi Shinazugawa's estate", //1.4.0
+	"RMP.fiasa": "FIASA", //1.4.0
+	"RMP.fishing.pond": "钓鱼池",
+	"RMP.fishing.pond1": "钓鱼池设施",
+	"RMP.fishmonger": "Constance's Fishmonger", //1.2.0
+	"RMP.garden.village": "花园村",
+	"RMP.haley.bakery": "Haley's面包房\n(开放时间:星期二至星期五,早上9点-下午3点)",
+	"RMP.isla": "Underwater Cove", //1.3.0
+	"RMP.isla1": "Isla's Cove", //1.3.0
+	"RMP.jane": "Jane's拖车",
+	"RMP.juliet": "Juliet's的房子",
+	"RMP.juna": "Juna's的洞穴",
+	"RMP.kid.treehouse": "Kid's Treehouse", //1.2.0
+	"RMP.law.order": "Closed Office", //1.1.4
+	"RMP.law.order1": "Sheriff's Office", //1.1.4
+	"RMP.louis.garage": "Louis's的车库\n(开放时间:每天,早上8点-晚上7点)",
+	"RMP.lunna.house": "Lunna's的小屋",
+	"RMP.lunna.lake": "湖区",
+	"RMP.mineral.town": "Highway Entrance", //1.2.0
+	"RMP.mineral.town1": "Underground Tunnel", //1.2.0
+	"RMP.my.submarine": "潜水艇",
+	"RMP.northwest.coast": "Northwest Coast", //1.3.0
+	"RMP.ornithologist.guild": "鸟类学家协会",
+	"RMP.ranger.taro": "Meadow", //1.3.0
+	"RMP.ranger.taro1": "Taro's Tent", //1.3.0
+	"RMP.ranger.taro2": "Train", //1.3.0
+	"RMP.red.school.old": "旧学校房子",
+	"RMP.red.school.new": "红色学校房子",
+	"RMP.RSV": "缆车",
+	"RMP.stray.catfe": "流浪猫\n(开放时间:星期二至星期日,早上7点-下午2点)",
+	"RMP.stray.catfe1": "户外咖啡馆",
+	"RMP.sunberry": "Sunberry Village", //1.4.0
+	"RMP.sunberry1": "Sunberry Road", //1.4.0
+	"RMP.sunberry2": "Florest Shortcut", //1.4.0
+	"RMP.sydney": "Sydney's的房子",
+	"RMP.wilford": "Wilford's的温室",
+	"RMP.wilford1": "东部森林",
+	"RMP.walk.desert": "森林之路",
+	"RMP.walk.desert1": "蜿蜒小径",
+	"RMP.walk.desert2": "换乘站",
+	"RMP.walk.desert3": "幽灵镇",
+	"RMP.walk.desert4": "Ghost Shop", //1.2.0
+
+	"RMP.cape.stardew6": "Cape Cave", 
+	"RMP.cape.stardew7": "Cape Islan", 
+	"RMP.cape.stardew8": "Caverna do Cabo"
+
+}

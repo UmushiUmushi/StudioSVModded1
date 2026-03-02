@@ -1,0 +1,88 @@
+{
+  "Changes": [
+    {
+      "LogName": "Therapist Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Therapist/Therapist_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Endwyr.TherapistNPC": true,
+        "N3cro_92.ReMappingEarthySync/Therapist": "true"
+      },
+
+      "ToArea": {
+        "X": 116,
+        "Y": 102,
+        "Width": 6,
+        "Height": 8
+      }
+    },
+    {
+			"LogName": "Therapist Meadowlands",
+			"Action": "EditImage",
+			"Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+			"FromFile": "assets/Tilesheets/Therapist_{{season}}.png",
+			"FromArea": {	"X": 1,	"Y": 0,	"Width": 4, "Height": 2 },
+			"ToArea": {"X": 117, "Y": 59, "Width": 4, "Height": 2},	
+			"PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=Endwyr.TherapistNPC": true,
+        "N3cro_92.ReMappingEarthySync/Therapist": "true"
+			}
+		},
+    {
+			"LogName": "Therapist Waterfall",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=Endwyr.TherapistNPC": true,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        "N3cro_92.ReMappingEarthySync/Therapist": "true"
+      },
+			"Entries": {
+			   	"RMP Therapist": {
+					"Id": "Endwyr.TherapistNPC",
+					"PixelArea": { "X": 117, "Y": 102, "Width": 4, "Height": 2 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Maps/Therapist/Therapist_{{season}}.png}}",
+						"SourceRect": { "X": 1,	"Y": 0,	"Width": 4, "Height": 2  } }]
+				}
+			}
+		},
+    {
+			"LogName": "RMP Therapist Waterfall LE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=Endwyr.TherapistNPC": true,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+        "N3cro_92.ReMappingEarthySync/Therapist": "true"
+      },
+			"Entries": {
+			   	"RMP Therapist": {
+					"Id": "Endwyr.TherapistNPC",
+					"PixelArea": { "X": 117, "Y": 102, "Width": 4, "Height": 2 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Maps/Therapist/Therapist_{{season}}.png}}",
+						"SourceRect": { "X": 1,	"Y": 0,	"Width": 4, "Height": 2  } }]
+				}
+			}
+		}
+  ]
+}

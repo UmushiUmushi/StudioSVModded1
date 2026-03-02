@@ -1,0 +1,34 @@
+{
+	"ItemName": "Seasonal Plant",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Spring"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors",
+		},
+		{
+		"Id": 2,
+		"Name": "3-Outdoors",
+		},
+		{
+		"Id": 3,
+		"Name": "4-Outdoors",
+		},
+		{
+		"Id": 4,
+		"Name": "5-Outdoors",
+		},
+		{
+		"Id": 5,
+		"Name": "6-Outdoors",
+		},
+	]
+}

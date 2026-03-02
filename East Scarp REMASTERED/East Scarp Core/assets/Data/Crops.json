@@ -1,0 +1,760 @@
+{
+    "Changes": [
+        {
+            "LogName": "ESObjects textures",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/escrops",
+            "FromFile": "assets/Textures/escrops.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "Entries": {
+                "EastScarp_Azure_Chrysanthemum_Seed": { //seeds
+                    "Seasons": [
+                        "Spring",
+                        "Summer",
+                        "Fall"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        3,
+                        2,
+                        3
+                    ],
+                    "RegrowDays": 13,
+                    "IsRaised": false,
+                    "IsPaddyCrop": false,
+                    "PlantableLocationRules": null,
+                    "HarvestItemId": "EastScarp_Azure_Chrysanthemum",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.0,
+                    "ExtraHarvestChance": 0.0,
+                    "HarvestMethod": "Grab",
+                    "HarvestMinQuality": 0,
+                    "HarvestMaxQuality": null,
+                    "TintColors": [],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 0,
+                    "CustomFields": {}
+                },
+                "EastScarp_Bird_Of_Paradise_Seed": { //seeds
+                    "Seasons": [
+                        "Spring",
+                        "Summer",
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        2,
+                        2,
+                        3,
+                        3
+                    ],
+                    "RegrowDays": 8,
+                    "IsRaised": false,
+                    "IsPaddyCrop": false,
+                    "PlantableLocationRules": null,
+                    "HarvestItemId": "EastScarp_Bird_Of_Paradise",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.0,
+                    "ExtraHarvestChance": 0.0,
+                    "HarvestMethod": "Grab",
+                    "HarvestMinQuality": 0,
+                    "HarvestMaxQuality": null,
+                    "TintColors": [],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 2,
+                    "CustomFields": {}
+                },
+                "EastScarp_Serruria_Seed": { //seeds
+                    "Seasons": [
+                        "Spring",
+                        "Summer",
+                        "Winter"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        2,
+                        3,
+                        4,
+                        3
+                    ],
+                    "RegrowDays": 14,
+                    "IsRaised": false,
+                    "IsPaddyCrop": false,
+                    "PlantableLocationRules": null,
+                    "HarvestItemId": "EastScarp_Serruria",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.0,
+                    "ExtraHarvestChance": 0.0,
+                    "HarvestMethod": "Grab",
+                    "HarvestMinQuality": 0,
+                    "HarvestMaxQuality": null,
+                    "TintColors": [],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 6,
+                    "CustomFields": {}
+                },
+                "EastScarp_Moonflower_Seed": { //seeds
+                    "Seasons": [
+                        "Spring",
+                        "Summer",
+                        "Fall",
+                        "winter"
+                    ],
+                    "DaysInPhase": [
+                        3,
+                        3,
+                        5,
+                        8,
+                        9
+                    ],
+                    "RegrowDays": 56,
+                    "IsRaised": false,
+                    "IsPaddyCrop": true,
+                    "PlantableLocationRules": null,
+                    "HarvestItemId": "(O)797",
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 1,
+                    "HarvestMaxIncreasePerFarmingLevel": 0.0,
+                    "ExtraHarvestChance": 0.0,
+                    "HarvestMethod": "Grab",
+                    "HarvestMinQuality": 0,
+                    "HarvestMaxQuality": 0,
+                    "TintColors": [],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 4,
+                    "CustomFields": {}
+                },
+                "EastScarp_PuckerWort_Seed": {
+                    "Seasons": [
+                        "summer"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "EastScarp_PuckerWort",
+                    "RegrowDays": -1,
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.1",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 10
+                },
+                "EastScarp_BiteBackMelon_Seed": {
+                    "Seasons": [
+                        "spring"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        2,
+                        2,
+                        2,
+                        2
+                    ],
+                    "HarvestItemId": "EastScarp_BiteBackMelon",
+                    "RegrowDays": "3",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.1",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 9
+                },
+                "EastScarp_Cuccaroot_Seed": {
+                    "Seasons": [
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        2,
+                        2,
+                        2,
+                        1
+                    ],
+                    "HarvestItemId": "EastScarp_Cuccaroot",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.1",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 8
+                },
+                "EastScarp_FrostBerry_Seed": {
+                    "Seasons": [
+                        "winter"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        1,
+                        2,
+                        2,
+                        1
+                    ],
+                    "HarvestItemId": "EastScarp_FrostBerry",
+                    "RegrowDays": "4",
+                    "PlantableLocationRules": [
+                        {
+                            "Id": "OnlyPlantableInWinterOutside",
+                            "Condition": "LOCATION_IS_OUTDOORS Here, LOCATION_CONTEXT Here Island",
+                            "PlantedIn": "Any",
+                            "Result": "Deny",
+                            "DeniedMessage": "{{i18n:deny.frostberrycrop}}"
+                        },
+                        {
+                            "Id": "NotToBePlantedInside",
+                            "Condition": "LOCATION_IS_INDOORS Here",
+                            "PlantedIn": "Any",
+                            "Result": "Deny",
+                            "DeniedMessage": "{{i18n:deny.frostberrycrop}}"
+                        }
+                    ],
+                    "IsRaised": false,
+                    "HarvestMinStack": 3,
+                    "HarvestMaxStack": 1,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.1",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 11
+                },
+                "{{ModID}}_GiggleFitSeeds": {
+                    "Seasons": [
+                        "fall",
+                        "winter"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        2,
+                        2,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_GiggleFit",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 22
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "When": {
+                "AdditionalCrops": true
+            },
+            "Entries": {
+                "{{ModID}}_ButterTuffSeeds": {
+                    "Seasons": [
+                        "spring",
+                        "summer"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_ButterTuff",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 12
+                },
+                "{{ModID}}_FairyCapSeeds": {
+                    "Seasons": [
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        2,
+                        2,
+                        2
+                    ],
+                    "HarvestItemId": "{{ModID}}_FairyCap",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 13
+                },
+                "{{ModID}}_PaneekiSeeds": {
+                    "Seasons": [
+                        "fall",
+                        "winter"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        2,
+                        1,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_Paneeki",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 14
+                },
+                /*"{{ModID}}_GaggleShroomsSeeds": {
+                    "Seasons": [
+                        "fall"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        1,
+                        2,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_GaggleShrooms",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 15
+                },*/
+                "{{ModID}}_ZinfazuFruitSeeds": {
+                    "Seasons": [
+                        "summer"
+                    ],
+                    "DaysInPhase": [
+                        3,
+                        3,
+                        2,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_ZinfazuFruit",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.1",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 16
+                },
+                "{{ModID}}_YohoFruitSeeds": {
+                    "Seasons": [
+                        "spring",
+                        "summer"
+                    ],
+                    "DaysInPhase": [
+                        1,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_YohoFruit",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 17
+                },
+                "{{ModID}}_DeepCaveFruitSeeds": {
+                    "Seasons": [
+                        "fall",
+                        "summer",
+                        "winter",
+                        "spring"
+                    ],
+                    "DaysInPhase": [
+                        3,
+                        3,
+                        3,
+                        3,
+                        3
+                    ],
+                    "PlantableLocationRules": [
+                        {
+                            "Id": "NotToBePlantedInGreenhouse",
+                            "Condition": "LOCATION_NAME Here Greenhouse",
+                            "PlantedIn": "Any",
+                            "Result": "Deny",
+                            "DeniedMessage": "{{i18n:deny.deepcavecrop}}"
+                        },
+                        {
+                            "Id": "NotToBePlantedOutside",
+                            "Condition": "LOCATION_IS_OUTDOORS Here",
+                            "PlantedIn": "Any",
+                            "Result": "Deny",
+                            "DeniedMessage": "{{i18n:deny.deepcavecrop}}"
+                        }
+                    ],
+                    "HarvestItemId": "{{ModID}}_DeepCaveFruit",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 18
+                },
+                "{{ModID}}_CaveFlowerSeeds": {
+                    "Seasons": [
+                        "fall",
+                        "winter"
+                    ],
+                    "DaysInPhase": [
+                        4,
+                        4,
+                        1,
+                        1,
+                        1
+                    ],
+                    "PlantableLocationRules": [
+                        {
+                            "Id": "NotToBePlantedInGreenhouse",
+                            "Condition": "LOCATION_NAME Here Greenhouse",
+                            "PlantedIn": "Any",
+                            "Result": "Deny",
+                            "DeniedMessage": "{{i18n:deny.deepcavecrop}}"
+                        },
+                        {
+                            "Id": "NotToBePlantedOutside",
+                            "Condition": "LOCATION_IS_OUTDOORS Here",
+                            "PlantedIn": "Any",
+                            "Result": "Deny",
+                            "DeniedMessage": "{{i18n:deny.deepcavecrop}}"
+                        }
+                    ],
+                    "HarvestItemId": "{{ModID}}_CaveFlower",
+                    "RegrowDays": "-1",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 19
+                },
+                "{{ModID}}_FirePepperSeeds": {
+                    "Seasons": [
+                        "spring"
+                    ],
+                    "DaysInPhase": [
+                        5,
+                        2,
+                        1,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_FirePepper",
+                    "RegrowDays": "7",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 20
+                },
+                "{{ModID}}_ChocoFruitSeeds": {
+                    "Seasons": [
+                        "fall",
+                        "winter"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        1,
+                        1,
+                        1,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_ChocoFruit",
+                    "RegrowDays": "4",
+                    "IsRaised": false,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 24
+                },
+                "{{ModID}}_ButtonFruitSeeds": {
+                    "Seasons": [
+                        "summer"
+                    ],
+                    "DaysInPhase": [
+                        2,
+                        2,
+                        1,
+                        2,
+                        1
+                    ],
+                    "HarvestItemId": "{{ModID}}_ButtonFruit",
+                    "RegrowDays": "3",
+                    "IsRaised": false,
+                    "HarvestMinStack": 1,
+                    "HarvestMaxStack": 3,
+                    "ExtraHarvestChance": 0.1,
+                    "HarvestMaxIncreasePerFarmingLevel": "0.2",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "SpriteIndex": 25
+                },
+            }
+        },
+        //Giant Crops 
+        {
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+            "Entries": {
+                "EastScarp_MoonFlower": {
+                    "FromItemId": "(O)797",
+                    "HarvestItems": [
+                        {
+                            "Chance": 1.0,
+                            "ForShavingEnchantment": null,
+                            "ScaledMinStackWhenShaving": 2,
+                            "ScaledMaxStackWhenShaving": 2,
+                            "Condition": null,
+                            "Id": "(O)797",
+                            "ItemId": "(O)797",
+                            "RandomItemId": null,
+                            "MinStack": 3,
+                            "MaxStack": 9,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "TexturePosition": {
+                        "X": 128,
+                        "Y": 64
+                    },
+                    "TileSize": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "Health": 3,
+                    "Chance": 0.01,
+                    "Condition": null,
+                    "CustomFields": {}
+                },
+                "EastScarp_Serruria": {
+                    "FromItemId": "(O)EastScarp_Serruria",
+                    "HarvestItems": [
+                        {
+                            "Chance": 1.0,
+                            "ForShavingEnchantment": null,
+                            "ScaledMinStackWhenShaving": 2,
+                            "ScaledMaxStackWhenShaving": 2,
+                            "Condition": null,
+                            "Id": "(O)EastScarp_Serruria",
+                            "ItemId": "(O)EastScarp_Serruria",
+                            "RandomItemId": null,
+                            "MinStack": 15,
+                            "MaxStack": 21,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack"
+                        }
+                    ],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "TexturePosition": {
+                        "X": 176,
+                        "Y": 64
+                    },
+                    "TileSize": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "Health": 3,
+                    "Chance": 0.01,
+                    "Condition": null,
+                    "CustomFields": {}
+                },
+                "{{ModID}}_GiggleFit": {
+                    "FromItemId": "(O){{ModID}}_GiggleFit",
+                    "HarvestItems": [
+                        {
+                            "Chance": 1.0,
+                            "ForShavingEnchantment": null,
+                            "ScaledMinStackWhenShaving": 2,
+                            "ScaledMaxStackWhenShaving": 2,
+                            "Condition": null,
+                            "Id": "{{ModID}}_GiggleFit",
+                            "ItemId": "(O){{ModID}}_GiggleFit",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": 6,
+                            "MaxStack": 10,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ObjectColor": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "TexturePosition": {
+                        "X": 128,
+                        "Y": 320
+                    },
+                    "TileSize": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "Health": 3,
+                    "Chance": 1.0,
+                    "Condition": null,
+                    "CustomFields": null
+                },
+            }
+        },
+        {
+            "LogName": "Edit chance of giant crops",
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+            "When": {
+                "HasSeenEvent": "57871110"
+            },
+            "Fields": {
+                "EastScarp_Serruria": {
+                    "Chance": "0.1"
+                },
+                "EastScarp_MoonFlower": {
+                    "Chance": "0.1"
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/GiantCrops",
+            "When": {
+                "AdditionalCrops": true
+            },
+            "Entries": {
+                "{{ModID}}_ChocoFruit": {
+                    "FromItemId": "(O){{ModID}}_ChocoFruit",
+                    "HarvestItems": [
+                        {
+                            "Chance": 1.0,
+                            "ForShavingEnchantment": null,
+                            "ScaledMinStackWhenShaving": 2,
+                            "ScaledMaxStackWhenShaving": 2,
+                            "Condition": null,
+                            "Id": "{{ModID}}_ChocoFruit",
+                            "ItemId": "(O){{ModID}}_ChocoFruit",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": 6,
+                            "MaxStack": 10,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ObjectColor": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "TexturePosition": {
+                        "X": 176,
+                        "Y": 320
+                    },
+                    "TileSize": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "Health": 3,
+                    "Chance": 1.0,
+                    "Condition": null,
+                    "CustomFields": null
+                },
+                "{{ModID}}_ButterTuff": {
+                    "FromItemId": "(O){{ModID}}_ButterTuff",
+                    "HarvestItems": [
+                        {
+                            "Chance": 1.0,
+                            "ForShavingEnchantment": null,
+                            "ScaledMinStackWhenShaving": 2,
+                            "ScaledMaxStackWhenShaving": 2,
+                            "Condition": null,
+                            "Id": "{{ModID}}_ButterTuff",
+                            "ItemId": "(O){{ModID}}_ButterTuff",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": 6,
+                            "MaxStack": 10,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ObjectColor": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\escrops",
+                    "TexturePosition": {
+                        "X": 192,
+                        "Y": 416
+                    },
+                    "TileSize": {
+                        "X": 3,
+                        "Y": 3
+                    },
+                    "Health": 3,
+                    "Chance": 1.0,
+                    "Condition": null,
+                    "CustomFields": null
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/jpp.WildFlowersReimagined/IgnoreList",
+            "TargetField": [
+                "Flowers"
+            ],
+            "Entries": {
+                "EastScarp_Serruria": "EastScarp_Serruria",
+                "EastScarp_Azure_Chrysanthemum": "EastScarp_Azure_Chrysanthemum"
+            },
+            "When": {
+                "HasMod": "jpp.WildFlowersReimagined"
+            }
+        },
+        {
+            "LogName": "Starfruit will Regrow",
+            "Action": "EditData",
+            "Target": "Data/Crops",
+            "When": {
+                "HasSeenEvent": "57871109"
+            },
+            "TargetField": [
+                "486"
+            ],
+            "Entries": {
+                "RegrowDays": 7,
+            },
+        },
+    ]
+}

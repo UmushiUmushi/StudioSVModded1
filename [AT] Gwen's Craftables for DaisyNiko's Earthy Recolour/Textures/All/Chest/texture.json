@@ -1,0 +1,29 @@
+{
+	"ItemName": "Chest",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors-Bronze",
+		"Keywords": ["Bronze"],
+		},
+		{
+		"Id": 1,
+		"Name": "2-Indoors-Bronze",
+		"Keywords": ["Bronze"],
+		},
+		{
+		"Id": 2,
+		"Name": "1-Indoors-Steel",
+		"Keywords": ["Steel"],
+		},
+		{
+		"Id": 3,
+		"Name": "2-Indoors-Steel",
+		"Keywords": ["Steel"],
+		},
+	]
+}

@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/SeedShop",
+			"Entries":
+				{
+					"beatGame": "playMusic jaunty/speak Abigail \"Hey, that was fun!$h#$b#Thanks, @. I didn't think you'd know how to work a joystick so well! But it seems you're experienced.$h\"/pause 500/emote Abigail 32/pause 1000/end"
+				},
+			"LogName": "Fix SeedShop"
+		}
+	]
+}

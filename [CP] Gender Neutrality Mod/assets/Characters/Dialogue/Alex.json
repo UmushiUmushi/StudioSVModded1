@@ -1,0 +1,25 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex",
+			"Entries":
+				{
+					"Introduction": "Hey, you're the new {{Lowercase: {{Random: {{Hana.GNMTokens/GenericNoun}} }} }}, huh? I think we're going to get along great. I'm Alex.#$e#I'll see you around.",
+					"Resort_Chair": "Aren't you hot in that outfit? C'mon, it's the beach! You gotta get some ocean breeze goin'!",
+					"Tue": "The beach is a cool place to hang out and soak up some rays.#$e#You gotta spend some time in the sun or else you'll get all pale.#$e#Hey, do you wanna hang out with me at the beach some time?",
+					"Wed": "Looks like a good day to play catch, huh?$u#$e#$q 5/6 Wed_01_old#I'd ask you to throw the ball around, but you don't really seem like the sports type.#$r 6 0 Wed_01_02#I'm fine just watching you from a distance.#$r 5 15 Wed_01_01#I want to play catch with you!#$r 5 0 Wed_01_03#(angry) What's that supposed to mean?",
+					"Fri": "Hey, what's up farmer?#$e#Oh, I almost forgot! It's my day for doing push-ups!#$e#Every time I do push-ups I try to do one more than last time. Pretty cool strategy, huh?",
+					"Fri8": "Hi @. You look sporty today.$h",
+					"event_box3": "You've become my best friend in the whole town...#$b#Is that embarrassing to say?$l",
+					"summer_Mon": "Hey farmer. You've got a nice tan going.$h#$e#The more I practice this summer, the easier it'll be for me to go pro.#$e#Then you'd be able to say you knew me once. Cool, huh?",
+					"summer_Wed": "Hey farm {{Lowercase: {{Random: {{Hana.GNMTokens/GenericNoun}} }} }}, I've got a question for you.#$b#$q 52/53 summer_Wed_01_old#Do you think I'll ever turn pro?#$r 52 30 summer_Wed_01_01#You're destined to be a sports legend#$r 52 0 summer_Wed_01_02#Maybe, if you practice a lot#$r 53 -50 summer_Wed_01_03#No, you'll most likely fail and become a salesman",
+					"summer_Wed_01_03": "That's insane. You're just jealous that I'm talented and popular and you're not.$a#$e#Get away from me.$a",
+					"summer_Thu": "Hey, you must be getting pretty strong working on that farm all day.#$e#Maybe you'll reach my level some day. Something to look forward to, huh?#$e#Why do you have that look on your face?",
+					"fall_Wed": "Hey, can I ask you something?#$e#$q 54/55 fall_Wed_01_old#What do you think about my haircut?#$r 54 30 fall_Wed_01_01#It looks very fashionable.#$r 55 -30 fall_Wed_01_02#It looks like some kind of fungal growth."
+				},
+			"LogName":"Fix Alex"
+		}
+	]
+}

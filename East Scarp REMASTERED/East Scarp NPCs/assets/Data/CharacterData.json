@@ -1,0 +1,2609 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "Aideen": {
+                    "DisplayName": "{{i18n:Name.Aideen}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 21,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": true,
+                    "FlowerDanceCanDance": true,
+                    "LoveInterest": null,
+                    "WinterStarGifts": [
+                        {
+                            "Id": "Bird of Paradise Seeds",
+                            "ItemId": "(O)EastScarp_Bird_Of_Paradise_Seed",
+                            "MinStack": 3,
+                            "MaxStack": 5,
+                        },
+                        {
+                            "Id": "Mixed Flower Seeds",
+                            "ItemId": "(O)MixedFlowerSeeds",
+                            "MinStack": 10,
+                            "MaxStack": 25,
+                        },
+                        {
+                            "Condition": "PLAYER_HEARTS Current Aideen 8 14",
+                            "Id": "Tea Set",
+                            "ItemId": "(O)341",
+                        },
+                    ],
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                        "SpriteAnimationFrames": [
+                            [
+                                32,
+                                500
+                            ],
+                            [
+                                33,
+                                500
+                            ],
+                            [
+                                0,
+                                3500
+                            ],
+                        ],
+                        "SpriteAnimationPixelOffset": {
+                            "X": 0,
+                            "Y": 0
+                        }
+                    },
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 32,
+                    "HiddenProfileEmoteFrameCount": 4,
+                    "HiddenProfileEmoteFrameDuration": 200.0,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_AideenHouse",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Beatrice": {
+                    "DisplayName": "{{i18n:Name.Beatrice}}",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 17,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false, //undecided
+                    "LoveInterest": null,
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 20,
+                    "HiddenProfileEmoteFrameCount": 3,
+                    "HiddenProfileEmoteFrameDuration": 400.0,
+                    "Appearance": [
+                        {
+                            "ID": "BeatriceSpring",
+                            //"Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Beatrice",
+                            "Sprite": "Characters/Beatrice",
+                            "Precedence": -100
+                        },
+                        {
+                            "ID": "BeatriceSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Beatrice_Summer",
+                            "Sprite": "Characters/Beatrice_Summer",
+                            "Precedence": -100
+                        },
+                        {
+                            "ID": "BeatriceFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Beatrice_Fall",
+                            "Sprite": "Characters/Beatrice_Fall",
+                            "Precedence": -100
+                        },
+                        {
+                            "ID": "BeatriceWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Beatrice_Winter",
+                            "Sprite": "Characters/Beatrice_Winter",
+                            "Precedence": -100
+                        },
+                        //Festival Outfits
+                        {
+                            "Id": "BeatriceEggFestival",
+                            "Condition": "IS_EVENT festival_spring13",
+                            "Sprite": "Characters/Beatrice_EggFestival",
+                            "Portrait": "Portraits/Beatrice_EggFestival",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "BeatriceFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/Beatrice_FlowerDance",
+                            "Portrait": "Portraits/Beatrice_FlowerDance",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "BeatriceLuau",
+                            "Condition": "IS_EVENT festival_summer11",
+                            "Sprite": "Characters/Beatrice_Luau",
+                            "Portrait": "Portraits/Beatrice_Luau",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "BeatriceSDVFAir",
+                            "Condition": "ANY \"IS_EVENT festival_fall16",
+                            "Sprite": "Characters/Beatrice_SVFair",
+                            "Portrait": "Portraits/Beatrice_SVFair",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "BeatriceIceFestival",
+                            "Condition": "ANY \"IS_EVENT festival_winter8",
+                            "Sprite": "Characters/Beatrice_IceFestival",
+                            "Portrait": "Portraits/Beatrice_IceFestival",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "BeatriceWinterStar",
+                            "Condition": "ANY \"IS_EVENT festival_winter25",
+                            "Sprite": "Characters/Beatrice_WinterStar",
+                            "Portrait": "Portraits/Beatrice_WinterStar",
+                            "Precedence": -1000,
+                        },
+                        //Beach
+                        {
+                            "Id": "BeatriceBeach",
+                            "Sprite": "Characters/Beatrice_Beach",
+                            "Portrait": "Portraits/Beatrice_Beach",
+                            "IsIslandAttire": true,
+                            "Precedence": -10000,
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_Lighthouse",
+                            "Tile": {
+                                "X": 11,
+                                "Y": 20
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Eloise": {
+                    "DisplayName": "{{i18n:Name.Eloise}}",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 22,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "FriendsAndFamily": {
+                        "Jacob": "{{i18n:Relationship.Eloise.Jacob}}",
+                        "VivienneLK": "{{i18n:Relationship.Eloise.Vivienne}}"
+                    },
+                    "Appearance": [
+                        {
+                            "ID": "EloiseSpring",
+                            "Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eloise_spring_2",
+                            "Sprite": "Characters/Eloise_spring_2",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseSpring_School",
+                            "Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Condition": "DAY_OF_WEEK Tuesday Wednesday Friday",
+                            "Portrait": "Portraits/Eloise_spring_1",
+                            "Sprite": "Characters/Eloise_spring_1",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eloise_summer_2",
+                            "Sprite": "Characters/Eloise_summer_2",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseSummer_School",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Condition": "DAY_OF_WEEK Tuesday Wednesday Friday",
+                            "Portrait": "Portraits/Eloise_summer_1",
+                            "Sprite": "Characters/Eloise_summer_1",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eloise_fall_2",
+                            "Sprite": "Characters/Eloise_fall_2",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseFall_School",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Condition": "DAY_OF_WEEK Tuesday Wednesday Friday",
+                            "Portrait": "Portraits/Eloise_fall_1",
+                            "Sprite": "Characters/Eloise_fall_1",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eloise_winter_2",
+                            "Sprite": "Characters/Eloise_winter_2",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseWinter_School",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Condition": "DAY_OF_WEEK Tuesday Wednesday Friday",
+                            "Portrait": "Portraits/Eloise_winter_1",
+                            "Sprite": "Characters/Eloise_winter_1",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EloiseRain",
+                            "Outdoors": true,
+                            "Indoors": false,
+                            "Condition": "WEATHER Here Rain Storm",
+                            "Portrait": "Portraits/Eloise_rain",
+                            "Sprite": "Characters/Eloise_rain",
+                            "Precedence": -20
+                        },
+                        {
+                            "Id": "EloiseSpirit",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+                            "Sprite": "Characters/Eloise_Bird",
+                            "Portrait": "Portraits/Eloise_Bird",
+                            "Precedence": -20,
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 33,
+                                "Y": 23
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Eyvinder": {
+                    "DisplayName": "{{i18n:Name.Eyvinder.{{EyvinderName}} }}",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 15,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false, //undecided
+                    "IsDarkSkinned": true,
+                    "LoveInterest": "VivienneLK",
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57877008",
+                    "IntroductionsQuest": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 16,
+                    "HiddenProfileEmoteFrameCount": 4,
+                    "HiddenProfileEmoteFrameDuration": 400.0,
+                    "Appearance": [
+                        {
+                            "ID": "EyvinderSpring",
+                            //"Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eyvinder",
+                            "Sprite": "Characters/Eyvinder",
+                            "Precedence": -1
+                        },
+                        {
+                            "ID": "EyvinderSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eyvinder_Summer",
+                            "Sprite": "Characters/Eyvinder_Summer",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EyvinderFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eyvinder_Fall",
+                            "Sprite": "Characters/Eyvinder_Fall",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "EyvinderWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Eyvinder_Winter",
+                            "Sprite": "Characters/Eyvinder_Winter",
+                            "Precedence": -10
+                        },
+                        {
+                            "Id": "EyvinderFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/Eyvinder_FlowerDance",
+                            "Portrait": "Portraits/Eyvinder_FlowerDance",
+                            "Precedence": -20
+                        },
+                        {
+                            "Id": "EyvinderSpiritsEve",
+                            "Condition": "IS_EVENT festival_fall27",
+                            "Sprite": "Characters/Eyvinder_FlowerDance",
+                            "Portrait": "Portraits/Eyvinder_FlowerDance",
+                            "Precedence": -20
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_EyvinderCave",
+                            "Tile": {
+                                "X": 19,
+                                "Y": 7
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Jacob": {
+                    "DisplayName": "{{i18n:Name.Jacob}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 27,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false, //not yet
+                    "CanVisitIsland": "DAY_OF_WEEK Tuesday Wednesday Friday",
+                    "LoveInterest": "ToriLK",
+                    "FlowerDanceCanDance": true,
+                    "FriendsAndFamily": {
+                        "Eloise": "{{i18n:Relationship.Jacob.Eloise}}",
+                        "VivienneLK": "{{i18n:Relationship.Jacob.Vivienne}}"
+                    },
+                    "Appearance": [
+                        {
+                            "ID": "JacobSpring",
+                            "Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob",
+                            "Sprite": "Characters/Jacob",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JacobSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob_Summer",
+                            "Sprite": "Characters/Jacob_Summer",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JacobFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob_Fall",
+                            "Sprite": "Characters/Jacob_Fall",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JacobWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jacob_Winter",
+                            "Sprite": "Characters/Jacob_Winter",
+                            "Precedence": -10
+                        },
+                        {
+                            "Id": "JacobSpirit",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn\"",
+                            "Sprite": "Characters/Jacob_magician",
+                            "Portrait": "Portraits/Jacob_magician",
+                            "Precedence": -20,
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 22,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Jessie": {
+                    "DisplayName": "{{i18n:Name.Jessie}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 1,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "DumpsterDiveFriendshipEffect": "0",
+                    "Appearance": [
+                        {
+                            "ID": "JessieJoja",
+                            "Outdoors": false,
+                            "Indoors": true,
+                            "Condition": "LOCATION_NAME Target JojaMart",
+                            "Portrait": "Portraits/Jessie_Joja",
+                            "Sprite": "Characters/Jessie_Joja",
+                            "Precedence": -10
+                        }
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_JessieHouse",
+                            "Tile": {
+                                "X": 17,
+                                "Y": 4
+                            },
+                            "Direction": "Down"
+                        },
+                    ]
+                },
+                "JosephineK": {
+                    "DisplayName": "{{i18n:Name.Josephine}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57873000, !PLAYER_HAS_SEEN_EVENT Host 57873005",
+                    "PerfectionScore": false,
+                    "IntroductionsQuest": false,
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "FriendsAndFamily": {
+                        "OliverK": "{{i18n:Relationship.Josephine.Oliver}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "JosephineLeaves",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873005"
+                        },
+                        {
+                            "Id": "Visiting",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 9
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873000"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Juliet": {
+                    "DisplayName": "{{i18n:Name.Juliet}}", // this would normally use {{i18n:}} to support translations
+                    "BirthSeason": "Spring",
+                    "BirthDay": 15,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Rosa",
+                    "FlowerDanceCanDance": true,
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 12,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 8,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                        "SpriteAnimationFrames": [
+                            [
+                                32,
+                                500
+                            ],
+                            [
+                                33,
+                                500
+                            ],
+                            [
+                                34,
+                                500
+                            ],
+                            [
+                                35,
+                                500
+                            ]
+                        ],
+                        "SpriteAnimationPixelOffset": {
+                            "X": 0,
+                            "Y": 0
+                        }
+                    },
+                    "FriendsAndFamily": {
+                        "Jessie": "{{i18n:Name.Jessie}}",
+                        "Gremlin": "{{i18n:juliet.gremlin}}"
+                    },
+                    "Appearance": [
+                        {
+                            "ID": "JulietWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Juliet_Winter",
+                            "Sprite": "Characters/Juliet_Winter",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JulietBeach",
+                            "Condition": "LOCATION_NAME Target Beach",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": false,
+                            "Portrait": "Portraits/Juliet_beach",
+                            "Sprite": "Characters/Juliet_beach"
+                        },
+                        {
+                            "ID": "JulietJoja",
+                            "Condition": "LOCATION_NAME Target JojaMart",
+                            "Outdoors": false,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Juliet_joja",
+                            "Sprite": "Characters/Juliet_joja",
+                            "Precedence": -100
+                        },
+                        {
+                            "ID": "JulietTheater",
+                            "Condition": "LOCATION_NAME Target EastScarp_TheaterBreakroom",
+                            "Outdoors": false,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Juliet_theater",
+                            "Sprite": "Characters/Juliet_theater",
+                            "Precedence": -100
+                        },
+                        //Festival Outfits
+                        {
+                            "Id": "JulietEggFestival",
+                            "Condition": "IS_EVENT festival_spring13",
+                            "Sprite": "Characters/Juliet_eggfest",
+                            "Portrait": "Portraits/Juliet_eggfest",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "JulietFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/Juliet_flowerdance",
+                            "Portrait": "Portraits/Juliet_flowerdance",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "JulietLuau",
+                            "Condition": "IS_EVENT festival_summer11",
+                            "Sprite": "Characters/Juliet_Beach",
+                            "Portrait": "Portraits/Juliet_Beach",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "JulietJellies",
+                            "Condition": "IS_EVENT festival_summer28",
+                            "Sprite": "Characters/Juliet_jellies",
+                            "Portrait": "Portraits/Juliet_jellies",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "JulietSDVFAir",
+                            "Condition": "IS_EVENT festival_fall16",
+                            "Sprite": "Characters/Juliet_SVFair",
+                            "Portrait": "Portraits/Juliet_SVFair",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "JulietSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing\"",
+                            "Sprite": "Characters/Juliet_SpiritsEve",
+                            "Portrait": "Portraits/Juliet_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                    ],
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 32,
+                    "HiddenProfileEmoteFrameCount": 4,
+                    "HiddenProfileEmoteFrameDuration": 400.0,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_JessieHouse",
+                            "Tile": {
+                                "X": 22,
+                                "Y": 6
+                            },
+                            "Direction": "Right"
+                        }
+                    ]
+                },
+                "KatarynaLK": {
+                    "DisplayName": "{{i18n:Name.Kataryna}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_MAIL Any KatarynaBecomesSocial",
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57876001, !PLAYER_HAS_SEEN_EVENT Host 57876012",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "DumpsterDiveEmote": 8,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "FriendsAndFamily": {
+                        "Jasper": "{{i18n:Relationship.friend.jasper}}"
+                    },
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 6,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 4,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        }
+                    },
+                    "Home": [
+                        {
+                            "Id": "KatarynaLeaves",
+                            "Location": "EastScarp_KatarynaHouse",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 10
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57876012"
+                        },
+                        {
+                            "Id": "Visiting",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 5
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57876001"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_KatarynaHouse",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 10
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Leximonster": {
+                    "DisplayName": "{{i18n:Name.Lexi}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 12,
+                    "HomeRegion": "Other",
+                    "Gender": "Undefined",
+                    "Age": "Teen",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "ItemDeliveryQuests": false,
+                    "LoveInterest": null,
+                    "Appearance": [
+                        {
+                            "Id": "LexiFashion",
+                            "Condition": "ANY \"IS_EVENT festival_spring24, {{FestivalOutfits}}\" \"IS_EVENT festival_spring19, {{HasMod |contains=UNA.FF.CP}}\"",
+                            "Sprite": "Characters/Leximonster_FashionShow",
+                            "Portrait": "Portraits/Leximonster_FashionShow",
+                            "Precedence": -1000,
+                        }
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_SeaCave",
+                            "Tile": {
+                                "X": 33,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "OliverK": {
+                    "DisplayName": "{{i18n:Name.Oliver}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 6,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Teen",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_SEEN_EVENT Any 57873000",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57873000",
+                    "FriendsAndFamily": {
+                        "JosephineK": "{{i18n:Relationship.Oliver.Josephine}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "JosephineLeaves",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 18,
+                                "Y": 21
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873005"
+                        },
+                        {
+                            "Id": "Visiting",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 19,
+                                "Y": 11
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57873000"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Rosa": {
+                    "DisplayName": "{{i18n:Name.Rosa}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 7,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Juliet",
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 63,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "ToriLK": {
+                    "DisplayName": "{{i18n:Name.Tori}}",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 6,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": true,
+                    "LoveInterest": "Jacob",
+                    "CanVisitIsland": "true",
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 6,
+                            "Y": 9,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 16,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                    },
+                    "WinterStarGifts": [
+                        {
+                            "Id": "Slime egg",
+                            "ItemId": null,
+                            "Condition": "BUILDINGS_CONSTRUCTED All \"Slime Hutch\" 1 5",
+                            "RandomItemId": [
+                                "(O)680",
+                                "(O)413",
+                                "(O)437",
+                                "(O)439"
+                            ],
+                        },
+                        {
+                            "Id": "Petrified Slime",
+                            "ItemId": "(O)557",
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_ToriSlimeBasement",
+                            "Tile": {
+                                "X": 15,
+                                "Y": 19
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "VivienneLK": {
+                    "DisplayName": "{{i18n:Name.Vivienne}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 14,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "Eyvinder",
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57875000",
+                    "ItemDeliveryQuests": "PLAYER_HAS_SEEN_EVENT Host 57875000",
+                    "IntroductionsQuest": false,
+                    "CanVisitIsland": "PLAYER_HAS_SEEN_EVENT Host 57875000",
+                    "PerfectionScore": false,
+                    "FriendsAndFamily": {
+                        "Jacob": "{{i18n:Relationship.Vivienne.Jacob}}",
+                        "Eloise": "{{i18n:Relationship.Vivienne.Eloise}}",
+                    },
+                    "Home": [
+                        {
+                            "Id": "VivenneMovesIn",
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 17,
+                                "Y": 7
+                            },
+                            "Direction": "Down",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57875000"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "KennedyLK": {
+                    "DisplayName": "{{i18n:Name.Kennedy}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 6,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Teen",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenAlways",
+                    "SocialTab": "HiddenAlways",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "CanSocialize": "{{FriendableZuzuNPCs |contains=Kennedy}}", //
+                    "EndSlideShow": "Hidden",
+                    "LoveInterest": null,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_KenStellaHouse",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 5
+                            },
+                            "Direction": "up"
+                        }
+                    ]
+                },
+                "LumaJunimo": {
+                    "DisplayName": "{{i18n:Name.Luma}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 4,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57871101",
+                    "ItemDeliveryQuests": false,
+                    "EndSlideShow": "Hidden",
+                    "LoveInterest": null,
+                    "CustomFields": {
+                        "EastScarpe.NPCScale": "0.90"
+                    },
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 12,
+                            "Y": 9,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 8,
+                            "Y": 4,
+                            "Width": 4,
+                            "Height": 4
+                        }
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_LumaHut",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 6
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "Jasper": {
+                    "DisplayName": "{{i18n:Name.Jasper}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 22,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "LoveInterest": "CameronLK",
+                    "FlowerDanceCanDance": true,
+                    "FriendsAndFamily": {
+                        "KatarynaLK": "{{i18n:Relationship.friend.kataryna}}"
+                    },
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 18,
+                            "Y": 0,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 12,
+                            "Y": 0,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                        "SpriteAnimationFrames": [
+                            [
+                                21,
+                                1500
+                            ],
+                            [
+                                20,
+                                1000
+                            ]
+                        ],
+                        "SpriteAnimationPixelOffset": {
+                            "X": 0,
+                            "Y": 0
+                        }
+                    },
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 32,
+                    "HiddenProfileEmoteFrameCount": 2,
+                    "HiddenProfileEmoteFrameDuration": 2000.0,
+                    "WinterStartParticipant": true,
+                    "WinterStarGifts": [
+                        {
+                            "Id": "Jasper Gemstone Or Geode",
+                            "ItemId": null,
+                            "RandomItemId": [
+                                "(O)64",
+                                "(O)72",
+                                "(O)535"
+                            ],
+                            "Condition": "PLAYER_HEARTS Current Jasper 1 3"
+                        },
+                        {
+                            "Id": "Jasper Diamond",
+                            "ItemId": "(O)72",
+                            "Condition": "PLAYER_HEARTS Current Jasper 4 10"
+                        },
+                        {
+                            "Id": "Jasper Diamond",
+                            "ItemId": "(O)72",
+                            "MinStack": 5,
+                            "Condition": "PLAYER_NPC_RELATIONSHIP Current Jasper Married"
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_JasperHouse",
+                            "Tile": {
+                                "X": 20,
+                                "Y": 4
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "JasperWheelchair",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 50709914,!PLAYER_HAS_SEEN_EVENT Host 50709930",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jasper_wheelchair",
+                            "Sprite": "Characters/Jasper_wheelchair",
+                            "Precedence": -1
+                        },
+                        {
+                            "ID": "JasperProsthetic",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 50709930",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jasper_prosthetic",
+                            "Sprite": "Characters/Jasper_prosthetic",
+                            "Precedence": -1
+                        },
+                        {
+                            "ID": "JasperProsthetic_Winter",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 50709930",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jasper_winter",
+                            "Sprite": "Characters/Jasper_winter",
+                            "Precedence": -1
+                        },
+                    ],
+                },
+                "CorwinLK": {
+                    "DisplayName": "{{i18n:Name.Corwin}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 14,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": true,
+                    "Calendar": "HiddenUntilMet",
+                    "SocialTab": "HiddenUntilMet",
+                    //"CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    //"PerfectionScore": false,
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57871500",
+                    "LoveInterest": null,
+                    "Home": [
+                        {
+                            "Id": "Corwin_Lighthouse",
+                            "Location": "EastScarp_Lighthouse",
+                            "Tile": {
+                                "X": 15,
+                                "Y": 7
+                            },
+                            "Direction": "left",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57871505"
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 25
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 18,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 12,
+                            "Y": 4,
+                            "Width": 4,
+                            "Height": 4
+                        },
+                    },
+                    "Appearance": [
+                        {
+                            "ID": "CorwinWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/CorwinLK_Winter",
+                            "Sprite": "Characters/CorwinLK_Winter",
+                            "Precedence": -1
+                        },
+                        {
+                            "Id": "CorwinSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+                            "Sprite": "Characters/CorwinLK_SpiritsEve",
+                            "Portrait": "Portraits/CorwinLK_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "CorwinFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/CorwinLK_FlowerDance",
+                            "Portrait": "Portraits/CorwinLK_FlowerDance",
+                            "Precedence": -1000,
+                        },
+                    ],
+                },
+                "EdithHart": {
+                    "DisplayName": "{{i18n:Name.Edith}}",
+                    "BirthSeason": "winter",
+                    "BirthDay": 15,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "MichaelHart",
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "FriendsAndFamily": {
+                        "MichaelHart": "{{i18n:Edith-Relationships.Michael}}",
+                        "StellaHart": "{{i18n:Edith-Relationships.Stella}}",
+                        "EthanHart": "{{i18n:Edith-Relationships.Ethan}}",
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 53,
+                                "Y": 30
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "EdithWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/EdithHart_Winter",
+                            "Sprite": "Characters/EdithHart_Winter",
+                            "Precedence": -1
+                        },
+                        {
+                            "Id": "EdithSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+                            "Sprite": "Characters/EdithHart_SpiritsEve",
+                            "Portrait": "Portraits/EdithHart_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "EdithFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/EdithHart_FlowerDance",
+                            "Portrait": "Portraits/EdithHart_FlowerDance",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "EdithCamera",
+                            "Condition": "IS_EVENT festival_summer11, IS_EVENT festival_fall16",
+                            "Sprite": "Characters/EdithHart_Camera",
+                            "Portrait": "Portraits/EdithHart",
+                            "Precedence": -10,
+                        },
+                    ],
+                },
+                "MichaelHart": {
+                    "DisplayName": "{{i18n:Name.Michael}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 7,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": "EdithHart",
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "FriendsAndFamily": {
+                        "EdithHart": "{{i18n:Michael-Relationships.Edith}}",
+                        "StellaHart": "{{i18n:Michael-Relationships.Stella}}",
+                        "EthanHart": "{{i18n:Michael-Relationships.Ethan}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 55,
+                                "Y": 30
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "MichaelWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/MichaelHart_Winter",
+                            "Sprite": "Characters/MichaelHart_Winter",
+                            "Precedence": -1
+                        },
+                        {
+                            "Id": "MichaelSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+                            "Sprite": "Characters/MichaelHart_SpiritsEve",
+                            "Portrait": "Portraits/MichaelHart_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "EdithFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/MichaelHart_FlowerDance",
+                            "Portrait": "Portraits/MichaelHart_FlowerDance",
+                            "Precedence": -1000,
+                        },
+                    ],
+                },
+                "EthanHart": {
+                    "DisplayName": "{{i18n:Name.Ethan}}",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 10,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Child",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Neutral",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "FriendsAndFamily": {
+                        "EdithHart": "{{i18n:Ethan-Relationships.Edith}}",
+                        "StellaHart": "{{i18n:Ethan-Relationships.Stella}}",
+                        "MichaelHart": "{{i18n:Ethan-Relationships.Michael}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_VillageInn",
+                            "Tile": {
+                                "X": 53,
+                                "Y": 8
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "EthanWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/EthanHart_Winter",
+                            "Sprite": "Characters/EthanHart_Winter",
+                            "Precedence": -1
+                        },
+                        {
+                            "Id": "EthanSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+                            "Sprite": "Characters/EthanHart_SpiritsEve",
+                            "Portrait": "Portraits/EthanHart_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "EthanFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/EthanHart_FlowerDance",
+                            "Portrait": "Portraits/EthanHart_FlowerDance",
+                            "Precedence": -1000,
+                        },
+                    ],
+                },
+                "StellaHart": {
+                    "DisplayName": "{{i18n:Name.Stella}}",
+                    "BirthSeason": "Winter",
+                    "BirthDay": 22,
+                    "HomeRegion": "Town",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": false,
+                    "SocialTab": "HiddenUntilMet",
+                    "CanSocialize": "{{FriendableZuzuNPCs |contains=Stella}}",
+                    "CanVisitIsland": true,
+                    "IntroductionsQuest": false,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": false,
+                    "FlowerDanceCanDance": false,
+                    "WinterStarParticipant": false,
+                    "FriendsAndFamily": {
+                        "EdithHart": "{{i18n:Stella-Relationships.Edith}}",
+                        "MichaelHart": "{{i18n:Stella-Relationships.Michael}}",
+                        "EthanHart": "{{i18n:Stella-Relationships.Ethan}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_KenStellaHouse",
+                            "Tile": {
+                                "X": 15,
+                                "Y": 5
+                            },
+                            "Direction": "up"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "StellaSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+                            "Sprite": "Characters/StellaHart_SpiritsEve",
+                            "Portrait": "Portraits/StellaHart_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                    ],
+                },
+                "DaleWaede": {
+                    "DisplayName": "{{i18n:Name.DaleWaede}}",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "BirthSeason": "Spring",
+                    "BirthDay": 25,
+                    "HomeRegion": "Town",
+                    "IsDarkSkinned": false,
+                    "CanSocialize": true,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanVisitIsland": false,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": true,
+                    "SpouseGiftJealousy": true,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 6,
+                            "Y": 18,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "TrailingGroup",
+                    "DumpsterDiveEmote": 8,
+                    "FlowerDanceCanDance": true,
+                    "WinterStarParticipant": true,
+                    "WinterStarGifts": [
+                        {
+                            "Id": "DaleWaedeWinterStarGiftMapleSyrup",
+                            "ItemId": "(O)724",
+                            "MinStack": 1,
+                            "MaxStack": 2
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "DaleWaedeSpring",
+                            "Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/DaleWaede",
+                            "Sprite": "Characters/DaleWaede",
+                            "Precedence": -100
+                        },
+                        {
+                            "ID": "DaleWaedeSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/DaleWaede_Summer",
+                            "Sprite": "Characters/DaleWaede_Summer",
+                            "Precedence": -100
+                        },
+                        {
+                            "ID": "DaleWaedeFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/DaleWaede_Fall",
+                            "Sprite": "Characters/DaleWaede_Fall",
+                            "Precedence": -100
+                        },
+                        {
+                            "ID": "DaleWaedeWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/DaleWaede_Winter",
+                            "Sprite": "Characters/DaleWaede_Winter",
+                            "Precedence": -100
+                        },
+                        //Festival Outfits
+                        {
+                            "Id": "DaleWaedeEggFestival",
+                            "Condition": "IS_EVENT festival_spring13",
+                            "Sprite": "Characters/DaleWaede_EggFestival",
+                            "Portrait": "Portraits/DaleWaede_EggFestival",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "DaleWaedeFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/DaleWaede_FlowerDance",
+                            "Portrait": "Portraits/DaleWaede_FlowerDance",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "DaleWaedeLuau",
+                            "Condition": "IS_EVENT festival_summer11",
+                            "Sprite": "Characters/DaleWaede_Luau",
+                            "Portrait": "Portraits/DaleWaede_Luau",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "DaleWaedeJellies",
+                            "Condition": "IS_EVENT festival_summer28",
+                            "Sprite": "Characters/DaleWaede_Jellies",
+                            "Portrait": "Portraits/DaleWaede_Jellies",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "DaleWaedeSDVFair",
+                            "Condition": "ANY \"IS_EVENT festival_fall16",
+                            "Sprite": "Characters/DaleWaede_SVFair",
+                            "Portrait": "Portraits/DaleWaede_SVFair",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "DaleWaedeSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27, {{FestivalOutfits}}\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing, {{FestivalOutfits}}\"",
+                            "Sprite": "Characters/DaleWaede_SpiritsEve",
+                            "Portrait": "Portraits/DaleWaede_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "DaleWaedeIceFestival",
+                            "Condition": "ANY \"IS_EVENT festival_winter8",
+                            "Sprite": "Characters/DaleWaede_IceFestival",
+                            "Portrait": "Portraits/DaleWaede_IceFestival",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "Id": "DaleWaedeWinterStar",
+                            "Condition": "ANY \"IS_EVENT festival_winter25",
+                            "Sprite": "Characters/DaleWaede_WinterStar",
+                            "Portrait": "Portraits/DaleWaede_WinterStar",
+                            "Precedence": -1000,
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Dale's Trailer",
+                            "Location": "EastScarp_DaleHouse",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 5
+                            },
+                            "Direction": "up",
+                        }
+                    ],
+                    "SpawnIfMissing": true,
+                },
+                "KeanuAvis": {
+                    "DisplayName": "{{i18n:Name.KeanuAvis}}",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "BirthSeason": "Fall",
+                    "BirthDay": 3,
+                    "HomeRegion": "Town",
+                    "IsDarkSkinned": true,
+                    "CanSocialize": true,
+                    "CanBeRomanced": false,
+                    "CanReceiveGifts": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanVisitIsland": true,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": true,
+                    "SpouseGiftJealousy": true,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    /*"SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 6,
+                            "Y": 18,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },*/
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "TrailingGroup",
+                    "DumpsterDiveEmote": 8,
+                    "WinterStarParticipant": true,
+                    "Appearance": [
+                        {
+                            "ID": "KeanuAvisSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/KeanuAvis_Summer",
+                            "Sprite": "Characters/KeanuAvis_Summer",
+                            "Precedence": -120
+                        },
+                        {
+                            "ID": "KeanuAvisFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/KeanuAvis_Fall",
+                            "Sprite": "Characters/KeanuAvis_Fall",
+                            "Precedence": -120
+                        },
+                        {
+                            "ID": "KeanuAvisWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/KeanuAvis_Winter",
+                            "Sprite": "Characters/KeanuAvis_Winter",
+                            "Precedence": -120
+                        },
+                        {
+                            "Id": "KeanuAvisFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Sprite": "Characters/KeanuAvis_FlowerDance",
+                            "Portrait": "Portraits/KeanuAvis_FlowerDance",
+                            "Precedence": -1000,
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Keanu's House",
+                            "Location": "EastScarp_KeanuHouse",
+                            "Tile": {
+                                "X": 18,
+                                "Y": 6
+                            },
+                            "Direction": "up",
+                        }
+                    ],
+                    "SpawnIfMissing": true,
+                },
+                //antisocial NPCs
+                "CaptainRod": {
+                    "DisplayName": "{{i18n:Name.CaptainRod}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "shy",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "ItemDeliveryQuests": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "FriendsAndFamily": {
+                        "Beatrice": "{{i18n:Relationship.friend}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 4,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ]
+                },
+                "CameronLK": {
+                    "DisplayName": "{{i18n:Name.CameronLK}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "LoveInterest": null,
+                    "SocialTab": "HiddenAlways",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57872001",
+                    "CanSocialize": "FALSE",
+                    "ItemDeliveryQuests": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "FriendsAndFamily": {
+                        "Jasper": "{{i18n:Relationship.friend}}"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_KatarynaBackyard",
+                            "Tile": {
+                                "X": 27,
+                                "Y": 15
+                            },
+                            "Direction": "up"
+                        }
+                    ]
+                },
+                "Gremlin": {
+                    "DisplayName": "{{i18n:Name.Gremlin}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Neutral",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": null,
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Any 86571101",
+                    "CanGreetNearbyCharacters": false,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_JessieHouse",
+                            "Tile": {
+                                "X": 25,
+                                "Y": 7
+                            },
+                            "Direction": "up"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "LittleGruff": {
+                    "DisplayName": "{{i18n:Name.LittleGruff}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Child",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57877003",
+                    "CanGreetNearbyCharacters": false,
+                    "ItemDeliveryQuests": false,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_EyvinderCave",
+                            "Tile": {
+                                "X": 19,
+                                "Y": 8
+                            },
+                            "Direction": "Left"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "RichieTheMacaw": {
+                    "DisplayName": "{{i18n:Name.Richie}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 8,
+                                "Y": 21
+                            },
+                            "Direction": "Up"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "HappySlime": {
+                    "DisplayName": "{{i18n:Name.happy}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    //"UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870002",
+                    "CanGreetNearbyCharacters": false,
+                    "SpawnIfMissing": true,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "DumpsterDiveEmote": 16,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_ToriSlimeBasement",
+                            "Tile": {
+                                "X": 6,
+                                "Y": 16
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false,
+                    "EmoteOffset": {
+                        "X": 0,
+                        "Y": 6
+                    },
+                },
+                "PepperPup": {
+                    "DisplayName": "{{i18n:Name.PepperPup}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "CanGreetNearbyCharacters": false,
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870020",
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_VetHouse",
+                            "Tile": {
+                                "X": 31,
+                                "Y": 22
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "LadySheba": {
+                    "DisplayName": "{{i18n:Name.Sheba}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Child",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57879903",
+                    "CanGreetNearbyCharacters": false,
+                    "ItemDeliveryQuests": false,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_CatWarpRoom",
+                            "Tile": {
+                                "X": 2,
+                                "Y": 2
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "ValkyrieDog": {
+                    "DisplayName": "{{i18n:Name.Valkyrie}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "CanBeRomanced": false,
+                    "CanSocialize": "FALSE",
+                    "SocialTab": "HiddenAlways",
+                    "CanGreetNearbyCharacters": false,
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "WinterStarParticipant": false,
+                    "DumpsterDiveFriendshipEffect": -5,
+                    "DumpsterDiveEmote": 40,
+                    "CanVisitIsland": false,
+                    "CanCommentOnPurchasedShopItems": false,
+                    "EndSlideShow": "TrailingGroup",
+                    "SpawnIfMissing": true,
+                    "Breather": false,
+                    "Size": {
+                        "X": 32,
+                        "Y": 32
+                    },
+                    "Shadow": {
+                        "Visible": false
+                    },
+                    "EmoteOffset": {
+                        "X": -35,
+                        "Y": 30
+                    },
+                    "MugShotSourceRect": {
+                        "X": 8,
+                        "Y": 7,
+                        "Width": 16,
+                        "Height": 25
+                    },
+                    "Home": [
+                        {
+                            "Location": "EastScarp_DaleHouse",
+                            "Tile": {
+                                "X": 16,
+                                "Y": 7
+                            },
+                            "Direction": "down"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "Id": "ValkyrieSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing\"",
+                            "Sprite": "Characters/ValkyrieDog_SpiritsEve",
+                            "Portrait": "Portraits/ValkyrieDog_SpiritsEve",
+                            "Precedence": -1000,
+                        }
+                    ],
+                    "CustomFields": {
+                        "EastScarpe.ForceOneTileWide": "true"
+                    },
+                },
+                "JunimoJade": {
+                    "DisplayName": "{{i18n:Name.JunimoJade}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57871199",
+                    "EndSlideShow": "Hidden",
+                    "LoveInterest": null,
+                    "CustomFields": {
+                        "EastScarpe.NPCScale": "0.80"
+                    },
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_LumaHut",
+                            "Tile": {
+                                "X": 7,
+                                "Y": 7
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "Abyssrooster": {
+                    "DisplayName": "{{i18n:Name.Abyss}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Teen",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Negative",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57876022",
+                    "CanGreetNearbyCharacters": false,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "KatLeaves",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57876033",
+                            "Location": "EastScarp_KatarynaBackyard",
+                            "Tile": {
+                                "X": 34,
+                                "Y": 13
+                            },
+                            "Direction": "Down"
+                        },
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Tile": {
+                                "X": 3,
+                                "Y": 5
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "DuckNPC": {
+                    "DisplayName": "{{i18n:Name.duck1}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870002",
+                    "CanGreetNearbyCharacters": false,
+                    "ItemDeliveryQuests": false,
+                    "SpawnIfMissing": true,
+                    "DumpsterDiveFriendshipEffect": 0,
+                    "DumpsterDiveEmote": 16,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_Village",
+                            "Tile": {
+                                "X": 21,
+                                "Y": 62
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                },
+                "Duck2NPC": {
+                    "DisplayName": "{{i18n:Name.duck2}}",
+                    "BirthSeason": null,
+                    "BirthDay": 0,
+                    "HomeRegion": "Other",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Shy",
+                    "Optimism": "Positive",
+                    "SocialTab": "HiddenAlways",
+                    "CanSocialize": "FALSE",
+                    "CanVisitIsland": "FALSE",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "EndSlideShow": "Hidden",
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 57870011",
+                    "CanGreetNearbyCharacters": false,
+                    "ItemDeliveryQuests": false,
+                    "SpawnIfMissing": true,
+                    "Home": [
+                        {
+                            "Id": "Default",
+                            "Condition": null,
+                            "Location": "EastScarp_Village",
+                            "Tile": {
+                                "X": 22,
+                                "Y": 62
+                            },
+                            "Direction": "Down"
+                        }
+                    ],
+                    "Breather": false
+                }
+            }
+        },
+        {
+            "LogName": "Little Gruff friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "LittleGruff"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57877003"
+            },
+            "When": {
+                "FriendableAnimals |contains=LittleGruff": true
+            }
+        },
+        {
+            "LogName": "HappySlime friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "HappySlime"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57871105"
+            },
+            "When": {
+                "FriendableAnimals |contains=HappySlime": true
+            }
+        },
+        {
+            "LogName": "Emperor Duck friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "DuckNPC"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57870002"
+            },
+            "When": {
+                "FriendableAnimals |contains=EmperorDuck": true
+            }
+        },
+        {
+            "LogName": "Empress Duck friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "Duck2NPC"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57870011"
+            },
+            "When": {
+                "FriendableAnimals |contains=EmpressDuck": true
+            }
+        },
+        {
+            "LogName": "Lady Sheba friend",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "LadySheba"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenUntilMet",
+                "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 57879903"
+            },
+            "When": {
+                "FriendableAnimals |contains=LadyShebaCat": true
+            }
+        },
+        {
+            "LogName": "Make Kataryna Datable once Social",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "HasFlag": "KatarynaBecomesSocial"
+            },
+            "TargetField": [
+                "KatarynaLK"
+            ],
+            "Entries": {
+                "BirthSeason": "winter",
+                "BirthDay": 24
+            }
+        },
+        {
+            "LogName": "Make Kataryna Datable once Social",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "HasFlag": "KatarynaBecomesSocial",
+                "KeepNonDatable |contains=KatarynaLK": false
+            },
+            "TargetField": [
+                "KatarynaLK"
+            ],
+            "Entries": {
+                "CanBeRomanced": true
+            }
+        },
+        {
+            "LogName": "Make Stella Social",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "FriendableZuzuNPCs |contains=Stella": true
+            },
+            "TargetField": [
+                "StellaHart"
+            ],
+            "Entries": {
+                "CanSocialize": "true",
+                "Calendar": "HiddenUntilMet",
+                "SocialTab": "HiddenUntilMet",
+            }
+        },
+        {
+            "LogName": "Make Kennedy Social",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "FriendableZuzuNPCs |contains=Kennedy": true
+            },
+            "TargetField": [
+                "KennedyLK"
+            ],
+            "Entries": {
+                "CanSocialize": "true",
+                "Calendar": "HiddenUntilMet",
+                "SocialTab": "HiddenUntilMet",
+            }
+        },
+        {
+            "LogName": "Removes Mr Ginger from the Social Calendar",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "HasSeenEvent": "5295000",
+                "EnableTristan": "true"
+            },
+            "TargetField": [
+                "MisterGinger"
+            ],
+            "Entries": {
+                "SocialTab": "HiddenAlways",
+                "WinterStarParticipant": false,
+                "ItemDeliveryQuests": false,
+                "PerfectionScore": false,
+            }
+        },
+        {
+            "LogName": "Adds Jade if she's not already installed",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "When": {
+                "HasMod |contains=malic.cp.jadeNPC": false
+            },
+            "Entries": {
+                "JadeMalic": {
+                    "DisplayName": "{{i18n:Name.Jade}}",
+                    "Language": "Default",
+                    "Gender": "Female",
+                    "Age": "Adult",
+                    "Manner": "Polite",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Positive",
+                    "BirthSeason": "winter",
+                    "BirthDay": 4,
+                    "HomeRegion": "Town",
+                    "IsDarkSkinned": false,
+                    "CanSocialize": true,
+                    "CanBeRomanced": true,
+                    "CanReceiveGifts": true,
+                    "CanCommentOnPurchasedShopItems": true,
+                    "CanGreetNearbyCharacters": true,
+                    "CanVisitIsland": true,
+                    "Calendar": "AlwaysShown",
+                    "SocialTab": "UnknownUntilMet",
+                    "SpouseAdopts": null,
+                    "SpouseWantsChildren": true,
+                    "SpouseGiftJealousy": true,
+                    "SpouseGiftJealousyFriendshipChange": -30,
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 18,
+                            "Y": 9,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 16,
+                            "Y": 4,
+                            "Width": 4,
+                            "Height": 4
+                        }
+                    },
+                    "FormerCharacterNames": [
+                        "Jade"
+                    ],
+                    "IntroductionsQuest": true,
+                    "ItemDeliveryQuests": true,
+                    "PerfectionScore": true,
+                    "EndSlideShow": "TrailingGroup",
+                    "DumpsterDiveEmote": 28,
+                    "FlowerDanceCanDance": true,
+                    "WinterStarParticipant": true,
+                    "WinterStarGifts": [
+                        {
+                            "Id": "JadeWinterStarGiftMonsterMusks",
+                            "ItemId": "(O)879",
+                            "MinStack": 1,
+                            "MaxStack": 3
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "JadeSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jade_Summer",
+                            "Sprite": "Characters/Jade_Summer",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JadeFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jade_Fall",
+                            "Sprite": "Characters/Jade_Fall",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "JadeWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Jade_Winter",
+                            "Sprite": "Characters/Jade_Winter",
+                            "Precedence": -10
+                        },
+                        {
+                            "Id": "JadeSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing\"",
+                            "Sprite": "Characters/Jade_SpiritsEve",
+                            "Portrait": "Portraits/Jade_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                        {
+                            "ID": "JadeFlowerDance",
+                            "Condition": "IS_EVENT festival_spring24, {{FestivalOutfits}}",
+                            "Portrait": "Portraits/Jade_FlowerDance",
+                            "Sprite": "Characters/Jade_FlowerDance",
+                            "Precedence": -1000
+                        },
+                    ],
+                    "Home": [
+                        {
+                            "Id": "Jessie LodgingHouse",
+                            "Location": "EastScarp_JessieHouse",
+                            "Tile": {
+                                "X": 31,
+                                "Y": 19
+                            },
+                            "Direction": "down",
+                        }
+                    ],
+                    "SpawnIfMissing": true,
+                },
+            }
+        },
+        {
+            "LogName": "Perfection Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "Entries": {
+                "SummitEvent_Dialogue3_Jasper": "{{i18n:summit.jasper.Dialogue3}}",
+                "SummitEvent_Dialogue3_Juliet": "{{i18n:summit.juliet.Dialogue3}}",
+                "SummitEvent_Dialogue3_ToriLK": "{{i18n:summit.victoria.Dialogue3}}",
+                "SummitEvent_Dialogue3_CorwinLK": "{{i18n:summit.corwin.Dialogue3}}",
+                "SummitEvent_Dialogue3_JadeMalic": "{{i18n:summit.jade.Dialogue3}}",
+                "SummitEvent_Dialogue3_KatarynaLK": "{{i18n:summit.kataryna.Dialogue3}}",
+            }
+        },
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "Aideen": "{{i18n:gifts.aideen.love}}/104 106 597/{{i18n:gifts.aideen.like}}/-80 64 68 60 540 376 18 22 283/{{i18n:gifts.aideen.dislike}}/84 213 -4/{{i18n:gifts.aideen.hate}}/190 197 206 346/{{i18n:gifts.aideen.neutral}}/-2 -26/",
+                "Beatrice": "{{i18n:gift.beatrice.love}}/84 192 199/{{i18n:gift.beatrice.like.{{GenderNeutral}} }}/207 117 24/{{i18n:gift.beatrice.dislike}}/152 202/{{i18n:gift.beatrice.hate}}/129 130 131 148/{{i18n:gift.beatrice.neutral}}/74/",
+                "CorwinLK": "{{i18n:gift.corwin.love.{{WillCorwinFlirt}} }}/422 303 166/{{i18n:gift.corwin.like.{{WillCorwinFlirt}} }}/459 346 -79 -75/{{i18n:gift.corwin.dislike.{{WillCorwinFlirt}} }}//{{i18n:gift.corwin.hate}}/88/{{i18n:gift.corwin.neutral.{{WillCorwinFlirt}} }}//",
+                "DaleWaede": "{{i18n:gifts.dalewaede.love}}/614 tea_item Lemurkat.EastScarp_HotChoco Lemurkat.EastScarp_SoothingCure/{{i18n:gifts.dalewaede.like}}/580 -2 bone_item/{{i18n:gifts.dalewaede.dislike}}//{{i18n:gifts.dalewaede.hate}}//{{i18n:gifts.dalewaede.neutral}}//",
+                "Eyvinder": "{{i18n:gift.love.eyvinder}}/279 EastScarp_Azure_Chrysanthemum EastScarp_Serruria EastScarp_PuckerWort EastScarp_Void_Goat_Cheese_Aged/{{i18n:gift.like.eyvinder}}/417 440 Vintage_Ruby_Ring bauble_curio EastScarp_Void_Goat_Milk EastScarp_L_Void_Goat_Milk EastScarp_Void_Goat_Cheese/{{i18n:gift.dislike.eyvinder}}/-15 -16/{{i18n:gift.hate.eyvinder}}/-20 -24 -8/{{i18n:gift.neutral.eyvinder}}/-81 -2 -79 -75 -4 -5 -7 -26 -74 -6 -18 74 446 797 373/",
+                "EdithHart": "{{i18n:gift.edith.love}}/724 723 812 394 200 610 395/{{i18n:gift.edith.like}}/257 281 404 -6/{{i18n:gift.edith.dislike}}/248 16 215 226/{{i18n:gift.edith.hate}}/260/{{i18n:gift.edith.neutral}}/446/",
+                "EthanHart": "{{i18n:gift.ethan.love}}/724 201 200 408 Lemurkat.EastScarp_HotChoco/{{i18n:gift.ethan.like}}/-5 -6 -81 403/{{i18n:gift.ethan.dislike}}/260 92 420 202/{{i18n:gift.ethan.hate}}/151 798/{{i18n:gift.ethan.neutral}}/399/",
+                "Jacob": "{{i18n:gifts.jacob.love}}/205 210 241 282/{{i18n:gifts.jacob.like}}/344 342 350 395/{{i18n:gifts.jacob.dislike}}/16 800/{{i18n:gifts.jacob.hate}}/232 250/{{i18n:gifts.jacob.neutral}}//",
+                "Eloise": "{{i18n:gifts.eloise.love}}/18 221 444 394 107 EastScarp_Cheesy_Jelly_Toast EastScarp_Blue_Jay_Feather EastScarp_Pelican_Feather EastScarp_Wood_Duck_Feather Ivy_OrnithologistsGuild_Nest EastScarp_Candied_Cuccaroot Lemurkat.EastScarp_HotChoco/{{i18n:gifts.eloise.like}}/-2 -5 113 174 176 180 223 442 233 346/{{i18n:gifts.eloise.dislike}}/-4 459 348/{{i18n:gifts.eloise.hate}}/88 190 236 346 395 800/{{i18n:gifts.eloise.neutral}}//",
+                "Jasper": "{{i18n:gift.jasper.love}}/72 82 243 108 121 122 258 613 563 564 appleseed.BCP.Chessboard/{{i18n:gift.jasper.like}}/535 536 537 749 96 97 98 99 459 -2 -12 -103 -102/{{i18n:gift.jasper.dislike}}/440 209/{{i18n:gift.jasper.hate}}/346 2/{{i18n:gift.jasper.neutral}}//",
+                "Jessie": "{{i18n:gifts.jessie.love}}/222 230 254 281 282 EastScarp_Cuccaroot/{{i18n:gifts.jessie.like}}/-81 -75 -79 350/{{i18n:gifts.jessie.dislike}}/-6 206 424 426/{{i18n:gifts.jessie.hate}}/-4 446/{{i18n:gifts.jessie.neutral}}//",
+                "JosephineK": "{{i18n:gifts.josephine.love}}/344 340 348 Lemurkat.EastScarp_ZinfazuIcecream/{{i18n:gifts.josephine.like}}/350 -26 461/{{i18n:gifts.josephine.dislike}}/-15 -74/{{i18n:gifts.josephine.hate}}/-28/{{i18n:gifts.josephine.neutral}}//",
+                "Juliet": "{{i18n:gifts.juliet.love}}/376 420 614 651 731/{{i18n:gifts.juliet.like}}/283 348 613 724 346 167/{{i18n:gifts.juliet.dislike}}/-4 256 231/{{i18n:gifts.juliet.hate}}/717 720 276/{{i18n:gifts.juliet.neutral}}//",
+                "KeanuAvis": "{{i18n:gifts.keanu.love}}/202 212 213 225 226 227 228 242 265 906 907/{{i18n:gifts.keanu.like}}/-4 forage_item_beach 456 218 728 198 732 733 921 DriedMushrooms 404 88/{{i18n:gifts.keanu.dislike}}/-81/{{i18n:gifts.keanu.hate}}/727 -6 233/{{i18n:gifts.keanu.neutral}}/426 424/",
+                "Leximonster": "{{i18n:gifts.lexi.love}}/254 233 220 604 EastScarp_FrostBerry EastScarp_BiteBackMelon/{{i18n:gifts.lexi.like}}/103 203 -74 -7 -79 -80 459/{{i18n:gifts.lexi.dislike}}/-15/{{i18n:gifts.lexi.hate}}/-26/{{i18n:gifts.lexi.neutral}}/-4/",
+                "LumaJunimo": "{{i18n: gift.lumajunimo.love}}/Raisins 64 66 62 60 68 70 72 104 340 417 551/{{i18n: gift.lumajunimo.like}}/394 392 398 400 554 279/{{i18n: gift.lumajunimo.dislike}}/423 447 456 412 349/{{i18n: gift.lumajunimo.hate}}/346 348 303 265 257/{{i18n: gift.lumajunimo.neutral}}/562 568 563 416/",
+                "MichaelHart": "{{i18n:gift.michael.love}}/88 344 446 591 212 EastScarp_SeaGlass/{{i18n:gift.michael.like}}/408 444 382 394 446 22 -2 74/{{i18n:gift.michael.dislike}}/78/{{i18n:gift.michael.hate}}/-12/{{i18n:gift.michael.neutral}}/142/",
+                "OliverK": "{{i18n:gifts.oliver.love}}/557 581 587 589/{{i18n:gifts.oliver.like}}/584 585 586 583 579 167/{{i18n:gifts.oliver.dislike}}/344 340 -80 -28/{{i18n:gifts.oliver.hate}}/346/{{i18n:gifts.oliver.neutral}}/395/",
+                "Rosa": "{{i18n:gifts.rosa.love}}/540 233 400/{{i18n:gifts.rosa.like}}/-4 -5 -6 -7 -79 422 216 245 246 768/{{i18n:gifts.rosa.dislike}}/330/{{i18n:gifts.rosa.hate}}/2 769/{{i18n:gifts.rosa.neutral}}/-4/",
+                "ToriLK": "{{i18n:gift.torilk.love}}/680 413 437 439 557 903 857 EastScarp_FrostBerry_Bliss_Balls/{{i18n:gift.torilk.like}}/394 392 876/{{i18n:gift.torilk.dislike}}/-4 446/{{i18n:gift.torilk.hate}}//{{i18n:gift.torilk.neutral}}/766/",
+                "VivienneLK": "{{i18n:gifts.viviennelk.love}}/64 534 EastScarp_Vintage_Ruby_Ring/{{i18n:gifts.viviennelk.like}}/102/{{i18n:gifts.viviennelk.dislike}}//{{i18n:gifts.viviennelk.hate}}/638/{{i18n:gifts.viviennelk.neutral}}//"
+                //For Configurable/Optional NPCs, see their individual pages for the details. (Kataryna, Stella, Kennedy, Jade, Tristan).
+            }
+        },
+    ]
+}

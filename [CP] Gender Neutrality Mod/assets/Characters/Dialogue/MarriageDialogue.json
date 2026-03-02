@@ -1,0 +1,18 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogue",
+			"Entries":
+				{
+					"Rainy_Night_3": "The rain makes our home seem so cozy.$h",
+					"Indoor_Night_2": "I'm glad you're home.#$e#I get lonely at night...$s#$e#...$h",
+					"Indoor_Night_Alex": "I feel exhausted... That's a good sign! It means I worked hard enough today.$h",
+					"Indoor_Night_Elliott": "#$c .5#You always smell so good after a day of hard work. Like a cinnamon leaf floating in the summer breeze.#$e#Come here, let me massage your back. You look tense.$l",
+					"Good_3": "Wow, you look really {{Lowercase: {{Random: {{Hana.GNMTokens/Adjective}} }} }} today!$l"
+				},
+			"LogName":"Fix MarriageDialogue"
+		}
+	]
+}

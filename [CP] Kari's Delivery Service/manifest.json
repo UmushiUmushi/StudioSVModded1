@@ -1,0 +1,11 @@
+{
+    "Name": "[CP] Kari's Delivery Service - Seasonal Mailbox Mod",
+    "Author": "kariiiii",
+    "Version": "1.0.2",
+    "Description": "Replaces the mailbox texture with seasonal variations of cute critters.",
+    "UniqueID": "kariiiii.DeliveryService",
+    "UpdateKeys": ["Nexus:24758"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

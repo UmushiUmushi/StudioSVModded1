@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.4" tiledversion="1.4.2" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="3">
+ <properties>
+  <property name="Music" value="Hospital_Ambient"/>
+  <property name="Warp" value="5 10 Railroad 10 57"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="240" columns="15">
+  <image source="bathhouse_tiles" width="240" height="256"/>
+ </tileset>
+ <layer id="1" name="Back" width="10" height="10">
+  <data encoding="csv">
+122,122,122,122,122,122,122,122,122,122,
+122,122,122,122,122,122,122,122,122,122,
+122,122,122,122,122,122,122,122,122,122,
+122,122,122,122,122,122,122,122,122,122,
+122,123,123,123,123,123,123,123,123,122,
+122,137,152,122,122,122,153,122,152,122,
+122,122,122,122,152,122,122,122,122,122,
+122,122,122,122,122,122,122,122,152,122,
+122,122,152,122,122,122,122,122,122,122,
+122,122,122,122,122,245,122,122,122,122
+</data>
+ </layer>
+ <layer id="2" name="Buildings" width="10" height="10">
+  <data encoding="csv">
+187,188,188,188,188,188,188,188,188,189,
+202,124,125,125,125,125,125,125,125,204,
+202,139,241,140,140,140,140,242,140,204,
+202,154,256,155,155,155,155,257,155,204,
+202,0,0,0,0,0,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+217,0,0,0,0,0,0,0,0,219,
+193,193,193,193,217,0,219,193,193,193
+</data>
+ </layer>
+ <layer id="3" name="Front" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+202,0,0,0,162,163,0,0,0,204,
+202,0,0,0,177,178,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+202,0,0,0,0,0,0,0,0,204,
+217,218,218,218,170,0,171,218,218,219,
+193,193,193,193,217,218,219,193,193,193
+</data>
+ </layer>
+ <layer id="4" name="Paths" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,9,0,0,9,0,0,0,
+0,0,7,0,2,8,0,7,0,0,
+0,0,7,9,7,0,9,7,0,0,
+0,0,1,6,5,6,6,4,0,0,
+0,0,0,9,7,0,9,0,0,0,
+0,0,0,0,7,0,0,0,0,0,
+0,0,0,0,7,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="5" name="Back"/>
+ <objectgroup id="6" name="Buildings">
+  <object id="1" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 13 27 BathHouse_WomensLocker"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="112" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 3 27 BathHouse_MensLocker"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup id="7" name="Front"/>
+ <objectgroup id="8" name="Paths"/>
+</map>

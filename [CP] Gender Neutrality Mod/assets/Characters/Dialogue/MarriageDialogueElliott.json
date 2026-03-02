@@ -1,0 +1,17 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueElliott",
+			"Entries":
+				{
+					"Rainy_Night_0": "Good evening. Did you have a productive day, @?",
+					"Rainy_Night_2": "My skill with words is unmatched, yet I can't find the way to properly describe your allure.$l",
+					"Indoor_Night_0": "From the brightest winter star, to the shimmer of an iridium vein... nothing can compare with the vision before me.$l",
+					"Good_3": "Wow, your allure is irresistible today. I can't keep my eyes off you.$l"
+				},
+			"LogName":"Fix MarriageDialogueElliott"
+		}
+	]
+}

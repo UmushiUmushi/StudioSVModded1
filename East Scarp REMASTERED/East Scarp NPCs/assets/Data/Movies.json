@@ -1,0 +1,2973 @@
+{
+    "Changes": [
+        {
+            "Action": "EditData",
+            "Target": "Data/ConcessionTastes",
+            "Entries": {
+                //Animal NPCs - because people are crazy enough to invite animals to the movies and this is funnier than making them reject the tickets (Which would be a darn sight less work)
+                "LittleGruff": {
+                    "Name": "LittleGruff",
+                    "LovedTags": [
+                        "Sweet",
+                        "Candy",
+                        "Drink",
+                        "Hot",
+                        "Healthy",
+                        "Cold",
+                        "Joja",
+                        "Sour",
+                        "Hot",
+                        "Salty",
+                        "Fatty",
+                        "Sandwich",
+                        "Burger",
+                        "Gourmet",
+                        "Black Licorice",
+                    ],
+                    "LikedTags": [],
+                    "DislikedTags": []
+                },
+                "LadySheba": {
+                    "Name": "LadySheba",
+                    "LovedTags": [],
+                    "LikedTags": [
+                        "Salmon Burger",
+                    ],
+                    "DislikedTags": [
+                        "Sweet",
+                        "Candy",
+                        "Drink",
+                        "Hot",
+                        "Healthy",
+                        "Cold",
+                        "Joja",
+                        "Sour",
+                        "Hot",
+                        "Salty",
+                        "Fatty",
+                        "Sandwich",
+                        "Burger",
+                        "Gourmet",
+                        "Black Licorice",
+                    ]
+                },
+                "DuckNPC": {
+                    "Name": "DuckNPC",
+                    "LovedTags": [
+                        "Popcorn",
+                        "Apple Slices",
+                    ],
+                    "LikedTags": [
+                        "Fries",
+                        "Hummus Snack Pack",
+                    ],
+                    "DislikedTags": [
+                        "Sweet",
+                        "Candy",
+                        "Drink",
+                        "Hot",
+                        "Healthy",
+                        "Cold",
+                        "Joja",
+                        "Sour",
+                        "Hot",
+                        "Salty",
+                        "Fatty",
+                        "Sandwich",
+                        "Burger",
+                        "Gourmet",
+                        "Black Licorice",
+                    ]
+                },
+                "Duck2NPC": {
+                    "Name": "Duck2NPC",
+                    "LovedTags": [
+                        "Popcorn",
+                        "Apple Slices",
+                    ],
+                    "LikedTags": [
+                        "Fries",
+                        "Hummus Snack Pack",
+                    ],
+                    "DislikedTags": [
+                        "Sweet",
+                        "Candy",
+                        "Drink",
+                        "Hot",
+                        "Healthy",
+                        "Cold",
+                        "Joja",
+                        "Sour",
+                        "Hot",
+                        "Salty",
+                        "Fatty",
+                        "Sandwich",
+                        "Burger",
+                        "Gourmet",
+                        "Black Licorice",
+                    ]
+                },
+                //People
+                "DaleWaede": {
+                    "Name": "DaleWaede",
+                    "LovedTags": [
+                        "Healthy",
+                        "Sandwich",
+                        "Sweet",
+                        "Jasmine Tea"
+                    ],
+                    "LikedTags": [
+                        "Salty",
+                        "Joja"
+                    ],
+                    "DislikedTags": [
+                        "Jawbreaker",
+                        "Black Licorice",
+                    ]
+                },
+                "KeanuAvis": {
+                    "Name": "KeanuAvis",
+                    "LovedTags": [
+                        "Personal Pizza",
+                    ],
+                    "LikedTags": [
+                        "Healthy",
+                        "Sandwich",
+                        "Jawbreaker",
+                        "Black Licorice",
+                        "Salty",
+                        "Sweet",
+                    ],
+                    "DislikedTags": [
+                        "Jasmine Tea",
+                        "Ice Cream Sandwich",
+                        "Cappuccino Mousse Cake",
+                    ]
+                },
+                "CorwinLK": {
+                    "Name": "CorwinLK",
+                    "LovedTags": [
+                        "Nachos",
+                        "Fries",
+                        "Salmon Burger"
+                    ],
+                    "LikedTags": [
+                        "Salty",
+                        "Sweet",
+                        "Jasmine Tea"
+                    ],
+                    "DislikedTags": [
+                        "Popcorn",
+                        "Hummus Snack Pack"
+                    ]
+                },
+                "EdithHart": {
+                    "Name": "EdithHart",
+                    "LovedTags": [
+                        "Apple Slices",
+                        "Jasmine Tea",
+                        "Gourmet"
+                    ],
+                    "LikedTags": [
+                        "Healthy",
+                        "Sweet",
+                        "Kale Smoothie",
+                    ],
+                    "DislikedTags": [
+                        "Black Licorice",
+                        "Salty",
+                        "Joja"
+                    ]
+                },
+                "EthanHart": {
+                    "Name": "EthanHart",
+                    "LovedTags": [
+                        "Chocolate Popcorn",
+                        "Fries",
+                        "Sour Slimes"
+                    ],
+                    "LikedTags": [
+                        "Salty",
+                        "Sweet",
+                        "Joja"
+                    ],
+                    "DislikedTags": [
+                        "Jasmine Tea",
+                        "Black Licorice",
+                        "Healthy"
+                    ]
+                },
+                "MichaelHart": {
+                    "Name": "MichaelHart",
+                    "LovedTags": [
+                        "Salmon Burger",
+                        "Personal Pizza",
+                        "Gourmet"
+                    ],
+                    "LikedTags": [
+                        "Healthy",
+                        "Sweet"
+                    ],
+                    "DislikedTags": [
+                        "Black Licorice",
+                        "Salty",
+                        "Joja"
+                    ]
+                },
+                "Eyvinder": {
+                    "Name": "Eyvinder",
+                    "LovedTags": [
+                        "Salmon Burger",
+                        "Apple Slices"
+                    ],
+                    "LikedTags": [
+                        "Salty",
+                        "Healthy",
+                        "Sweet"
+                    ],
+                    "DislikedTags": [
+                        "Jawbreaker",
+                        "Black Licorice"
+                    ]
+                },
+                "KennedyLK": {
+                    "Name": "KennedyLK",
+                    "LovedTags": [
+                        "Pizza",
+                        "Popcorn"
+                    ],
+                    "LikedTags": [
+                        "Salty",
+                        "Healthy",
+                    ],
+                    "DislikedTags": [
+                        "Sweet",
+                        "Black Licorice",
+                        "Candy"
+                    ]
+                },
+                "Beatrice": {
+                    "Name": "Beatrice",
+                    "LovedTags": [
+                        "Nachos",
+                        "Hummus Snack Pack"
+                    ],
+                    "LikedTags": [
+                        "Salty",
+                        "Healthy",
+                        "Black Licorice"
+                    ],
+                    "DislikedTags": [
+                        "Jawbreaker",
+                    ]
+                },
+                "KatarynaLK": {
+                    "Name": "KatarynaLK",
+                    "LovedTags": [
+                        "Cappuccino Mousse Cake",
+                        "Chocolate Popcorn"
+                    ],
+                    "LikedTags": [
+                        "Sweet",
+                        "Healthy"
+                    ],
+                    "DislikedTags": [
+                        "Kale Smoothie",
+                        "Salted Peanuts"
+                    ]
+                },
+                "ToriLK": {
+                    "Name": "ToriLK",
+                    "LovedTags": [
+                        "Ice Cream Sandwich",
+                        "Star Cookie"
+                    ],
+                    "LikedTags": [
+                        "Sour Slimes",
+                        "Sweet",
+                        "Healthy"
+                    ],
+                    "DislikedTags": [
+                        "Jawbreaker",
+                        "Rock Candy"
+                    ]
+                },
+                "Jacob": {
+                    "Name": "Jacob",
+                    "LovedTags": [
+                        "Fries",
+                        "Cappuccino Mousse Cake"
+                    ],
+                    "LikedTags": [
+                        "Salted Peanuts"
+                    ],
+                    "DislikedTags": [
+                        "Kale Smoothie",
+                        "JojaCorn"
+                    ]
+                },
+                "Aideen": {
+                    "Name": "Aideen",
+                    "LovedTags": [
+                        "Jasmine Tea",
+                        "Panzanella Sandwich",
+                        "Cappuccino Mousse Cake"
+                    ],
+                    "LikedTags": [
+                        "Gourmet"
+                    ],
+                    "DislikedTags": [
+                        "Rock Candy",
+                        "Salted Peanuts"
+                    ]
+                },
+                "Eloise": {
+                    "Name": "Eloise",
+                    "LovedTags": [
+                        "Cotton Candy",
+                        "Ice Cream Sandwich"
+                    ],
+                    "LikedTags": [
+                        "Sweet"
+                    ],
+                    "DislikedTags": [
+                        "Kale Smoothie",
+                        "Black Licorice"
+                    ]
+                },
+                "JosephineK": {
+                    "Name": "JosephineK",
+                    "LovedTags": [
+                        "Stardrop Sorbet",
+                        "Cappuccino Mousse Cake",
+                        "Jasmine Tea"
+                    ],
+                    "LikedTags": [
+                        "Healthy"
+                    ],
+                    "DislikedTags": [
+                        "Cotton Candy",
+                        "Jawbreaker"
+                    ]
+                },
+                "OliverK": {
+                    "Name": "OliverK",
+                    "LovedTags": [
+                        "Fries",
+                        "Popcorn",
+                        "Nachos",
+                        "Personal Pizza"
+                    ],
+                    "LikedTags": [
+                        "Salty",
+                        "Healthy"
+                    ],
+                    "DislikedTags": [
+                        "Sweet"
+                    ]
+                },
+                "Leximonster": {
+                    "Name": "Leximonster",
+                    "LovedTags": [
+                        "Stardrop Sorbet",
+                        "Cotton Candy",
+                        "Star Cookie"
+                    ],
+                    "LikedTags": [
+                        "Sweet"
+                    ],
+                    "DislikedTags": [
+                        "Kale Smoothie",
+                        "Jawbreaker"
+                    ]
+                },
+                "Rosa": {
+                    "Name": "Rosa",
+                    "LovedTags": [
+                        "Cappuccino Mousse Cake",
+                        "Salted Peanuts"
+                    ],
+                    "LikedTags": [
+                        "Sweet",
+                        "Sour Slimes",
+                        "Healthy"
+                    ],
+                    "DislikedTags": [
+                        "Kale Smoothie",
+                        "Jasmine Tea"
+                    ]
+                },
+                "VivienneLK": {
+                    "Name": "VivienneLK",
+                    "LovedTags": [
+                        "Stardrop Sorbet",
+                        "Cappuccino Mousse Cake"
+                    ],
+                    "LikedTags": [
+                        "Sweet",
+                        "Healthy"
+                    ],
+                    "DislikedTags": [
+                        "Jawbreaker",
+                        "Cotton Candy"
+                    ]
+                },
+                "Juliet": {
+                    "Name": "Juliet",
+                    "LovedTags": [
+                        "Sour Slimes",
+                        "Personal Pizza",
+                        "Nachos",
+                        "Stardrop Sorbet",
+                        "Black Licorice"
+                    ],
+                    "LikedTags": [
+                        "Ice Cream Sandwich",
+                        "Popcorn",
+                        "Chocolate Popcorn"
+                    ],
+                    "DislikedTags": [
+                        "Hummus Snack Pack",
+                        "Kale Smoothie",
+                        "Salmon Burger"
+                    ]
+                },
+                "Jessie": {
+                    "Name": "Jessie",
+                    "LovedTags": [
+                        "Stardrop Sorbet",
+                        "Jasmine Tea",
+                        "Panzanella Salad"
+                    ],
+                    "LikedTags": [
+                        "Hummus Snack Pack",
+                        "Kale Smoothie",
+                        "Popcorn",
+                        "Chocolate Popcorn"
+                    ],
+                    "DislikedTags": [
+                        "Personal Pizza",
+                        "Nachos",
+                        "Ice Cream Sandwich",
+                        "Salmon Burger"
+                    ]
+                },
+                "Jasper": {
+                    "Name": "Jasper",
+                    "LovedTags": [
+                        "Stardrop Sorbet",
+                        "Cappucino Mousse Cake",
+                        "Ice Cream Sandwich"
+                    ],
+                    "LikedTags": [
+                        "Sweet"
+                    ],
+                    "DislikedTags": [
+                        "Kale Smoothie",
+                        "Salted Peanuts"
+                    ]
+                },
+                "JadeMalic": {
+                    "Name": "JadeMalic",
+                    "LovedTags": [
+                        "Stardrop Sorbet",
+                        "Cappuccino Mousse Cake",
+                        "Jawbreaker",
+                        "Rock Candy"
+                    ],
+                    "LikedTags": [
+                        "Apple Slices",
+                        "Ice Cream Sandwich",
+                        "Popcorn",
+                        "Chocolate Popcorn",
+                        "Cotton Candy",
+                        "Fries",
+                        "Hummus Snack Pack",
+                        "Jasmine Tea",
+                        "Kale Smoothie",
+                        "Panzanella Salad",
+                        "Salted Peanuts",
+                        "Sour Slimes",
+                        "Star Cookie",
+                        "Truffle Popcorn"
+                    ],
+                    "DislikedTags": [
+                        "Black Licorice",
+                        "Joja Cola",
+                        "JojaCorn",
+                        "Nachos",
+                        "Personal Pizza",
+                        "Salmon Burger"
+                    ]
+                },
+                "TristanLK": {
+                    "Name": "TristanLK",
+                    "LovedTags": [
+                        "Fries",
+                        "Personal Pizza",
+                        "Salmon Burger",
+                        "Stardrop Sorbet"
+                    ],
+                    "LikedTags": [
+                        "Ice Cream Sandwich",
+                        "Nachos",
+                        "Hummus Snack Pack"
+                    ],
+                    "DislikedTags": [
+                        "Jawbreaker",
+                        "Kale Smoothie",
+                        "Panzanella Salad"
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/MoviesReactions",
+            "Entries": {
+                "LittleGruff": {
+                    "NPCName": "LittleGruff",
+                    "Reactions": [
+                        {
+                            "Tag": "*",
+                            "Response": "Like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.LittleGruff.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.LittleGruff.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.LittleGruff.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        }
+                    ]
+                },
+                "LadySheba": {
+                    "NPCName": "LadySheba",
+                    "Reactions": [
+                        {
+                            "Tag": "*",
+                            "Response": "Dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.ladysheba.1.{{CatTalk}} }}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.ladysheba.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.ladysheba.3.{{CatTalk}} }}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        }
+                    ]
+                },
+                "DuckNPC": {
+                    "NPCName": "DuckNPC",
+                    "Reactions": [
+                        {
+                            "Tag": "*",
+                            "Response": "Dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.theemperor.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.theemperor.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.theemperor.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        }
+                    ]
+                },
+                "Duck2NPC": {
+                    "NPCName": "Duck2NPC",
+                    "Reactions": [
+                        {
+                            "Tag": "*",
+                            "Response": "Like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.theempress.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.theempress.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.theempress.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        }
+                    ]
+                },
+                "DaleWaede": {
+                    "NPCName": "DaleWaede",
+                    "Reactions": [
+                        {
+                            "Tag": "classic",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.DaleWaede.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.DaleWaede.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.DaleWaede.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.DaleWaede.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.DaleWaede.5}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.DaleWaede.6}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.DaleWaede.7}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.DaleWaede.8}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "MichaelHart": {
+                    "NPCName": "MichaelHart",
+                    "Reactions": [
+                        {
+                            "Tag": "classic",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.MichaelHart.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.MichaelHart.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.MichaelHart.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "action",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.MichaelHart.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.MichaelHart.5}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.MichaelHart.6}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.MichaelHart.7}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.MichaelHart.8}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "EdithHart": {
+                    "NPCName": "EdithHart",
+                    "Reactions": [
+                        {
+                            "Tag": "classic",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EdithHart.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.EdithHart.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EdithHart.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "action",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EdithHart.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.EdithHart.5}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EdithHart.6}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EdithHart.7}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EdithHart.8}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "EthanHart": {
+                    "NPCName": "EthanHart",
+                    "Reactions": [
+                        {
+                            "Tag": "comedy", //Sapling/Wumbus/
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.EthanHart.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "horror",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.EthanHart.5}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.6}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "classic", //
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.7}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.EthanHart.8}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.9}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.10}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.EthanHart.11}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "CorwinLK": {
+                    "NPCName": "CorwinLK",
+                    "Reactions": [
+                        {
+                            "Tag": "summer_movie_2", //Prairie King
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.CorwinLK.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.CorwinLK.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.CorwinLK.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.CorwinLK.4}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.CorwinLK.5}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Eyvinder": {
+                    "NPCName": "Eyvinder",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_2", //Natural Wonders
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eyvinder.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.eyvinder.2}}\"",
+                                    "Text": "{{i18n:movies.eyvinder.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eyvinder.4.{{genderneutral}} }}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eyvinder.5}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eyvinder.6}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Beatrice": {
+                    "NPCName": "Beatrice",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_2", //Natural Wonders
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.beatrice.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.beatrice.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.beatrice.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "horror", //horror movies
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.beatrice.5}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.beatrice.6}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.beatrice.7}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.beatrice.8}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.beatrice.9}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "VivienneLK": {
+                    "NPCName": "VivienneLK",
+                    "Reactions": [
+                        {
+                            "Tag": "winter_movie_1", //Zuzu Express
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.viviennelk.2}}\"",
+                                    "Text": "{{i18n:movies.viviennelk.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_0", //Prarie King
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.5}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.viviennelk.6}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.7}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "winter_movie_0", //Coldstar Ranch
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.8}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.9}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "fall_movie_1", //Howls in the rain
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.10}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.viviennelk.11}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.12}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.13}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.viviennelk.14}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "ToriLK": {
+                    "NPCName": "ToriLK",
+                    "Reactions": [
+                        {
+                            "Tag": "classic", //Zuzu Express
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.torilk.2}}\"",
+                                    "Text": "{{i18n:movies.torilk.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.8}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.torilk.15}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.9}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "spring_movie_1", //Brave Sapling
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.10}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.torilk.11}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.12}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.13}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.torilk.14}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "KatarynaLK": {
+                    "NPCName": "KatarynaLK",
+                    "Reactions": [
+                        {
+                            "Tag": "fall_movie_1", //howls in the rain
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.katarynalk.2}}\"",
+                                    "Text": "{{i18n:movies.katarynalk.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "spring_movie_0", //Little Sapling
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.5}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.katarynalk.6}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.7}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "spring_movie_1", //Natural Wonders
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.8}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.9}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "summer_movie_1", //Wumbus
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.10}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.katarynalk.11}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.12}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.13}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.katarynalk.14}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Jacob": {
+                    "NPCName": "Jacob",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.jacob.2}}\"",
+                                    "Text": "{{i18n:movies.jacob.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.5}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.jacob.6}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.7}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "comedy",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.8}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.9}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.10}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.jacob.11}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.12}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.13}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jacob.14}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Aideen": {
+                    "NPCName": "Aideen",
+                    "Reactions": [
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.0}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.1}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.2}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.3}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/Message \"{{i18n:movies.aideen.4}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.5}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.6}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/Message \"{{i18n:movies.aideen.7}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.8}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.9}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.aideen.10}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Eloise": {
+                    "NPCName": "Eloise",
+                    "Reactions": [
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "comedy",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/Message \"{{i18n:movies.eloise.5}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.6}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.7}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.8}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.9}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.10}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.eloise.11}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Leximonster": {
+                    "NPCName": "Leximonster",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "sprout_leave",
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.5}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.6}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.7}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.8}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.lexi.9}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "JosephineK": {
+                    "NPCName": "JosephineK",
+                    "Reactions": [
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.josephine.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "comedy",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.5}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.6}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.josephine.7}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.8}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.9}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.josephine.10}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "OliverK": {
+                    "NPCName": "OliverK",
+                    "Reactions": [
+                        {
+                            "Tag": "horror",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.oliver.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.5}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "classic",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.6}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.oliver.7}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.8}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.9}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.oliver.10}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Rosa": {
+                    "NPCName": "Rosa",
+                    "Reactions": [
+                        {
+                            "Tag": "romance",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.rosa.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.5}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.6}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.rosa.7}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.8}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.9}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.rosa.10}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "Juliet": {
+                    "NPCName": "Juliet",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_0",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "sprout_leave",
+                                    "Script": "/message \"{{i18n:movies.juliet.2}}\"",
+                                    "Text": "{{i18n:movies.juliet.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "fall_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.5}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote Juliet 20",
+                                    "Text": "{{i18n:movies.juliet.6}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.7}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "fall_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.8}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote Juliet 20",
+                                    "Text": "{{i18n:movies.juliet.9}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.10}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.11}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.juliet.12}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.13}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{GenericMovieDialogue}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.juliet.14}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                //Jessie Movie Tastes
+                "Jessie": {
+                    "NPCName": "Jessie",
+                    "Reactions": [
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.jessie.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "fall_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.4}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.jessie.5}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.6}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "fall_movie_0",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.7}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.8}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.9}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jessie.10}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        }
+                    ]
+                },
+                "JadeMalic": {
+                    "NPCName": "JadeMalic",
+                    "Reactions": [
+                        { // brave little sapling
+                            "Tag": "spring_movie_0",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.spring_movie_0}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "sprout_leave",
+                                    "Script": "{{i18n:jade.movies.during.spring_movie_0.script}}",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.spring_movie_0}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        { // prairie king
+                            "Tag": "summer_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.summer_movie_0}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "",
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.summer_movie_0}}"
+                                }
+                            },
+                            "ID": "reaction_summer_movie_0"
+                        },
+                        { // mysterium
+                            "Tag": "fall_movie_0",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.fall_movie_0}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote JadeMalic 16 /message \"{{i18n:jade.movies.during.fall_movie_0.script}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.fall_movie_0}}"
+                                }
+                            },
+                            "ID": "reaction_fall_movie_0"
+                        },
+                        { // coldstar ranch
+                            "Tag": "winter_movie_0",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.winter_movie_0}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote JadeMalic 16",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.winter_movie_0}}"
+                                }
+                            },
+                            "ID": "reaction_winter_movie_0"
+                        },
+                        { // natural wonders
+                            "Tag": "spring_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.spring_movie_1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote JadeMalic 20",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.spring_movie_1}}"
+                                }
+                            },
+                            "ID": "reaction_spring_movie_1"
+                        },
+                        { // wumbus
+                            "Tag": "summer_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.summer_movie_1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote JadeMalic 24",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.summer_movie_1}}"
+                                }
+                            },
+                            "ID": "reaction_summer_movie_1"
+                        },
+                        { // howls in the rain
+                            "Tag": "fall_movie_1",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.fall_movie_1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/emote JadeMalic 16",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.fall_movie_1}}"
+                                }
+                            },
+                            "ID": "reaction_fall_movie_1"
+                        },
+                        { // zuzu express
+                            "Tag": "winter_movie_1",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.winter_movie_1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.winter_movie_1}}"
+                                }
+                            },
+                            "ID": "reaction_winter_movie_1"
+                        },
+                        { // wildcard
+                            "Tag": "*",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.before.generic}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:jade.movies.after.generic}}"
+                                }
+                            },
+                            "ID": "reaction_generic_movie"
+                        }
+                    ]
+                },
+                "KeanuAvis": {
+                    "NPCName": "KeanuAvis",
+                    "Reactions": [
+
+                        {
+                            "Tag": "summer_movie_0",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.keanu.1.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.keanu.1.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.keanu.1.3}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "summer_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.keanu.2.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.keanu.2.2}}\"",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.keanu.2.3}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "like",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.keanu.3.1}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.keanu.3.2}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                    ]
+                },
+                "Jasper": {
+                    "NPCName": "Jasper",
+                    "Reactions": [
+                        {
+                            "Tag": "documentary",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": null,
+                            "ID": "reaction_0"
+                        },
+                        {
+                            "Tag": "horror",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": null,
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jasper.2.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.jasper.2.2}}\"",
+                                    "Text": "{{i18n:movies.jasper.2.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jasper.2.1}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "fall_movie_0",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jasper.4.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/shake Jasper 1000/pause 500/message \"{{i18n:movies.jasper.4.2}}\"",
+                                    "Text": null
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "/message \"{{i18n:movies.jasper.4.3}}\"",
+                                    "Text": "{{i18n:movies.jasper.4.4}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "like",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jasper.5.1}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jasper.5.2}}"
+                                }
+                            },
+                            "ID": "reaction_5"
+                        },
+                        {
+                            "Tag": "dislike",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jasper.6.1}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.jasper.6.2}}"
+                                }
+                            },
+                            "ID": "reaction_6"
+                        }
+                    ]
+                }
+            }
+        },
+        { //Adds spouse strings for the movie theater
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Invited_Eyvinder": "{{i18n:movies.eyvinder.invite}}",
+                "MovieInvite_Spouse_Jasper": "{{i18n:movies.jasper.spouse.invite}}",
+                "MovieInvite_Spouse_KatarynaLK": "{{i18n:movies.katarynalk.spouse.invite}}",
+                "MovieInvite_Spouse_Aideen": "{{i18n:movies.aideen.spouse.invite}}",
+                "MovieInvite_Spouse_Juliet": "{{i18n:movies.juliet.spouse.invite.{{random:a,b,c}} }}",
+                "MovieInvite_Invited_LittleGruff": "{{i18n:movies.littlegruff.invite}}",
+                "MovieInvite_Invited_LadySheba": "{{i18n:movies.ladysheba.invite.{{cattalk}} }}",
+                "MovieInvite_Invited_DuckNPC": "{{i18n:movies.theEmperor.invite}}",
+                "MovieInvite_Invited_Duck2NPC": "{{i18n:movies.theEmpress.invite}}",
+            }
+        },
+        { //Adds spouse strings for the movie theater
+            "Action": "EditData",
+            "Target": "Strings/Characters",
+            "Entries": {
+                "MovieInvite_Spouse_Jasper": "{{i18n:movies.jasper.spouse.kids}}"
+            },
+            "When": {
+                "HasSeenEvent": "5599009"
+            }
+        },
+        {
+            "LogName": "Movie Theatre Default",
+            "Action": "EditData",
+            "Target": "Data/MoviesReactions",
+            "When": {
+                "EnableTristan": true
+            },
+            "Entries": {
+                "TristanLK": {
+                    "NPCName": "TristanLK",
+                    "Reactions": [
+                        {
+                            "Tag": "*",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.0.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "{{i18n:movies.0.tris.2}}",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.0.tris.3}}"
+                                }
+                            },
+                            "ID": "reaction_0"
+                        },
+                        {
+                            "Tag": "spring_movie_0",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.1.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": "sprout_leave",
+                                    "Script": "{{i18n:movies.1.tris.2}}",
+                                    "Text": "{{i18n:movies.1.tris.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.1.tris.4}}"
+                                }
+                            },
+                            "ID": "reaction_1"
+                        },
+                        {
+                            "Tag": "spring_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.2.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "{{i18n:movies.2.tris.2}}",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.2.tris.3}}"
+                                }
+                            },
+                            "ID": "reaction_2"
+                        },
+                        {
+                            "Tag": "winter_movie_0",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.3.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "{{i18n:movies.3.tris.2}}",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.3.tris.3}}"
+                                }
+                            },
+                            "ID": "reaction_3"
+                        },
+                        {
+                            "Tag": "summer_movie_1",
+                            "Response": "love",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.4.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.4.tris.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.4.tris.3}}"
+                                }
+                            },
+                            "ID": "reaction_4"
+                        },
+                        {
+                            "Tag": "fall_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.5.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "{{i18n:movies.5.tris.2}}",
+                                    "Text": "{{i18n:movies.5.tris.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.5.tris.4}}"
+                                }
+                            },
+                            "ID": "reaction_5"
+                        },
+                        {
+                            "Tag": "winter_movie_1",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.6.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "{{i18n:movies.6.tris.2}}",
+                                    "Text": ""
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.6.tris.3}}"
+                                }
+                            },
+                            "ID": "reaction_6"
+                        },
+                        {
+                            "Tag": "summer_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.7.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "{{i18n:movies.7.tris.2}}",
+                                    "Text": "{{i18n:movies.7.tris.3}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.7.tris.4}}"
+                                }
+                            },
+                            "ID": "reaction_7"
+                        },
+                        {
+                            "Tag": "fall_movie_1",
+                            "Response": "dislike",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.8.tris.1}}"
+                                },
+                                "DuringMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.8.tris.2}}"
+                                },
+                                "AfterMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.8.tris.3}}"
+                                }
+                            },
+                            "ID": "reaction_8"
+                        },
+                        {
+                            "Tag": "seen_love",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.9.tris.1}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": null
+                            },
+                            "ID": "reaction_9"
+                        },
+                        {
+                            "Tag": "seen_like",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.10.tris.1}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": null
+                            },
+                            "ID": "reaction_10"
+                        },
+                        {
+                            "Tag": "seen_dislike",
+                            "Response": "like",
+                            "Whitelist": [],
+                            "SpecialResponses": {
+                                "BeforeMovie": {
+                                    "ResponsePoint": null,
+                                    "Script": "",
+                                    "Text": "{{i18n:movies.11.tris.1}}"
+                                },
+                                "DuringMovie": null,
+                                "AfterMovie": null
+                            },
+                            "ID": "reaction_11"
+                        }
+                    ]
+                }
+            }
+        },
+    ]
+}

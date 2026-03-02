@@ -1,0 +1,11 @@
+{
+   "Name": "Lun's Paths",
+   "Author": "lunink",
+   "Version": "1.1.0",
+   "Description": "Retextures of the paths and floorings",
+   "UniqueID": "lunink.flooring",
+   "UpdateKeys": ["Nexus:30779"],
+   "ContentPackFor": {
+      "UniqueID": "Pathoschild.ContentPatcher"
+   },
+}

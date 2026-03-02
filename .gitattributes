@@ -1,0 +1,9 @@
+# Mark binary files
+*.dll binary
+*.png binary
+*.xnb binary
+*.tbin binary
+*.tmx binary
+*.ogg binary
+*.wav binary
+*.mp3 binary

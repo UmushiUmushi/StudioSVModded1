@@ -1,0 +1,9 @@
+{
+  "Name": "Sandy Sprinklers",
+  "Author": "bork",
+  "Version": "1.0.0",
+  "Description": "Allows sprinklers to be placed on sand at the Beach, Ginger Island, and Beach Farm.",
+  "UniqueID": "bork.SandySprinklers",
+  "EntryDll": "SandySprinklers.dll",
+  "MinimumApiVersion": "4.0.0"
+}

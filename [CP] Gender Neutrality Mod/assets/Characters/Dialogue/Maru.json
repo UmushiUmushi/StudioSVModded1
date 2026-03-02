@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Maru",
+			"Entries":
+				{
+					"married_Sebastian": "Hey, I guess we're family now!$h#$e#I'm glad that Sebastian found a way out of the basement...#$e#I wish you two all the best!"
+				},
+			"LogName":"Fix Maru"
+		}
+	]
+}

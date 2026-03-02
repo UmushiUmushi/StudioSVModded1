@@ -1,0 +1,21 @@
+{
+  "Color": "Teal",
+  "Color Island": "Island",
+  "Map Tiles Transparency": "Mixed",
+  "White water lines": "true",
+  "White water lines Bath House": "true",
+  "Caves": "true",
+  "Caves White water lines": "true",
+  "Sewers": "true",
+  "Sewers White water lines": "true",
+  "Fountain": "true",
+  "Fountain White water lines": "true",
+  "Fill bridge holes": "true",
+  "Witch Swamp": "Green",
+  "Mutant Bug Lair": "Dark",
+  "Desert": "true",
+  "Fish pond": "true",
+  "Caves mode": "Default",
+  "Waterfalls mode": "Replace",
+  "Beach Farm sand": "true"
+}

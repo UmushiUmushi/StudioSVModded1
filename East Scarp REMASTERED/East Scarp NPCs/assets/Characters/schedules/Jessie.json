@@ -1,0 +1,124 @@
+{
+    "Changes": [
+        {
+            "LogName": "Schedule",
+            "Action": "Load",
+            "Target": "Characters/schedules/Jessie",
+            "FromFile": "assets/blank.json"
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "When": {
+                "HasSeenEvent |contains=191393": false
+            },
+            "Entries": {
+                "rain": "630 EastScarp_JessieHouse 17 19 0/700 EastScarp_JessieHouse 20 19 2/1100 EastScarp_JessieHouse 8 15 2/1300 EastScarp_Village 49 130 2/1800 EastScarp_JessieHouse 18 19 2/2300 EastScarp_JessieHouse 17 4 1",
+                "spring_15": "610 EastScarp_JessieHouse 18 19 2/a850 JojaMart 9 25 1 Jessie_work/2100 EastScarp_JessieHouse 17 4 1",
+                "spring": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 EastScarp_Village 9 45 1 Jessie_waterL/a1700 JojaMart 9 25 1 Jessie_work/2300 EastScarp_JessieHouse 17 4 1",
+                "Mon": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 9 45 1 Jessie_waterL/1200 55 53 1 Jessie_waterR/1300 46 53 3 Jessie_waterL/1400 37 52 0/a1700 JojaMart 9 25 1 Jessie_work/2300 EastScarp_JessieHouse 17 4 1",
+                "Tue": "610 EastScarp_JessieHouse 18 19 2/1000 SeedShop 15 23 0/1230 SeedShop 21 20 0 Jessie_exercise/a1700 JojaMart 9 25 1 Jessie_work/2300 EastScarp_JessieHouse 17 4 1",
+                "Thu": "GOTO Mon",
+                "Sat": "610 EastScarp_JessieHouse 18 19 2/a850 JojaMart 9 25 1 Jessie_work/2300 EastScarp_JessieHouse 17 4 1",
+                "Sun": "610 EastScarp_JessieHouse 18 19 2/a850 JojaMart 9 25 1 Jessie_work/1700 Town 46 32 2/2100 EastScarp_JessieHouse 17 4 1",
+                "summer": "GOTO spring",
+                "fall": "GOTO spring",
+                "winter": "GOTO spring",
+                "JojaMart_Replacement": "EastScarp_JessieHouse 7 15 0",
+                "GreenRain": "0 EastScarp_VillageInn 16 31 0"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "When": {
+                "HasSeenEvent:hostPlayer |contains=50709915": true,
+                "HasSeenEvent:hostPlayer |contains=50709930": false,
+                "HasSeenEvent |contains=191393": false
+            },
+            "Entries": {
+                "Fri": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 EastScarp_Village 27 60 2/a1700 JojaMart 9 25 1 Jessie_work/2300 EastScarp_JessieHouse 17 4 1",
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "When": {
+                "HasSeenEvent |contains=191393": true
+            },
+            "Entries": { //Jessie Joja Closed
+                "rain": "630 EastScarp_JessieHouse 17 19 0/700 EastScarp_JessieHouse 20 19 2/1100 EastScarp_JessieHouse 8 15 2/1300 EastScarp_Village 49 130 2/1800 EastScarp_JessieHouse 18 19 2/2300 EastScarp_JessieHouse 17 4 1",
+                "spring": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 EastScarp_Village 9 45 1 Jessie_waterL/1700 EastScarp_JessieHouse 17 19 2/2000 EastScarp_JessieHouse 17 4 1",
+                "Mon": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 9 45 1 Jessie_waterL/1200 EastScarp_Village 55 53 1 Jessie_waterR/1300 EastScarp_Village 46 53 3 Jessie_waterL/1400 EastScarp_Village 37 52 0/1800 EastScarp_JessieHouse 18 19 2/2300 EastScarp_JessieHouse 17 4 1",
+                "Tue": "610 EastScarp_JessieHouse 18 19 2/1000 SeedShop 15 23 0/1230 SeedShop 21 20 0 Jessie_exercise/1500 EastScarp_JessieHouse 18 19 2/2300 EastScarp_JessieHouse 17 4 1",
+                "Thu": "GOTO Mon",
+                "summer_Mon": "MAIL Jessie_Vincent/GOTO Mon/610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 9 45 1 Jessie_waterL/1300 Beach 42 24 2/1900 EastScarp_JessieHouse 17 19 2/2200 EastScarp_JessieHouse 17 4 1",
+                "spring_Tue": "610 EastScarp_JessieHouse 18 19 2/1000 SeedShop 15 23 0/1230 Mountain 29 8 2/1900 EastScarp_JessieHouse 7 15 0/2200 EastScarp_JessieHouse 17 4 1",
+                "spring_Thu": "GOTO spring_Tue",
+                "summer": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 Mountain 29 10 0/2000 EastScarp_JessieHouse 17 4 1",
+                "fall": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 Forest 53 28 square_5_5/1900 EastScarp_JessieHouse 17 4 1 ",
+                //"Fri": "610 EastScarp_JessieHouse 18 19 2/900 Town 28 22 2/1500 EastScarp_ClearingHouse 16 9 3/1900 EastScarp_JessieHouse 17 4 1",
+                "Sat_A": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1000 EastScarp_Village 79 80 1/1400 EastScarp_Village 9 45 1 Jessie_waterL/1700 EastScarp_JessieHouse 7 15 0/2000 EastScarp_JessieHouse 17 4 1",
+                "Sun": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 49 130 2/1400 EastScarp_Village 9 45 1 Jessie_waterL/1700 EastScarp_JessieHouse 7 15 0/2000 EastScarp_JessieHouse 17 4 1",
+                "winter": "GOTO spring",
+                "JojaMart_Replacement": "EastScarp_JessieHouse 7 15 0",
+                "Sat":"MAIL EastScarp.SpecialOrders.ScarpGreenHouse_Complete/GOTO Sat_A/610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_CommunityGreenhouse 15 20 3 square_1_11_3/1300 EastScarp_CommunityGreenhouse 15 20 3 square_1_11_1/1400 EastScarp_CommunityGreenhouse 8 20 3 square_1_11_3/1500 EastScarp_CommunityGreenhouse 8 20 3 square_1_11_2/1600 EastScarp_CommunityGreenhouse 12 13 1/1800 EastScarp_JessieHouse 7 15 0/2000 EastScarp_JessieHouse 17 4 1"
+            }
+        },
+             {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "When": {
+                 "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Entries": { //Jessie Joja Closed
+                "rain": "630 EastScarp_JessieHouse 17 19 0/700 EastScarp_JessieHouse 20 19 2/1100 EastScarp_JessieHouse 8 15 2/1300 EastScarp_Village 49 130 2/1800 EastScarp_JessieHouse 18 19 2/2300 EastScarp_JessieHouse 17 4 1",
+                "spring": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 EastScarp_Village 9 45 1 Jessie_waterL/1700 EastScarp_JessieHouse 17 19 2/2000 EastScarp_JessieHouse 17 4 1",
+                "Mon": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 9 45 1 Jessie_waterL/1200 EastScarp_Village 55 53 1 Jessie_waterR/1300 EastScarp_Village 46 53 3 Jessie_waterL/1400 EastScarp_Village 37 52 0/1800 EastScarp_JessieHouse 18 19 2/2300 EastScarp_JessieHouse 17 4 1",
+                "Tue": "610 EastScarp_JessieHouse 18 19 2/1000 SeedShop 15 23 0/1230 EastScarp_Village 37 52 0/1500 EastScarp_JessieHouse 18 19 2/2300 EastScarp_JessieHouse 17 4 1",
+                "Thu": "GOTO Mon",
+                "summer_Mon": "MAIL Jessie_Vincent/GOTO Mon/610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 9 45 1 Jessie_waterL/1300 Beach 42 24 2/1900 EastScarp_JessieHouse 17 19 2/2200 EastScarp_JessieHouse 17 4 1",
+                "spring_Tue": "610 EastScarp_JessieHouse 18 19 2/1000 SeedShop 15 23 0/1230 Mountain 29 8 2/1900 EastScarp_JessieHouse 7 15 0/2200 EastScarp_JessieHouse 17 4 1",
+                "spring_Thu": "GOTO spring_Tue",
+                "summer": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 Mountain 29 10 0/2000 EastScarp_JessieHouse 17 4 1",
+                "fall": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 Forest 53 28 square_5_5/1900 EastScarp_JessieHouse 17 4 1 ",
+                //"Fri": "610 EastScarp_JessieHouse 18 19 2/900 Town 28 22 2/1500 EastScarp_ClearingHouse 16 9 3/1900 EastScarp_JessieHouse 17 4 1",
+                "Sat_A": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 EastScarp_Village 9 45 1 Jessie_waterL/1700 EastScarp_JessieHouse 7 15 0/2000 EastScarp_JessieHouse 17 4 1",
+                "Sun": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 49 130 2/1400 EastScarp_Village 9 45 1 Jessie_waterL/1700 EastScarp_JessieHouse 7 15 0/2000 EastScarp_JessieHouse 17 4 1",
+                "winter": "GOTO spring",
+                "JojaMart_Replacement": "EastScarp_JessieHouse 7 15 0",
+                "Sat":"MAIL EastScarp.SpecialOrders.ScarpGreenHouse_Complete/GOTO Sat_A/610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_CommunityGreenhouse 15 20 3 square_1_11_3/1600 EastScarp_CommunityGreenhouse 12 13 1/1800 EastScarp_JessieHouse 7 15 0/2000 EastScarp_JessieHouse 17 4 1"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "When": {
+                "HasSeenEvent:hostPlayer |contains=50709915": true,
+                "HasSeenEvent:hostPlayer |contains=50709930": false,
+                "HasSeenEvent |contains=191393": true
+            },
+            "Entries": {
+                "Fri": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 23 49 2/1400 EastScarp_Village 27 60 2/1600 EastScarp_JessieHouse 17 19 2/2000 EastScarp_JessieHouse 17 4 ",
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jessie",
+            "Entries": {
+                "summer": "610 EastScarp_JessieHouse 18 19 2/900 EastScarp_Village 35 51 1 Jessie_waterR/1100 EastScarp_Village 9 45 1 Jessie_waterL/1400 Mountain 29 8 2/2000 EastScarp_JessieHouse 17 4 1"
+            },
+            "When": {
+                "HasSeenEvent |contains=191393": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false,
+                "HasMod": "DSVTeam.DiverseSeasonalOutfits, DSVTeam.Marigold"
+            }
+        },
+    ]
+}

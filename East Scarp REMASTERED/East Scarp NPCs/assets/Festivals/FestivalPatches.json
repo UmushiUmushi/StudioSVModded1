@@ -1,0 +1,266 @@
+{
+    "Changes": [
+        // F E S T I V A L    P A T C H E S
+        //Festival Patches
+        {
+            "LogName": "Flower Dance Test",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-FlowerFestival, Maps/Forest-FlowerFestival2",
+            "FromFile": "assets/Maps/Festivals/ES_FlowerFestival.tmx",
+            "ToArea": {
+                "X": 45,
+                "Y": 29,
+                "Width": 23,
+                "Height": 21
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Luau Y1",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Luau",
+            "FromFile": "assets/Maps/Festivals/ES_Luau.tmx",
+            "ToArea": {
+                "X": 32,
+                "Y": 31,
+                "Width": 22,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Luau Y2",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Luau2",
+            "FromFile": "assets/Maps/Festivals/ES_Luau2.tmx",
+            "ToArea": {
+                "X": 32,
+                "Y": 31,
+                "Width": 22,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Moonlight Jellies Y1",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Jellies",
+            "FromFile": "assets/Maps/Festivals/ES_Jellies.tmx",
+            "ToArea": {
+                "X": 85,
+                "Y": 32,
+                "Width": 19,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Moonlight Jellies too corner patch",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Jellies, Maps/Beach-Jellies2",
+            "FromFile": "assets/Maps/Festivals/Jellies_Trenton.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "ToArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 8,
+                "Height": 8
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Fair Y1",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Fair",
+            "FromFile": "assets/Maps/Festivals/TownFair_Patch.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "ToArea": {
+                "X": 63,
+                "Y": 63,
+                "Width": 1,
+                "Height": 1
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Moonlight Jellies Y2",
+            "Action": "EditMap",
+            "Target": "Maps/Beach-Jellies2",
+            "FromFile": "assets/Maps/Festivals/ES_Jellies2.tmx",
+            "ToArea": {
+                "X": 85,
+                "Y": 32,
+                "Width": 19,
+                "Height": 18
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Spirits Eve",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "assets/Maps/Festivals/ES_SpiritsEve.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "MapProperties",
+                        "Light"
+                    ],
+                    "Value": "38 56 4 47 57 4 47 63 4",
+                    "Delimiter": " "
+                }
+            ],
+            "FromArea": {
+                "X": 38,
+                "Y": 50,
+                "Width": 11,
+                "Height": 16
+            },
+            "ToArea": {
+                "X": 38,
+                "Y": 50,
+                "Width": 11,
+                "Height": 16
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Spirits Eve",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Halloween",
+            "FromFile": "assets/Maps/Festivals/ES_RSVHalloween.tmx",
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "ToArea": {
+                "X": 16,
+                "Y": 56,
+                "Width": 5,
+                "Height": 2
+            },
+            "PatchMode": "Overlay"
+        },
+        
+        {
+            "LogName": "Ice Festival Snow Slime",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-IceFestival",
+            "FromFile": "assets/Maps/Festivals/ES_IceFestival_SnowSlime.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "ToArea": {
+                "X": 94,
+                "Y": 31,
+                "Width": 1,
+                "Height": 2
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Ice Festival Coffee Cart",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-IceFestival",
+            "FromFile": "assets/Maps/Festivals/ES_IceFestival_CoffeeCart.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "ToArea": {
+                "X": 53,
+                "Y": 11,
+                "Width": 4,
+                "Height": 4
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Ice Festival",
+            "Action": "EditMap",
+            "Target": "Maps/Forest-IceFestival",
+            "FromFile": "assets/Maps/Festivals/ES_IceFestival_SnowSlime.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "ToArea": {
+                "X": 95,
+                "Y": 27,
+                "Width": 1,
+                "Height": 2
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "Winterstar",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas, Maps/Town-Christmas2",
+            "FromFile": "assets/Maps/Festivals/ES_WinterStar.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "ToArea": {
+                "X": 9,
+                "Y": 59,
+                "Width": 6,
+                "Height": 17
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Solstice",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas, Maps/Town-Christmas2",
+            "FromFile": "assets/Maps/Festivals/ES_WinterStar_Solstice.tmx",
+            "When": {
+                "HasMod": "Airyn.CPSolsticeWinterStar"
+            },
+            "ToArea": {
+                "X": 9,
+                "Y": 59,
+                "Width": 6,
+                "Height": 17
+            },
+            "PatchMode": "Overlay"
+        },
+        {
+            "LogName": "WinterStar SVE",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas",
+            "FromFile": "assets/Maps/Festivals/ES_SVE_WinterStar.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "ToArea": {
+                "X": 9,
+                "Y": 66,
+                "Width": 5,
+                "Height": 8
+            },
+            "PatchMode": "Replace"
+        },
+        {
+            "LogName": "Winterstar SVE 2",
+            "Action": "EditMap",
+            "Target": "Maps/Town-Christmas2",
+            "FromFile": "assets/Maps/Festivals/ES_WinterStar.tmx",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "ToArea": {
+                "X": 9,
+                "Y": 59,
+                "Width": 6,
+                "Height": 17
+            },
+            "PatchMode": "Replace"
+        }
+    ]
+}

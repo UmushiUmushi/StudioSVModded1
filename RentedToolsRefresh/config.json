@@ -1,0 +1,7 @@
+{
+  "ModEnabled": true,
+  "AllowRentBasicLevelTool": true,
+  "AllowRentCurrentLevelTool": false,
+  "RentalFee": 100,
+  "ApplyFeeToBasicLevel": true
+}

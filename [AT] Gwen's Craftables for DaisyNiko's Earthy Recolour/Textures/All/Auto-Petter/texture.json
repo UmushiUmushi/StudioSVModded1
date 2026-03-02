@@ -1,0 +1,14 @@
+{
+	"ItemName": "Auto-Petter",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors",
+		"Keywords": ["Indoors"],
+		},
+	]
+}

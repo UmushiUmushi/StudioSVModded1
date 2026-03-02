@@ -1,0 +1,66 @@
+{
+  "Format": "2.0.0",
+  "ConfigSchema": {
+	 "Set Silo Capacity": {
+	  "AllowValues": "Custom, Chest x9 , Big Chest x9 , Big Shed, No Change , 10 Thousand , 1 Million",
+      "Default": "10 Thousand",
+	  "Section": "Custom Silo Capacity",
+	  "Description": "The amount of hay you want the silo to be able to hold. Chest x9 and Big Chest x9 set the value to how much hay could be held if put into that many chests. The Big Shed option is the same as 204 Big Chests."
+    },
+	"Custom Silo Capacity": {
+      "Default": "50000",
+	  "Section": "Custom Silo Capacity",
+	  "Description": "The value you want the silo capacity to be, only if the above option is set to 'Custom'."
+    }
+  },
+    "Changes": [
+	{
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Silo": {"HayCapacity": "35964"}
+      },
+	  "When": {"Set Silo Capacity": "Chest x9" },	
+    },
+	{
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Silo": {"HayCapacity": "69930"}
+      },
+	  "When": {"Set Silo Capacity": "Big Chest x9" },	
+    },
+	{
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Silo": {"HayCapacity": "14265720"}
+      },
+	  "When": {"Set Silo Capacity": "Big Shed" },	
+    },
+	{
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Silo": {"HayCapacity": "10000"}
+      },
+	  "When": {"Set Silo Capacity": "10 Thousand" },	
+    },
+	{
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Silo": {"HayCapacity": "1000000"}
+      },
+	  "When": {"Set Silo Capacity": "1 Million" },	
+    },
+    {
+      "Action": "EditData",
+      "Target": "Data/Buildings",
+      "Fields": {
+        "Silo": {"HayCapacity": "{{Custom Silo Capacity}}"}
+      },
+	  "When": {"Set Silo Capacity": "Custom" },	
+    }
+    ]
+}

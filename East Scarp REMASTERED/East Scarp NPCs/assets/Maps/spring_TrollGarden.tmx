@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="1">
+ <tileset firstgid="1" name="z_ancientFlower" tilewidth="16" tileheight="16" tilecount="96" columns="8">
+  <image source="serruria.png" width="128" height="192"/>
+ </tileset>
+ <tileset firstgid="97" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <layer id="3" name="Buildings" width="12" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,76,0,
+0,0,0,0,77,48,0,14,12,13,0,12,
+0,13,12,13,0,0,0,11,12,0,0,0,
+0,12,11,75,13,15,14,0,0,0,0,0,
+13,0,77,0,0,0,0,0,0,0,0,0,
+76,15,0,0,0,184,0,0,0,0,0,0,
+64,12,0,0,0,0,0,0,0,0,0,0,
+77,0,0,11,0,0,0,0,0,0,0,0,
+0,48,14,0,0,0,0,0,0,0,0,0,
+0,11,0,12,0,14,76,0,0,0,0,0,
+77,0,0,0,11,64,75,0,0,0,0,0,
+0,0,0,13,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="11" name="Paths" width="12" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="7" name="Front" width="12" height="12">
+  <data encoding="csv">
+0,0,0,0,0,40,0,6,0,5,0,0,
+0,5,0,5,0,0,0,0,0,0,0,0,
+0,0,0,0,5,7,6,0,0,0,0,0,
+5,0,0,0,0,0,0,0,0,0,0,0,
+0,7,0,0,0,0,0,0,0,0,0,0,
+56,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,40,6,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,6,0,0,0,0,0,0,
+0,0,0,0,0,56,0,0,0,0,0,0,
+0,0,0,5,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+</map>

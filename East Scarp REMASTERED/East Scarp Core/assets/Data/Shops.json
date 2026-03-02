@@ -1,0 +1,2720 @@
+{
+    "Changes": [
+        // 
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Lemurkat.EastScarp_LexiShop": {
+                    "Owners": [
+                        {
+                            "Name": "Leximonster",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Current 57872007",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.Lexishop_Default",
+                                    "Dialogue": "{{i18n:LexiShop.dialogue}}"
+                                }
+                            ],
+                            //"ClosedMessage": "{{i18n:LexiShop.closed}}"
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade1",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            //"AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)152",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade2",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            // "ItemId": "(O)152",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade3",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            //"ItemId": "(O)152",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_StrawberryTrade4",
+                            "Price": 0,
+                            "TradeItemId": "(O)400",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)152",
+                                "(O)814",
+                                "(O)393",
+                                "(O)397",
+                                "(O)394",
+                                "(O)586",
+                                "(O)717",
+                                "(O)715"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_MelonTrade1",
+                            "Price": 0,
+                            "TradeItemId": "(O)254",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)543",
+                                "(O)560",
+                                "(O)577",
+                                "(O)275",
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_MelonTrade2",
+                            "Price": 0,
+                            "TradeItemId": "(O)254",
+                            "TradeItemAmount": 1,
+                            "AvoidRepeat": true,
+                            "AvailableStock": 1,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)543",
+                                "(O)560",
+                                "(O)577",
+                                "(O)275",
+                            ]
+                        }
+                    ]
+                },
+                "Lemurkat.EastScarp_InnShop": {
+                    "Owners": [
+                        {
+                            "Name": "None",
+                            "Id": "Closed",
+                            "Dialogues": null,
+                            "ClosedMessage": "{{i18n:InnShop.closed}}"
+                        },
+                        {
+                            "Name": "Rosa",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.CoffeeShop",
+                                    "Dialogue": "{{i18n:InnShop.rosa.dialogue}}"
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "EdithHart",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.CoffeeShop",
+                                    "Dialogue": "{{i18n:InnShop.edithhart.dialogue}}"
+                                }
+                            ]
+                        },
+                        /*  {
+                            "Name": "Rosa",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.InnShop_Rosa",
+                                    "Dialogue": "{{i18n:InnShop.rosa.dialogue}}"
+                                },
+                            ],
+                        },
+                       {
+                            "Name": "MichalIB",
+                           // "ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.InnShop_Michal",
+                                    "Dialogue": "{{i18n:InnShop.michal.dialogue}}"
+                                }
+                            ]
+                        },*/
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_bread",
+                            "AvailableStock": 1,
+                            "Price": 100,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)216",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Scarp_Warp_Totem",
+                            "AvailableStock": 1,
+                            "Price": 250,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)EastScarp_Scarp_Warp_Totem",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Scarp_Warp_Totem_recipe",
+                            "AvailableStock": 1,
+                            "Price": 1250,
+                            "AvailableStockLimit": "Player",
+                            "IsRecipe": true,
+                            "ItemId": "(O)EastScarp_Scarp_Warp_Totem",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_GlassTile_recipe",
+                            "AvailableStock": 1,
+                            "Price": 750,
+                            "AvailableStockLimit": "Player",
+                            "IsRecipe": true,
+                            "ItemId": "(O)Lemurkat.EastScarp_GlassTile",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_cofeeOrcookie",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)395",
+                                "(O)223"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_bakedgoods",
+                            "AvailableStock": 1,
+                            "Price": 400,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)651",
+                                "(O)731",
+                                "(O)611",
+                                "(O)222",
+                                "(O)234",
+                                "(O)604",
+                                "(O)221"
+                            ]
+                        },
+                    ]
+                },
+                "Lemurkat.EastScarp_CoffeeShop": {
+                    "Owners": [
+                        {
+                            "Name": "Rosa",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.CoffeeShop_Rosa",
+                                    "Dialogue": "{{i18n:InnShop.rosa.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_bread",
+                            "AvailableStock": 1,
+                            "Price": 100,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)216",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_coffeeOrcookie",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)395",
+                                "(O)223"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_IceCream",
+                            "Condition": "SEASON Summer",
+                            "ItemId": "(O)233"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_bakedgoods",
+                            "AvailableStock": 1,
+                            "Price": 400,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)651",
+                                "(O)731",
+                                "(O)611",
+                                "(O)222",
+                                "(O)234",
+                                "(O)604",
+                                "(O)221"
+                            ]
+                        },
+                    ]
+                },
+                "Lemurkat.EastScarp_InnShop.spiritEve": {
+                    "Owners": [
+                        {
+                            "Name": "Rosa",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.InnShop.spiritEve_Rosa",
+                                    "Dialogue": "{{i18n:InnShop.rosa.spiritEve.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_pumpkinPie",
+                            "AvailableStock": 1,
+                            "Price": 400,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)608",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_blackberrycobbler",
+                            "AvailableStock": 1,
+                            "Price": 300,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)611",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_cranberrycandy",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)612",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_maplebar",
+                            "AvailableStock": 1,
+                            "Price": 300,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)731",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_spirittorch",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)94",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_jackOlantern",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)746",
+                        },
+                    ]
+                },
+                "Lemurkat.EastScarp_InnShop.spiritEve2": {
+                    "Owners": [
+                        {
+                            "Name": "MichaelHart",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.InnShop.spiritEve_Michael",
+                                    "Dialogue": "{{i18n:InnShop.Michael.spiritEve.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_pumpkinjuice",
+                            "AvailableStock": 1,
+                            "Price": 800,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "FLAVORED_ITEM juice (O)276",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_gingerale",
+                            "AvailableStock": 1,
+                            "Price": 300,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)903",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_paleale",
+                            "AvailableStock": 1,
+                            "Price": 400,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)303",
+                        },
+                    ]
+                },
+                "Lemurkat.EastScarp_CommunityGreenhouse": {
+                    "Owners": [
+                        {
+                            "Portrait": "",
+                            "Name": "AnyOrNone",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.CommunityGreenhouse_General",
+                                    "Dialogue": "{{i18n:CommunityGreenhouse_General.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_CommunityGreenhouse1",
+                            "AvailableStock": 1,
+                            "Price": 0,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)260",
+                                "(O)188",
+                                "(O)270",
+                                "(O)272",
+                                "(O)282",
+                                "(O)258",
+                                "(O)256"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_CommunityGreenhouse2",
+                            "AvailableStock": 1,
+                            "Price": 0,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)260",
+                                "(O)188",
+                                "(O)270",
+                                "(O)272",
+                                "(O)282",
+                                "(O)258",
+                                "(O)256"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_CommunityGreenhouse3",
+                            "AvailableStock": 1,
+                            "Price": 0,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)260",
+                                "(O)188",
+                                "(O)270",
+                                "(O)272",
+                                "(O)282",
+                                "(O)258",
+                                "(O)256"
+                            ]
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_CommunityGreenhouse4",
+                            "AvailableStock": 1,
+                            "Price": 0,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(O)260",
+                                "(O)188",
+                                "(O)270",
+                                "(O)272",
+                                "(O)282",
+                                "(O)258",
+                                "(O)256"
+                            ]
+                        },
+                    ]
+                },
+                "Lemurkat.EastScarp_Fundraising": {
+                    "Owners": [
+                        {
+                            "Portrait": "",
+                            "Name": "AnyOrNone",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.Fundraising",
+                                    "Dialogue": "{{i18n:Fundraising.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        //spring
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_spring_(O)20",
+                            "Price": 100,
+                            "ItemId": "(O)20",
+                            "Condition": "SEASON spring",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_spring_(O)16",
+                            "Price": 100,
+                            "ItemId": "(O)16",
+                            "Condition": "SEASON spring",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_spring_(O)22",
+                            "Price": 100,
+                            "ItemId": "(O)22",
+                            "Condition": "SEASON spring",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_spring_(O)18",
+                            "Price": 100,
+                            "ItemId": "(O)18",
+                            "Condition": "SEASON spring",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_spring_(O)296",
+                            "Price": 50,
+                            "ItemId": "(O)296",
+                            "Condition": "SEASON spring",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_spring_(O)399",
+                            "Price": 100,
+                            "ItemId": "(O)399",
+                            "Condition": "SEASON spring",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_spring_(O)257",
+                            "Price": 200,
+                            "ItemId": "(O)257",
+                            "Condition": "SEASON spring",
+                        },
+                        //summer
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_summer_(O)396",
+                            "Price": 100,
+                            "ItemId": "(O)396",
+                            "Condition": "SEASON Summer",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_summer_(O)402",
+                            "Price": 100,
+                            "ItemId": "(O)402",
+                            "Condition": "SEASON Summer",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_summer_(O)398",
+                            "Price": 100,
+                            "ItemId": "(O)398",
+                            "Condition": "SEASON Summer",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_summer_(O)420",
+                            "Price": 100,
+                            "ItemId": "(O)420",
+                            "Condition": "SEASON Summer",
+                        },
+                        //fall
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_fall_(O)404",
+                            "Price": 100,
+                            "ItemId": "(O)404",
+                            "Condition": "SEASON fall",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_fall_(O)406",
+                            "Price": 100,
+                            "ItemId": "(O)406",
+                            "Condition": "SEASON fall",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_fall_(O)408",
+                            "Price": 100,
+                            "ItemId": "(O)408",
+                            "Condition": "SEASON fall",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_fall_(O)410",
+                            "Price": 100,
+                            "ItemId": "(O)410",
+                            "Condition": "SEASON fall",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_fall_(O)422",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "ItemId": "(O)422",
+                            "Condition": "SEASON fall",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_fall_(O)281",
+                            "Price": 200,
+                            "ItemId": "(O)281",
+                            "Condition": "SEASON fall",
+                        },
+                        //winter
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_winter_(O)414",
+                            "Price": 100,
+                            "ItemId": "(O)414",
+                            "Condition": "SEASON winter",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_winter_(O)418",
+                            "Price": 100,
+                            "ItemId": "(O)418",
+                            "Condition": "SEASON winter",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_winter_(O)283",
+                            "Price": 100,
+                            "ItemId": "(O)283",
+                            "Condition": "SEASON winter",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_winter_(O)416",
+                            "Price": 100,
+                            "ItemId": "(O)416",
+                            "Condition": "SEASON winter",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Fundraising_winter_(O)412",
+                            "Price": 100,
+                            "ItemId": "(O)412",
+                            "Condition": "SEASON winter",
+                        },
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "When": {
+                "DayOfWeek": "Monday, Tuesday, Thursday"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 23,
+                        "Y": 50
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Lemurkat.EastScarp_AideenFlowerShop Aideen 1100 1400 23 49 1 1"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_VillageInn",
+            "When": {
+                "HasSeenEvent": "57871699",
+                //"HasFlag |contains=EastScarp.SpecialOrders.ScarpGreenHouse_Complete": false
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 11,
+                        "Y": 30
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Lemurkat.EastScarp_Fundraising"
+                    }
+                }
+            ]
+        },
+        //
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "When": {
+                "DayOfWeek": "Wednesday, Friday"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 23,
+                        "Y": 50
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "OpenShop Lemurkat.EastScarp_JessieSeedShop Jessie 1100 1400 23 49 1 1"
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "When": {
+                "DayOfWeek": "Saturday, Sunday"
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 23,
+                        "Y": 50
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"ESShop.Closed\""
+                    }
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Lemurkat.EastScarp_JessieSeedShop": {
+                    "Owners": [
+                        {
+                            "Name": "Jessie",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.SeedShop_Jessie",
+                                    "Dialogue": "{{i18n:SeedShop.jessie.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie1",
+                            //"AvailableStock": 10,
+                            "Price": 60,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)453",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie2",
+                            //"AvailableStock": 10,
+                            "Price": 60,
+                            "AvailableStockLimit": "Player",
+                            "ItemId": "(O)478",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie3",
+                            //"AvailableStock": 10,
+                            "Price": 40,
+                            "Condition": "YEAR 2",
+                            "ItemId": "(O)476"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie4",
+                            //"AvailableStock": 1,
+                            "Price": 300,
+                            "Condition": "YEAR 2",
+                            "ItemId": "(O)773"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie5",
+                            // "AvailableStock": 1,
+                            "Price": 300,
+                            "Condition": "SEASON fall",
+                            "ItemId": "(O)422"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie6",
+                            // "AvailableStock": 1,
+                            "Price": 1200,
+                            "Condition": "PLAYER_COMBAT_LEVEL current 6",
+                            "ItemId": "(O)772"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie7",
+                            "Condition": "SEASON spring",
+                            "ItemId": "(O)EastScarp_BiteBackMelon_Seed"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie8",
+                            "Condition": "SEASON summer",
+                            "ItemId": "(O)EastScarp_PuckerWort_Seed"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie9",
+                            "Condition": "SEASON fall",
+                            "ItemId": "(O)EastScarp_Cuccaroot_Seed"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie10",
+                            "Condition": "SEASON winter",
+                            "ItemId": "(O)EastScarp_FrostBerry_Seed"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie11",
+                            "Condition": "SEASON spring summer, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_ButterTuffSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie12",
+                            "Condition": "SEASON fall, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_FairyCapSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie13",
+                            "Condition": "SEASON fall winter, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_PaneekiSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie15",
+                            "Condition": "SEASON summer, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_ZinfazuFruitSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie16",
+                            "Condition": "SEASON summer spring, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_YohoFruitSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie17",
+                            "Condition": "{{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_DeepCaveFruitSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie18",
+                            "Condition": "SEASON spring, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_FirePepperSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie19",
+                            "Condition": "SEASON fall winter, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_ChocoFruitSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie20",
+                            "Condition": "SEASON summer, {{AdditionalCrops}}",
+                            "ItemId": "(O)Lemurkat.EastScarp_ButtonFruit"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie101",
+                            "Condition": "DAY_OF_WEEK wednesday",
+                            "ItemId": "(O)EastScarp_Ginger_Tea"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie102",
+                            "Condition": "DAY_OF_WEEK friday",
+                            "ItemId": "(O)EastScarp_Peppermint_Tea"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Jessie103",
+                            "Condition": "DAY_OF_WEEK saturday",
+                            "ItemId": "(O)EastScarp_Chamomile_Tea"
+                        },
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Lemurkat.EastScarp_AideenFlowerShop": {
+                    "Owners": [
+                        {
+                            "Name": "Aideen",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.FlowerShop_Aideen",
+                                    "Dialogue": "{{i18n:FlowerShop.aideen.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen1",
+                            "Price": 100,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "SEASON spring",
+                            "ItemId": "(O)597",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen2",
+                            "Price": 60,
+                            "AvailableStockLimit": "Player",
+                            "Condition": "SEASON spring",
+                            "ItemId": "(O)591",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen3",
+                            "Price": 280,
+                            "Condition": "SEASON summer",
+                            "ItemId": "(O)376"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen4",
+                            "Price": 180,
+                            "Condition": "SEASON summer",
+                            "ItemId": "(O)593"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen5",
+                            "Price": 580,
+                            "Condition": "SEASON fall",
+                            "ItemId": "(O)595"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen6",
+                            "Price": 160,
+                            "Condition": "SEASON fall summer",
+                            "ItemId": "(O)421"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen7",
+                            "Price": 60,
+                            "ItemId": "MixedFlowerSeeds"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen8",
+                            "Price": 80,
+                            "Condition": "SEASON spring",
+                            "ItemId": "(O)22"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen9",
+                            "Price": 60,
+                            "Condition": "SEASON spring",
+                            "ItemId": "(O)18"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen10",
+                            "Price": 100,
+                            "Condition": "SEASON summer",
+                            "ItemId": "(O)402"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen11",
+                            "Price": 160,
+                            "Condition": "SEASON winter",
+                            "ItemId": "(O)283"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen12",
+                            "Price": 120,
+                            "Condition": "SEASON winter",
+                            "ItemId": "(O)418"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen13",
+                            "Price": 200,
+                            "ItemId": "EastScarp_Bird_Of_Paradise_Seed",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Current 57879901",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen14",
+                            "Price": 200,
+                            "ItemId": "EastScarp_Azure_Chrysanthemum_Seed",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57877008",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen15",
+                            "Price": 200,
+                            "ItemId": "EastScarp_Serruria_Seed",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 57877008",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen16",
+                            "Price": 50,
+                            "ItemId": "appleseed.BCP.BatFlowerSeeds",
+                            "Condition": "{{HasMod |contains=appleseed.BCP}}",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen17",
+                            "Price": 50,
+                            "ItemId": "appleseed.BCP.PelicanBellSeeds",
+                            "Condition": "{{HasMod |contains=appleseed.BCP}}",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_Aideen18",
+                            "Condition": "{{AdditionalCrops}}",
+                            "Price": 50,
+                            "ItemId": "Lemurkat.EastScarp_CaveFlowerSeeds"
+                        },
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Lemurkat.EastScarp_ZuzuThriftStore": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp_ZuzuThriftStore",
+                                    "Dialogue": "{{i18n:zuzuthrift.kennedy.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "SalableItemTags": [
+                        "category_clothing",
+                        "category_hat",
+                        "category_boots",
+                    ],
+                    "Items": [
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore0",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1019",
+                                "(S)1022",
+                                "(S)1023"
+                            ],
+                            "MaxItems": 1
+                            //"RANDOM_ITEMS (S) 1000 1126 @requirePrice @isRandomSale"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore1",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1019",
+                                "(S)1022",
+                                "(S)1023"
+                            ],
+                            "MaxItems": 1
+                            //"RANDOM_ITEMS (S) 1000 1126 @requirePrice @isRandomSale"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore2",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1028",
+                                "(S)1040",
+                                "(S)1043"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore3",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1045",
+                                "(S)1046",
+                                "(S)1049"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore4",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1054",
+                                "(S)1056",
+                                "(S)1060"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore5",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1076",
+                                "(S)1080",
+                                "(S)1082"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore6",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1084",
+                                "(S)1087",
+                                "(S)1090"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore7",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1108",
+                                "(S)1109",
+                                "(S)1110"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore8",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "AvailableStockLimit": "Player",
+                            "RandomItemId": [
+                                "(S)1143",
+                                "(S)1173",
+                                "(S)1280"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore9",
+                            "AvailableStock": 1,
+                            "Price": 5000,
+                            "ItemId": "(F)EastScarp_PlushKitty"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore10",
+                            "AvailableStock": 1,
+                            "Price": 5000,
+                            "ItemId": "(F)EastScarp_PlushLemur"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore11",
+                            "AvailableStock": 1,
+                            "Price": 1000,
+                            "RandomItemId": [
+                                "(F)24",
+                                "(F)27",
+                                "(F)30",
+                                "(F)31"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore12",
+                            "AvailableStock": 1,
+                            "Price": 2000,
+                            "RandomItemId": [
+                                "(F)288",
+                                "(F)294",
+                                "(F)300",
+                                "(F)306",
+                                "(F)312"
+                            ],
+                            "MaxItems": 1
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore13",
+                            "AvailableStock": 1,
+                            "Price": 500,
+                            "ItemId": "RANDOM_ITEMS (F) 1376 1390 @requirePrice @isRandomSale",
+                            "Condition": "",
+                            "MaxItems": 2
+                        },
+                        /*{
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore14",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "ItemId": "(S)10",
+                            "Condition": "",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_ZuzuThriftStore15",
+                            "AvailableStock": 1,
+                            "Price": 200,
+                            "ItemId": "(S)10",
+                            "Condition": "",
+                        },*/
+                    ]
+                },
+                "Lemurkat.EastScarp_IceFest_CoffeeShop": {
+                    "Owners": [
+                        {
+                            "Name": "MichaelHart",
+                            //"ClosedMessage": "{{i18n:InnShop.closed}}",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.IceFestival_CoffeeShop_Michael",
+                                    "Dialogue": "{{i18n:CoffeeShop.michael.dialogue}}"
+                                }
+                            ]
+                        }
+                    ],
+                    "Items": [ //
+                        {
+                            "Id": "Lemurkat.EastScarp_coffee",
+                            "Price": 200,
+                            "ItemId": "(O)395",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_espresso",
+                            "Price": 500,
+                            "ItemId": "(O)253",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_hotchoc",
+                            "Price": 500,
+                            "ItemId": "(O){{ModID}}_HotChoco",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_greentea",
+                            "Price": 200,
+                            "ItemId": "(O)614",
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_gingertea",
+                            "Price": "150",
+                            "ItemId": "(O)EastScarp_Ginger_Tea"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_peppermintta",
+                            "Price": "150",
+                            "ItemId": "(O)EastScarp_Peppermint_Tea"
+                        },
+                        {
+                            "Id": "Lemurkat.EastScarp_chamomiletea",
+                            "Price": "150",
+                            "ItemId": "(O)EastScarp_Chamomile_Tea"
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "TargetField": [
+                "Traveler",
+                "Items"
+            ],
+            "Entries": {
+                "EastScarp_JasperPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Jasper 14",
+                    "Id": "(F)EastScarp_JasperPortrait",
+                    "ItemId": "(F)EastScarp_JasperPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_AideenPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Aideen 14",
+                    "Id": "(F)EastScarp_AideenPortrait",
+                    "ItemId": "(F)EastScarp_AideenPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_JulietPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Juliet 14",
+                    "Id": "(F)EastScarp_JulietPortrait",
+                    "ItemId": "(F)EastScarp_JulietPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_MrGingerPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current MisterGinger 14",
+                    "Id": "(F)EastScarp_MrGingerPortrait",
+                    "ItemId": "(F)EastScarp_MrGingerPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_KatarynaPortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current KatarynaLK 14",
+                    "Id": "(F)EastScarp_KatarynaPortrait",
+                    "ItemId": "(F)EastScarp_KatarynaPortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_LemurPainting": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Jasper 8, PLAYER_HEARTS Current Juliet 8, PLAYER_HEARTS Current MisterGinger 8, RANDOM 0.5",
+                    "Id": "(F)EastScarp_LemurPainting",
+                    "ItemId": "(F)EastScarp_LemurPainting",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_DuckLovePortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current DuckNPC 10, PLAYER_HEARTS Current Duck2NPC 10",
+                    "Id": "(F)EastScarp_DuckLovePortrait",
+                    "ItemId": "(F)EastScarp_DuckLovePortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+                "EastScarp_MunchiePortrait": {
+                    "Price": 30000,
+                    "AvailableStock": 1,
+                    "AvailableStockLimit": "Player",
+                    "AvoidRepeat": false,
+                    "UseObjectDataPrice": false,
+                    "IgnoreShopPriceModifiers": false,
+                    "PriceModifierMode": "Stack",
+                    "AvailableStockModifiers": null,
+                    "AvailableStockModifierMode": "Stack",
+                    "Condition": "PLAYER_HEARTS Current Aideen 10",
+                    "Id": "(F)EastScarp_MunchiePortrait",
+                    "ItemId": "(F)EastScarp_MunchiePortrait",
+                    "IsRecipe": false,
+                    "StackModifierMode": "Stack",
+                    "QualityModifierMode": "Stack",
+                },
+            }
+        },
+        //This is pretty much the JojaMart replicated with portrait added for the vendor.
+        {
+            "Action": "EditData",
+            "Target": "Data/Shops",
+            "Entries": {
+                "Lemurkat.EastScarp_JojaMetroMart": {
+                    "Owners": [
+                        {
+                            "Name": "AnyOrNone",
+                            "Portrait": "Portraits/MorrisJoja",
+                            //"Condition": "PLAYER_HAS_SEEN_EVENT Host 191393",
+                            "Dialogues": [
+                                {
+                                    "Id": "Lemurkat.EastScarp.JojaMetroMart",
+                                    "Dialogue": "{{i18n:MetroMart.dialogue}}"
+                                }
+                            ],
+                        }
+                    ],
+                    "Items": [
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 50000,
+                            "ApplyProfitMargins": null,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 502261",
+                            "Id": "(BC)272",
+                            "ItemId": "(BC)272",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 75,
+                            "ApplyProfitMargins": null,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(O)167",
+                            "ItemId": "(O)167",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 25000,
+                            "ApplyProfitMargins": null,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(F)JojaCatalogue",
+                            "ItemId": "(F)JojaCatalogue",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 20,
+                            "ApplyProfitMargins": null,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(WP)21",
+                            "ItemId": "(WP)21",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 500,
+                            "ApplyProfitMargins": null,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(F)1609",
+                            "ItemId": "(F)1609",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON spring",
+                            "Id": "(O)472",
+                            "ItemId": "(O)472",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON spring",
+                            "Id": "(O)473",
+                            "ItemId": "(O)473",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON spring",
+                            "Id": "(O)474",
+                            "ItemId": "(O)474",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON spring",
+                            "Id": "(O)475",
+                            "ItemId": "(O)475",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON spring",
+                            "Id": "(O)427",
+                            "ItemId": "(O)427",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON spring",
+                            "Id": "(O)429",
+                            "ItemId": "(O)429",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON spring",
+                            "Id": "(O)477",
+                            "ItemId": "(O)477",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "(O)480",
+                            "ItemId": "(O)480",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "(O)482",
+                            "ItemId": "(O)482",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "WheatSeeds_Summer",
+                            "ItemId": "(O)483",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "(O)484",
+                            "ItemId": "(O)484",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "(O)479",
+                            "ItemId": "(O)479",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "(O)302",
+                            "ItemId": "(O)302",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "(O)453",
+                            "ItemId": "(O)453",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "(O)455",
+                            "ItemId": "(O)455",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 100,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON summer",
+                            "Id": "SunflowerSeeds_Summer",
+                            "ItemId": "(O)431",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)487",
+                            "ItemId": "(O)487",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)488",
+                            "ItemId": "(O)488",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "WheatSeeds_Fall",
+                            "ItemId": "(O)483",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)490",
+                            "ItemId": "(O)490",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)299",
+                            "ItemId": "(O)299",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)301",
+                            "ItemId": "(O)301",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)492",
+                            "ItemId": "(O)492",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)491",
+                            "ItemId": "(O)491",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)493",
+                            "ItemId": "(O)493",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 100,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "SunflowerSeeds_Fall",
+                            "ItemId": "(O)431",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": "SEASON fall",
+                            "Id": "(O)425",
+                            "ItemId": "(O)425",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(O)297",
+                            "ItemId": "(O)297",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(O)245",
+                            "ItemId": "(O)245",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(O)246",
+                            "ItemId": "(O)246",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": -1,
+                            "ApplyProfitMargins": true,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": false,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "(O)423",
+                            "ItemId": "(O)423",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 250,
+                            "ApplyProfitMargins": null,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "RandomWallpaper",
+                            "ItemId": "RANDOM_ITEMS (WP) 0 111 @requirePrice @isRandomSale",
+                            "RandomItemId": null,
+                            "MaxItems": 1,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": "!ITEM_ID Target 21"
+                        },
+                        {
+                            "ActionsOnPurchase": null,
+                            "CustomFields": null,
+                            "TradeItemId": null,
+                            "TradeItemAmount": 1,
+                            "Price": 250,
+                            "ApplyProfitMargins": null,
+                            "AvailableStock": -1,
+                            "AvailableStockLimit": "Global",
+                            "AvoidRepeat": false,
+                            "UseObjectDataPrice": false,
+                            "IgnoreShopPriceModifiers": true,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "AvailableStockModifiers": null,
+                            "AvailableStockModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "RandomFlooring",
+                            "ItemId": "RANDOM_ITEMS (FL) 0 39 @requirePrice @isRandomSale",
+                            "RandomItemId": null,
+                            "MaxItems": 1,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "CustomFields": null,
+                    "ApplyProfitMargins": null
+                },
+            }
+        }
+    ]
+}

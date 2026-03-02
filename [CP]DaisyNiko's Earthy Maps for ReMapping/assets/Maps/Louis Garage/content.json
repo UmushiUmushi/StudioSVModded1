@@ -1,0 +1,92 @@
+{
+  "Changes": [
+    {
+      "LogName": "Louis Garage Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Louis Garage/Louis.Garage_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasMod:|contains=R5.CP": true,
+        "N3cro_92.ReMappingEarthySync/LouisGarage": "true"
+      },
+
+      "ToArea": {
+        "X": 219,
+        "Y":111,
+        "Width": 14,
+        "Height": 8
+      }
+    },
+    {
+      "LogName": "Louis Garage Map Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Louis Garage/Louis.Garage_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod:|contains=R5.CP": true,
+        "N3cro_92.ReMappingEarthySync/LouisGarage": "true"
+      },
+
+      "ToArea": {
+        "X": 230,
+        "Y":108,
+        "Width": 10,
+        "Height": 9
+      }
+    },
+    {
+      "LogName": "Louis Garage Map Overlay (BoatJourney)",
+      "Action": "EditImage",
+      "Target": "Minigames/{{season}}_boatJourneyMap",
+      "FromFile": "assets/Maps/Louis Garage/Louis.Garage_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasMod:|contains=R5.CP": true,
+        "N3cro_92.ReMappingEarthySync/LouisGarage": "true"
+      },
+
+      "ToArea": {
+        "X": 285,
+        "Y":4,
+        "Width": 14,
+        "Height": 8
+      }
+    },
+    {
+      "LogName": "Louis Garage Map Overlay SVE (BoatJourney)",
+      "Action": "EditImage",
+      "Target": "Minigames/{{season}}_boatJourneyMap",
+      "FromFile": "assets/Maps/Louis Garage/Louis.Garage_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod:|contains=R5.CP": true,
+        "N3cro_92.ReMappingEarthySync/LouisGarage": "true"
+      },
+
+      "ToArea": {
+        "X": 296,
+        "Y":1,
+        "Width": 8,
+        "Height": 9
+      }
+    }
+  ]
+}

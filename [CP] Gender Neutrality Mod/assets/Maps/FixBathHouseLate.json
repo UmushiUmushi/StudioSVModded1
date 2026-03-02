@@ -1,0 +1,95 @@
+{
+	"Changes": [
+		{
+			"LogName": "Fix Bath House Entry - Late",
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_Entry",
+			"MapTiles": [
+				{
+					"Position": { "X": 2, "Y": 3 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 13 27 BathHouse_WomensLocker"
+					}
+				},
+				{
+					"Position": { "X": 7, "Y": 3 },
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Warp 3 27 BathHouse_MensLocker"
+					}
+				}
+			],
+			"When": {
+				"FixBathHouseDoors": true,
+				"Priority": "Late"
+			}
+		},
+
+		{
+			"LogName": "Fix Bath House Pool - Late",
+			"Action": "EditMap",
+			"Target": "Maps/BathHouse_Pool",
+			"MapTiles": [
+				{
+					"Position": { "X": 5, "Y": 2 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": null
+					}
+				},
+				{
+					"Position": { "X": 6, "Y": 2 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": null
+					}
+				},
+				{
+					"Position": { "X": 7, "Y": 2 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": null
+					}
+				},
+				{
+					"Position": { "X": 20, "Y": 2 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": null
+					}
+				},
+				{
+					"Position": { "X": 21, "Y": 2 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": null
+					}
+				},
+				{
+					"Position": { "X": 22, "Y": 2 },
+					"Layer": "Back",
+					"SetProperties": {
+						"TouchAction": null
+					}
+				}
+			],
+			"When": {
+				"FixBathHouseDoors": true,
+				"Priority": "Late"
+			}
+		},
+
+		{
+			"LogName": "Fix Bath House Tiles - Late",
+			"Action": "EditImage",
+			"Target": "Maps/bathhouse_tiles",
+			"FromFile": "assets/Maps/bathhouse_tiles_GN.png",
+			"Priority": "Late",
+			"When": {
+				"FixBathHouseTiles": true,
+				"Priority": "Late"
+			}
+		}
+	]
+}

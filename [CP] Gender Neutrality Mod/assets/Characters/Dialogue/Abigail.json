@@ -1,0 +1,15 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Abigail",
+			"Entries":
+				{
+					"Event_Grave3": "Why? I'm just as strong as you!$a#$b#I'm not some fragile princess.. I can take care of myself!$a#$b#I've lived in the valley my whole life, but I've never really done anything memorable. I want to go on an adventure!$8",
+					"summer_Tue4": "You're an interesting {{Lowercase: {{Random: {{Hana.GNMTokens/GenericNoun}} }} }}, @. I'm glad you moved here.$h"
+				},
+			"LogName":"Fix Abigail"
+		}
+	]
+}

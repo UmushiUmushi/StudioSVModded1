@@ -1,0 +1,32 @@
+{
+   "Format": "1.22.0",
+   "Changes": [
+
+     {
+      "Action": "EditImage",
+      "Target": "Maps/spring_z_extras,Maps/summer_z_extras,Maps/fall_z_extras,Maps/winter_z_extras",
+      "FromFile": "assets/tilesheets/{{TargetWithoutPath}}_fix.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 112 },
+      "ToArea": { "X": 144, "Y": 2144, "Width": 64, "Height": 112 },
+      "Patchmode": "Overlay"
+     },
+
+     {
+      "Action": "EditImage",
+      "Target": "Maps/spring_z_Waterfalls,Maps/summer_z_Waterfalls,Maps/fall_z_Waterfalls,Maps/winter_z_Waterfalls",
+      "FromFile": "assets/tilesheets/{{TargetWithoutPath}}_fix_w.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 384, "Height": 672 },
+      "ToArea": { "X": 0, "Y": 0, "Width": 384, "Height": 672 },
+      "Patchmode": "Replace"
+     },
+
+     {
+      "Action": "EditImage",
+      "Target": "Maps/spring_z_extras,Maps/summer_z_extras,Maps/fall_z_extras,Maps/winter_z_extras",
+      "FromFile": "assets/tilesheets/{{TargetWithoutPath}}_b.png",
+      "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 16 },
+      "ToArea": { "X": 128, "Y": 1136, "Width": 32, "Height": 16 },
+      "Patchmode": "Overlay"
+     }
+    ]
+}

@@ -1,0 +1,27 @@
+            {
+                "Changes": [ //Spouse Room
+                    { // This isn't utilised in 1.6 but is quite useful for reference!
+                        "Action": "EditData",
+                        "Target": "Data/SpouseRooms",
+                        "Entries": {
+                            "Aideen": "Lemurkat_EastScarp_SpouseRoom/0", //0, 0
+                            "KatarynaLK": "Lemurkat_EastScarp_SpouseRoom/1", //6, 0
+                            "Juliet": "Lemurkat_EastScarp_SpouseRoom/2", //12, 0
+                            "Jasper": "Lemurkat_EastScarp_SpouseRoom/3", //18,0
+                            "Eyvinder": "Lemurkat_EastScarp_SpouseRoom/4" //24,0
+                        }
+                    },
+                    {
+                        "Action": "Load",
+                        "Target": "Maps/Lemurkat_EastScarp_SpouseRoom",
+                        "FromFile": "assets/Maps/SpouseRoomsEastScarp.tmx"
+                    },
+                    //Spouse Patio
+                    // load spouse map
+                    {
+                        "Action": "Load",
+                        "Target": "Maps/Lemurkat_EastScarp_OutsideArea",
+                        "FromFile": "assets/Maps/spousePatiosEastScarp.tmx"
+                    }
+                ]
+            }

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="5" height="2" tilewidth="16" tileheight="16" infinite="0" nextlayerid="23" nextobjectid="48">
+ <properties>
+  <property name="BrookSounds" value="94 5 5"/>
+  <property name="Fall_Objects" value="T"/>
+  <property name="Light" value="24 50 4 33 53 4 24 58 4 21 64 4 17 86 4 27 86 4 38 65 4 30 72 4 27 72 4 41 69 4 71 67 4 52 98 4 56 98 4 92 79 4"/>
+  <property name="Outdoors" value="T"/>
+  <property name="Spring_Objects" value="T"/>
+  <property name="Summer_Objects" value="T"/>
+  <property name="Warp" value="-1 53 BusStop 42 23 -1 54 BusStop 42 23 -1 55 BusStop 42 24 53 110 Beach 38 0 81 -1 Mountain 15 40 79 -1 Mountain 15 40 80 -1 Mountain 15 40 82 -1 Mountain 15 40 83 -1 Mountain 15 40 -1 92 Forest 118 25 -1 90 Forest 118 25 -1 89 Forest 118 25 -1 91 Forest 118 25 54 110 Beach 38 0 55 110 Beach 38 0 90 -1 Mountain 57 40 98 -1 Mountain 85 40 94 110 Beach 67 0"/>
+  <property name="Winter_Objects" value="T"/>
+ </properties>
+ <tileset firstgid="1" name="Fest" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
+  <image source="Festivals" width="512" height="512"/>
+  <tile id="531">
+   <animation>
+    <frame tileid="531" duration="100"/>
+    <frame tileid="532" duration="100"/>
+    <frame tileid="533" duration="100"/>
+    <frame tileid="534" duration="100"/>
+    <frame tileid="535" duration="100"/>
+    <frame tileid="534" duration="100"/>
+    <frame tileid="533" duration="100"/>
+    <frame tileid="532" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="532">
+   <animation>
+    <frame tileid="532" duration="100"/>
+    <frame tileid="533" duration="100"/>
+    <frame tileid="534" duration="100"/>
+    <frame tileid="535" duration="100"/>
+    <frame tileid="534" duration="100"/>
+    <frame tileid="533" duration="100"/>
+    <frame tileid="532" duration="100"/>
+    <frame tileid="531" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="533">
+   <animation>
+    <frame tileid="533" duration="100"/>
+    <frame tileid="534" duration="100"/>
+    <frame tileid="535" duration="100"/>
+    <frame tileid="534" duration="100"/>
+    <frame tileid="533" duration="100"/>
+    <frame tileid="532" duration="100"/>
+    <frame tileid="531" duration="100"/>
+    <frame tileid="532" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="567">
+   <animation>
+    <frame tileid="567" duration="200"/>
+    <frame tileid="568" duration="200"/>
+    <frame tileid="569" duration="200"/>
+    <frame tileid="570" duration="200"/>
+   </animation>
+  </tile>
+  <tile id="590">
+   <animation>
+    <frame tileid="590" duration="270"/>
+    <frame tileid="481" duration="270"/>
+    <frame tileid="590" duration="270"/>
+    <frame tileid="590" duration="270"/>
+    <frame tileid="590" duration="270"/>
+    <frame tileid="590" duration="270"/>
+    <frame tileid="590" duration="270"/>
+   </animation>
+  </tile>
+  <tile id="598">
+   <animation>
+    <frame tileid="598" duration="100"/>
+    <frame tileid="599" duration="100"/>
+    <frame tileid="600" duration="100"/>
+    <frame tileid="601" duration="100"/>
+   </animation>
+  </tile>
+  <tile id="722">
+   <animation>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="722" duration="40"/>
+    <frame tileid="724" duration="40"/>
+    <frame tileid="726" duration="40"/>
+    <frame tileid="692" duration="40"/>
+    <frame tileid="694" duration="40"/>
+   </animation>
+  </tile>
+  <tile id="723">
+   <animation>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="727" duration="40"/>
+    <frame tileid="725" duration="40"/>
+    <frame tileid="723" duration="40"/>
+    <frame tileid="693" duration="40"/>
+    <frame tileid="695" duration="40"/>
+   </animation>
+  </tile>
+  <tile id="782">
+   <animation>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="781" duration="250"/>
+    <frame tileid="782" duration="250"/>
+    <frame tileid="781" duration="250"/>
+    <frame tileid="782" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="1025" name="zridgesideCraftables" tilewidth="16" tileheight="16" tilecount="448" columns="8">
+  <image source="zridgesideCraftables.png" width="128" height="896"/>
+  <tile id="53">
+   <animation>
+    <frame tileid="53" duration="500"/>
+    <frame tileid="54" duration="500"/>
+   </animation>
+  </tile>
+  <tile id="61">
+   <animation>
+    <frame tileid="61" duration="500"/>
+    <frame tileid="62" duration="500"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="1473" name="zridgesidefurniture" tilewidth="16" tileheight="16" tilecount="2048" columns="32">
+  <image source="zridgesidefurniture.png" width="512" height="1024"/>
+ </tileset>
+ <tileset firstgid="3521" name="z_rsvinterior" tilewidth="16" tileheight="16" tilecount="1900" columns="19">
+  <image source="z_rsvinterior.png" width="304" height="1600"/>
+ </tileset>
+ <layer id="2" name="Back2" width="5" height="2">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,661,661,661,0,
+4205,4206,4206,4206,4208
+</data>
+ </layer>
+ <layer id="3" name="Back3" width="5" height="2">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,3627,3627,3627,0,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="4" name="Buildings" width="5" height="2">
+  <data encoding="csv">
+661,2001,2002,2003,661,
+1085,2033,2034,2035,1085
+</data>
+ </layer>
+ <layer id="5" name="Buildings2" width="5" height="2">
+  <properties>
+   <property name="Draw" value="Buildings"/>
+  </properties>
+  <data encoding="csv">
+3627,833,833,833,3627,
+0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Front" width="5" height="2">
+  <data encoding="csv">
+1077,4185,4185,4185,1077,
+0,0,0,0,0
+</data>
+ </layer>
+</map>

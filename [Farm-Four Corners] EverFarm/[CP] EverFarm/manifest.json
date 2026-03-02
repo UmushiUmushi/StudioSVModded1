@@ -1,0 +1,12 @@
+{
+	"Name": "EverFarm",
+	"Author": "Draylon",
+	"Version": "1.0.9",
+	"Description": "A Farm based on having Everything, Replaces Four Corners.",
+	"UniqueID": "Draylon.EverFarmCP",
+	"UpdateKeys": [ "Nexus:9347" ],
+	"ContentPackFor": {
+	"UniqueID": "Pathoschild.ContentPatcher",
+	"MinimumVersion": "1.21.1"
+  }
+}

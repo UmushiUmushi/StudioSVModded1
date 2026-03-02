@@ -1,0 +1,24 @@
+{
+  "ItemName": "BabyWhite Cow",
+  "Type": "Character",
+  "TextureWidth": 128,
+  "TextureHeight": 160,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0,
+    },
+    {
+      "Id": 0,
+      "Keywords": [ "Holstein" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Solid" ]
+    },
+    {
+      "Id": 2,
+      "Keywords": [ "White" ]
+    }
+  ]
+}

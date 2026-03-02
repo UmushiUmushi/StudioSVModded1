@@ -1,0 +1,65 @@
+{
+	"Changes": [
+	//VANILLA NOMES E LOCCALIZAÇÕES DE REGIÕES
+        //ADIÇÃO DO NOVO MAPA
+    	{
+			"LogName": "RMP Desert World Map",
+			"Action": "Load",
+			"Target": "LooseSprites/DesertWorld",
+			"FromFile": "assets/NewMaps/LooseSprites/DesertWorld_{{season}}.png",
+            "When": {
+                "HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+		},
+        //MAPAS
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "Priority": "Late +10",
+            "When": {
+				"HasMod: |contains=FlashShifter.StardewValleyExpandedCP": false
+            },
+            "Entries": {
+                "RMPDesertWorld": {
+                    "BaseTexture": [{
+                        "Id": "RMP_Desert_Texture",
+                        "Texture": "LooseSprites/DesertWorld",
+                        "SourceRect": { "X": 0, "Y": 0, "Height": 180, "Width": 300 }
+                    }],
+                    "MapAreas": [{
+                        "Id": "Maps/Desert",
+                        "PixelArea": {
+                            "X": 112,
+                            "Y": 27,
+                            "Width": 45,
+                            "Height": 51
+                        },
+                        "ScrollText": "Maps/Desert",
+                        "Textures": [],
+                        "Tooltips": [{
+                            "Id": "Maps/Desert", 
+                            "Text": "Maps/Desert",
+                            "PixelArea": { "X": 112, "Y": 27, "Width": 45, "Height": 51 }
+                        }],
+                        "WorldPositions": [
+                        {
+                            "Id": "Maps/Desert",
+                            "LocationNames": ["Maps/Desert"]
+                        },
+                        {
+                            "Id": "Custom_DesertRoad_04",
+                            "LocationName": "Custom_DesertRoad_04",
+                            "MapPixelArea": {
+                                "X": 235,
+                                "Y": 42,
+                                "Width": 51,
+                                "Height": 32
+                            },
+                            "ScrollText": "Custom_DesertRoad_04"
+                        }]
+                    }]
+		        }
+            }
+        }
+	]
+}

@@ -1,0 +1,11 @@
+{
+  "ControlPanelKey": "Q",
+  "MachineSelectKey": "LeftControl + Q",
+  "DefaultPage": "Rules",
+  "DefaultIsGlobal": true,
+  "ProgressionMode": true,
+  "AltQuestionMark": false,
+  "ConfigPerSave": true,
+  "RuleEntriesPageSize": 8,
+  "GridItemsPageSize": 1024
+}

@@ -1,0 +1,273 @@
+{
+	"Changes": [
+    {
+      "LogName": "Walk to Desert Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Walk to Desert/Walk.Desert_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "Priority": "Late",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "FarmType|contains=A_TK.FarmProjectForaging/WaFF": "false",
+				"FarmType|contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 205,
+        "Height": 321
+      }
+    },
+    {
+      "LogName": "Walk to Desert Road Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Walk to Desert/Walk.Desert.Road_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Rafseazz.RSVFTM": true,
+        "HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true",
+        "N3cro_92.ReMappingEarthySync/WalktoDesertExtraRoad": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 22,
+        "Width": 63,
+        "Height": 26
+      }
+    },
+    {
+      "LogName": "Walk to Desert Map Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Walk to Desert/Walk.Desert_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "Priority": "Late",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "FarmType|contains=A_TK.FarmProjectForaging/WaFF": "false",
+				"FarmType|contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 205,
+        "Height": 321
+      }
+    },
+    {
+      "LogName": "Walk to Desert Road Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Walk to Desert/Walk.Desert.Road_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Rafseazz.RSVFTM": true,
+        "HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true",
+        "N3cro_92.ReMappingEarthySync/WalktoDesertExtraRoad": "true"
+      },
+
+      "ToArea": {
+        "X": 50,
+        "Y": 22,
+        "Width": 13,
+        "Height": 10
+      }
+    },
+    {
+      "LogName": "Walk to Desert Map Overlay (Meadowlands)",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+      "FromFile": "assets/Farms/Meadowlands/Walk.Desert.MD_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 92,
+        "Height": 16
+      }
+    },
+    {
+      "LogName": "Walk to Desert Map Overlay (Meadowlands) SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/Farm_ranching_map, LooseSprites/Farm_ranching_map_{{season}}",
+      "FromFile": "assets/Farms/MeadowlandsSVE/Walk.Desert.MD_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 92,
+        "Height": 15
+      }
+    },
+    {
+			"LogName": "WalkToDesert Waterfall",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+			"Entries": {
+			   	"RMP WalkDesert Waterfall": {
+					"Id": "WalkToDesert_Farm_Waterfall",
+					"PixelArea": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 },
+				 	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WF/Walk.Desert.WF_{{season}}.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 } }]
+				}
+			}
+		},
+    {
+			"LogName": "WalkToDesert Waterfall SVE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP":true,
+				"HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFF": "true",
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+			"Entries": {
+			  	"RMP WalkDesert Waterfall SVE": {
+					"Id": "WalkToDesert_Farm_Waterfall_SVE",
+					"PixelArea": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WFSVE/Walk.Desert.WF_{{season}}_SVE.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 } }]
+				}
+			}
+		},
+    {
+			"LogName": "WalkToDesert Waterfall LE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+				"HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+			"Entries": {
+			   	"RMP WalkDesert Waterfall": {
+					"Id": "WalkToDesert_Farm_Waterfall",
+					"PixelArea": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WF/Walk.Desert.WF_{{season}}.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 } }]
+				}
+			}
+		},
+    {
+			"LogName": "WalkToDesert Waterfall LE SVE",
+			"Action": "EditData",
+			"Target": "Data/WorldMap",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+			"TargetField": [ "Valley", "MapAreas" ],
+			"When": {
+				"HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+				"HasMod:|contains=FlashShifter.StardewValleyExpandedCP":true,
+				"HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+        "FarmType |contains=A_TK.FarmProjectForaging/WaFFLE": "true",
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true"
+      },
+			"Entries": {
+			   	"RMP WalkDesert Waterfall SVE": {
+					"Id": "WalkToDesert_Farm_Waterfall_SVE",
+					"PixelArea": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 },
+				  	"Textures": [{
+						"Id": "Default",
+						"Texture": "{{InternalAssetKey: assets/Farms/WFSVE/Walk.Desert.WF_{{season}}_SVE.png}}",
+						"SourceRect": { "X": 0,	"Y": 0,	"Width": 92,	"Height": 53 } }]
+				}
+			}
+		},
+//Walk to Desert/Cablecar fix
+    {
+      "LogName": "Walk to Desert Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Walk to Desert/W.D.G.V.fix_{{season}}_SVE.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+      "Priority": "Late",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=Tarniyar.CP.WalkToDesert": true,
+		    "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "FarmType|contains=A_TK.FarmProjectForaging/WaFF": "false",
+				"FarmType|contains=A_TK.FarmProjectForaging/WaFFLE": "false",
+        "N3cro_92.ReMappingEarthySync/WalktoDesert": "true",
+        "N3cro_92.ReMappingEarthySync/RidgesideVillage": "true"
+      },
+
+      "ToArea": {
+        "X": 0,
+        "Y": 0,
+        "Width": 205,
+        "Height": 321
+      }
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+	"ItemName": "Garden Pot",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors" ],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 1,
+		"Name": "2-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 2,
+		"Name": "3-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 3,
+		"Name": "4-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 4,
+		"Name": "1-Indoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 5,
+		"Name": "2-Indoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 6,
+		"Name": "3-Indoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 7,
+		"Name": "4-Indoors-Clean",
+		"Keywords": ["Clean"],
+		},
+	]
+}

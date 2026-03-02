@@ -1,0 +1,8 @@
+{
+    "Menu.Title": "理发店",
+    "Menu.Question": "今天想要什么发型？",
+    "Menu.Confirm": "对这种发型感到满意吗？",
+    "Menu.NotEnoughMoney": "看来你手上的钱不够，下次再来！",
+    "Menu.Canceled": "抱歉你不满意，下次再来！",
+    "Menu.Finished": "很高兴你喜欢，下次再来！"
+}

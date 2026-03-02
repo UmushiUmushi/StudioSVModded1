@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Emily",
+			"Entries":
+				{
+					"summer_Sun6": "Hi, @! We've become decent friends, haven't we?$h#$e#I'm glad.$h"
+				},
+			"LogName":"Fix Emily"
+		}
+	]
+}

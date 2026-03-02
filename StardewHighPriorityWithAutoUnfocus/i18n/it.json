@@ -1,0 +1,24 @@
+{
+  "log.invalid_priority": "Valore di priorità non valido: '{{value}}'. Consentiti: Normal, AboveNormal, High.",
+  "log.set_priority_focused": "Gioco in primo piano: priorità del processo impostata su {{value}}.",
+  "log.set_priority_unfocused": "Gioco in secondo piano: priorità del processo impostata su {{value}}.",
+  "log.failed": "Impossibile impostare la priorità del processo ({{error}}): {{message}}",
+
+  "gmcm.section.general": "Impostazioni priorità",
+  "gmcm.section.general.tooltip": "Regola come cambia la priorità del processo di Stardew Valley in base al focus della finestra.",
+
+  "gmcm.enabled": "Abilita mod",
+  "gmcm.enabled.tooltip": "Se disabilitata, la mod non cambierà la priorità del processo.",
+
+  "gmcm.focusedPriority": "Priorità con focus",
+  "gmcm.focusedPriority.tooltip": "Priorità da usare quando la finestra di gioco è in focus.",
+
+  "gmcm.unfocusedPriority": "Priorità senza focus",
+  "gmcm.unfocusedPriority.tooltip": "Priorità da usare quando la finestra di gioco non è in focus.",
+
+  "gmcm.logSuccess": "Registrare i messaggi di successo",
+  "gmcm.logSuccess.tooltip": "Mostra un messaggio di log quando viene applicata la priorità.",
+
+  "gmcm.logFailure": "Registrare i messaggi di errore",
+  "gmcm.logFailure.tooltip": "Mostra un messaggio di log se l'applicazione della priorità non riesce."
+}

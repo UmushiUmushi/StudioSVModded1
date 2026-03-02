@@ -1,0 +1,12 @@
+{
+    "Name": "Cottage Core Walls And Floors",
+    "Author": "DatGrayFox",
+    "Version": "1.0.0",
+    "Description": "Cute, simple and subtle walls and floors for any of your cottage core needs. Will pair well with Aimon's Fancy Farmhouse recolors.",
+    "UniqueID": "DatGrayFox.CP.CottageCoreWallsAndFloors",
+    "UpdateKeys": ["Nexus:"], 
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher" 
+    }
+}
+    

@@ -1,0 +1,528 @@
+{
+    "Changes": [
+        //Fireworks Festival ************************************************
+        {
+            "LogName": "Fireworks Festival",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "Entries": {
+                "VivienneLK": "{{i18n:festivals.vivienne.summer20}}",
+                "Jacob": "{{i18n:festivals.jacob.summer20}}",
+                "Eloise": "{{i18n:festivals.eloise.summer20}}",
+                "OliverK": "{{i18n:festivals.oliver.summer20}}",
+                "Rosa": "{{i18n:festivals.rosa.summer20}}",
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Jacob 79 24 2/Eloise 80 24 3/Rosa 41 36 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "violetlizabet.CP.FireworksFestival"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Mateo 27 4 1/Aideen 28 4 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.summer20.madeen}}",
+                "Mateo": "{{i18n:festivals.mateo.summer20.madeen}}"
+            },
+            "When": {
+                "Spouse |contains=Aideen": false,
+                "Spouse |contains=Mateo": false,
+                "HasFlag |contains=RivalHearts_AideenMateo": true,
+                "HasMod": "violetlizabet.CP.FireworksFestival"
+            }
+        },
+        {
+            "LogName": "Add Oliver",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 89 25 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "violetlizabet.CP.FireworksFestival",
+                "HasSeenEvent |contains=57873000": true,
+            }
+        },
+        {
+            "LogName": "Add Vivienne",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Summer20",
+            "Entries": {
+                "VivienneLK": "{{i18n:festivals.vivienne.summer20}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 78 25 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "violetlizabet.CP.FireworksFestival",
+                "HasSeenEvent": "57875000"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer20",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Mateo 27 4 1/Aideen 28 4 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.summer20.madeen}}",
+                "Mateo": "{{i18n:festivals.mateo.summer20.madeen}}"
+            },
+            "When": {
+                "Spouse |contains=Aideen": false,
+                "Spouse |contains=Mateo": false,
+                "HasFlag |contains=RivalHearts_AideenMateo": true,
+                "HasMod": "violetlizabet.CP.FireworksFestival"
+            }
+        },
+        // RSV Fall Event **************************************************
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "Entries": {
+                "Eloise": "{{i18n:festivals.eloise.fall20}}",
+                "Jacob": "{{i18n:festivals.jacob.fall20}}",
+                "Rosa": "{{i18n:festivals.rosa.fall20}}",
+                "Jasper": "{{i18n:festivals.fall20.jasper}}",
+                "Jasper_spouse": "{{i18n:festivals.fall20.jasper.spouse}}",
+                "Gunther": "{{i18n:festivals.fall20.gunther}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Eloise 113 44 1/Jacob 119 42 2/Rosa 114 41 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "Entries": {
+                "PepperPup": "{{i18n:festivals.pepperpup.fall20}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "PepperPup 109 41 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "speed PepperPup 4/advancedMove PepperPup true 2 0 0 2 -2 0 0 -2 3 100",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP",
+                "HasSeenEvent": "57870020"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall20",
+            "Entries": {
+                "VivienneLK": "{{i18n:festivals.vivienne.fall20}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 73 43 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP",
+                "HasSeenEvent": "57875000"
+            }
+        },
+        {
+            "LogName": "Tristan Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/fall20",
+            "Entries": {
+                "TristanLK": "{{i18n:festivals.fall20.tristan}}"
+            }
+        },
+        //Ember of Resolutions *************************************
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.winter28}}",
+                "VivienneLK": "{{i18n:festivals.vivienne.winter28}}",
+                "Jacob": "{{i18n:festivals.jacob.winter28}}",
+                "Eloise": "{{i18n:festivals.eloise.winter28}}",
+                "OliverK": "{{i18n:festivals.oliver.winter28}}",
+                "Rosa": "{{i18n:festivals.rosa.winter28}}",
+                "Jasper": "{{i18n:festivals.winter28.jasper}}",
+                "Jasper_spouse": "{{i18n:festivals.winter28.jasper.spouse}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 52 43 0/Jacob 36 26 2/Eloise 40 33 2/Rosa 37 36 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 49 41 3/Eloise 53 50 3/Jacob 54 50 3/Rosa 56 48 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 53 45 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "OliverK 52 43 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP",
+                "HasSeenEvent": "57875000"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 62 45 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 54 49 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "Rafseazz.RSVCP",
+                "HasSeenEvent": "57875000"
+            }
+        },
+        {
+            "LogName": "Tristan Dialogue",
+            "Action": "EditData",
+            "Target": "data/festivals/winter28",
+            "Entries": {
+                "TristanLK": "{{i18n:festivals.winter28.tristan}}"
+            }
+        },
+        // Fashion Show ******************************************************
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.spring19}}",
+                "VivienneLK": "{{i18n:festivals.vivienne.spring19}}",
+                "Jacob": "{{i18n:festivals.jacob.spring19}}",
+                "Eloise": "{{i18n:festivals.eloise.spring19}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 41 38 0/Jacob 19 17 0/Eloise 19 14 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 46 19 3/Jacob 24 17 1/Eloise 25 18 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "UNA.FF.CP"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "Entries": {
+                "VivienneLK": "{{i18n:festivals.vivienne.spring19}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 20 17 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 24 18 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "UNA.FF.CP",
+                "HasSeenEvent": "57875000"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "Entries": {
+                "JosephineK": "{{i18n:festivals.josephine.spring19}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 48 22 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 46 21 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasMod": "UNA.FF.CP",
+                "HasSeenEvent |contains=57873000": true,
+            }
+        },
+        {
+            "LogName": "Add Oliver",
+            "Action": "EditData",
+            "Target": "Data/Festivals/Spring19",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.spring19}}",
+                "Leximonster": "{{i18n:festivals.lexi.spring19}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Leximonster 25 100 2/OliverK 24 100 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57872012",
+                "HasMod": "UNA.FF.CP"
+            },
+        },
+        //Love Festival
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter6",
+            /*"Entries": {
+                "Aideen": "{{i18n:festivals.aideen.winter6}}",
+                "ToriLK": "{{i18n:festivals.tori.winter6}}",
+                "Jade": "{{i18n:festivals.jade.winter6}}",
+                "VivienneLK": "{{i18n:festivals.vivienne.winter6}}",
+                "Jacob": "{{i18n:festivals.jacob.winter6}}",
+                "Eloise": "{{i18n:festivals.eloise.winter6}}",
+                "JosephineK": "{{i18n:festivals.josephine.winter6}}",
+                "OliverK": "{{i18n:festivals.oliver.winter6}}",
+                "Rosa": "{{i18n:festivals.rosa.winter6}}",
+                "Juliet": "{{i18n:festivals.juliet.winter6}}",
+                "Jessie": "{{i18n:festivals.jessie.winter6}}",
+                "Jasper": "{{i18n:festivals.jasper.winter6}}",
+                "Jasper_spouse": "{{i18n:festivals.winter6.jasper.spouse}}",
+            },*/
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 37 78 0/ToriLK 37 76 2/Jade 38 77 1/Jacob 20 62 2/Eloise 25 53 0/MisterGinger? 26 48 2/Rosa 15 72 1/Juliet 16 72 3/Jasper 39 68 3/Beatrice 30 61 0",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasMod": "AvalonMFX.CPLoveFestival"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter6",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 29 56 2",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasMod": "AvalonMFX.CPLoveFestival",
+                "HasSeenEvent |contains=57873000": true,
+                "HasSeenEvent |contains=57873005": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter6",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 50 67 1",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasMod": "AvalonMFX.CPLoveFestival",
+                "HasSeenEvent |contains=57873000": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter6",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 38 67 2",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasMod": "AvalonMFX.CPLoveFestival",
+                "HasSeenEvent |contains=57876033": false,
+                "HasSeenEvent": "57876020"
+            }
+        },
+    ]
+}

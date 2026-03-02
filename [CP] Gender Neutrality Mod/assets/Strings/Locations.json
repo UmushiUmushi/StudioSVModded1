@@ -1,0 +1,15 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Strings/Locations",
+			"Entries":
+				{
+						"Beach_Mariner_Player_Male": "{{Lowercase: {{Random: {{Hana.GNMTokens/ElderAntiquatedNoun}} }} }}",
+						"Beach_Mariner_Player_Female": "{{Lowercase: {{Random: {{Hana.GNMTokens/ElderAntiquatedNoun}} }} }}"
+				},
+			"LogName": "Fix Locations"
+		}
+	]
+}

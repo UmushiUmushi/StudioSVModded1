@@ -1,0 +1,1842 @@
+{
+	"Format": "2.0",
+	"ConfigSchema": {
+		"EnableSpecialOrders": {
+			"AllowValues": "true,false",
+			"Default": "true"
+		},
+		"TrentonFamilyDrama": {
+			"AllowValues": "true,false",
+			"Default": "true"
+		},
+		"FriendableAnimals": {
+			"AllowValues": "EmperorDuck, EmpressDuck, LadyShebaCat, LittleGruff, HappySlime",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "EmperorDuck, EmpressDuck, LadyShebaCat, LittleGruff, HappySlime"
+		},
+		"FriendableZuzuNPCs": {
+			"AllowValues": "false, Stella, Kennedy",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "false"
+		},
+		"RivalHearts": {
+			"AllowValues": "RosaJuliet, AideenMateo, TristanShane",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "RosaJuliet"
+		},
+		"GenderNeutral": {
+			"AllowValues": "true,false",
+			"Default": "false"
+		},
+		"KeepNonDatable": {
+			"AllowValues": "Jasper, Juliet, Kataryna, Aideen, Jade, Tristan, false",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Default": "false",
+			"Description": "Enter the names of characters you don't want to date (currently Aideen, Jade, Jasper, Juliet, Kataryna, Tristan) - this will unlock their 14-heart events platonically"
+		},
+		"EnableTristan": {
+			//"AllowValues": "true,false",
+			"Default": "false"
+		},
+		"CustomFarmSpousePatioExit": {
+			"Default": "none"
+		},
+		"Nyapu's portraits": {
+			"AllowValues": "true, false, animals",
+			"Default": false,
+		},
+		"FestivalOutfits": {
+			"AllowValues": "true, false",
+			"Default": true
+		},
+	},
+	"DynamicTokens": [
+		{
+			"Name": "GenderNeutralSubjective",
+			"Value": "They",
+		},
+		{
+			"Name": "GenderNeutralSubjective",
+			"Value": "{{Hana.GNMTokens/SubjectivePronoun}}",
+			"When": {
+				"HasMod": "Hana.GNMTokens"
+			}
+		},
+		{
+			"Name": "GenderNeutralSubjectiveHave",
+			"Value": "they have"
+		},
+		{
+			"Name": "GenderNeutralSubjective",
+			"Value": "{{Hana.GNMTokens/SubjectivePronoun}} has",
+			"When": {
+				"HasMod": "Hana.GNMTokens"
+			}
+		},
+		{
+			"Name": "GenderNeutralSubjectiveHave",
+			"Value": "they have",
+			"When": {
+				"HasMod": "Hana.GNMTokens",
+				"Hana.GNMTokens/SubjectivePronoun": "they"
+			}
+		},
+		{
+			"Name": "GenderNeutralObjective",
+			"Value": "them"
+		},
+		{
+			"Name": "GenderNeutralObjective",
+			"Value": "{{Hana.GNMTokens/ObjectivePronoun}}",
+			"When": {
+				"HasMod": "Hana.GNMTokens"
+			}
+		},
+		{
+			"Name": "GenderNeutralPossessive",
+			"Value": "Their"
+		},
+		{
+			"Name": "GenderNeutralPossessive",
+			"Value": "{{Hana.GNMTokens/PossessivePronoun}}",
+			"When": {
+				"HasMod": "Hana.GNMTokens"
+			}
+		},
+		{
+			"Name": "GenderNeutralTitle",
+			"Value": "Mx."
+		},
+		{
+			"Name": "GenderNeutralTitle",
+			"Value": "{{Hana.GNMTokens/Title}}",
+			"When": {
+				"HasMod": "Hana.GNMTokens"
+			}
+		},
+		{
+			"Name": "CorwinUnlocked",
+			"Value": "false"
+		},
+		{
+			"Name": "CorwinUnlocked",
+			"Value": "Corwin",
+			"When": {
+				"HasSeenEvent": "57871500"
+			}
+		},
+		{
+			"Name": "SpousePatioExit",
+			"Value": "70 10"
+		},
+		{
+			"Name": "SpousePatioExit",
+			"Value": "89 9",
+			"When": {
+				"FarmType": "MeadowlandsFarm"
+			}
+		},
+		{
+			"Name": "SpousePatioExit",
+			"Value": "89 9",
+			"When": {
+				"FarmType": "Beach"
+			}
+		},
+		{
+			"Name": "SpousePatioExit",
+			"Value": "128 16",
+			"When": {
+				"FarmType": "FrontierFarm"
+			}
+		},
+		{
+			"Name": "SpousePatioExit",
+			"Value": "{{CustomFarmSpousePatioExit}}",
+			"When": {
+				"CustomFarmSpousePatioExit |contains=none": false
+			}
+		},
+		{
+			"Name": "EnablePlatonic14HeartJuliet",
+			"Value": false
+		},
+		{
+			"Name": "EnablePlatonic14HeartJuliet",
+			"Value": true,
+			"When": {
+				"KeepNonDatable |contains=Juliet": true,
+			}
+		},
+		{
+			"Name": "EnablePlatonic14HeartJuliet",
+			"Value": true,
+			"When": {
+				"HasDialogueAnswer": "639898, 639896",
+			}
+		},
+		{
+			"Name": "extraActors",
+			"Value": "ToriLK 40 95 1 Beatrice 41 94 2"
+		},
+		{
+			"Name": "extraActors",
+			"Value": "Rosa 21 100 2 Juliet 20 102 0",
+			"When": {
+				"DayOfWeek": "Saturday"
+			}
+		},
+		{
+			"Name": "IsEvenYear",
+			"Value": "{{Query: {{Year}} % 2 = 0}}"
+		},
+		{
+			"Name": "SVEInstalled",
+			"Value": "false"
+		},
+		{
+			"Name": "ShipInTown",
+			"Value": "false"
+		},
+		{
+			"Name": "ShipInTown",
+			"Value": "true",
+			"When": {
+				"Season": "spring",
+				"Day": "23"
+			}
+		},
+		{
+			"Name": "ShipInTown",
+			"Value": "true",
+			"When": {
+				"Season": "summer",
+				"Day": "10"
+			}
+		},
+		{
+			"Name": "ShipInTown",
+			"Value": "true",
+			"When": {
+				"Season": "summer",
+				"Day": "27"
+			}
+		},
+		{
+			"Name": "ShipInTown",
+			"Value": "true",
+			"When": {
+				"Season": "summer",
+				"Day": "28"
+			}
+		},
+		{
+			"Name": "SVEInstalled",
+			"Value": "sve",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Name": "LexiNameForYou",
+			"Value": "@"
+		},
+		{
+			"Name": "LexiNameForYou",
+			"Value": "{{i18n:lexi.None-of-your-business}}",
+			"When": {
+				"HasFlag": "LexiNoneBusiness"
+			}
+		},
+		//Do cats talk?
+		{
+			"Name": "cattalk",
+			"Value": "false",
+			"When": {
+				"HasSeenEvent |contains=50706121": false
+			}
+		},
+		{
+			"Name": "cattalk",
+			"Value": "true",
+			"When": {
+				"HasSeenEvent |contains=50706121": true
+			}
+		},
+		{
+			"Name": "Blacksmith",
+			"Value": "clint"
+		},
+		{
+			"Name": "Blacksmith",
+			"Value": "clarice",
+			"When": {
+				"HasMod": "aeki.ByeByeClintHelloClarice"
+			}
+		},
+		{ //Are you married to Jasper? ********************************
+			"Name": "JasperSpouse",
+			"Value": "false"
+		},
+		{
+			"Name": "JasperSpouse",
+			"When": {
+				"Spouse": "Jasper"
+			},
+			"Value": "true"
+		},
+		{
+			"Name": "JasperSpouse",
+			"When": {
+				"Relationship:Jasper": "Married"
+			},
+			"Value": "true"
+		},
+		{ //Are you married to Tristan? ********************************
+			"Name": "TristanSpouse",
+			"Value": "false"
+		},
+		{
+			"Name": "TristanSpouse",
+			"When": {
+				"Spouse": "TristanLK"
+			},
+			"Value": "true"
+		},
+		{
+			"Name": "TristanSpouse",
+			"When": {
+				"Relationship:TristanLK": "Married"
+			},
+			"Value": "true"
+		},
+		{
+			"Name": "LavrilInstalled",
+			"Value": "e 57874004"
+		},
+		{
+			"Name": "LavrilInstalled",
+			"Value": "k 63070010",
+			"When": {
+				"HasMod |contains=Arknir27.Lavril": true
+			}
+		},
+		{
+			"Name": "LavrilInstalled2",
+			"Value": "PLAYER_HAS_SEEN_EVENT Current 57874004"
+		},
+		{
+			"Name": "LavrilInstalled2",
+			"Value": "PLAYER_HAS_SEEN_EVENT Current 63070010",
+			"When": {
+				"HasMod |contains=Arknir27.Lavril": true
+			}
+		},
+		{
+			"Name": "LexiOllyFriend",
+			"Value": "false",
+			"When": {
+				"HasSeenEvent |contains=57872012": false
+			}
+		},
+		{
+			"Name": "LexiOllyFriend",
+			"Value": "true",
+			"When": {
+				"HasSeenEvent |contains=57872012": true
+			}
+		},
+		{
+			"Name": "AideenDating",
+			"Value": "single"
+		},
+		{
+			"Name": "AideenDating",
+			"Value": "farmer",
+			"When": {
+				"Relationship:Aideen": "dating"
+			}
+		},
+		{
+			"Name": "AideenDating",
+			"Value": "mateo",
+			"When": {
+				"HasFlag |contains=RivalHearts_AideenMateo": true
+			}
+		},
+		{
+			"Name": "HasSeenSecretNote24",
+			"Value": "false"
+		},
+		{
+			"Name": "HasSeenSecretNote24",
+			"Value": "true",
+			"When": {
+				"HasFlag": "HasSeenSecretNote24"
+			}
+		},
+		//Sheba schedule
+		{
+			"Name": "Sheba.nap",
+			"Value": "{{Random:EastScarp_Village 8 85 2 sheba_nap,EastScarp_Village 65 76 2 sheba_nap,EastScarp_Village 23 79 2 sheba_nap,EastScarp_Village 3 101 2 sheba_nap}}"
+		},
+		{
+			"Name": "Sheba.sit",
+			"Value": "{{Random:EastScarp_Village 10 86 2 sheba_sit,EastScarp_Village 28 104 2 sheba_sit,EastScarp_Village 1 12 2 sheba_sit,EastScarp_Village 20 102 2 sheba_sit,EastScarp_Orchard 2 15 sheba_sit}}"
+		},
+		{
+			"Name": "Sheba.wander",
+			"Value": "{{Random:EastScarp_Village 75 80 2 square_5_5,EastScarp_Village 26 70 0 square_7_0_0,EastScarp_Village 22 16 2 square_5_4,EastScarp_Village 45 110 0 square_5_0_0,EastScarp_Village 16 102 square_5_5,EastScarp_Village 45 66 0 square 5_0}}"
+		},
+		{
+			"Name": "Sheba.groom",
+			"Value": "{{Random:EastScarp_Village 11 62 2 sheba_grooming,EastScarp_Village 8 53 2 sheba_grooming,EastScarp_Village 29 98 2 sheba_grooming,EastScarp_Village 53 61 2 sheba_grooming,EastScarp_Village 13 92 2 sheba_grooming}}"
+		},
+		//MunchingtonLocation
+		{
+			"Name": "MunchieLocation",
+			"Value": "{{Random:bedroom,livingroom,garden}}",
+			"When": {
+				"weather:valley": "sun,wind"
+			}
+		},
+		{
+			"Name": "MunchieLocation",
+			"Value": "{{Random:bedroom,livingroom}}",
+			"When": {
+				"weather:valley": "rain,storm,snow"
+			}
+		},
+		//Eyvinder name known?
+		{
+			"Name": "EyvinderName",
+			"Value": "false"
+		},
+		{
+			"Name": "EyvinderName",
+			"Value": "true",
+			"When": {
+				"HasSeenEvent": "57877008"
+			}
+		},
+		//Compatibililty with Piper mod
+		{
+			"Name": "pierreorpiper",
+			"Value": "pierre",
+		},
+		{
+			"Name": "pierreorpiper",
+			"Value": "piper",
+			"When": {
+				"HasMod": "piper.holychurros"
+			}
+		},
+		//Joja event with and without SVE chars
+		{
+			"Name": "JojaMartActors",
+			"Value": "farmer 13 17 3"
+		},
+		{
+			"Name": "JojaMartActors",
+			"Value": "farmer 13 17 3 MorrisTod 24 26 3 Claire 22 26 1",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		//Rosa Event with and without Juliet
+		{
+			"Name": "JulietRef",
+			"Value": "false"
+		},
+		{
+			"Name": "JulietRef",
+			"Value": "juliet",
+		},
+		{
+			"Name": "57874008Actors",
+			"Value": "Gunther 3 8 2 Rosa 3 10 0",
+		},
+		{
+			"Name": "57874008Actors",
+			"Value": "Gunther 4 8 2 Rosa 4 10 0",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Name": "57874008Actors",
+			"Value": "{{57874008Actors}} Alex 88 91 2",
+			"When": {
+				"Season": "summer"
+			}
+		},
+		{
+			"Name": "57874008.moveRosa",
+			"Value": "move Rosa 0 2 2",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Name": "57874008.moveRosa",
+			"Value": "move Rosa 0 1 2/move Rosa -1 0 2/move Rosa 0 1 2",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		{
+			"Name": "jojaORcc",
+			"Value": "jj"
+		},
+		{
+			"Name": "jojaORcc",
+			"Value": "cc",
+			"When": {
+				"IsCommunityCenterComplete": true
+			}
+		},
+		{
+			"Name": "ruinsORrepair",
+			"Value": "ruins"
+		},
+		{
+			"Name": "ruinsORrepair",
+			"Value": "repair",
+			"When": {
+				"HasSeenEvent": "63078003"
+			}
+		},
+		{
+			"Name": "GuntherPosition",
+			"Value": "Gunther 3 8 2",
+		},
+		{
+			"Name": "GuntherPosition",
+			"Value": "Gunther 4 8 2",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			}
+		},
+		//Rosa's 10 heart event
+		{
+			"Name": "MrGingerOrTristan",
+			"Value": "MisterGinger?"
+		},
+		{
+			"Name": "MrGingerOrTristan",
+			"Value": "TristanLK",
+			"When": {
+				"HasSeenEvent": "5295000",
+				"EnableTristan | contains=false": false
+			}
+		},
+		{
+			"Name": "57874015_PepperPup_1",
+			"Value": "pause 5"
+		},
+		{
+			"Name": "57874015_PepperPup_1",
+			"Value": "warp PepperPup 17 25/showFrame PepperPup 16",
+			"When": {
+				"HasSeenEvent": "57870020"
+			}
+		},
+		{
+			"Name": "57874015_PepperPup_2",
+			"Value": "speak Eloise \"{{i18n:57874015.4}}\"/faceDirection Jacob 1"
+		},
+		{
+			"Name": "57874015_PepperPup_2",
+			"Value": "speak Eloise \"{{i18n:57874015.4.alt}}\"/emote PepperPup 24/faceDirection Jacob 1",
+			"When": {
+				"HasSeenEvent": "57870020"
+			}
+		},
+		{
+			"Name": "57874015_PepperPup_3",
+			"Value": "pause 5"
+		},
+		{
+			"Name": "57874015_PepperPup_3",
+			"Value": "faceDirection PepperPup 0/jump PepperPup 4/speed PepperPup 4/advancedMove PepperPup false false 0 -4 4 0 1 1000",
+			"When": {
+				"HasSeenEvent": "57870020"
+			}
+		},
+		{
+			"Name": "57874015_OllyLexi_1",
+			"Value": "pause 5"
+		},
+		{
+			"Name": "57874015_OllyLexi_1",
+			"Value": "warp OliverK 32 21/warp Leximonster 33 21",
+			"When": {
+				"HasSeenEvent": "57872012"
+			}
+		},
+		{
+			"Name": "57874015_EyVivi_1",
+			"Value": "pause 5"
+		},
+		{
+			"Name": "57874015_EyVivi_1",
+			"Value": "warp Eyvinder 28 19/warp VivienneLK 29 19",
+			"When": {
+				"HasSeenEvent": "57877009"
+			}
+		},
+		//Dynamic stuff for Vivienne
+		{
+			"Name": "57875006.J&G",
+			"Value": "Rosa 21 100 2 Juliet 20 102 0"
+		},
+		{
+			"Name": "57875006.J&G",
+			"Value": "Rosa 21 100 2 Juliet 20 102 0 Gremlin 19 102 1",
+			"When": {
+				"HasSeenEvent": "86571101"
+			}
+		},
+		//SpiritsEveAtScarpInn
+		{
+			"Name": "ESTownMap",
+			"Value": "EastScarp_Crossing"
+		},
+		{
+			"Name": "ESTownMap",
+			"Value": "Custom_ShearwaterBridge",
+			"When": {
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+			},
+		},
+		//Is Juliet's Boss Lewis or Morris? 
+		{
+			"Name": "bossGuy",
+			"Value": "Lewis",
+			"When": {
+				"IsCommunityCenterComplete": true
+			}
+		},
+		{
+			"Name": "bossGuy",
+			"Value": "Morris",
+			"When": {
+				"IsCommunityCenterComplete": false
+			}
+		},
+		//Spirit's Eve Costume
+		{
+			"Name": "Costume",
+			"Value": "Pirate"
+		},
+		{
+			"Name": "Costume",
+			"Value": "Zombie",
+			"When": {
+				"Year": "1,3,5,7,11,13,17,19,23,27,31,37,43"
+			}
+		}, //Determines what gifts Jessie can give in her 2-heart event
+		{
+			"Name": "JessGift",
+			"Value": "453"
+		},
+		{
+			"Name": "JessGift",
+			"Value": "{{JessGift}} 431",
+			"When": {
+				"Hearts:Haley": "0,1,2,3,4"
+			}
+		},
+		{
+			"Name": "JessGift",
+			"Value": "{{JessGift}} 482",
+			"When": {
+				"Hearts:Shane": "0,1,2,3,4"
+			}
+		},
+		{
+			"Name": "JessGift",
+			"Value": "{{JessGift}} 453",
+			"When": {
+				"Hearts:Penny": "0,1,2,3,4"
+			}
+		},
+		{
+			"Name": "JessGift",
+			"Value": "{{JessGift}} 490",
+			"When": {
+				"Hearts:Abigail": "0,1,2,3,4"
+			}
+		},
+		{
+			"Name": "JessGift",
+			"Value": "{{JessGift}} 745",
+			"When": {
+				"Hearts:Maru": "0,1,2,3,4"
+			}
+		},
+		{
+			"Name": "JessGift",
+			"Value": "{{JessGift}} 802",
+			"When": {
+				"Hearts:Sam": "0,1,2,3,4"
+			}
+		},
+		{
+			"Name": "JessGift",
+			"Value": "{{JessGift}} 433",
+			"When": {
+				"Hearts:Harvey": "0,1,2,3,4"
+			}
+		},
+		//Added flavour for Jessie's 10-heart event
+		{
+			"Name": "MusicalInterlude",
+			"Value": "pause 500/faceDirection farmer 3/emote farmer 32/pause 2500/faceDirection farmer 2/emote Jessie 56 true/emote farmer 56 true"
+		},
+		{
+			"Name": "MusicalInterlude",
+			"Value": "pause 500/faceDirection farmer 3/emote farmer 32/pause 2500/faceDirection farmer 2/playSound dwop/showFrame 98/emote Jessie 16/pause 500/speak Jessie \"{{i18n:6398005.08.2}}\"/pause 500/emote Jessie 56",
+			"When": {
+				"HasSeenEvent": "2"
+			}
+		},
+		//Platonic or Romantic for Juliet's 10-heart event
+		{
+			"Name": "10HeartReact",
+			"Value": "emote Juliet 20/pause 1000"
+		},
+		{
+			"Name": "10HeartReact",
+			"Value": "animate Juliet false false 4500 28/animate farmer true false 4500 101/positionOffset farmer -10 0/positionOffset Juliet 10 0/textAboveHead Juliet \"<\"",
+			"When": {
+				"Relationship:Juliet |contains=dating, married, engaged": true
+			}
+		},
+		{
+			"Name": "GenericMovieDialogue",
+			"Value": "{{i18n:juliet.movietheater.kevin}}",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Name": "GenericMovieDialogue",
+			"Value": "{{i18n:juliet.movietheater.claire}}",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		//14-heart Event Participants
+		{
+			"Name": "Juliet_SetUp",
+			"Value": "Marlon 28 8 2 Marnie 35 8 2"
+		},
+		{
+			"Name": "Juliet_SetUp",
+			"Value": "Marlon 28 8 2 Marnie 29 8 2",
+			"When": {
+				"HasSeenEvent": "50706110"
+			}
+		},
+		//Will Corwin flirt
+		{
+			"Name": "WillCorwinFlirt",
+			"Value": "CorwinNoFlirt",
+		},
+		{
+			"Name": "WillCorwinFlirt",
+			"Value": "CorwinFlirt",
+			"When": {
+				"HasDialogueAnswer |contains=5787151": true
+			}
+		},
+		{
+			"Name": "WillCorwinFlirt",
+			"Value": "CorwinNoFlirt",
+			"When": {
+				"HasDialogueAnswer |contains=5787152": true
+			}
+		},
+		//Adds selected custom NPCs: Tristan and Luckiel (if installed)
+		{
+			"Name": "Juliet_SetUp",
+			"Value": "{{Juliet_SetUp}} MisterGinger? 43 16 3",
+			"When": {
+				"HasSeenEvent": "5295000",
+			}
+		},
+		//Main Event Rearrangement, includes custom NPCs
+		{
+			"Name": "Juliet_MainEvent",
+			"Value": "warp Gunther 31 17 true/warp Jessie 39 15 true/faceDirection Jessie 3 true/warp Juliet 34 11 true/faceDirection Juliet 2 true/warp farmer 35 13 true/warp Vincent 26 11 true/faceDirection Vincent 1 true/warp Jas 37 12 true/faceDirection Jas 3 true/faceDirection Penny 3 true/warp Lewis 36 8 true/faceDirection Lewis 2 true/warp Caroline 25 10 true/faceDirection Jodi 1 true/warp Kent 22 14 true/warp Gus 25 14 true/warp Pam 26 16 true/faceDirection Pam 0 true/warp Harvey 24 13 true/faceDirection Harvey 1 true/warp Shane 38 13 true/warp Clint 28 15 true/faceDirection Clint 0 true/faceDirection Pierre 1 true/faceDirection Emily 0 true/warp Gunther 31 17 true/warp Leah 36 15 true/faceDirection Leah 0 true/warp Elliott 35 15 true/faceDirection Elliott 0 true/warp Robin 33 17 true/faceDirection Robin 0 true/warp Sam 32 14 true/faceDirection Sam 0 true/warp Abigail 31 14 true/faceDirection Abigail 0 true/warp Sebastian 33 14 true/faceDirection Sebastian 0 true/warp Demetrius 34 17 true/faceDirection Demetrius 0 true/warp Maru 42 12 true/faceDirection Maru 3 true/warp Evelyn 41 14 true/faceDirection Evelyn 3 true/warp George 40 14 true/faceDirection George 3 true/warp Linus 38 16 true/faceDirection Linus 0 true/warp Jessie 39 15 true/faceDirection Jessie 3 true/warp Juliet 34 11 true/faceDirection Juliet 2 false/warp farmer 35 13 false/faceDirection Rosa 0/warp Jacob 40 12/warp Eloise 37 11/faceDirection Jacob 3/faceDirection Eloise 3/warp ToriLK 37 9/faceDirection ToriLK 3/warp Aideen 42 15/faceDirection Aideen 3"
+		},
+		{
+			"Name": "Juliet_MrGinger",
+			"Value": "pause 5",
+		},
+		{
+			"Name": "Juliet_MrGinger",
+			"Value": "warp TristanLK? 43 13/faceDirection TristanLK? 3",
+			"When": {
+				"HasSeenEvent": "5295000"
+			}
+		},
+		//Adds Lucikiel's reactions into 14-heart event
+		{
+			"Name": "Clint_Heckle",
+			"Value": "textAboveHead Pam \"{{i18n:6398444.10}}\"/pause 50"
+		},
+		{
+			"Name": "Clint_Heckle",
+			"Value": "textAboveHead Pam \"{{i18n:6398444.10}}\"/pause 500/emote Lucikiel 12/pause 500/textAboveHead Lucikiel \"{{i18n:6398444.11}}\"/pause 50",
+			"When": {
+				"HasMod": "Arknir.Lucikiel"
+			}
+		},
+		{
+			"Name": "Clint_Heckle2",
+			"Value": "textAboveHead Pam \"{{i18n:6398444_clintheckle_3}}\""
+		},
+		{
+			"Name": "Clint_Heckle2",
+			"Value": "textAboveHead Lucikiel \"{{i18n:6398444.15}}\"",
+			"When": {
+				"HasMod": "Arknir.Lucikiel"
+			}
+		},
+		{
+			"Name": "Clint_Heckle3",
+			"Value": "emote Emily 32/emote Clint 60"
+		},
+		{
+			"Name": "Clint_Heckle3",
+			"Value": "emote Emily 32/emote Clint 60/pause 500/emote Lucikiel 12",
+			"When": {
+				"HasMod": "Arknir.Lucikiel"
+			}
+		},
+		//Jasper Tokens
+		{ //50709921 = event with Cameron ******************************
+			"Name": "e9921",
+			"Value": "false"
+		},
+		{
+			"Name": "e9921",
+			"Value": "true",
+			"When": {
+				"HasSeenEvent |contains=50709921": true
+			}
+		},
+		{ //Tokens for Immersive 'FunDay' Dialogue *********************
+			"Name": "JasperToken",
+			"Value": "false.{{season}}",
+			"When": {
+				"DayOfWeek": "Monday, Sunday"
+			}
+		},
+		{
+			"Name": "JasperToken",
+			"Value": "false.{{season}}",
+			"When": {
+				"DayofWeek": "Wednesday",
+				"HasFlag |contains=Jasper_Penny": false
+			}
+		},
+		{
+			"Name": "JasperToken",
+			"Value": "JasperPenny.{{season}}",
+			"When": {
+				"DayofWeek": "Wednesday",
+				"HasFlag": "Jasper_Penny"
+			}
+		},
+		{
+			"Name": "JasperToken",
+			"Value": "NoDwarf",
+			"When": {
+				"DayofWeek": "friday",
+				"HasFlag |contains=Dwarf_Friend": false
+			}
+		},
+		{
+			"Name": "JasperToken",
+			"Value": "DwarfFriend.{{season}}",
+			"When": {
+				"DayofWeek": "friday",
+				"HasFlag": "Dwarf_Friend"
+			}
+		},
+		{
+			"Name": "JasperToken",
+			"Value": "DwarfRoommate",
+			"When": {
+				"DayofWeek": "friday",
+				"RoomMate": "Dwarf"
+			}
+		},
+		{
+			"Name": "JasperToken",
+			"Value": "DwarfRoommate",
+			"When": {
+				"DayofWeek": "friday",
+				"Relationship:Dwarf": "married"
+			}
+		},
+		{
+			"Name": "JasperToken",
+			"Value": "birthday",
+			"When": {
+				"Day": "22",
+				"Season": "fall"
+			}
+		},
+		{ //Which Snail is it? ********************************
+			"Name": "PSnail",
+			"Value": "SafariGuy"
+		},
+		{
+			"Name": "PSnail",
+			"When": {
+				"HasSeenEvent |contains=924201": true,
+				"HasMod": "ZoeDoll.GingerIslandNPCTweaks"
+			},
+			"Value": "ProfSnail"
+		},
+		{
+			"Name": "SeasonalForage",
+			"Value": "18",
+		},
+		{
+			"Name": "SeasonalForage",
+			"Value": "402",
+			"When": {
+				"season": "summer"
+			}
+		},
+		{
+			"Name": "SeasonalForage",
+			"Value": "408",
+			"When": {
+				"season": "fall"
+			}
+		},
+		{
+			"Name": "SeasonalForage",
+			"Value": "418",
+			"When": {
+				"season": "winter"
+			}
+		},
+		//Wedding guests
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "ToriLK 30 67 0 "
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "Aideen 30 67 0 ",
+			"When": {
+				"Relationship:ToriLK": "Engaged, Married"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} Eyvinder 25 67 0",
+			"When": {
+				"HasSeenEvent": "57877009"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} JosephineK 23 67 0",
+			"When": {
+				"HasSeenEvent": "57873000",
+				"HasSeenEvent |contains=57873005": false
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} KennedyLK 22 66 0",
+			"When": {
+				"HasSeenEvent": "57871400"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} OliverK 23 66 0",
+			"When": {
+				"HasSeenEvent": "57873000"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} TristanLK? 28 67 0",
+			"When": {
+				"HasSeenEvent": "5295000",
+				"EnableTristan | contains=false": false
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} VivienneLK 24 67 0",
+			"When": {
+				"HasSeenEvent": "57875000"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} Mateo? 28 69 0",
+			"When": {
+				"HasSeenEvent |contains=57871054": "False",
+				"HasSeenEvent": "SnS.Ch1.Mateo.0"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} Mateo? 31 66 0",
+			"When": {
+				"HasSeenEvent": "57871054",
+				"HasConversationTopic |contains=MateoPain": "False"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} Hector? 30 69 0",
+			"When": {
+				"HasSeenEvent": "SnS.Ch2.Hector.6"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} Cirrus? 31 69 0",
+			"When": {
+				"HasSeenEvent": "SnS.Ch3.Cirrus.1"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} Roslin? 28 70 0 Dandelion? 29 70 0 Solomon? 30 70 0",
+			"When": {
+				"HasSeenEvent": "SnS.Ch4.Dandelion.1"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} Lavril? 25 69 0 Void? 24 69 0",
+			"When": {
+				"HasSeenEvent": "63070012"
+			}
+		},
+		{
+			"Name": "ESWeddingGuests",
+			"Value": "{{ESWeddingGuests}} SenS? 29 69 0",
+			"When": {
+				"HasSeenEvent": "7thAxis.DitR_Events.SenS.0h"
+			}
+		},
+		{
+			"Name": "SeasonalCuteChacters",
+			"Value": "pause 10"
+		},
+		{
+			"Name": "SeasonalCuteChacters",
+			"Value": "changeSprite Jas FlowerDance",
+			"When": {
+				"HasMod": "Poltergeister.SeasonalCuteCharacters"
+			}
+		},
+	],
+	//*****************************
+	// A C T U A L   C O N T E N T
+	//*****************************
+	"Changes": [
+		{
+			"LogName": "Loads Blank files (Dialogues and events)",
+			"Action": "Load",
+			"Target": "Characters/Dialogue/Aideen, Characters/Dialogue/MarriageDialogueAideen, Characters/Dialogue/Eloise, Strings/schedules/Eloise, Characters/Dialogue/Jacob, Strings/schedules/Jacob, Characters/Dialogue/Eyvinder, Characters/Dialogue/LittleGruff, Characters/Dialogue/Jasper, Characters/Dialogue/MarriageDialogueJasper, Characters/Dialogue/Jessie, Characters/Dialogue/Juliet, Characters/Dialogue/MarriageDialogueJuliet, Strings/schedules/Juliet, Characters/Dialogue/JosephineK, Characters/Dialogue/KatarynaLK, Characters/Dialogue/MarriageDialogueKatarynaLK, Strings/schedules/KatarynaLK, Characters/Dialogue/Leximonster, Characters/Dialogue/LumaJunimo, Characters/Dialogue/OliverK, Characters/Dialogue/Rosa, Strings/schedules/Rosa, Characters/Dialogue/ToriLK, Characters/Dialogue/VivienneLK, Characters/Dialogue/Beatrice, Strings/schedules/Beatrice, Data/Events/EastScarp_VillageInn_SpiritEve, Data/Events/EastScarp_JessieHouse, Data/Events/EastScarp_JojaBreakroom, Data/Events/EastScarp_JessieHouseBasement, Characters/Dialogue/KennedyLK, Characters/Dialogue/TristanLK, Characters/schedules/TristanLK, Characters/Dialogue/MarriageDialogueTristanLK, Characters/Dialogue/EdithHart, Characters/Dialogue/MichaelHart, Characters/Dialogue/EthanHart, Characters/Dialogue/StellaHart, Characters/schedules/EdithHart, Characters/schedules/MichaelHart, Characters/schedules/EthanHart, Characters/schedules/StellaHart, Characters/Dialogue/HappySlime, Characters/schedules/HappySlime, Strings/schedules/EdithHart, Strings/schedules/MichaelHart, Strings/schedules/StellaHart, Strings/schedules/EthanHart, Characters/Dialogue/DaleWaede, Characters/schedules/DaleWaede, Characters/schedules/Beatrice, Characters/schedules/ValkyrieDog, Characters/Dialogue/ValkyrieDog, Characters/Dialogue/CameronLK, Characters/Dialogue/KeanuAvis, Characters/schedules/KeanuAvis, Characters/schedules/Juliet, Characters/schedules/Gremlin, Characters/Dialogue/MarriageDialogueToriLK",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"Logname": "JojaMart Events",
+			"Action": "Load",
+			"Target": "Data/Events/JojaMart, Data/Events/Blacksmith, Data/Events/IslandSouthEast",
+			"FromFile": "assets/blank.json",
+			"Priority": "low"
+		},
+		// ESSENTIALLY THIS IS THE TABLE OF CONTENTS:
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Locations.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/CharacterData.json"
+		},
+		{ //0000
+			"Action": "Include",
+			"FromFile": "assets/JacobEloise.json"
+		},
+		{ //1000
+			"Action": "Include",
+			"FromFile": "assets/Aideen.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Leximonster.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Rosa.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/VivienneLK.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Eyvinder.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/LumaJunimo.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/ToriLK.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Beatrice.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Juliet.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Jessie.json",
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/OliverJosephine.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Kataryna.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Jasper.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/HartFamily.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Tristan.json",
+			"When": {
+				"HasMod": "LemurKat.Mr.Ginger.NPC",
+				"EnableTristan |contains=false": false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Cameron.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/CorwinLK.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Kennedy.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/DaleWaede.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Jade.json",
+			"When": {
+				"HasMod |contains=malic.cp.jadeNPC": false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Keanu.json"
+		},
+		{
+			"LogName": "Dwarf",
+			"Action": "Include",
+			"FromFile": "assets/Data/Dwarf.json"
+		},
+		{ // The animal NPCs
+			"Action": "Include",
+			"FromFile": "assets/Menagerie.json"
+		},
+		//Movie Tastes
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Movies.json"
+		},
+		//Festivals
+		{
+			"Action": "Include",
+			"FromFile": "assets/Festivals/FestivalPatches.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Festivals/FestivalsDialogue.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Festivals.json",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Festivals_SVE.json",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+			}
+		},
+		{
+			"LogName": "Adds Eyvinder to festivals",
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Eyvinder.json",
+			"When": {
+				"HasSeenEvent:hostPlayer |contains=57877009": true
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Festivals/Festivals_Modded.json"
+		},
+		//Mail (and its triggers)
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Mail.json"
+		},
+		//RivalHearts
+		{
+			"Action": "Include",
+			"FromFile": "assets/RivalHearts/JulietRosa.json",
+			"When": {
+				"RivalHearts |contains=RosaJuliet": true
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/RivalHearts/JacobVictoria.json",
+			"When": {
+				"RivalHearts |contains=JacobVictoria": true
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/RivalHearts/AideenMateo.json",
+			"When": {
+				"HasMod |contains=DestyNova.Mateo.CP, DN.SnS.CP, DN.SnS": true,
+				"RivalHearts |contains=AideenMateo": true
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/Weddings.json"
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_Village",
+			"FromFile": "assets/Maps/EastScarpVillage_Ship.tmx",
+			"ToArea": {
+				"X": 39,
+				"Y": 122,
+				"Width": 22,
+				"Height": 18
+			},
+			"When": {
+				"ShipInTown": "true"
+			}
+		},
+		{ //Moves Oliver and Josephine into the inn
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_VillageInn, Maps/EastScarpeInn_SpiritEve",
+			"FromFile": "assets/Maps/OliverRoom.tmx",
+			"Update": "OnLocationChange",
+			"ToArea": {
+				"X": 12,
+				"Y": 4,
+				"Width": 9,
+				"Height": 9
+			},
+			"When": {
+				"HasSeenEvent |contains=57873000": "True",
+				"HasSeenEvent |contains=57873005": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_VillageInn, Maps/EastScarpeInn_SpiritEve",
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 8,
+						"Y": 15
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Door JosephineK"
+					}
+				},
+				{
+					"Position": {
+						"X": 15,
+						"Y": 15
+					},
+					"Layer": "Buildings",
+					"SetProperties": {
+						"Action": "Door OliverK"
+					}
+				}
+			],
+			"When": {
+				"HasSeenEvent |contains=57873000": "True",
+				"HasSeenEvent |contains=57873005": "false"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_VetHouse",
+			"FromFile": "assets/Maps/VetHouse_Oliver.tmx",
+			"ToArea": {
+				"X": 17,
+				"Y": 17,
+				"Width": 8,
+				"Height": 11
+			},
+			"When": {
+				"HasSeenEvent |contains=57873005": "true"
+			}
+		},
+		//Temp Actors and sprite replacements
+		{
+			"LogName": "Governor",
+			"Action": "Load",
+			"Target": "Characters/Governor_walking",
+			"FromFile": "assets/Characters/TempActors/GovernorK.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Gunther_walking",
+			"FromFile": "assets/Characters/TempActors/Gunther_walking.png"
+		},
+		{
+			"LogName": "Governor",
+			"Action": "Load",
+			"Target": "Characters/3Books",
+			"FromFile": "assets/Characters/TempActors/3books.png"
+		},
+		//Monster sprite replacements
+		{
+			"Action": "Load",
+			"Target": "Characters/Monsters/ESMineBat",
+			"FromFile": "assets/Images/ESMineBats.png"
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Monsters/ESMineBatIridium",
+			"FromFile": "assets/Images/ESMineBatsIridium.png"
+		},
+		//Special Orders
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/SpecialOrders.json",
+		},
+		/*{ // Fixes Leo to stop him heading back to Ginger Island - non ES specific
+			"Action": "Include",
+			"FromFile": "assets/Data/LeoFix.json"
+		},*/
+		// *** East Scarpe Events ***
+		//For individual Heart events, see related sub-file
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				//"57870000/x EastScarp_IntroMail true": "null",
+				//Lewis visits to tell you of pending visitors
+				"57873000/z fall/z winter/z spring/u 28": "continue/64 15/farmer 64 16 2 Lewis 64 18 0/addConversationTopic Josephine_Arrives 1/addConversationTopic Josephine_Introduction 7/pause 1500/speak Lewis \"{{i18n:57873000.01}}\"/pause 500/emote farmer 8/pause 1500/speak Lewis \"{{i18n:57873000.02}}\"/pause 500/jump farmer 3/emote farmer 16/pause 1500/speak Lewis \"{{i18n:57873000.03}}\"/emote farmer 60/speak Lewis \"{{i18n:57873000.04}}\"/pause 500/emote farmer 40/quickQuestion #{{i18n:57873000.q1}}#{{i18n:57873000.q2}}#{{i18n:57873000.q3}}#{{i18n:57873000.q4}}(break)emote Lewis 32\\pause 1000\\speak Lewis \"{{i18n:57873000.r1}}\"(break)emote Lewis 40\\pause 500\\speak Lewis \"{{i18n:57873000.r2}}\"(break)emote Lewis 28\\pause 500\\speak Lewis \"{{i18n:57873000.r3}}\"(break)emote Lewis 12\\speak Lewis \"{{i18n:57873000.r4}}\"/pause 1000/speak Lewis \"{{i18n:57873000.05}}\"/pause 1500/faceDirection Lewis 2/emote farmer 28/pause 1000/end",
+			}
+		},
+		{
+			"LogName": "Sets event as seen if you managed to miss triggering it on the day",
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"Entries": {
+				"EastScarp_IntroductionQuest": {
+					"Id": "EastScarp_IntroductionQuest",
+					"Trigger": "LocationChanged",
+					"Condition": "LOCATION_NAME Here EastScarp_Village",
+					"Action": "AddConversationTopic ESIntroduction 14"
+				},
+				"EastScarp_Unlocking_JosephineOliver": {
+					"Id": "EastScarp_Unlocking_JosephineOliver",
+					"Trigger": "DayEnding",
+					"Condition": "!PLAYER_HAS_SEEN_EVENT Host 57873000, SEASON_DAY fall 28, ",
+					"Actions": [
+						"MarkEventSeen host 57873000",
+						"AddConversationTopic Josephine_Arrives 1",
+						"AddConversationTopic Josephine_Introduction 7"
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/EastScarp_MeadowFarm",
+			"Entries": { // Jacob explains Meadow Farm
+				"57879002/t 0600 1800": "continue/-100 -100/farmer -1000 -1000 0 Jacob 31 38 1/skippable/addTemporaryActor MidnightBlackKitty 32 32 -1000 -1000 3 false/viewport 31 34 clamp true/pause 500/textAboveHead Jacob \"{{i18n:57879002.01}}\"/pause 1000/move Jacob 5 0 0/textAboveHead Jacob \"{{i18n:57879002.02}}\"/pause 500/warp farmer 30 40/move farmer 0 -2 1/emote farmer 56/faceDirection Jacob 3/pause 500/speak Jacob \"{{i18n:57879002.03}}\"/pause 500/emote farmer 36/pause 2000/move Jacob -4 0 3/emote Jacob 40/speak Jacob \"{{i18n:57879002.04}}\"/pause 500/emote farmer 28/pause 500/speak Jacob \"{{i18n:57879002.05}}\"/faceDirection Jacob 0/speak Jacob \"{{i18n:57879002.06}}\"/faceDirection farmer 0/pause 500/speak Jacob \"{{i18n:57879002.07}}\"/move farmer 1 0 0/speak Jacob \"{{i18n:57879002.08}}\"/faceDirection Jacob 3/emote Jacob 40/playSound cat/jump Jacob 5 true/jump farmer 5 true/faceDirection farmer 0 true/faceDirection Jacob 0 true/warp MidnightBlackKitty 36 36/pause 500/playSound cat/move MidnightBlackKitty -5 0 2/pause 500/animate MidnightBlackKitty false false 120 16 17 18 18 18/textAboveHead Jacob \"{{i18n:57879002.09}}\"/animate MidnightBlackKitty false true 1000 18/pause 3000/emote farmer 32/pause 1000/playSound cat/pause 1000/end"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/EastScarp_Village",
+			"Entries": { // ??? Cats ???
+				"57879000/t 2200 2600/r 0.3/w sunny": "junimoKart_ghostMusic/12 69/farmer 2 72 1 LadySheba 13 67 0/skippable/addTemporaryActor MidnightBlackKitty 32 32 15 66 3 false/addTemporaryActor MunchBoi 32 32 12 65 2 false/move farmer 10 0 0 true/pause 2000/playSound cat/pause 500/emote MunchBoi 8/playSound cat/pause 1000/emote MidnightBlackKitty 56/pause 1000/playSound cat/emote LadySheba 16/playSound cat/pause 2000/emote farmer 56/pause 500/faceDirection LadySheba 2/jump LadySheba/emote LadySheba 16/showFrame MidnightBlackKitty 18/pause 500/speed LadySheba 5/move LadySheba 0 15 0 true/faceDirection farmer 1/pause 3000/advancedMove MunchBoi false 0 2/pause 2000/move farmer 1 0 0/move farmer 0 -2 0/showFrame MunchBoi 18/pause 1000/playSound cat/faceDirection farmer 0/emote MunchBoi 56/emote farmer 40/pause 2000/end",
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/EastScarp_Village",
+			"When": {
+				"ShipInTown": "true"
+			},
+			"Entries": {
+				"57871300": "ocean/-100 -100/farmer 40 37 1 Beatrice 49 57 3 CaptainRod 47 57 1 Eloise 46 33 2 Jacob 47 33 2 Leximonster -100 -100 0/skippable/changeToTemporaryMap EastScarpVillage_PirateShip/showFrame Leximonster 20/viewport 46 38/advancedMove Eloise false 0 4 3 100/advancedMove Jacob false 0 4 2 500 3 100/advancedMove farmer false 4 0 1 100/proceedPosition farmer/pause 100/jump Eloise 5/textAboveHead Eloise \"{{i18n:57871300.0 | playername = {{playername}} }}\"/pause 500/speak Eloise \"{{i18n:57871300.1.{{GenderNeutral}} | GenderNeutralTitle = {{GenderNeutralTitle}} }}\"/jump Eloise 5/emote Jacob 32 true/emote farmer 8/pause 500/speak Eloise \"{{i18n:57871300.2}}\"/advancedMove farmer false 1 0 1 100/pause 1000/emote farmer 16/speed Eloise 4/advancedMove Eloise false 0 15 2 0 0 1/pause 500/faceDirection Jacob 2 true/faceDirection farmer 2/pause 500/textAboveHead Eloise \"{{i18n:57871300.3}}\"/advancedMove Jacob false -1 0 3 100/faceDirection farmer 1 true/emote Jacob 32/advancedMove Jacob false 0 15 3 0 2 100/advancedMove farmer false 0 15 2 0 2 100/viewport move 0 2 8000/proceedPosition farmer/textAboveHead Beatrice \"{{i18n:57871300.4}}\"/pause 1000/textAboveHead Eloise \"{{i18n:57871300.5}}\"/pause 500/faceDirection CaptainRod 0 true/faceDirection Beatrice 0 true/pause 500/speak Beatrice \"{{i18n:57871300.6}}\"/faceDirection Eloise 0/pause 500/speak Eloise \"{{i18n:57871300.7}}\"/pause 500/emote Jacob 56/jump Eloise 5/speed Eloise 4/advancedMove Eloise false 0 6 2 100/pause 500/advancedMove Jacob false -1 0 0 6 1 0 0 1 2 100/pause 1000/advancedMove farmer false 1 0 0 4 2 100/proceedPosition farmer/faceDirection CaptainRod 1 true/faceDirection Beatrice 3 true/emote farmer 32/pause 500/speak Beatrice \"{{i18n:57871300.8}}\"/pause 500/speak CaptainRod \"{{i18n:57871300.9.{{GenderNeutral}} }}\"/emote farmer 8/pause 500/speak CaptainRod \"{{i18n:57871300.10}}\"/advancedMove farmer false 0 2 -1 0 0 1 2 100/pause 1500/advancedMove CaptainRod false 1 0 1 100/proceedPosition farmer/faceDirection Eloise 3/pause 500/textAboveHead Eloise \"{{i18n:57871300.11}}\"/pause 500/faceDirection Eloise 2/pause 500/viewport move 1 1 5000/pause 5000/warp Leximonster 64 67/animate Leximonster false false 550 20 21 22 23/animate Leximonster false false 24000 23/pause 1000/end"
+				//
+			}
+		},
+		{ //loads stationery
+			"Action": "Load",
+			"Target": "Mods/LemurKat.EastScarp/LetterBackgrounds",
+			"FromFile": "assets/Images/Stationery.png"
+		},
+		//Parallax Sunset Background by DigitalMoons from itch.io (Palm trees)
+		{ //edits in spouse rooms and patios
+			"LogName": "Spouse stuff",
+			"Action": "Include",
+			"FromFile": "assets/Data/Spouses.json"
+		},
+		{ // Adjustment for when Eyvinder is released: moves the garden
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_DeepMountains",
+			"FromFile": "assets/Maps/{{season}}_TrollGarden.tmx",
+			"PatchMode": "Overlay",
+			"FromArea": {
+				"X": 0,
+				"Y": 0,
+				"Width": 12,
+				"Height": 12
+			},
+			"ToArea": {
+				"X": 74,
+				"Y": 9,
+				"Width": 12,
+				"Height": 12
+			}
+		},
+		/* Event Key:
+				57870000+ = Jacob and Eloise
+				57871000+ = Aideen
+				57872000+ = Lexi
+				57873000+ = Oliver and Josephine
+				57874000+ = Rosa
+				57875000+ = Vivienne
+				57876000+ = Kataryna
+				57879000+ = animal NPCs
+				*/
+		// Rejection dialogue for the Ruby Ring
+		{ // vanilla NPCs
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Alex, Characters/Dialogue/Elliott, Characters/Dialogue/Harvey, Characters/Dialogue/Sam, Characters/Dialogue/Sebastian, Characters/Dialogue/Shane, Characters/Dialogue/Abigail, Characters/Dialogue/Emily, Characters/Dialogue/Haley, Characters/Dialogue/Leah, Characters/Dialogue/Maru, Characters/Dialogue/Penny, Characters/Dialogue/Caroline, Characters/Dialogue/Clint, Characters/Dialogue/Demetrius, Characters/Dialogue/Dwarf, Characters/Dialogue/Evelyn, Characters/Dialogue/George, Characters/Dialogue/Gus, Characters/Dialogue/Jas, Characters/Dialogue/Jodi, Characters/Dialogue/Kent, Characters/Dialogue/Krobus, Characters/Dialogue/Leo, Characters/Dialogue/Linus, Characters/Dialogue/Marnie, Characters/Dialogue/Pam, Characters/Dialogue/Pierre, Characters/Dialogue/Robin, Characters/Dialogue/Sandy, Characters/Dialogue/Vincent, Characters/Dialogue/Willy, Characters/Dialogue/Wizard, Characters/Dialogue/Lewis, Characters/Dialogue/Marlon, Characters/Dialogue/Gunther, Characters/Dialogue/Gil",
+			"Entries": {
+				"reject_EastScarp_Vintage_Ruby_Ring": "{{i18n:reject_534.vanilla}}"
+			}
+		},
+		{ //Other expansion and standalone NPCs
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sophia, Characters/Dialogue/Olivia, Characters/Dialogue/Victor, Characters/Dialogue/Andy, Characters/Dialogue/Susan, Characters/Dialogue/Morgan, Characters/Dialogue/Apples, Characters/Dialogue/MarlonFay, Characters/Dialogue/GuntherSilvian, Characters/Dialogue/Claire, Characters/Dialogue/Martin,  Characters/Dialogue/Lance, Characters/Dialogue/Scarlett, Characters/Dialogue/Denver, Characters/Dialogue/Cecilia, Characters/Dialogue/Herbert, Characters/Dialogue/Isla, Characters/Dialogue/Alecto, Characters/Dialogue/Blanche, Characters/Dialogue/Carnelian, Characters/Dialogue/JadeMalic, Characters/Dialogue/John, Characters/Dialogue/Lyell, Characters/Dialogue/Lunna, Characters/Dialogue/Juna, Characters/Dialogue/Dianna, Characters/Dialogue/Bianka, Characters/Dialogue/Raphael, Characters/Dialogue/Esmeralda, Characters/Dialogue/Salvador, Characters/Dialogue/Witch, Characters/Dialogue/Eugene, Characters/Dialogue/Joel, Characters/Dialogue/Sheila, Characters/Dialogue/Gregory, Characters/Dialogue/Gabriel, Characters/Dialogue/Zinnia, Characters/Dialogue/Silly, Characters/Dialogue/Lucikiel, Characters/Dialogue/Aurelia, Characters/Dialogue/Si_MR_Morris, Characters/Dialogue/Shiko, Characters/Dialogue/Sorren, Characters/Dialogue/Alissa, Characters/Dialogue/Aguar, Characters/Dialogue/Bert, Characters/Dialogue/Corine, Characters/Dialogue/Ezekiel, Characters/Dialogue/Flor, Characters/Dialogue/Freddie,Characters/Dialogue/Ian, Characters/Dialogue/Jeric, Characters/Dialogue/Jio, Characters/Dialogue/Keahi, Characters/Dialogue/Kenneth, Characters/Dialogue/Kiwi, Characters/Dialogue/Lenny, Characters/Dialogue/Lola, Characters/Dialogue/Maddie, Characters/Dialogue/Olga, Characters/Dialogue/Philip, Characters/Dialogue/Pika, Characters/Dialogue/Richard, Characters/Dialogue/Shiro, Characters/Dialogue/Trinnie, Characters/Dialogue/Ysabelle, Characters/Dialogue/Yuuma, Characters/Dialogue/Undreya, Characters/Dialogue/Helen, Characters/Dialogue/Daia, Characters/Dialogue/Belinda, Characters/Dialogue/Bliss, Characters/Dialogue/Sari, Characters/Dialogue/Pipo, Characters/Dialogue/Acorn, Characters/Dialogue/Naomi, Characters/Dialogue/Malaya, Characters/Dialogue/Kimpoi, Characters/Dialogue/Anton, Characters/Dialogue/Ariah, Characters/Dialogue/Blair, Characters/Dialogue/Bryle, Characters/Dialogue/Carmen, Characters/Dialogue/Faye, Characters/Dialogue/Irene, Characters/Dialogue/Kiarra, Characters/Dialogue/Lorenzo, Characters/Dialogue/Louie, Characters/Dialogue/Maive, Characters/Dialogue/Paula, Characters/Dialogue/Raeriyala, Characters/Dialogue/Sean, Characters/Dialogue/Shanice, Characters/Dialogue/Sonny, Characters/Dialogue/Zayne, Characters/Dialogue/TreehouseGirl, Characters/Dialogue/RelicSpirit, Characters/Dialogue/Torts, Characters/Dialogue/Althea, Characters/Dialogue/Lorraine, Characters/Dialogue/Nadaline, Characters/Dialogue/Zachary",
+			"Entries": {
+				"reject_EastScarp_Vintage_Ruby_Ring": "{{i18n:reject_534.nonES}}"
+			}
+		},
+		{ //Animal NPCs
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/DuckNPC, Characters/Dialogue/Duck2NPC, Characters/Dialogue/LadySheba, Characters/Dialogue/Marigold, Characters/Dialogue/JortsCat, Characters/Dialogue/JeanCat,",
+			"Entries": {
+				"reject_EastScarp_Vintage_Ruby_Ring": "{{i18n:reject_534.animals}}"
+			}
+		},
+		{ // East Scarp NPCs
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Mateo, Characters/Dialogue/PlumForrest, Characters/Dialogue/Lavril, Characters/Dialogue/MisterGinger, Characters/Dialogue/Trace, Characters/Dialogue/SenS",
+			"Entries": {
+				"reject_EastScarp_Vintage_Ruby_Ring": "{{i18n:reject_534.ESexp}}"
+			}
+		},
+		{ //Juliet
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Juliet",
+			"Entries": {
+				"reject_EastScarp_Vintage_Ruby_Ring": "{{i18n:reject_534.juliet}}"
+			}
+		},
+		//Write an event if you carry it into the forge, where Clint sees it in your hands and compares it to the one his mother's wearing in the photograph - a photograph of her as a young woman.
+		//Mainland Adjustment Groups
+		{
+			"LogName": "Groups",
+			"Action": "EditData",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_groups",
+			"Entries": {
+				"TrentonFamily": "Jacob, Eloise, VivienneLK",
+				"FatherAndDaughter": "Jacob, Eloise",
+				"ESLovebirds1": "Juliet, Rosa",
+				"ESLovebirds2": "Mateo, Aideen",
+				"CryptidHunters": "KatarynaLK, Jasper",
+				"GuvFamily": "JosephineK, OliverK"
+			},
+			"When": {
+				"HasMod": "atravita.GingerIslandMainlandAdjustments"
+			}
+		},
+		{
+			// For GIMA's exclusion system
+			"Action": "EditData",
+			"Target": "Mods/atravita_Ginger_Island_Adjustments_exclusions",
+			"Entries": {
+				"Jacob": "neveralone"
+			},
+			"When": {
+				"HasMod": "atravita.GingerIslandMainlandAdjustments",
+				"DayOfWeek": "Monday, Thursday, Saturday, Sunday"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/PassiveFestivals.json",
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"Entries": {
+				"ESBusNetwork": {
+					"UnlockCondition": "PLAYER_HAS_MAIL Host ccVault Received",
+					"Destinations": [
+						{
+							"ID": "ES_BusStop",
+							"DisplayName": "Bus Stop",
+							"TargetLocation": "BusStop",
+							"Price": "50",
+							//"BuyTicketMessage": "Purchase a ticket for {0}g",
+							"TargetTile": {
+								"X": 22,
+								"Y": 11
+							},
+							"TargetDirection": "down",
+							//"Network": "EastScarp",
+						},
+						{
+							"ID": "EastScarp_CrossingBusStop",
+							"DisplayName": "Scarp Bus Stop",
+							"TargetLocation": "EastScarp_Crossing",
+							//"BuyTicketMessage": "Purchase a ticket for {0}g",
+							"TargetTile": {
+								"X": 30,
+								"Y": 20
+							},
+							"TargetDirection": "down",
+							//"Network": "EastScarp",
+						},
+						{
+							"ID": "EastScarp_ZuzuBurb",
+							"DisplayName": "Zuzu Suburb (Academic District)",
+							"TargetLocation": "EastScarp_ZuzuBurb",
+							"Price": 500,
+							//"BuyTicketMessage": "Purchase a ticket for {0}g",
+							"TargetTile": {
+								"X": 4,
+								"Y": 19
+							},
+							"TargetDirection": "down",
+							//"Network": "EastScarp",
+						},
+					]
+				},
+				"EastScarp": {
+					"UnlockCondition": "PLAYER_HAS_MAIL Host ccBoilerRoom Received",
+					"Destinations": [
+						{
+							"ID": "EastScarp_DeepDark",
+							"DisplayName": "{{i18n:minecart.UnderScarp}}",
+							"TargetLocation": "EastScarp_DeepDark",
+							"TargetTile": {
+								"X": 4,
+								"Y": 66
+							},
+							"TargetDirection": "left",
+							//"Network": "EastScarp",
+						},
+						{
+							"ID": "EastScarp_DeepMountains",
+							"TargetLocation": "EastScarp_DeepMountains",
+							"DisplayName": "{{i18n:minecart.DeepMount}}",
+							"TargetTile": {
+								"X": 55,
+								"Y": 38
+							},
+							"TargetDirection": "down",
+							//"Network": "EastScarp",
+						},
+						{
+							"ID": "EastScarp_Village",
+							"DisplayName": "{{i18n:minecart.EastScarp}}",
+							"TargetLocation": "EastScarp_Village",
+							"TargetTile": {
+								"X": 67,
+								"Y": 17
+							},
+							"TargetDirection": "down",
+							//"Network": "EastScarp",
+						},
+						{
+							"ID": "EastScarp_Crossing",
+							"DisplayName": "{{i18n:minecart.ESClearingHouse}}",
+							"TargetLocation": "EastScarp_Crossing",
+							"TargetTile": {
+								"X": 18,
+								"Y": 27
+							},
+							"TargetDirection": "left",
+						}
+					]
+				}
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_Village",
+			"FromFile": "assets/Maps/MineCartSteam.tmx",
+			"PatchMode": "Overlay",
+			"ToArea": {
+				"X": 69,
+				"Y": 15,
+				"Width": 1,
+				"Height": 1
+			},
+			"When": {
+				"HasFlag": "ccBoilerRoom"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_Crossing",
+			"FromFile": "assets/Maps/MineCartSteam.tmx",
+			"PatchMode": "Overlay",
+			"ToArea": {
+				"X": 20,
+				"Y": 25,
+				"Width": 1,
+				"Height": 1
+			},
+			"When": {
+				"HasFlag": "ccBoilerRoom"
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_DeepMountains",
+			"FromFile": "assets/Maps/MineCartSteam.tmx",
+			"PatchMode": "Overlay",
+			"ToArea": {
+				"X": 57,
+				"Y": 36,
+				"Width": 1,
+				"Height": 1
+			},
+			"When": {
+				"HasFlag": "ccBoilerRoom"
+			}
+		},
+		//Removes Events Seen/Mail Flags if you regret Aideen and Mateo dating. Use sparingly, as may cause distress to NPCs.
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"When": {
+				"RivalHearts |contains=AideenMateo": false
+			},
+			"Entries": {
+				"Lemurkat.EastScarp_RemoveAideenMateoDating": {
+					"ID": "mail.Lemurkat.EastScarp_RemoveAideenMateoDating",
+					"Trigger": "DayStarted",
+					"Condition": "PLAYER_HAS_MAIL Current RivalHearts_AideenMateo Received",
+					"MarkActionApplied": false,
+					"Actions": [
+						"RemoveMail Current RivalHearts_AideenMateo Received",
+						"MarkEventSeen Current 57871054 false"
+					]
+				},
+			}
+		},
+		{
+			"LogName": "Removes the event if you decide you don't want Aideen and Mateo dating",
+			"Action": "EditData",
+			"Target": "Mods/EventRepeater/EventstoRepeat",
+			"When": {
+				"RivalHearts |contains=AideenMateo": false
+			},
+			"Entries": {
+				"57871054": "null",
+			}
+		},
+		{
+			"LogName": "Removes the mailflag if you decide you don't want Aideen and Mateo dating",
+			"Action": "EditData",
+			"Target": "Mods/EventRepeater/MailToRepeat",
+			"Entries": {
+				"RivalHearts_AideenMateo": "null"
+			},
+			"When": {
+				"RivalHearts |contains=AideenMateo": false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/GenderNeutralDialogue.json",
+			"When": {
+				"GenderNeutral": "true"
+			}
+		},
+		{ // Adds MEEP critters
+			"Action": "Include",
+			"FromFile": "assets/Data/MEEP_Animals.json"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Minecarts",
+			"When": {
+				"HasMod": "Pathoschild.CentralStation"
+			},
+			"TargetField": [
+				"ESBusNetwork",
+				"Destinations"
+			],
+			"Entries": {
+				"EastScarp_BusNetwork_CentralLink": {
+					"ID": "Central Station",
+					"DisplayName": "Central Station",
+					"TargetLocation": "Pathoschild.CentralStation_CentralStation",
+					"TargetTile": {
+						"X": 60,
+						"Y": 13
+					},
+					"TargetDirection": "down"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/TriggerActions",
+			"When": {
+				"HasMod": "LemurKat.Mr.Ginger.NPC",
+				"EnableTristan |contains=true, True": false
+			},
+			"Entries": {
+				"EastScarp.MisterGingerVisible2": {
+					"ID": "mail.EastScarp.MisterGingerVisible",
+					"Trigger": "DayEnding",
+					"Condition": "PLAYER_HAS_SEEN_EVENT Host 5295000",
+					"Action": "SetNpcVisible MisterGinger",
+					"MarkActionApplied": false,
+				}
+			}
+		},
+		{
+			"LogName": "Just a nightmare",
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"50706131/e 5295000/NPCVisible MisterGinger": "none/64 15/MisterGinger 65 16 2 farmer 64 16 2/skippable/pause 500/animate MisterGinger false true 250 24 25 26 27 23 29 30 31 30/pause 1500/emote farmer 40/pause 1500/faceDirection MisterGinger 3/stopAnimation MisterGinger/pause 500/emote MisterGinger 8/pause 500/speak MisterGinger \"{{i18n:50706131.1}}\"/pause 400/quickQuestion {{i18n:50706131.2}}(break)jump MisterGinger 3\\speak MisterGinger \"{{i18n:50706131.3}}\"(break)speak MisterGinger \"{{i18n:50706131.4}}\"(break)speak MisterGinger \"{{i18n:50706131.5}}\"/pause 500/speak MisterGinger \"{{i18n:50706131.6}}\"/quickQuestion {{i18n:50706131.7}}(break)speak MisterGinger \"{{i18n:50706131.8}}\"(break)speak MisterGinger \"{{i18n:50706131.9}}\"(break)speak MisterGinger \"{{i18n:50706131.10}}\"/pause 500/speak MisterGinger \"{{i18n:50706131.11}}\"/pause 500/emote MisterGinger 20/emote farmer 32/pause 1000/end"
+			},
+			"When": {
+				"EnableTristan": "false",
+				"HasMod": "LemurKat.Mr.Ginger.NPC",
+				"HasMod |contains=Lemurkat.Tristan.CP": false
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/NyapuPortraits.json",
+			"When": {
+				"Nyapu's portraits": "true"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Data/NyapuPortraits_Animals.json",
+			"When": {
+				"Nyapu's portraits": "animals"
+			}
+		},
+		// Rodney map fixes
+		{
+			"LogName": "Move Rodney's Patch tiles",
+			"Action": "EditMap",
+			"Target": "Maps/EastScarp_Village",
+			"When": {
+				"HasMod": "TheFrenchDodo.RodneyOBrien, TheFrenchDodo.WWWA"
+			},
+			"MapTiles": [
+				{
+					"Position": {
+						"X": 86,
+						"Y": 33
+					},
+					"Layer": "AlwaysFront",
+					"Remove": true
+				},
+				{
+					"Position": {
+						"X": 87,
+						"Y": 33
+					},
+					"Layer": "Front",
+					"Remove": true
+				},
+				{
+					"Position": {
+						"X": 88,
+						"Y": 33
+					},
+					"Layer": "AlwaysFront",
+					"Remove": true
+				},
+				{
+					"Position": {
+						"X": 89,
+						"Y": 33
+					},
+					"Layer": "AlwaysFront",
+					"Remove": true
+				},
+			]
+		}
+	]
+}

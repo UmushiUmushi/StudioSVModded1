@@ -1,0 +1,15 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Jas",
+			"Entries":
+				{
+					"Mon4": "Hi, {{Random: {{Hana.GNMTokens/Title}} }} @.#$e#It's fun to live on a farm.$h",
+					"Sat8": "You're always so nice to me, {{Random: {{Hana.GNMTokens/Title}} }} @$h#$e#Grown-ups are usually mean and boring, but you're different."
+				},
+			"LogName":"Fix Jas"
+		}
+	]
+}

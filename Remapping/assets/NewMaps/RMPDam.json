@@ -1,0 +1,283 @@
+{
+	"Changes": [
+	//VANILLA NOMES E LOCCALIZAÇÕES DE REGIÕES
+        //ADIÇÃO DO NOVO MAPA
+    	{
+			"LogName": "RMP Dam World Map",
+			"Action": "Load",
+			"Target": "LooseSprites/DamWorld",
+			"FromFile": "assets/NewMaps/LooseSprites/DamWorld_{{season}}.png",
+            "When": {
+                "HasMod: |contains=Tikamin557.dam": true
+            }
+		},
+        //MAPAS
+        {
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "When": {
+				"HasMod: |contains=Tikamin557.dam": true
+            },
+            "Entries": {
+                "RMPDamWorld": {
+                    "BaseTexture": [{
+                        "Id": "RMP_Dam_Texture",
+                        "Texture": "LooseSprites/DamWorld"
+                    }],
+                    "MapAreas": [{
+                        "Id": "Custom_Dam",
+                        "PixelArea": {
+                            "X": 50,
+                            "Y": 39,
+                            "Width": 90,
+                            "Height": 77
+                        },
+                        "ScrollText": "{{i18n: RMP.dam}}",
+                        "Textures": [],
+                        "Tooltips": [{
+                            "Id": "Custom_Dam_Road", 
+                            "Text": "{{i18n: RMP.dam}}",
+                            "PixelArea": { "X": 71, "Y": 53, "Width": 49, "Height": 27 }
+                        },
+                        {
+                            "Id": "Custom_Dam_Road2", 
+                            "Text": "{{i18n: RMP.dam8}}",
+                            "PixelArea": { "X": 124, "Y": 50, "Width": 5, "Height": 6 }
+                        },
+                        {
+                            "Id": "Custom_Dam_Cliff", 
+                            "Text": "{{i18n: RMP.dam2}}",
+                            "PixelArea": { "X": 168, "Y": 49, "Width": 60, "Height": 34 }
+                        },
+                        {
+                            "Id": "Custom_Dam_Mine", 
+                            "Text": "{{i18n: RMP.dam10}}",
+                            "PixelArea": { "X": 135, "Y": 157, "Width": 4, "Height": 4 }
+                        },
+                        {
+                            "Id": "Custom_Dam_Cliff_Add_Mine", 
+                            "Text": "{{i18n: RMP.dam7}}",
+                            "PixelArea": { "X": 214, "Y": 82, "Width": 4, "Height": 4 }
+                        },
+                        {
+                            "Id": "Custom_Dam_Cliff_Add_Mine2", 
+                            "Text": "{{i18n: RMP.dam7}}",
+                            "PixelArea": { "X": 133, "Y": 106, "Width": 3, "Height": 3 }
+                        }],
+                        "WorldPositions": [
+                        {
+                            "Id": "Custom_Dam",
+                            "LocationNames": ["Custom_Dam"]
+                        },
+                        {
+                            "Id": "Custom_Dam_Road",
+                            "LocationName": "Custom_Dam_Road",
+                            "MapPixelArea": {
+                                "X": 1,
+                                "Y": 82,
+                                "Width": 50,
+                                "Height": 72
+                            },
+                            "ScrollText": "{{i18n: RMP.dam1}}"
+                        },
+                        {
+                            "Id": "Custom_Dam_Cliff",
+                            "LocationName": "Custom_Dam_Cliff",
+                            "MapPixelArea": {
+                                "X": 160,
+                                "Y": 32,
+                                "Width": 32,
+                                "Height": 77
+                            },
+                            "ScrollText": "{{i18n: RMP.dam2}}"
+                        },           
+                        {
+                            "Id": "Custom_Dam_Cliff_Add",
+                            "LocationName": "Custom_Dam_Cliff_Add",
+                            "MapPixelArea": {
+                                "X": 199,
+                                "Y": 54,
+                                "Width": 36,
+                                "Height": 32
+                            },
+                            "ScrollText": "{{i18n: RMP.dam11}}"
+                        },                        
+                        {
+                            "Id": "Custom_am_AfforestationArea",
+                            "LocationName": "Custom_Dam_AfforestationArea",
+                            "MapPixelArea": {
+                                "X": 129,
+                                "Y": 120,
+                                "Width": 59,
+                                "Height": 55
+                            },
+                            "ScrollText": "{{i18n: RMP.dam3}}"
+                        },                        
+                        {
+                            "Id": "Custom_Dam_PastureArea",
+                            "LocationName": "Custom_Dam_PastureArea",
+                            "MapPixelArea": {
+                                "X": 214,
+                                "Y": 135,
+                                "Width": 31,
+                                "Height": 36
+                            },
+                            "ScrollText": "{{i18n: RMP.dam4}}"
+                        },
+                        {
+                            "Id": "Custom_Dam_PastureArea_Farmhouse",
+                            "LocationName": "Custom_Dam_PastureArea_Farmhouse",
+                            "MapPixelArea": {
+                                "X": 1,
+                                "Y": 1,
+                                "Width": 231,
+                                "Height": 141
+                            },
+                            "ScrollText": "{{i18n: RMP.dam5}}"
+                        },
+                        {
+                            "Id": "Custom_Dam_RestArea",
+                            "LocationName": "Custom_Dam_RestArea",
+                            "MapPixelArea": {
+                                "X": 246,
+                                "Y": 146,
+                                "Width": 48,
+                                "Height": 25
+                            },
+                            "ScrollText": "{{i18n: RMP.dam4}}"
+                        },
+                        {
+                            "Id": "Custom_Dam_PastureArea_Mine",
+                            "LocationName": "Custom_Dam_PastureArea_Mine",
+                            "MapPixelArea": {
+                                "X": 222,
+                                "Y": 144,
+                                "Width": 2,
+                                "Height": 1
+                            },
+                            "ScrollText": "{{i18n: RMP.dam6}}"
+                        },
+                        {
+                            "Id": "Custom_Dam_Mine",
+                            "LocationName": "Custom_Dam_Mine",
+                            "MapPixelArea": {
+                                "X": 136,
+                                "Y": 158,
+                                "Width": 2,
+                                "Height": 1
+                            },
+                            "ScrollText": "{{i18n: RMP.dam6}}"
+                        },
+                        {
+                            "Id": "Custom_Dam_Cliff_Add_Mine",
+                            "LocationName": "Custom_Dam_Cliff_Add_Mine",
+                            "MapPixelArea": {
+                                "X": 134,
+                                "Y": 107,
+                                "Width": 1,
+                                "Height": 1
+                            },
+                            "ScrollText": "{{i18n: RMP.dam7}}"
+                        }]
+                    }]
+		        }
+            }
+        },
+        {
+            "LogName": "RMP Dam World Map False",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "RMPDamWorld", "MapAreas" ],
+          	"When": {
+				"HasMod: |contains=Tikamin557.dam": true,
+				"HasFlag |contains=Tikamin557.dam_AfforestationArea_Mail": "false" },
+            "Entries": {
+               	"Custom_Dam_PastureArea_Mine": {
+                  	"Id": "Custom_Dam_PastureArea_Mine",
+                  	"ScrollText": "Custom_Dam_PastureArea_Mine",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Dam_PastureArea_Mine", 
+                        	"Text": "???",
+                        	"PixelArea": { "X": 160, "Y": 141, "Width": 4, "Height": 4}
+                    }]
+               	},
+                "Custom_Dam_RestArea": {
+                  	"Id": "Custom_Dam_RestArea",
+                  	"ScrollText": "Custom_Dam_RestArea",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Dam_RestArea", 
+                        	"Text": "???",
+                        	"PixelArea": { "X": 281, "Y": 123, "Width": 8, "Height": 57}
+                    }]
+               	},
+                "Custom_Dam_PastureArea": {
+                  	"Id": "Custom_Dam_PastureArea",
+                  	"ScrollText": "Custom_Dam_PastureArea",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Dam_PastureArea", 
+                        	"Text": "???",
+                        	"PixelArea": { "X": 216, "Y": 141, "Width": 31, "Height": 28}
+                    }]
+               	}
+            }
+        },
+        {
+            "LogName": "RMP Dam World Map True",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "RMPDamWorld", "MapAreas" ],
+          	"When": {
+				"HasMod: |contains=Tikamin557.dam": true,
+				"HasFlag |contains=Tikamin557.dam_AfforestationArea_Mail": "true" },
+            "Entries": {
+               	"Custom_Dam_PastureArea_Mine": {
+                  	"Id": "Custom_Dam_PastureArea_Mine",
+                  	"ScrollText": "Custom_Dam_PastureArea_Mine",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Dam_PastureArea_Mine", 
+                        	"Text": "{{i18n: RMP.dam6}}",
+                        	"PixelArea": { "X": 160, "Y": 141, "Width": 4, "Height": 4}
+                    }]
+               	},
+                "Custom_Dam_RestArea": {
+                  	"Id": "Custom_Dam_RestArea",
+                  	"ScrollText": "Custom_Dam_RestArea",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Dam_RestArea", 
+                        	"Text": "{{i18n: RMP.dam9}}",
+                        	"PixelArea": { "X": 281, "Y": 123, "Width": 8, "Height": 57}
+                    }]
+               	},
+                "Custom_Dam_PastureArea": {
+                  	"Id": "Custom_Dam_PastureArea",
+                  	"ScrollText": "Custom_Dam_PastureArea",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Dam_PastureArea", 
+                        	"Text": "{{i18n: RMP.dam4}}",
+                        	"PixelArea": { "X": 216, "Y": 141, "Width": 31, "Height": 28}
+                    }]
+               	}
+            }
+        },
+        {
+            "LogName": "RMP Dam World Map True",
+            "Action": "EditData",
+            "Target": "Data/WorldMap",
+            "TargetField": [ "RMPDamWorld", "MapAreas" ],
+          	"When": {
+				"HasMod: |contains=Tikamin557.dam": true,
+				"HasReadLetter": "Tikamin557.dam_PastureAreaEndConstruction_SendMail" },
+            "Entries": {
+                "Custom_Dam_PastureArea": {
+                  	"Id": "Custom_Dam_PastureArea",
+                  	"ScrollText": "Custom_Dam_PastureArea",
+                  	"Tooltips": [{
+                        	"Id": "Custom_Dam_PastureArea", 
+                        	"Text": "{{i18n: RMP.dam12}}",
+                        	"PixelArea": { "X": 216, "Y": 141, "Width": 31, "Height": 28}
+                    }]
+               	}
+            }
+        }
+	]
+}

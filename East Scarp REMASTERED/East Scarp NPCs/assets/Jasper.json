@@ -1,0 +1,614 @@
+{
+    "Changes": [
+        {
+            "LogName": "Jasper becomes datable",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "Jasper"
+            ],
+            "Entries": {
+                "CanBeRomanced": true
+            },
+            "When": {
+                "HasSeenEvent:hostPlayer | contains=50709921": true,
+                "KeepNonDatable|contains=Jasper": "false"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "Jasper_Read": "22/21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20/22/Strings\\animationDescriptions:Jasper_Read",
+                "jasper_read": "22/21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20/22",
+                "Jasper_Exercise": "0/16 16 16 16 17 17 17 17 16 16 16 16 17 17 17 17 16 16 16 16 17 17 17 17 16 16 16 16 16 16 16 16 18 18 18 18 16 16 16 16 18 18 18 18 16 16 16 16 18 18 18 18 16 16 16 16/0//laying_down",
+                "Jasper_Breathe": "2/32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 32 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33 33/2/Strings\\animationDescriptions:Jasper_Breathe",
+                "jasper_beach_umbrella": "22/21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20/22",
+                "jasper_beach_towel": "22/21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20/22"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "jasper_sleep": "38/38/38"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "When": {
+                "MunchieLocation": "bedroom"
+            },
+            "Entries": {
+                "jasper_sleep": "37/37/37"
+            }
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "Jasper_Read": "22/21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 21 20 20 20 20 20 20 20 20 20 20/22"
+            },
+            "When": {
+                "Spouse": "Jasper"
+            }
+        },
+        {
+            "LogName": "Animation strings",
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "Jasper_Breathe": "{{i18n:jasper.breathe}}",
+                "Jasper_Read": "{{i18n:jasper.{{season}}.{{e9921}}.read}}"
+            }
+        },
+        {
+            "LogName": "Animation strings",
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "Jasper_Read": "{{i18n:jasper.elliott.read}}"
+            },
+            "When": {
+                "Season": "Winter",
+                "HasSeenEvent": "1848481"
+            }
+        },
+        {
+            "LogName": "Animation strings",
+            "Action": "EditData",
+            "Target": "Strings/animationDescriptions",
+            "Entries": {
+                "Jasper_Read": "{{i18n:jasper.rain.{{e9921}}.read}}"
+            },
+            "When": {
+                "Weather": "Rain, Storm"
+            }
+        },
+        //S C H E D U L E S
+        {
+            "LogName": "Schedule - Loads a blank schedule and strings for Jasper",
+            "Action": "Load",
+            "Target": "Characters/schedules/Jasper, Strings/schedules/Jasper",
+            "FromFile": "assets/blank.json"
+        },
+        {
+            "LogName": "Schedule - Loads the various schedules for Jasper",
+            "Action": "Include",
+            "FromFile": "assets/Characters/schedules/Jasper.json"
+        },
+        { //Visiting Dr Harvey 			
+            "LogName": "Schedule - Visiting Harvey",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Harvey",
+            "Entries": {
+                "Thu": "730 Hospital 1 5 0/900 Hospital 4 5 1 \"Strings\\schedules\\Harvey:009\"/1250 Hospital 10 14 2/1330 Hospital 5 5 2/1410 Hospital 5 6 3 harvey_examine_left/1550 Hospital 5 5 2/1610 Hospital 4 5 0/1630 Hospital 3 15 0/1800 HarveyRoom 9 5 0/2300 HarveyRoom 13 4 1 harvey_sleep"
+            },
+            "When": {
+                "HasSeenEvent |contains=50709914": true,
+                "HasSeenEvent |contains=50709930": false
+            }
+        },
+        { // Sets up the room for Kat after youve seen her intro event and as long as you haven't seen her leave and are not married to her
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Maps/EastScarpVillage_ramp.tmx",
+            "PatchMode": "Overlay",
+            "FromArea": {
+                "X": 0,
+                "Y": 0,
+                "Width": 4,
+                "Height": 4
+            },
+            "ToArea": {
+                "X": 48,
+                "Y": 52,
+                "Width": 4,
+                "Height": 4
+            },
+            "When": {
+                "HasSeenEvent |contains=50709914": true,
+                "HasSeenEvent |contains=50709930": false
+            }
+        },
+        {
+            "LogName": "Schedule Dialogue for Harvey",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Harvey",
+            "Entries": {
+                "009": "{{i18n:Jasper_strings_Harvey}}"
+            }
+        },
+        //P O R T R A I T S   A N D   S P R I T E S
+        //Portraits
+        {
+            "LogName": "Jasper Portraits",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Jasper, Characters/Jasper",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/{{TargetWithoutPath}}.png"
+        },
+        {
+            "LogName": "Jasper Portraits - wheelchair",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Jasper_wheelchair, Characters/Jasper_wheelchair, Portraits/Jasper_prosthetic, Characters/Jasper_prosthetic, Portraits/Jasper_winter, Characters/Jasper_winter",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/{{TargetWithoutPath}}.png",
+        },
+        {
+            "LogName": "Jasper Portraits",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Jasper_Flowers",
+            "FromFile": "assets/Portraits/Jasper/Jasper.png",
+            "When": {
+                "HasMod": "Lemurkat.Jasper.LittleNPCs"
+            }
+        },
+        {
+            "LogName": "Jasper Portraits",
+            "Action": "EditImage",
+            "Target": "Portraits/Jasper_Flowers",
+            "PatchMode": "Overlay",
+            "FromFile": "assets/Portraits/Jasper/Jasper_FlowerOverlay.png",
+            "When": {
+                "HasMod": "Lemurkat.Jasper.LittleNPCs"
+            }
+        },
+        {
+            "LogName": "Jasper Sprites - resort",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Jasper_Beach, Portraits/Jasper_Beach",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/Jasper_beach.png",
+            "When": {
+                "HasSeenEvent:hostPlayer |contains=50709930": true,
+            }
+        },
+        //Festivals
+        {
+            "LogName": "Adds Jasper to festivals",
+            "Action": "Include",
+            "FromFile": "assets/Festivals/Jasper.json",
+            "When": {
+                "HasSeenEvent |contains=50709911": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "LogName": "Adds Jasper to festivals after he returns",
+            "Action": "Include",
+            "FromFile": "assets/Festivals/Jasper.json",
+            "When": {
+                "HasSeenEvent |contains=50709911": true,
+                "HasSeenEvent |contains=50709915": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "LogName": "Adds Jasper to festivals",
+            "Action": "Include",
+            "FromFile": "assets/Festivals/Jasper_SVE.json",
+            "When": {
+                "HasSeenEvent |contains=50709911": false,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Adds Jasper to festivals after he returns",
+            "Action": "Include",
+            "FromFile": "assets/Festivals/Jasper_SVE.json",
+            "When": {
+                "HasSeenEvent |contains=50709911": true,
+                "HasSeenEvent |contains=50709915": true,
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        // D I A L O G U E
+        //Rainy Day Dialogue
+        {
+            "LogName": "Rainy Day Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "Jasper": "{{i18n:jasper.rainyDay}}"
+            }
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Jasper.json",
+        },
+        //E N G A G E M E N T   D I A L O G U E
+        {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Jasper0": "{{i18n:jasper.engagement0}}",
+                "Jasper1": "{{i18n:jasper.engagement1}}"
+            }
+        },
+        //T E M P   A C T O R S   &   L O C A T I O N S 
+        {
+            "LogName": "Jade Junimo Temp Actor",
+            "Action": "Load",
+            "Target": "Characters/JunimoJade",
+            "FromFile": "assets/Characters/TempActors/JunimoJade.png"
+        },
+        {
+            "LogName": "Jade Junimo Temp Actor",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/JunimoJade",
+            "FromFile": "assets/Portraits/blank.png"
+        },
+        {
+            "LogName": "Mines map",
+            "Action": "Load",
+            "Target": "Maps/Jasper_MineIce",
+            "FromFile": "assets/Maps/MineIce.tmx"
+        },
+        {
+            "LogName": "Mines map",
+            "Action": "Load",
+            "Target": "Characters/InjuredJasper",
+            "FromFile": "assets/Characters/Jasper/InjuredJasper.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/Farmhouse14",
+            "FromFile": "assets/Maps/Farmhouse14.tmx"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/JasperClothes",
+            "FromFile": "assets/Characters/TempActors/clothes.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/FairyPool_JasperDate",
+            "FromFile": "assets/Maps/FairyPool_JasperDate.tmx"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Jasper_Swimsuit",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/Jasper_swimsuit.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Jasper_Swimsuit",
+            "FromFile": "assets/{{TargetPathOnly}}/Jasper/Jasper_Beach.png"
+        },
+        {
+            "LogName": "Jasper Events",
+            "Action": "Load",
+            "Target": "Data/Events/EastScarp_JasperHouse",
+            "FromFile": "assets/Blank.json"
+        },
+        {
+            "LogName": "Caldera Events",
+            "Action": "Load",
+            "Target": "Data/Events/Caldera",
+            "FromFile": "assets/Blank.json",
+            "Priority": "Low"
+        },
+        /*******************************
+		 E V E N T S
+		*******************************/
+        { //4 heart event
+            "LogName": "EastScarp Events",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "50709910/f Jasper 1000/t 1100 1600/w sunny": "ocean/31 101/Jasper 31 102 2 farmer 33 96 2 LumaJunimo -100 -100 2 {{extraActors}}/skippable/showFrame Jasper 32/pause 1500/move farmer 0 4 2/pause 1500/playSound grassyStep/showFrame Jasper 33/speak Jasper \"{{i18n:50709910.01}}\"/pause 500/move farmer 0 2 3/pause 500/showFrame Jasper 4/pause 500/speak Jasper \"{{i18n:50709910.02}}\"/emote farmer 32/move farmer -1 0 3/pause 500/speak Jasper \"{{i18n:50709910.03}}\"/faceDirection Jasper 2/pause 500/showFrame Jasper 32/faceDirection farmer 2/pause 500/speak Jasper \"{{i18n:50709910.04}}\"/pause 2000/playSound leafrustle/pause 1500/emote farmer 8/pause 500/faceDirection farmer 3/pause 500/warp LumaJunimo 31 97/temporarySprite 31 97 5 8 50 false 1/playSound coin/faceDirection farmer 0/move LumaJunimo 0 2 2/animate LumaJunimo true true 70 16 17 18 19/pause 1500/emote farmer 16/pause 1500/faceDirection farmer 3/pause 500/faceDirection farmer 0/animate LumaJunimo true true 70 16 17 18 19/pause 500/showFrame Jasper 33/pause 500/showFrame Jasper 4/emote Jasper 8/pause 500/jump LumaJunimo 3/playSound junimoMeep1/speed LumaJunimo 7/move LumaJunimo 0 -3 3/speed LumaJunimo 7/move LumaJunimo -2 0 2/playSound leafrustle/pause 500/faceDirection Jasper 0/pause 1000/faceDirection farmer 3/faceDirection Jasper 1/speak Jasper \"{{i18n:50709910.05}}\"/pause 1500/faceDirection Jasper 2/faceDirection farmer 2/speak Jasper \"{{i18n:50709910.06}}\"/pause 500/showFrame Jasper 33/pause 500/speak Jasper \"{{i18n:50709910.07}}\"/pause 500/showFrame Jasper 32/pause 1500/faceDirection farmer 3/pause 500/faceDirection farmer 1/pause 500/faceDirection farmer 3/pause 500/move farmer 1 0 0/emote farmer 60/move farmer 0 -3 0/pause 500/playSound junimoMeep1/showFrame Jasper 33/jump Jasper 2/pause 500/faceDirection Jasper 0/emote Jasper 8/pause 1000/end",
+                "50709933/f Jasper 2500/D Jasper/n Jasper_Picnic/w sunny/z winter/z fall/t 1000 1500": "woodsTheme/-100 -100/Jasper -100 -100 2 farmer 88 18 1 LumaJunimo -100 -100 3 JunimoJade -100 -100 2/skippable/ignoreCollisions farmer/addTemporaryActor JasperClothes 16 32 -100 -100 2 false Character/pause 500/viewport 88 18 clamp true/faceDirection farmer 3/pause 500/faceDirection farmer 2/pause 500/faceDirection farmer 3/pause 500/faceDirection farmer 1/pause 500/emote farmer 8/pause 500/move farmer 3 0 2/move farmer 0 1 1/pause 500/playSound junimoMeep1/pause 500/emote farmer 8/warp LumaJunimo 96 19/temporarySprite 96 19 5 8 50 false 1/playSound coin/animate LumaJunimo true false 150 4 5 6 7/pause 500/emote farmer 16/move farmer 2 0 1/pause 500/stopAnimation LumaJunimo/jump LumaJunimo 2/playSound junimoMeep1/speed LumaJunimo 4/jump LumaJunimo 4/move LumaJunimo 1 0 3/pause 500/animate LumaJunimo true false 150 4 5 6 7/pause 1000/jump LumaJunimo 4/move LumaJunimo 2 0 2/advancedMove farmer false 1 0 1 1000/pause 500/message \"{{i18n:50709933.01}}\"/pause 500/stopAnimation LumaJunimo/move LumaJunimo 1 0 1/warp LumaJunimo -100 -100/pause 500/speed farmer 4/advancedMove farmer false 7 0 1 1000/pause 1250/fade/viewport -1000 -1000/stopAdvancedMoves/speed farmer 2/pause 50/changeToTemporaryMap FairyPool_JasperDate/viewport -1000 -1000/warp Jasper 12 26/warp farmer 7 31/viewport 12 26 clamp true/advancedMove farmer false 2 0 4 100/pause 500/speak Jasper \"{{i18n:50709933.02}}\"/pause 500/advancedMove farmer false 0 -4 2 0 1 1000/pause 3000/speak Jasper \"{{i18n:50709933.03}}\"/emote farmer 20/pause 1000/speak Jasper \"{{i18n:50709933.04}}\"/faceDirection farmer 2/emote farmer 32/pause 500/pause 500/speak Jasper \"{{i18n:50709933.05}}\"/faceDirection farmer 1/pause 500/emote farmer 20/speak Jasper \"{{i18n:50709933.06}}\"/pause 500/emote farmer 32/advancedMove farmer false 0 -2 4 0 3 1000/faceDirection Jasper 0/pause 1000/advancedMove Jasper false 0 -1 2 0 1 1000/pause 2500/emote farmer 32/advancedMove farmer false 0 -2 2 0 0 1 2 500/pause 4250/swimming farmer/pause 500/advancedMove farmer false 0 3 1 0 4 1000/advancedMove Jasper false 0 -2 2 1000/pause 1000/changeSprite Jasper Swimsuit/warp JasperClothes 14 23/pause 1000/advancedMove Jasper false 3 0 0 2/pause 1750/swimming Jasper/pause 500/speak Jasper \"{{i18n:50709933.07}}\"/warp LumaJunimo 11 30/warp JunimoJade 10 27/advancedMove Jasper false 0 2 1 1000/pause 1000/faceDirection farmer 3/pause 2000/positionOffset farmer 0 -6/pause 500/speak Jasper \"{{i18n:50709933.08}}\"/pause 1000/speak Jasper \"{{i18n:50709933.09}}\"/animate JunimoJade false true 150 24 25 26 27/animate LumaJunimo false true 150 28 29 30 31/speak Jasper \"{{i18n:50709933.10}}\"/pause 1500/playSound slosh/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/positionOffset farmer -2 0/pause 50/positionOffset Jasper 2 0/positionOffset farmer -2 0/shake JunimoJade 250/eyes 1 -10000/positionOffset Jasper 2 0/positionOffset farmer -2 2/shake LumaJunimo 250/positionOffset Jasper 2 0/positionOffset farmer -2 0/pause 1500/playSound junimoMeep1/jump Jasper 1/jump farmer 1/faceDirection Jasper 3/stopAnimation JunimoJade/stopAnimation LumaJunimo/emote LumaJunimo 16/jump JunimoJade 1/speak Jasper \"{{i18n:50709933.11}}\"/pause 500/speed LumaJunimo 5/move LumaJunimo 3 0 1 true/speed JunimoJade 5/advancedMove JunimoJade false 3 0 1 1000/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 500/speak Jasper \"{{i18n:50709933.12}}\"/pause 500/stopSwimming Jasper/stopSwimming farmer/end"
+            }
+        },
+        { //2 heart and 6+ heart events
+            "LogName": "Jasper House Events",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_JasperHouse",
+            "Entries": {
+                "50709900/f Jasper 500/p Jasper": "none/-1000 -1000/Jasper 22 13 2 farmer 16 15 1/skippable/viewport 20 14 clamp true/pause 500/showFrame Jasper 28/pause 500/emote Jasper 12/pause 500/showFrame Jasper 29/pause 500/speak Jasper \"{{i18n:50709900.01}}\"/pause 500/move farmer 4 0 0/showFrame Jasper 30/pause 250/jump Jasper 2/pause 250/emote Jasper 28/pause 500/speak Jasper \"{{i18n:50709900.02}}\"/pause 500/quickQuestion {{i18n:50709900.q1}}(break)speak Jasper \"{{i18n:50709900.q2}}\"(break)speak Jasper \"{{i18n:50709900.q3}}\"(break)speak Jasper \"{{i18n:50709900.q4}}\"(break)speak Jasper \"{{i18n:50709900.q5}}\"/pause 500/emote farmer 40/pause 500/speak Jasper \"{{i18n:50709900.03}}\"/pause 500/faceDirection farmer 0/question fork1 \"#{{i18n:50709900.04}}#{{i18n:50709900.05}}\"/fork NoHelpJasper/pause 500/playMusic sappypiano/move farmer 0 -1 1/pause 250/emote Jasper 32/pause 500/move Jasper -1 0 2/speak Jasper \"{{i18n:50709900.06}}\"/pause 500/showFrame Jasper 29/speak Jasper \"{{i18n:50709900.07}}\"/pause 500/showFrame Jasper 30/pause 500/speak Jasper \"{{i18n:50709900.08}}\"/pause 500/move Jasper -1 0 2/showFrame Jasper 31/pause 500/faceDirection farmer 0/pause 500/Message \"{{i18n:50709900.09}}\"/pause 500/emote Jasper 28/pause 500/speak Jasper \"{{i18n:50709900.10}}\"/pause 500/move Jasper 2 0 1/speak Jasper \"{{i18n:50709900.11}}\"/pause 500/move Jasper -1 0 2/speak Jasper \"{{i18n:50709900.12}}\"/pause 500/emote farmer 40/speak Jasper \"{{i18n:50709900.13}}\"/pause 500/emote farmer 32/faceDirection farmer 2/move farmer 0 1 2/pause 1000/end",
+                "NoHelpJasper": "pause 500/speak Jasper \"{{i18n:NoHelpJasper.01}}\"/pause 500/faceDirection farmer 2/pause 500/move farmer 0 1 2/showFrame Jasper 29/pause 500/faceDirection farmer 0/pause 500/emote farmer 60/pause 500/faceDirection farmer 2/pause 1000/end",
+                "50709919/n Jasper_Home1/p Jasper": "none/-1000 -1000/Jasper 22 13 2 farmer 16 15 1/addConversationTopic JasperHomeA 7/addConversationTopic JasperHomeB 14/skippable/viewport 20 14 clamp true/animate Jasper false true 300 21 21 21 20/pause 500/textAboveHead Jasper \"{{i18n:50709919.00}}\"/pause 1000/textAboveHead Jasper \"{{i18n:50709919.01}}\"/pause 1000/move farmer 4 0 0/playSound woodyStep/pause 500/stopAnimation Jasper/pause 500/showFrame Jasper 22/pause 500/emote Jasper 32/pause 500/speak Jasper \"{{i18n:50709919.02}}\"/pause 500/faceDirection Jasper 0/playSound wateringCan/pause 500/faceDirection Jasper 3/move Jasper -2 0 2/move farmer 0 -1 0/pause 500/farmerEat 614/pause 500/emote farmer 20/pause 500/emote Jasper 28/speak Jasper \"{{i18n:50709919.03}}\"/pause 500/faceDirection farmer 0/emote farmer 8/pause 500/faceDirection Jasper 1/move Jasper 3 0 3/faceDirection farmer 1/pause 500/speak Jasper \"{{i18n:50709919.04}}\"/pause 500/move Jasper -2 0 2/pause 500/speak Jasper \"{{i18n:50709919.05}}\"/pause 500/speak Jasper \"{{i18n:50709919.06}}\"/pause 500/speak Jasper \"{{i18n:50709919.07}}\"/pause 500/speak Jasper \"$q 5070121 null#{{i18n:50709919.08}}#$r 5070121 25 Write_Yes#{{i18n:50709919.09}}#$r 5070121 50 Write_Maybe#{{i18n:50709919.10}}#$r 5070122 0 Write_No#{{i18n:50709919.11}}\"/pause 500/speak Jasper \"{{i18n:50709919.12}}\"/pause 1000/end dialogue Jasper \"{{i18n:50709919.12}}\"",
+                "50709920/n Jasper_HomeA/p Jasper": "none/11 14/Jasper 18 13 0 farmer 15 15 1/skippable/pause 500/Message \"{{i18n:50709920.01}}\"/pause 1000/move farmer 3 0 0/playSound woodyStep/pause 500/faceDirection Jasper 2/jump Jasper 1/pause 500/emote Jasper 28/pause 500/speak Jasper \"{{i18n:50709920.02}}\"/emote farmer 60/pause 500/question fork0 \"#{{i18n:50709920.03}}#{{i18n:50709920.04}}\"/fork LeaveAlone/pause 500/speak Jasper \"{{i18n:50709920.05}}\"/pause 500/quickQuestion {{i18n:50709920.q1}}(break)speak Jasper \"{{i18n:50709920.q2}}\"(break)speak Jasper \"{{i18n:50709920.q3}}\"(break)speak Jasper \"{{i18n:50709920.q4}}\"/pause 500/emote Jasper 20/pause 500/playMusic starshoot/speak Jasper \"{{i18n:50709920.06}}\"/pause 500/faceDirection Jasper 0/pause 500/move farmer -1 0 1/faceDirection Jasper 2/move farmer 0 -1 0/pause 500/emote Jasper 28/pause 500/emote farmer 32/pause 500/speak Jasper \"{{i18n:50709920.07}}\"/pause 500/speak Jasper \"{{i18n:50709920.08}}\"/pause 500/emote farmer 8/pause 500/speak Jasper \"{{i18n:50709920.09}}\"/pause 500/move Jasper 3 0 1/pause 500/move farmer 1 0 1/move Jasper -2 0 2/pause 500/speak Jasper \"{{i18n:50709920.10}}\"/emote farmer 28/pause 500/speak Jasper \"{{i18n:50709920.11}}\"/pause 500/speak Jasper \"{{i18n:50709920.12}}\"/pause 500/emote farmer 32/pause 1000/end",
+                "LeaveAlone": "pause 500/speak Jasper \"{{i18n:LeaveAlone.01}}\"/pause 500/faceDirection farmer 2/pause 500/move farmer 0 1 2/pause 500/faceDirection farmer 3/pause 500/emote farmer 60/pause 500/faceDirection farmer 2/pause 1000/end",
+                "50709927/n Jasper_HomeB/p Jasper": "breezy/11 16/Jasper 6 13 0 farmer 11 18 0/skippable/pause 500/textAboveHead Jasper \"{{i18n:50709927.01}}\"/pause 500/textAboveHead Jasper \"{{i18n:50709927.02}}\"/pause 1000/move farmer 0 -5 3/playSound woodyStep/pause 500/faceDirection Jasper 1/pause 500/speak Jasper \"{{i18n:50709927.03}}\"/move Jasper 2 0 1/emote farmer 20/move farmer -2 0 3/pause 500/speak Jasper \"{{i18n:50709927.04}}\"/pause 500/move Jasper -2 0 0/pause 500/move farmer -1 0 3/faceDirection farmer 0/pause 500/playSound openChest/pause 500/playSound newRecipe/pause 500/Message \"{{i18n:50709927.05}}\"/end"
+            }
+        },
+        { //6 heart event (and mail)
+            "LogName": "Farm Events and mail",
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "50709911/t 600 1130/f Jasper 1500/e 50709910/e 50709900/e 5599028/H": "sappypiano/64 15/farmer 64 16 2 Jasper 64 18 0/broadcastEvent/addConversationTopic JasperGone1 7/addConversationTopic JasperGone2 10/skippable/pause 1500/speak Jasper \"{{i18n:50709911.01}}\"/pause 500/emote farmer 8/pause 500/speak Jasper \"{{i18n:50709911.02}}\"/pause 500/emote farmer 16/pause 500/speak Jasper \"{{i18n:50709911.03}}\"/pause 500/faceDirection Jasper 3/pause 500/emote Jasper 28/pause 500/faceDirection Jasper 0/pause 500/speak Jasper \"{{i18n:50709911.04}}\"/pause 500/faceDirection Jasper 1/pause 500/faceDirection Jasper 0/pause 500/speak Jasper \"{{i18n:50709911.05}}\"/emote farmer 28/pause 500/speak Jasper \"{{i18n:50709911.06}}\"/pause 500/end invisible Jasper",
+                "50709912/e 50709911/t 600 1130/A JasperGone1": "none/64 15/farmer 64 16 2 Gunther 64 18 0/skippable/pause 1500/speak Gunther \"{{i18n:50709912.01.{{GenderNeutral}} | GenderNeutralTitle = {{GenderNeutralTitle}} }}\"/pause 500/emote farmer 8/pause 500/speak Gunther \"{{i18n:50709912.02}}\"/pause 500/faceDirection Gunther 2/pause 500/faceDirection Gunther 0/pause 500/speak Gunther \"{{i18n:50709912.03}}\"/pause 500/emote farmer 28/pause 500/speak Gunther \"{{i18n:50709912.04}}\"/pause 500/emote farmer 60/pause 500/end",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "EastScarp.JasperAbsent": {
+                    "ID": "mail.EastScarp.JasperAbsent",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 50709911",
+                    "Action": "SetNpcInvisible Jasper 1120"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "EastScarp.JasperReturns": {
+                    "ID": "mail.EastScarp.JasperReturns",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_MAIL Host Jasper_Home",
+                    "Action": "SetNpcVisible Jasper"
+                },
+            }
+        },
+        { //6 heart event and bonus event with Dwarf
+            "LogName": "Mine Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Mine",
+            "Entries": {
+                "50709914/e 50709912/H": "Upper_Ambient/18 7/Harvey -100 -100 2 Jasper -100 -100 0 Dwarf -100 -100 0 farmer 18 12 0/broadcastEvent/addConversationTopic JasperHurt 3/addConversationTopic JasperHome1 7/skippable/pause 500/move farmer 0 -2 0/pause 500/playSound stairsdown/emote farmer 16/warp Dwarf 23 9/pause 500/move Dwarf -1 0 3/pause 500/jump Dwarf 1/speed Dwarf 5/move Dwarf -4 0 2/pause 500/speak Dwarf \"{{i18n:50709914.01}}\"/pause 500/emote Dwarf 40/pause 500/speak Dwarf \"{{i18n:50709914.02}}\"/move Dwarf 2 0 1/faceDirection Dwarf 3/speak Dwarf \"{{i18n:50709914.03}}\"/emote farmer 8/move farmer 0 -1 1/pause 500/faceDirection Dwarf 1/pause 500/speed Dwarf 5/move Dwarf 2 0 1/pause 500/speed Dwarf 5/move Dwarf 1 0 0/pause 500/warp Dwarf -100 -100/playSound stairsdown/pause 500/emote farmer 16/pause 500/speed farmer 7/move farmer 4 0 0/warp farmer -100 -100/globalFade/viewport -1000 -1000/changeToTemporaryMap Jasper_MineIce/viewport -1000 -1000/warp Dwarf 12 11/warp farmer 15 8/faceDirection Dwarf 1/addTemporaryActor InjuredJasper 32 32 13 12 2 false/pause 1000/viewport 18 11/playMusic starshoot/faceDirection farmer 2/pause 500/emote farmer 16/pause 500/speed farmer 5/move farmer 0 3 3/move farmer -1 0 3/pause 500/speak Jasper \"{{i18n:50709914.04}}\"/jump Dwarf 2/pause 500/emote Dwarf 12/pause 500/speak Jasper \"{{i18n:50709914.05}}\"/pause 500/emote farmer 40/pause 500/speak Jasper \"{{i18n:50709914.06}}\"/emote farmer 16/pause 500/globalFade/warp Dwarf -100 -100/viewport -1000 -1000/changeLocation Hospital/viewport -1000 -1000/warp InjuredJasper 20 4/warp farmer 14 6/warp Harvey 15 6/showFrame InjuredJasper 1/positionOffset  InjuredJasper 0 6/viewport 16 6/pause 500/faceDirection Harvey 3/faceDirection farmer 1/pause 500/speak Harvey \"{{i18n:50709914.07}}\"/pause 500/emote farmer 28/pause 500/speak Harvey \"{{i18n:50709914.08}}\"/pause 1000/end dialogue Dwarf \"{{i18n:50709914.09}}\"",
+                "55990003/e 55990002/k 55990004/O Jasper/f Dwarf 1000": "EarthMine/-100 -100/Dwarf 42 10 2 farmer 36 8 1/skippable/addObject 42 11 102 1/viewport 36 11/pause 500/emote Dwarf 8/pause 1500/emote Dwarf 12/pause 500/move farmer 4 0 2/jump farmer 3/emote farmer 16/pause 500/Message \"{{i18n:55990003.00}}\"/pause 500/speed farmer 5/move farmer 0 2 2/faceDirection Dwarf 3/shake Dwarf 400/pause 500/move Dwarf -1 0 3/faceDirection farmer 1/question null \"#{{i18n:55990003.01}}#{{i18n:55990003.02}}\"/pause 500/emote Dwarf 12/pause 500/faceDirection Dwarf 1/shake Dwarf 250/speak Dwarf \"{{i18n:55990003.03}}\"/pause 500/emote farmer 40/pause 500/faceDirection Dwarf 1/stopMusic/pause 500/playMusic starshoot/pause 500/faceDirection Dwarf 2/speak Dwarf \"{{i18n:55990003.04}}\"/pause 500/faceDirection Dwarf 3/pause 500/speak Dwarf \"{{i18n:55990003.05}}\"/pause 500/shake Dwarf 140/emote Dwarf 28/quickQuestion {{i18n:55990003.q0}}(break)pause 500\\jump Dwarf 3\\emote Dwarf 16\\speak Dwarf \"{{i18n:55990003.q1}}\"(break)pause 500\\speak Dwarf \"{{i18n:55990003.q2}}\"(break)pause 500\\shake Dwarf 240\\speak Dwarf \"{{i18n:55990003.q3}}\"/pause 500/speak Dwarf \"{{i18n:55990003.06}}\"/pause 500/emote farmer 8/pause 500/speak Dwarf \"{{i18n:55990003.07}}\"/pause 500/emote farmer 16/speak Dwarf \"{{i18n:55990003.08}}\"/pause 500/faceDirection Dwarf 1/pause 500/faceDirection Dwarf 3/pause 500/speak Dwarf \"{{i18n:55990003.09}}\"/pause 500/emote Dwarf 40/speak Dwarf \"{{i18n:55990003.10}}\"/pause 500/speak Dwarf \"{{i18n:55990003.11}}\"/pause 1000/end",
+            }
+        },
+        { //8 heart event
+            "LogName": "Cameron makes an appearance",
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "50709921/f Jasper 2000/e 50709930/t 900 1800": "none/13 11/Jasper 15 9 0 farmer 9 14 3 Gunther 3 8 2/addTemporaryActor CameronLK 16 32 11 12 3 true Character/addConversationTopic JasperCameronMeeting 1/skippable/pause 500/textAboveHead Jasper \"{{i18n:50709921.01}}\"/pause 1000/move CameronLK 0 -2 1/pause 500/textAboveHead Jasper \"{{i18n:50709921.02}}\"/move CameronLK 0 -1 1/pause 1000/textAboveHead CameronLK \"{{i18n:50709921.03 }}\"/pause 500/jump Jasper 2/pause 500/faceDirection Jasper 3/pause 500/playMusic sappypiano/speak Jasper \"{{i18n:50709921.04}}\"/pause 500/faceDirection Jasper 0/pause 500/speak Jasper \"{{i18n:50709921.05}}\"/pause 500/move CameronLK 2 0 1/pause 500/speak CameronLK \"{{i18n:50709921.06}}\"/pause 500/faceDirection Jasper 3/emote Jasper 12/pause 500/speak Jasper \"{{i18n:50709921.07}}\"/emote CameronLK 28/pause 500/speak CameronLK \"{{i18n:50709921.08}}\"/pause 500/shake Jasper 350/pause 500/faceDirection Jasper 1/pause 500/speak Jasper \"{{i18n:50709921.09}}\"/pause 500/faceDirection Jasper 3/speak CameronLK \"{{i18n:50709921.10}}\"/pause 500/shake CameronLK 250/pause 1000/move CameronLK 1 0 1/move Jasper 1 0 1/pause 500/textAboveHead CameronLK \"{{i18n:50709921.11}}\"/pause 1000/move farmer 3 0 0/move farmer 0 -1 2/move farmer 2 0 0/move farmer 0 -1 0/playSound woodyStep/pause 500/jump CameronLK 2/faceDirection CameronLK 2/faceDirection Jasper 2/jump Jasper 2/emote farmer 28/pause 1000/emote Jasper 60/emote CameronLK 40/pause 1000/speak Jasper \"{{i18n:50709921.12}}\"/speak CameronLK \"{{i18n:50709921.13}}\"/pause 500/emote Jasper 12/pause 500/speak Jasper \"{{i18n:50709921.14}}\"/pause 500/faceDirection CameronLK 1/pause 500/faceDirection CameronLK 2/question null \"...#{{i18n:50709921.15}}\"/pause 500/faceDirection farmer 2/move farmer 0 2 3/pause 500/textAboveHead Jasper \"{{i18n:50709921.16}}\"/pause 500/move Jasper 0 4 3/move Jasper -2 0 2/pause 500/faceDirection farmer 0/move CameronLK -1 0 0/pause 500/speak Jasper \"{{i18n:50709921.17}}\"/speak Jasper \"$q 5070123 null#{{i18n:50709921.18}}#$r 5070124 0 Rekindle_Yes#{{i18n:50709921.19}}#$r 5070124 0 Rekindle_Kinda#{{i18n:50709921.20}}#$r 5070125 0 Rekindle_No#{{i18n:50709921.21}}\"/pause 500/speak Jasper \"{{i18n:50709921.22}}\"/pause 500/emote Jasper 32/pause 500/faceDirection Jasper 0/pause 500/move Jasper 0 -4 3/pause 500/faceDirection CameronLK 1/pause 500/faceDirection CameronLK 2/emote farmer 60/pause 500/faceDirection CameronLK 1/pause 1000/Message \"{{i18n:50709921.23}}\"/end dialogue Jasper \"$p 5070124#{{i18n:50709921.24}}|{{i18n:50709921.25}}\"",
+                "5599018/i 74/v Jasper/l galaxySword/t 900 1800": "libraryTheme/6 10/Gunther -100 -100 0 Jasper 4 10 0 farmer -100 -100 0/skippable/pause 500/playSound doorOpen/warp farmer 3 14/pause 1000/move farmer 0 -2 0/faceDirection Jasper 2/speak Jasper \"{{i18n:5599018.01}}\"/pause 1000/move farmer 0 -1 1/speak Jasper \"{{i18n:5599018.02}}\"/pause 500/playSound throwDownITem/addObject 4 11 74 0/jump Jasper 5/emote Jasper 16/pause 1500/speak Jasper \"{{i18n:5599018.03}}\"/emote farmer 8/pause 1500/speak Jasper \"{{i18n:5599018.04}}\"/jump farmer 4/speak Jasper \"{{i18n:5599018.05}}\"/pause 500/emote farmer 32/pause 500/speak Jasper \"{{i18n:5599018.06}}\"/playSound doorOpen/jump farmer 5/playSound pickUpItem/removeSprite 4 11/move Jasper 0 1 2/faceDirection farmer 2/warp Gunther 3 14/pause 500/speak Gunther \"{{i18n:5599018.07}}\"/emote Jasper 28/emote farmer 60/pause 1000/end",
+                "5599028/e 50709900/k 50709911/t 800 1200": "libraryTheme/14 10/Gunther 5 10 2 Jasper 8 11 1 farmer -100 -100 0/skippable/speak Gunther \"{{i18n:5599028.01}}\"/pause 500/move Jasper -2 0 3/emote Jasper 28/pause 500/speak Jasper \"{{i18n:5599028.02}}\"/pause 500/advancedMove Jasper false -2 0 1 1000/faceDirection Gunther 3/speak Gunther \"{{i18n:5599028.03}}\"/pause 500/speak Jasper \"{{i18n:5599028.04}}\"/emote Jasper 12/advancedMove Jasper false 2 0 3 1000/pause 500/faceDirection Gunther 1/pause 500/pause 500/speak Jasper \"{{i18n:5599028.05}}\"/advancedMove Jasper false -2 0 1 1000/pause 500/faceDirection Gunther 3/speak Jasper \"{{i18n:5599028.06}}\"/pause 500/advancedMove Jasper false 2 0 3 1000/pause 1000/faceDirection Gunther 1/speak Jasper \"{{i18n:5599028.07}}\"/emote Gunther 8/speak Jasper \"{{i18n:5599028.08}}\"/emote Jasper 40/speak Gunther \"{{i18n:5599028.09}}\"/pause 500/emote Jasper 12/speak Jasper \"{{i18n:5599028.10}}\"/pause 500/emote Gunther 28/pause 500/speak Gunther \"{{i18n:5599028.11}}\"/playSound doorOpen/warp farmer 3 14/faceDirection Gunther 2/speak Gunther \"{{i18n:5599028.12.{{GenderNeutral}} | GenderNeutralTitle = {{GenderNeutralTitle}} }}\"/pause 400/emote farmer 32/advancedMove farmer false 0 -3 1 1000/speak Jasper \"{{i18n:5599028.13}}\"/emote Gunther 40/pause 500/speak Gunther \"{{i18n:5599028.14}}\"/pause 500/emote farmer 8/pause 1000/end"
+            }
+        },
+        { //8+ heart event
+            "LogName": "Town events",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "55990006/t 1000 1600/A JasperCameronMeeting/w sunny/e 50709921": "{{season}}_day_ambient/63 21/Jasper 63 15 2 Jas 50 25 1 Dwarf 74 13 2 Vincent 50 26 1 Penny 52 30 3 farmer 51 30 1/addConversationTopic Jasper_Teach 7/addMailReceived Jasper_Penny/skippable/Animate Jasper false true 480 22 21 21 20 20 22/speed Vincent 5/move Vincent 13 0 3 true/speed Jas 4/move Jas 12 0 1 true/pause 3000/jump Vincent 2/textAboveHead Vincent \"{{i18n:55990006.01}}\"/pause 500/emote Jas 12/pause 500/faceDirection Vincent 0/pause 500/speak Vincent \"{{i18n:55990006.02}}\"/faceDirection Jas 0/pause 500/speak Vincent \"{{i18n:55990006.03}}\"/pause 500/emote Jas 40/pause 1000/faceDirection Jas 1/emote Jas 36/pause 1000/speak Jas \"{{i18n:55990006.04}}\"/pause 500/speak Vincent \"{{i18n:55990006.05}}\"/speed Vincent 5/move Vincent 0 -3 0 true/emote Jas 12/speed Vincent 5/move Vincent 0 -6 0 true/pause 100/speed Jas 5/move Jas 0 -8 0 true/stopAnimation Jasper/warp Jasper 63 16/pause 500/speak Vincent \"{{i18n:55990006.06}}\"/emote Jas 28/pause 500/speak Jasper \"{{i18n:55990006.07}}\"/faceDirection Dwarf 3/speak Vincent \"{{i18n:55990006.08}}\"/textAboveHead Jas \"{{i18n:55990006.09}}\"/pause 500/faceDirection Penny 0/faceDirection farmer 0/emote Penny 16/emote Vincent 40/pause 500/emote Jasper 60/advancedMove Penny false 4 0 0 -5 6 0 0 -5/pause 500/speak Jasper \"{{i18n:55990006.10}}\"/pause 500/emote Jasper 40/showFrame Jasper 33/pause 500/showFrame Jasper 32/pause 500/showFrame Jasper 33/speak Jasper \"{{i18n:55990006.11}}\"/speak Vincent \"{{i18n:55990006.12}}\"/faceDirection Jas 1 true/faceDirection Vincent 3 true/pause 500/faceDirection Jas 0/faceDirection Vincent 0/pause 500/speak Jas \"{{i18n:55990006.13}}\"/pause 500/emote Jasper 16/pause 500/speak Jasper \"{{i18n:55990006.14}}\"/pause 500/speak Jas \"{{i18n:55990006.15}}\"/pause 500/jump Vincent 2/pause 500/textAboveHead Vincent \"{{i18n:55990006.16}}\"/faceDirection Vincent 3/speak Vincent \"{{i18n:55990006.17}}\"/faceDirection Vincent 0/speak Vincent \"{{i18n:55990006.18}}\"/pause 500/emote Jasper 40/pause 500/speak Jasper \"{{i18n:55990006.19}}\"/textAboveHead Vincent \"{{i18n:55990006.20}}\"/pause 1500/speak Jasper \"{{i18n:55990006.21}}\"/textAboveHead Vincent \"{{i18n:55990006.22}}\"/pause 1500/speak Penny \"{{i18n:55990006.23}}\"/pause 500/speak Jasper \"{{i18n:55990006.24}}\"/pause 500/emote Vincent 16/faceDirection Vincent 2/speak Vincent \"{{i18n:55990006.25}}\"/pause 500/speak Vincent \"{{i18n:55990006.26}}\"/speak Penny \"{{i18n:55990006.27}}\"/pause 500/textAboveHead Jasper \"{{i18n:55990006.28}}\"/faceDirection Vincent 0/speak Vincent \"{{i18n:55990006.29}}\"/pause 500/speak Jasper \"{{i18n:55990006.30}}\"/emote Vincent 8/pause 500/speak Jas \"{{i18n:55990006.31}}\"/faceDirection Jas 2 true/faceDirection Vincent 2 true/speak Jas \"{{i18n:55990006.32}}\"/speak Vincent \"{{i18n:55990006.33}}\"/pause 500/speak Penny \"{{i18n:55990006.34}}\"/jump Vincent 2/pause 500/textAboveHead Vincent \"{{i18n:55990006.35}}\"/faceDirection Jas 0/pause 500/speak Jas \"{{i18n:55990006.36}}\"/emote Jas 56/pause 500/emote Jasper 32/pause 1000/end",
+                "5599025/e 5599024/A Jasper_Bionic/d Mon Wed Fri Sat Sun/t 1000 1400": "{{season}}2/36 58/Jasper 39 57 3 farmer 32 57 1 Maru -100 -100 1 Harvey -100 -100 2/skippable/pause 500/move farmer 3 0 1 true/move Jasper -3 0 3 true/pause 1500/speak Jasper \"{{i18n:5599025.01}}\"/pause 500/emote Jasper 28/emote farmer 8/pause 1000/speak Jasper \"{{i18n:5599025.02}}\"/quickQuestion #{{i18n:5599025.q1}}(break)emote Jasper 32\\speak Jasper \"{{i18n:5599025.q2}}\"(break)emote Jasper 12\\speak Jasper \"{{i18n:5599025.q3}}\"/pause 1000/speak Jasper \"{{i18n:5599025.03}}\"/emote Jasper 40/speak Jasper \"{{i18n:5599025.04}}\"/emote farmer 56/pause 1000/faceDirection Jasper 0/move Jasper 0 -1 0/playSound doorOpen/warp Jasper -100 -100/pause 1000/move farmer 1 0 0/pause 1000/emote farmer 40/question fork1 \"...#{{i18n:5599025.q4}}\"/fork Jasper_Continue_Day/pause 500/move farmer 0 -1 0/warp farmer -100 -100/fade/viewport -1000 -1000/changeLocation Hospital/ignoreCollisions farmer/warp Maru 18 5/warp Harvey 6 15/warp Jasper 19 5/faceDirection Jasper 3/warp farmer 13 7/viewport 17 8/move farmer 3 0 1/speak Maru \"...how does that feel? Is it comfortable?$2\"/pause 500/jump Jasper 2/pause 1000/jump Jasper 3/speak Jasper \"{{i18n:5599025.05}}\"/emote Maru 32/speak Maru \"{{i18n:5599025.06}}\"/emote Jasper 20/move Jasper 0 1 2/pause 500/emote Jasper 32/move Jasper 1 0 2 true/move Maru 1 0 2 true/pause 1000/move Jasper 0 1 2 true/move Maru 0 1 2 true/pause 1000/faceDirection Jasper 3/textAboveHead Jasper \"It is wonderful!\"/move Jasper 0 1 3 true/move Maru 1 0 2 true/pause 1000/speed Jasper 5/move Jasper -4 0 1/move Maru 0 2 3/speak Jasper \"{{i18n:5599025.07}}\"/emote Maru 32/faceDirection farmer 2 true/faceDirection Jasper 0/jump Jasper 5/emote farmer 60/speak Jasper \"{{i18n:5599025.08}}\"/emote farmer 20/move Maru -3 0 3/faceDirection Jasper 1/speak Jasper \"{{i18n:5599025.09}}\"/emote Maru 32/pause 1000/end",
+                "Jasper_Continue_Day": "pause 500/faceDirection farmer 2/move farmer 0 2 2/end dialogue Jasper \"{{i18n:5599025.10}}\""
+            }
+        },
+        /*{ //10 heart event
+            "LogName": "Picnic in the Woods",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries": {
+                "50709933/f Jasper 2500/D Jasper/n Jasper_Picnic/w sunny/z winter/z fall/t 1000 1500": "woodsTheme/14 13/Jasper -100 -100 2 farmer 13 12 3 LumaJunimo -100 -100 1 JunimoJade -100 -100 2/skippable/addTemporaryActor JasperClothes 16 32 -100 -100 2 false Character/pause 500/faceDirection farmer 0/pause 500/emote farmer 8/pause 500/move farmer -5 0 2/pause 500/playSound junimoMeep1/pause 500/faceDirection farmer 3/warp LumaJunimo 5 11/animate LumaJunimo true false 150 4 5 6 7/pause 500/emote farmer 16/move farmer 0 -1 3/pause 500/stopAnimation LumaJunimo/jump LumaJunimo 2/playSound junimoMeep1/speed LumaJunimo 4/move LumaJunimo -3 0 2/pause 500/move LumaJunimo 2 0 1/animate LumaJunimo true false 150 4 5 6 7/pause 500/message \"{{i18n:50709933.01}}\"/pause 500/stopAnimation LumaJunimo/move LumaJunimo -2 0 3/warp LumaJunimo -100 -100/pause 500/speed farmer 3/move farmer -5 0 3/warp farmer -100 -100/globalFade/viewport -1000 -1000/switchEvent JasperPoolPt2",
+                "JasperPoolPt2": "pause 50/changeToTemporaryMap FairyPoolPicnic/viewport -1000 -1000/warp Jasper 27 8/warp farmer 33 13/viewport 24 10 clamp true/pause 500/speak Jasper \"{{i18n:50709933.02}}\"/pause 500/move farmer -4 0 0/speak Jasper \"{{i18n:50709933.03}}\"/move farmer 0 -2 3/move farmer -1 0 3/emote farmer 20/pause 1000/speak Jasper \"{{i18n:50709933.04}}\"/faceDirection farmer 0/emote farmer 32/pause 500/move farmer 0 -2 3/move farmer -2 0 1/pause 500/speak Jasper \"{{i18n:50709933.05}}\"/pause 500/emote farmer 20/speak Jasper \"{{i18n:50709933.06}}\"/pause 500/emote farmer 32/move farmer 0 -1 3/move farmer -2 0 2/faceDirection Jasper 3/move farmer 0 2 2/swimming farmer/move farmer 0 3 2/move Jasper -3 0 2/pause 500/changeSprite Jasper Swimsuit/warp JasperClothes 25 8/pause 1000/move Jasper 0 2 2/swimming Jasper/pause 500/speak Jasper \"{{i18n:50709933.07}}\"/warp LumaJunimo 33 11/move LumaJunimo -3 0 0/warp JunimoJade 31 8/move JunimoJade 0 1 2/move Jasper 0 2 1/move farmer 1 0 3/move Jasper 0 1 1/positionOffset farmer 0 -6/pause 500/speak Jasper \"{{i18n:50709933.08}}\"/pause 1000/speak Jasper \"{{i18n:50709933.09}}\"/animate JunimoJade false true 150 24 25 26 27/animate LumaJunimo false true 150 28 29 30 31/speak Jasper \"{{i18n:50709933.10}}\"/pause 1500/playSound slosh/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/pause 50/positionOffset Jasper 2 0/positionOffset farmer -2 0/pause 50/positionOffset Jasper 2 0/positionOffset farmer -2 0/shake JunimoJade 250/eyes 1 -10000/positionOffset Jasper 2 0/positionOffset farmer -2 2/shake LumaJunimo 250/positionOffset Jasper 2 0/positionOffset farmer -2 0/pause 50/playSound junimoMeep1/jump Jasper 1/jump farmer 1/faceDirection farmer 1/stopAnimation JunimoJade/stopAnimation LumaJunimo/emote LumaJunimo 16/jump JunimoJade 3/speak Jasper \"{{i18n:50709933.11}}\"/pause 500/speed LumaJunimo 5/move LumaJunimo -2 0 3 true/speed JunimoJade 5/move JunimoJade -2 0 3/playSound junimoMeep1/globalFade/viewport -1000 -1000/pause 500/speak Jasper \"{{i18n:50709933.12}}\"/pause 500/stopSwimming Jasper/stopSwimming farmer/end"
+            }
+        },*/
+        /* { //10 heart event
+            "LogName": "Picnic in the Woods",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries": {
+                "50709933/f Jasper 2500/n Jasper_Picnic/w sunny/z winter/z fall/t 1000 1500": "woodsTheme/-1000 -1000/Jasper -100 -100 2 farmer 8 27 3 LumaJunimo -100 -100 1/skippable/addTemporaryActor JunimoJade 16 32 -100 -100 2 false Character/addTemporaryActor JasperClothes 16 32 -100 -100 2 false Character/viewport 8 30 clamp true/pause 500/faceDirection farmer 0/pause 500/emote farmer 8/pause 500/move farmer 0 2 2/move farmer -1 0 2/viewport move 0 4 2500/move farmer 0 7 1/pause 500/playSound junimoMeep1/jump farmer 3/pause 500/faceDirection farmer 3/warp LumaJunimo 8 38/animate LumaJunimo true false 150 4 5 6 7/pause 500/emote farmer 16/move farmer 1 0 2/pause 500/stopAnimation LumaJunimo/jump LumaJunimo 2/playSound junimoMeep1/speed LumaJunimo 4/move LumaJunimo 0 2 2/pause 500/move LumaJunimo 0 1 1/animate LumaJunimo true false 150 4 5 6 7/pause 500/message \"{{i18n:50709933.01}}\"/pause 500/stopAnimation LumaJunimo/move LumaJunimo -2 0 3/warp LumaJunimo -100 -100/pause 500/speed farmer 3/move farmer 0 5 3/speed farmer 3/move farmer -1 0 3/warp farmer -100 -100/globalFade/viewport -1000 -1000/switchEvent JasperPoolPt2",
+            },
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        */
+        { //14 Heart Event
+            "LogName": "Jasper Events",
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "55990002/f Jasper 3500/e 50709933/O Jasper/t 600 610/L": "Of Dwarves/-1000 -1000/farmer -100 -100 3 Dwarf 39 14 0 Jasper -100 -100 1/skippable/addConversationTopic DwarfVisit 5/changeToTemporaryMap Farmhouse14/viewport -1000 -1000/addObject 39 17 102 1/showFrame Jasper 51/showFrame farmer 101/playSound doorClose/pause 1000/playSound thudStep/pause 1500/playSound wind/pause 1500/pause 500/pause 500/pause 1000/ambientLight 240 240 240/addLantern 735 40 15 2/viewport 37 16 true/emote Dwarf 40/move Dwarf -1 0 0/playSound newRecipe/move Dwarf 1 0 2/move Dwarf 0 3 2/pause 500/playSound newRecipe/emote Dwarf 8/pause 400/emote Dwarf 16/showFrame Jasper 38/pause 500/speak Jasper \"{{i18n:55990002.01}}\"/playSound woodyStep/pause 500/faceDirection Dwarf 3/pause 500/jump Dwarf 5/pause 400/emote Dwarf 28/removeSprite 39 17/speed Dwarf 5/move Dwarf 0 -3 0/playSound thudStep/jump Dwarf 5/warp Dwarf -1000 -1000/pause 500/pause 500/speak Jasper \"{{i18n:55990002.02}}\"/pause 500/pause 500/emote Jasper 12/fade/warp Jasper 39 16/showFrame Jasper 35/fade unfade/pause 500/emote Jasper 28/faceDirection farmer 2/pause 500/showFrame Jasper 34/speak Jasper \"{{i18n:55990002.03}}\"/warp farmer 38 16/pause 500/emote farmer 8/pause 500/speak Jasper \"{{i18n:55990002.04}}\"/pause 500/emote farmer 16/pause 500/speak Jasper \"{{i18n:55990002.05}}\"/quickQuestion {{i18n:55990002.q0}}(break)pause 500\\speak Jasper \"{{i18n:55990002.q1}}\"(break)pause 500\\speak Jasper \"{{i18n:55990002.q2}}\"(break)pause 500\\speak Jasper \"$p 5070124#{{i18n:55990002.q3}}|{{i18n:55990002.q4}}\"(break)pause 500\\emote Jasper 12\\speak Jasper \"{{i18n:55990002.q5}}\"/pause 500/speak Jasper \"{{i18n:55990002.06}}\"/pause 500/emote farmer 32/pause 1000/fade/viewport -1000 -1000/pause 1000/end dialogue Jasper \"{{i18n:55990002.07}}\"",
+                "55990004/e 55990002/O Jasper/f Dwarf 25/A DwarfVisit/t 600 700/L": "sappypiano/27 26/farmer 24 24 0 Jasper -100 -100 0/skippable/pause 500/playSound woodyStep/pause 500/playSound doorOpen/pause 500/warp Jasper 27 30/faceDirection farmer 2/emote farmer 32/speak Jasper \"{{i18n:55990004.01}}\"/emote farmer 16/speed farmer 5/move farmer 3 0 2/move Jasper 0 -2 0/speak Jasper \"{{i18n:55990004.02}}\"/pause 500/move Jasper 1 0 3/speak Jasper \"{{i18n:55990004.03}}\"/addObject 27 28 102 0/pause 500/jump farmer 2/speed farmer 3/move farmer 0 3 2/pause 500/speak Jasper \"{{i18n:55990004.04}}\"/pause 500/faceDirection Jasper 0/Message \"{{i18n:55990004.05}}\"/pause 500/speak Jasper \"{{i18n:55990004.06}}\"/pause 500/faceDirection Jasper 3/pause 500/faceDirection Jasper 0/speak Jasper \"{{i18n:55990004.07}}\"/pause 500/speak Jasper \"{{i18n:55990004.08}}\"/emote farmer 32/emote Jasper 20/pause 1000/end"
+            },
+            "When": {
+                "HasWalletItem": "DwarvishTranslationGuide"
+            }
+        },
+        {
+            "LogName": "Jasper interactions with Dwarf",
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "55990005/e 55990004/t 2330 2500/w sunny": "nightTime/60 7/Jasper 58 7 3 farmer 43 10 1 Dwarf -1000 -1000 2/addConversationTopic JasperMeetsDwarf 7/addMailReceived Dwarf_Friend/skippable/pause 500/move Jasper -4 0 0/pause 500/emote Jasper 28/pause 500/move Jasper -4 0 3/pause 500/shake Jasper 240/pause 500/move Jasper 4 0 0/pause 500/emote Jasper 40/pause 500/move farmer 0 -3 1/emote farmer 56/pause 500/faceDirection Jasper 3/emote Jasper 20/move farmer 7 0 1/pause 500/speak Jasper \"{{i18n:55990005.01.{{JasperSpouse}} }}\"/pause 500/emote farmer 32/pause 500/showFrame Jasper 33/pause 500/showFrame Jasper 32/pause 1500/showFrame Jasper 33/pause 500/speak Jasper \"{{i18n:55990005.02}}\"/faceDirection Jasper 0/move farmer 3 0 0/move Jasper 0 -2 0/fade/stopMusic/viewport -1000 -1000/warp Jasper 30 8/warp farmer 32 8/warp Dwarf 43 6/changeLocation Mine/viewport 37 8/playMusic Upper_Ambient/advancedMove Jasper false 10 0/move farmer 8 0 1/move farmer 0 1 1/pause 1500/move Dwarf 0 2 3 true/speak Dwarf \"{{i18n:55990005.03}}\"/pause 500/showFrame Jasper 4/jump Jasper 3/pause 500/emote Jasper 16/speak Jasper \"{{i18n:55990005.04}}\"/pause 500/speak Jasper \"{{i18n:55990005.05}}\"/pause 500/emote Dwarf 60/pause 500/speak Jasper \"{{i18n:55990005.06}}\"/pause 500/shake Jasper 240/move Dwarf -1 0 3/move Dwarf 0 1 3/pause 1000/faceDirection Dwarf 3/pause 500/emote Dwarf 8/pause 500/speak Dwarf \"{{i18n:55990005.07.{{JasperSpouse}} }}\"/emote farmer 28/quickQuestion {{i18n:55990005.q0}}(break)pause 500\\speak Dwarf \"{{i18n:55990005.q1}}\"(break)pause 500\\emote Jasper 12\\pause 500\\speak Jasper \"{{i18n:55990005.q2}}\"(break)pause 500\\speak Dwarf \"{{i18n:55990005.q3}}\"/pause 500/speak Jasper \"{{i18n:55990005.08}}\"/move Dwarf 0 -1 3/pause 500/speak Dwarf \"{{i18n:55990005.09}}\"/pause 500/faceDirection Dwarf 1/pause 500/emote Dwarf 40/pause 500/faceDirection Dwarf 3/playMusic sappypiano/speak Dwarf \"{{i18n:55990005.10}}\"/textAboveHead Jasper \"{{i18n:55990005.11}}\"/pause 3000/emote Dwarf 60/pause 1500/emote Jasper 40/pause 1500/speak Jasper \"{{i18n:55990005.12}}\"/speak Dwarf \"{{i18n:55990005.13}}\"/pause 500/textAboveHead Jasper \"{{i18n:55990005.14}}\"/pause 500/speak Jasper \"{{i18n:55990005.15}}\"/pause 500/faceDirection Jasper 2/faceDirection farmer 0/pause 500/speak Jasper \"{{i18n:55990005.16}}\"/faceDirection farmer 1/faceDirection Jasper 3/speak Dwarf \"{{i18n:55990005.17}}\"/jump Jasper 3/faceDirection Jasper 1/pause 500/speak Dwarf \"{{i18n:55990005.18}}\"/emote Jasper 16 true/emote farmer 16 true/speak Dwarf \"{{i18n:55990005.19}}\"/pause 500/speak Jasper \"{{i18n:55990005.20}}\"/pause 500/emote Dwarf 60/speak Dwarf \"{{i18n:55990005.21}}\"/pause 500/emote Dwarf 28/pause 500/emote Jasper 16/speak Dwarf \"{{i18n:55990005.22}}\"/emote Jasper 32/speak Jasper \"{{i18n:55990005.23}}\"/pause 500/emote Dwarf 32/pause 500/message \"{{i18n:55990005.24.{{JasperSpouse}}}}\"/pause 1000/end invisible Jasper"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        {
+            "LogName": "Jasper Meets Dwarf",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_AdventurerSummit",
+            "Entries": {
+                "55990005/e 55990004/t 2330 2500/w sunny": "nightTime/24 21/Jasper 19 20 2 farmer 31 32 0 Dwarf -1000 -1000 2/addConversationTopic JasperMeetsDwarf 7/addMailReceived Dwarf_Friend/skippable/pause 500/move Jasper 4 0 0 true/move farmer 0 -4 0 true/pause 500/emote Jasper 28/pause 500/move Jasper -4 0 3 true/move farmer 0 -4 0 true/pause 1500/shake Jasper 240/pause 500/move Jasper 4 0 0 true/move farmer -4 0 3 true/pause 500/emote Jasper 40/pause 500/move farmer -4 0 0/emote farmer 56/pause 500/faceDirection Jasper 2/emote Jasper 20/move farmer 0 -2 0/pause 500/speak Jasper \"{{i18n:55990005.01.{{JasperSpouse}} }}\"/pause 500/emote farmer 32/pause 500/showFrame Jasper 33/pause 500/showFrame Jasper 32/pause 1500/showFrame Jasper 33/pause 500/speak Jasper \"{{i18n:55990005.02}}\"/faceDirection Jasper 3/pause 1000/move Jasper -4 0 0 true/move farmer -4 0 1 true/pause 2500/faceDirection Jasper 2/emote Jasper 60/pause 2000/move Jasper 0 -4 0 true/move farmer 0 -4 0 true/pause 1000/move Jasper 0 -1 0/fade/stopMusic/viewport -1000 -1000/warp Jasper 30 8/warp farmer 32 8/warp Dwarf 43 6/changeLocation Mine/viewport 37 8/playMusic Upper_Ambient/advancedMove Jasper false 10 0/move farmer 8 0 1/move farmer 0 1 1/pause 1500/move Dwarf 0 2 3 true/speak Dwarf \"{{i18n:55990005.03}}\"/pause 500/showFrame Jasper 4/jump Jasper 3/pause 500/emote Jasper 16/speak Jasper \"{{i18n:55990005.04}}\"/pause 500/speak Jasper \"{{i18n:55990005.05}}\"/pause 500/emote Dwarf 60/pause 500/speak Jasper \"{{i18n:55990005.06}}\"/pause 500/shake Jasper 240/move Dwarf -1 0 3/move Dwarf 0 1 3/pause 1000/faceDirection Dwarf 3/pause 500/emote Dwarf 8/pause 500/speak Dwarf \"{{i18n:55990005.07.{{JasperSpouse}}}}\"/emote farmer 28/quickQuestion {{i18n:55990005.q0}}(break)pause 500\\speak Dwarf \"{{i18n:55990005.q1}}\"(break)pause 500\\emote Jasper 12\\pause 500\\speak Jasper \"{{i18n:55990005.q2}}\"(break)pause 500\\speak Dwarf \"{{i18n:55990005.q3}}\"/pause 500/speak Jasper \"{{i18n:55990005.08}}\"/move Dwarf 0 -1 3/pause 500/speak Dwarf \"{{i18n:55990005.09}}\"/pause 500/faceDirection Dwarf 1/pause 500/emote Dwarf 40/pause 500/faceDirection Dwarf 3/playMusic sappypiano/speak Dwarf \"{{i18n:55990005.10}}\"/textAboveHead Jasper \"{{i18n:55990005.11}}\"/pause 3000/emote Dwarf 60/pause 1500/emote Jasper 40/pause 1500/speak Jasper \"{{i18n:55990005.12}}\"/speak Dwarf \"{{i18n:55990005.13}}\"/pause 500/textAboveHead Jasper \"{{i18n:55990005.14}}\"/pause 500/speak Jasper \"{{i18n:55990005.15}}\"/pause 500/faceDirection Jasper 2/faceDirection farmer 0/pause 500/speak Jasper \"{{i18n:55990005.16}}\"/faceDirection farmer 1/faceDirection Jasper 3/speak Dwarf \"{{i18n:55990005.17}}\"/jump Jasper 3/faceDirection Jasper 1/pause 500/speak Dwarf \"{{i18n:55990005.18}}\"/emote Jasper 16 true/emote farmer 16 true/speak Dwarf \"{{i18n:55990005.19}}\"/pause 500/speak Jasper \"{{i18n:55990005.20}}\"/pause 500/emote Dwarf 60/speak Dwarf \"{{i18n:55990005.21}}\"/pause 500/emote Dwarf 28/pause 500/emote Jasper 16/speak Dwarf \"{{i18n:55990005.22}}\"/emote Jasper 32/speak Jasper \"{{i18n:55990005.23}}\"/pause 500/emote Dwarf 32/pause 500/message \"{{i18n:55990005.24.{{JasperSpouse}}}}\"/pause 1000/end invisible Jasper"
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        {
+            "LogName": "Jasper interactions with Maru",
+            "Action": "EditData",
+            "Target": "Data/Events/Mountain",
+            "Entries": {
+                "5599024/e 50709921/w sunny/z winter/d Tue Thu/t 1000 1600": "{{season}}_day_ambient/13 31/Maru -100 -100 2 Jasper 15 40 0 farmer -100 -100 0/addConversationTopic Jasper_Bionic 7/skippable/move Jasper 0 -2 0/pause 500/emote Jasper 12/pause 500/move Jasper 0 -2 0/shake Jasper 500/pause 500/speak Jasper \"{{i18n:5599024.1}}\"/pause 500/move Jasper 0 -2 0/shake Jasper 500/pause 500/speak Jasper \"{{i18n:5599024.2}}\"/move Jasper 0 -2 0/pause 500/playSound doorOpen/warp Maru 12 26/shake Jasper 500/jump Maru 5/pause 500/speed Maru 5/move Maru 0 6 1/move Maru 2 0 1/faceDirection Jasper 3/speak Maru \"{{i18n:5599024.3}}\"/pause 500/shake Jasper 300/textAboveHead Jasper \"{{i18n:5599024.4}}\"/pause 500/speak Jasper \"{{i18n:5599024.5}}\"/speak Maru \"{{i18n:5599024.6}}\"/pause 500/emote Jasper 28/speak Jasper \"{{i18n:5599024.7}}\"/speak Maru \"{{i18n:5599024.8}}\"/pause 500/emote Jasper 40/speak Jasper \"{{i18n:5599024.9}}\"/speak Maru \"{{i18n:5599024.10}}\"/textAboveHead Jasper \"{{i18n:5599024.11}}\"/speak Maru \"{{i18n:5599024.12}}\"/faceDirection Maru 0/faceDirection Jasper 0/positionOffset Jasper -2 0/pause 5/positionOffset Jasper -2 0/pause 5/positionOffset Jasper -2 0/positionOffset Jasper -2 0/pause 5/positionOffset Jasper -2 0/pause 5/positionOffset Jasper -2 0/pause 5/positionOffset Jasper -2 0/pause 500/emote Jasper 32/pause 1000/speed Maru 1/speed Jasper 1/advancedMove Jasper false -5 0/advancedMove Maru false -5 0/pause 1500/fade/viewport -100 -100/end dialogue Jasper \"{{i18n:5599024.13}}\""
+            }
+        },
+        {
+            "LogName": "Jasper talks about fish",
+            "Action": "EditData",
+            "Target": "Data/Events/Custom_BigRoom",
+            "When": {
+                "HasMod": "Gervig91.StardewAquariumCP"
+            },
+            "Entries": {
+                "5599039/Hn AquariumDonated:RainbowTrout/v Jasper/f Jasper 500": "50s/45 9/Jasper 53 9 0 farmer 37 11 1/skippable/move farmer 10 0 1/emote farmer 32/faceDirection Jasper 3/emote Jasper 32/move farmer 5 0 0/faceDirection Jasper 2/move farmer 0 -2 1/faceDirection Jasper 3/speak Jasper \"{{i18n:5599039.01}}\"/emote farmer 8/pause 500/faceDirection Jasper 0/faceDirection farmer 0/speak Jasper \"{{i18n:5599039.02}}\"/faceDirection Jasper 3/faceDirection farmer 1/speak Jasper \"{{i18n:5599039.03}}\"/jump farmer 4/emote farmer 16/pause 1500/faceDirection Jasper 0/pause 1000/faceDirection Jasper 3/speak Jasper \"{{i18n:5599039.04}}\"/emote farmer 56/faceDirection Jasper 0/faceDirection farmer 0/pause 2000/end"
+            }
+        },
+        {
+            "LogName": "GingerIsland Events",
+            "Action": "EditData",
+            "Target": "Data/Events/IslandSouth",
+            "Entries": {
+                "5599052/v Jasper/p Jasper": "IslandMusic/17 11/Jasper 18 11 0 farmer 10 18 0 {{PSnail}} -100 -100 0/skippable/changeName {{Psnail}} {{i18n:Professor_Snail}}/move farmer 0 -4 1 true/move Jasper 0 -4 0 true/pause 2000/faceDirection Jasper 3/pause 500/emote farmer 8/faceDirection Jasper 1/pause 500/faceDirection Jasper 2/pause 500/faceDirection Jasper 0/emote Jasper 40/pause 1000/move farmer 3 0 1/move Jasper 0 -4 0 true/move farmer 4 0 0 true/pause 3000/warp Jasper -100 -100/message \"{{i18n:5599052.01}}\"/pause 2000/fade/viewport -1000 -1000/changeLocation IslandNorth/viewport -1000 -1000/warp Jasper 39 32 true/warp farmer -100 -100 true/warp {{PSnail}} 41 37/viewport 40 33/pause 1000/move {{PSnail}} 0 -5 0 true/textAboveHead {{PSnail}} \"{{i18n:5599052.02}}\"/pause 1000/faceDirection Jasper 1/speak Jasper \"{{i18n:5599052.03}}\"/faceDirection {{PSnail}} 3/textAboveHead {{PSnail}} \"{{i18n:5599052.04}}\"/pause 500/warp farmer 40 47/speak {{PSnail}} \"{{i18n:5599052.05}}\"/move farmer 0 -14 0 true/pause 1000/faceDirection Jasper 0/pause 500/emote {{PSnail}} 40/pause 1000/speak {{PSnail}} \"{{i18n:5599052.06}}\"/pause 500/faceDirection Jasper 1/speak Jasper \"{{i18n:5599052.07}}\"/pause 500/emote {{PSnail}} 16/jump {{PSnail}} 3/pause 1000/speak {{PSnail}} \"{{i18n:5599052.08}}\"/pause 1000/speak Jasper \"{{i18n:5599052.09}}\"/speak {{PSnail}} \"{{i18n:5599052.10}}\"/faceDirection {{PSnail}} 0/speak {{PSnail}} \"{{i18n:5599052.11}}\"/pause 1000/emote {{PSnail}} 40/faceDirection {{PSnail}} 3/speak {{PSnail}} \"{{i18n:5599052.12}}\"/pause 500/faceDirection Jasper 0/faceDirection {{PSnail}} 0/speak {{PSnail}} \"{{i18n:5599052.13}}\"/pause 100/emote Jasper 16/speak {{PSnail}} \"{{i18n:5599052.14}}\"/speak Jasper \"{{i18n:5599052.15}}\"/emote Jasper 40/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Gives Snail's Book a title",
+            "Action": "EditMap",
+            "Target": "Maps/IslandFieldOffice",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 7,
+                        "Y": 5
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message  \"{{i18n:strings.safariguy.tent}}\""
+                    }
+                }
+            ]
+        },
+        {
+            "LogName": "Engagement strings",
+            "Action": "EditData",
+            "Target": "Strings/StringsFromCSFiles",
+            "Entries": {
+                "Jasper_Engaged": "{{i18n:jasper.engaged}}"
+            }
+        },
+        { //Makes Jasper more accessible during Wednesdays so you can actually talk to him
+            "LogName": "Remove Bear from Archaeology House",
+            "Action": "EditMap",
+            "Target": "Maps/ArchaeologyHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 20,
+                        "Y": 9
+                    },
+                    "Layer": "Buildings",
+                    "Remove": true
+                }
+            ],
+            "When": {
+                "HasFlag:hostPlayer |contains=Jasper_Penny": true,
+                "DayOfWeek": "Wednesday"
+            }
+        },
+        {
+            "LogName": "Platonic 14",
+            "Action": "Include",
+            "FromFile": "assets/Platonic/Jasper.json",
+            "When": {
+                "HasWalletItem": "DwarvishTranslationGuide",
+                "KeepNonDatable |contains=Jasper": true,
+                //"Relationship:Jasper |contains=married, engaged": false
+            }
+        },
+        //Blanche 
+        { //New dialogue for Blanche referencing Jasper
+            "LogName": "Blanche Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Blanche",
+            "When": {
+                "HasMod |contains=MIDI.Blanche": true
+            },
+            "Entries": {
+                "JasperGone1": "{{i18n:blanche_jasper_gone1}}",
+                "TalkJasperHome": "{{i18n:blanche_jasper_jasperhome}}",
+                "JasperEngaged": "{{i18n:blanche_jasper_jasperengaged}}",
+                "fall_Tue": "{{i18n:blanche_jasper_fall_tue}}",
+                "fall_Tue_InLaw_Jasper": "{{i18n:blanche_jasper_fall_tue_inlaw}}",
+                "summer_Mon_InLaw_Jasper": "{{i18n:blanche_jasper_summer_tue_inlaw}}"
+            }
+        },
+        { //New dialogue for Jasper referencing Blanche 
+            "LogName": "Blanche Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jasper",
+            "When": {
+                "HasMod |contains=MIDI.Blanche": true
+            },
+            "Entries": {
+                "fall_Tue": "{{i18n:jasper_blanche_fall_tue}}",
+                "summer_Tue4": "{{i18n:jasper_blanche_summer_tue}}"
+            }
+        },
+        { //8+ heart event
+            "LogName": "Town events",
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "When": {
+                "HasMod |contains=MIDI.Blanche": true
+            },
+            "Entries": {
+                "5599027/e 50709921/f Blanche 500/z winter/z fall/z spring/t 2000 2600": "nightTime/79 97/Jasper 78 95 2 Blanche 88 95 3 farmer -100 -100 2/skippable/addLantern 735 77 94 3/animate Jasper false true 1000 32/move Blanche -6 0 3/pause 500/emote Blanche 56/stopAnimation Jasper 0/faceDirection Jasper 1/speak Jasper \"{{i18n:5599027.01}}\"/emote Blanche 36/speak Blanche \"{{i18n:5599027.02}}\"/emote Blanche 40/pause 2000/speak Blanche \"{{i18n:5599027.03}}\"/emote Jasper 32/pause 1000/speak Jasper \"{{i18n:5599027.04}}\"/move Jasper -1 0 2/emote Blanche 56/move Blanche -3 0 2/pause 500/animate Jasper false true 1000 32/pause 5000/speak Blanche \"{{i18n:5599027.05}}\"/stopAnimation Jasper 0/emote Jasper 28/pause 1000/stopMusic/faceDirection Jasper 1/faceDirection Blanche 3/playMusic sappypiano/speak Jasper \"{{i18n:5599027.06}}\"/pause 500/emote Jasper 40/pause 1000/faceDirection Jasper 2/speak Jasper \"{{i18n:5599027.07}}\"/pause 500/move Blanche -1 0 3/speak Blanche \"{{i18n:5599027.08}}\"/faceDirection Jasper 1/emote Jasper 40/pause 1000/faceDirection Jasper 2/faceDirection Blanche 2/pause 500/speak Jasper \"{{i18n:5599027.09}}\"/faceDirection Jasper 1/speak Jasper \"{{i18n:5599027.10}}\"/pause 500/emote Blanche 40/pause 1000/speak Blanche \"{{i18n:5599027.11}}\"/faceDirection Jasper 2/textAboveHead Jasper \"{{i18n:5599027.12}}\"/pause 2000/speak Jasper \"{{i18n:5599027.13}}\"/pause 1500/end"
+            }
+        },
+        { //sets up the filing Cabinet (not that I imagine anyone visits it)
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_JasperHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 6,
+                        "Y": 12
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "Message \"FilingCabinet.{{day}}\""
+                    }
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "50709927"
+            }
+        },
+        /*  {
+            "LogName": "Custom Scarp Weddings",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Wedding_Jasper": "sweet/-1000 -1000/farmer 26 63 1 Jasper 27 63 3 Aideen 30 66 0 Beatrice 30 65 0 CorwinLK 31 65 0 EdithHart 24 65 0 Eloise 25 66 0 EthanHart 25 65 0 Jacob 24 66 0 Jade 29 67 0 Jessie 25 70 0 Juliet 28 66 0 MichaelHart 23 65 0 Rosa 29 66 0 StellaHart 22 65 0 {{ESWeddingGuests}} Gunther 28 65 0 KatarynaLK 29 65 0 LumaJunimo -100 -100 2 Nova.Dylan? 28 68 0 Nova.Eli? 29 68 0 Nora? 31 67 0 Fievel? 31 68 0 RodneyOBrien? 30 68 0 MadDog.HashtagBearFam.Teren? 22 69 0 MadDog.HashtagBearFam.Sigurd? 22 68 0 MadDog.HashtagBearFam.Gunnar? 24 68 0 MadDog.HashtagBearFam.Sondra 23 68 0 MadDog.HashtagBearFam.Gudrun 25 68 0 /changeToTemporaryMap EastScarp_Village_Wedding/viewport -1000 -1000/faceDirection Jade 0/showFrame Jasper 49/changeSprite Jessie Celebrant/viewport 26 64 true/advancedMove Jessie false 1 0 0 -6 4 100/globalFadeToClear/proceedPosition Jessie/pause 500/emote Jessie 40/pause 500/faceDirection farmer 2/showFrame Jasper 48/emote Jasper 32 true/pause 100/emote farmer 32 true/pause 600/faceDirection Jessie 2/pause 500/speak Jessie \"Welcome, everyone. And thank you for joining us today, as we celebrate the union of two of our beloved villagers.$6\"/pause 500/faceDirection Jessie 0/speak Jessie \"@, who may not live in the Scarp, but whom, I think we can all agree, has been an honest and true friend....$6\"/pause 500/emote Jessie 20 true/pause 500/emote Fievel? 32 true/emote SenS? 20 true/pause 500/emote ToriLK 32 true/pause 750/emote EdithHart 32 true/pause 500/speak Jessie \"... and our dedicated scholar with a heart of gold, Jasper Thomas.$7\"/pause 500/emote Jasper 60/pause 500/emote Jessie 20 true/pause 500/emote Gunther 32 true/pause 500/emote Aideen 32 true/pause 300/showFrame Jasper 49/pause 200/textAboveHead Jasper \"Ready, my love?\"/pause 500/faceDirection farmer 1/pause 1000/emote farmer 56/advancedMove Jessie false 0 1 4 100/proceedPosition Jessie/emote Jessie 40/speak Jessie \"By the power vested in me, and by the strength of your love, I now pronounce you, married!$6#$b#You may kiss.$7\"/pause 1000/faceDirection Jessie 2/pause 500/positionOffset Jasper -16 0/showFrame farmer 101/showFrame Jasper 50/specificTemporarySprite heart 21 106/pause 500/textAboveHead Juliet \"Woohoo!\"/pause 1500/playSound dwop/pause 2000/specificTemporarySprite wed/positionOffset Jasper 16 0/faceDirection farmer 2/showFrame Jasper 48/faceDirection MichaelHart 1 true/faceDirection EdithHart 3 true/faceDirection Jade 1/faceDirection ToriLK 3/advancedMove Jessie false 0 3 4 100/pause 4000/faceDirection farmer 1/showFrame Jasper 49/pause 500/warp LumaJunimo 30 58/temporarySprite 30 58 5 8 50 false 1/playSound coin/animate LumaJunimo true true 70 16 17 18 19/playSound junimoMeep1/pause 500/playSound junimoMeep1/pause 1000/globalFade/viewport -1000 -1000/pause 1000/message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5381]\"/pause 500/message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5383]\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/viewport move 0 -1 6000/globalFade/viewport -1000 -1000/end",
+            }
+        }*/
+    ]
+}

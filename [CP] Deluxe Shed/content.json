@@ -1,0 +1,136 @@
+{
+    "Format": "2.0",
+    "ConfigSchema": {
+        "Use Big Shed Texture": {
+            "AllowValues": "true, false",
+            "Default": false,
+            "Description": "If enabled, switches Deluxe Shed texture to use Big Shed texture instead (allowing compatibility with retexture mods)"
+        },
+        "Allow Casks": {
+            "AllowValues": "true, false",
+            "Default": true,
+            "Description": "If enabled, casks will work in the Deluxe Shed"
+        },
+		"Building Cost": {
+            "Default": 100000,
+            "Description": "The cost of the Deluxe Shed upgrade"
+        },
+        "Wood Amount": {
+            "Default": 500,
+            "Description": "The amount of wood needed for the Deluxe Shed upgrade",
+            "Section": "Building Resources"
+        },
+        "Hardwood Amount": {
+            "Default": 100,
+            "Description": "The amount of hardwood needed for the Deluxe Shed upgrade",
+            "Section": "Building Resources"
+        }
+    },
+    "DynamicTokens": [
+        {
+            "Name": "Deluxe Shed Texture",
+            "Value": "Buildings/genevieve_DeluxeShed"
+        },
+        {
+            "Name": "Deluxe Shed Texture",
+            "Value": "Buildings/Big Shed",
+            "When": {
+                "Use Big Shed Texture": true
+            }
+        }
+    ],
+    "Changes": [
+        {
+            "LogName": "Load deluxe shed map",
+            "Action": "Load",
+            "Target": "Maps/genevieve_DeluxeShed",
+            "FromFile": "assets/Shed3.tmx"
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/genevieve_DeluxeShed",
+            "MapProperties": {
+                "CanCaskHere": "T"
+            },
+            "When": {
+                "Allow Casks": true
+            }
+        },
+        {
+            "LogName": "Load deluxe shed paintmask",
+            "Action": "Load",
+            "Target": "Buildings/genevieve_DeluxeShed_PaintMask",
+            "FromFile": "assets/DeluxeShed_PaintMask.png",
+            "When": {
+                "Use Big Shed Texture": false
+            }
+        },
+        {
+            "LogName": "Load deluxe shed tilesheet",
+            "Action": "Load",
+            "Target": "Buildings/genevieve_DeluxeShed",
+            "FromFile": "assets/DeluxeShed.png",
+            "When": {
+                "Use Big Shed Texture": false
+            }
+        },
+        {
+            "LogName": "Adding deluxe shed paint data",
+            "Action": "EditData",
+            "Target": "Data/PaintData",
+            "Entries": {
+                "genevieve_DeluxeShed": "Building/-45 -10/Roof/-20 5/Trim/-25 0"
+            }
+        },
+        {
+            "LogName": "Adding deluxe shed building definition",
+            "Action": "EditData",
+            "Target": "Data/Buildings",
+            "Entries": {
+                "genevieve_DeluxeShed": {
+                    "Id": "genevieve_DeluxeShed",
+                    "Name": "{{i18n:genevieve.deluxeshed.name}}",
+                    "Description": "{{i18n:genevieve.deluxeshed.description}}",
+                    "Texture": "{{Deluxe Shed Texture}}",
+                    "DrawShadow": true,
+                    "UpgradeSignTile": "4.8125, 2",
+                    "UpgradeSignHeight": 20.0,
+                    "Size": {
+                        "X": 7,
+                        "Y": 3
+                    },
+                    "FadeWhenBehind": true,
+                    "SourceRect": {
+                        "X": 0,
+                        "Y": 0,
+                        "Width": 112,
+                        "Height": 128
+                    },
+                    "Builder": "Robin",
+                    "BuildDays": 2,
+                    "BuildCost": "{{Building Cost}}",
+                    "BuildMaterials": [
+                        {
+                            "Id": "Wood",
+                            "ItemId": "(O)388",
+                            "Amount": "{{Wood Amount}}"
+                        },
+                        {
+                            "Id": "Hardwood",
+                            "ItemId": "(O)709",
+                            "Amount": "{{Hardwood Amount}}"
+                        }
+                    ],
+                    "BuildingToUpgrade": "Big Shed",
+                    "MagicalConstruction": false,
+                    "HumanDoor": {
+                        "X": 3,
+                        "Y": 2
+                    },
+                    "IndoorMap": "genevieve_DeluxeShed",
+                    "IndoorMapType": "StardewValley.Shed"
+                }
+            }
+        }   
+    ]
+}

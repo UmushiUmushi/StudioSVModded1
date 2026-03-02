@@ -1,0 +1,11 @@
+{
+    "Name": "Aesthetic Secret Notes",
+    "Author": "Tsukumo",
+    "Version": "1.0.0",
+    "Description": "Optional Secret Notes Icon",
+    "UniqueID": "Tsukumo.AestheticSecretNotes",
+    "UpdateKeys": ["Nexus:14955"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

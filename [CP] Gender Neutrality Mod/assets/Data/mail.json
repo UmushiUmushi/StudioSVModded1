@@ -1,0 +1,17 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries":
+				{
+					"passedOut1_Billed_Male": "Dear @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^(You've been billed {0}g for this service)^^-Morris^Joja Customer Satisfaction Representative[#]Joja Invoice",
+					"passedOut1_Billed_Female": "Dear @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^(You've been billed {0}g for this service)^^-Morris^Joja Customer Satisfaction Representative[#]Joja Invoice",
+					"passedOut1_NotBilled_Male": "Dear @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^Since you have no money, we were obligated by law to provide this service free of charge.^^-Morris^Joja Customer Satisfaction Representative[#]Legally Required Notice",
+					"passedOut1_NotBilled_Female": "Dear @,^Last night, a Joja team member found you incapacitated. A medical team was dispatched to bring you home safely.^We're glad you're okay!^^Since you have no money, we were obligated by law to provide this service free of charge.^^-Morris^Joja Customer Satisfaction Representative[#]Legally Required Notice"
+				},
+			"LogName": "Fix Mail"
+		}
+	]
+}

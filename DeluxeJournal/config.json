@@ -1,0 +1,11 @@
+{
+  "PushRenewedTasksToTheTop": false,
+  "EnableDefaultSmartAdd": true,
+  "EnableVisualTaskCompleteIndicator": false,
+  "ShowSmartAddTip": true,
+  "ShowAddTaskHelpMessage": false,
+  "MoneyViewNetWealth": false,
+  "ToggleOverlaysKeybind": "O",
+  "OverlayBackgroundColor": "00000040",
+  "TargetColorSchemaFile": ""
+}

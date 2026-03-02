@@ -1,0 +1,306 @@
+{ 
+ "CollectiveNames":
+[
+"Chest",
+"Stone Chest",
+"Junimo Chest",
+"Big Chest",
+"Big Stone Chest"
+],
+  "Type": "Craftable",
+  "TextureWidth": 16,
+  "TextureHeight": 32,
+  "ManualVariations": 
+[
+    {
+      "Id": 0,
+      "Name": "Crate",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 1,
+      "Name": "Crate",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 2,
+      "Name": "Crate",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 3,
+      "Name": "Crate",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 4,
+      "Name": "Crate",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 5,
+      "Name": "Barrel",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 6,
+      "Name": "Bucket",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 7,
+      "Name": "Bucket",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 8,
+      "Name": "Barrel",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 9,
+      "Name": "Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 10,
+      "Name": "Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 11,
+      "Name": "Rattan Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 12,
+      "Name": "Rattan Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 13,
+      "Name": "Rattan Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 14,
+      "Name": "Rattan Barrel",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 15,
+      "Name": "Covered Crate",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 16,
+      "Name": "Covered Barrel",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 17,
+      "Name": "Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 18,
+      "Name": "Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 19,
+      "Name": "Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 20,
+      "Name": "Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 21,
+      "Name": "Dark Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 22,
+      "Name": "Dark Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 23,
+      "Name": "Dark Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 24,
+      "Name": "Dark Cardboard Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 25,
+      "Name": "Safe Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 26,
+      "Name": "Safe Box",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 27,
+      "Name": "Oak Dresser",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 28,
+      "Name": "Walnut Dresser",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 29,
+      "Name": "Birch Dresser",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 30,
+      "Name": "Mahogany Dresser",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 31,
+      "Name": "Sack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 32,
+      "Name": "Sack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 33,
+      "Name": "Log Pile",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 34,
+      "Name": "Log Pile",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 35,
+      "Name": "Bucket O' Water",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 36,
+      "Name": "Water Barrel",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 37,
+      "Name": "Tools",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 38,
+      "Name": "Milk Can",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 39,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 40,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 41,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 42,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 43,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 44,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 45,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 46,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 47,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 48,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 49,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 50,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 51,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 52,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 53,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 54,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 55,
+      "Name": "Rack",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 56,
+      "Name": "Cloth Basket",
+	  "Keywords": [ "Misc" ]
+    },
+    {
+      "Id": 57,
+      "Name": "Cloth Basket",
+	  "Keywords": [ "Misc" ]
+    }
+]
+}

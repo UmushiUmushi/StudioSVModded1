@@ -1,0 +1,12 @@
+{
+	"ItemName": "Heavy Furnace",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		},
+	]
+}

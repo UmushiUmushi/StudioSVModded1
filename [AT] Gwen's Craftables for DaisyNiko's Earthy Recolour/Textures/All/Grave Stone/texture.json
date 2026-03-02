@@ -1,0 +1,21 @@
+{
+	"ItemName": "Grave Stone",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 1,
+		"Name": "1-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+	]
+}

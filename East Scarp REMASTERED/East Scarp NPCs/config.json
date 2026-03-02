@@ -1,0 +1,13 @@
+{
+  "EnableSpecialOrders": "true",
+  "TrentonFamilyDrama": "true",
+  "FriendableAnimals": "EmperorDuck, EmpressDuck, LadyShebaCat, LittleGruff, HappySlime",
+  "FriendableZuzuNPCs": "false",
+  "RivalHearts": "RosaJuliet",
+  "GenderNeutral": "false",
+  "KeepNonDatable": "false",
+  "EnableTristan": "false",
+  "CustomFarmSpousePatioExit": "none",
+  "Nyapu's portraits": "false",
+  "FestivalOutfits": "true"
+}

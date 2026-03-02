@@ -1,0 +1,11 @@
+{
+    "Name": "Trypophobia Fix for Mines",
+    "Author": "8BitAlien",
+    "Version": "1.0.0",
+    "Description": "Trypophobia Fix for the Slime Levels in the Mines",
+    "UniqueID": "8BitAlien.TFFM",
+    "UpdateKeys": [],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

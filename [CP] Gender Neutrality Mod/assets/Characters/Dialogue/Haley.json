@@ -1,0 +1,19 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Haley",
+			"Entries":
+				{
+					"Introduction": "Oh... You're that new farmer, or whatever. Aren't you?#$e#Huh? Oh... I'm Haley.#$e#Hmm... If it weren't for those horrendous clothes you might actually be cute.",
+					"FlowerDance_Accept": "Oh? Sure! I'll dance with you!#$b#We'll have a great time!$h#$e#You look really nice today, by the way.",
+					"dating_Haley_memory_oneday": "You look really nice today.$l",
+					"married_Emily": "Hey, I guess we're family now!$h",
+					"Tue": "Nice shoes.#$b#Are those made out of plastic?#$e#I'm bored.",
+					"winter_Sun10": "@, you look nice today.#$e#...$h"
+				},
+			"LogName":"Fix Haley"
+		}
+	]
+}

@@ -1,0 +1,30 @@
+{
+	"ItemName": "Lightning Rod",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Spring"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+		{
+		"Id": 2,
+		"Name": "1-Outdoors-Extra",
+		"Keywords": ["Extra"],
+		},
+		{
+		"Id": 3,
+		"Name": "2-Outdoors-Extra",
+		"Keywords": ["Extra"],
+		},
+	]
+}

@@ -1,0 +1,20 @@
+{
+	"ItemName": "Barrel Brazier",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Summer"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors-Clean",
+		"Keywords": ["Clean"],
+		},
+		{
+		"Id": 1,
+		"Name": "1-Outdoors-Foliage",
+		"Keywords": ["Foliage"],
+		},
+	]
+}

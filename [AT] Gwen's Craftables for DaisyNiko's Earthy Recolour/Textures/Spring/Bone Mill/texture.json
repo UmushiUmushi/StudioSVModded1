@@ -1,0 +1,14 @@
+{
+	"ItemName": "Bone Mill",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Spring", "Summer", "Fall"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		},
+	]
+}

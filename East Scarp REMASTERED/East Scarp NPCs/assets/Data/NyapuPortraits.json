@@ -1,0 +1,214 @@
+// NPC Portraits from the Original East Scarp Mod
+{
+	"Changes": [
+		//Aideen
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Aideen",
+			"FromFile": "assets/NyapuPortraits/Aideen.png"
+		},
+		//Beatrice
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Beatrice, Portraits/Beatrice_Winter, Portraits/Beatrice_Summer, Portraits/Beatrice_Fall, Portraits/Beatrice_EggFestival, Portraits/Beatrice_FlowerDance, Portraits/Beatrice_IceFestival, Portraits/Beatrice_Luau, Portraits/Beatrice_SVFair, Portraits/Beatrice_WinterStar",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Beatrice_Beach",
+			"FromFile": "assets/NyapuPortraits/Beatrice_summer.png"
+		},
+		//Eloise
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Eloise, Portraits/Eloise_Spring_1, Portraits/Eloise_spring_2, Portraits/Eloise_summer_1, Portraits/Eloise_summer_2, Portraits/Eloise_fall_1, Portraits/Eloise_fall_2, Portraits/Eloise_winter_1, Portraits/Eloise_winter_2, Portraits/Eloise_rain, Portraits/Eloise_bird",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Eloise_Beach",
+			"FromFile": "assets/NyapuPortraits/Eloise_summer_2.png"
+		},
+		//Eyvinder
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Eyvinder, Portraits/Eyvinder_Summer, Portraits/Eyvinder_Fall, Portraits/Eyvinder_Winter, Portraits/Eyvinder_FlowerDance, Portraits/Eyvinder_Beach",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		//Jacob
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Jacob, Portraits/Jacob_Summer, Portraits/Jacob_Fall, Portraits/Jacob_Winter, Portraits/Jacob_magician",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Jacob_Beach",
+			"FromFile": "assets/NyapuPortraits/Jacob_summer.png"
+		},
+		//Josephine
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/JosephineK",
+			"FromFile": "assets/NyapuPortraits/Josephine.png"
+		},
+		//Kataryna
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/KatarynaLK",
+			"FromFile": "assets/NyapuPortraits/Kataryna.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/KatarynaLK_wetHair",
+			"FromFile": "assets/NyapuPortraits/Kataryna_wetHair.png"
+		},
+		//Kennedy
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Kennedy",
+			"FromFile": "assets/NyapuPortraits/Kennedy.png"
+		},
+		//Lexi
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Leximonster",
+			"FromFile": "assets/NyapuPortraits/Leximonster.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Leximonster_FashionShow",
+			"FromFile": "assets/NyapuPortraits/Leximonster_FashionShow.png"
+		},
+		//LumaJunimo
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/LumaJunimo",
+			"FromFile": "assets/NyapuPortraits/LumaJunimo.png"
+		},
+		//Oliver
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/OliverK",
+			"FromFile": "assets/NyapuPortraits/Oliver.png"
+		},
+		//Rosa
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Rosa",
+			"FromFile": "assets/NyapuPortraits/Rosa.png"
+		},
+		//Tori
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/ToriLK",
+			"FromFile": "assets/NyapuPortraits/Tori.png"
+		},
+		//Vivienne
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/VivienneLK",
+			"FromFile": "assets/NyapuPortraits/VivienneLK.png"
+		},
+		{
+			"LogName": "Loads temp portrait",
+			"Action": "EditImage",
+			"Target": "Portraits/MrGinger",
+			"FromFile": "assets/NyapuPortraits/Animals/MisterGinger.png"
+		},
+		//Tristan
+		{
+			"LogName": "Edits portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Tristan, Portraits/Tristan_summer, Portraits/Tristan_fall, Portraits/Tristan_winter, Portraits/Tristan_SpiritsEve",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/TristanLK_date",
+			"FromFile": "assets/NyapuPortraits/Tristan_date.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/TristanLK_swim",
+			"FromFile": "assets/NyapuPortraits/Tristan_swim.png"
+		},
+		//Juliet and Jessie
+		{
+			"LogName": "NPC Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Juliet, Portraits/Jessie, Portraits/Ms.Donaghue, Portraits/Mr.Donaghue",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "swimsuit sprites",
+			"Action": "EditImage",
+			"Target": "Portraits/Juliet",
+			"FromFile": "assets/NyapuPortraits/Juliet_swimsuit.png",
+			"Update": "OnLocationChange",
+			"When": {
+				"LocationName": "Beach",
+				"Season": "summer"
+			}
+		},
+		{
+			"LogName": "swimsuit sprites",
+			"Action": "EditImage",
+			"Target": "Portraits/Juliet_Beach",
+			"FromFile": "assets/Portraits/Juliet/Juliet_swimsuit.png"
+		},
+		{
+			"LogName": "fall sprites",
+			"Action": "EditImage",
+			"Target": "Portraits/Juliet, Portraits/Juliet_Winter, Portraits/Juliet_theater, Portraits/Juliet_joja, Portraits/Juliet_FortuneTeller, Portraits/Juliet_eggfest, Portraits/Juliet_flowerdance, Portraits/Juliet_jellies, Portraits/Juliet_SVFair, Portraits/Juliet_SpiritsEve, Portraits/Juliet_Zombie",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		//Jasper
+		//Needs to be added into Data/Characters before we can rewrite this
+		{
+			"LogName": "Jasper Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jasper, Portraits/Jasper_wheelchair, Portraits/Jasper_prosthetic, Portraits/Jasper_winter",
+			"FromFile": "assets/NyapuPortraits/{{TargetWithoutPath}}.png"
+		},
+		{
+			"LogName": "Jasper Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jasper_Flowers",
+			"FromFile": "assets/NyapuPortraits/Jasper.png",
+			"When": {
+				"HasMod": "Lemurkat.Jasper.LittleNPCs"
+			}
+		},
+		{
+			"LogName": "Jasper Portraits",
+			"Action": "EditImage",
+			"Target": "Portraits/Jasper_Flowers",
+			"PatchMode": "Overlay",
+			"FromFile": "assets/NyapuPortraits/Overlays/Jasper_FlowerOverlay.png",
+			"When": {
+				"HasMod": "Lemurkat.Jasper.LittleNPCs"
+			}
+		},
+		//Animals
+		{
+			"Action": "EditImage",
+			"Target": " Portraits/Gremlin, Portraits/Abyssrooster, Portraits/BlueJay, Portraits/DuckNPC, Portraits/Duck2NPC, Portraits/HappySlime, Portraits/LadySheba, Portraits/LittleGruff, Portraits/Munchboi, Portraits/PepperPup, Portraits/RichieTheMacaw, Portraits/Munchington_Portrait, Portraits/MisterGinger",
+			"FromFile": "assets/NyapuPortraits/Animals/{{TargetWithoutPath}}.png"
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Maps/z_RSVspousePic",
+			"FromFile": "assets/Portraits/Nyapu/WeddingPortraitRSV.png",
+			"When": {
+				"Query: '{{Spouse}}' = 'Jasper'": true
+			},
+			"Update": "OnLocationChange, OnTimeChange",
+		},
+		{
+			"Action": "EditImage",
+			"Target": " Characters/MisterGinger, Characters/MisterGinger_Fish",
+			"FromFile": "assets/NyapuPortraits/Animals/{{Target}}.png"
+		}
+	]
+}

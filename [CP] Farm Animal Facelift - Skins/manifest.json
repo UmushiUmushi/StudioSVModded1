@@ -1,0 +1,12 @@
+{
+   "Name": "Farm Animal Facelift - Skins",
+   "Author": "siamece",
+   "Version": "1.3.0",
+   "Description": "Touches up all of the coop and barn animal sprites + randomizes each skin.",
+   "UniqueID": "siamece.FarmAnimalFacelift",
+   "MinimumApiVersion": "3.0.0",
+   "UpdateKeys": [ "Nexus:9057" ],
+   "ContentPackFor":{
+   "UniqueID": "Pathoschild.ContentPatcher"
+	},
+}

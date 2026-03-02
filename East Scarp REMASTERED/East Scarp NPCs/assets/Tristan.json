@@ -1,0 +1,977 @@
+{
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/WizardHouse",
+            "FromFile": "assets/Maps/TristanBook.tmx",
+            "ToArea": {
+                "X": 12,
+                "Y": 15,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasSeenEvent": "5295006",
+                "HasSeenEvent |contains=5295000": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "When": {
+                "EnableTristan": "true, True"
+            },
+            "Entries": {
+                "EastScarp.MisterGingerInvisible": {
+                    "ID": "mail.EastScarp.MisterGingerInvisible",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 5295000",
+                    "Action": "SetNpcInvisible MisterGinger 2240",
+                    "MarkActionApplied": false,
+                },
+                "EastScarp.MisterGingerInvisible2": {
+                    "ID": "mail.EastScarp.MisterGingerInvisible2",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Host 5295000",
+                    "Action": "SetNpcInvisible MisterGinger 2240",
+                    "MarkActionApplied": false,
+                }
+            }
+        },
+        {
+            "LogName": "Question Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MisterGinger",
+            "Entries": {
+                "BreakSpell_Yes1": "{{i18n:Dialogue.BreakSpell_Yes1}}",
+                "BreakSpell_Yes2": "{{i18n:Dialogue.BreakSpell_Yes2}}",
+                "BreakSpell_No": "{{i18n:Dialogue.BreakSpell_No}}",
+            }
+        },
+        //Temp Actors 
+        {
+            "Action": "Load",
+            "Target": "Characters/TristanLK_Swim",
+            "FromFile": "assets/Characters/TristanLK/Tristan_Swim.png"
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/TristanLK_Swim",
+            "FromFile": "assets/Portraits/TristanLK/Tristan_Swim.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/MonaCute",
+            "FromFile": "assets/Characters/TempActors/Cute_Mona.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/TristanCute",
+            "FromFile": "assets/Characters/TempActors/cute_Tristan.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/GingerCute",
+            "FromFile": "assets/Characters/TempActors/Cute_Ginger.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/WitchCute",
+            "FromFile": "assets/Characters/TempActors/Cute_Witch2.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/JasCute",
+            "FromFile": "assets/Characters/TempActors/Cute_Jas.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/MarnShane",
+            "FromFile": "assets/Characters/TempActors/Cute_MarnShane.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/MarnCute",
+            "FromFile": "assets/Characters/TempActors/Cute_Marnie.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/MtFire",
+            "FromFile": "assets/Characters/TempActors/flames.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/MtEvermore",
+            "FromFile": "assets/Maps/MtEvermore.tmx",
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/MtCabin",
+            "FromFile": "assets/Maps/MtCabin.tmx"
+        },
+        //Map Edits
+        {
+            "LogName": "Tristan's House exterior",
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Maps/EastScarp_PlayHouse.tmx",
+            "when": {
+                "HasSeenEvent:hostPlayer": "5295000",
+                "HasConversationTopic |contains=TristanReturns": false
+            },
+            "ToArea": {
+                "X": 18,
+                "Y": 38,
+                "Width": 6,
+                "Height": 6
+            }
+        },
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "when": {
+                "HasSeenEvent:hostPlayer": "5295000",
+                "HasConversationTopic |contains=TristanReturns": false
+            },
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 21,
+                        "Y": 42
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "LockedDoorWarp 3 7 EastScarp_Playhouse 900 1800 Jas 1000"
+                    }
+                }
+            ]
+        },
+        //EVENTS
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Lemurkat.Tristan_TristanUnlocked": {
+                    "ID": "mail.Lemurkat.Tristan_TristanUnlocked",
+                    "Trigger": "DayStarted",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 5295000, PLAYER_HAS_MET Current TristanLK",
+                    "Action": "AddFriendshipPoints TristanLK 2000"
+                },
+                "Lemurkat.Tristan_JasLetter": {
+                    "ID": "mail.Lemurkat.Tristan_JasLetter",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50706126",
+                    "Actions": [
+                        "AddMail Current Jas_Letter Now",
+                        "MarkEventSeen 50706127"
+                    ]
+                },
+                "Lemurkat.Tristan_CatPicnicInvite": {
+                    "ID": "mail.Lemurkat.Tristan_CatPicnic",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_HAS_SEEN_EVENT Current 50706127, PLAYER_HAS_SEEN_EVENT Current 50706133",
+                    "Action": "AddMail Current Wizard_CatPicnic Now"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "when": {
+                "HasSeenEvent:hostPlayer": "5295000",
+                "HasConversationTopic |contains=TristanReturns": false
+            },
+            "Entries": {
+                "Lemurkat.Tristan_RequestBakedFish": {
+                    "ID": "mail.Lemurkat.Tristan_RequestBakedFish",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FRIENDSHIP_POINTS Current Willy 1500",
+                    "Action": "AddMail Current Tristan_BakedFishGift Now"
+                },
+                "Lemurkat.Tristan_MtEvermoreDate": {
+                    "ID": "mail.Lemurkat.Tristan_MtEvermoreDate",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_NPC_RELATIONSHIP Current TristanLK Dating Engaged Married, PLAYER_FRIENDSHIP_POINTS Current TristanLK 2500, !LOCATION_SEASON Here winter, PLAYER_HAS_SEEN_EVENT Current 5295000",
+                    "Action": "AddMail Current Tristan_MtEvermore Tomorrow"
+                },
+            }
+        },
+        //letters and Farm events        
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farm",
+            "Entries": {
+                "5295001/e 5295000/o Shane/t 600 2300/H": "continue/64 15/farmer 64 16 2 TristanLK 64 18 0/broadcastEvent/pause 1500/speak TristanLK \"{{i18n:5295001.0}}\"/pause 500/speak TristanLK \"{{i18n:5295001.1}}\"/pause 300/faceDirection TristanLK 2/pause 500/faceDirection TristanLK 0/speak TristanLK \"{{i18n:5295001.2}}\"/pause 500/speak TristanLK \"{{i18n:5295001.3}}\"/end",
+                "5295021/e 5295000/e 5295001/O Shane/t 600 2300/H": "continue/64 15/farmer 64 16 2 TristanLK 64 18 0/broadcastEvent/pause 1500/speak TristanLK \"{{i18n:5295021.0}}\"/pause 500/speak TristanLK \"{{i18n:5295021.1}}\"/pause 300/faceDirection TristanLK 2/pause 500/faceDirection TristanLK 0/speak TristanLK \"{{i18n:5295021.2}}\"/pause 500/speak TristanLK \"{{i18n:5295021.3}}\"/end",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "Jas_Letter": "{{i18n:mail.Jas_Letter.text}}[#]{{i18n:mail.Jas_Letter.title}}",
+                "Tristan_BakedFishGift": "{{i18n:mail.Tristan_BakedFishGift.text}}[#]{{i18n:mail.Tristan_BakedFishGift.title}}",
+                "Tristan_MtEvermore": "{{i18n:mail.Tristan_MtEvermore.text}}[#]{{i18n:mail.Tristan_MtEvermore.title}}"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "Wizard_CatPicnic": "{{i18n:mail.Wizard.Wizard_CatPicnic.text}}[#]{{i18n:mail.Wizard.Wizard_CatPicnic.title}}"
+            },
+            "When": {
+                "HasMod |contains=Ran.HarvestGoddess": false
+            }
+        },
+        //10 Heart Event
+        {
+            "Action": "EditData",
+            "Target": "Data/mail",
+            "Entries": {
+                "Wizard_CatPicnic": "{{i18n:mail.HarvestGoddess.Wizard_CatPicnic.text}}[#]{{i18n:mail.HarvestGoddess.Wizard_CatPicnic.title}}"
+            },
+            "When": {
+                "HasMod |contains=Ran.HarvestGoddess": true
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "characters/MrGPicnicRug",
+            "FromFile": "assets/Characters/TempActors/PicnicRug.png"
+        },
+        {
+            "LogName": "10-heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries": {
+                "50706129/n Wizard_CatPicnic/Hl Tristan_Returns/t 1800 2200/w sunny": "woodsTheme/-100 -100/farmer 16 13 3 MisterGinger 8 8 0/skippable/addTemporaryActor MrGPicnicRug 48 48 8 10 2 false/addLantern 735 10 7 4/viewport 14 13/pause 500/speak MisterGinger \"{{i18n:50706129.0}}\"/pause 250/move farmer -2 0 3/playSound woodyStep/pause 250/faceDirection MisterGinger 1/jump MisterGinger 3/pause 250/textAboveHead MisterGinger \"{{i18n:50706129.1}}\"/speed MisterGinger 4/move MisterGinger 3 0 1/speed MisterGinger 4/move MisterGinger 0 5 1/move farmer -2 0 3/pause 250/emote farmer 32/speak MisterGinger \"{{i18n:50706129.2}}\"/pause 250/faceDirection MisterGinger 3/pause 250/faceDirection MisterGinger 1/pause 500/speak MisterGinger \"{{i18n:50706129.3}}\"/pause 500/move MisterGinger -3 0 0/move farmer -3 0 0/move MisterGinger 0 -1 0/move farmer 0 -1 0/pause 500/speak MisterGinger \"{{i18n:50706129.4}}\"/pause 500/quickQuestion {{i18n:50706129.5}}(break)speak MisterGinger \"Not bad for someone with no thumbs, right?$1#$b#I had Jas to help me.$4\"(break)speak MisterGinger \"{{i18n:50706129.6}}\"(break)speak MisterGinger \"{{i18n:50706129.7}}\"(break)speak MisterGinger \"{{i18n:50706129.8}}\"(break)speak MisterGinger \"{{i18n:50706129.9}}\"/pause 500/stopMusic/playMusic echos/speak MisterGinger \"{{i18n:50706129.10}}\"/faceDirection MisterGinger 1/faceDirection farmer 3/pause 250/speak MisterGinger \"{{i18n:50706129.11}}\"/pause 500/showFrame MisterGinger 25/pause 250/speak MisterGinger \"{{i18n:50706129.12}}\"/pause 250/speak MisterGinger \"{{i18n:50706129.13}}\"/fork 50700001 MrG_Ridic/pause 500/showFrame MisterGinger 28/positionOffset farmer -4 0/specificTemporarySprite heart 8 11/pause 2000/end warpOut",
+                "MrG_Ridic": "pause 500/animate MisterGinger false false 250 12 20 21 20 21/pause 2000/move MisterGinger -3 0 0/pause 1000/end warpOut"
+            }
+        },
+        {
+            "LogName": "10-heart Event",
+            "Action": "EditData",
+            "Target": "Data/Events/Woods",
+            "Entries": {
+                "50706129/n Wizard_CatPicnic/Hl Tristan_Returns/t 1800 2200/w sunny": "woodsTheme/-100 -100/farmer 8 16 0 MisterGinger 8 8 0/skippable/addTemporaryActor MrGPicnicRug 48 48 8 10 2 false/positionOffset MrGPicnicRug -26 20 true/addLantern 735 10 6 4/viewport 9 10 clamp/pause 500/speak MisterGinger \"{{i18n:50706129.0}}\"/pause 250/move farmer 0 -4 0/playSound woodyStep/pause 250/faceDirection MisterGinger 1 true/faceDirection MisterGinger 2 true/pause 300/jump MisterGinger/pause 250/textAboveHead MisterGinger \"{{i18n:50706129.1}}\"/pause 1000/emote farmer 32/pause 300/speak MisterGinger \"{{i18n:50706129.2}}\"/pause 250/faceDirection MisterGinger 3/pause 250/faceDirection MisterGinger 2/pause 500/speak MisterGinger \"{{i18n:50706129.3}}\"/pause 500/globalFade/viewport -1000 -1000/warp farmer 9 8/faceDirection farmer 2 true/faceDirection MisterGinger 2 true/viewport 9 10 clamp true/pause 1150/speak MisterGinger \"{{i18n:50706129.4}}\"/pause 500/quickQuestion {{i18n:50706129.5}}(break)speak MisterGinger \"Not bad for someone with no thumbs, right?$1#$b#I had Jas to help me.$4\"(break)speak MisterGinger \"{{i18n:50706129.6}}\"(break)speak MisterGinger \"{{i18n:50706129.7}}\"(break)speak MisterGinger \"{{i18n:50706129.8}}\"(break)speak MisterGinger \"{{i18n:50706129.9}}\"/pause 500/stopMusic/playMusic echos/speak MisterGinger \"{{i18n:50706129.10}}\"/faceDirection MisterGinger 1/faceDirection farmer 3/pause 250/speak MisterGinger \"{{i18n:50706129.11}}\"/pause 500/showFrame MisterGinger 25/pause 250/speak MisterGinger \"{{i18n:50706129.12}}\"/pause 250/speak MisterGinger \"{{i18n:50706129.13}}\"/fork 50700002 MrG_Ridic/pause 500/showFrame MisterGinger 28/positionOffset farmer -4 0/specificTemporarySprite heart 8 11/pause 2000/end warpOut"
+            },
+            "When": {
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+        //Initiation event (Has seen all of Jas's, Mr Ginger's events, plus Shane's 8 heart)
+        {
+            "LogName": "Initiating event",
+            "Action": "EditData",
+            "Target": "Data/Events/AnimalShop",
+            "Entries": {
+                "5295003/e 50706129/e 50706116/e 3900074/e 50706127/p Jas/H": "jaunty/-200 -200/Jas 5 5 3 MisterGinger 4 5 1 farmer 9 18 3/addTemporaryActor MonaCute 16 16 -100 -101 2 false/addTemporaryActor TristanCute 16 16 -99 -101 2 false/addTemporaryActor WitchCute 16 32 -1000 -1000 2 false/addTemporaryActor GingerCute 16 16 -1000 -1000 2 false/addTemporaryActor JasCute 16 16 -1000 -1000 2 false/addTemporaryActor MarnShane 32 16 -1000 -1000 2 false/addTemporaryActor MarnCute 16 16 -1000 -1000 2 false/addConversationTopic Tristan_Discuss 5/skippable/viewport 5 7 clamp true/pause 500/speak Jas \"{{i18n:5295003.0.{{GenderNeutral}} | {{lowercase: GenderNeutralSubjectiveHave={{GenderNeutralSubjective}} }} }}\"/pause 500/move farmer -3 0 0/pause 500/playSound cat/pause 500/speak Jas \"{{i18n:5295003.1.{{GenderNeutral}} | {{lowercase: GenderNeutralSubjectiveHave={{GenderNeutralSubjectiveHave}} }} }}\"/move farmer 0 -5 0/faceDirection Jas 2/pause 500/textAboveHead Jas \"{{i18n:5295003.2}}\"/pause 1000/faceDirection Jas 3/speak Jas \"{{i18n:5295003.3.{{GenderNeutral}} | {{lowercase: GenderNeutralSubjectiveHave={{GenderNeutralSubjectiveHave}} }} }}\"/pause 500/playSound cat/showFrame MisterGinger 28/positionOffset Jas -12 0/pause 1000/emote MisterGinger 20/pause 1000/faceDirection MisterGinger 2/warp Jas 5 5/faceDirection Jas 2/pause 500/doAction 6 12/playSound doorOpen/move farmer 0 -5 0/pause 500/emote Jas 32/move MisterGinger 0 2 1/speak Jas \"{{i18n:5295003.4}}\"/emote farmer 56/pause 500/emote Jas 32/move MisterGinger 0 -1 1/move farmer 0 -2 3/pause 500/speak Jas \"{{i18n:5295003.5}}\"/pause 500/speak MisterGinger \"{{i18n:5295003.6}}\"/stopMusic/pause 500/fade/viewport -100 -100/warp MisterGinger -1000 -100/warp Jas -1000 -100/warp farmer -1000 -100/speak Jas \"{{i18n:5295003.7}}\"/pause 500/faceDirection MonaCute 1/faceDirection TristanCute 3/speak Jas \"{{i18n:5295003.8}}\"/pause 500/showFrame TristanCute 16/showFrame MonaCute 16/showFrame TristanCute 17/showFrame MonaCute 17/pause 500/emote TristanCute 20/emote MonaCute 20/pause 500/speak Jas \"{{i18n:5295003.9}}\"/faceDirection MonaCute 0/animate MonaCute false true 250 8 9 10 11/animate TristanCute false true 250 8 9 10 11/pause 1000/speak Jas \"{{i18n:5295003.10}}\"/pause 500/stopAnimation MonaCute/faceDirection MonaCute 1/stopAnimation TristanCute/faceDirection TristanCute 3/emote TristanCute 16/pause 1000/changeLocation WitchSwamp/viewport -1000 -1000/warp MonaCute 20 21/warp TristanCute 21 21/fade/playMusic Overcast/viewport 20 23/pause 500/faceDirection MonaCute 0/playSound stoneStep/pause 250/playSound stoneStep/textAboveHead MonaCute \"{{i18n:5295003.11}}\"/pause 500/faceDirection MonaCute 1/textAboveHead MonaCute \"{{i18n:5295003.12}}\"/pause 5000/emote TristanCute 60/pause 500/textAboveHead MonaCute \"{{i18n:5295003.13}}\"/pause 500/faceDirection MonaCute 0/pause 500/playSound openChest/pause 1000/emote TristanCute 28/pause 1000/fade/viewport -1000 -1000/changeLocation WitchHut/viewport -1000 -1000/warp MonaCute 7 11/warp TristanCute 8 11/pause 500/fade/viewport 9 9/move MonaCute 0 -5 0/faceDirection TristanCute 1/pause 1250/faceDirection TristanCute 0/pause 1250/faceDirection TristanCute 3/pause 500/textAboveHead MonaCute \"{{i18n:5295003.14}}\"/move MonaCute 4 0 1/pause 400/textAboveHead MonaCute \"{{i18n:5295003.15}}\"/pause 1500/textAboveHead MonaCute \"{{i18n:5295003.16}}\"/pause 250/playSound dwoop/pause 1500/playSound shadowHit/pause 500/jump TristanCute 3/textAboveHead TristanCute \"{{i18n:5295003.17}}\"/pause 1500/playSound cacklingWitch/pause 500/emote MonaCute 16/speed MonaCute 4/move MonaCute -4 0 2/pause 250/speed MonaCute 4/move MonaCute 0 9 2/warp MonaCute -1000 -1000/speed TristanCute 4/speed TristanCute 4/move TristanCute -1 0 2/speed TristanCute 4/move TristanCute 0 4 2/fade/viewport -1000 -1000/changeLocation WitchSwamp/viewport -1000 -1000/warp MonaCute 20 25/warp TristanCute 21 24/viewport 19 25/pause 500/playSound swordswipe/warp WitchCute 20 21/faceDirection MonaCute 0/faceDirection TristanCute 0/pause 500/shake MonaCute 250/jump TristanCute 3/textAboveHead WitchCute \"{{i18n:5295003.18}}\"/pause 500/showFrame TristanCute 18/move MonaCute 0 -1 0/showFrame MonaCute 18/pause 500/shake WitchCute 350/pause 500/animate WitchCute false false 350 4 5 6 7 8/pause 1250/warp TristanCute 20 23/pause 500/screenFlash 1/warp TristanCute -100 -1000/warp GingerCute 20 23/pause 1000/emote MonaCute 16/faceDirection MonaCute 2/speed MonaCute 8/move MonaCute 0 7 2/pause 500/warp MonaCute -1000 -1000/animate GingerCute false true 250 0 1 0 1/playSound cacklingWitch/fade fadeOut/warp WitchCute -100 -1000/warp GingerCute -100 -1000/viewport -1000 -1000/pause 500/stopMusic/changeLocation AnimalShop/warp MisterGinger 4 6/warp Jas 5 5/warp farmer 6 6/viewport 5 7 clamp true/pause 500/emote farmer 16/animate MisterGinger true false 350 23 29 30 31 30 23/pause 500/speak Jas \"{{i18n:5295003.19}}\"/stopAnimation MisterGinger/pause 500/speak MisterGinger \"{{i18n:5295003.20}}\"/question fork1 \"{{i18n:5295003.21}}\"/fork BreakCurse/pause 500/speak MisterGinger \"{{i18n:5295003.22}}\"/pause 500/faceDirection Jas 3/emote Jas 20/pause 500/emote MisterGinger 32/pause 500/viewport -100 -100/playMusic AbigailFlute/warp MisterGinger -100 -1000/warp farmer -100 -1000/warp Jas -100 -1000/warp GingerCute -100 -100/animate GingerCute false true 250 0 1 3 12 13 14 15/emote GingerCute 24/speak MisterGinger \"{{i18n:5295003.23}}\"/changeLocation Town/viewport -100 -100/warp MarnShane 47 88/stopAnimation GingerCute/warp GingerCute 45 91/showFrame GingerCute 12/speak MisterGinger \"{{i18n:5295003.24}}\"/playMusic desolate/viewport 45 89 true/pause 2500/animate MarnShane false false 450 0 1 2/showFrame MarnShane 2/pause 2500/animate GingerCute false false 350 16 17 18 19 19 19/pause 2000/showFrame GingerCute 19/fade/viewport -100 -100/pause 1000/warp MarnShane -100 -1000/speak MisterGinger \"{{i18n:5295003.25}}\"/stopMusic/warp MarnCute 49 33 false/showFrame MarnCute 0/warp JasCute 50 33/warp GingerCute 50 37/showFrame JasCute 0/pause 500/viewport -100 -100/fade/viewport 50 34 true/pause 1000/animate GingerCute false false 250 12 13 14 15/pause 1000/showFrame JasCute 1/emote JasCute 20/pause 500/textAboveHead JasCute \"{{i18n:5295003.26}}\"/pause 500/showFrame GingerCute 0/pause 500/faceDirection GingerCute 0/pause 500/animate JasCute false false 250 1 2 3/emote GingerCute 16/pause 500/move GingerCute 0 -3 2/showFrame JasCute 2/showFrame GingerCute 18/pause 500/faceDirection MarnCute 1/pause 250/emote GingerCute 20/emote MarnCute 32/pause 1000/viewport -100 -100/speak MisterGinger \"{{i18n:5295003.27}}\"/pause 500/changeLocation AnimalShop/warp MisterGinger 4 6/warp Jas 5 5/warp farmer 6 6/viewport 11 11/pause 500/emote MisterGinger 20/emote Jas 20/pause 1500/faceDirection Jas 1/speak Jas \"{{i18n:5295003.28}}\"/pause 500/emote farmer 32/switchEvent BreakCurse",
+                "BreakCurse": "pause 500/speak Jas \"{{i18n:BreakCurse.0}}\"/pause 500/emote farmer 28/speak Jas \"{{i18n:BreakCurse.1}}\"/playSound cat/faceDirection Jas 2/pause 500/speak Jas \"{{i18n:BreakCurse.2}}\"/pause 500/emote farmer 32/pause 1500/emote farmer 8/pause 500/speak Jas \"{{i18n:BreakCurse.3}}\"/pause 500/speak MisterGinger \"{{i18n:BreakCurse.4}}\"/pause 500/speak Jas \"{{i18n:BreakCurse.5}}\"/pause 500/emote farmer 28/pause 1000/Message \"{{i18n:5295003.endmessage}}\"/pause 1000/end",
+                "5295002/A TristanReturns/e 5295000/t 1700 2000": "50s/11 13/Marnie 13 14 2 farmer 13 16 0 Jas 2 7 3 TristanLK 3 7 3 Shane -100 -100 0/addConversationTopic TristanShaneTruce 7/skippable/pause 500/speak TristanLK \"{{i18n:5295002.0}}\"/pause 500/emote Jas 56/pause 1500/speak Jas \"{{i18n:5295002.1}}\"/pause 500/speak TristanLK \"{{i18n:5295002.2}}\"/pause 500/speak Jas \"{{i18n:5295002.3}}\"/pause 500/showFrame Jas 25/emote TristanLK 20/playSound doorClose/warp Shane 13 19/move Shane 0 -1 0/faceDirection farmer 2/textAboveHead Marnie \"{{i18n:5295002.4}}\"/textAboveHead Shane \"{{i18n:5295002.5}}\"/move Shane -7 0 0 true/faceDirection farmer 0/advancedMove TristanLK false 3 0 0 4/pause 1000/move Shane 0 -3 0/doAction 6 12/playSound doorOpen/move TristanLK 0 1 2/pause 500/jump Shane 5/textAboveHead TristanLK \"{{i18n:5295002.6}}\"/move Shane 1 0 3/emote Shane 12/move TristanLK 0 3 1/speak Shane \"{{i18n:5295002.7}}\"/shake TristanLK 240/speak TristanLK \"{{i18n:5295002.8}}\"/speak Shane \"{{i18n:5295002.9}}\"/speak TristanLK \"{{i18n:5295002.10}}\"/move TristanLK -1 0 1/speak TristanLK \"{{i18n:5295002.11}}\"/faceDirection TristanLK 3/speak TristanLK \"{{i18n:5295002.12}}\"/emote Shane 16/speak Shane \"{{i18n:5295002.13}}\"/faceDirection TristanLK 1/pause 500/speak TristanLK \"{{i18n:5295002.14}}\"/faceDirection Shane 1/pause 500/speak TristanLK \"{{i18n:5295002.15}}\"/speak Shane \"{{i18n:5295002.16}}\"/shake Shane 300/jump TristanLK 3/move TristanLK 1 0 1/pause 500/speak TristanLK \"{{i18n:5295002.17}}\"/faceDirection Shane 3/emote Shane 40/pause 1000/textAboveHead Shane \"{{i18n:5295002.19}}\"/animate Shane true true 1000 26 26/speak TristanLK \"{{i18n:5295002.20}}\"/end"
+                //{{i18n:5295002.18}}
+            }
+        },
+        // Granny and Jas 
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/JoshHouse",
+            "Entries": {
+                "5295005/e 5295003/k 5295000/p Evelyn": "jaunty/11 17/Evelyn 7 19 2 farmer 9 24 0 Jas 1 20 1 MisterGinger 2 17 2 George 16 22 0/skippable/animate MisterGinger false false 120 23 23 29 29 30 30 31 31 30 30 23 23 27/pause 500/speak Evelyn \"{{i18n:5295005.0}}\"/move farmer 0 -5 3/faceDirection Evelyn 1/emote farmer 32/move Evelyn -3 0 1 true/move farmer -4 0 3 true/pause 500/speak Evelyn \"{{i18n:5295005.1}}\"/pause 500/speak Jas \"{{i18n:5295005.2}}\"/speak Evelyn \"{{i18n:5295005.3}}\"/emote farmer 40/speak Evelyn \"{{i18n:5295005.4}}\"/emote farmer 32/pause 500/move Evelyn 0 -2 0/move farmer 0 1 3/pause 500/playSound wateringCan/pause 500/faceDirection Evelyn 2/move Evelyn 0 2 2/pause 500/farmerEat 614/pause 1000/faceDirection farmer 3/move Evelyn -1 0 2/pause 500/speak Jas \"{{i18n:5295005.5}}\"/stopMusic/playSound cat/pause 500/faceDirection Evelyn 0/pause 500/animate MisterGinger false false 120 56 56 57 57 58 58 59 59 58 58 56 27/faceDirection Evelyn 2/pause 500/playMusic echos/speak Evelyn \"{{i18n:5295005.6}}\"/pause 500/showFrame MisterGinger 27/faceDirection Jas 0/pause 500/faceDirection Jas 1/pause 500/speak Evelyn \"{{i18n:5295005.7}}\"/pause 500/speak Evelyn \"{{i18n:5295005.8}}\"/emote farmer 8/speak Evelyn \"{{i18n:5295005.9}}\"/playSound cat/pause 500/faceDirection Evelyn 0/speak Evelyn \"{{i18n:5295005.10}}\"/playSound cat/pause 500/speak Evelyn \"{{i18n:5295005.11}}\"/pause 500/move MisterGinger 0 2 2/showFrame MisterGinger 27/faceDirection Evelyn 3/pause 500/speak Evelyn \"{{i18n:5295005.12}}\"/faceDirection Evelyn 2/faceDirection MisterGinger 3 true/faceDirection Jas 0 true/pause 500/faceDirection Jas 1/speak MisterGinger \"{{i18n:5295005.13}}\"/faceDirection MisterGinger 1/pause 500/textAboveHead Jas \"{{i18n:5295005.14}}\"/pause 500/speak Evelyn \"{{i18n:5295005.15}}\"/pause 500/playSound cat/speak Evelyn \"{{i18n:5295005.16}}\"/pause 500/faceDirection Evelyn 3/speak Evelyn \"{{i18n:5295005.17}}\"/emote Evelyn 16/speak Evelyn \"{{i18n:5295005.18}}\"/emote Jas 56/move Evelyn 0 -2 0/textAboveHead Evelyn \"{{i18n:5295005.19}}\"/textAboveHead Evelyn \"{{i18n:5295005.20}}\"/move Evelyn -1 0 0/pause 1000/playSound openChest/pause 500/textAboveHead Evelyn \"{{i18n:5295005.21}}\"/faceDirection Evelyn 2/addObject 2 15 425 1/playSound discoverMineral/pause 1000/removeSprite 2 15/move MisterGinger -1 0 2/move Evelyn 0 2 3/speak Jas \"{{i18n:5295005.22}}\"/emote farmer 32/pause 500/speak Evelyn \"{{i18n:5295005.23}}\"/faceDirection Evelyn 1/move Evelyn 2 0 2/pause 500/speak Evelyn \"{{i18n:5295005.24}}\"/pause 500/emote farmer 20/faceDirection Evelyn 3/pause 500/speak Evelyn \"{{i18n:5295005.25}}\"/speak Jas \"{{i18n:5295005.26}}\"/pause 1000/fade/end warpout/"
+            }
+        },
+        //The Wizard reveals more
+        {
+            "LogName": "Talking to the Wizard",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "5295006/e 5295003/k 5295000/t 1200 2400": "WizardSong/-100 -100/farmer 8 22 0 MisterGinger 8 20 2 Wizard 8 5 0/addConversationTopic Tristan_Spell/skippable/addLantern 735 3 5 3/playSound doorOpen/pause 500/playSound woodyStep/viewport 7 18 true/pause 500/move Wizard -3 0 0 true/jump MisterGinger 3/pause 500/textAboveHead MisterGinger \"{{i18n:5295006.0}}\"/pause 500/faceDirection MisterGinger 0/pause 500/faceDirection MisterGinger 2/move Wizard 3 0 0/pause 500/textAboveHead MisterGinger \"{{i18n:5295006.1}}\"/pause 500/move MisterGinger 0 -9 0 true/advancedMove farmer false 0 -9 -1 0 0 -1/viewport move 0 -5 2000 true/pause 1500/faceDirection Wizard 2/pause 500/speak Wizard \"{{i18n:5295006.2}}\"/pause 1500/playSound cat/stopAdvancedMoves/move farmer 0 -1 0/speak Wizard \"{{i18n:5295006.3}}\"/pause 500/move MisterGinger 0 -5 0/speak MisterGinger \"{{i18n:5295006.4.{{GenderNeutral}} | {{lowercase: GenderNeutralSubjectiveHave={{GenderNeutralSubjectiveHave}} }} }}\"/emote farmer 60/move farmer 0 -5 0/pause 500/faceDirection Wizard 0/pause 500/speak Wizard \"{{i18n:5295006.5}}\"/pause 500/playSound cat/faceDirection Wizard 2/pause 500/speak Wizard \"{{i18n:5295006.6}}\"/pause 500/emote MisterGinger 40/faceDirection MisterGinger 3/pause 500/faceDirection farmer 1/pause 500/emote farmer 32/pause 500/faceDirection MisterGinger 0 true/faceDirection farmer 0 true/speak MisterGinger \"{{i18n:5295006.7}}\"/pause 500/move Wizard -3 0 0/speak Wizard \"{{i18n:5295006.8}}\"/pause 500/emote MisterGinger 12/speed MisterGinger 5/move MisterGinger 0 -1 3/speed MisterGinger 5/move MisterGinger -2 0 3/faceDirection farmer 3/speak MisterGinger \"{{i18n:5295006.9}}\"/pause 500/speak Wizard \"{{i18n:5295006.10}}\"/pause 500/speak MisterGinger \"{{i18n:5295006.11}}\"/move Wizard 0 1 1/pause 500/speak Wizard \"{{i18n:5295006.12}}\"/emote farmer 16/faceDirection MisterGinger 2/showFrame MisterGinger 27/pause 500/speak MisterGinger \"{{i18n:5295006.13}}\"/pause 500/fork 5295061 BreakSpell_Continue/pause 500/move MisterGinger 0 2 3/pause 500/animate MisterGinger false false 250 20 21/pause 500/faceDirection MisterGinger 1/pause 500/move MisterGinger 2 0 2/move MisterGinger 0 17 0 true/faceDirection farmer 2/pause 500/emote farmer 28/pause 500/speak Wizard \"{{i18n:5295006.14}}\"/pause 500/faceDirection farmer 3/pause 500/emote farmer 60/pause 500/speak Wizard \"{{i18n:5295006.15}}\"/pause 500/faceDirection Wizard 3/pause 500/speak Wizard \"{{i18n:5295006.16}}\"/pause 500/faceDirection Wizard 1/speak Wizard \"{{i18n:5295006.17}}\"/switchEvent BreakSpell_Continue2",
+                "BreakSpell_Continue": "pause 500/speak MisterGinger \"{{i18n:BreakSpell_Continue.0}}\"/pause 500/move Wizard 0 -1 0/speak Wizard \"{{i18n:BreakSpell_Continue.1}}\"/playSound shwip/pause 500/faceDirection Wizard 2/move Wizard 0 1 1/playSound newRecipe/speak Wizard \"{{i18n:BreakSpell_Continue.2}}\"/faceDirection farmer 0/faceDirection MisterGinger 2/emote farmer 20/pause 500/emote MisterGinger 32/speak MisterGinger \"{{i18n:BreakSpell_Continue.3}}\"/pause 500/faceDirection farmer 3/speak Wizard \"{{i18n:BreakSpell_Continue.4}}\"/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue.5}}\"/pause 500/playSound cacklingWitch/pause 500/shake MisterGinger 250/emote Wizard 12/pause 500/textAboveHead MisterGinger \"{{i18n:BreakSpell_Continue.6}}\"/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue.7}}\"/pause 500/playSound cacklingWitch/shake Wizard 1000/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue.8}}\"/move farmer -1 0 3/emote farmer 8/speak Wizard \"{{i18n:BreakSpell_Continue.9}}\"/faceDirection farmer 0/faceDirection MisterGinger 2/pause 1000/end dialogue Wizard \"{{i18n:BreakSpell_Continue.10}}\"",
+                "BreakSpell_Continue2": "pause 500/pause 500/move Wizard 0 -1 0/speak Wizard \"{{i18n:BreakSpell_Continue2.0}}\"/playSound shwip/pause 500/faceDirection Wizard 2/move Wizard 0 1 1/playSound newRecipe/speak Wizard \"{{i18n:BreakSpell_Continue2.1}}\"/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue2.2}}\"/pause 500/playSound cacklingWitch/pause 500/emote Wizard 12/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue2.3}}\"/pause 500/playSound cacklingWitch/shake Wizard 1000/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue2.4}}\"/move farmer -1 0 3/emote farmer 8/speak Wizard \"{{i18n:BreakSpell_Continue2.5}}\"/pause 1000/faceDirection farmer 2/end dialogue Wizard \"{{i18n:BreakSpell_Continue2.6}}\""
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": false
+            }
+        },
+        //Events if Garden Village Installed
+        {
+            "LogName": "Talking to the Witch",
+            "Action": "EditData",
+            "Target": "Data/Events/Artisanry",
+            "Entries": {
+                "5295007/e 5295006/k 5295000": "XOR/7 6/Hekate 7 7 3 farmer 6 12 0/skippable/pause 500/move farmer 0 -1 1/move farmer 1 0 0/pause 500/faceDirection Hekate 2/pause 500/emote Hekate 12/pause 500/textAboveHead Hekate \"{{i18n:5295007.0}}\"/pause 500/jump farmer 5/emote farmer 16/pause 500/move Hekate 0 2 2/pause 500/speak Hekate \"{{i18n:5295007.1}}\"/pause 500/emote farmer 8/pause 1000/speak Hekate \"{{i18n:5295007.2}}\"/pause 500/emote farmer 40/pause 500/emote Hekate 28/pause 500/speak Hekate \"{{i18n:5295007.3}}\"/pause 500/emote farmer 60/pause 500/speak Hekate \"{{i18n:5295007.4}}\"/pause 500/emote Hekate 40/pause 1000/textAboveHead Hekate \"{{i18n:5295007.5}}\"/pause 500/jump farmer 5/pause 500/emote farmer 12/pause 500/speak Hekate \"{{i18n:5295007.6}}\"/pause 500/emote farmer 40/pause 500/speak Hekate \"{{i18n:5295007.7}}\"/pause 500/emote farmer 12/faceDirection farmer 2/pause 500/emote Hekate 40/pause 1000/textAboveHead Hekate \"{{i18n:5295007.8}}\"/pause 500/jump farmer 3/faceDirection farmer 0/pause 500/speak Hekate \"{{i18n:5295007.9}}\"/pause 500/emote farmer 8/pause 500/speak Hekate \"{{i18n:5295007.10}}\"/pause 500/emote farmer 32/pause 500/speak Hekate \"{{i18n:5295007.11}}\"/pause 500/emote farmer 8/pause 500/speak Hekate \"{{i18n:5295007.12}}\"/pause 500/emote farmer 12/pause 1000/end",
+                "5295008/e 5295007/e 5295000/A TristanReturns": "XOR/7 6/Hekate 10 5 2 TristanLK 8 11 3 farmer 7 11 1/skippable/pause 500/speak TristanLK \"{{i18n:5295008.0}}\"/pause 500/emote farmer 40/pause 500/speak TristanLK \"{{i18n:5295008.1}}\"/pause 500/move TristanLK 2 0 0/move farmer 2 0 0/move TristanLK 0 -4 0 true/move farmer 0 -4 0 true/pause 500/speak TristanLK \"{{i18n:5295008.2}}\"/pause 500/emote Hekate 40/pause 500/textAboveHead Hekate \"{{i18n:5295008.3}}\"/pause 2500/jump Hekate 5/pause 500/emote Hekate 16/pause 500/speak TristanLK \"{{i18n:5295008.4}}\"/pause 500/emote Hekate 28/pause 1500/move Hekate 0 -1 2/speak Hekate \"{{i18n:5295008.5}}\"/pause 500/emote TristanLK 8/pause 1500/speak TristanLK \"{{i18n:5295008.6}}\"/pause 500/speak Hekate \"{{i18n:5295008.7}}\"/pause 500/emote TristanLK 12/pause 1500/faceDirection TristanLK 3 true/faceDirection farmer 1 true/speak TristanLK \"{{i18n:5295008.8}}\"/pause 500/faceDirection TristanLK 0/pause 500/faceDirection farmer 0/speak TristanLK \"{{i18n:5295008.9}}\"/stopMusic/pause 1000/textAboveHead Hekate \"{{i18n:5295008.10}}\"/pause 2500/playMusic desolate/speak Hekate \"{{i18n:5295008.11}}\"/emote TristanLK 40/pause 2500/emote Hekate 12/pause 2500/textAboveHead Hekate \"{{i18n:5295008.12}}\"/pause 1500/faceDirection Hekate 0/pause 500/move Hekate -2 0 1/move Hekate 2 0 2/pause 500/move Hekate 0 1 2/speak Hekate \"{{i18n:5295008.13}}\"/pause 1500/speak TristanLK \"{{i18n:5295008.14}}\"/pause 2500/faceDirection TristanLK 2/pause 500/speak TristanLK \"{{i18n:5295008.15}}\"/pause 500/move TristanLK 0 4 2 true/move farmer 0 4 2 true/speak Hekate \"{{i18n:5295008.16}}\"/pause 500/faceDirection TristanLK 0/faceDirection farmer 1/pause 500/speak TristanLK \"{{i18n:5295008.17}}\"/faceDirection TristanLK 3/emote farmer 20/pause 500/end dialogue Hekate \"{{i18n:5295008.18}}\""
+            },
+            "When": {
+                "HasMod": "Tarniyar.NPC.GV"
+            }
+        },
+        //Breaking the curse
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_FairyPool",
+            "Entries": {
+                "5295000/i 577/i 595/i 795/e 5295003/t 2350 2410/H": "woodsTheme/-100 -100/farmer 9 33 0 MisterGinger -1000 -1000 0 Jas -1000 -1000 0 Wizard -1000 -1000 2 TristanLK -1000 -1000 1/removeItem 577/changePortrait TristanLK Swim/changeSprite TristanLK Swim/removeItem 795/removeItem 595/addConversationTopic TristanReturns 7/addMailReceived Tristan_Returns/skippable/viewport 9 26 clamp true/pause 500/move farmer 0 -6 0/pause 1000/addLantern 735 9 26 4/pause 500/faceDirection farmer 1/pause 500/faceDirection farmer 2/pause 500/emote farmer 8/pause 500/move farmer 0 2 2/pause 500/faceDirection farmer 3/pause 500/faceDirection farmer 2/playSound cat/jump farmer 3/pause 500/warp MisterGinger 5 38/warp Jas 6 38/advancedMove MisterGinger false 0 -7 3 0 4 1000/advancedMove Jas false 0 -6 3 0 0 -1 4 1000/pause 3500/speak MisterGinger \"{{i18n:5295000.0}}\"/pause 500/speak Jas \"{{i18n:5295000.1}}\"/pause 500/speak MisterGinger \"{{i18n:5295000.2}}\"/pause 500/move farmer 0 -2 2/emote farmer 32/pause 500/jump MisterGinger 3/pause 500/speak MisterGinger \"{{i18n:5295000.3}}\"/pause 500/advancedMove MisterGinger false 0 -3 5 0 1 100/proceedPosition MisterGinger/speak MisterGinger \"{{i18n:5295000.4}}\"/shake MisterGinger 240/pause 500/advancedMove Jas false 0 -2 4 0 4 100/proceedPosition Jas/speak Jas \"{{i18n:5295000.5}}\"/pause 500/pause 500/showFrame MisterGinger 20/pause 500/showFrame MisterGinger 21/pause 500/textAboveHead MisterGinger \"{{i18n:5295000.6}}\"/pause 1500/speak MisterGinger \"{{i18n:5295000.7}}\"/pause 500/faceDirection MisterGinger 1/speak MisterGinger \"{{i18n:5295000.8}}\"/pause 500/jump farmer 3/advancedMove farmer false 4 0 1 100/proceedPosition farmer/animate farmer false true 500 30/addObject 13 25 595 1/speak Jas \"{{i18n:5295000.9}}\"/pause 500/animate farmer false false 250 31 32 33/removeSprite 13 25/playSound dropItemInWater/jump MisterGinger/pause 500/glow 1 80 80 true/textAboveHead Jas \"{{i18n:5295000.10}}\"/pause 500/shake MisterGinger 340/pause 500/animate farmer false true 500 30/addObject 13 25 795 1/speak MisterGinger \"{{i18n:5295000.11}}\"/pause 500/animate farmer false false 250 31 32 33/removeSprite 13 25/playSound dropItemInWater/pause 500/glow 80 80 1 true/pause 500/textAboveHead Jas \"{{i18n:5295000.12}}\"/pause 500/animate farmer false true 500 30/addObject 13 25 577 1/speak MisterGinger \"{{i18n:5295000.13}}\"/pause 500/animate farmer false false 250 31 32 33/removeSprite 13 25/playSound dropItemInWater/glow 80 1 80 true/pause 500/textAboveHead MisterGinger \"{{i18n:5295000.14}}\"/pause 500/faceDirection farmer 2/faceDirection MisterGinger 0/pause 500/speak MisterGinger \"{{i18n:5295000.15}}\"/pause 500/faceDirection MisterGinger 2 true/faceDirection Jas 0 true/speak MisterGinger \"{{i18n:5295000.16}}\"/emote Jas 20/pause 500/jump MisterGinger 7/screenFlash 1 1/playSound healSound/fade/viewport -100 -100/faceDirection Jas 1/warp MisterGinger -1000 -1000/warp TristanLK 15 29/swimming TristanLK/faceDirection farmer 1/viewport 15 29/pause 500/textAboveHead Jas \"{{i18n:5295000.17}}\"/emote farmer 16 true/pause 500/faceDirection TristanLK 3/speak TristanLK \"{{i18n:5295000.18}}\"/pause 1500/playSound wand/warp Wizard 15 25/showFrame TristanLK 8/faceDirection Jas 0 true/faceDirection farmer 0/speak Wizard \"{{i18n:5295000.19}}\"/advancedMove farmer false 0 -2 1 100/pause 2500/faceDirection Wizard 1/speak Wizard \"{{i18n:5295000.20}}\"/pause 500/jump Jas 5/speed Jas 3/advancedMove Jas false 0 -2 4 100/emote Jas 12/speak Jas \"{{i18n:5295000.21}}\"/pause 500/faceDirection Wizard 2/emote Wizard 40/pause 500/speak Wizard \"{{i18n:5295000.22}}\"/advancedMove TristanLK false 0 -1 3 100/pause 500/faceDirection Jas 1/pause 500/speak TristanLK \"{{i18n:5295000.23}}\"/pause 500/textAboveHead Jas \"{{i18n:5295000.24}}\"/pause 1500/textAboveHead TristanLK \"{{i18n:5295000.25}}\"/pause 1500/emote Jas 40/pause 1500/textAboveHead Jas \"{{i18n:5295000.26}}\"/pause 500/faceDirection Jas 0/faceDirection farmer 2/speak Jas \"{{i18n:5295000.27}}\"/emote farmer 32/pause 500/faceDirection farmer 3/emote TristanLK 20/pause 1000/fade/viewport -1000 -1000/stopSwimming TristanLK/end invisibleWarpOut MisterGinger"
+            }
+        }, //
+        //Tristan takes a gift to Willy    
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Beach",
+            "Entries": {
+                "5295010/n Tristan_BakedFishGift/e 5295000/i 198/f Willy 1000/w sunny/t 1000 1600": "archaeo/24 35/farmer 26 28 2 TristanLK 27 35 1 Willy -100 -100 2/skippable/pause 500/move farmer 0 5 2/faceDirection TristanLK 3/pause 500/speak TristanLK \"{{i18n:5295010.0}}\"/pause 500/emote farmer 8/pause 500/speak TristanLK \"{{i18n:5295010.1}}\"/emote farmer 32/pause 500/move farmer 0 2 1/pause 500/playSound purchase/removeItem 198/money 500/pause 500/speak TristanLK \"{{i18n:5295010.2}}\"/pause 500/move TristanLK 4 0 3/textAboveHead TristanLK \"{{i18n:5295010.3}}\"/jump farmer 4/move TristanLK 0 -1 0/pause 500/playSound doorOpen/warp TristanLK -100 -100/speed farmer 5/speed farmer 5/move farmer 4 0 0/move farmer 0 -1 0/playSound doorOpen/globalFade/viewport -1000 -1000/changeLocation FishShop/warp Willy 4 4/warp TristanLK 5 9/viewport 7 5/pause 500/textAboveHead Willy \"{{i18n:5295010.4}}\"/pause 500/move TristanLK 0 -2 0/pause 500/speak Willy \"{{i18n:5295010.5}}\"/pause 500/textAboveHead TristanLK \"{{i18n:5295010.6}}\"/pause 1500/playSound doorOpen/warp farmer 5 9/pause 500/faceDirection TristanLK 2/emote TristanLK 32/textAboveHead Willy \"{{i18n:5295010.7}}\"/pause 500/move farmer 0 -1 0/move farmer -1 0 0/faceDirection TristanLK 0/move farmer 0 -1 0/faceDirection TristanLK 3/pause 500/faceDirection TristanLK 0/speak TristanLK \"{{i18n:5295010.8}}\"/emote TristanLK 28/pause 1500/speak Willy \"{{i18n:5295010.9}}\"/pause 500/speak TristanLK \"{{i18n:5295010.10}}\"/pause 500/speak Willy \"{{i18n:5295010.11}}\"/move TristanLK 0 -1 0/addObject 4 4 198 1/speak TristanLK \"{{i18n:5295010.12}}\"/pause 500/emote TristanLK 28/pause 500/emote Willy 40/pause 2000/textAboveHead Willy \"{{i18n:5295010.13}}\"/pause 500/speak TristanLK \"{{i18n:5295010.14}}\"/pause 500/emote Willy 40/pause 500/speak TristanLK \"{{i18n:5295010.15}}\"/move TristanLK 0 1 3/speak TristanLK \"{{i18n:5295010.16}}\"/pause 500/emote farmer 32/pause 500/faceDirection TristanLK 0/speak Willy \"{{i18n:5295010.17}}\"/pause 500/pause 500/speak TristanLK \"{{i18n:5295010.18}}\"/pause 1500/end warpOut"
+            }
+        },
+        //10-heart event
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "5295012/n Tristan_MtEvermore/D TristanLK/z winter/t 1700 1800/d sun/w sunny": "archaeo/62 35/TristanLK 64 32 0 farmer 61 38 0/skippable/pause 500/emote TristanLK 56/pause 500/advancedMove farmer false 0 -6 1 100/pause 2000/faceDirection TristanLK 3/proceedPosition farmer/speak TristanLK \"{{i18n:5295012.0}}\"/pause 500/emote farmer 32/pause 500/speak TristanLK \"{{i18n:5295012.1}}\"/advancedMove farmer false 2 0 1 100 0 -3/proceedPosition farmer/advancedMove TristanLK false 0 -3 4 100/pause 3000/fade/viewport -1000 -1000/stopMusic/changeLocation EastScarp_MtEvermore/viewport -1000 -1000/warp farmer 37 32/warp TristanLK 38 32/message \"{{i18n:5295012.2}}\"/pause 500/viewport 37 32 clamp true/ambientLight 50 120 80/advancedMove TristanLK false 0 -8 3 100/advancedMove farmer false 0 -8 1 100/pause 2000/speak TristanLK \"{{i18n:5295012.3}}\"/viewport move 0 -2 3000/proceedPosition farmer/advancedMove TristanLK false 0 -8 3 100/advancedMove farmer false 0 -8 4 100/pause 2000/speak TristanLK \"{{i18n:5295012.4}}\"/proceedPosition farmer/faceDirection farmer 0/pause 500/emote farmer 28/pause 500/emote TristanLK 8/faceDirection TristanLK 0/pause 1000/jump TristanLK 5/screenFlash 1/emote TristanLK 16/faceDirection TristanLK 3 true/faceDirection farmer 1 true/playSound thunder/setRaining EastScarp_MtEvermore true/speak TristanLK \"{{i18n:5295012.5}}\"/speed TristanLK 5/advancedMove TristanLK false 0 12 13 0 4 100/pause 500/speed farmer 5/advancedMove farmer false 0 12 13 0 4 100/viewport move 2 0 6000/pause 6000/fade/viewport -1000 -1000/stopAdvancedMoves/warp TristanLK -1000 -1000/warp farmer -1000 -1000/playSound doorOpen/speak TristanLK \"{{i18n:5295012.6}}\"/pause 500/playSound doorClose/playSound rain/fade/viewport -1000 -1000/changeLocation EastScarp_FireTower/viewport -1000 -1000/warp farmer 4 8/warp TristanLK 3 9/faceDirection TristanLK 0/viewport 5 6/ambientLight 150 150 150/speak TristanLK \"{{i18n:5295012.7}}\"/pause 500/faceDirection TristanLK 3 true/faceDirection farmer 1/pause 500/advancedMove TristanLK false 0 -1 1 100/pause 500/faceDirection farmer 3/speak TristanLK \"{{i18n:5295012.8}}\"/pause 500/speak TristanLK \"{{i18n:5295012.9}}\"/fork 529597 Tristan_FireLight/pause 500/speak TristanLK \"{{i18n:5295012.10}}\"/faceDirection farmer 1/positionOffset farmer -10 0/showFrame TristanLK 28/speak TristanLK \"{{i18n:5295012.11}}\"/pause 500/speak TristanLK \"{{i18n:5295012.12}}\"/fork Tristan_FireLight/pause 500/emote TristanLK 20/pause 500/faceDirection farmer 3/positionOffset TristanLK 10 0/textAboveHead TristanLK \"{{i18n:5295012.13}}\"/pause 2000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_FireTower",
+            "Entries": {
+                "Tristan_FireLight": "pause 500/speak TristanLK \"{{i18n:Tristan_FireLight.0}}\"/faceDirection TristanLK 0/pause 500/fade/viewport -1000 -1000/warp TristanLK 4 6/faceDirection TristanLK 2/warp farmer 5 6/addLantern 114 5 4 2/addTemporaryActor MtFire 16 16 5 4 2 false/animate MtFire false true 150 0 1 2 3/viewport 5 6/pause 500/speak TristanLK \"{{i18n:Tristan_FireLight.1}}\"/pause 500/faceDirection TristanLK 1/emote farmer 32/pause 500/speak TristanLK \"{{i18n:Tristan_FireLight.2}}\"/fade/viewport -1000 -1000/end dialogue TristanLK \"{{i18n:Tristan_FireLight.3}}\""
+            }
+        },
+        //Rosa's 10 heart repeated with Mr Ginger replaced by Tristan
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57874015/e 5295000/n Rosa_10HeartInvite/w sunny/z winter/t 1600 1900": "IslandMusic/-100 -100/Rosa 22 21 1 Aideen 15 19 0 Jacob 12 21 3 Eloise 19 24 2 LadySheba 10 20 2 Jas 20 25 3 farmer 14 12 2 TristanLK? 11 21 1 Gremlin 19 25 1 Juliet 23 21 3 Jessie 19 14 1 Linus 20 14 3 Jasper 12 17 3 ToriLK 11 16 2 Nora? 10 17 1 WaffleW? 10 28 1 PipoP? 11 28 1 Mateo? 11 24 2 TraceV? 12 25 2 LumaJunimo -100 -100 2 PepperPup -100 -100 2 OliverK -100 -100 1 Leximonster -100 -100 3 Eyvinder -100 -100 2 VivienneLK -100 -100 2/skippable/speed PipoP? 4/speed WaffleW? 4/advancedMove PipoP? true 12 0 3 3000 -12 0 3 1000/advancedMove WaffleW? true 12 0 1 3000 -12 0 1 1000/animate TraceV? false true 75 16 16 17 17 18 18 19 19/ChangeToTemporaryMap Rosa_SunsetPicnic/addCookingRecipe EastScarp_Rosas_Spanakopita/showFrame LadySheba 17/{{57874015_PepperPup_1}}/{{57874015_OllyLexi_1}}/{{57874015_EyVivi_1}}/animate EveT? false true 120 17 17 17 17 18 18 18 18 19 19 19 19 18 18 18 18/positionOffset Mateo? 0 14/animate Mateo? false true 500 17 18 19 18 17 18 19 18/viewport 18 20 clamp true/move farmer 0 7 1/faceDirection Aideen 3/textAboveHead Aideen \"{{i18n:57874015.0}} {{playerName}}\"/pause 500/speak Aideen \"{{i18n:57874015.1}}\"/emote farmer 60/pause 1000/move farmer 0 2 1/move farmer 4 0 2/faceDirection Aideen 0/faceDirection Eloise 0/faceDirection Jas 0/faceDirection Rosa 0/textAboveHead Eloise \"{{i18n:57874015.2}}\"/speak Jas \"{{i18n:57874015.3}}\"/move farmer 0 2 2/pause 500/faceDirection Eloise 3/pause 500/{{57874015_PepperPup_2}}/pause 500/textAboveHead TristanLK? \"{{i18n:57874015.5}}\"/faceDirection TristanLK? 0/pause 2000/emote LadySheba 20/pause 1000/faceDirection TristanLK? 1/pause 1000/emote Juliet 40/animate Rosa false true 200 20 21/pause 1000/faceDirection farmer 1/emote farmer 56/stopAnimation Rosa/faceDirection Rosa 3/pause 1000/jump Rosa 3/move Rosa 0 2 3/speak Rosa \"{{i18n:57874015.6}}\"/move Rosa -3 0 3/faceDirection Jas 3/faceDirection Eloise 2/textAboveHead Eloise \"{{i18n:57874015.7}}\"/faceDirection Gremlin 0/jump Gremlin 3/playSound dog_pant/emote Jacob 32/pause 1000/faceDirection Jacob 3/advancedMove Aideen false -1 0 1 1000 0 -2 1 0 2 2000/textAboveHead TristanLK? \"{{i18n:57874015.8}}\"/pause 50/pause 500/move Juliet -4 0 2/speak Rosa \"{{i18n:57874015.9}}\"/faceDirection Rosa 0/pause 500/textAboveHead Juliet \"{{i18n:57874015.10}}\"/pause 1000/emote Rosa 32/pause 1000/faceDirection Rosa 3/speak Rosa \"{{i18n:57874015.11}}\"/pause 1000/move Rosa 4 0 0 true/move farmer 4 0 0 true/pause 3000/move Juliet 0 1 2/emote Juliet 56/faceDirection Eloise 0/move Eloise 1 0 3/move Juliet 0 1 2/faceDirection Gremlin 0/jump Gremlin 2/move Gremlin 0 -1 0/playSound dog_bark/emote LadySheba 12/speak Rosa \"{{i18n:57874015.12}}\"/move farmer 0 -2 0/move Rosa 0 -2 0/pause 1000/faceDirection farmer 1/faceDirection Rosa 3/speak Rosa \"{{i18n:57874015.13}}\"/emote Rosa 28/quickQuestion {{i18n:57874015.14}}(break)emote Rosa 20\\speak Rosa \"{{i18n:57874015.15}}\"(break)emote Rosa 40\\speak Rosa \"{{i18n:57874015.16}}\"(break)emote Rosa 12\\speak Rosa \"{{i18n:57874015.17}}\"/pause 500/emote farmer 8/pause 1000/speak Rosa \"{{i18n:57874015.18}}\"/pause 500/playSound newRecipe/pause 100/playSound reward/message \"{{i18n:57874015.19}}\"/pause 1000/faceDirection Rosa 2/faceDirection farmer 2/speak Rosa \"{{i18n:57874015.20}}\"/faceDirection Jas 0 true/faceDirection Eloise 0 true/faceDirection Juliet 0 true/faceDirection Jacob 1/jump Eloise 3/textAboveHead Eloise \"{{i18n:57874015.21}}\"/playSound dog_bark/{{57874015_PepperPup_3}}/textAboveHead Aideen \"{{i18n:57874015.22}}\"/textAboveHead TristanLK? \"{{i18n:57874015.23}}\"/faceDirection Nora? 2 true/faceDirection Jasper 2 true/emote Jessie 32/pause 500/faceDirection Jessie 2 true/faceDirection Linus 2 true/pause 1000/warp LumaJunimo 25 20/temporarySprite 25 20 5 8 50 false 1/playSound coin/animate LumaJunimo true true 70 16 17 18 19/pause 1000/end",
+            }
+        },
+        //Harvest Goddess Patch
+        {
+            "LogName": "Initiating event - Harvest Goddess",
+            "Action": "EditData",
+            "Target": "Data/Events/AnimalShop",
+            "Entries": {
+                "BreakCurse": "pause 500/speak Jas \"{{i18n:HarvestGoddess.BreakCurse.0}}\"/pause 500/emote farmer 28/speak Jas \"{{i18n:HarvestGoddess.BreakCurse.1}}\"/pause 500/emote farmer 32/pause 1500/emote farmer 8/pause 500/speak Jas \"{{i18n:HarvestGoddess.BreakCurse.2}}\"/pause 500/speak MisterGinger \"{{i18n:HarvestGoddess.BreakCurse.3}}\"/pause 500/speak Jas \"{{i18n:HarvestGoddess.BreakCurse.4}}\"/pause 500/emote farmer 28/pause 1000/end"
+            },
+            "When": {
+                "HasMod": "Ran.HarvestGoddess"
+            }
+        },
+        //SVE version of Wizard event
+        {
+            "LogName": "Talking to the Wizard",
+            "Action": "EditData",
+            "Target": "Data/Events/WizardHouse",
+            "Entries": {
+                "5295006/e 5295003/k 5295000/t 1200 2400": "WizardSong/-100 -100/farmer 8 22 0 MisterGinger 8 20 2 Wizard 6 15 0/addConversationTopic Tristan_Spell/skippable/addLantern 735 3 5 3/playSound doorOpen/pause 500/playSound woodyStep/viewport 7 18 true/pause 500/move Wizard -3 0 0 true/jump MisterGinger 3/pause 500/textAboveHead MisterGinger \"{{i18n:5295006.0}}\"/pause 500/faceDirection MisterGinger 0/pause 500/faceDirection MisterGinger 2/move Wizard 1 0 0/pause 500/textAboveHead MisterGinger \"{{i18n:5295006.1}}\"/pause 500/move MisterGinger 0 -5 3 true/move farmer 0 -6 3 true/pause 1500/faceDirection Wizard 1/pause 500/speak Wizard \"{{i18n:5295006.2}}\"/pause 1500/playSound cat/move farmer -1 0 3/speak Wizard \"{{i18n:5295006.3}}\"/pause 500/move MisterGinger -3 0 3/speak MisterGinger \"{{i18n:5295006.4.{{GenderNeutral}} | {{lowercase: GenderNeutralSubjectiveHave={{GenderNeutralSubjectiveHave}} }} }}\"/emote farmer 60/move farmer -2 0 3/pause 500/faceDirection Wizard 0/pause 500/speak Wizard \"{{i18n:5295006.5}}\"/pause 500/playSound cat/faceDirection Wizard 1/pause 500/speak Wizard \"{{i18n:5295006.6}}\"/pause 500/emote MisterGinger 40/faceDirection MisterGinger 2/pause 500/faceDirection farmer 0/pause 500/emote farmer 32/pause 500/faceDirection MisterGinger 3 true/faceDirection farmer 3 true/speak MisterGinger \"{{i18n:5295006.7}}\"/pause 500/move Wizard 0 2 2/speak Wizard \"{{i18n:5295006.8}}\"/pause 500/faceDirection farmer 2/emote MisterGinger 12/speed MisterGinger 5/move MisterGinger 1 0 3/speed MisterGinger 5/move MisterGinger 0 2 2/speed MisterGinger 5/move MisterGinger -1 0 3/faceDirection farmer 2/speak MisterGinger \"{{i18n:5295006.9}}\"/pause 500/speak Wizard \"{{i18n:5295006.10}}\"/pause 500/speak MisterGinger \"{{i18n:5295006.11}}\"/move Wizard 0 -1 1/pause 500/faceDirection farmer 3/speak Wizard \"{{i18n:5295006.12}}\"/emote farmer 16/faceDirection MisterGinger 0/pause 500/speak MisterGinger \"{{i18n:5295006.13}}\"/pause 500/fork 5295061 BreakSpell_Continue/pause 500/move MisterGinger 0 2 3/pause 500/animate MisterGinger false false 250 20 21/pause 500/faceDirection MisterGinger 1/pause 500/move MisterGinger 4 0 2/move MisterGinger 0 15 0 true/faceDirection farmer 2/pause 500/emote farmer 28/pause 500/speak Wizard \"{{i18n:5295006.14}}\"/pause 500/faceDirection farmer 3/pause 500/emote farmer 60/pause 500/speak Wizard \"{{i18n:5295006.15}}\"/pause 500/faceDirection Wizard 3/pause 500/speak Wizard \"{{i18n:5295006.16}}\"/pause 500/faceDirection Wizard 1/speak Wizard \"{{i18n:5295006.17}}\"/switchEvent BreakSpell_Continue2",
+                "BreakSpell_Continue": "pause 500/speak MisterGinger \"{{i18n:BreakSpell_Continue.0}}\"/pause 500/move Wizard -2 0 3/speak Wizard \"{{i18n:BreakSpell_Continue.1}}\"/playSound shwip/pause 500/faceDirection Wizard 2/move Wizard 2 0 1/playSound newRecipe/speak Wizard \"{{i18n:BreakSpell_Continue.2}}\"/faceDirection farmer 2/faceDirection MisterGinger 0/emote farmer 20/pause 500/emote MisterGinger 32/speak MisterGinger \"{{i18n:BreakSpell_Continue.3}}\"/pause 500/faceDirection farmer 3/speak Wizard \"{{i18n:BreakSpell_Continue.4}}\"/faceDirection MisterGinger 3/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue.5}}\"/pause 500/playSound cacklingWitch/pause 500/shake MisterGinger 250/emote Wizard 12/pause 500/textAboveHead MisterGinger \"{{i18n:BreakSpell_Continue.6}}\"/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue.7}}\"/pause 500/playSound cacklingWitch/shake Wizard 1000/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue.8}}\"/emote farmer 8/speak Wizard \"{{i18n:BreakSpell_Continue.9}}\"/faceDirection farmer 2/faceDirection MisterGinger 0/pause 1000/end dialogue Wizard \"{{i18n:BreakSpell_Continue.10}}\"",
+                "BreakSpell_Continue2": "pause 500/pause 500/move Wizard -2 0 3/speak Wizard \"{{i18n:BreakSpell_Continue2.0}}\"/playSound shwip/pause 500/faceDirection Wizard 2/move Wizard 2 0 1/playSound newRecipe/speak Wizard \"{{i18n:BreakSpell_Continue2.1}}\"/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue2.2}}\"/pause 500/playSound cacklingWitch/pause 500/emote Wizard 12/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue2.3}}\"/pause 500/playSound cacklingWitch/shake Wizard 1000/pause 500/speak Wizard \"{{i18n:BreakSpell_Continue2.4}}\"/emote farmer 8/speak Wizard \"{{i18n:BreakSpell_Continue2.5}}\"/pause 1000/faceDirection farmer 2/end dialogue Wizard \"{{i18n:BreakSpell_Continue2.6}}\""
+            },
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            }
+        },
+        //ConversationTopic Dialogue
+        {
+            "LogName": "Marnie reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Marnie.Tristan_Discuss}}",
+                "TristanReturns": "{{i18n:Dialogue.Marnie.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Jas reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Jas.Tristan_Discuss}}",
+                "TristanReturns": "{{i18n:Dialogue.Jas.TristanReturns}}",
+                "EastScarpe_53_89": "{{i18n:Dialogue.Jas.EastScarpe_53_89}}",
+                "EastScarp_AideenHouse_6_20": "{{i18n:Dialogue.Jas.ESHouse1_6_20}}",
+                "ScarfAroundLampPost": "{{i18n:Dialogue.Jas.ScarfAroundLampPost.{{GenderNeutral}} }}"
+            }
+        },
+        {
+            "LogName": "Jas reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "Sun10": "{{i18n:Dialogue.Jas.Sun10}}",
+                "winter_Thu10": "{{i18n:Dialogue.Jas.winter_Thu10}}",
+                "winter_Mon10": "{{i18n:Dialogue.Jas.winter_Mon10}}",
+                "fall_Mon8": "{{i18n:Dialogue.Jas.fall_Mon8}}",
+                "FutureJob_Explore": "{{i18n:Dialogue.Jas.FutureJob_Explore}}",
+            },
+            "When": {
+                "HasSeenEvent": "5295000"
+            }
+        },
+        {
+            "LogName": "Jas reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "Sun10": "{{i18n:Dialogue.Jas.5295004.Sun10}}",
+            },
+            "When": {
+                "HasSeenEvent": "5295004"
+            }
+        },
+        {
+            "LogName": "Jas reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jas",
+            "Entries": {
+                "Sun10": "{{i18n:Dialogue.Jas.5295016.Sun10}}",
+                "Sun10_inlaw_Shane": "{{i18n:Dialogue.Jas.5295016.Sun10_inlaw_Shane}}",
+                "Sun10_inlaw_TristanLK": "{{i18n:Dialogue.Jas.5295016.Sun10_inlaw_TristanLK}}",
+            },
+            "When": {
+                "HasSeenEvent": "5295016"
+            }
+        },
+        {
+            "LogName": "Mr Ginger reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MisterGinger",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Tristan.Tristan_Discuss}}",
+            }
+        },
+        {
+            "LogName": "Shane reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Shane",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Shane.Tristan_Discuss}}",
+                "TristanReturns": "{{i18n:Dialogue.Shane.TristanReturns}}",
+                "ShaneTrissRH2": "{{i18n:Dialogue.Shane.ShaneTrissRH2}}",
+                "ShaneTrissL": "{{i18n:Dialogue.Shane.ShaneTrissL}}",
+                "ShaneTrissN": "{{i18n:Dialogue.Shane.ShaneTrissN}}",
+                "ShaneTrissG": "{{i18n:Dialogue.Shane.ShaneTrissG}}",
+            }
+        },
+        {
+            "LogName": "Wizard reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Wizard.Tristan_Discuss}}",
+            },
+            "When": {
+                "HasSeenEvent |contains=5295006": false
+            }
+        },
+        {
+            "LogName": "Wizard reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Wizard",
+            "Entries": {
+                "TristanReturns": "{{i18n:Dialogue.Wizard.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Abigail reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Abigail",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Abigail.Tristan_Discuss}}",
+                "TristanReturns": "{{i18n:Dialogue.Abigail.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Caroline reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Caroline",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Caroline.Tristan_Discuss}}",
+                "TristanReturns": "{{i18n:Dialogue.Caroline.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Lewis reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Lewis",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Lewis.Tristan_Discuss}}",
+                "TristanReturns": "{{i18n:Dialogue.Lewis.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Jasper reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jasper",
+            "Entries": {
+                "Tristan_Discuss": "{{i18n:Dialogue.Jasper.Tristan_Discuss}}",
+                "TristanReturns": "{{i18n:Dialogue.Jasper.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Juliet reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Juliet",
+            "Entries": {
+                "TristanReturns": "{{i18n:Dialogue.Juliet.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Rosa reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Rosa",
+            "Entries": {
+                "TristanReturns": "{{i18n:Dialogue.Rosa.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Aideen reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "When": {
+                "Spouse |contains=Shane": false
+            },
+            "Entries": {
+                "TristanReturns": "{{i18n:Dialogue.Aideen.TristanReturns}}"
+            }
+        },
+        {
+            "LogName": "Aideen reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                "ScarfAroundLampPost": "{{i18n:Dialogue.Aideen.ScarfAroundLampPost}}"
+            }
+        },
+        {
+            "LogName": "Emily reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Emily",
+            "Entries": {
+                "TristanReturns": "{{i18n:Dialogue.Emily.TristanReturns}}",
+            }
+        },
+        {
+            "LogName": "Eloise reacts",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Eloise",
+            "Entries": {
+                "TristanReturns": "{{i18n:Dialogue.Eloise.TristanReturns}}",
+                "EastScarp_Village_55_89": "{{i18n:Dialogue.Eloise.EastScarpe_55_89.{{random:1,2,3,4,5}} }}",
+                "ScarfAroundLampPost": "{{i18n:Dialogue.Eloise.ScarfAroundLampPost}}"
+            }
+        },
+        {
+            "LogName": "Jacob dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Jacob",
+            "Entries": {
+                "EastScarp_AideenHouse_19_20": "{{i18n:Dialogue.Jacob.ESHouse1_19_20.{{random:1,2,3,4,5}} }}",
+                "EastScarp_Village_54_85": "{{i18n:Dialogue.Jacob.EastScarpe_54_85.{{random:1,2,3}} }}",
+            }
+        },
+        {
+            "LogName": "NPC Manifestation",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "Entries": {
+                "TristanLK": {
+                    "DisplayName": "{{i18n:Name.Tristan}}",
+                    "BirthSeason": "Summer",
+                    "BirthDay": 20,
+                    "HomeRegion": "Town",
+                    "Gender": "Male",
+                    "Age": "Adult",
+                    "Manner": "Rude",
+                    "SocialAnxiety": "Outgoing",
+                    "Optimism": "Neutral",
+                    "CanBeRomanced": true,
+                    "CanCommentOnPurchasedShopItems": "false",
+                    "CanSocialize": "PLAYER_HAS_SEEN_EVENT Host 5295000",
+                    "IntroductionsQuest": false,
+                    "PerfectionScore": false,
+                    "UnlockConditions": "PLAYER_HAS_SEEN_EVENT Host 5295000",
+                    "LoveInterest": null,
+                    "SpouseRoom": {
+                        "MapAsset": "Lemurkat_EastScarp_SpouseRoom",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 9,
+                            "Width": 6,
+                            "Height": 9
+                        }
+                    },
+                    "SpousePatio": {
+                        "MapAsset": "Lemurkat_EastScarp_OutsideArea",
+                        "MapSourceRect": {
+                            "X": 0,
+                            "Y": 4,
+                            "Width": 4,
+                            "Height": 4
+                        }
+                    },
+                    "FriendsAndFamily": {
+                        "Jas": "{{i18n:Relationship.Tristan.Jas}}",
+                    },
+                    "WinterStarGifts": [
+                        {
+                            "Condition": null,
+                            "Id": "Wool",
+                            "ItemId": "(O)440"
+                        }
+                    ],
+                    "Appearance": [
+                        {
+                            "ID": "TristanSpring",
+                            "Season": "Spring",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Tristan",
+                            "Sprite": "Characters/Tristan",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "TristanSummer",
+                            "Season": "Summer",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Tristan_summer",
+                            "Sprite": "Characters/Tristan_summer",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "TristanFall",
+                            "Season": "Fall",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Tristan_fall",
+                            "Sprite": "Characters/Tristan_fall",
+                            "Precedence": -10
+                        },
+                        {
+                            "ID": "TristanWinter",
+                            "Season": "Winter",
+                            "Outdoors": true,
+                            "Indoors": true,
+                            "Portrait": "Portraits/Tristan_winter",
+                            "Sprite": "Characters/Tristan_winter",
+                            "Precedence": -10
+                        },
+                        {
+                            "Id": "TristanSpiritEve",
+                            "Condition": "ANY \"IS_EVENT festival_fall27\" \"SEASON Fall, DAY_OF_MONTH 27, LOCATION_NAME Target EastScarp_Village EastScarp_VillageInn_SpiritEve EastScarp_Crossing\"",
+                            "Sprite": "Characters/Tristan_SpiritsEve",
+                            "Portrait": "Portraits/Tristan_SpiritsEve",
+                            "Precedence": -1000,
+                        },
+                    ],
+                    "HiddenProfileEmoteDuration": -1,
+                    "HiddenProfileEmoteStartFrame": 20,
+                    "HiddenProfileEmoteFrameCount": 2,
+                    "HiddenProfileEmoteFrameDuration": 500.0,
+                    "DumpsterDiveEmote": 56,
+                    "DumpsterDiveFriendshipEffect": "0",
+                    "Home": [
+                        {
+                            "Id": "Shane on Farm",
+                            "Condition": "PLAYER_NPC_RELATIONSHIP Any Shane Married, PLAYER_HAS_SEEN_EVENT Host 5295000",
+                            "Location": "AnimalShop",
+                            "Tile": {
+                                "X": 27,
+                                "Y": 4
+                            },
+                            "Direction": "Down",
+                        },
+                        {
+                            "Id": "Default",
+                            "Location": "EastScarp_AideenHouse",
+                            "Condition": "PLAYER_HAS_SEEN_EVENT Host 5295000",
+                            "Tile": {
+                                "X": 23,
+                                "Y": 4
+                            },
+                            "Direction": "Down"
+                        },
+                        {
+                            "Id": "TristanExiled",
+                            "Location": "EastScarp_TNPCWaitingWarpRoom",
+                            "Condition": "!PLAYER_HAS_SEEN_EVENT Host 5295000",
+                            "Tile": {
+                                "X": -100,
+                                "Y": -100
+                            },
+                            "Direction": "Down",
+                        },
+                    ],
+                    "MugShotSourceRect": null,
+                    "Breather": true
+                }
+            }
+        },
+        {
+            "LogName": "NPC Gift Tastes",
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "Entries": {
+                "TristanLK": "{{i18n:gift.love.tristan}}/202 212 198 227 267 424 426 715 440/{{i18n:gift.like.tristan}}/-4 195 209 228 444 732/{{i18n:gift.dislike.tristan}}/684 685/{{i18n:gift.hate.tristan}}/-26/{{i18n:gift.neutral.tristan}}//"
+            },
+        },
+        //Edits Dialogue
+        {
+            "LogName": "Dialogues",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Tristan.json",
+            "When": {
+                "HasSeenEvent:hostPlayer": "5295000"
+            }
+        },
+        {
+            "LogName": "Edits Walking sprites",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/TristanLK, Portraits/TristanLK",
+            "FromFile": "assets/{{Target}}/Tristan.png"
+        },
+        {
+            "LogName": "Edits Walking sprites",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/Tristan, Characters/Tristan_summer, Characters/Tristan_fall, Characters/Tristan_winter",
+            "FromFile": "assets/Characters/TristanLK/{{targetwithoutpath}}.png"
+        },
+        {
+            "LogName": "Edits Portrait sprites",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Tristan, Portraits/Tristan_summer, Portraits/Tristan_fall, Portraits/Tristan_winter",
+            "FromFile": "assets/Portraits/TristanLK/{{targetwithoutpath}}.png",
+        },
+        {
+            "LogName": "Edits portraits",
+            "Action": "Load",
+            "Target": "Portraits/Tristan_SpiritsEve, Characters/Tristan_SpiritsEve",
+            "FromFile": "assets/{{TargetPathOnly}}/TristanLK/Tristan_SpiritsEve.png",
+        },
+        {
+            "LogName": "Edits Walking sprites",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Characters/TristanLK_Date",
+            "FromFile": "assets/Characters/TristanLK/Tristan_Date.png"
+        },
+        {
+            "LogName": "Edits Walking sprites",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/TristanLK_Date",
+            "FromFile": "assets/Portraits/TristanLK/Tristan_Date.png"
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "tristanlk_knit": "0/16 16 16 16 16 17 17 17 17/0",
+                "tristanlk_sleep": "18/18/18"
+            }
+        },
+        {
+            "LogName": "Rainy Day Dialogue Tristan",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/rainy",
+            "Entries": {
+                "tristanlk": "{{i18n:dialogue.tristan.rainy}}"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/RivalHearts/TristanShane.json",
+            "When": {
+                "RivalHearts |contains=TristanShane": true,
+                "HasSeenEvent": "5295000"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Festivals/Tristan.json",
+            "When": {
+                "HasSeenEvent": "5295000"
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Data/TristanFarmHand.json",
+            "When": {
+                "HasSeenEvent:hostPlayer": "5295003",
+                "IsMainPlayer": false
+            }
+        },
+        {
+            "LogName": "SecretNotes",
+            "Action": "EditData",
+            "Target": "Data/SecretNotes",
+            "Entries": {
+                "753": "{{i18n:secretnotes.753}}",
+                "754": "{{i18n:secretnotes.754}}"
+            }
+        },
+        //Marriage
+        {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "TristanLK0": "{{i18n:engagementdialogue.tristan.0}}",
+                "TristanLK1": "{{i18n:engagementdialogue.tristan.1}}"
+            }
+        },
+        {
+            "LogName": "Perfection Dialogue",
+            "Action": "EditData",
+            "Target": "Data/ExtraDialogue",
+            "When": {
+                "HasSeenEvent": "5295000"
+            },
+            "Entries": {
+                "SummitEvent_Dialogue3_TristanLK": "{{i18n:summit.tristan.Dialogue3}}",
+            }
+        },
+        {
+            "LogName": "New schedule",
+            "Action": "Include",
+            "FromFile": "assets/Characters/schedules/Tristan.json",
+            "When": {
+                "HasSeenEvent": "5295000"
+            }
+        },
+        {
+            "LogName": "Edits Tristan schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/TristanLK",
+            "Entries": {
+                "marriage_Fri:": "900 Forest 21 29 2/1300 Town 86 103 2/1620 Town 18 94 0/1750 AnimalShop 7 16 2/2430 bed",
+                "marriage_Mon": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/2000 bed",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/blocklist",
+            "When": {
+                "HasSeenEvent |contains=5295000": false
+            },
+            "Entries": {
+                "5295011": "T",
+                "5295012": "T"
+            }
+        },
+        {
+            //Add events to the blocklist so they won't show up
+            //in the "Available Events" menu
+            //left-hand side is the event id, right side doesnt matter
+            "Action": "EditData",
+            "Target": "Mods/shekurika.EventLookup/blocklist",
+            "When": {
+                "HasSeenEvent |contains=5295000": false
+            },
+            "Entries": {
+                "5295012": "T",
+            }
+        }, // makes changes if farmer married to Shane, in which case:
+        {
+            "LogName": "If Shane is spouse",
+            "Action": "Include",
+            "FromFile": "assets/Data/TristanAnimalShop.json",
+            "When": {
+                "HasSeenEvent": "5295000",
+                "Relationship:Shane": "married"
+            }
+        },
+        { // Adds the scarf around the lamppost
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Maps/EastScarpVillage_Lamppost_Scarf.tmx",
+            "PatchMode": "Overlay",
+            "Update": "OnLocationChange",
+            "ToArea": {
+                "X": 14,
+                "Y": 68,
+                "Width": 1,
+                "Height": 1
+            },
+            "When": {
+                "HasSeenEvent": "5295017",
+                "HasSeenEvent |contains=5295018": false
+            }
+        },
+        { // Adds the decorated lamppost
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_Village",
+            "FromFile": "assets/Maps/EastScarpVillage_Lamppost.tmx",
+            "PatchMode": "Overlay",
+            "ToArea": {
+                "X": 14,
+                "Y": 66,
+                "Width": 1,
+                "Height": 4
+            },
+            "When": {
+                "HasSeenEvent": "5295019"
+            }
+        },
+        {
+            "LogName": "Platonic 14",
+            "Action": "Include",
+            "FromFile": "assets/Platonic/Tristan.json",
+            "When": {
+                "KeepNonDatable |contains=Tristan": true
+            }
+        },
+        {
+            "LogName": "Updates a sprite to Jas",
+            "Action": "EditImage",
+            "Target": "Characters/Jas_FlowerDance",
+            "FromFile": "assets/Characters/TempActors/Jas_FlowerDance_Patch.png",
+            "ToArea": {
+                "X": 0,
+                "Y": 192,
+                "Width": 16,
+                "Height": 32
+            },
+            "When": {
+                "HasMod |contains=Poltergeister.SeasonalCuteCharacters": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Farmhouse",
+            "Entries": {
+                "5295017_Farmhouse2/f TristanLK 3500/O TristanLK/z spring summer/InUpgradedHouse 2": "{{season}}3/49 26/TristanLK 53 24 0 farmer 49 26 1/skippable/addConversationTopic DelayNextEventTristan14 0/positionOffset farmer 0 -40/advancedMove farmer false 4 0 4 100/proceedPosition farmer/faceDirection TristanLK 2/speak TristanLK \"{{i18n:5295017.spouse.0}}\"/advancedMove TristanLK false 0 1 2 100/proceedPosition farmer/speak TristanLK \"{{i18n:5295017.spouse.1}}\"/playSound coin/pause 1000/advancedMove TristanLK false 0 -1 2 100/pause 500/emote farmer 16/pause 500/speak TristanLK \"{{i18n:5295017.spouse.2}}\"/showFrame farmer 65/pause 500/addObject 53 24 (O)EastScarp_Tristan_Oversized_Woolly_Hat 1/pause 500/showFrame farmer 12/emote TristanLK 28/pause 500/question null \"{{i18n:5295017.spouse.3}}\"/pause 500/speak TristanLK \"{{i18n:5295017.spouse.4}}\"/pause 500/emote farmer 40/pause 1000/speak TristanLK \"{{i18n:5295017.spouse.5}}\"/pause 2000/end dialogue Aideen \"{{i18n:5295017.spouse.6}}\"",
+                "5295017_Farmhouse1/f TristanLK 3500/O TristanLK/z spring summer/InUpgradedHouse 1/!InUpgradedHouse 2": "{{season}}3/32 5/Aideen -100 -100 3 TristanLK 32 5 0 farmer 28 7 1/skippable/addConversationTopic DelayNextEventTristan14 0/positionOffset farmer 0 -40/advancedMove farmer false 4 0 4 100/proceedPosition farmer/faceDirection TristanLK 2/speak TristanLK \"{{i18n:5295017.spouse.0}}\"/advancedMove TristanLK false 0 1 2 100/proceedPosition farmer/speak TristanLK \"{{i18n:5295017.spouse.1}}\"/playSound coin/pause 1000/advancedMove TristanLK false 0 -1 2 100/pause 500/emote farmer 16/pause 500/speak TristanLK \"{{i18n:5295017.spouse.2}}\"/showFrame farmer 65/pause 500/addObject 32 6 (O)EastScarp_Tristan_Oversized_Woolly_Hat 1/pause 500/showFrame farmer 12/emote TristanLK 28/pause 500/question null \"{{i18n:5295017.spouse.3}}\"/pause 500/speak TristanLK \"{{i18n:5295017.spouse.4}}\"/pause 500/emote farmer 40/pause 1000/speak TristanLK \"{{i18n:5295017.spouse.5}}\"/pause 2000/end dialogue Aideen \"{{i18n:5295017.spouse.6}}\"",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                //Sets the event as 'seen'
+                "Lemurkat.EastScarp_Tristan14Married": {
+                    "ID": "mail.Lemurkat.EastScarp_Tristan14Married",
+                    "Trigger": "DayEnding",
+                    "Condition": "ANY \"PLAYER_HAS_SEEN_EVENT Current 5295017_Farmhouse2\" \"PLAYER_HAS_SEEN_EVENT Current 5295017_Farmhouse1\"",
+                    "Action": "MarkEventSeen Current 5295017 true"
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "5295018/e 5295017/z spring summer/A DelayNextEventTristan14/t 1000 2000": "{{season}}2/14 69/TristanLK 10 71 1 Jas 10 72 1 farmer 19 67 1 Eloise 20 67 1/skippable/addConversationTopic ScarfAroundLampPost 3/addTemporaryActor MandarinDuck 16 32 28 64 3 false/swimming MandarinDuck/pause 500/speed MandarinDuck 2/advancedMove MandarinDuck false -5 0 0 3 -1 0/speed Jas 4/advancedMove Jas false 4 0 0 -2 4 100/advancedMove TristanLK false 5 0 0 -2 3 100/pause 1000/textAboveHead Jas \"{{i18n:5295018.0}}\"/proceedPosition TristanLK/faceDirection farmer 3/advancedMove Eloise false 0 1 -2 0 3 100/speak Jas \"{{i18n:5295018.1}}\"/pause 1000/emote TristanLK 28/pause 2000/end",
+                //in the romantic version, this could lead to a longer event where farmer consoles Tristan, since they're married and all. I don't think anything more than this is necessary here.
+                "5295022/n Tristan_YarnBombing/f TristanLK 3500/t 1000 1600/w sunny": "{{season}}1/-100 -100/TristanLK 7 68 2 Aideen 9 71 1 JadeMalic 16 62 2 TristanLK 7 68 2 Jas 6 68 2 farmer 0 71 1 Rosa 22 72 3 Juliet 22 71 3/skippable/showFrame Jas 31/positionOffset Jas 24 6/animate TristanLK false true 420 16 17/positionOffset TristanLK 24 16/viewport 7 71 clamp true/advancedMove Aideen false 5 0 4 1000 0 -1 4 10/advancedMove JadeMalic false 0 7 -1 0 3 10/advancedMove farmer false 7 0 0 -1 4 10/proceedPosition Aideen/emote Aideen 16/pause 1000/emote JadeMalic 32/textAboveHead Jas \"{{i18n:5295022.0}}\"/pause 500/stopAnimation TristanLK 17/speak TristanLK \"{{i18n:5295022.1.{{TristanSpouse}} }}\"/pause 500/emote farmer 56/pause 500/speak Jas \"{{i18n:5295022.2}}\"/pause 500/emote TristanLK 60/speak TristanLK \"{{i18n:5295022.3}}\"/advancedMove TristanLK false 0 1 1 10/pause 500/faceDirection farmer 1/viewport move 2 0 1500/pause 1000/textAboveHead Aideen \"{{i18n:5295022.4}}\"/pause 500/textAboveHead JadeMalic \"{{i18n:5295022.5}}\"/pause 2000/viewport move -2 0 1500/pause 1500/advancedMove Aideen false 3 0 0 -10 4 10/pause 2000/advancedMove JadeMalic false 0 20 2 100/faceDirection TristanLK 2/faceDirection farmer 0/pause 500/speak TristanLK \"{{i18n:5295022.6}}\"/quickQuestion {{i18n:5295022.7}}#{{i18n:5295022.8}}#{{i18n:5295022.9}}(break)emote TristanLK 32\\emote Jas 20(break)emote TristanLK 60\\emote Jas 12/pause 1000/advancedMove Rosa false -8 0 4 500 0 -1 4 100/advancedMove Juliet false -7 0 4 20/speak TristanLK \"{{i18n:5295022.10}}\"/pause 500/textAboveHead Jas \"{{i18n:5295022.11}}\"/proceedPosition Rosa/emote Rosa 20/pause 2000/faceDirection Juliet 3/faceDirection Rosa 1/emote Juliet 40/animate Rosa false true 200 20 21/pause 2000/advancedMove Rosa false 0 20/advancedMove Juliet false 0 20/pause 2000/end"
+            }
+        },
+    ]
+}

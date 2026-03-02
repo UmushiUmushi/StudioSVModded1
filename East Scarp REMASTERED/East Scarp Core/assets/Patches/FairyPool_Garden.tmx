@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="4" height="4" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="15">
+ <tileset firstgid="1" name="z_EastScarp" tilewidth="16" tileheight="16" tilecount="2175" columns="25">
+  <image source="spring_EastScarp.png" width="400" height="1392"/>
+ </tileset>
+ <layer id="2" name="Buildings" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+697,698,699,0,
+722,0,0,725,
+747,748,749,750
+</data>
+ </layer>
+ <objectgroup id="6" name="Buildings"/>
+ <layer id="3" name="Front" width="4" height="4">
+  <data encoding="csv">
+672,673,674,675,
+0,0,0,700,
+0,723,724,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="7" name="Front"/>
+ <layer id="4" name="Paths" width="4" height="4">
+  <data encoding="csv">
+0,0,0,0,
+0,0,0,0,
+0,0,0,0,
+0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

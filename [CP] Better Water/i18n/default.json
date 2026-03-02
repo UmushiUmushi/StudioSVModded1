@@ -1,0 +1,72 @@
+{
+	"config.section.Color and Transparency.name": "Color & Transparency",
+	"config.section.extra.name": "Extra",
+	"config.section.advanced.name": "Advanced",
+	
+    "config.color.name": "Color",
+    "config.color.values.teal": "Teal",
+    "config.color.values.blue": "Blue",
+    "config.color.values.bright": "Bright",
+    "config.color.values.dark": "Dark",
+    "config.color.values.disabled": "Disabled",
+	"config.color.description": "Color of the water animation",
+	
+    "config.color island.name": "Color Island",
+    "config.color island.values.island": "Island",
+    "config.color island.values.teal": "Teal",
+    "config.color island.values.blue": "Blue",
+    "config.color island.values.bright": "Bright",
+    "config.color island.values.dark": "Dark",
+    "config.color island.values.disabled": "Disabled",
+	"config.color island.description": "Color of the water animation, but on Ginger Island\nIsland has a turquoise tint", 
+	
+    "config.Map Tiles Transparency.name": "Map Tiles Transparency",
+    "config.Map Tiles Transparency.values.Mixed": "Mixed",
+    "config.Map Tiles Transparency.values.Translucent": "Translucent",
+    "config.Map Tiles Transparency.values.Semi-opaque": "Semi-opaque",
+    "config.Map Tiles Transparency.values.opaque": "Opaque",
+    "config.Map Tiles Transparency.values.disabled": "Disabled",
+	"config.Map Tiles Transparency.description": "How clear the water depth is:\nMixed: Beach is Semi-Opaque, rest is Translucent\nTranslucent: Water is clear and all underwater is it's color\nSemi-Opaque: Can't see underwater, also darker on deep parts\nOpaque: The water depth is uniform\nDisabled: Basically disables the mod but keeps all the other features you may want",
+	
+    "config.White water lines.name": "White water lines",
+    "config.White water lines Bath House.name": "White water lines Bath House",
+	
+    "config.Caves.name": "Caves",
+    "config.Caves White water lines.name": "Caves White water lines",
+    "config.Sewers.name": "Sewers",
+    "config.Sewers White water lines.name": "Sewers White water lines",
+    "config.Fountain.name": "Fountain",
+    "config.Fountain White water lines.name": "Fountain White water lines",
+    "config.Fill bridge holes.name": "Fill bridge holes",
+    "config.Fill bridge holes.description": "Wood bridges has some blue pixels holes, this option fills it with an unsaturated brown",
+	
+    "config.Witch Swamp.name": "Witch Swamp",
+    "config.Witch Swamp.values.green": "Green",
+    "config.Witch Swamp.values.blue": "Blue",
+    "config.Witch Swamp.values.brown": "Brown",
+    "config.Witch Swamp.values.disabled": "Disabled",
+	
+    "config.Mutant Bug Lair.name": "Mutant Bug Lair",
+    "config.Mutant Bug Lair.values.dark": "Dark",
+    "config.Mutant Bug Lair.values.blue": "Blue",
+    "config.Mutant Bug Lair.values.disabled": "Disabled",
+	
+    "config.desert.name": "Desert",
+    "config.Fish pond.name": "Fish Pond",
+    "config.Fish pond.description": "Disable if you have a fish pond mod",
+	
+    "config.Caves mode.name": "Caves mode",
+    "config.Caves mode.values.default": "Default",
+    "config.Caves mode.values.dirt": "Dirt",
+    "config.Caves mode.values.seasonal": "Seasonal",
+    "config.Caves mode.values.disabled": "Disabled",
+	"config.Caves mode.description": "Default: Uses Map Tiles Transparency\nDirt: Transparent water with brown dirt\nSeasonal (experimental): Color will match seasonal outdoors' water, but also affect the island\nDisable if the water looks bad with a cave mod", 
+
+    "config.Waterfalls mode.name": "Waterfalls mode",
+    "config.Waterfalls mode.values.Replace": "Replace",
+    "config.Waterfalls mode.values.Overlay": "Overlay",
+	"config.Waterfalls mode.description": "Uses the option Color\nReplace (Recommended):\n Replaces the sprites, looks the best with no map recolors\nOverlay (old):\n Overlays the sprites\n Waterfalls will be brighter and less transparent\n May look different with a map recolor mod enabled",
+	
+    "config.Beach Farm sand.name": "Beach Farm sand",
+    "config.Beach Farm sand.description": "Uses the option Map Tiles Transparency\nChanges the closest underwater sand on Beach Farm\nDisable if it looks bad with a foliage mod\n* If there is still an animation error, it's not my mod's fault",
+}

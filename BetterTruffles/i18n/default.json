@@ -1,0 +1,11 @@
+﻿{
+  "enabled": "Enabled",
+  "pigs-dig-in-grass": "Pigs dig in grass",
+  "pigs-dig-in-flooring": "Pigs dig in flooring",
+  "show-bubbles": "Show Bubbles",
+  "render-on-top": "Render bubbles on top",
+  "bubble-y-offset": "Bubble Y Offset",
+  "bubble-x-offset": "Bubble X Offset",
+  "opacity": "Opacity",
+  "bubble-size": "Bubble Size"
+}

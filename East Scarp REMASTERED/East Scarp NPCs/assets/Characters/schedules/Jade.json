@@ -1,0 +1,34 @@
+{
+    "Changes": [
+        {
+            "LogName": "Jade - Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JadeMalic",
+            "Entries": {
+                "spring": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/1000 EastScarp_Village 7 68 2 jademalic_read/1100 Town 52 71 0/1230 EastScarp_Village 7 68 2 jademalic_sit/1300 EastScarp_Village 7 68 2 jademalic_read/2000 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Mon": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/a1200 Town 52 71 0/1230 Town 69 56 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Tue": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/1100 EastScarp_Village 43 106 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Wed": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/a1200 Town 52 71 0/1230 Forest 76 47 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Thu": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/a1200 Town 52 71 0/1230 Mountain 49 30 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Fri": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/1200 EastScarp_Crossing 23 32 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "rain": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_VillageInn 23 9 0/1100 EastScarp_VillageInn 31 8 2 jademalic_sit/1200 EastScarp_VillageInn 31 8 2 jademalic_read/2000 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "winter": "610 EastScarp_JessieHouse 16 21 1/900 EastScarp_VillageInn 31 8 2 jademalic_sit/1200 EastScarp_Village 7 68 2 jademalic_sit/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "EastScarpe_SpiritsEve": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/1000 EastScarp_Village 7 68 2 jademalic_read/a1200 EastScarp_VillageInn 13 30 3/1600 EastScarp_VillageInn 11 34 1/2200 Town 29 13"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/JadeMalic",
+            "When": {
+                "HasMod |contains=FlashShifter.StardewValleyExpandedCP": true
+            },
+            "Entries": {
+                "spring": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/1000 EastScarp_Village 7 68 2 jademalic_read/1100 Town 53 69 0/1230 EastScarp_Village 7 68 2 jademalic_sit/1300 EastScarp_Village 7 68 2 jademalic_read/2000 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Mon": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/a1200 Town 53 69 0/1230 Town 69 56 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Wed": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/a1200 Town 53 69 0/1230 Forest 76 47 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+                "Thu": "610 EastScarp_JessieHouse 16 21 1/800 EastScarp_Village 7 68 2 jademalic_sit/a1200 Town 53 69 0/1230 Mountain 49 30 1 jademalic_sampling_R/1400 EastScarp_JessieHouse 26 22 2/1800 EastScarp_JessieHouse 16 21 1/2200 EastScarp_JessieHouse 26 20 2 jademalic_sleep",
+            }
+        }
+    ]
+}

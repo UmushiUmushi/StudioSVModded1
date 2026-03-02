@@ -1,0 +1,12 @@
+{
+	"Format": "2.0.0",
+	"Changes": [
+//Ginger Island Map
+		{
+            "Action": "EditImage",
+            "Target": "LooseSprites/map_island",
+            "FromFile": "assets/map_Island.png",
+            "PatchMode": "Overlay",
+		},
+	],
+}

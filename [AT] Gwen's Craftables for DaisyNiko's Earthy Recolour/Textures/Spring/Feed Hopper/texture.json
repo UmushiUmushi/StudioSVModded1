@@ -1,0 +1,15 @@
+{
+	"ItemName": "Feed Hopper",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+		"Seasons": ["Spring"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors",
+		"Keywords": ["Indoors"],
+		},
+	]
+}

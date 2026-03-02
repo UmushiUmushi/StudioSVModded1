@@ -1,0 +1,2282 @@
+{
+    "Changes": [
+        // F E S T I V A L S
+        //******* S P R I N G   F E S T I V A L S ***********
+        //***************************************************
+        // ***********  Egg Festival ********
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 39 69 3/Eloise 8 64 1/Jacob 10 64 3/Juliet 31 61 3/Jessie 18 57 2/ToriLK 9 65 0/JadeMalic 24 63 3/Aideen 31 78 1/Pam 31 58 3/MichaelHart 15 96 2/EthanHart 16 96 2/EdithHart 33 69 0/DaleWaede 19 58 3/ValkyrieDog 20 58 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 39 69 3/Eloise 35 60 3/Jacob 34 60 1/Juliet 39 70 3/Jessie 18 57 2/ToriLK 37 59 2/JadeMalic 38 59 3/Aideen 19 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Beatrice 36 72 3/Eloise 8 64 1/Jacob 10 64 3/Rosa 33 61 3/ToriLK 19 54 0/Aideen 32 79 1/Juliet 32 62 0/Jessie 18 58 2/MichaelHart 15 96 2/EthanHart 16 96 2/EdithHart 23 67 1/DaleWaede 18 66 1/ValkyrieDog 19 67 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Beatrice 24 71 1/Eloise 40 62 1/Jacob 41 62 3/Rosa 35 70 3/Juliet 36 69 3/Jessie 18 58 2/MichaelHart 15 96 0/EthanHart 16 96 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Taro 7 65 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Taro 7 65 2",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasMod": "CC.Taro"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+                "HasSeenEvent |contains=57873000": true,
+                "HasSeenEvent |contains=57873005": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 31 68 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "JosephineK 32 65 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+                "HasSeenEvent |contains=57873000": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 32 89 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "OliverK 32 89 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+                "HasSeenEvent |contains=57871401": "true"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KennedyLK 31 88 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "KennedyLK 31 88 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "KennedyLK 44 78 2/OliverK 43 78 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "KennedyLK 44 78 2/OliverK 43 78 2",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 9 63 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 33 60 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 8 63 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 40 60 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57875000"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+                "HasSeenEvent |contains=57876033": false,
+                "HasSeenEvent": "57876020"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 46 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 46 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 46 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 46 57 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring13",
+            "When": {
+                "HasSeenEvent": "57876020",
+                "HasSeenEvent |contains=57876033": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Abyssrooster 45 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Abyssrooster 47 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Abyssrooster 45 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Abyssrooster 47 57 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        // Flower Dance
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 5 31 3/Beatrice 4 22 1/Eloise 14 30 3/Jacob 3 30 1/Rosa 30 41 2/ToriLK 55 46 2/Juliet 31 41 2/Jessie 25 25 3/JadeMalic 10 42 2/CaptainRod 55 31 2/EdithHart 41 43 2/MichaelHart 42 43 2/EthanHart 70 15 2/KeanuAvis 51 36 1/DaleWaede 54 37 0/ValkyrieDog 55 37 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 19 32 0/Eloise 17 32 0/Jacob 18 32 0/Rosa 23 32 3/Juliet 22 32 0/Jessie 19 30 0/JadeMalic 15 31 0/DaleWaede 54 37 0/ValkyrieDog 55 37 3/ToriLK 16 32 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 5 31 3/Beatrice 4 22 1/Eloise 23 24 3/Jacob 3 30 1/Rosa 30 41 2/ToriLK 53 46 2/Juliet 31 41 2/Jessie 25 25 3/CaptainRod 55 31 2/JadeMalic 62 44 1/EdithHart 15 20 2/MichaelHart 14 20 2/EthanHart 43 42 2/DaleWaede 54 37 0/ValkyrieDog 55 37 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 19 32 0/Eloise 17 32 0/Jacob 18 32 0/Rosa 23 32 3/ToriLK 21 21 2/Juliet 22 32 0/Jessie 19 30 0/JadeMalic 15 31 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "When": {
+                "HasMod": "skellady.SBVCP"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JadeMalic 11 41 2",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "LogName": "AddsCorwin to the Dance",
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "When": {
+                "HasSeenEvent": "57871500"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "CorwinLK 51 34 1/CaptainRod 55 31 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "CorwinLK 54 30 2/CaptainRod 55 31 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "When": {
+                "HasSeenEvent |contains=57873000": true,
+                "HasSeenEvent |contains=57873005": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 7 21 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "JosephineK 16 21 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "When": {
+                "HasSeenEvent |contains=57873000": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 49 19 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "OliverK 49 19 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 4 25 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 4 25 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 4 25 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 4 25 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57875000"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "When": {
+                "HasFlag |contains=RivalHearts_AideenMateo": true,
+                "HasMod": "DN.SnS"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 53 37 1/Mateo 54 37 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 3 27 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 3 27 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 3 27 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 3 27 1",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasFlag": "KatarynaBecomesSocial",
+                "HasSeenEvent |contains=57876033": false
+            }
+        },
+        //******* S U M M E R   F E S T I V A L S ***********
+        //***************************************************
+        // ***********  Luau ********
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 14 5 2/Beatrice 43 36 2/Eloise 13 14 1/Jacob 31 34 2/OliverK 44 35 1/JosephineK 31 4 2/Rosa 25 18 1/ToriLK 34 44 2/Juliet 26 17 2/Jessie 41 17 3/JadeMalic 33 44 2/CaptainRod 39 43 3/DaleWaede 9 16 1/KeanuAvis 10 16 3/ValkyrieDog 9 15 3/EdithHart 37 15 0/MichaelHart 26 12 3/EthanHart 25 13 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        8
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Aideen 14 5 3/Eloise 23 23 0/Jacob 31 34 3/JosephineK 31 11 2/OliverK 32 11 2/Juliet 25 19 1/Jessie 37 15 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 18 4 2/Beatrice 24 31 3/Eloise 19 10 3/Jacob 16 11 1/JosephineK 26 4 2/OliverK 44 45 2/Rosa 25 18 1/ToriLK 31 34 1/Juliet 26 18 3/Jessie 41 18 0/JadeMalic 33 44 2/CaptainRod 39 43 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 18 4 2/Beatrice 48 18 2/Eloise 18 8 1/Jacob 17 8 1/JosephineK 23 9 2/OliverK 22 9 2/Rosa 24 20 0/Juliet 25 20 0/Jessie 41 18 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "When": {
+                "HasSeenEvent": "57871500"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "CorwinLK 38 42 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "CorwinLK 38 42 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "When": {
+                "HasSeenEvent": "57875000"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 14 14 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 24 23 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 12 9 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 24 23 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Gremlin 50 22 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "Gremlin 26 20 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Gremlin 26 19 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "Gremlin 26 20 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        7
+                    ],
+                    "Value": "advancedMove Gremlin true 5 0 1 2000 -5 0 4 2000",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasSeenEvent": "86571101"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer11",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 32 19 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 32 19 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 32 19 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "MainEvent_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 32 19 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57876020"
+            }
+        },
+        //Jellies
+        //Jellies
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 22 4 2/Eloise 5 7 down/Jacob 4 7 2/Rosa 10 10 3/ToriLK 90 24 2/Juliet 9 9 2/Jessie 55 7 2/JadeMalic 98 46 2/CaptainRod 94 46 2/JadeMalic 72 25 2/EdithHart 90 46 2/MichaelHart 91 46 2/EthanHart 101 45 2/DaleWaede 41 34 2/ValkyrieDog 40 34 1/KeanuAvis 86 40 2/Jasper 92 23 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "addLantern 735 98 43 3/animate ValkyrieDog? false true 120 23 31/animate DaleWaede false true 240 16 17",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 22 4 2/Eloise 82 25 down/Jacob 83 25 2/Rosa 11 10 3/ToriLK 84 24 2/Jessie 55 7 2/Juliet 10 9 2/DaleWaede 41 34 2/ValkyrieDog 40 34 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        7
+                    ],
+                    "Value": "addLantern 735 98 43 3/animate ValkyrieDog? false true 120 23 31/animate DaleWaede true false 240 16 17",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": {
+                "HasSeenEvent": "57871500"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "CorwinLK 95 46 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "CorwinLK 95 46 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Gremlin 10 11 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Gremlin 10 11 3",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasSeenEvent": "86571101"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": {
+                "HasSeenEvent |contains=57873000": true,
+                "HasSeenEvent |contains=57873005": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 25 67 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "JosephineK 25 67 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": {
+                "HasSeenEvent |contains=57876033": false,
+                "HasSeenEvent": "57876020"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 91 23 2",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": {
+                "HasSeenEvent |contains=57873000": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 95 39 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "OliverK 95 39 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": {
+                "HasSeenEvent": "57872004"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Leximonster 102 39 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        8
+                    ],
+                    "Value": "swimming Leximonster",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Leximonster 102 39 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        8
+                    ],
+                    "Value": "swimming Leximonster",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/summer28",
+            "When": {
+                "HasSeenEvent": "57875000"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 3 6 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 3 6 2",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        //F A L L   F E S T I V A L S
+        //Stardew Fair
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 27 60 1/Eloise 63 64 2/Jacob 64 64 2/ToriLK 28 59 2/Juliet 22 63 1/Jessie 68 71 2/JadeMalic 21 64 1/KatarynaLK 18 76 1/EdithHart 41 61 0/MichaelHart 36 35 2/EthanHart 35 36 1/DaleWaede 21 35 2/ValkyrieDog 20 36 1/KeanuAvis 20 37 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        8
+                    ],
+                    "Value": "animate Eloise false true 1000 22/animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Beatrice 27 61 1/Eloise 19 35 1/Jacob 27 34 3/KatarynaLK 39 78 3/Rosa 28 97 3/ToriLK 43 94 2/Juliet 27 97 1/Jessie 30 39 0/JadeMalic 67 63 2/EthanHart 66 68 2/MichaelHart 67 69 3/EdithHart 35 62 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        8
+                    ],
+                    "Value": "advancedMove EdithHart true 7 0 4 5000 2 0 4 5000 -2 0 4 5000 -4 0 4 5000 -3 0 4 5000",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasMod |contains=dreamy.kickitspot,Rexstrife20.MineralTownCP": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        8
+                    ],
+                    "Value": "advancedMove EdithHart true 2 0 4 5500 -2 0 4 5500 -2 0 4 5500 2 0 4 5500",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasSeenEvent": "57871500"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "CorwinLK 29 53 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "CorwinLK 19 80 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasFlag |contains=RivalHearts_AideenMateo": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 45 88 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 44 95 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "LogName": "Fair Dialogue",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "Spouse |contains=Aideen": false,
+                "Spouse |contains=Mateo": false,
+                "HasFlag |contains=RivalHearts_AideenMateo": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 36 81 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 36 81 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasSeenEvent |contains=57873005": false,
+                "HasSeenEvent": "57873000"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 26 52 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "JosephineK 26 53 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasSeenEvent": "57873000"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "OliverK 54 75 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "OliverK 58 70 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasSeenEvent |contains=57871401": "true"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KennedyLK 53 75 2",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasSeenEvent": "57875000"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 31 58 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 19 34 1",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Gremlin 6 65 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        8
+                    ],
+                    "Value": "advancedMove Gremlin true 6 0 0 -6 1 3000 0 6 -6 0 1 3000",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Gremlin 23 98 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        8
+                    ],
+                    "Value": "advancedMove Gremlin true 6 0 0 3 2 3000 0 -3 -6 0 1 3000",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "86571101"
+            }
+        },
+        //Spirit's Eve
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Eloise 16 52 up/Jacob 16 51 down/Rosa 27 23 2/Juliet 26 23 2/Jessie 32 69 2/JadeMalic 6 23 right/DaleWaede 38 59 3/ValkyrieDog 38 60 3/EthanHart 10 24 3/EdithHart 43 62 0/MichaelHart 40 59 1/KeanuAvis 45 59 3/ToriLK 38 61 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Eloise 27 51 3/Jacob 26 51 1/Rosa 27 23 2/ToriLK 14 63 1/Juliet 26 23 2/Jessie 33 68 2/JadeMalic 29 13 3/DaleWaede 9 66 0/ValkyrieDog 8 66 1/EthanHart 32 39 0/EdithHart 32 65 3/MichaelHart 18 41 1/KeanuAvis 38 59 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        7
+                    ],
+                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasMod |contains=Rafseazz.RSVCP": true
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        7
+                    ],
+                    "Value": "positionOffset DaleWaede 24 0/positionOffset ValkyrieDog? 24 0/animate ValkyrieDog? false true 120 23 31/animate DaleWaede false true 1000 26",
+                    "Delimiter": "/"
+                },
+        
+              
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "57871500"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "CorwinLK 38 30 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "CorwinLK 38 59 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "57876020"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 35 62 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 34 60 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent |contains=57873005": false,
+                "HasSeenEvent": "57873000"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 28 72 3/OliverK 24 10 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "JosephineK 28 71 3/OliverK 35 35 3",
+                    "Delimiter": "/"
+                }
+            ],
+        },
+        {
+            "LogName": "Add Oliver",
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "OliverK": "{{i18n:festivals.oliver.fall27.lexi}}",
+                "Leximonster": "{{i18n:festivals.lexi.fall27}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Leximonster 25 10 3/OliverK 24 10 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Leximonster 43 29 0/OliverK 43 28 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "57872012",
+                "HasMod": "Poltergeister.SeasonalCuteSpritesES"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "When": {
+                "HasSeenEvent": "57875000"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 45 61 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 44 58 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27",
+            "Entries": {
+                "Aideen": "{{i18n:festivals.aideen.fall27.rvh}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 15 17 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "Spouse |contains=Aideen, Mateo": false,
+                "HasFlag |contains=RivalHearts_AideenMateo": true
+            }
+        },
+        //Winter
+        //Ice Festival
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 59 33 1/Eloise 59 46 1/Jacob 59 45 1/Rosa 33 25 2/Juliet 35 25 2/Jessie 61 33 3/JadeMalic 71 17 1/ToriLK 95 32 3/EdithHart 68 26 0/MichaelHart 55 13 2/EthanHart 53 15 1/KeanuAvis 58 14 2/DaleWaede 93 32 2/ValkyrieDog 91 32 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Beatrice 59 33 1/Eloise 61 45 1/Jacob 59 45 1/Rosa 33 25 2/JadeMalic 63 35 1/ToriLK 95 32 3/Juliet 35 25 2/Jessie 61 33 3/ToriLK 95 32 3/EdithHart 68 26 0/MichaelHart 55 13 2/EthanHart 53 15 1/KeanuAvis 58 14 2/DaleWaede 93 32 2/ValkyrieDog 91 32 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        8
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Beatrice 63 31 1/Eloise 65 44 2/Jacob 66 45 3/Rosa 51 54 1/ToriLK 64 30 2/Juliet 52 54 3/Jessie 65 46 0/JadeMalic 64 45 1/DaleWaede 90 33 0/MichaelHart 56 26 2/EdithHart 55 27 1/EthanHart 66 34 2/Aideen 67 11 2/ValkyrieDog 91 33 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Beatrice 59 33 1/Eloise 65 44 0/Jacob 66 44 0/ToriLK 64 31 1/JadeMalic 63 35 1/MichaelHart 80 35 3/EdithHart 80 36 3/EthanHart 79 36 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        8
+                    ],
+                    "Value": "animate ValkyrieDog? true true 120 23 31",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent": "57871500"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "CorwinLK 60 34 0",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "CorwinLK 86 37 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "query: {{Year}} >= 3": true //why did I do this?
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Beatrice 73 50 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Gremlin 34 25 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Gremlin 62 45 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Gremlin 50 56 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "Gremlin 50 54 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent": "86571101"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 76 24 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 91 28 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent |contains=57875000": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "When": {
+                "HasSeenEvent |contains=57873000": true,
+                "HasSeenEvent |contains=57873005": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 97 39 2/OliverK 67 50 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "JosephineK 97 39 2/OliverK 67 50 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Jacob 69 12 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Jacob 69 12 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "Spouse |contains=Aideen": false,
+                "HasFlag |contains=RivalHearts_AideenMateo": false
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Aideen 70 12 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 70 12 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "Spouse |contains=Aideen": false
+            }
+        },
+        /*  {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 48 30 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Mateo 41 10 1/Aideen 42 10 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 48 30 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters"
+                    ],
+                    "Value": "Mateo 41 10 1/Aideen 42 10 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "Spouse |contains=Aideen": false,
+                "HasFlag |contains=RivalHearts_AideenMateo": true
+            }
+        },*/
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter8",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Eloise 68 50 2/OliverK 67 50 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Eloise 68 50 2/OliverK 67 50 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Main-Event_additionalCharacters_y2"
+                    ],
+                    "Value": "OliverK 64 44 0",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent |contains=57873005": true
+            }
+        },
+        //Winter Star
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Eloise 27 51 3/Aideen 13 66 3/Beatrice 12 68 2/Jacob 13 71 3/Rosa 9 63 1/ToriLK 13 64 3 2/Juliet 10 62 2/Jessie 9 70 1/JadeMalic 12 62 2/DaleWaede 37 59 0/MichaelHart 10 68 2/EthanHart 9 68 1/EdithHart 26 75 0/ValkyrieDog 36 59 1/Jasper 11 74 2/KeanuAvis 12 73 0/StellaHart 27 75 0",
+                    //"Aideen 48 61 3/Beatrice 35 75 0/Eloise 27 51 3/Jacob 37 71 3/Rosa 20 62 0/ToriLK 47 60 2/Juliet 17 62 1/Jessie 42 61 1/JadeMalic 22 63 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 13 66 3/Beatrice 12 68 2/Eloise 36 79 3/Jacob 13 71 3/Rosa 9 63 1/ToriLK 13 64 3 2/Juliet 10 62 2/Jessie 9 70 1/JadeMalic 12 62 2/DaleWaede 37 59 0/MichaelHart 10 68 2/EthanHart 9 68 1/EdithHart 26 75 0/StellaHart 27 75 0/ValkyrieDog 36 59 1/Jasper 17 73 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up",
+                        6
+                    ],
+                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        6
+                    ],
+                    "Value": "animate ValkyrieDog? false true 120 23 31",
+                    "Delimiter": "/"
+                },
+            ]
+        },
+        {
+            "LogName": "Add Corwin to Winter Star",
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "57871500"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "CorwinLK 13 69 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "CorwinLK 13 69 3",
+                    "Delimiter": "/"
+                }
+            ],
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "Aideen 24 58 3",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Aideen 24 58 3",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasFlag |contains=RivalHearts_AideenMateo": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent |contains=57873000": true,
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "JosephineK 23 51 1/OliverK 9 72 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "JosephineK 34 62 2/OliverK 11 73 0",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasFlag": "KatarynaBecomesSocial",
+                //"HasSeenEvent |contains=57876033": false
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "KatarynaLK 12 60 3/Gunther 11 59 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "KatarynaLK 18 74 3",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "VivienneLK 22 71 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "VivienneLK 11 59 2",
+                    "Delimiter": "/"
+                }
+            ],
+            "When": {
+                "HasSeenEvent |contains=57875000": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "PepperPup": "{{i18n:festivals.pepperpup.winter25}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "PepperPup 6 65 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        5
+                    ],
+                    "Value": "speed PepperPup 4/advancedMove PepperPup true 2 0 0 2 -2 0 0 -2 3 100",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasSeenEvent": "57870020"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "Entries": {
+                "Gremlin": "{{i18n:festivals.gremlin.winter25}}"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "Gremlin 5 65 1",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Fields",
+                        "set-up_y2",
+                        5
+                    ],
+                    "Value": "speed Gremlin 4/advancedMove Gremlin true 3 0 0 2 -3 0 0 -2",
+                    "Delimiter": "/"
+                },
+            ],
+            "When": {
+                "HasSeenEvent: AnyPlayer": "86571101"
+            }
+        },
+        // Lady Sheba
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall27, Data/Festivals/winter25, Data/Festivals/spring13",
+            "When": {
+                "HasSeenEvent": "57879903"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "LadySheba 57 53 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "LadySheba 57 53 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/winter25",
+            "When": {
+                "HasSeenEvent": "57879903"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "LadySheba 9 57 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "LadySheba 9 57 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasSeenEvent": "57879903"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "LadySheba 30 37 2",
+                    "Delimiter": "/"
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters_y2"
+                    ],
+                    "Value": "LadySheba 66 63 2",
+                    "Delimiter": "/"
+                }
+            ]
+        },
+    ]
+}

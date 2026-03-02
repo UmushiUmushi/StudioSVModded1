@@ -1,0 +1,9 @@
+# OS junk
+Thumbs.db
+desktop.ini
+.DS_Store
+ehthumbs.db
+
+# Deploy scripts (not part of mod content)
+deploy-mods.ps1
+setup.bat

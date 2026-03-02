@@ -1,0 +1,24 @@
+{
+    "Changes": [
+        {
+            "LogName": "Tristan becomes non-datable",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "TristanLK"
+            ],
+            "Entries": {
+                "CanBeRomanced": false
+            }
+        },
+        //Please note, as Tristan's 10-heart event is written as a date, there is no platonic version
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+            "5295017/f TristanLK 2500/o TristanLK/z spring/z summer/t 1000 2000": "{{season}}3/16 67/Aideen 17 64 3 TristanLK 16 64 1 farmer 7 71 1/skippable/addConversationTopic DelayNextEventTristan14 0/positionOffset farmer 0 -40/showFrame Aideen 25/advancedMove farmer false 9 0 4 100/pause 1000/textAboveHead Aideen \"{{i18n:5295017.0}}\"/pause 1000/speak TristanLK \"{{i18n:5295017.1}}\"/pause 1000/emote Aideen 28/proceedPosition farmer/faceDirection TristanLK 2/speak TristanLK \"{{i18n:5295017.2}}\"/advancedMove TristanLK false 0 5 2 100/pause 500/showFrame Aideen 26/pause 1000/textAboveHead Aideen \"{{i18n:5295017.3}}\"/pause 500/emote farmer 56/proceedPosition TristanLK/speak TristanLK \"{{i18n:5295017.4}}\"/pause 500/emote farmer 16/pause 500/speak TristanLK \"{{i18n:5295017.5}}\"/showFrame farmer 65/pause 500/addObject 16 69 (O)EastScarp_Tristan_Oversized_Woolly_Hat 1/pause 500/showFrame farmer 12/emote TristanLK 28/pause 500/question null \"{{i18n:5295017.6}}\"/pause 500/speak TristanLK \"{{i18n:5295017.7}}\"/pause 500/emote farmer 40/pause 1000/speak TristanLK \"{{i18n:5295017.8}}\"/pause 500/advancedMove TristanLK false 0 -5 1 2000 0 -11/proceedPosition TristanLK/showFrame Aideen 25/emote TristanLK 32/showFrame farmer 65/pause 500/removeSprite 16 69/playSound coin/pause 500/faceDirection farmer 0/emote Aideen 60/pause 500/showFrame Aideen 26/pause 1000/advancedMove farmer false 1 0 0 -5 4 100/pause 2000/textAboveHead Aideen \"{{i18n:5295017.9}}\"/pause 2000/end"
+
+            }
+        },
+    ]
+}

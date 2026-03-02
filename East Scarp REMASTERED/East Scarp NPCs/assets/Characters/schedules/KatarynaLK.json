@@ -1,0 +1,157 @@
+{
+    "Changes": [
+        { //Kataryna before she moves to town
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "Entries": {
+                "spring": "610 EastScarp_KatarynaHouse 11 29 1 katarynalk_coffee/700 EastScarp_KatarynaHouse 16 10 0/1000 EastScarp_KatarynaHouse 20 12 0/1200 EastScarp_KatarynaHouse 11 29 1 katarynalk_coffee/1300 EastScarp_KatarynaHouse 20 12 0/1800 EastScarp_KatarynaHouse 8 27 0/1900 EastScarp_KatarynaHouse 11 13 1/2400 EastScarp_KatarynaHouse 5 10 2",
+                "Mon": "a900 ArchaeologyHouse 3 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherA\"/930 ArchaeologyHouse 11 5 square_5_1_0/1130 Forest 73 50 1 \"Strings\\schedules\\KatarynaLK:Forest_Jasper\"/1630 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/2100 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "summer_Mon": "a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherA\"/930 ArchaeologyHouse 11 5 square_5_1_0/1130 Beach 83 40 2 \"Strings\\schedules\\KatarynaLK:Beach\"/1800 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/2100 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "fall_Mon": "a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherA\"/930 ArchaeologyHouse 11 5 square_5_1_0/1030 Mountain 54 7 0 \"Strings\\schedules\\KatarynaLK:MinesEntrance\"/1400 Mountain 77 9 3 \"Strings\\schedules\\KatarynaLK:AdvGuild\"/1800 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/2100 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "winter_Mon": "a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherA\"/930 ArchaeologyHouse 11 5 square_5_1_0/1230 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/1600 Beach 38 36 2 \"Strings\\schedules\\KatarynaLK:Winter_Market\"/1920 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "DesertFestival_2": "800 Desert 35 14 1 \"Strings\\1_6_Strings:DesertFestival_Kataryna\"/1400 Desert 12 50 2 \"Strings\\1_6_Strings:DesertFestival_Kataryna2\"/2410 Desert 18 8 0",
+                "DesertFestival_1": "a900 ArchaeologyHouse 3 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherA\"/930 ArchaeologyHouse 11 5 square_5_1_0/1130 Forest 73 50 1 \"Strings\\schedules\\KatarynaLK:Forest_Jasper\"/1730 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/2100 Desert 18 8 0"
+            },
+            "When": {
+                "HasSeenEvent |contains=57876001": false,
+                "Query: {{DaysPlayed}} >= 28": true
+            }
+        },
+        { //Kataryna visits Jasper after his injury
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "Entries": {
+                "Mon": "a1100 EastScarp_Village 27 60 2/1400 EastScarp_JasperHouse 7 17 0/1730 EastScarp_JasperHouse 24 13 0/1830 EastScarp_JasperHouse 23 14 0/2100 EastScarp_JasperHouse 1 15 0 katarynalk_sleep",
+                "Tue": "0 EastScarp_JasperHouse 3 15 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/900 SeedShop 12 28 1/1200 EastScarp_JasperHouse 7 13 3/1730 EastScarp_JasperHouse 24 13 0/1830 EastScarp_JasperHouse 23 14 0/2100 EastScarp_JasperHouse 1 15 0 katarynalk_sleep",
+                "Wed": "0 EastScarp_JasperHouse 3 15 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/1100 EastScarp_Village 27 60 2/1400 EastScarp_JasperHouse 7 13 3/1730 EastScarp_JasperHouse 24 13 0/1830 EastScarp_JasperHouse 23 14 0/2000 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "summer_Mon": "a1100 EastScarp_Village 27 60 2/1400 EastScarp_JasperHouse 7 17 0/1730 EastScarp_JasperHouse 24 13 0/1830 EastScarp_JasperHouse 23 14 0/2100 EastScarp_JasperHouse 1 15 0 katarynalk_sleep",
+                "fall_Mon": "a1100 EastScarp_Village 27 60 2/1400 EastScarp_JasperHouse 7 17 0/1730 EastScarp_JasperHouse 24 13 0/1830 EastScarp_JasperHouse 23 14 0/2100 EastScarp_JasperHouse 1 15 0 katarynalk_sleep",
+                "winter_Mon": "a1100 EastScarp_Village 27 60 2/1400 EastScarp_JasperHouse 7 17 0/1730 EastScarp_JasperHouse 24 13 0/1830 EastScarp_JasperHouse 23 14 0/2100 EastScarp_JasperHouse 1 15 0 katarynalk_sleep",
+            },
+            "When": {
+                "HasSeenEvent |contains=57876001": false,
+                "HasSeenEvent:hostPlayer |contains=50709915": true,
+                "HasSeenEvent:hostPlayer |contains=50709930": false
+            }
+        },
+        { //Kataryna
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "Entries": {
+                "spring": "0 EastScarp_VillageInn 5 9 0/900 EastScarp_VillageInn 35 32 1 katarynalk_coffee/1100 EastScarp_Village 45 88 3/1500 EastScarp_Orchard 3 16 1 katarynalk_write/1800 EastScarp_VillageInn 5 9 0/2200 EastScarp_VillageInn 8 9 2"
+            },
+            "When": {
+                "HasSeenEvent": "57873005",
+                "HasConversationTopic |contains=JosephineLeavesTown": false,
+                "HasSeenEvent |contains=57876012": false
+            }
+        },
+        { //Kataryna visiting town
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "Entries": {
+                "rain": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 8 9 0 katarynalk_nap/900 EastScarp_VillageInn 35 32 1 katarynalk_coffee/1000 Saloon 14 20 0/1400 EastScarp_Village 73 121 2/1900 EastScarp_VillageInn 5 9 0/2200 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "Mon": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/830 ArchaeologyHouse 5 10 0/1200 Blacksmith 5 13 3/1600 Saloon 14 20 0/2100 EastScarp_VillageInn 17 9 2/2400 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "summer_Mon": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/830 ArchaeologyHouse 5 10 0/1200 Beach 42 36 2/1430 Beach 26 36 2/1700 Saloon 14 20 0/2100 EastScarp_VillageInn 17 9 2/2400 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "Tue": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/900 Town 41 57 0/1200 SeedShop 12 28 1/1400 Beach 42 36 2/1730 Beach 26 36 2/2000 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "Wed": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/830 Forest 6 37 0/1300 Forest 94 94 2/1600 Saloon 12 20 0/2000 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "winter_15": "0 EastScarp_VillageInn 5 9 0/a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherD\"/1230 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/1600 Beach 38 36 2 \"Strings\\schedules\\KatarynaLK:Winter_Market\"/1920 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "marriage_Mon": "830 ArchaeologyHouse 5 10 0/1200 Blacksmith 5 13 3/1600 Saloon 14 20 0/1900 bed",
+                "marriage_Fri": "900 Town 41 57 0/1200 SeedShop 12 28 1/1400 Beach 42 36 2/1730 Beach 26 36 2/2000 bed",
+                "marriage_Wed": "830 Forest 6 37 0/1300 Forest 94 94 2/1600 Saloon 12 20 0/2000 bed",
+                "fall_27": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 8 9 0 katarynalk_nap/900 EastScarp_VillageInn 35 32 1 katarynalk_coffee/1000 EastScarp_Village 43 71 1 katarynalk_write/1300 EastScarp_VillageInn 16 35 0/1440 EastScarp_VillageInn 31 33 0/1800 EastScarp_VillageInn 16 32 3/2020 Town 29 67 2",
+                "marriage_fall_27": "a1300 EastScarp_VillageInn 31 33 0/1800 EastScarp_VillageInn 16 32 3/2020 bed"
+            },
+            "When": {
+                "HasSeenEvent": "57876001",
+                "HasSeenEvent |contains=57876012": false
+            }
+        },
+        { //If you skip the event, Kataryna will just leave town/remain antisocial
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "When": {
+                "HasFlag | contains=KatarynaBecomesSocial": false,
+                "HasSeenEvent": "57876012"
+            },
+            "Entries": {
+                "spring": "900 EastScarp_TNPCWaitingWarpRoom 4 5/1800 EastScarp_TNPCWaitingWarpRoom 2 5"
+            }
+        },
+        { //Kataryna
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "Entries": {
+                "spring": "0 EastScarp_VillageInn 5 9 0/900 EastScarp_VillageInn 35 32 1 katarynalk_coffee/1100 EastScarp_Village 45 88 3/1500 EastScarp_Orchard 3 16 1 katarynalk_write/1800 EastScarp_VillageInn 5 9 0/2200 EastScarp_VillageInn 8 9 2",
+                "rain": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 8 9 0 katarynalk_nap/900 EastScarp_VillageInn 35 32 1 katarynalk_coffee/1000 Saloon 14 20 0/1400 EastScarp_Village 73 121 2/1900 EastScarp_VillageInn 5 9 0/2200 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "Mon": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/830 ArchaeologyHouse 5 10 0/1200 Blacksmith 5 13 3/1600 Saloon 14 20 0/1900 EastScarp_VillageInn 5 9 0/2200 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "Tue": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/900 Town 41 57 0/1200 SeedShop 12 28 1/1400 Beach 42 36 2/1730 Beach 26 36 2/2000 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "Wed": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 35 32 1 katarynalk_coffee/830 Forest 6 37 0/1300 Forest 94 94 2/1600 Saloon 12 20 0/2000 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "winter_Mon": "0 EastScarp_VillageInn 5 9 0/a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherD\"/1230 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/1600 Beach 38 36 2 \"Strings\\schedules\\KatarynaLK:Winter_Market\"/1920 EastScarp_VillageInn 8 9 2 katarynalk_sleep",
+                "marriage_Mon": "830 ArchaeologyHouse 5 10 0/1200 Blacksmith 5 13 3/1600 Saloon 14 20 0/1900 bed",
+                "marriage_Fri": "900 Town 41 57 0/1200 SeedShop 12 28 1/1400 Beach 42 36 2/1730 Beach 26 36 2/2000 bed",
+                "marriage_Wed": "830 Forest 6 37 0/1300 Forest 94 94 2/1600 Saloon 12 20 0/2000 bed",
+                "fall_27_2": "0 EastScarp_VillageInn 5 9 0/700 EastScarp_VillageInn 8 9 0 katarynalk_nap/900 EastScarp_VillageInn 35 32 1 katarynalk_coffee/1000 EastScarp_Village 43 71 1 katarynalk_write/1300 EastScarp_VillageInn 16 35 0/1440 EastScarp_VillageInn 31 33 0/1800 EastScarp_VillageInn 16 32 3/2020 Town 29 67 2",
+                "marriage_fall_27": "a1300 EastScarp_VillageInn/1800 EastScarp_VillageInn 16 32 3/2020 bed"
+            },
+            "When": {
+                "HasFlag": "KatarynaBecomesSocial",
+                "HasSeenEvent |contains=57876033": false
+            }
+        },
+        { //Kataryna after she leaves town
+            "LogName": "Kataryna after she leaves town",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "Entries": {
+                "spring": "900 EastScarp_TNPCWaitingWarpRoom 4 5/1800 EastScarp_TNPCWaitingWarpRoom 2 5",
+                "Mon": "a900 ArchaeologyHouse 3 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherE\"/1130 Forest 74 50 2 \"Strings\\schedules\\KatarynaLK:Forest_Jasper\"/1730 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/2100 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "summer_Mon": "a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherC\"/1130 Beach 83 40 2 \"Strings\\schedules\\KatarynaLK:Beach\"/1800 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/2100 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "fall_Mon": "a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherB\"/1030 Mountain 54 7 0 \"Strings\\schedules\\KatarynaLK:MinesEntrance\"/1400 Mountain 77 9 3 \"Strings\\schedules\\KatarynaLK:AdvGuild\"/1800 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/2100 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "winter_Mon": "a900 ArchaeologyHouse 4 10 0 \"Strings\\schedules\\KatarynaLK:Museum_GuntherD\"/1230 Saloon 12 20 0 \"Strings\\schedules\\KatarynaLK:Saloon_Gus\"/1600 Beach 38 36 2 \"Strings\\schedules\\KatarynaLK:Winter_Market\"/1920 EastScarp_TNPCWaitingWarpRoom 2 5 2",
+                "fall_27_2": "a1300 EastScarp_VillageInn 16 35 0/1430 EastScarp_VillageInn 31 33 0/1800 EastScarp_VillageInn 16 32 3/2020 Town 29 67 2",
+                "marriage_Mon": "830 ArchaeologyHouse 5 10 0/1200 Blacksmith 5 13 3/1600 Saloon 14 20 0/1900 bed",
+                "marriage_Fri": "900 Town 41 57 0/1200 SeedShop 12 28 1/1400 Beach 42 36 2/1730 Beach 26 36 2/2000 bed",
+                "marriage_Wed": "830 Forest 6 37 0/1300 Forest 94 94 2/1600 Saloon 12 20 0/2000 bed",
+                "marriage_fall_27": "a1300 EastScarp_VillageInn/1800 EastScarp_VillageInn 16 32 3/2020 bed"
+            },
+            "When": {
+                "HasSeenEvent |contains=57876033": true,
+                "Spouse: AnyPlayer |contains=KatarynaLK": false
+            }
+        },
+        { //Kataryna after she leaves town
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/KatarynaLK",
+            "When": {
+                "HasConversationTopic": "Kataryna0schedule"
+            },
+            "Entries": {
+                "{{season}}_{{day}}": "0 EastScarp_TNPCWaitingWarpRoom 2 5/900 EastScarp_TNPCWaitingWarpRoom 4 5/1800 EastScarp_TNPCWaitingWarpRoom 2 5"
+            }
+        },
+        { //Abyss after Kat leaves town
+            "LogName": "Kataryna",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Abyssrooster",
+            "Entries": {
+                "spring": "900 EastScarp_KatarynaBackyard 33 14 1 square_3_5/1800 EastScarp_KatarynaHouse 4 28 0 abyss_perch",
+                "Mon": "a900 ArchaeologyHouse 4 12 0 square_5_3/1130 Forest 73 50 2/1730 Saloon 13 20 0 abyss_perch/2100 EastScarp_KatarynaBackyard 33 14 1",
+                "summer_Mon": "a900 ArchaeologyHouse 4 12 0 square_5_3/1130 Beach 84 40 2/1800 Saloon 13 20 2 abyss_perch/2100 EastScarp_KatarynaBackyard 33 14 1",
+                "fall_Mon": "a900 ArchaeologyHouse 4 12 0 square_5_3/1030 Mountain 54 7 0/1400 Mountain 77 9 3/1800 Saloon 13 20 2 abyss_perch/2100 EastScarp_KatarynaBackyard 33 14 1",
+                "winter_Mon": "a900 ArchaeologyHouse 4 12 0 square_5_3/1230 Saloon 13 20 2 abyss_perch/1600 Beach 25 14 2 square_5_5/1940 EastScarp_KatarynaBackyard 33 14 1"
+            },
+            "When": {
+                "HasSeenEvent |contains=57876033": true,
+                "Spouse: AnyPlayer |contains=KatarynaLK": false
+            }
+        },
+    ]
+}

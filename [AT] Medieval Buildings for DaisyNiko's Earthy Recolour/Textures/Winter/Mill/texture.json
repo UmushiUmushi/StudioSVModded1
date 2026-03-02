@@ -1,0 +1,8 @@
+{
+	"ItemName": "Mill",
+	"Type": "Building",
+		"Seasons": ["Winter"],
+	"TextureWidth": 224,
+	"TextureHeight": 128,
+	"Variations": 6,
+}

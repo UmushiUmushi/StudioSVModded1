@@ -1,0 +1,31 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":
+				{
+					"Wed10": "Hey @. Um... I just wanted to say... You look nice today.$10",
+					"event_snack1": "{{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'re right... That's what happened.$s",
+					"event_snack3": "What!? {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'re lying!$a"
+				},
+			"LogName": "Fix Sam - Plural"
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sam",
+			"Entries":
+				{
+					"Wed10": "Hey @. Um... I just wanted to say... You look nice today.$10",
+					"event_snack1": "{{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'s right... That's what happened.$s",
+					"event_snack3": "What!? {{Random: {{Hana.GNMTokens/SubjectivePronoun}} }}'s lying!$a"
+				},
+			"LogName": "Fix Sam - Singular",
+			"When": 
+				{
+					"Hana.GNMTokens/Singular": true
+				}
+		}
+	]
+}

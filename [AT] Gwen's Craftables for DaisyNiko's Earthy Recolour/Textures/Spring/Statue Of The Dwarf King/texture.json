@@ -1,0 +1,14 @@
+{
+	"ItemName": "Statue Of The Dwarf King",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Spring", "Summer", "Fall"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		},
+	]
+}

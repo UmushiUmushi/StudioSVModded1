@@ -1,0 +1,11 @@
+{
+  "TaxPercent": 100,
+  "RenderHUD": true,
+  "ShowHUDInMenus": true,
+  "HUDX": 0,
+  "HUDY": 200,
+  "WithdrawFromPublicAccount": "Down, LeftStick + DPadDown",
+  "DepositToPublicAccount": "Up, LeftStick + DPadUp",
+  "IncreaseTransferAmount": "Left, LeftStick + DPadLeft",
+  "DecreaseTransferAmount": "Right, LeftStick + DPadRight"
+}

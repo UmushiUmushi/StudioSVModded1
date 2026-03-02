@@ -1,0 +1,13 @@
+{
+  "Name": "b0rszcz's witchy decor",
+  "Author": "b0rszcz",
+  "Version": "1.0.0",
+  "Description": "b0rszcz's witchy decor for the Alternative Texture framework",
+  "UniqueID": "borszcz.witchy.decor",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.AlternativeTextures",
+    "MinimumVersion": "3.3.2"
+  }
+}

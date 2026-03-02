@@ -1,0 +1,106 @@
+{
+    "Changes": [
+        {
+            "LogName": "Kennedy Introduces herself",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/KennedyLK",
+            "When": {
+                "HasSeenEvent": "57873000",
+                "HasFlag |contains=KennedyIntroduction": false,
+                "Relationship:OliverK": "Friendly",
+                "HasSeenEvent |contains=57871400": false,
+            },
+            "Entries": {
+                "{{season}}_{{day}}": "$1 KennedyIntroduction#{{i18n:Kennedy_KennedyIntroduction}}",
+                "{{season}}_{{day}}_2": "$1 KennedyIntroduction#{{i18n:Kennedy_KennedyIntroduction}}"
+            }
+        },
+        {
+            "LogName": "Kennedy's non-ES dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/KennedyLK",
+            "Entries": {
+                //"Introduction": "Hey, you know Olly right? I'm Kennedy, the cool best friend. He sure as hell better have mentioned me!$1",
+                "Resort_Entering": "{{i18n:Kennedy_Resort_Entering}}",
+                "Resort_Leaving": "{{i18n:Kennedy_Resort_Leaving}}",
+                "Resort_Shore": "{{i18n:Kennedy_Resort_Shore}}",
+                "Resort_Umbrella": "{{i18n:Kennedy_Resort_Umbrella}}",
+                "Resort_Wander": "{{i18n:Kennedy_Resort_Wander}}",
+                "Resort_Bar": "{{i18n:Kennedy_Resort_Bar}}",
+                "Resort": "{{i18n:Kennedy_Resort}}",
+                "Mon": "{{i18n:Kennedy_Mon}}",
+                "Mon2": "{{i18n:Kennedy_Mon2}}",
+                "Tue": "{{i18n:Kennedy_Tue}}",
+                "Wed": "{{i18n:Kennedy_Wed}}",
+                "Wed4": "{{i18n:Kennedy_Wed4}}",
+                "Wed6": "{{i18n:Kennedy_Wed6}}",
+                "Thu": "{{i18n:Kennedy_Thu}}",
+                "Fri": "{{i18n:Kennedy_Fri}}",
+                "fall_Fri": "{{i18n:Kennedy_fall_Fri}}",
+                "Sat": "{{i18n:Kennedy_Sat}}",
+                "fall_Sat": "{{i18n:Kennedy_fall_Sat}}",
+                "winter_Sat": "{{i18n:Kennedy_winter_Sat}}",
+                "summer_Sat6": "{{i18n:Kennedy_summer_Sat6}}",
+                "summer_Sat2": "{{i18n:Kennedy_summer_Sat2}}",
+                "Sat6": "{{i18n:Kennedy_Sat6}}",
+                "Sun": "{{i18n:Kennedy_Sun}}",
+                "Sun2": "{{i18n:Kennedy_Sun2}}",
+                "winter_Sun2": "{{i18n:Kennedy_winter_Sun2}}",
+                "summer_Sun2": "{{i18n:Kennedy_summer_Sun2}}",
+                "fall_Sun": "{{i18n:Kennedy_fall_Sun}}",
+                //"Sun10": "",
+                //"summer_Sun": "",
+                /* "summer_Sat4": "",
+                "summer_Sun4": "",
+                "summer_Sat6": "",
+                "summer_Sun6": "",
+                "summer_Sat8": "",
+                "summer_Sun8": "",
+                "summer_Sat10": "",
+                "summer_Sun10": "",*/
+                /*"fall_Sun2": "",
+                "fall_Sat4": "",
+                "fall_Sun4": "",
+                "fall_Sat6": "",
+                "fall_Sun6": "",
+                "fall_Sat8": "",
+                "fall_Sun8": "",
+                "fall_Sat10": "",
+                "fall_Sun10": "",
+                "winter_Sat": "",
+                "winter_Sun": "",
+                "winter_Sat2": "",
+                "winter_Sun2": "",
+                "winter_Sat4": "",
+                "winter_Sun4": "",
+                "winter_Sat6": "",
+                "winter_Sun6": "",
+                "winter_Sat8": "",
+                "winter_Sun8": "",
+                "winter_Sat10": "",
+                "winter_Sun10": "",*/
+            }
+        },
+        {
+            "LogName": "Kennedy's Scarp related dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/KennedyLK",
+            "When": {
+                "Day": "12,13,14",
+                "HasSeenEvent": "57871400"
+            },
+            "Entries": {
+                "Fri": "{{i18n:Kennedy_Scarp_Fri}}",
+                "Sat": "{{i18n:Kennedy_Scarp_Sat}}",
+                "Sat4": "{{i18n:Kennedy_Scarp_Sat4}}",
+                "Sun": "{{i18n:Kennedy_Scarp_Sun}}",
+                "Sun6": "{{i18n:Kennedy_Scarp_Sun6}}",
+                "summer_Fri2": "{{i18n:Kennedy_Scarp_summer_Fri2}}",
+                "winter_Fri2": "{{i18n:Kennedy_Scarp_winter_Fri2}}",
+                "fall_Sat2": "{{i18n:Kennedy_Scarp_fall_Sat2}}",
+                "fall_Sat4": "{{i18n:Kennedy_Scarp_fall_Sat4}}",
+                "fall_Sun2": "{{i18n:Kennedy_Scarp_fall_Sun2}}",
+            }
+        }
+    ]
+}

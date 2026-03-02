@@ -1,0 +1,33 @@
+{
+  "ItemName": "Duck",
+  "Type": "Character",
+  "TextureWidth": 64,
+  "TextureHeight": 224,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0,
+    },
+    {
+      "Id": 0,
+      "Keywords": [ "Black" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Brown" ]
+    },
+    {
+      "Id": 2,
+      "Keywords": [ "Mallard" ]
+    },
+    {
+      "Id": 3,
+      "Keywords": [ "White" ]
+    },
+ {
+      "Id": 4,
+      "Keywords": [ "Void" ]
+    }
+
+  ]
+}

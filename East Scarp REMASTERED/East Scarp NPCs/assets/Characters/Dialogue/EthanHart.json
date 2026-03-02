@@ -1,0 +1,99 @@
+{
+	"Changes": [
+		{
+			"LogName": "Question Dialogue",
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/EthanHart",
+			"Entries": {
+				"Introduction": "{{i18n:Ethan_Introduction}}",
+				"ESIntroduction": "$1 EthanHart_Introduction#{{i18n:Ethan_ESIntroduction}}#$e#{{i18n:Ethan_Mon}}",
+				"HartResidence_1_13": "{{i18n:Ethan_HartResidence_1_13}}",
+				"HartResidence_5_13": "{{i18n:Ethan_HartResidence_5_13}}",
+				"cc_Complete": "{{i18n:Ethan_cc_Complete}}",
+				"movieTheater": "{{i18n:Ethan_movieTheater}}",
+				"spring_1": "{{i18n:Ethan_spring_1}}",
+				"spring_12": "{{i18n:Ethan_spring_12}}",
+				"spring_18": "{{i18n:Ethan_spring_18}}",
+				"spring_23": "{{i18n:Ethan_spring_23}}",
+				"fall_11": "{{i18n:Ethan_fall_11}}",
+				"winter_1": "{{i18n:Ethan_winter_1}}",
+				"Mon": "{{i18n:Ethan_Mon}}",
+				"Mon2": "{{i18n:Ethan_Mon2}}",
+				"Mon6": "{{i18n:Ethan_Mon6}}",
+				"fall_Mon6": "{{i18n:Ethan_fall_Mon6}}",
+				"summer_Mon6": "{{i18n:Ethan_summer_Mon6}}",
+				"winter_Mon10": "{{i18n:Ethan_winter_Mon10}}",
+				"Tue": "{{i18n:Ethan_Tue}}",
+				"Tue4": "{{i18n:Ethan_Tue4}}",
+				"Tue8": "{{i18n:Ethan_Tue8}}",
+				"winter_Tue8": "{{i18n:Ethan_winter_Tue8}}",
+				"fall_Tue6": "{{i18n:Ethan_fall_Tue6}}",
+				"Tue10": "{{i18n:Ethan_Tue10}}",
+				"Wed": "{{i18n:Ethan_Wed}}",
+				"Wed4": "{{i18n:Ethan_Wed4}}",
+				"spring_Wed10": "{{i18n:Ethan_spring_Wed10}}",
+				"summer_Wed8": "{{i18n:Ethan_summer_Wed8}}",
+				"spring_Wed4": "{{i18n:Ethan_spring_Wed4}}",
+				"winter_Wed8": "{{i18n:Ethan_winter_Wed8}}",
+				"Thu": "{{i18n:Ethan_Thu}}",
+				"Thu4": "{{i18n:Ethan_Thu4}}",
+				"Thu8": "{{i18n:Ethan_Thu8}}",
+				"winter_Thu8": "{{i18n:Ethan_winter_Thu8}}",
+				"summer_Thu6": "{{i18n:Ethan_summer_Thu6}}",
+				"fall_Thu8": "{{i18n:Ethan_fall_Thu8}}",
+				"Fri": "{{i18n:Ethan_Fri}}",
+				"Fri4": "{{i18n:Ethan_Fri4}}",
+				"Fri6": "{{i18n:Ethan_Fri6}}",
+				"summer_Fri8": "{{i18n:Ethan_summer_Fri8}}",
+				"winter_Fri8": "{{i18n:Ethan_winter_Fri8}}",
+				"Sat": "{{i18n:Ethan_Sat}}",
+				"Sat4": "{{i18n:Ethan_Sat4}}",
+				"spring_Sat4": "{{i18n:Ethan_spring_Sat4}}",
+				"summer_Sat4": "{{i18n:Ethan_summer_Sat4}}",
+				"Sun": "{{i18n:Ethan_Sun}}",
+				"Sun4": "{{i18n:Ethan_Sun4}}",
+				"fall_Sat4": "{{i18n:Ethan_fall_Sat4}}",
+				"summer_Sun4": "{{i18n:Ethan_summer_Sun4}}",
+				"fall_Sun6": "{{i18n:Ethan_fall_Sun6}}",
+				"Sun10": "{{i18n:Ethan_Sun10}}",
+				"ScarfAroundLampPost": "{{i18n:Ethan_ScarfAroundLampPost}}",
+				"EthanBackToSchool":"{{i18n:Ethan_EthanBackToSchool}}"
+				//Event Dialogues
+				/*
+				"How do I put it, mom is like sun shine and sometimes she shines bit too bright?"
+				"I like going around and find some forage.#$e# I found the activity very calming."
+				"Just so you know, ",	
+
+				"My dad is a good man. I can tell he really loves mom and us.",
+
+				
+				"summer_Thu.000": "This place is so nice. #$b#It's like... Emm, you just got a nice feeling when you stand here and enjoy. $1",
+				//"Sat.000": "$c 0.7#Hey Dusty looks happy today! $1"
+
+				6 hearts
+				"Dad surely takes me seriously, but it felt like... How is it, hmm, it's like he is just blabbering a lot...",
+				"I believe he cares",
+				"He might find it difficult to say",
+				"You ungrateful son",
+
+				"Flip floppy, I guessed I've been called that before. I realize I'm not the most assertive person in the room, usually.",
+				*/
+			}
+		},
+		{
+			"LogName": "Strings Dialogue",
+			"Action": "EditData",
+			"Target": "Strings/schedules/EthanHart",
+			"Entries": {
+				"spring.000a": "{{i18n:Strings.Ethan.spring.000a}}",
+				"spring.000b": "{{i18n:Strings.Ethan.spring.000b}}",
+				"spring.000c": "{{i18n:Strings.Ethan.spring.000c}}",
+				"rain2.000": "{{i18n:Strings.Ethan.rain2.000}}",
+				"winter_15.000": "{{i18n:Strings.Ethan.winter_15.000}}",
+				"winter_15.001": "{{i18n:Strings.Ethan.winter_15.001}}",
+				"winter_16.000": "{{i18n:Strings.Ethan.winter_16.000}}",
+				"winter_16.001": "{{i18n:Strings.Ethan.winter_16.001}}",
+			}
+		}
+	]
+}

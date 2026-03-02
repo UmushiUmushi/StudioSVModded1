@@ -1,0 +1,29 @@
+{
+	"ItemName": "Junimo Chest",
+	"Type": "Craftable",
+		"Keywords": ["Gwen"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors-Bronze",
+		"Keywords": ["Bronze", "Indoors"],
+		},
+		{
+		"Id": 1,
+		"Name": "2-Bronze",
+		"Keywords": ["Bronze"],
+		},
+		{
+		"Id": 2,
+		"Name": "1-Indoors-Steel",
+		"Keywords": ["Steel", "Indoors"],
+		},
+		{
+		"Id": 3,
+		"Name": "2-Steel",
+		"Keywords": ["Steel"],
+		},
+	]
+}

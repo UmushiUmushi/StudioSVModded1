@@ -1,0 +1,2325 @@
+{
+  "Format": "2.3.0",
+  
+  "ConfigSchema": {
+	"Palette": {"AllowValues": "Elle, Earthy, Starblue, Wittily",
+		"Default": "Elle"},
+	"Map Buildings": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Alex's House": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Elliot's House": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Emily and Haley's House": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Leah's House": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Linus's Tent": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Mayor Lewis's House": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Pam's Trailer": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Pam's House Upgrade": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Sam's House": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Adventurer's Guild": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Blacksmith Shop": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Carpenter Shop": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Fish Shop": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Marnie's Ranch": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Pierre's General Store and Clinic": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Stardrop Saloon": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Bathhouse": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Bus": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Dusty's Doghouse": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Hat Mouse House": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Community Center Incomplete": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Community Center Complete": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Jojamart": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Movie Theatre": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Museum and Library": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Oasis Shop": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Railroad Station": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Witch's Hut": {"AllowValues": "True, False",
+		"Default": "True"},
+	"Wizard's Tower": {"AllowValues": "True, False",
+		"Default": "True"},
+	},
+	
+  "Changes": [
+  
+  
+	   // Alex's House
+	   {
+          "LogName": "Alex 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Alex_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 0, "Width": 48, "Height": 16 }, 
+          "ToArea": { "X": 288, "Y": 16, "Width": 48, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Alex's House": "True",
+			}
+       },
+	   {
+          "LogName": "Alex 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Alex_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 16, "Width": 96, "Height": 16 }, 
+          "ToArea": { "X": 256, "Y": 32, "Width": 96, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Alex's House": "True",
+			}
+       },
+	   {
+          "LogName": "Alex 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Alex_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 32, "Width": 144, "Height": 128 }, 
+          "ToArea": { "X": 256, "Y": 48, "Width": 144, "Height": 128 },
+          "PatchMode": "Replace",
+			"When": {
+			"Alex's House": "True",
+			}
+       },
+	   {
+          "LogName": "Alex Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Alex_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Alex's House": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Alex Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Alex_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Alex's House": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Bathhouse
+	   {
+          "LogName": "Bath 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Bath_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 256, "Height": 192 }, 
+          "ToArea": { "X": 0, "Y": 848, "Width": 256, "Height": 192 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bathhouse": "True",
+			}
+       },
+	   {
+          "LogName": "Bath 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Bath_{{season}}.png",
+          "FromArea": { "X": 256, "Y": 48, "Width": 128, "Height": 48 }, 
+          "ToArea": { "X": 256, "Y": 896, "Width": 128, "Height": 48 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bathhouse": "True",
+			}
+       },
+	   {
+          "LogName": "Bath 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Bath_{{season}}.png",
+          "FromArea": { "X": 256, "Y": 96, "Width": 64, "Height": 48 }, 
+          "ToArea": { "X": 256, "Y": 944, "Width": 64, "Height": 48 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bathhouse": "True",
+			}
+       },
+	   {
+          "LogName": "Bath 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Bath_{{season}}.png",
+          "FromArea": { "X": 256, "Y": 0, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 240, "Y": 48, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bathhouse": "True",
+			}
+       },
+	   {
+          "LogName": "Bath Map",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Bath_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Bathhouse": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Bath Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Bath_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Bathhouse": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Blacksmith Shop
+	   {
+          "LogName": "Blacksmith 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Blacksmith_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 80, "Height": 128 }, 
+          "ToArea": { "X": 400, "Y": 0, "Width": 80, "Height": 128 },
+          "PatchMode": "Replace",
+			"When": {
+			"Blacksmith Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Blacksmith 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Blacksmith_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 16, "Width": 32, "Height": 48 }, 
+          "ToArea": { "X": 480, "Y": 16, "Width": 32, "Height": 48 },
+          "PatchMode": "Replace",
+			"When": {
+			"Blacksmith Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Blacksmith 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Blacksmith_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 64, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 480, "Y": 64, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Blacksmith Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Blacksmith 4",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Blacksmith_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 64, "Width": 15, "Height": 16 }, 
+          "ToArea": { "X": 302, "Y": 1946, "Width": 15, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Blacksmith Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Blacksmith 5",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Blacksmith_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 96, "Width": 20, "Height": 18 }, 
+          "ToArea": { "X": 643, "Y": 1305, "Width": 20, "Height": 18 },
+          "PatchMode": "Replace",
+			"When": {
+			"Blacksmith Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Blacksmith 5",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Blacksmith_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 96, "Width": 20, "Height": 18 }, 
+          "ToArea": { "X": 304, "Y": 256, "Width": 20, "Height": 18 },
+          "PatchMode": "Replace",
+			"When": {
+			"Blacksmith Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Blacksmith Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Blacksmith_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Blacksmith Shop": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Blacksmith Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Blacksmith_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Blacksmith Shop": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Bus
+	   {
+          "LogName": "Bus 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Bus_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 64 }, 
+          "ToArea": { "X": 0, "Y": 592, "Width": 128, "Height": 64 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bus": "True",
+			}
+       },
+	   {
+          "LogName": "Bus 2",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Bus_{{season}}.png",
+          "FromArea": { "X": 128, "Y": 0, "Width": 128, "Height": 83 }, 
+          "ToArea": { "X": 288, "Y": 1247, "Width": 128, "Height": 83 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bus": "True",
+			}
+       },
+	   {
+          "LogName": "Bus 3",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Bus_{{season}}.png",
+          "FromArea": { "X": 128, "Y": 83, "Width": 96, "Height": 19 }, 
+          "ToArea": { "X": 288, "Y": 1330, "Width": 96, "Height": 19 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bus": "True",
+			}
+       },
+	   {
+          "LogName": "Bus 4",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors2",
+          "FromFile": "assets/{{Palette}}/Bus_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 64, "Width": 21, "Height": 41 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 21, "Height": 41 },
+          "PatchMode": "Replace",
+			"When": {
+			"Bus": "True",
+			}
+       },
+	   {
+          "LogName": "Bus Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Bus_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Bus": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Bus Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Bus_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Bus": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   {
+          "LogName": "Bus Map Spring Ranching",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Farm_ranching_map",
+          "FromFile": "assets/{{Palette}}/Bus_map.png",
+          "FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Bus": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Bus Map Seasons Ranching",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Farm_ranching_map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Bus_map.png",
+          "FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Bus": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Carpenter Shop
+	   {
+          "LogName": "Carpenter 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 16, "Y": 0, "Width": 128, "Height": 16 }, 
+          "ToArea": { "X": 192, "Y": 400, "Width": 128, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 16, "Width": 112, "Height": 32 }, 
+          "ToArea": { "X": 176, "Y": 416, "Width": 112, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 48, "Width": 144, "Height": 32 }, 
+          "ToArea": { "X": 176, "Y": 448, "Width": 144, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 48, "Y": 80, "Width": 112, "Height": 80 }, 
+          "ToArea": { "X": 224, "Y": 480, "Width": 112, "Height": 80 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 5",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 144, "Y": 96, "Width": 96, "Height": 96 }, 
+          "ToArea": { "X": 256, "Y": 992, "Width": 96, "Height": 96 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 6",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 64, "Y": 160, "Width": 96, "Height": 32 }, 
+          "ToArea": { "X": 240, "Y": 560, "Width": 96, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 7",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 224, "Y": 0, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 144, "Y": 576, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 8",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 48, "Height": 32 }, 
+          "ToArea": { "X": 176, "Y": 480, "Width": 48, "Height": 32 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 9",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 48, "Y": 160, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 224, "Y": 560, "Width": 16, "Height": 32 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 10",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 96, "Y": 112, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 336, "Y": 464, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter 11",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 96, "Y": 112, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 336, "Y": 480, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter Cursors 1",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 10 }, 
+          "ToArea": { "X": 276, "Y": 1857, "Width": 48, "Height": 10 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter Cursors 2",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 2, "Height": 18 }, 
+          "ToArea": { "X": 276, "Y": 1867, "Width": 2, "Height": 18 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter Cursors 3",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Carpenter_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 3, "Height": 18 }, 
+          "ToArea": { "X": 321, "Y": 1867, "Width": 3, "Height": 18 },
+          "PatchMode": "Replace",
+			"When": {
+			"Carpenter Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Carpenter_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Carpenter Shop": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Carpenter Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Carpenter_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Carpenter Shop": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+	   // Community Center Incomplete
+	   {
+          "LogName": "CC Incomplete 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/CC Incomplete_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 192, "Height": 112 }, 
+          "ToArea": { "X": 0, "Y": 640, "Width": 192, "Height": 112 },
+          "PatchMode": "Replace",
+			"When": {
+			"Community Center Incomplete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Incomplete 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/CC Incomplete_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 156, "Width": 192, "Height": 4 }, 
+          "ToArea": { "X": 0, "Y": 796, "Width": 192, "Height": 4 },
+          "PatchMode": "Replace",
+			"When": {
+			"Community Center Incomplete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Incomplete 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/CC Incomplete_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 112, "Width": 192, "Height": 44 }, 
+          "ToArea": { "X": 0, "Y": 752, "Width": 192, "Height": 44 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Incomplete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Incomplete Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/CC Incomplete_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Incomplete": "True",
+			"IsCommunityCenterComplete": "False",
+			"IsJojaMartComplete": "False",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "CC Incomplete Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/CC Incomplete_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Incomplete": "True",
+			"IsCommunityCenterComplete": "False",
+			"IsJojaMartComplete": "False",
+			"Map Buildings": "True",
+			}
+       },
+  
+	   // Community Center Complete
+	   {
+          "LogName": "CC Complete 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/CC Complete_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 192, "Height": 112 }, 
+          "ToArea": { "X": 192, "Y": 640, "Width": 192, "Height": 112 },
+          "PatchMode": "Replace",
+			"When": {
+			"Community Center Complete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Complete 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/CC Complete_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 156, "Width": 192, "Height": 4 }, 
+          "ToArea": { "X": 192, "Y": 796, "Width": 192, "Height": 4 },
+          "PatchMode": "Replace",
+			"When": {
+			"Community Center Complete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Complete 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/CC Complete_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 112, "Width": 192, "Height": 44 }, 
+          "ToArea": { "X": 192, "Y": 752, "Width": 192, "Height": 44 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Complete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Complete Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/CC Complete_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Complete": "True",
+			"IsCommunityCenterComplete": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "CC Complete Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/CC Complete_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Complete": "True",
+			"IsCommunityCenterComplete": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+	   // Community Center Joja
+	   {
+          "LogName": "CC Joja 1",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/CC Joja_{{season}}.png",
+          "FromArea": { "X": 9, "Y": 59, "Width": 174, "Height": 101 }, 
+          "ToArea": { "X": 424, "Y": 1275, "Width": 174, "Height": 101 },
+          "PatchMode": "Replace",
+			"When": {
+			"Community Center Complete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Joja 2",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/CC Joja_{{season}}.png",
+          "FromArea": { "X": 9, "Y": 59, "Width": 174, "Height": 25 }, 
+          "ToArea": { "X": 66, "Y": 1678, "Width": 174, "Height": 25 },
+          "PatchMode": "Replace",
+			"When": {
+			"Community Center Complete": "True",
+			}
+       },
+	   {
+          "LogName": "CC Joja Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/CC Joja_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Complete": "True",
+			"IsJojaMartComplete": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "CC Joja Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/CC Joja_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Community Center Complete": "True",
+			"IsJojaMartComplete": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   // Dusty's Upgraded Doghouse
+	   {
+          "LogName": "Dusty 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Dusty_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 32 }, 
+          "ToArea": { "X": 320, "Y": 992, "Width": 48, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Dusty's Doghouse": "True",
+			}
+       },
+	   {
+          "LogName": "Dusty 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Dusty_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 32, "Width": 96, "Height": 16 }, 
+          "ToArea": { "X": 320, "Y": 1024, "Width": 96, "Height": 16 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Dusty's Doghouse": "True",
+			}
+       },
+	   {
+          "LogName": "Dusty 3",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Dusty Dog_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 72, "Height": 40 }, 
+          "ToArea": { "X": 324, "Y": 1916, "Width": 72, "Height": 40 },
+          "PatchMode": "Replace",
+			"When": {
+			"Dusty's Doghouse": "True",
+			}
+       },
+  
+	   // Elliot's House
+	   {
+          "LogName": "Elliot 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_beach",
+          "FromFile": "assets/{{Palette}}/Elliot_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 80, "Height": 112 }, 
+          "ToArea": { "X": 0, "Y": 192, "Width": 80, "Height": 112 },
+          "PatchMode": "Replace",
+			"When": {
+			"Elliot's House": "True",
+			}
+       },
+	   {
+          "LogName": "Elliot Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Elliot_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Elliot's House": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Elliot Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Elliot_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Elliot's House": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Emily and Haley's House
+	   {
+          "LogName": "Sisters 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Sisters_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 96 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 128, "Height": 96 },
+          "PatchMode": "Replace",
+			"When": {
+			"Emily and Haley's House": "True",
+			}
+       },
+	   {
+          "LogName": "Sisters 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Sisters_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 96, "Width": 128, "Height": 48 }, 
+          "ToArea": { "X": 0, "Y": 96, "Width": 128, "Height": 48 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Emily and Haley's House": "True",
+			}
+       },
+	   {
+          "LogName": "Sisters Map",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Sisters_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Emily and Haley's House": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Sisters Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Sisters_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Emily and Haley's House": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Fish Shop
+	   {
+          "LogName": "Fish 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_beach",
+          "FromFile": "assets/{{Palette}}/Fish_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 160, "Height": 96 }, 
+          "ToArea": { "X": 0, "Y": 336, "Width": 160, "Height": 96 },
+          "PatchMode": "Replace",
+			"When": {
+			"Fish Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Fish 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_beach",
+          "FromFile": "assets/{{Palette}}/Fish_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 96, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 0, "Y": 432, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Fish Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Fish 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_beach",
+          "FromFile": "assets/{{Palette}}/Fish_{{season}}.png",
+          "FromArea": { "X": 144, "Y": 96, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 144, "Y": 432, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Fish Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Fish 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_beach",
+          "FromFile": "assets/{{Palette}}/Fish_{{season}}.png",
+          "FromArea": { "X": 16, "Y": 96, "Width": 128, "Height": 32 }, 
+          "ToArea": { "X": 16, "Y": 432, "Width": 128, "Height": 32 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Fish Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Fish 5",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_beach",
+          "FromFile": "assets/{{Palette}}/Fish_{{season}}.png",
+          "FromArea": { "X": 16, "Y": 128, "Width": 128, "Height": 32 }, 
+          "ToArea": { "X": 16, "Y": 464, "Width": 128, "Height": 32 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Fish Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Fish 6",
+          "Action": "EditImage",
+          "Target": "Maps/night_market_tilesheet_objects",
+          "FromFile": "assets/{{Palette}}/Fish_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 80, "Width": 48, "Height": 32 }, 
+          "ToArea": { "X": 1088, "Y": 240, "Width": 48, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Fish Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Fish Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Fish_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Fish Shop": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Fish Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Fish_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Fish Shop": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Adventurer's Guild
+	   {
+          "LogName": "Guild 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Guild_{{season}}.png",
+          "FromArea": { "X": 16, "Y": 0, "Width": 96, "Height": 32 }, 
+          "ToArea": { "X": 144, "Y": 592, "Width": 96, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Adventurer's Guild": "True",
+			}
+       },
+	   {
+          "LogName": "Guild 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Guild_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 32, "Width": 112, "Height": 128 }, 
+          "ToArea": { "X": 128, "Y": 624, "Width": 112, "Height": 128 },
+          "PatchMode": "Replace",
+			"When": {
+			"Adventurer's Guild": "True",
+			}
+       },
+	   {
+          "LogName": "Guild Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Guild_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Adventurer's Guild": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Guild Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Guild_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Adventurer's Guild": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Hat Mouse
+	   {
+          "LogName": "Mouse 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Mouse_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 16, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 336, "Y": 1120, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Hat Mouse House": "True",
+			}
+       },
+	   {
+          "LogName": "Mouse 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Mouse_{{season}}.png",
+          "FromArea": { "X": 48, "Y": 0, "Width": 64, "Height": 32 }, 
+          "ToArea": { "X": 336, "Y": 1136, "Width": 64, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Hat Mouse House": "True",
+			}
+       },
+	   {
+          "LogName": "Mouse 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Mouse_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 32, "Width": 80, "Height": 96 }, 
+          "ToArea": { "X": 320, "Y": 1168, "Width": 80, "Height": 96 },
+          "PatchMode": "Replace",
+			"When": {
+			"Hat Mouse House": "True",
+			}
+       },
+	   {
+          "LogName": "Mouse 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Mouse_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 64, "Width": 32, "Height": 64 }, 
+          "ToArea": { "X": 288, "Y": 1200, "Width": 32, "Height": 64 },
+          "PatchMode": "Replace",
+			"When": {
+			"Hat Mouse House": "True",
+			}
+       },
+	   {
+          "LogName": "Mouse Wittily",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Mouse_map.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 }, 
+          "ToArea": { "X": 600, "Y": 1957, "Width": 64, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Hat Mouse House": "True",
+			"Palette": "Wittily",
+			}
+       },
+	   {
+          "LogName": "Mouse 5",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Cursors",
+          "FromFile": "assets/{{Palette}}/Mouse Cursors_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 59, "Height": 31 }, 
+          "ToArea": { "X": 605, "Y": 1958, "Width": 59, "Height": 31 },
+          "PatchMode": "Replace",
+			"When": {
+			"Hat Mouse House": "True",
+			}
+       },
+	   {
+          "LogName": "Mouse Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Mouse_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Hat Mouse House": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Mouse Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Mouse_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Hat Mouse House": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Jojamart
+	   {
+          "LogName": "Joja 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Jojamart_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 192, "Height": 160 }, 
+          "ToArea": { "X": 0, "Y": 832, "Width": 192, "Height": 160 },
+          "PatchMode": "Replace",
+			"When": {
+			"Jojamart": "True",
+			}
+       },
+	   {
+          "LogName": "Joja 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Jojamart_{{season}}.png",
+          "FromArea": { "X": 320, "Y": 0, "Width": 192, "Height": 160 }, 
+          "ToArea": { "X": 320, "Y": 832, "Width": 192, "Height": 160 },
+          "PatchMode": "Replace",
+			"When": {
+			"Jojamart": "True",
+			}
+       },
+	   {
+          "LogName": "Joja 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Jojamart_{{season}}.png",
+          "FromArea": { "X": 192, "Y": 32, "Width": 128, "Height": 128 }, 
+          "ToArea": { "X": 192, "Y": 864, "Width": 128, "Height": 128 },
+          "PatchMode": "Overlay",
+		  "When": {
+			"Jojamart": "True",
+			"Season": "winter",
+		  }
+       },
+	   {
+          "LogName": "Joja Door",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Joja Door_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 32, "Height": 32 }, 
+          "ToArea": { "X": 256, "Y": 992, "Width": 32, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Jojamart": "True",
+			}
+       },
+	   {
+          "LogName": "Joja Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Jojamart_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Jojamart": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Joja Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Jojamart_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Jojamart": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Leah's House
+	   {
+          "LogName": "Leah 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Leah_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 80, "Height": 16 }, 
+          "ToArea": { "X": 240, "Y": 736, "Width": 80, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Leah's House": "True",
+			}
+       },
+	   {
+          "LogName": "Leah 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Leah_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 16, "Width": 80, "Height": 80 }, 
+          "ToArea": { "X": 64, "Y": 512, "Width": 80, "Height": 80 },
+          "PatchMode": "Replace",
+			"When": {
+			"Leah's House": "True",
+			}
+       },
+	   {
+          "LogName": "Leah 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Leah_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 0, "Width": 48, "Height": 48 }, 
+          "ToArea": { "X": 320, "Y": 736, "Width": 48, "Height": 48 },
+          "PatchMode": "Replace",
+			"When": {
+			"Leah's House": "True",
+			}
+       },
+	   {
+          "LogName": "Leah 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Leah_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 48, "Width": 48, "Height": 32 }, 
+          "ToArea": { "X": 224, "Y": 752, "Width": 48, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Leah's House": "True",
+			}
+       },
+	   {
+          "LogName": "Leah 5",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Leah_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 80, "Width": 48, "Height": 32 }, 
+          "ToArea": { "X": 272, "Y": 752, "Width": 48, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Leah's House": "True",
+			}
+       },
+	   {
+          "LogName": "Leah Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Leah_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Leah's House": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Leah Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Leah_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Leah's House": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Linus's Tent
+	   {
+          "LogName": "Linus 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Linus_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 80 }, 
+          "ToArea": { "X": 224, "Y": 96, "Width": 48, "Height": 80 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Linus's Tent": "True",
+			}
+       },
+	   {
+          "LogName": "Linus Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Linus_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Linus's Tent": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Linus Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Linus_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Linus's Tent": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Marnie's Ranch
+	   {
+          "LogName": "Ranch 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 16, "Width": 48, "Height": 80 }, 
+          "ToArea": { "X": 352, "Y": 96, "Width": 48, "Height": 80 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 48, "Y": 0, "Width": 48, "Height": 48 }, 
+          "ToArea": { "X": 144, "Y": 1216, "Width": 48, "Height": 48 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 96, "Y": 16, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 352, "Y": 64, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 48, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 272, "Y": 160, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 5",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 96, "Y": 48, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 384, "Y": 64, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 6",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 80, "Width": 32, "Height": 16 }, 
+          "ToArea": { "X": 320, "Y": 160, "Width": 32, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 7",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 144, "Y": 16, "Width": 48, "Height": 64 }, 
+          "ToArea": { "X": 352, "Y": 0, "Width": 48, "Height": 64 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 8",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 144, "Y": 80, "Width": 32, "Height": 16 }, 
+          "ToArea": { "X": 320, "Y": 112, "Width": 32, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 9",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 48, "Y": 48, "Width": 32, "Height": 48 }, 
+          "ToArea": { "X": 320, "Y": 64, "Width": 32, "Height": 48 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 10",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 112, "Y": 0, "Width": 32, "Height": 32 }, 
+          "ToArea": { "X": 288, "Y": 112, "Width": 32, "Height": 32 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch 11",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Ranch_{{season}}.png",
+          "FromArea": { "X": 112, "Y": 32, "Width": 32, "Height": 64 }, 
+          "ToArea": { "X": 0, "Y": 784, "Width": 32, "Height": 64 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Marnie's Ranch": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Ranch_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Marnie's Ranch": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Ranch_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Marnie's Ranch": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   {
+          "LogName": "Ranch Map Spring Ranching",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Farm_ranching_map",
+          "FromFile": "assets/{{Palette}}/Ranch_map.png",
+          "FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Marnie's Ranch": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Ranch Map Seasons Ranching",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Farm_ranching_map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Ranch_map.png",
+          "FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Marnie's Ranch": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Mayor Lewis's House
+	   {
+          "LogName": "Mayor 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Mayor_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 16, "Width": 144, "Height": 158 }, 
+          "ToArea": { "X": 352, "Y": 192, "Width": 144, "Height": 158 },
+          "PatchMode": "Replace",
+			"When": {
+			"Mayor Lewis's House": "True",
+			}
+       },
+	   {
+          "LogName": "Mayor 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Mayor_{{season}}.png",
+          "FromArea": { "X": 48, "Y": 0, "Width": 96, "Height": 16 }, 
+          "ToArea": { "X": 400, "Y": 176, "Width": 96, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Mayor Lewis's House": "True",
+			}
+       },
+	   {
+          "LogName": "Mayor 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Mayor_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 174, "Width": 144, "Height": 34 }, 
+          "ToArea": { "X": 352, "Y": 350, "Width": 144, "Height": 34 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Mayor Lewis's House": "True",
+			}
+       },
+	   {
+          "LogName": "Mayor Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Mayor_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Mayor Lewis's House": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Mayor Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Mayor_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Mayor Lewis's House": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Movie Theatre
+	   {
+          "LogName": "Theatre 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Theatre_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 256, "Height": 160 }, 
+          "ToArea": { "X": 0, "Y": 992, "Width": 256, "Height": 160 },
+          "PatchMode": "Replace",
+			"When": {
+			"Movie Theatre": "True",
+			}
+       },
+	   {
+          "LogName": "Theatre 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Theatre_{{season}}.png",
+          "FromArea": { "X": 256, "Y": 48, "Width": 176, "Height": 80 }, 
+          "ToArea": { "X": 256, "Y": 1040, "Width": 176, "Height": 80 },
+          "PatchMode": "Replace",
+			"When": {
+			"Movie Theatre": "True",
+			}
+       },
+	   {
+          "LogName": "Theatre 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Theatre_{{season}}.png",
+          "FromArea": { "X": 432, "Y": 48, "Width": 64, "Height": 112 }, 
+          "ToArea": { "X": 432, "Y": 1040, "Width": 64, "Height": 112 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Movie Theatre": "True",
+			}
+       },
+	   {
+          "LogName": "Theatre Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Theatre_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Movie Theatre": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Theatre Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Theatre_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Movie Theatre": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Museum
+	   {
+          "LogName": "Museum 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Museum_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 16, "Width": 144, "Height": 112 }, 
+          "ToArea": { "X": 80, "Y": 336, "Width": 144, "Height": 112 },
+          "PatchMode": "Replace",
+			"When": {
+			"Museum and Library": "True",
+			}
+       },
+	   {
+          "LogName": "Museum 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Museum_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 0, "Width": 80, "Height": 16 }, 
+          "ToArea": { "X": 112, "Y": 320, "Width": 80, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Museum and Library": "True",
+			}
+       },
+	   {
+          "LogName": "Museum Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Museum_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Museum and Library": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Museum Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Museum_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Museum and Library": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+	   
+  
+  
+	   // Oasis Shop
+	   {
+          "LogName": "Oasis 1",
+          "Action": "EditImage",
+          "Target": "Maps/DesertTiles",
+          "FromFile": "assets/{{Palette}}/Oasis.png",
+          "FromArea": { "X": 32, "Y": 0, "Width": 64, "Height": 48 }, 
+          "ToArea": { "X": 32, "Y": 192, "Width": 64, "Height": 48 },
+          "PatchMode": "Replace",
+			"When": {
+			"Oasis Shop": "True",
+			}
+       },
+	   {
+          "LogName": "Oasis 2",
+          "Action": "EditImage",
+          "Target": "Maps/DesertTiles",
+          "FromFile": "assets/{{Palette}}/Oasis.png",
+          "FromArea": { "X": 0, "Y": 48, "Width": 128, "Height": 128 }, 
+          "ToArea": { "X": 0, "Y": 240, "Width": 128, "Height": 128 },
+          "PatchMode": "Replace",
+			"When": {
+			"Oasis Shop": "True",
+			}
+       },
+  
+  
+	   // Pam's House Upgrade
+	   {
+          "LogName": "Pam 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Pam_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 144 }, 
+          "ToArea": { "X": 384, "Y": 656, "Width": 128, "Height": 144 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pam's House Upgrade": "True",
+			}
+       },
+	   {
+          "LogName": "Pam Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Pam_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Pam's House Upgrade": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Pam Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Pam_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Pam's House Upgrade": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Pam's Trailer
+	   {
+          "LogName": "Trailer 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Trailer_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 128, "Height": 64 }, 
+          "ToArea": { "X": 224, "Y": 320, "Width": 128, "Height": 64 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pam's Trailer": "True",
+			}
+       },
+	   {
+          "LogName": "Trailer 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Trailer_{{season}}.png",
+          "FromArea": { "X": 128, "Y": 32, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 352, "Y": 352, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pam's Trailer": "True",
+			}
+       },
+	   {
+          "LogName": "Trailer Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Trailer_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Pam's Trailer": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Trailer Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Trailer_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Pam's Trailer": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Pierre's Shop
+	   {
+          "LogName": "Store 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Store_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 0, "Width": 48, "Height": 32 }, 
+          "ToArea": { "X": 400, "Y": 128, "Width": 48, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pierre's General Store and Clinic": "True",
+			}
+       },
+	   {
+          "LogName": "Store 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Store_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 16, "Width": 112, "Height": 16 }, 
+          "ToArea": { "X": 400, "Y": 160, "Width": 112, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pierre's General Store and Clinic": "True",
+			}
+       },
+	   {
+          "LogName": "Store 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Store_{{season}}.png",
+          "FromArea": { "X": 16, "Y": 32, "Width": 224, "Height": 32 }, 
+          "ToArea": { "X": 16, "Y": 176, "Width": 224, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pierre's General Store and Clinic": "True",
+			}
+       },
+	   {
+          "LogName": "Store 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Store_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 64, "Width": 80, "Height": 96 }, 
+          "ToArea": { "X": 0, "Y": 208, "Width": 80, "Height": 96 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pierre's General Store and Clinic": "True",
+			}
+       },
+	   {
+          "LogName": "Store 5",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Store_{{season}}.png",
+          "FromArea": { "X": 80, "Y": 64, "Width": 160, "Height": 112 }, 
+          "ToArea": { "X": 80, "Y": 208, "Width": 160, "Height": 112 },
+          "PatchMode": "Replace",
+			"When": {
+			"Pierre's General Store and Clinic": "True",
+			}
+       },
+	   {
+          "LogName": "Store Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Store_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Pierre's General Store and Clinic": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Store Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Store_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Pierre's General Store and Clinic": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // Railroad Station
+	   {
+          "LogName": "Station 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Station_{{season}}.png",
+          "FromArea": { "X": 64, "Y": 0, "Width": 64, "Height": 48 }, 
+          "ToArea": { "X": 64, "Y": 704, "Width": 64, "Height": 48 },
+          "PatchMode": "Replace",
+			"When": {
+			"Railroad Station": "True",
+			}
+       },
+	   {
+          "LogName": "Station 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Station_{{season}}.png",
+          "FromArea": { "X": 64, "Y": 48, "Width": 48, "Height": 32 }, 
+          "ToArea": { "X": 64, "Y": 752, "Width": 48, "Height": 32 },
+          "PatchMode": "Replace",
+			"When": {
+			"Railroad Station": "True",
+			}
+       },
+	   {
+          "LogName": "Station 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Station_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 80 }, 
+          "ToArea": { "X": 0, "Y": 704, "Width": 64, "Height": 80 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Railroad Station": "True",
+			}
+       },
+	   {
+          "LogName": "Station Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Station_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Railroad Station": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Station Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Station_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Railroad Station": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Stardrop Saloon
+	   {
+          "LogName": "Saloon 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Saloon_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 144 }, 
+          "ToArea": { "X": 240, "Y": 176, "Width": 112, "Height": 144 },
+          "PatchMode": "Replace",
+			"When": {
+			"Stardrop Saloon": "True",
+			}
+       },
+	   {
+          "LogName": "Saloon 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Saloon_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 144, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 208, "Y": 320, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Stardrop Saloon": "True",
+			}
+       },
+	   {
+          "LogName": "Saloon Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Saloon_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Stardrop Saloon": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Saloon Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Saloon_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Stardrop Saloon": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Sam's House
+	   {
+          "LogName": "Sam 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Sam_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 0, "Width": 32, "Height": 16 }, 
+          "ToArea": { "X": 160, "Y": 0, "Width": 32, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Sam's House": "True",
+			}
+       },
+	   {
+          "LogName": "Sam 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Sam_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 16, "Width": 48, "Height": 16 }, 
+          "ToArea": { "X": 160, "Y": 16, "Width": 48, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Sam's House": "True",
+			}
+       },
+	   {
+          "LogName": "Sam 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Sam_{{season}}.png",
+          "FromArea": { "X": 16, "Y": 32, "Width": 80, "Height": 16 }, 
+          "ToArea": { "X": 144, "Y": 32, "Width": 80, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Sam's House": "True",
+			}
+       },
+	   {
+          "LogName": "Sam 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Sam_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 48, "Width": 112, "Height": 16 }, 
+          "ToArea": { "X": 128, "Y": 48, "Width": 112, "Height": 16 },
+          "PatchMode": "Replace",
+			"When": {
+			"Sam's House": "True",
+			}
+       },
+	   {
+          "LogName": "Sam 5",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_town",
+          "FromFile": "assets/{{Palette}}/Sam_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 64, "Width": 128, "Height": 112 }, 
+          "ToArea": { "X": 128, "Y": 64, "Width": 128, "Height": 112 },
+          "PatchMode": "Replace",
+			"When": {
+			"Sam's House": "True",
+			}
+       },
+	   {
+          "LogName": "Sam Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Sam_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Sam's House": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Sam Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Sam_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Sam's House": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+  
+  
+	   // Witch's Hut
+	   {
+          "LogName": "Witch 1",
+          "Action": "EditImage",
+          "Target": "Maps/witchSwampTiles",
+          "FromFile": "assets/{{Palette}}/Witch.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 112, "Height": 64 }, 
+          "ToArea": { "X": 0, "Y": 160, "Width": 112, "Height": 64 },
+          "PatchMode": "Replace",
+			"When": {
+			"Witch's Hut": "True",
+			}
+       },
+	   {
+          "LogName": "Witch 2",
+          "Action": "EditImage",
+          "Target": "Maps/witchSwampTiles",
+          "FromFile": "assets/{{Palette}}/Witch.png",
+          "FromArea": { "X": 0, "Y": 64, "Width": 112, "Height": 32 }, 
+          "ToArea": { "X": 0, "Y": 224, "Width": 112, "Height": 32 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Witch's Hut": "True",
+			}
+       },
+	   
+	   
+	   // Wizard's Tower
+	   {
+          "LogName": "Wizard 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_outdoorsTileSheet",
+          "FromFile": "assets/{{Palette}}/Wizard_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 64, "Height": 192 }, 
+          "ToArea": { "X": 0, "Y": 400, "Width": 64, "Height": 192 },
+          "PatchMode": "Replace",
+			"When": {
+			"Wizard's Tower": "True",
+			}
+       },
+	   {
+          "LogName": "Wizard Map Spring",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map",
+          "FromFile": "assets/{{Palette}}/Wizard_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Wizard's Tower": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Wizard Map Seasons",
+          "Action": "EditImage",
+          "Target": "LooseSprites/map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Wizard_map.png",
+          "PatchMode": "Overlay",
+			"When": {
+			"Wizard's Tower": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   {
+          "LogName": "Wizard Map Spring Ranching",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Farm_ranching_map",
+          "FromFile": "assets/{{Palette}}/Wizard_map.png",
+          "FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Wizard's Tower": "True",
+			"Map Buildings": "True",
+			}
+       },
+	   {
+          "LogName": "Wizard Map Seasons Ranching",
+          "Action": "EditImage",
+          "Target": "LooseSprites/Farm_ranching_map_{{season}}",
+          "FromFile": "assets/{{Palette}}/Wizard_map.png",
+          "FromArea": { "X": 0, "Y": 363, "Width": 131, "Height": 61 }, 
+          "ToArea": { "X": 0, "Y": 0, "Width": 131, "Height": 61 },
+          "PatchMode": "Overlay",
+			"When": {
+			"Wizard's Tower": "True",
+			"Map Buildings": "True",
+			"Season": "summer, fall, winter",
+			}
+       },
+	   
+	   
+	   // 1.6 Shadows
+	   
+	   {
+          "LogName": "Beach Shadows 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 16, "Width": 32, "Height": 64 }, 
+          "ToArea": { "X": 64, "Y": 128, "Width": 32, "Height": 64 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Beach Shadows 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 32, "Y": 0, "Width": 112, "Height": 80 }, 
+          "ToArea": { "X": 96, "Y": 112, "Width": 112, "Height": 80 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Railroad Shadow Blank",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 128, "Y": 0, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Mountain Shadow Blank 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 128, "Y": 16, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Mountain Shadow Blank 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 32, "Height": 16 }, 
+          "ToArea": { "X": 160, "Y": 16, "Width": 32, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Mountain Shadow Blank 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 48, "Height": 16 }, 
+          "ToArea": { "X": 32, "Y": 96, "Width": 48, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Mountain Shadow Blank 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 48, "Height": 16 }, 
+          "ToArea": { "X": 0, "Y": 112, "Width": 48, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Town Shadow Blank 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 0, "Width": 16, "Height": 32 }, 
+          "ToArea": { "X": 144, "Y": 0, "Width": 16, "Height": 32 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Town Shadow Blank 2",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 112, "Height": 16 }, 
+          "ToArea": { "X": 0, "Y": 192, "Width": 112, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Town Shadow Blank 3",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 192, "Y": 16, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Town Shadow 4",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 128, "Y": 80, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 192, "Y": 16, "Width": 16, "Height": 16 },
+          "PatchMode": "Overlay",
+       },
+	   {
+          "LogName": "Forest Shadow Blank 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 16, "Height": 16 }, 
+          "ToArea": { "X": 176, "Y": 0, "Width": 16, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+	   {
+          "LogName": "Forest Shadow Blank 1",
+          "Action": "EditImage",
+          "Target": "Maps/{{season}}_Shadows",
+          "FromFile": "assets/beach shadows_{{season}}.png",
+          "FromArea": { "X": 0, "Y": 80, "Width": 48, "Height": 16 }, 
+          "ToArea": { "X": 16, "Y": 128, "Width": 48, "Height": 16 },
+          "PatchMode": "Replace",
+       },
+
+	   
+	   
+    ]
+}

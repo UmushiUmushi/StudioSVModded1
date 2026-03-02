@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="37">
+ <properties>
+  <property name="DayTiles" value="Front 4 1 256 Front 4 2 288 Front 5 1 256 Front 5 2 288 Front 14 1 256 Front 14 2 288 Front 15 1 256 Front 15 2 288 Front 24 1 256 Front 24 2 288 Front 25 1 256 Front 25 2 288 Front 25 11 256 Front 25 12 288 Front 26 11 256 Front 26 12 288 Back 4 4 31 Back 4 5 63 Back 5 4 31 Back 5 5 63 Back 14 4 228 Back 14 5 260 Back 15 4 228 Back 15 5 260 Back 24 4 671 Back 24 5 703 Back 25 4 671 Back 25 5 703 Back 25 15 226 Back 25 16 258 Back 26 15 226 Back 26 16 258"/>
+  <property name="Doors" value="15 12 1 120 21 13 1 120 6 12 1 120"/>
+  <property name="NightTiles" value="Front 4 1 1253 Front 4 2 1285 Front 5 1 1253 Front 5 2 1285 Front 14 1 1253 Front 14 2 1285 Front 15 1 1253 Front 15 2 1285 Front 24 1 1253 Front 24 2 1285 Front 25 1 1253 Front 25 2 1285 Front 25 11 1253 Front 25 12 1285 Front 26 11 1253 Front 26 12 1285 Back 4 4 28 Back 4 5 60 Back 5 4 28 Back 5 5 60 Back 14 4 200 Back 14 5 232 Back 15 4 199 Back 15 5 231 Back 24 4 574 Back 24 5 606 Back 25 4 575 Back 25 5 607 Back 25 15 294 Back 25 16 262 Back 26 15 294 Back 26 16 262"/>
+  <property name="Warp" value="13 20 Forest 90 16"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2213" name="Paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2249" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="2624" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1312"/>
+ </tileset>
+ <layer id="1" name="Back" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCAeBDDhx+Soy2bAjpHV2QHZ9kDsAMQLoBjGj0NS94+RgeE/EDMAxQ5AcTwQJ0AxDMgB2fJArACVh6mJR1MH4tcDcQMSjcyGAXQ1MHMa0NTBxJHNQjcPAJirHas=
+  </data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjZGBgYCQST2NlYDAH0pNZUbEFUGwqK0KdFxCHA7E3Go4AYh8k87KAOBuKvZgYGK4D6VSgRBoQ5yCp6wLiOiCjHoizgOqQQQ+SuhxGBgzgCBRzAmJnZoQ6HiZMdcgApo4QwKauF2h2P9R8byDtw4Rd3Vqg+HqoumwgnQNVBwCw0xHr
+  </data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <properties>
+   <property name="Action" value="Door MisterGinger"/>
+  </properties>
+  <object id="12" name="TileData" x="128" y="80" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;AnimalShopTriss.1&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYGBgYAJibiD24oDQzEhsFgYIUARiLSC2BkpuA9KMjBAMApNZGRh0gLQqEGdyQMTMgYZaALEiIwS7ArEbVH0WUI0j1Nw4oFg8yCwmCD8ZyE6BqnNlgKjzgfKRQTNQrAVJHcxefADZXnwAZi8yyAW6Lx/qRm0grcOE3d6HQDe9hKpTZMK0dwmS2mVQ7AmUXw6kVwAxAOOUEt0=
+  </data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="10" height="10" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJxjYBh6oImDgaENiDs4sMt3QOVaccgjg06gmnYc6mD2wHALDnW49JOjDgCipAhU
+  </data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="AlwaysFront" width="10" height="10">
+  <data encoding="base64" compression="zlib">
+   eJxjYCANTGbFFLNmJtGQEQ48ORgYluGQAwA7YwHO
+  </data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

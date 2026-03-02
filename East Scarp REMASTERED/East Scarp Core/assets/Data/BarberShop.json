@@ -1,0 +1,46 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format": "2.7.0",
+  "Changes": [
+    {
+      "Action": "EditMap",
+      "Target": "Maps/EastScarp_DaleHouse",
+      "When": {
+        "HasMod": "ES.BarberShop"
+      },
+      "MapTiles": [
+        {
+          "Position": {
+            "X": 17,
+            "Y": 4
+          },
+          "Layer": "Buildings",
+          "SetProperties": {
+            "Action": "ES.BarberShop DaleWaede 500 4"
+          }
+        },
+      ]
+    },
+    {
+      "Action": "Load",
+      "Target": "ES.BarberShop/BarberBG",
+      "FromFile": "assets/barber-bg.png",
+      "Priority": "Medium"
+    },
+    {
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/DaleWaede",
+      "Entries": {
+        // These are UI strings and don't accept dialogue syntax
+        "ES.BarberShop_Title": "{{i18n:ES.BarberShop_Title}}",
+        "ES.BarberShop_Message": "{{i18n:ES.BarberShop_Message}}",
+        "ES.BarberShop_Confirm": "{{i18n:ES.BarberShop_Confirm}}",
+        "ES.BarberShop_NotHere": "{{i18n:ES.BarberShop_NotHere}}",
+        "ES.BarberShop_NotEnoughMoney": "{{i18n:ES.BarberShop_NotEnoughMoney}}",
+        "ES.BarberShop_Start": "{{i18n:ES.BarberShop_Start}}",
+        "ES.BarberShop_Finished": "{{i18n:ES.BarberShop_Finished}}",
+        "ES.BarberShop_Canceled": "{{i18n:ES.BarberShop_Canceled}}",
+      }
+    }
+  ]
+}

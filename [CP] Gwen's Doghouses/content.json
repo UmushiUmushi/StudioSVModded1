@@ -1,0 +1,104 @@
+{
+
+/* 					
+					Hi there!
+
+					Editing anything here changes how the mod works.
+					If you want to choose different designs or what building is changed -> edit config.json instead!
+					It will be generated after SMAPI loads the mods first time into the game c:
+					
+*/
+
+	"Format": "2.0.0",
+
+	"ConfigSchema": {
+		
+		"Doghouseoption":{"AllowValues": "1, 2",
+					"Default": "1"},
+		"DarkDoghouseoption":{"AllowValues": "1, 2",
+					"Default": "2"},
+					
+					
+		"FallColor":{"AllowValues": "1, 2",
+					"Default": "1",
+					"Description": "To match recolor mods that have that option -> green(1) orange(2)" },
+		"RecolourOverwrite":{"AllowValues": "Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, Starblue, VibrantPastoral, WittilyNamed",
+					"AllowBlank": true,
+					"Default": "",
+					"Description": "If you want to manually change recolor palette" },
+	},
+	
+	
+	"DynamicTokens": [
+	//checking what recolour is used
+		{
+		"Name": "Recolour",
+		"Value": "Vanilla",
+		},
+		{
+		"Name": "Recolour",
+		"Value": "DNEarthyRecolour",
+			"When": { "HasMod": "DaisyNiko.EarthyRecolour" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "Eemie's",
+			"When": { "HasMod": "minervamaga.CP.eemieMapRecolour" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "FoliageRedone",
+			"When": { "HasMod": "stardewfoliageredone" },
+		},{
+		"Name": "Recolour",
+		"Value": "Starblue",
+			"When": { "HasMod": "Lita.StarblueValley" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "VibrantPastoral",
+			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" },
+		},
+		{
+		"Name": "Recolour",
+		"Value": "WittilyNamed",
+			"When": { "HasMod": "Acerbicon.Recolor" },
+		},
+
+	//recolor overwrite
+		{
+		"Name": "Recolour",
+		"Value": "{{RecolourOverwrite}}",
+			"When": { "RecolourOverwrite |contains=Vanilla, DNEarthyRecolour, Eemie's, FoliageRedone, FoliageRedoneReshade, Starblue, VibrantPastoral, WittilyNamed": true },
+		},
+	//fall color overwrite
+		{
+		"Name": "Recolour",
+		"Value": "{{Recolour}}/{{FallColor}}",
+			"When": { "Recolour |contains=Eemie's, VibrantPastoral": true,
+					"Season": "fall" },
+		},
+	],
+
+	"Changes": [
+	
+
+//Dog Houses
+		{
+		"LogName": "Doghouse",
+        "Action": "EditImage",
+        "Target": "TileSheets/furniture_3",
+        "FromFile": "assets/{{Recolour}}/{{Doghouseoption}}_{{season}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 112, "Y": 192, "Width": 48, "Height": 48 },
+        },
+		{
+		"LogName": "Dark Doghouse",
+        "Action": "EditImage",
+        "Target": "TileSheets/furniture_3",
+         "FromFile": "assets/{{Recolour}}/{{DarkDoghouseoption}}_{{season}}.png",
+			"FromArea": { "X": 0, "Y": 0, "Width": 48, "Height": 48 },
+			"ToArea": { "X": 160, "Y": 192, "Width": 48, "Height": 48 },
+        },
+	]
+}

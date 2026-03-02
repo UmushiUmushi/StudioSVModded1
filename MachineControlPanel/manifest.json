@@ -1,0 +1,27 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "mushymato.MachineControlPanel",
+  "Name": "Machine Control Panel",
+  "Author": "mushymato",
+  "Version": "2.1.1",
+  "Description": "A control panel for machine rules.",
+  "MinimumApiVersion": "4.3",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "MachineControlPanel.dll",
+  "Dependencies": [
+    {
+      "UniqueID": "focustense.StardewUI",
+      "MinimumVersion": "0.6.1"
+    }
+  ],
+  "UpdateKeys": [
+    "nexus:28261"
+  ]
+}

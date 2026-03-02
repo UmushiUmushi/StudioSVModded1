@@ -1,0 +1,2118 @@
+{
+    "Changes": [
+        {
+            "LogName": "Willy's fishing quest",
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "5787_KingCarp": "ItemDelivery/{{i18n:quest.willy.kingcarp.1}}/{{i18n:quest.willy.kingcarp.2}}/{{i18n:quest.willy.kingcarp.3}}/Willy (O)EastScarp_King_Carp/-1/1000/-1/true/{{i18n:quest.willy.kingcarp.4}}",
+                "5787_VintageRubyRing": "Basic/{{i18n:quest.rosa.vintagering.1}}/{{i18n:quest.rosa.vintagering.2}}/{{i18n:quest.rosa.vintagering.3}}/-1/-1/0/-1/false",
+                "5787_LumaBribeIntro": "Basic/{{i18n:quest.luma.raisins.1}}/{{i18n:quest.luma.raisins.2}}/{{i18n:quest.luma.raisins.3.{{HasSeenSecretNote24}} }}/-1/-1/0/-1/false",
+                "5787_JulietProposition": "Basic/{{i18n:quest.juliet.proposition.1}}/{{i18n:quest.juliet.proposition.2}}/{{i18n:quest.juliet.proposition.3}}/-1/-1/0/-1/true"
+            } //secret note #24
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "When": {
+                "EnableSpecialOrders": "true"
+            },
+            "Entries": {
+                "EastScarp.SpecialOrders.JosephineJelly": { //simply a reward
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JosephineJelly_Name}}",
+                    "Requester": "Josephine",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57873000, !event_57873005, !season_winter",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JosephineJelly_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JosephineJelly_Objective_0_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "category_fruits"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JosephineJelly_Objective_1_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "jelly_item"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JosephineJelly_Objective_2_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "jelly_item",
+                                "MinimumCapacity": "12",
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "6000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JosephineJellyMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.SlayCrabs": { //unlocks penguin custom critter
+                    "Name": "{{i18n:EastScarp.SpecialOrders.SlayCrabs_Name}}",
+                    "Requester": "Jacob",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.SlayCrabs_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Slay",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.SlayCrabs_Objective_0_Text}}",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "TargetName": "Rock Crab, Lava Crab"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "5000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.SlayCrabsMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LadySheba": { // Part one of unlocking the Lady Sheba NPC/Custom critter
+                    "Name": "{{i18n:EastScarp.SpecialOrders.LadySheba_Name}}",
+                    "Requester": "Jas",
+                    "Duration": "Week",
+                    "Repeatable": "false",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": [
+                        {
+                            "Name": "FishType",
+                            "Values": [
+                                {
+                                    "RequiredTags": "season_spring",
+                                    "Value": "PICK_ITEM Sunfish, Sardine, Flounder, Largemouth Bass, Halibut"
+                                },
+                                {
+                                    "RequiredTags": "season_summer",
+                                    "Value": "PICK_ITEM Rainbow Trout, Dorado, Tilapia, Tuna, Red Mullet"
+                                },
+                                {
+                                    "RequiredTags": "season_fall",
+                                    "Value": "PICK_ITEM Tiger Trout, Albacore, Salmon"
+                                },
+                                {
+                                    "RequiredTags": "season_winter",
+                                    "Value": "PICK_ITEM Tuna, Perch, Lingcod"
+                                }
+                            ]
+                        }
+                    ],
+                    "Objectives": [
+                        {
+                            "Type": "Fish",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba_Objective_0_Text}}{FishType:Text}",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "AcceptedContextTags": "{FishType:Tags}"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba_Objective_1_Text}}{FishType:Text}{{i18n:EastScarp.SpecialOrders.LadySheba_Objective_2_Text}}",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "DropBox": "ESCrate",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "13 90",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "{FishType:Tags}"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LadyShebaMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LadySheba2": { // Part two of unlocking the Lady Sheba NPC/Custom critter
+                    "Name": "{{i18n:EastScarp.SpecialOrders.LadySheba2_Name}}",
+                    "Requester": "Jas",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "mail_EastScarp.SpecialOrders.LadyShebaMail",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba2_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba2_Objective_0_Text}}",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "AcceptedContextTags": "item_bug_meat"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba2_Objective_1_Text}}",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "AcceptedContextTags": "item_bug_steak"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba2_Objective_2_Text}}",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "DropBox": "ESCrate",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "13 90",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_bug_steak"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LadySheba2Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LadySheba3": { // Part three of unlocking the Lady Sheba NPC/Custom critter
+                    "Name": "{{i18n:EastScarp.SpecialOrders.LadySheba3_Name}}",
+                    "Requester": "Jas",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "mail_EastScarp.SpecialOrders.LadySheba3Mail",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba3_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba3_Objective_0_Text}}",
+                            "RequiredCount": "3",
+                            "Data": {
+                                "AcceptedContextTags": "milk_item"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba3_Objective_1_Text}}",
+                            "RequiredCount": "3",
+                            "Data": {
+                                "AcceptedContextTags": "item_goat_cheese/item_cheese"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LadySheba3_Objective_2_Text}}",
+                            "RequiredCount": "3",
+                            "Data": {
+                                "DropBox": "ESCrate",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "13 90",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_goat_cheese/item_cheese"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "600"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LadySheba3Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.AideenFlowers": { //unlock bird of paradise plant
+                    "Name": "{{i18n:EastScarp.SpecialOrders.AideenFlowers_Name}}",
+                    "Requester": "Aideen",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_spring",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers_Objective_0_Text}}",
+                            "RequiredCount": "15",
+                            "Data": {
+                                "AcceptedContextTags": "item_daffodil"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers_Objective_1_Text}}",
+                            "RequiredCount": "15",
+                            "Data": {
+                                "DropBox": "AideenVase",
+                                "DropBoxGameLocation": "EastScarp_AideenHouse",
+                                "DropBoxIndicatorLocation": "23 18",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_daffodil"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowers1Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.AideenFlowers2": { //gives the gift of seeds
+                    "Name": "{{i18n:EastScarp.SpecialOrders.AideenFlowers2_Name}}",
+                    "Requester": "Aideen",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_summer",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers2_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers2_Objective_0_Text}}",
+                            "RequiredCount": "15",
+                            "Data": {
+                                "AcceptedContextTags": "item_sweet_pea"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers2_Objective_1_Text}}",
+                            "RequiredCount": "15",
+                            "Data": {
+                                "DropBox": "AideenVase",
+                                "DropBoxGameLocation": "EastScarp_AideenHouse",
+                                "DropBoxIndicatorLocation": "23 18",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_sweet_pea"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowers2Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JojaCola": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JojaCola_Name}}",
+                    "Requester": "Juliet",
+                    "Duration": "Week",
+                    "Repeatable": "true",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JojaCola_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Gift",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JojaCola_Objective_0_Text}}",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "AcceptedContextTags": "item_joja_cola"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "5000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JojaCola",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.AideenFlowers3": { //gives the fit of seeds
+                    "Name": "{{i18n:EastScarp.SpecialOrders.AideenFlowers3_Name}}",
+                    "Requester": "Aideen",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_winter",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers3_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers3_Objective_0_Text}}",
+                            "RequiredCount": "15",
+                            "Data": {
+                                "AcceptedContextTags": "item_crocus"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.AideenFlowers3_Objective_1_Text}}",
+                            "RequiredCount": "15",
+                            "Data": {
+                                "DropBox": "AideenVase",
+                                "DropBoxGameLocation": "EastScarp_AideenHouse",
+                                "DropBoxIndicatorLocation": "23 18",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_crocus"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.AideenFlowers3Mail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JacobCorn": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JacobCorn_Name}}",
+                    "Requester": "Jacob",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "!season_spring, !season_winter",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JacobCorn_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JacobCorn_Objective_0_Text}}",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "DropBox": "JacobDonationBin",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "11 24",
+                                "AcceptedContextTags": "item_corn"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "1000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JacobCornMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JacobHay": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JacobHay_Name}}",
+                    "Requester": "Jacob",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_fall, !dropbox_JacobDonationBin",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JacobHay_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JacobHay_Objective_0_Text}}",
+                            "RequiredCount": "30",
+                            "Data": {
+                                "DropBox": "JacobDonationBin",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "11 24",
+                                "AcceptedContextTags": "item_hay"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "1000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JacobHayMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.OliverSlime": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.OliverSlime_Name}}",
+                    "Requester": "Oliver",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57873021",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.OliverSlime_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Deliver",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.OliverSlime_Objective_0_Text}}",
+                            "RequiredCount": "5",
+                            "Data": {
+                                "AcceptedContextTags": "item_petrified_slime",
+                                "TargetName": "OliverK"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "750"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.OliverSlimeMail",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.OliverLexiSurprise": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.OliverLexiSurprise_Name}}",
+                    "Requester": "Oliver",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57873021",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.OliverLexiSurprise_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.OliverLexiSurprise_Objective_0_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "egg_item"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.OliverLexiSurprise_Objective_1_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "item_wheat_flour"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.OliverLexiSurprise_Objective_2_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "item_sugar"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.OliverLexiSurprise_Objective_3_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "item_melon"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.OliverLexiSurprise",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ],
+                },
+                "EastScarp.SpecialOrders.EloiseJasJay": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.EloiseJasJay_Name}}",
+                    "Requester": "Eloise",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "event_50706112, !season_spring, !season_winterr",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.EloiseJasJay_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EloiseJasJay_Objective_0_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "AcceptedContextTags": "item_sunflower_seeds"
+                            }
+                        },
+                        {
+                            "Type": "Deliver",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EloiseJasJay_Objective_1_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "AcceptedContextTags": "item_sunflower_seeds",
+                                "TargetName": "Eloise"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "100"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.EloiseJasJayMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.EloiseRealMacaw": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.EloiseRealMacaw_Name}}",
+                    "Requester": "Eloise",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "true",
+                    "RequiredTags": "season_fall",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.EloiseRealMacaw_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EloiseRealMacaw_Objective_0_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "item_hazelnut"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EloiseRealMacaw_Objective_1_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "JacobDonationBin",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "11 24",
+                                "AcceptedContextTags": "item_hazelnut"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.EloiseRealMacawMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.ZUCUBoneCollectors": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.ZUCUBoneCollectors_Name}}",
+                    "Requester": "Cameron{{PlayerGender}}",
+                    "Duration": "Month",
+                    "Repeatable": "true",
+                    "RequiredTags": "event_50709921",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.ZUCUBoneCollectors_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Ship",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.ZUCUBoneCollectors_Objective_0_Text}}",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "AcceptedContextTags": "bone_item"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "5000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.ZUCUBoneCollectorsMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.BeatriceQuartz": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.BeatriceQuartz_Name}}",
+                    "Requester": "Beatrice",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.BeatriceQuartz_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.BeatriceQuartz_Objective_0_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "item_quartz/item_red_quartz"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.BeatriceQuartz_Objective_1_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "item_refined_quartz"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.BeatriceQuartz_Objective_2_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "ESLighthouseChest",
+                                "DropBoxGameLocation": "EastScarp_Lighthouse",
+                                "DropBoxIndicatorLocation": "20 13",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_refined_quartz"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "6000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.BeatriceQuartzMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JadeNudibranch": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JadeNudibranch_Name}}",
+                    "Requester": "JadeMalic",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "RequiredTags": "",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JadeNudibranch_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JadeNudibranch_Objective_1_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "AcceptedContextTags": "fish_nudibranch"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JadeNudibranch_Objective_2_Text}}",
+                            "RequiredCount": "12",
+                            "Data": {
+                                "DropBox": "JessieDonation",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "33 54",
+                                "MinimumCapacity": "12",
+                                "AcceptedContextTags": "fish_nudibranch"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2500"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JadeNudibranchMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JasperGeodes": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JasperGeodes_Name}}",
+                    "Requester": null,
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "!dropbox_GuntherBox, mail_guntherBones, event_55990006",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JasperGeodes_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperGeodes_Objective_0_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "AcceptedContextTags": "item_geode/item_frozen_geode/item_magma_geode/item_omni_geode"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperGeodes_Objective_1_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "DropBox": "GuntherBox",
+                                "DropBoxGameLocation": "ArchaeologyHouse",
+                                "DropBoxIndicatorLocation": "6 8",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_geode/item_frozen_geode/item_magma_geode/item_omni_geode "
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JasperGeodesMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JasperScrolls": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JasperScrolls_Name}}",
+                    "Requester": "Jasper",
+                    "Duration": "Week",
+                    "Repeatable": "true",
+                    "RequiredTags": "event_50709915",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JasperScrolls_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Deliver",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperScrolls_Objective_0_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "AcceptedContextTags": "item_dwarf_scroll_i",
+                                "TargetName": "Jasper"
+                            }
+                        },
+                        {
+                            "Type": "Deliver",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperScrolls_Objective_1_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "AcceptedContextTags": "item_dwarf_scroll_ii",
+                                "TargetName": "Jasper"
+                            }
+                        },
+                        {
+                            "Type": "Deliver",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperScrolls_Objective_3_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "AcceptedContextTags": "item_dwarf_scroll_iii",
+                                "TargetName": "Jasper"
+                            }
+                        },
+                        {
+                            "Type": "Deliver",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperScrolls_Objective_4_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "AcceptedContextTags": "item_dwarf_scroll_iv",
+                                "TargetName": "Jasper"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "1000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JasperScrollsMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JasperDevices": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JasperDevices_Name}}",
+                    "Requester": "Jasper",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_5599052, !dropbox_GuntherBox, mail_guntherBones",
+                    //event_5599052
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JasperDevices_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperDevices_Objective_0_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "AcceptedContextTags": "item_cinder_shard"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperDevices_Objective_1_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "GuntherBox",
+                                "DropBoxGameLocation": "ArchaeologyHouse",
+                                "DropBoxIndicatorLocation": "6 8",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_dwarf_gadget "
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperDevices_Objective_2_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "GuntherBox",
+                                "DropBoxGameLocation": "ArchaeologyHouse",
+                                "DropBoxIndicatorLocation": "6 8",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_rare_disc "
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JasperDevices_Objective_3_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "DropBox": "GuntherBox",
+                                "DropBoxGameLocation": "ArchaeologyHouse",
+                                "DropBoxIndicatorLocation": "6 8",
+                                "MinimumCapacity": "9",
+                                "AcceptedContextTags": "item_cinder_shard"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "1000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JasperDeviceMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.VictoriaSlimeEnrichment": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment_Name}}",
+                    "Requester": "ToriLK",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57878004",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment_Objective_0_Text}}",
+                            "RequiredCount": "24",
+                            "Data": {
+                                "AcceptedContextTags": "item_fiber"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment_Objective_1_Text}}",
+                            "RequiredCount": "24",
+                            "Data": {
+                                "AcceptedContextTags": "item_moss"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment_Objective_2_Text}}",
+                            "RequiredCount": "24",
+                            "Data": {
+                                "DropBox": "ESToriSlime",
+                                "DropBoxGameLocation": "EastScarp_ToriSlimeBasement",
+                                "DropBoxIndicatorLocation": "12 3",
+                                "AcceptedContextTags": "item_fiber",
+                                //"MinimumCapacity": "9",
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment_Objective_3_Text}}",
+                            "RequiredCount": "24",
+                            "Data": {
+                                "DropBox": "ESToriSlime",
+                                "DropBoxGameLocation": "EastScarp_ToriSlimeBasement",
+                                "DropBoxIndicatorLocation": "12 3",
+                                "AcceptedContextTags": "item_moss",
+                                //"MinimumCapacity": "9",
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "6000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.VictoriaEnrichment",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.EthanScienceProject": { //simply a reward
+                    "Name": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Name}}",
+                    "Requester": "EthanHart",
+                    "Duration": "TwoWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "!EastScarp.SpecialOrders.JosephineJelly",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_0_Text}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "AcceptedContextTags": "item_sunflower_seeds"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_1_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "AcceptedContextTags": "milk_item"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_2_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "AcceptedContextTags": "juice_item"
+                            }
+                        },
+                        {
+                            "Type": "Collect",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_3_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "AcceptedContextTags": "item_joja_cola"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_4_Text}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "item_sunflower_seeds"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_5_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "milk_item"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_6_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "juice_item"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject_Objective_7_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "ESInnFridge",
+                                "DropBoxGameLocation": "EastScarp_VillageInn",
+                                "DropBoxIndicatorLocation": "45 8",
+                                "AcceptedContextTags": "item_joja_cola"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "250",
+                                "TargetName": "EthanHart"
+                            }
+                        },
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "1000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.EthanScienceProjectMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.ScarpGreenHouse": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Name}}",
+                    "Requester": "EthanHart",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57871699",
+                    "OrderType": "",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Objective_1_Text}}",
+                            "RequiredCount": "25",
+                            "Data": {
+                                "DropBox": "CommunityGreenhouse",
+                                "DropBoxGameLocation": "EastScarp_Crossing",
+                                "DropBoxIndicatorLocation": "48 10",
+                                "AcceptedContextTags": "item_refined_quartz",
+                                "MinimumCapacity": "24",
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Objective_2_Text}}",
+                            "RequiredCount": "100",
+                            "Data": {
+                                "DropBox": "CommunityGreenhouse",
+                                "DropBoxGameLocation": "EastScarp_Crossing",
+                                "DropBoxIndicatorLocation": "48 10",
+                                "AcceptedContextTags": "category_seeds",
+                                "MinimumCapacity": "24",
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Objective_3_Text}}",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "DropBox": "CommunityGreenhouse",
+                                "DropBoxGameLocation": "EastScarp_Crossing",
+                                "DropBoxIndicatorLocation": "48 10",
+                                "AcceptedContextTags": "item_clay",
+                                "MinimumCapacity": "24",
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Objective_4_Text}}",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "DropBox": "CommunityGreenhouse",
+                                "DropBoxGameLocation": "EastScarp_Crossing",
+                                "DropBoxIndicatorLocation": "48 10",
+                                "AcceptedContextTags": "item_wood",
+                                "MinimumCapacity": "24",
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "5000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.ScarpGreenHouse_Complete",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "Entries": {
+                "EastScarp.SpecialOrders.RebuildBridge": { //Rebuilds the bridge to the orchard
+                    "Name": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Name}}",
+                    "Requester": "Rosa",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Objective_0_Text}}",
+                            "RequiredCount": "200",
+                            "Data": {
+                                "DropBox": "ESOrchardBox",
+                                "DropBoxGameLocation": "EastScarp_Orchard",
+                                "DropBoxIndicatorLocation": "3 15",
+                                "AcceptedContextTags": "item_wood"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.RebuildBridge_Objective_1_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "DropBox": "ESOrchardBox",
+                                "DropBoxGameLocation": "EastScarp_Orchard",
+                                "DropBoxIndicatorLocation": "3 15",
+                                "AcceptedContextTags": "item_hardwood"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.RebuildBridgeMail",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.JadeFairyRing": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Name}}",
+                    "Requester": "JadeMalic",
+                    "Duration": "Month",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57871206",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Objective_1_Text}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "JessieDonation",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "33 54",
+                                "AcceptedContextTags": "item_fairy_seeds"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Objective_2_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "DropBox": "JessieDonation",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "33 54",
+                                "AcceptedContextTags": "item_moss"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Objective_3_Text}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "JessieDonation",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "33 54",
+                                "AcceptedContextTags": "item_clay"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Objective_4_Text}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "JessieDonation",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "33 54",
+                                "AcceptedContextTags": "edible_mushroom/item_red_mushroom"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.JadeFairyRing_Objective_5_Text}}",
+                            "RequiredCount": "1",
+                            "Data": {
+                                "DropBox": "JessieDonation",
+                                "DropBoxGameLocation": "EastScarp_Village",
+                                "DropBoxIndicatorLocation": "33 54",
+                                "AcceptedContextTags": "item_fairy_stone"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Money",
+                            "Data": {
+                                "Amount": "2000"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.JadeFairyRing2",
+                                "NoLetter": "false"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.EyvindrShed": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Name}}",
+                    "Requester": "Eyvinder",
+                    //"Duration": "ThreeWeeks",
+                    "Repeatable": "false",
+                    "RequiredTags": "event_57877005",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Objective_1_Text}}",
+                            "RequiredCount": "200",
+                            "Data": {
+                                "DropBox": "ESMeadowShed",
+                                "DropBoxGameLocation": "EastScarp_MeadowShed_Ruins",
+                                "DropBoxIndicatorLocation": "12 16",
+                                "AcceptedContextTags": "item_stone"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Objective_2_Text}}",
+                            "RequiredCount": "500",
+                            "Data": {
+                                "DropBox": "ESMeadowShed",
+                                "DropBoxGameLocation": "EastScarp_MeadowShed_Ruins",
+                                "DropBoxIndicatorLocation": "12 16",
+                                "AcceptedContextTags": "item_wood"
+                            }
+                        },
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.EyvindrShed_Objective_3_Text}}",
+                            "RequiredCount": "20",
+                            "Data": {
+                                "DropBox": "ESMeadowShed",
+                                "DropBoxGameLocation": "EastScarp_MeadowShed_Ruins",
+                                "DropBoxIndicatorLocation": "12 16",
+                                "AcceptedContextTags": "item_clay"
+                            }
+                        }
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.EyvindrShedMail",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LumaSlimeEggs50": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs_Name}}",
+                    "Requester": "LumaJunimo",
+                    //"Duration": "ThreeWeeks",
+                    "Repeatable": "false",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs50_Objective_1_Text}}",
+                            "RequiredCount": "50",
+                            "Data": {
+                                "DropBox": "ESOrchardHouseFridge",
+                                "DropBoxGameLocation": "EastScarp_OrchardHouse",
+                                "DropBoxIndicatorLocation": "6 17",
+                                "AcceptedContextTags": "slime_egg_item"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "750",
+                                "TargetName": "LumaJunimo"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LumaSlimeEggs50",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LumaSlimeEggs25": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs_Name}}",
+                    "Requester": "LumaJunimo",
+                    //"Duration": "ThreeWeeks",
+                    "Repeatable": "false",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs25_Objective_1_Text}}",
+                            "RequiredCount": "25",
+                            "Data": {
+                                "DropBox": "ESOrchardHouseFridge",
+                                "DropBoxGameLocation": "EastScarp_OrchardHouse",
+                                "DropBoxIndicatorLocation": "6 17",
+                                "AcceptedContextTags": "slime_egg_item"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "500",
+                                "TargetName": "LumaJunimo"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LumaSlimeEggs25",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+                "EastScarp.SpecialOrders.LumaSlimeEggs10": {
+                    "Name": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs_Name}}",
+                    "Requester": "LumaJunimo",
+                    //"Duration": "ThreeDays",
+                    "Repeatable": "false",
+                    "OrderType": "INVALID",
+                    "SpecialRule": "",
+                    "Text": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs_Text}}",
+                    "ItemToRemoveOnEnd": null,
+                    "MailToRemoveOnEnd": null,
+                    "RandomizedElements": null,
+                    "Objectives": [
+                        {
+                            "Type": "Donate",
+                            "Text": "{{i18n:EastScarp.SpecialOrders.LumaSlimeEggs10_Objective_1_Text}}",
+                            "RequiredCount": "10",
+                            "Data": {
+                                "DropBox": "ESOrchardHouseFridge",
+                                "DropBoxGameLocation": "EastScarp_OrchardHouse",
+                                "DropBoxIndicatorLocation": "6 17",
+                                "AcceptedContextTags": "slime_egg_item"
+                            }
+                        },
+                    ],
+                    "Rewards": [
+                        {
+                            "Type": "Friendship",
+                            "Data": {
+                                "Amount": "250",
+                                "TargetName": "LumaJunimo"
+                            }
+                        },
+                        {
+                            "Type": "Mail",
+                            "Data": {
+                                "MailReceived": "EastScarp.SpecialOrders.LumaSlimeEggs10",
+                                "NoLetter": "true"
+                            }
+                        }
+                    ]
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/EastScarp/DurationOverride",
+            "Entries": {
+                "EastScarp.SpecialOrders.EyvindrShed": "-1",
+                "EastScarp.SpecialOrders.JadeFairyRing": "-1",
+                "EastScarp.SpecialOrders.LumaSlimeEggs10": "-1",
+                "EastScarp.SpecialOrders.LumaSlimeEggs25": "-1",
+                "EastScarp.SpecialOrders.LumaSlimeEggs50": "-1",
+                "EastScarp.SpecialOrders.RebuildBridge": "-1"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Mail",
+            "Entries": {
+                "EastScarp.SpecialOrders.LadyShebaMail": "{{i18n:EastScarp.SpecialOrders.LadyShebaMail.text}}[#]{{i18n:EastScarp.SpecialOrders.LadyShebaMail.title}}",
+                "EastScarp.SpecialOrders.LadySheba2Mail": "{{i18n:EastScarp.SpecialOrders.LadySheba2Mail.text}}[#]{{i18n:EastScarp.SpecialOrders.LadySheba2Mail.title}}",
+                "EastScarp.SpecialOrders.LadySheba3Mail": "{{i18n:EastScarp.SpecialOrders.LadySheba3Mail.text}}[#]{{i18n:EastScarp.SpecialOrders.LadySheba3Mail.title}}",
+                "EastScarp.SpecialOrders.AideenFlowers1Mail": "{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.text}}%item object 431 9 %%[#]{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.title}}",
+                "EastScarp.SpecialOrders.AideenFlowers2Mail": "{{i18n:EastScarp.SpecialOrders.AideenFlowers2Mail.text}}%item object 425 4 %%[#]{{i18n:EastScarp.SpecialOrders.AideenFlowers2Mail.title}}",
+                "EastScarp.SpecialOrders.AideenFlowers3Mail": "{{i18n:EastScarp.SpecialOrders.AideenFlowers3Mail.text}}%item object 429 9 %%[#]{{i18n:EastScarp.SpecialOrders.AideenFlowers3Mail.title}}",
+                "EastScarp.SpecialOrders.SlayCrabsMail": "{{i18n:EastScarp.SpecialOrders.SlayCrabsMail.text}}%item object 732 5 %%[#]{{i18n:EastScarp.SpecialOrders.SlayCrabsMail.title}}",
+                "EastScarp.SpecialOrders.JosephineJellyMail": "{{i18n:EastScarp.SpecialOrders.JosephineJellyMail.text}}%item bigobject 15 %%[#]{{i18n:EastScarp.SpecialOrders.JosephineJellyMail.title}}",
+                "EastScarp.SpecialOrders.BeatriceQuartzMail": "{{i18n:EastScarp.SpecialOrders.BeatriceQuartzMail.text}}[#]{{i18n:EastScarp.SpecialOrders.BeatriceQuartzMail.title}}",
+                "EastScarp.JojaColaTakeOverMail": "{{i18n:EastScarp.JojaColaTakeOverMail.text}}%item object 167 12 %%[#]{{i18n:EastScarp.JojaColaTakeOverMail.title}}",
+                "EastScarp.SpecialOrders.JojaCola": "{{i18n:EastScarp.SpecialOrders.JojaCola.text}}%item bigobject 117 %%[#]{{i18n:EastScarp.SpecialOrders.JojaCola.title}}",
+                "EastScarp.SpecialOrders.JacobCornMail": "{{i18n:EastScarp.SpecialOrders.JacobCornMail.text}}%item object 176 12 %%[#]{{i18n:EastScarp.SpecialOrders.JacobCornMail.title}}",
+                "EastScarp.SpecialOrders.JacobHayMail": "{{i18n:EastScarp.SpecialOrders.JacobHayMail.text}}%item object 184 5 %% [#]{{i18n:EastScarp.SpecialOrders.JacobHayMail.title}}",
+                "EastScarp.SpecialOrders.EloiseJasJayMail": "{{i18n:EastScarp.SpecialOrders.EloiseJasJayMail.text}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][#]{{i18n:EastScarp.SpecialOrders.EloiseJasJayMail.title}}",
+                "EastScarp.SpecialOrders.EloiseRealMacawMail": "{{i18n:EastScarp.SpecialOrders.EloiseRealMacawMail.text}}[letterbg Mods/LemurKat.EastScarp/LetterBackgrounds 0][#]{{i18n:EastScarp.SpecialOrders.EloiseRealMacawMail.title}}",
+                "EastScarp.SpecialOrders.ZUCUBoneCollectorsMail": "{{i18n:EastScarp.SpecialOrders.ZUCUBoneCollectorsMail.text}} %item bigobject 21 %%[#]{{i18n:EastScarp.SpecialOrders.ZUCUBoneCollectorsMail.title}}",
+                "EastScarp.SpecialOrders.AideenFlowersMail.invite": "{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.invite.text}}[#]{{i18n:EastScarp.SpecialOrders.AideenFlowersMail.invite.title}}",
+                "EastScarp.SpecialOrders.JasperGeodesMail": "{{i18n:EastScarp.SpecialOrders.JasperGeodesMail.text}}.%item bigobject 21 %%[#]{{i18n:EastScarp.SpecialOrders.JasperGeodesMail.title}}",
+                "EastScarp.SpecialOrders.JasperScrollsMail": "{{i18n:EastScarp.SpecialOrders.JasperScrollsMail.text}}%item object 554 5 %%[#]{{i18n:EastScarp.SpecialOrders.JasperScrollsMail.title}}",
+                "EastScarp.SpecialOrders.JasperDeviceMail": "{{i18n:EastScarp.SpecialOrders.JasperDeviceMail.text}}%item object 852 5 %%[#]{{i18n:EastScarp.SpecialOrders.JasperDeviceMail.title}}",
+                "EastScarp.SpecialOrders.JadeNudibranchMail": "{{i18n:EastScarp.SpecialOrders.JadeNudibranch.text}}%item furniture 2304 %%[#]{{i18n:EastScarp.SpecialOrders.JadeNudibranch.title}}",
+                "EastScarp.KingCarpChallenge.Willy": "{{i18n:EastScarp.KingCarpChallenge.Willy.text}}%item quest 5787_KingCarp %%[#]{{i18n:EastScarp.KingCarpChallenge.Willy.title}}",
+                "EastScarp.SpecialOrders.VictoriaEnrichment": "{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment.text}}%item id (O)413 1 (O)437 1 (O)439 1  %%[#]{{i18n:EastScarp.SpecialOrders.VictoriaEnrichment.title}}",
+                "EastScarp.SpecialOrders.EthanScienceProjectMail": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject.text}}%item bigobject 221 %%[#]{{i18n:EastScarp.SpecialOrders.EthanScienceProject.title}}",
+                "EastScarp.SpecialOrders.EthanScienceProjectMail2": "{{i18n:EastScarp.SpecialOrders.EthanScienceProject2.text}}[#]{{i18n:EastScarp.SpecialOrders.EthanScienceProject2.title}}",
+                "EastScarp.SpecialOrders.ScarpGreenHouse_Complete": "{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Complete.text}}[#]{{i18n:EastScarp.SpecialOrders.ScarpGreenHouse_Complete.title}}",
+                "EastScarp.SpecialOrders.RebuildBridgeMail":"{{i18n:EastScarp.SpecialOrders.RebuildBridgeMail.text}}[#]{{i18n:EastScarp.SpecialOrders.RebuildBridgeMail.title}}"
+            }
+        },
+        //E V E N T S
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_AideenHouse",
+            "Entries": {
+                "57879901/n EastScarp.SpecialOrders.AideenFlowersMail/c 1": "playful/9 11/Aideen 5 10 3 farmer 5 17 0/skippable/addBigProp 4 9 112/addBigProp 3 10 112/addBigProp 4 11 112/addBigProp 6 12 112/addBigProp 6 10 112/addTemporaryActor Munchboi 32 32 4 8 2 false/doAction 5 17/playSound doorOpen/pause 1000/move farmer 0 -4 0/faceDirection Aideen 2/animate Munchboi false false 120 16 17 18 18/pause 480/animate Munchboi false true 120 18/speak Aideen \"{{i18n:57879901.01}}\"/faceDirection farmer 3/jump farmer 1/emote farmer 16/pause 1000/faceDirection farmer 0/speak Aideen \"{{i18n:57879901.02}}\"/pause 1000/emote farmer 56/pause 1000/jump Aideen 3/speak Aideen \"{{i18n:57879901.03}}\"/pause 500/move Aideen 0 1 1/move Aideen 1 0 1/playSound openChest/textAboveHead Aideen \"{{i18n:57879901.04}}\"/pause 1000/move Aideen -1 0 2/move Aideen 0 1 2/pause 500/speak Aideen \"{{i18n:57879901.05}}[(O)EastScarp_Bird_Of_Paradise_Seed]\"/speak Aideen \"{{i18n:57879901.06}}\"/pause 500/emote farmer 32/pause 1000/end"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Animals/FairyPenguin",
+            "FromFile": "assets/Characters/Menagerie/FairyPenguin.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57879902/n EastScarp.SpecialOrders.SlayCrabsMail/t 800 1300/d Tue Wed Fri": "ocean/22 114/Eloise 18 112 2 Jacob 22 102 0 Rosa 22 100 2 farmer 17 102 2/skippable/addTemporaryActor FairyPenguin 16 16 -100 -100 2 false Animal Penguin1/addTemporaryActor FairyPenguin 16 16 -100 -100 2 false Animal Penguin2/showFrame Penguin1 21/showFrame Penguin2 21/move farmer 0 10 2/emote Eloise 16/jump Eloise 3/faceDirection farmer 1/emote farmer 8/pause 500/textAboveHead Eloise \"{{i18n:57879902.01}}\"/faceDirection Eloise 2/faceDirection farmer 2/viewport move 0 4 1000/pause 1000/warp Penguin1 24 124/pause 2000/animate Penguin1 false false 1000 21 22 23 23/move Penguin1 0 -6 0 true/pause 2000/speak Eloise \"{{i18n:57879902.02}}\"/move Penguin1 -5 0 2/warp Penguin2 24 124/pause 2000/animate Penguin2 false false 1000 21 22 23 23/move Penguin2 0 -6 3 true/faceDirection Eloise 3/faceDirection farmer 1/speak Eloise \"{{i18n:57879902.03}}\"/pause 500/move Penguin2 -2 0 3 true/move Penguin1 2 0 1 true/faceDirection Eloise 2/emote Eloise 20/pause 500/faceDirection farmer 2/pause 1000/emote Penguin2 56/emote Penguin1 20/pause 3000/end",
+                "57879903/n EastScarp.SpecialOrders.LadySheba3Mail/t 800 1300/d Tue Wed Fri": "{{season}}_day_ambient/11 92/Jas 13 93 3 farmer 16 83 2 LadySheba -100 -100 2/skippable/pause 500/move farmer 0 10 3/faceDirection Jas 1/speak Jas \"{{i18n:57879903.01}}\"/playSound leafrustle/playSound cat/move farmer 0 1 3/pause 500/move farmer -1 0 3/pause 500/move farmer -1 0 3/animate farmer true true 1000 58/faceDirection Jas 3/textAboveHead Jas \"{{i18n:57879903.02}}\"/playSound cat/pause 1000/emote Jas 28/pause 1000/playSound cat/pause 2000/playSound leafrustle/warp LadySheba 9 92/pause 1000/move LadySheba 0 1 1/textAboveHead Jas \"{{i18n:57879903.03}}\"/move LadySheba 1 0 1/pause 500/textAboveHead Jas \"{{i18n:57879903.04}}\"/speak Jas \"{{i18n:57879903.05}}\"/playSound cat/move LadySheba 1 0 1/shake LadySheba 240/pause 500/emote Jas 56/pause 500/move LadySheba 1 0 1/emote Jas 20/speak Jas \"{{i18n:57879903.06}}\"/positionOffset LadySheba 16 0/pause 500/speak Jas \"{{i18n:57879903.07}}\"/emote Jas 40/pause 1000/playSound cat/pause 500/speak Jas \"{{i18n:57879903.08}}\"/pause 500/playSound cat/speak LadySheba \"{{i18n:57879903.09}}\"/speak Jas \"{{i18n:57879903.10}}\"/emote LadySheba 20/pause 1500/playSound reward/message \"{{i18n:57879903.11}}\"/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_VetHouse",
+            "Entries": {
+                "57879904/n EastScarp.SpecialOrders.EloiseRealMacawMail/t 900 1600/d Tue Wed Fri": "playful/-100 -100/Jacob 4 23 2 Eloise 7 22 1 RichieTheMacaw 8 21 2 farmer -100 -100 0 Rosa 5 25 0/skippable/viewport 8 22 clamp true/pause 500/playSound doorOpen/pause 500/playSound parrot/textAboveHead RichieTheMacaw \"{{i18n:57879904.01}}\"/warp farmer 12 27/move farmer 0 -3 3/textAboveHead RichieTheMacaw \"{{i18n:57879904.02}}\"/pause 500/jump Eloise 3/speed Eloise 4/move Eloise 0 2 1/speak Eloise \"{{i18n:57879904.03}}\"/pause 500/emote farmer 32/pause 500/faceDirection Eloise 0/speak Eloise \"{{i18n:57879904.04}}\"/move farmer -4 0 0/move farmer 0 -1 0/emote RichieTheMacaw 40/pause 1000/speak Eloise \"{{i18n:57879904.05}}\"/pause 500/emote RichieTheMacaw 40/pause 1000/emote Eloise 28/pause 1000/playSound parrot/speak RichieTheMacaw \"{{i18n:57879904.06}}\"/faceDirection farmer 2/animate farmer false true 200 102 103/animate Rosa false true 200 20 21/emote Eloise 8/emote Jacob 60/pause 2000/end"
+            }
+        },
+        {
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/BlueJay",
+            "FromFile": "assets/Portraits/Menagerie/BlueJay_Portrait.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "When": {
+                "HasMod": "Lemurkat.JasRanchPack.CP"
+            },
+            "Entries": {
+                "57879905/n EastScarp.SpecialOrders.EloiseJasJayMail/t 900 1600/w sunny/d Tue Wed Fri": "none/44 10/Eloise 44 11 0 Jas 45 11 0 farmer 50 12 3/skippable/addTemporaryActor BlueJay 16 32 66 7 2 false/changeName BlueJay Jeremy_Jay/addTemporaryActor JeremyJay 16 32 66 9 2 false/move farmer -4 0 0 true/speak Eloise \"{{i18n:57879905.01}}\"/pause 500/faceDirection Jas 3/textAboveHead Jas \"{{i18n:57879905.02}}\"/speak Jas \"{{i18n:57879905.03}}\"/faceDirection Eloise 1/speak Eloise \"{{i18n:57879905.04}}\"/speak Jas \"{{i18n:57879905.05}}\"/jump Eloise 5/emote Eloise 16/pause 500/speak Eloise \"{{i18n:57879905.06}}\"/pause 500/faceDirection Eloise 2/faceDirection Jas 2/textAboveHead Jas \"{{i18n:57879905.07}} {{PlayerName}}\"/pause 500/speak Eloise \"{{i18n:57879905.08}}\"/pause 500/emote farmer 28/quickQuestion #{{i18n:57879905.09}}#{{i18n:57879905.10}}#{{i18n:57879905.11}}#{{i18n:57879905.12}}(break)emote Jas 40\\textAboveHead Eloise \"{{i18n:57879905.13}}\"(break)emote Jas 32\\emote Eloise 40\\speak Eloise \"{{i18n:57879905.14}}\"(break)emote Jas 20\\emote Eloise 60\\speak Eloise \"{{i18n:57879905.15}}\"(break)emote Jas 28\\emote Eloise 60\\speak Eloise \"{{i18n:57879905.16}}\"/pause 500/ignoreCollisions BlueJay/ignoreCollisions JeremyJay/advancedMove BlueJay false -20 0 2 1000/pause 500/advancedMove JeremyJay false -21 0 2 1000/pause 2000/playSound crow/faceDirection Eloise 0/faceDirection Jas 0/textAboveHead Jas \"{{i18n:57879905.17}}\"/advancedMove farmer false -3 0 0 -1 4 1000/pause 1000/playSound crow/speak BlueJay \"{{i18n:57879905.18}}\"/emote Jas 20 true/emote Eloise 20 true/speak Jas \"{{i18n:57879905.19}}\"/pause 500/speak Eloise \"{{i18n:57879905.20}}\"/pause 500/emote Jas 12/pause 500/faceDirection Eloise 3/faceDirection farmer 1/speak Eloise \"{{i18n:57879905.21}}\"/pause 500/emote Jas 32/speak Jas \"{{i18n:57879905.22}}\"/faceDirection Eloise 0/pause 2000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_VillageInn",
+            "Entries": {
+                "57879906/n EastScarp.SpecialOrders.OliverLexiSurprise/p Rosa/k 57879907/w sunny": "SettlingIn/44 31/Rosa 45 31 2 farmer 44 36 0/skippable/advancedMove farmer false 0 -3 1 0 4 1000/textAboveHead Rosa \"{{i18n:57879906.01}}\"/pause 1000/emote farmer 8/speak Rosa \"{{i18n:57879906.02}}\"/pause 500/emote farmer 32/pause 500/speak Rosa \"{{i18n:57879906.03}}\"/pause 500/emote farmer 40/pause 500/speak Rosa \"{{i18n:57879906.04}}\"/pause 500/emote farmer 32/pause 1000/end",
+                "57879909/n EastScarp.SpecialOrders.EthanScienceProjectMail2/p EthanHart": "SettlingIn/44 31/Rosa 45 31 2 EdithHart 47 31 2 EthanHart 40 26 2 farmer -100 -100 0/skippable/warp farmer 44 36/advancedMove farmer false 0 -3 4 1000/proceedPosition farmer/textAboveHead Rosa \"{{i18n:57879909.0}}\"/pause 1500/textAboveHead EdithHart \"{{i18n:57879909.1}}\"/pause 500/emote EthanHart 16/speed EthanHart 5/advancedMove EthanHart false 0 7 1 100/proceedPosition EthanHart/pause 500/faceDirection farmer 3/pause 500/speak EthanHart \"{{i18n:57879909.2}}\"/pause 500/emote farmer 32/textAboveHead EthanHart \"{{i18n:57879909.3}}\"/speed EthanHart 2/advancedMove EthanHart false 0 -7 2 100/advancedMove farmer false -4 0 0 -3 4 100/pause 4000/stopAdvancedMoves/viewport -100 -100/warp EthanHart 55 7/warp farmer 55 9/viewport 55 8 clamp true/pause 500/textAboveHead EthanHart \"{{i18n:57879909.4}}\"/speak EthanHart \"{{i18n:57879909.5}}\"/pause 500/emote farmer 56/pause 1000/faceDirection EthanHart 0/pause 500/fade/viewport -100 -100/playSound stairsdown/changeLocation EastScarp_EthansHideaway/viewport -100 -100/warp EthanHart 7 6/faceDirection EthanHart 2/viewport 6 6/playSound stairsdown/warp farmer 4 7/pause 500/speak EthanHart \"{{i18n:57879909.6}}\"/advancedMove farmer false 2 0 1 100 1 100/pause 1000/emote farmer 32/pause 1000/faceDirection EthanHart 3/speak EthanHart \"{{i18n:57879909.7}}\"/faceDirection EthanHart 0/faceDirection farmer 0/pause 500/emote farmer 20/pause 1000/faceDirection farmer 1/faceDirection EthanHart 3/pause 500/speak EthanHart \"{{i18n:57879909.8}}\"/pause 500/faceDirection EthanHart 0/pause 500/speak EthanHart \"{{i18n:57879909.9}}\"/pause 500/emote EthanHart 28/pause 1000/end"
+            }
+        },
+        { //Lexi Events
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_SeaCave",
+            "Entries": {
+                "57879907/n EastScarp.SpecialOrders.OliverLexiSurprise/p Leximonster": "SettlingIn/29 21/OliverK 29 21 1 Leximonster 30 21 3 farmer -100 -100 0/skippable/addObject 30 22 221 1/pause 1000/speak Leximonster \"{{i18n:57879907.01}}\"/pause 500/emote OliverK 60/pause 500/speak OliverK \"{{i18n:57879907.02}}\"/warp farmer 28 19/pause 500/faceDirection farmer 2/pause 500/advancedMove farmer false 0 1 1 0 2 1000/pause 500/faceDirection Leximonster 0/faceDirection OliverK 0/pause 500/textAboveHead OliverK \"{{i18n:57879907.03}} {{PlayerName}}!\"/pause 500/speak Leximonster \"{{i18n:57879907.04}}\"/pause 500/emote OliverK 60/pause 500/speak OliverK \"{{i18n:57879907.05}}\"/pause 500/faceDirection Leximonster 3/pause 500/speak Leximonster \"{{i18n:57879907.06}}\"/pause 500/emote Leximonster 40/pause 500/speak Leximonster \"{{i18n:57879907.07}}\"/faceDirection OliverK 1/pause 500/speak OliverK \"{{i18n:57879907.08}}\"/pause 500/faceDirection Leximonster 0/faceDirection OliverK 0/speak Leximonster \"{{i18n:57879907.09}}\"/pause 500/emote farmer 32/pause 1000/fade/viewport -1000 -1000/pause 500/playSound eat/farmerEat 221/message \"{{i18n:57879907.10}}\"/end"
+            }
+        },
+        {
+            "LogName": "Loads LanternRoom view",
+            "Action": "Load",
+            "Target": "Maps/ESLanternRoomDayTime",
+            "FromFile": "assets/Maps/LanternRoom_Daytime.tmx"
+        },
+        { //Beatrice Events
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Lighthouse",
+            "Entries": {
+                "57879908/n EastScarp.SpecialOrders.BeatriceQuartzMail/t 1500 1900": "distantBanjo/6 22/Beatrice 6 20 0 farmer -100 -100 0/skippable/pause 1000/playSound doorOpen/pause 1000/warp farmer 5 25/pause 500/faceDirection Beatrice 2/speak Beatrice \"{{i18n:57879908.01}}\"/pause 500/emote farmer 32/pause 500/speak Beatrice \"{{i18n:57879908.02}}\"/pause 500/advancedMove farmer false 0 -2 1 0 0 -1 4 500/pause 500/emote farmer 8/move Beatrice 0 1 2/pause 1000/textAboveHead Beatrice \"{{i18n:57879908.03}}\"/pause 500/faceDirection Beatrice 1/pause 500/fade/viewport -1000 -1000/stopAdvancedMoves/warp Beatrice 17 5/faceDirection Beatrice 3/warp farmer 16 5/faceDirection farmer 0/viewport 17 5 clamp true/pause 1500/faceDirection farmer 1/pause 500/emote farmer 8/pause 500/speak Beatrice \"{{i18n:57879908.04}}\"/pause 500/faceDirection farmer 0/pause 500/fade/viewport -1000 -1000/playSound stairsdown/changeLocation EastScarp_LanternRoom/viewport -1000 -1000/warp farmer 1 7/warp Beatrice -1000 -100/faceDirection Beatrice 2/viewport 4 8/advancedMove farmer false 0 1 1 0 1 500/pause 500/emote farmer 16/playSound stairsdown/pause 1000/warp Beatrice 1 7/pause 1000/textAboveHead Beatrice \"{{i18n:57879908.05}}\"/advancedMove Beatrice false 0 2 1 0 1 1000/pause 2000/speak Beatrice \"{{i18n:57879908.06}}\"/pause 2000/faceDirection farmer 2/faceDirection Beatrice 0/quickQuestion #{{i18n:57879908.07}}#{{i18n:57879908.08}}#{{i18n:57879908.09}}(break)emote Beatrice 20(break)emote Beatrice 40(break)emote Beatrice 12/pause 1000/speak Beatrice \"{{i18n:57879908.10}}\"/pause 500/emote farmer 32/advancedMove Beatrice false 0 1 4 0 2 1000/advancedMove farmer false 0 2 3 0 2 1000/pause 3000/speak Beatrice \"{{i18n:57879908.11}}\"/pause 500/speak Beatrice \"{{i18n:57879908.12.{{CorwinUnlocked}} }}\"/faceDirection Beatrice 3/faceDirection farmer 1/pause 500/speak Beatrice \"{{i18n:57879908.13.{{CorwinUnlocked}} }}\"/faceDirection Beatrice 2/faceDirection farmer 2/pause 1000/fade/viewport -1000 -1000/stopMusic/warp Beatrice -100 -100/warp farmer -100 -100/playMusic EmilyDream/addTemporaryActor ESFlyingGembirds 32 32 -100 -100 3 false Animal Gembird1/addTemporaryActor ESFlyingGembirds 32 32 -100 -100 3 false Animal Gembird2/changeToTemporaryMap ESLanternRoomDayTime/viewport -1000 -1000/fade unfade/viewport 7 8/viewport move 1 0 8000 true/pause 8000/warp Gembird1 28 6/advancedMove Gembird1 false -29 0/pause 1000/warp Gembird2 28 8/advancedMove Gembird2 false -29 0/pause 10000/end"
+            }
+        },
+        { //Blacksmith event
+            "Action": "EditData",
+            "Target": "Data/Events/Blacksmith",
+            "Entries": {
+                "55990050/n EastScarp.SpecialOrders.JasperGeodesMail/d Mon Tue Thu Fri Sat Sun/t 1000 1600": "archaeo/7 13/farmer -100 -100 0 Jas 8 14 0 Vincent 7 14 0 Jasper 5 11 2/addTemporaryActor Clint 32 48 8 12 3/skippable/animate Clint true true 120 8 8 8 8 8 8 8 8 9 10 11 12 8 8 8 8 8 8 8 8 8 8 8/warp farmer 5 19/move farmer 0 -4 1 true/pause 800/playSound crafting/pause 120/stopAnimation Clint/extendSourceRect Clint reset/showFrame Clint 4/speak Clint \"{{i18n:55990050.01}}\"/faceDirection Jasper 2/emote Jasper 32/jump Vincent 3/move Jas 0 1 3/faceDirection Vincent 3/speak Jas \"{{i18n:55990050.{{Blacksmith}}.02}}\"/pause 1000/faceDirection Jas 0/faceDirection Clint 2/emote Jas 20/pause 500/emote Clint 32/speed Vincent 3/move Vincent -1 0 2 true/speed Jas 3/move Jas -1 0 3 true/speak Vincent \"{{i18n:55990050.03}}\"/speak Jas \"{{i18n:55990050.04}}\"/move Jasper 0 3 1/faceDirection Vincent 3 true/faceDirection farmer 0 true/speak Jasper \"{{i18n:55990050.05}}\"/pause 500/faceDirection farmer 1/faceDirection Vincent 1/emote Jas 56/faceDirection Vincent 3/pause 500/textAboveHead Vincent \"{{i18n:55990050.20}}\"/textAboveHead Jas \"{{i18n:55990050.21}}\"/move Clint -1 0 2/faceDirection Vincent 0/move Jas 0 -1 0/speak Jas \"{{i18n:55990050.{{Blacksmith}}.06}}\"/emote Clint 60/speak Clint \"{{i18n:55990050.07}}\"/jump Vincent 3/faceDirection Vincent 1 true/faceDirection Jas 3 true/speak Vincent \"{{i18n:55990050.08}}\"/faceDirection Vincent 3/speak Vincent \"{{i18n:55990050.09}}\"/speak Jasper \"{{i18n:55990050.10}}\"/faceDirection Vincent 1/textAboveHead Vincent \"{{i18n:55990050.22}}\"/pause 500/speak Jasper \"{{i18n:55990050.11}}\"/faceDirection Vincent 3/speak Vincent \"{{i18n:55990050.12}}\"/pause 500/faceDirection Jasper 0/speak Jasper \"{{i18n:55990050.{{Blacksmith}}.13}}\"/faceDirection Vincent 0 true/faceDirection Jas 0 true/emote Clint 28/pause 1000/speak Clint \"{{i18n:55990050.{{Blacksmith}}.14}}\"/jump Jasper 3/speak Jasper \"{{i18n:55990050.15}}\"/faceDirection Jasper 1/faceDirection Vincent 3 true/faceDirection Jas 3 true/pause 500/speak Jasper \"{{i18n:55990050.{{Blacksmith}}.16}}\"/speak Vincent \"{{i18n:55990050.{{Blacksmith}}.17}}\"/speak Jas \"{{i18n:55990050.18}}\"/faceDirection Jas 0/speak Jas \"{{i18n:55990050.{{Blacksmith}}.19}}\"/pause 1000/end"
+            }
+        },
+        { //Archaeology House event
+            "Action": "EditData",
+            "Target": "Data/Events/ArchaeologyHouse",
+            "Entries": {
+                "55990051/n EastScarp.SpecialOrders.JasperScrollsMail/d Mon Tue Thu Fri Sat Sun/t 1000 1400": "Of Dwarves/-100 -100/Jasper 18 9 2 Jas 19 10 3 Vincent 16 10 1 Penny 13 9 2 Gunther 3 8 2 farmer 10 13 1/skippable/showFrame Jasper 21/showFrame Jas 22/showFrame Vincent 24/showFrame Penny 18/viewport 15 12/move farmer 5 0 0 true/speak Jasper \"{{i18n:55990051.01}}\"/pause 500/emote Vincent 16/pause 500/textAboveHead Jas \"{{i18n:55990051.02}}\"/move farmer 0 1 0/move Penny 1 0 2/speak Penny \"{{i18n:55990051.03.{{GenderNeutral}} | GenderNeutralTitle = {{GenderNeutralTitle}} }}\"/faceDirection Penny 1/showFrame Jasper 0/faceDirection Jasper 3/showFrame Vincent 0/showFrame Jas 0/speed Vincent 3/speed Jas 3/move Jas 0 2 3 true/move Vincent 0 2 2 true/pause 2000/faceDirection Penny 2/faceDirection Jasper 2/speak Vincent \"{{i18n:55990051.04}}\"/jump Vincent 3/textAboveHead Vincent \"{{i18n:55990051.05}}\"/move Jas -2 0 2/move Jas 0 1 3/speak Vincent \"{{i18n:55990051.06}}\"/move Jas -1 0 0/speak Jas \"{{i18n:55990051.07}}\"/faceDirection Jas 2/speak Jas \"{{i18n:55990051.08}}\"/textAboveHead Vincent \"{{i18n:55990051.09}}\"/pause 1000/move Vincent -1 0 2/faceDirection Jas 3/speak Vincent \"{{i18n:55990051.10}}\"/speak Jas \"{{i18n:55990051.11}}\"/emote Penny 40/speak Penny \"{{i18n:55990051.12}}\"/faceDirection Penny 1/faceDirection Jasper 3/emote Jasper 60/pause 1000/faceDirection Penny 2/faceDirection Jasper 2/speak Penny \"{{i18n:55990051.13}}\"/jump Vincent 3/textAboveHead Vincent \"{{i18n:55990051.14}}\"/pause 1000/faceDirection Jas 0/speak Jas \"{{i18n:55990051.15}}\"/textAboveHead Jasper \"{{i18n:55990051.16}}\"/move Penny 0 4 2/move Vincent 0 1 3/speak Penny \"{{i18n:55990051.17}}\"/pause 1000/emote farmer 32/advancedMove Penny false -4 0 0 1 -4 0 0 -1 -3 0 0 -3/advancedMove Vincent false -5 0 0 1 -4 0 0 -1 -2 0 0 -3/advancedMove Jas false -6 0 0 1 -4 0 0 -1 -1 0 0 -3/faceDirection farmer 3/pause 2000/faceDirection farmer 0/advancedMove Jasper false -3 0 0 3/pause 2000/showFrame Jasper 0/speak Jasper \"{{i18n:55990051.18}}\"/speak Jasper \"$q 55990511 null#{{i18n:55990051.19}}#$r 55990512 -25 JTheory_A#{{i18n:55990051.20}}#$r 55990512 -250 JTheory_B#{{i18n:55990051.21}}#$r 55990513 25 JTheory_C#{{i18n:55990051.22}}#$r 55990513 125 JTheory_D#{{i18n:55990051.23}}\"/pause 1000/speak Jasper \"$p 55990513#{{i18n:55990051.24}}\"/pause 1000/end"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Characters/DSentry",
+            "FromFile": "assets/Characters/TempActors/DSentry.png"
+        },
+        { //Dwarf Sentry House event
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_JasperHouse",
+            "Entries": {
+                "5599055/n EastScarp.SpecialOrders.JasperDeviceMail": "Of Dwarves/14 14/Maru 10 14 1 farmer -100 -100 0 Jasper 11 13 2/skippable/addTemporaryActor DSentry 16 32 11 14 2 false/animate DSentry false true 1000 32/animate Maru false true 120 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 16 17 18 19 19 20 20 19 19 20 20 21 21 22 23/showFrame Jasper 29/playSound clank/pause 1000/emote Jasper 40/playSound clank/pause 1000/playSound stairsdown/warp farmer 11 19/move farmer 0 -3 0/stopAnimation Maru 4/textAboveHead Maru \"{{playerName}}!\"/showFrame Jasper 0/move farmer 1 0 0 true/speak Jasper \"{{i18n:5599055.02}}\"/pause 500/emote farmer 56/pause 1000/speak Jasper \"{{i18n:5599055.03}}\"/emote farmer 32/pause 1000/move farmer 0 -3 3/faceDirection Jasper 1/pause 500/textAboveHead Jasper \"{{i18n:5599055.04}}\"/pause 1000/faceDirection farmer 2/showFrame farmer 57/addObject 12 11 64 1/playSound discoverMineral/pause 1000/speak Jasper \"{{i18n:5599055.05}}\"/removeSprite 12 11/move farmer 0 1 3/faceDirection Jasper 2/playSound openChest/pause 500/playSound Ship/pause 1500/textAboveHead Maru \"{{i18n:5599055.06}}\"/pause 2000/textAboveHead Jasper \"{{i18n:5599055.07}}\"/pause 2000/emote Maru 28/pause 3000/playSound DwarvishSentry/stopAnimation DSentry 0/shake DSentry 500/jump Maru 3 true/emote Jasper 16 true/animate DSentry false true 30 16 16 16 17 17 18 18 18 19 19 19/pause 1000/stopAnimation DSentry/animate DSentry false true 30 28 28 28 29 29 30 30 30 31 31 31/playSound DwarvishSentry/shake Maru 240/speak Maru \"{{i18n:5599055.08}}\"/speak Jasper \"{{i18n:5599055.09}}\"/emote Maru 28/showFrame Maru 4/jump Maru/showFrame Maru 4/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/faceDirection Maru 1/warp Maru 9 14/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/shake Maru 500/speak Maru \"{{i18n:5599055.10}}\"/emote Jasper 28/speak Jasper \"{{i18n:5599055.11}}\"/emote Maru 28/jump Maru/showFrame Maru 4/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/positionOffset Maru -4 0/pause 5/faceDirection Maru 1/warp Maru 8 14/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/positionOffset DSentry -4 0/pause 5/showFrame Jasper 29/faceDirection farmer 0/playSound leafrustle/textAboveHead Jasper \"{{i18n:5599055.12}}\"/pause 1000/faceDirection farmer 3/playSound DwarvishSentry/emote Maru 28/pause 1000/textAboveHead Jasper \"{{i18n:5599055.13}}\"/speak Jasper \"{{i18n:5599055.14}}\"/shake DSentry 500/stopAnimation DSentry 0/playSound Ship/pause 1000/speed Jasper 3/move Jasper -2 0 2/faceDirection Maru 0/speak Jasper \"{{i18n:5599055.15}}\"/emote Maru 60/move farmer -2 0 3/faceDirection Maru 1/speak Jasper \"{{i18n:5599055.16}}\"/pause 500/emote farmer 56/pause 1000/end"
+            }
+        },
+        { //Tori Slime BAsement Enrinchment
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_ToriSlimeBasement",
+            "Entries": {
+                "57879910/n EastScarp.SpecialOrders.VictoriaEnrichment": "communityCenter/-100 -100/ToriLK 9 19 0 HappySlime 9 16 2 farmer 15 9 2/skippable/animate HappySlime true true 200 0 1 2 3/addColouredSlime 10 22 255 0 0/addColouredSlime 12 26 255 0 0/addColouredSlime 15 22 0 13 247/addColouredSlime 16 23 0 13 247/addColouredSlime 19 22 128 0 128/addColouredSlime 21 22 128 0 128/addColouredSlime 25 23 0 247 13/addColouredSlime 5 22 0 247 13/addColouredSlime 6 25 0 247 13/viewport 8 16 clamp true/pause 2000/advancedMove farmer false 0 10 3 100/speak ToriLK \"{{i18n:57879910.0}}\"/pause 1000/emote HappySlime 20/pause 1000/speak ToriLK \"{{i18n:57879910.1}}\"/pause 1000/proceedPosition farmer/faceDirection ToriLK 1/pause 1000/textAboveHead ToriLK \"{{PlayerName}}\"/pause 500/emote farmer 32/advancedMove ToriLK false 3 0 1 1500 2 100/advancedMove farmer false -2 0 3 1000 2 100/pause 500/pause 3000/speak ToriLK \"{{i18n:57879910.3}}\"/pause 1000/end"
+            }
+        },
+        { // Greenhouse event
+            "LogName": "Community Greenhouse",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Crossing",
+            "Entries": {
+                "57871699/f Jessie 2000/f EthanHart 2000/e 57871602/w sunny": "{{season}}_day_ambient/-100 -100/EthanHart 49 11 0 Jessie 50 18 0 farmer 54 20 3/skippable/viewport 49 12 clamp true/pause 1000/emote EthanHart 8/advancedMove Jessie false 0 -6 3 100/proceedPosition Jessie/emote Jessie 56/pause 1000/faceDirection EthanHart 2/textAboveHead EthanHart \"{{i18n:57871699.0}}\"/advancedMove EthanHart false 0 1 1 100/pause 1000/speak EthanHart \"{{i18n:57871699.1}}\"/pause 500/faceDirection Jessie 0/pause 1000/emote Jessie 40/pause 1000/faceDirection Jessie 3/speak Jessie \"{{i18n:57871699.2}}\"/pause 1000/speak EthanHart \"{{i18n:57871699.3}}\"/faceDirection EthanHart 0/pause 500/textAboveHead EthanHart \"{{i18n:57871699.4}}\"/pause 1500/faceDirection EthanHart 2/pause 1000/jump EthanHart 5 true/emote EthanHart 16 true/pause 1000/speak EthanHart \"{{i18n:57871699.5}}\"/advancedMove farmer false -5 0 0 -6 4 1000/pause 1000/emote Jessie 32/pause 1000/speak EthanHart \"{{i18n:57871699.6}}\"/proceedPosition farmer/pause 500/faceDirection Jessie 2/pause 500/emote Jessie 32/textAboveHead EthanHart \"{{i18n:57871699.7}}\"/pause 500/speak EthanHart \"{{i18n:57871699.8}}\"/pause 500/emote farmer 60/pause 1000/end dialogue EthanHart \"{{i18n:57871699.9}}\"",
+                "57871698/n EastScarp.SpecialOrders.ScarpGreenHouse_Complete/w sunny": "EastScarpAppleCider/-100 -100/Jessie 50 13 3 Aideen 47 14 1 Juliet 48 15 0 EthanHart 48 13 2 EdithHart 52 14 3 MichaelHart 53 15 3 Robin 49 13 1 farmer 50 20 0 ToriLK 46 13 1 JadeMalic 52 16 0 Rosa 49 16 0/skippable/temporaryAnimatedSprite EastScarp\\TAS 0 32 48 32 100 1 1 48 11 false false 1 0 1 0 0 0 hold_last_frame/positionOffset Juliet 0 12/viewport 49 20 clamp true/advancedMove farmer false 0 -4 4 100/viewport move 0 -2 3000/pause 3000/faceDirection farmer 3/emote farmer 8/pause 500/faceDirection Rosa 1/speak Rosa \"{{i18n:57871698.0}}\"/pause 500/emote farmer 56/pause 500/faceDirection farmer 0 true/faceDirection Rosa 0 true/pause 1000/speak Jessie \"{{i18n:57871698.1}}\"/pause 500/emote Robin 32/speak Robin \"{{i18n:57871698.2}}\"/pause 500/faceDirection Robin 3 true/faceDirection EthanHart 1 true/pause 1000/emote EdithHart 20 true/pause 500/textAboveHead MichaelHart \"{{i18n:57871698.3}}\"/pause 500/emote EthanHart 60/pause 500/jump EthanHart 3/pause 1000/speed EthanHart 3/advancedMove EthanHart false 0 2 2 0 2 100/textAboveHead EthanHart \"{{i18n:57871698.4}}\"/faceDirection Robin 2 true/faceDirection Jessie 2 true/pause 500/emote farmer 56/proceedPosition EthanHart/pause 500/speak EthanHart \"{{i18n:57871698.5}}\"/jump farmer 5 true/emote farmer 16/pause 1000/quickQuestion {{i18n:57871698.6}}#{{i18n:57871698.7}}#{{i18n:57871698.8}}(break)pause 500\\textAboveHead EthanHart \"{{i18n:57871698.9}}\"(break)pause 500\\textAboveHead EthanHart \"{{i18n:57871698.10}}\"/pause 500/speed EthanHart 2/advancedMove EthanHart false -1 0 1 2000 4 100/pause 1000/advancedMove farmer false 0 -2 -1 0 0 -1 2 100/advancedMove Robin false -1 0 2 2000 1 100/proceedPosition farmer/pause 1500/showFrame farmer 79/pause 1500/showFrame farmer 78/pause 3000/faceDirection farmer 0/pause 1000/animate farmer false false 360 82 83/playSound scissors/pause 500/playSound scissors/removeTemporarySprites/temporaryAnimatedSprite EastScarp\\TAS 48 32 48 32 100 1 1 48 11 false false 1 0 1 0 0 0 hold_last_frame/playSound getNewSpecialItem/pause 2000/textAboveHead EthanHart \"{{i18n:57871698.11}}\"/pause 500/speak EthanHart \"{{i18n:57871698.12}}\"/pause 500/textAboveHead MichaelHart \"{{i18n:57871698.13}}\"/textAboveHead EdithHart \"{{i18n:57871698.14}}\"/pause 500/speak Jessie \"{{i18n:57871698.15}}\"/pause 1000/emote ToriLK 20 true/emote JadeMalic 20 true/pause 2000/advancedMove farmer false 0 -1 4 100/proceedPosition farmer/pause 50/playSound doorOpen/pause 1000/warp farmer -100 -100/advancedMove Jessie false -1 0 0 -1 4 100/proceedPosition Jessie/warp Jessie -100 -100/advancedMove EdithHart false -3 0 4 100/advancedMove MichaelHart false -3 0 0 -1 4 100/pause 1000/fade/viewport -100 -10000/end position 49 12"
+            },
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/EastScarpe/Emojis",
+            "FromFile": "assets/Images/ESemojis.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Mods/EastScarp/EmojiOverride",
+            "Entries": {
+                //ES Base NPCs
+                "Aideen": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 0,
+                        "Y": 0
+                    }
+                },
+                "Eloise": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 9,
+                        "Y": 0
+                    }
+                },
+                "Jacob": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 18,
+                        "Y": 0
+                    }
+                },
+                "Josephine": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 27,
+                        "Y": 0
+                    }
+                },
+                "Kataryna": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 36,
+                        "Y": 0
+                    }
+                },
+                "Oliver": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 45,
+                        "Y": 0
+                    }
+                },
+                "Rosa": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 54,
+                        "Y": 0
+                    }
+                },
+                "Vivienne": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 63,
+                        "Y": 0
+                    }
+                },
+                "Lexi": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 72,
+                        "Y": 0
+                    }
+                },
+                "Beatrice": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 81,
+                        "Y": 0
+                    }
+                },
+                //Expansion NPCs
+                "Eyvinder": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 0,
+                        "Y": 9
+                    }
+                },
+                "Jessie": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 9,
+                        "Y": 9
+                    }
+                },
+                "Juliet": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 18,
+                        "Y": 9
+                    }
+                },
+                "JadeMalic": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 27,
+                        "Y": 9
+                    }
+                },
+                "Tristan": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 36,
+                        "Y": 9
+                    }
+                },
+                "Jasper": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 45,
+                        "Y": 9
+                    }
+                },
+                "Victoria": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 54,
+                        "Y": 9
+                    }
+                },
+                "Corwin": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 63,
+                        "Y": 9
+                    }
+                },
+                "CameronFemale": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 72,
+                        "Y": 9
+                    }
+                },
+                "CameronMale": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 81,
+                        "Y": 9
+                    }
+                },
+                "EdithHart": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 0,
+                        "Y": 18
+                    }
+                },
+                "MichaelHart": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 9,
+                        "Y": 18
+                    }
+                },
+                "EthanHart": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 18,
+                        "Y": 18
+                    }
+                },
+                "StellaHart": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 27,
+                        "Y": 18
+                    }
+                },
+                "KennedyLK": {
+                    "AssetName": "Mods/EastScarpe/Emojis",
+                    "Location": {
+                        "X": 36,
+                        "Y": 18
+                    }
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "Lemurkat.Tori_PrismaticSlime.Active": {
+                    "ID": "CT.Tori_PrismaticSlime.Active",
+                    "Trigger": "LocationChanged",
+                    "Location": "Farm",
+                    "Condition": "PLAYER_SPECIAL_ORDER_ACTIVE Current Wizard2",
+                    "Action": "AddConversationTopic Tori_PrismaticSlime.Active 6"
+                },
+                "Lemurkat.Tori_PrismaticSlime.Completed": {
+                    "ID": "CT.Tori_PrismaticSlime.Completed",
+                    "Trigger": "LocationChanged",
+                    "Location": "Farm",
+                    "Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Current Wizard2",
+                    "Action": "AddConversationTopic Tori_PrismaticSlime.Complete 6"
+                },
+                "EastScarp.SpecialOrders.EthanScienceProject.Completed": {
+                    "ID": "CT.EastScarp.SpecialOrders.EthanScienceProject.Completed",
+                    "Trigger": "LocationChanged",
+                    "Location": "Farm",
+                    "Condition": "PLAYER_SPECIAL_ORDER_COMPLETE Current EastScarp.SpecialOrders.EthanScienceProject",
+                    "Action": "AddConversationTopic SpecialOrder_EthanScience.Complete 8"
+                },
+                "EastScarp.SpecialOrders.EthanScienceProject.FollowUp": {
+                    "ID": "CT.EastScarp.SpecialOrders.EthanScienceProject.FollowUp",
+                    "Trigger": "LocationChanged",
+                    "Location": "Farm",
+                    "Condition": "PLAYER_HAS_MAIL Current EastScarp.SpecialOrders.EthanScienceProjectMail, !PLAYER_HAS_CONVERSATION_TOPIC Current SpecialOrder_EthanScience.Complete",
+                    "Action": "AddMail Current EastScarp.SpecialOrders.EthanScienceProjectMail2 tomorrow"
+                },
+                "Lemurkat.Juliet_JojaColaTakeOverQuest.Active": {
+                    "ID": "CT.Juliet_JojaColaTakeOverQuest.Active",
+                    "Trigger": "LocationChanged",
+                    "Location": "Farm",
+                    "Condition": "PLAYER_SPECIAL_ORDER_ACTIVE Current EastScarp.SpecialOrders.JojaCola",
+                    "Actions": [
+                        "AddConversationTopic Juliet_JojaColaTakeOver 6",
+                        "AddMail Current EastScarp.JojaColaTakeOverMail Now"
+                    ]
+                },
+                "EastScarp.SpecialOrders.SlayCrabs.Active": {
+                    "ID": "CT.Lemurkat.SpecialOrders.SlayCrabs.Active",
+                    "Trigger": "LocationChanged",
+                    "Location": "Farm",
+                    "Condition": "PLAYER_SPECIAL_ORDER_ACTIVE Current EastScarp.SpecialOrders.SlayCrabs",
+                    "Actions": [
+                        "AddConversationTopic SpecialOrder_SlayCrabs 14"
+                    ]
+                },
+                "EastScarp.KingCarpChallenge.Willy": {
+                    "ID": "mail.EastScarp.KingCarpChallenge.Willy",
+                    "Trigger": "DayEnding",
+                    "Condition": "PLAYER_FISHING_LEVEL Current 8, LOCATION_SEASON Here spring summer fall",
+                    "Actions": [
+                        "AddMail Current EastScarp.KingCarpChallenge.Willy Tomorrow"
+                    ]
+                },
+                "EastScarp.VintageRubyRing.Rosa": {
+                    "ID": "mail.EastScarp.VintageRubyRing.Rosa",
+                    "Trigger": "LocationChanged",
+                    "Condition": "PLAYER_HAS_ITEM Current EastScarp_Vintage_Ruby_Ring, !PLAYER_HAS_SEEN_EVENT Current 57874012",
+                    "Action": "AddQuest 5787_VintageRubyRing"
+                }
+            }
+        },
+        //PLAYER_SPECIAL_ORDER_ACTIVE <player> <order id> 	Whether the specified player(s) have the given special order active.
+        //PLAYER_SPECIAL_ORDER_COMPLETE <player> <order id>
+    ]
+}
+//specificTemporarySprite ccCelebration

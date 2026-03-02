@@ -1,0 +1,15 @@
+{
+	"ItemName": "Sewing Machine",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Winter"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		"ChanceWeight": 0,
+		},
+	]
+}

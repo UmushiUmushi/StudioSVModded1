@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" compressionlevel="0" width="10" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="10">
+ <properties>
+  <property name="DayTiles" value="Front 3 1 469 Front 5 2 501 Front 4 1 469 Front 4 2 501 Front 5 1 469 Front 5 2 501 Front 6 1 469 Front 6 2 501"/>
+  <property name="NPCWarp" value="4 4 EastScarp_Lighthouse 18 4"/>
+  <property name="NightTiles" value="Front 3 1 1219 Front 5 2 1251 Front 4 1 1219 Front 4 2 1251 Front 5 1 1219 Front 5 2 1251 Front 6 1 1219 Front 6 2 1251"/>
+ </properties>
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2213" name="lighthousefloor" tilewidth="16" tileheight="16" tilecount="4" columns="2">
+  <image source="lighthousefloor.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="2217" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="3264" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1632"/>
+ </tileset>
+ <layer id="1" name="Back" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,301,302,302,302,302,302,302,303,0,
+302,301,302,302,302,302,302,302,303,0,
+302,301,0,0,113,113,0,0,303,0,
+2214,1272,1273,1274,1273,1274,1305,1306,1304,0,
+1305,1306,1305,1306,1305,1306,1337,1338,1305,1306,
+1337,1338,1337,1338,1337,1338,1337,1338,1337,1338,
+1306,1305,1306,1305,1306,1305,1306,1305,1306,0,
+1338,1337,1338,1337,1338,1337,1338,1337,1338,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="12" name="Back2" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,113,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,5007,5008,5009,5010,0,0,0,
+0,0,0,5039,5040,5041,5042,0,0,0,
+0,0,0,5071,5072,5073,5074,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="10" height="10">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,
+1,1430,0,0,1225,1225,0,0,1429,1,
+65,80,81,81,81,81,81,81,82,1,
+65,112,1354,113,113,113,113,113,114,1,
+65,144,0,0,1160,0,3566,3567,146,1,
+65,4325,4326,0,0,0,0,4325,4326,1,
+65,0,0,0,0,0,0,0,0,1,
+65,4389,4390,0,0,0,0,4389,4390,1,
+1,2874,0,0,0,0,0,0,2874,1,
+1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="4" name="TileData" x="32" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;ESLighthouse.1&quot;"/>
+   </properties>
+  </object>
+  <object id="8" x="64" y="64" width="16" height="16"/>
+  <object id="9" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp 18 4 EastScarp_Lighthouse"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="10" height="10">
+  <data encoding="csv">
+0,2,3,3,3,3,3,3,4,0,
+33,42,1290,1220,1220,1220,1220,1427,44,37,
+0,1462,1322,1252,1252,1252,1252,3503,1461,69,
+0,0,0,0,0,0,3534,3535,0,69,
+0,4293,4294,0,0,0,0,4293,4294,69,
+0,4327,4328,0,0,0,0,4327,4328,69,
+0,4359,4360,0,0,0,0,4359,4360,69,
+0,2842,0,0,0,0,0,0,2842,69,
+161,162,197,197,197,197,197,197,167,168,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="9" name="Paths" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,2185,2185,2185,2185,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="Paths"/>
+ <layer id="8" name="AlwaysFront" width="10" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,3502,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="11" name="Object Layer 5"/>
+</map>

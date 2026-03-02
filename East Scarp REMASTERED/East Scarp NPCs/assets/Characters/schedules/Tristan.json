@@ -1,0 +1,165 @@
+{
+    "Changes": [
+        
+        {
+            "LogName": "Edits Jas schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "Entries": {
+                "Sat": "1000 Forest 91 22 1/1030 Town 31 89 1/1200 Town 24 12 2 jas_jumprope/1600 Town 17 14 2/1620 Town 53 72 0/1740 EastScarp_AideenHouse 18 22 1/2050 EastScarp_AideenHouse 15 4 3 jas_sleep",
+                "summer_Sun": "0900 Town 47 87 0/1200 EastScarp_Village 53 89 2/1600 EastScarp_AideenHouse 22 22 3/1900 EastScarp_AideenHouse 15 4 3 jas_sleep",
+                "spring_Sun": "GOTO summer_Sun",
+                "winter_Sun": "0900 Town 47 87 0/1200 EastScarp_Playhouse 6 5 3 jas_read/1800 EastScarp_AideenHouse 22 22 3/2100 EastScarp_AideenHouse 15 4 3 jas_sleep",
+                "fall_Sun": "GOTO winter_Sun"
+            }
+        },
+        {
+            "LogName": "Edits Jas schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "When": {
+                "HasMod": "tenthousandcats.ImmersiveCShane"
+            },
+            "Entries": {
+                "13": "1000 Forest 91 22 1/1030 Town 31 89 1/1200 Town 24 12 2 jas_jumprope/1600 Town 17 14 2/1620 Town 53 72 0/1740 EastScarp_AideenHouse 18 22 1/2050 EastScarp_AideenHouse 15 4 3 jas_sleep",
+                "27": "1000 Forest 91 22 1/1030 Town 31 89 1/1200 Town 24 12 2 jas_jumprope/1600 Town 17 14 2/1620 Town 53 72 0/1740 EastScarp_AideenHouse 18 22 1/2050 EastScarp_AideenHouse 15 4 3 jas_sleep"
+            }
+        },
+        {
+            "LogName": "Edits Eloise schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Eloise",
+            "Entries": {
+                "winter_Sun": "700 EastScarp_VetHouse 30 14 1/800 EastScarp_Village 55 89 2/1200 EastScarp_Village 18 55 2/1400 EastScarp_Playhouse 5 4 2 Eloise_read_high/1800 EastScarp_VetHouse 30 14 1/2100 EastScarp_VetHouse 33 23 2",
+                "fall_Sun": "GOTO winter_Sun",
+                "summer_Sun": "700 EastScarp_VetHouse 30 14 1/900 EastScarp_VetHouse 30 25 3 \"Strings\\schedules\\Eloise:vethouse.000\"/1030 EastScarp_Village 54 41 2/1210 EastScarp_Village 55 89 2/1600 EastScarp_Village 18 55 2/1700 EastScarp_VetHouse 30 14 1/2100 EastScarp_VetHouse 33 23 2",
+                "spring_Sun": "GOTO summer_Sun"
+            }
+        },
+        {
+            "LogName": "Edits Eloise schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/PepperPup",
+            "When": {
+                "HasSeenEvent": "57870020"
+            },
+            "Entries": {
+                "winter_Sun": "700 EastScarp_VetHouse 23 14 square 5_2/800 EastScarp_Village 54 87 2 square_7_1/1200 EastScarp_Village 17 55 0/1400 EastScarp_Village 20 31 square_5_5/1800 EastScarp_VetHouse 23 14 square 5_2/2100 EastScarp_VetHouse 31 24 pepper_sleep",
+                "fall_Sun": "GOTO winter_Sun",
+                "summer_Sun": "700 EastScarp_VetHouse 23 14 square 5_2/1030 EastScarp_Village 54 39 1/1210 EastScarp_Village 54 87 square_7_1/1600 EastScarp_Village 18 56 0/1700 EastScarp_VetHouse 31 24 pepper_sleep",
+                "spring_Sun": "GOTO summer_Sun"
+            }
+        },
+        {
+            "LogName": "Edits Lavril schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Lavril",
+            "Entries": {
+                "winter_Sun": "610 EastScarp_OrchardHouse 2 4 2/620 EastScarp_OrchardHouse 3 4 2 lavril_rest/830 EastScarp_OrchardHouse 1 22 1/950 EastScarp_OrchardHouse 6 22 2/1000 EastScarp_OrchardHouse 4 22 2 lavril_meditation \"Strings\\schedules\\Lavril:absorb.000\"/1210 EastScarp_Orchard 47 20 2/1240 EastScarp_Playhouse 6 6 3 lavril_read/1800 EastScarp_OrchardHouse 7 5 2/1900 EastScarp_OrchardHouse 7 5 2 lavril_read/2040 EastScarp_OrchardHouse 2 4 2/2050 EastScarp_OrchardHouse 3 4 2/2100 EastScarp_OrchardHouse 3 4 2 lavril_sleep",
+                "fall_Sun": "GOTO winter_Sun",
+                "summer_Sun": "610 EastScarp_OrchardHouse 2 4 2/620 EastScarp_OrchardHouse 3 4 2 lavril_rest/830 EastScarp_OrchardHouse 1 22 1/950 EastScarp_OrchardHouse 6 22 2/1000 EastScarp_OrchardHouse 4 22 2 lavril_meditation \"Strings\\schedules\\Lavril:absorb.000\"/1100 EastScarp_Orchard 47 20 2/1210 EastScarp_Village 56 89 2/1600 EastScarp_OrchardHouse 4 22 2 lavril_meditation \"Strings\\schedules\\Lavril:absorb.000\"/1800 EastScarp_OrchardHouse 7 5 2/1900 EastScarp_OrchardHouse 7 5 2 lavril_read/2040 EastScarp_OrchardHouse 2 4 2/2050 EastScarp_OrchardHouse 3 4 2/2100 EastScarp_OrchardHouse 3 4 2 lavril_sleep",
+                "spring_Sun": "GOTO summer_Sun"
+            },
+            "When": {
+                "HasMod": "Arknir27.Lavril",
+                "HasSeenEvent": "63070012"
+            }
+        },
+        {
+            "LogName": "Edits Lavril schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Void",
+            "Entries": {
+                "winter_Sun": "610 EastScarp_Orchard 38 10 0/1220 EastScarp_Orchard 46 20 2/1300 EastScarp_Playhouse 4 6 void_read/1800 EastScarp_Orchard 38 10 0",
+                "fall_Sun": "GOTO winter_Sun",
+                "summer_Sun": "610 EastScarp_Orchard 38 10 0/1100 EastScarp_Orchard 46 20 2/1210 EastScarp_Village 56 90 2/1600 EastScarp_Orchard 38 10 0",
+                "spring_Sun": "GOTO summer_Sun"
+            },
+            "When": {
+                "HasMod": "Arknir27.Lavril",
+                "HasSeenEvent": "63070012"
+            }
+        },
+        {
+            "LogName": "Edits Jacob schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jacob",
+            "Entries": {
+                "winter_Sun": "700 EastScarp_VetHouse 34 14 3/800 EastScarp_Village 54 88 2/1200 EastScarp_Village 19 55 2/1340 EastScarp_Village 41 45 0/1400 EastScarp_Village 25 9 0/1600 EastScarp_VetHouse 31 5 0/2200 EastScarp_VetHouse 22 5",
+                "fall_Sun": "GOTO winter_Sun",
+                "summer_Sun": "700 EastScarp_VetHouse 34 14 3/900 EastScarp_Village 25 9 0/1130 EastScarp_Village 53 41 2/1210 EastScarp_Village 54 85 2/1600 EastScarp_Village 19 55 2/1700 EastScarp_VetHouse 34 14 2/1900 EastScarp_VetHouse 22 5",
+                "spring_Sun": "GOTO summer_Sun"
+            }
+        },
+        {
+            "LogName": "Edits Tristan schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/TristanLK",
+            "Entries": {
+                "rain": "0900 EastScarp_AideenHouse 20 19 0/1200 EastScarp_AideenHouse 7 18 tristanlk_knit/1600 EastScarp_AideenHouse 20 19 0/1700 EastScarp_AideenHouse 21 20 2/1900 EastScarp_AideenHouse 24 7 1/2200 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "spring_28": "800 Town 48 87 0/1200 EastScarp_AideenHouse 7 18 tristanlk_knit/1600 EastScarp_AideenHouse 20 19 0/1700 EastScarp_AideenHouse 21 20 2/2050 EastScarp_AideenHouse 16 4 3/2150 EastScarp_AideenHouse 9 19 0/2300 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "summer_Mon": "800 Forest 92 21 1/1320 Beach 37 20 2/1600 AnimalShop 23 15 1/1800 AnimalShop 17 16 0/1830 AdventureGuild 9 16 1",
+                "Mon": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/2000 AdventureGuild 9 16 1",
+                "Tue": "800 EastScarp_AideenHouse 20 19 0/1100 EastScarp_Village 26 60 2/1200 EastScarp_Village 44 130 2/1400 EastScarp_Village 55 40 2 tristanlk_knit/1700 Saloon 20 19 3/2200 AdventureGuild 9 16 1",
+                "Wed": "800 EastScarp_AideenHouse 20 19 0/1100 EastScarp_Village 26 60 2/1300 EastScarp_Village 44 130 2/1600 AnimalShop 3 7 2/2000 AdventureGuild 9 16 1",
+                "spring_Thu": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/2000 AdventureGuild 9 16 1",
+                "summer_Thu": "800 Forest 92 21 1/1320 Beach 37 20 2/1600 AnimalShop 23 15 1/1800 WizardHouse 2 17 2",
+                "summer_20": "610 Forest 92 23 0/1030 Town 32 91 0/1200 EastScarp_Village 55 84 tristanlk_knit/1740 EastScarp_Village 23 62 2/1900 EastScarp_Village 15 69 2/2000 EastScarp_AideenHouse 22 22 3/2100 EastScarp_AideenHouse 13 4 1/2200 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "summer_21": "800 Town 48 87 0/1200 EastScarp_Village 55 84 tristanlk_knit/1600 EastScarp_AideenHouse 20 19 0/1700 EastScarp_AideenHouse 21 20 2/1900 EastScarp_AideenHouse 7 19 2/2050 EastScarp_AideenHouse 16 4 3/2150 EastScarp_AideenHouse 9 19 0/2300 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "fall_Thu": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/2000 AdventureGuild 9 16 1",
+                "winter_Thu": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/2000 AdventureGuild 9 16 1",
+                "winter_15": "0800 Forest 41 10 2/1300 Town 47 87 0/1600 Beach 22 24 2 \"Strings\\schedules\\tristanlk:winter_15.000\"/2330 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "winter_18": "GOTO Tue",
+                "Fri": "800 EastScarp_AideenHouse 20 19 0/1100 EastScarp_Village 26 60 2/1300 EastScarp_Village 44 130 2/1600 AnimalShop 5 6 2/2100 AnimalShop 3 7 2/2120 AdventureGuild 9 16 1",
+                "Sat": "610 Forest 92 23 0/1030 Town 32 91 0/1200 EastScarp_Village 55 84 tristanlk_knit/1740 EastScarp_Village 23 62 2/1900 EastScarp_Village 15 69 2/1940 EastScarp_AideenHouse 22 22 3/2100 EastScarp_AideenHouse 13 4 1/2200 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "fall_Sat": "700 Forest 92 23 0/1030 Town 32 91 0/1200 EastScarp_Village 54 84 tristanlk_knit/1640 EastScarp_Village 15 69 2/1940 EastScarp_AideenHouse 22 22 3/2100 EastScarp_AideenHouse 13 4 1/2200 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "Sun": "800 Town 48 87 0/1200 EastScarp_AideenHouse 7 18 tristanlk_knit/1600 EastScarp_AideenHouse 20 19 0/1700 EastScarp_AideenHouse 21 20 2/1900 EastScarp_AideenHouse 7 19 2/2050 EastScarp_AideenHouse 16 4 3/2150 EastScarp_AideenHouse 9 19 0/2300 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "Thu": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/2000 AdventureGuild 9 16 1",
+                "summer_Sun": "800 Town 48 87 0/1200 EastScarp_Village 55 84 tristanlk_knit/1600 EastScarp_AideenHouse 20 19 0/1700 EastScarp_AideenHouse 21 20 2/1900 EastScarp_AideenHouse 7 19 2/2050 EastScarp_AideenHouse 16 4 3/2150 EastScarp_AideenHouse 9 19 0/2300 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "spring_Sun": "800 Town 48 87 0/1200 EastScarp_AideenHouse 7 18 tristanlk_knit/1600 EastScarp_AideenHouse 20 19 0/1700 EastScarp_AideenHouse 21 20 2/2050 EastScarp_AideenHouse 16 4 3/2150 EastScarp_AideenHouse 9 19 0/2300 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "fall_Sun": "800 Town 48 87 0/1200 EastScarp_AideenHouse 7 18 tristanlk_knit/1600 EastScarp_AideenHouse 20 19 0/1700 EastScarp_AideenHouse 21 20 2/2050 EastScarp_AideenHouse 16 4 3/2150 EastScarp_AideenHouse 9 19 0/2300 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "marriage_Fri:": "900 Forest 21 29 2/1300 Town 86 103 2/1620 Town 18 94 0/1750 AnimalShop 7 16 2/2430 bed",
+                "marriage_Mon": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/2000 bed",
+                "spring": "610 Forest 92 23 0/1030 Town 32 91 0/1200 EastScarp_Village 55 84 tristanlk_knit/1740 EastScarp_Village 23 62 2/1900 EastScarp_Village 15 69 2/2000 EastScarp_AideenHouse 22 22 3/2100 EastScarp_AideenHouse 13 4 1/2200 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+            }
+        },
+        {
+            "LogName": "Edits Tristan schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/TristanLK",
+            "Entries": {
+                "summer_Mon": "800 Forest 92 21 1/1320 Beach 37 20 2/1600 AnimalShop 23 15 1/1730 AnimalShop 17 16 0/1800 Forest 33 25/1930 AdventureGuild 9 16 1",
+                "Mon": "0800 Forest 37 10 2/1500 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 tristanlk_knit/1800 Forest 33 25/1930 AdventureGuild 9 16 1"
+            },
+            "When": {
+                "HasSeenEvent": "5295004",
+                "HasMod": "tenthousandcats.ImmersiveCShane"
+            }
+        },
+        {
+            "LogName": "Edits Tristan schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/TristanLK",
+            "Entries": {
+                "Sat": "610 Forest 92 23 0/1030 Town 32 91 0/1200 EastScarp_Village 55 84 tristanlk_knit/1740 EastScarp_Village 23 62 2/1900 EastScarp_Village 15 69 2/1940 EastScarp_AideenHouse 22 22 3/2100 EastScarp_AideenHouse 13 4 1/2200 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+                "fall_Sat": "610 Forest 92 23 0/1030 Town 32 91 0/1200 EastScarp_Village 54 84 tristanlk_knit/1740 EastScarp_Village 23 62 2/1900 EastScarp_Village 15 69 2/1940 EastScarp_AideenHouse 22 22 3/2100 EastScarp_AideenHouse 13 4 1/2200 EastScarp_AideenHouse 23 4 2 tristanlk_sleep",
+            },
+            "When": {
+                "HasMod": "DaisyNiko.SVR3"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/TristanLK",
+            "Entries": {
+                "22": "800 EastScarp_AideenHouse 20 19 0/1000 CommunityCenter 9 5 2/1400 CommunityCenter 1 6 1/1730 CommunityCenter 13 19 2/1900 AnimalShop 3 7 3/2140 AdventureGuild 9 16 1"
+            },
+            "When": {
+                "HasSeenEvent |contains=191393": true,
+                "HasSeenEvent |contains=5295000": true,
+                "HasMod": "FlashShifter.StardewValleyExpandedCP"
+            }
+        },
+    ]
+}

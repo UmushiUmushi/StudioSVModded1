@@ -1,0 +1,13 @@
+{
+  "Name": "[CP] Forest Witch Calendar",
+  "Author": "FaePup",
+  "Version": "1.0.0",
+  "Description": "A Foresty, Bogwyytch styled Calendar replacement",
+  "UniqueID": "FaePup.Forestcalendar",
+  "MinimumApiVersion": "2.11.0",
+  "UpdateKeys": ["Nexus:"],
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher",
+    "MinimumVersion": "1.6.0"
+  }
+}

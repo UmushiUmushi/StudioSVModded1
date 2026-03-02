@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Zoom Level",
+  "Author": "thespbgamer",
+  "Version": "4.5.1",
+  "Description": "Change the Zoom, UI levels & Camera Position with simple keybinds. Now with a zoom randomizer!",
+  "UniqueID": "thespbgamer.ZoomLevel",
+  "EntryDll": "ZoomLevel.dll",
+  "MinimumApiVersion": "4.5.1",
+  "UpdateKeys": ["GitHub:thespbgamer/ZoomLevel", "Nexus:7363", "CurseForge:714275"],
+  "Dependencies": [
+    {
+      "UniqueID": "spacechase0.GenericModConfigMenu",
+      "MinimumVersion": "1.16.0",
+      "IsRequired": false
+    }
+  ]
+}

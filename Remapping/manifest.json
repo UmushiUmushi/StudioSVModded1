@@ -1,0 +1,242 @@
+{
+	"Name": "Remapping",
+	"Author": "Vlgor",
+	"Version": "1.5.2",
+	"Description": "Adds structures from other mods to your mini-map!",
+	"UniqueID": "ReMapping.Vlgor",
+	"UpdateKeys": [	"Nexus:29049" ],
+	"MinimumApiVersion": "4.0.7",
+    	"ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher",
+    	},
+	"Dependencies": [
+    {
+      "UniqueID": "VibrantPastoral.C",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "VibrantPastoral.Expanded",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "MV.Municipal",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "flashshifter.FrontierFarm",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMapforPasserbyCemetery",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.BiggerDesertFarm",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMapPuffinCliffFarm",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMapLostinTheMountains",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMapSmallFarm",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.EarthyIconsForWorldMapsEverywhere",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMapGingerIsland",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMapSVE",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMapONLYSVE",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMap-SVE-FF",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMap-SVE-GF",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMap-SVE-GpF",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMap-SVE-MF",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.WorldMap-SVE-IF2R",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "N3cro_92.DaisyNikosEarthyMapsAllinOne",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Fellowclown.PC",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "AndrewJC.CoalPointFarm",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Tarniyar.CP.WalkToDesert",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Bouhm.NPCMapLocations",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "FlashShifter.StardewValleyExpandedCP",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "LemurKat.EastScarpe.CP",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "invatorzen.AspenCP",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "SoftPandaBoi.AlecRevisited",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "TheLimeyDragon.Ayeisha",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "dreamy.kickitspot",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Leroy",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Tikamin557.FishingPondFacilities",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "flashshifter.immersivefarm2remastered",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "CPBoardingHouse",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "PeacefulEnd.FishingTrawler.NewHorizons.CP",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "PeacefulEnd.FishingTrawler.NewHorizons",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Xiddav.LittleRedSchoolHouse",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "alvadea.minemap",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "Alja.Shack",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "alvadea.combatmap",
+      "IsRequired": false
+    },
+    {
+      "UniqueID": "alvadea.minemapftm",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Fellowclown.Nikolai",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Fellowclown.Lyell",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "Fellowclown.Patches",
+      "IsRequired": false
+    },
+	{
+      "UniqueID": "flashshifter.GrandpasFarm",
+      "IsRequired": false
+    },
+	{
+            "UniqueID": "DaisyNiko.EarthyRecolour",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Lita.StarblueValley",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "grapeponta.VibrantPastoralRecolor",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "grapeponta.VibrantPastoralSVE",
+            "IsRequired": false
+        },
+        {
+            "UniqueID": "Elle.DirtCliffRecolor",
+            "IsRequired": false
+        },
+	{
+    	  "UniqueID": "ch20youk.TSCCP",
+    	  "IsRequired": false
+   	 },
+   	{
+    	  "UniqueID": "Fellowclown.Patches",
+    	  "IsRequired": false
+   	 },
+	{
+    	  "UniqueID": "DaisyNiko.SVR3",
+    	  "IsRequired": false
+   	 },
+	{
+    	  "UniqueID": "Visorlights.EmetSelchCustomNPC",
+    	  "IsRequired": false
+   	 },
+	{
+    	  "UniqueID": "A_TK.FarmProjectForaging.Extra",
+    	  "IsRequired": false
+   	 },
+	{
+    	  "UniqueID": "A_TK.FarmProjectForaging",
+    	  "IsRequired": false
+   	 },
+	{
+    	  "UniqueID": "A_TK.FarmProjectForaging.LE",
+    	  "IsRequired": false
+   	 },
+	{
+    	  "UniqueID": "A_TK.FarmProjectForaging.FTM",
+    	  "IsRequired": false
+   	 }
+  ]
+}

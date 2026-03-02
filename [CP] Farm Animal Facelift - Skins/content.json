@@ -1,0 +1,1152 @@
+{"Format": "2.0.0",
+ 
+"ConfigSchema": {
+    "White Cow Default": {
+        "AllowValues": "white, solid, holstein, vanilla",
+        "Default": "white",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default White Cows. List only one option, leave blank or 'false' to disable"
+    },
+    "White Cow Skins": {
+        "AllowValues": "white, solid, holstein, vanilla",
+        "Default": "white, solid, holstein",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new White Cows, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Brown Cow Default": {
+        "AllowValues": "brown, solid, black, highland, void, vanilla",
+        "Default": "brown",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default Brown Cows. List only one option, leave blank or 'false' to disable"
+    },
+    "Brown Cow Skins": {
+        "AllowValues": "brown, solid, black, highland, void, vanilla",
+        "Default": "brown, solid, black, highland",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Brown Cows, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Pig Default": {
+        "AllowValues": "pink, black, white, tamworth, black spots, brown spots, void, vanilla",
+        "Default": "pink",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default Pigs. List only one option, leave blank or 'false' to disable"
+    },
+    "Pig Skins": {
+        "AllowValues": "pink, black, white, tamworth, black spots, brown spots, void, vanilla",
+        "Default": "pink, black, white, tamworth, black spots, brown spots",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Pigs, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Goat Default": {
+        "AllowValues": "blonde, white, black, brown, white blaze, black blaze, void, vanilla",
+        "Default": "blonde",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default Goats. List only one option, leave blank or 'false' to disable"
+    },
+    "Goat Skins": {
+        "AllowValues": "blonde, white, black, brown, white blaze, black blaze, void, vanilla",
+        "Default": "blonde, white, black, brown, white blaze, black blaze",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Goats, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Sheep Default": {
+        "AllowValues": "suffolk, black, white, void, bighorn, vanilla",
+        "Default": "suffolk",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default Sheep. List only one option, leave blank or 'false' to disable"
+    },
+    "Sheep Skins": {
+        "AllowValues": "suffolk, black, white, void, bighorn, vanilla",
+        "Default": "suffolk, black, white",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Sheep, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Duck Default": {
+        "AllowValues": "mallard, brown, black, white, void, vanilla",
+        "Default": "white",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default Ducks. List only one option, leave blank or 'false' to disable"
+    },
+    "Duck Skins": {
+        "AllowValues": "mallard, brown, black, white, void, vanilla",
+        "Default": "mallard, brown, black, white",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Ducks, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Rabbit Default": {
+        "AllowValues": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots, void, vanilla",
+        "Default": "blonde",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default Rabbits. List only one option, leave blank or 'false' to disable"
+    },
+    "Rabbit Skins": {
+        "AllowValues": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots, void, vanilla",
+        "Default": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots, void",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Rabbits, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Void Chicken Default": {
+        "AllowValues": "void, space, vanilla",
+        "Default": "void",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "The skin for existing and default Void Chickens. List only one option, leave blank or 'false' to disable"
+    },
+    "Void Chicken Skins": {
+        "AllowValues": "void, space, vanilla",
+        "Default": "void",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Void Chickens, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+    "Chicken Default": {
+        "AllowValues": "edited, vanilla",
+        "Default": "edited",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "Use edited to apply the custom Chickens, or vanilla/blank to disable edits."
+    },
+    "Dinosaur Default": {
+        "AllowValues": "green, void, vanilla",
+        "Default": "green",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "Use edited to apply the custom Dinosaurs, or vanilla/blank to disable edits."
+    },
+ "Dinosaur Skins": {
+        "AllowValues": "green, void, vanilla",
+        "Default": "green",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Dinosaurs, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    },
+
+    "Ostrich Default": {
+        "AllowValues": "brown, void, vanilla",
+        "Default": "brown",
+        "AllowMultiple": false,
+        "AllowBlank": true,
+        "Description": "Use edited to apply the custom Ostriches, or vanilla/blank to disable edits."
+    },
+ "Ostrich Skins": {
+        "AllowValues": "brown, void, vanilla",
+        "Default": "brown",
+        "AllowMultiple": true,
+        "AllowBlank": true,
+        "Description": "The possible skins for new Ostrich, purchased or born. List options separated by commas, leave blank or 'false' to disable"
+    }
+
+},
+ 
+"Changes": [
+    //White Cows
+    {
+        "LogName": "White Cow Default",
+        "Action": "EditImage",
+        "Target": "Animals/White Cow",
+        "FromFile": "assets/white cow/{{White Cow Default}}.png",
+        "When": {"White Cow Default": "white, solid, holstein"}
+    },
+    {
+        "LogName": "White Cow Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyWhite Cow",
+        "FromFile": "assets/white cow/{{White Cow Default}}_baby.png",
+        "When": {"White Cow Default": "white, solid, holstein"}
+    },
+    {
+        "LogName": "White Cow Skin - white",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["White Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_whitecow_white": {
+            "Id": "siamece.FarmAnimalFacelift_whitecow_white",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\white cow\\white",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\white cow\\white_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"White Cow Skins": "white"},
+    },
+    {
+        "LogName": "White Cow Skin - solid",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["White Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_whitecow_solid": {
+            "Id": "siamece.FarmAnimalFacelift_whitecow_solid",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\white cow\\solid",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\white cow\\solid_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"White Cow Skins": "solid"},
+    },
+    {
+        "LogName": "White Cow Skin - holstein",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["White Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_whitecow_holstein": {
+            "Id": "siamece.FarmAnimalFacelift_whitecow_holstein",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\white cow\\holstein",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\white cow\\holstein_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"White Cow Skins": "holstein"},
+    },
+    {
+        "LogName": "Load White Cow Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\white cow\\white, Mods\\siamece.FarmAnimalFacelift\\white cow\\white_baby, Mods\\siamece.FarmAnimalFacelift\\white cow\\solid, Mods\\siamece.FarmAnimalFacelift\\white cow\\solid_baby, Mods\\siamece.FarmAnimalFacelift\\white cow\\holstein, Mods\\siamece.FarmAnimalFacelift\\white cow\\holstein_baby",
+        "FromFile": "assets/white cow/{{TargetWithoutPath}}.png"
+    },
+    //Brown Cows
+    {
+        "LogName": "Brown Cow Default",
+        "Action": "EditImage",
+        "Target": "Animals/Brown Cow",
+        "FromFile": "assets/brown cow/{{Brown Cow Default}}.png",
+        "When": {"Brown Cow Default": "brown, solid, black, highland, void"}
+    },
+    {
+        "LogName": "Brown Cow Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyBrown Cow",
+        "FromFile": "assets/brown cow/{{Brown Cow Default}}_baby.png",
+        "When": {"Brown Cow Default": "brown, solid, black, highland, void"}
+    },
+    {
+        "LogName": "Brown Cow Skin - brown",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Brown Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_browncow_brown": {
+            "Id": "siamece.FarmAnimalFacelift_browncow_brown",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\brown",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\brown_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Brown Cow Skins": "brown"},
+    },
+    {
+        "LogName": "Brown Cow Skin - solid",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Brown Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_browncow_solid": {
+            "Id": "siamece.FarmAnimalFacelift_browncow_solid",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\solid",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\solid_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Brown Cow Skins": "solid"},
+    },
+    {
+        "LogName": "Brown Cow Skin - black",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Brown Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_browncow_black": {
+            "Id": "siamece.FarmAnimalFacelift_browncow_black",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\black",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\black_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Brown Cow Skins": "black"},
+    },
+    {
+        "LogName": "Brown Cow Skin - highland",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Brown Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_browncow_highland": {
+            "Id": "siamece.FarmAnimalFacelift_browncow_highland",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\highland",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\highland_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Brown Cow Skins": "highland"},
+    },
+{
+        "LogName": "Brown Cow Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Brown Cow", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_browncow_void": {
+            "Id": "siamece.FarmAnimalFacelift_browncow_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\void",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\void_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Brown Cow Skins": "void"},
+    },
+
+    {
+        "LogName": "Load Brown Cow Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\brown cow\\brown, Mods\\siamece.FarmAnimalFacelift\\brown cow\\brown_baby, Mods\\siamece.FarmAnimalFacelift\\brown cow\\solid, Mods\\siamece.FarmAnimalFacelift\\brown cow\\solid_baby, Mods\\siamece.FarmAnimalFacelift\\brown cow\\black, Mods\\siamece.FarmAnimalFacelift\\brown cow\\black_baby, Mods\\siamece.FarmAnimalFacelift\\brown cow\\highland, Mods\\siamece.FarmAnimalFacelift\\brown cow\\highland_baby, Mods\\siamece.FarmAnimalFacelift\\brown cow\\void, Mods\\siamece.FarmAnimalFacelift\\brown cow\\void_baby",
+        "FromFile": "assets/brown cow/{{TargetWithoutPath}}.png"
+    },
+    //Pigs
+    {
+        "LogName": "Pig Default",
+        "Action": "EditImage",
+        "Target": "Animals/Pig",
+        "FromFile": "assets/pig/{{Pig Default}}.png",
+        "When": {"Pig Default": "pink, black, white, tamworth, black spots, brown spots, void"}
+    },
+    {
+        "LogName": "Pig Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyPig",
+        "FromFile": "assets/pig/{{Pig Default}}_baby.png",
+        "When": {"Pig Default": "pink, black, white, tamworth, black spots, brown spots, void"}
+    },
+    {
+        "LogName": "Pig Skin - pink",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Pig", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_pig_pink": {
+            "Id": "siamece.FarmAnimalFacelift_pig_pink",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\pig\\pink",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\pig\\pink_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Pig Skins": "pink"},
+    },
+    {
+        "LogName": "Pig Skin - black",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Pig", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_pig_black": {
+            "Id": "siamece.FarmAnimalFacelift_pig_black",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\pig\\black",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\pig\\black_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Pig Skins": "black"},
+    },
+    {
+        "LogName": "Pig Skin - white",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Pig", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_pig_white": {
+            "Id": "siamece.FarmAnimalFacelift_pig_white",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\pig\\white",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\pig\\white_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Pig Skins": "white"},
+    },
+    {
+        "LogName": "Pig Skin - tamworth",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Pig", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_pig_tamworth": {
+            "Id": "siamece.FarmAnimalFacelift_pig_tamworth",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\pig\\tamworth",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\pig\\tamworth_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Pig Skins": "tamworth"},
+    },
+    {
+        "LogName": "Pig Skin - black spots",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Pig", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_pig_black spots": {
+            "Id": "siamece.FarmAnimalFacelift_pig_black spots",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\pig\\black spots",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\pig\\black spots_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Pig Skins": "black spots"},
+    },
+    {
+        "LogName": "Pig Skin - brown spots",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Pig", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_pig_brown spots": {
+            "Id": "siamece.FarmAnimalFacelift_pig_brown spots",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\pig\\brown spots",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\pig\\brown spots_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Pig Skins": "brown spots"},
+    },
+ {
+        "LogName": "Pig Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Pig", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_pig_void": {
+            "Id": "siamece.FarmAnimalFacelift_pig_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\pig\\void",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\pig\\void_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Pig Skins": "void"},
+    },
+
+    {
+        "LogName": "Load Pig Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\pig\\pink, Mods\\siamece.FarmAnimalFacelift\\pig\\pink_baby, Mods\\siamece.FarmAnimalFacelift\\pig\\black, Mods\\siamece.FarmAnimalFacelift\\pig\\black_baby, Mods\\siamece.FarmAnimalFacelift\\pig\\white, Mods\\siamece.FarmAnimalFacelift\\pig\\white_baby, Mods\\siamece.FarmAnimalFacelift\\pig\\tamworth, Mods\\siamece.FarmAnimalFacelift\\pig\\tamworth_baby, Mods\\siamece.FarmAnimalFacelift\\pig\\black spots, Mods\\siamece.FarmAnimalFacelift\\pig\\black spots_baby, Mods\\siamece.FarmAnimalFacelift\\pig\\brown spots, Mods\\siamece.FarmAnimalFacelift\\pig\\brown spots_baby, Mods\\siamece.FarmAnimalFacelift\\pig\\void, Mods\\siamece.FarmAnimalFacelift\\pig\\void_baby",
+        "FromFile": "assets/pig/{{TargetWithoutPath}}.png"
+    },
+    //Goats
+    {
+        "LogName": "Goat Default",
+        "Action": "EditImage",
+        "Target": "Animals/Goat",
+        "FromFile": "assets/goat/{{Goat Default}}.png",
+        "When": {"Goat Default": "blonde, white, black, brown, white blaze, black blaze, void"}
+    },
+    {
+        "LogName": "Goat Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyGoat",
+        "FromFile": "assets/goat/{{Goat Default}}_baby.png",
+        "When": {"Goat Default": "blonde, white, black, brown, white blaze, black blaze, void"}
+    },
+    {
+        "LogName": "Goat Skin - blonde",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Goat", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_goat_blonde": {
+            "Id": "siamece.FarmAnimalFacelift_goat_blonde",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\goat\\blonde",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\goat\\blonde_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Goat Skins": "blonde"},
+    },
+    {
+        "LogName": "Goat Skin - white",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Goat", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_goat_white": {
+            "Id": "siamece.FarmAnimalFacelift_goat_white",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\goat\\white",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\goat\\white_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Goat Skins": "white"},
+    },
+    {
+        "LogName": "Goat Skin - black",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Goat", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_goat_black": {
+            "Id": "siamece.FarmAnimalFacelift_goat_black",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\goat\\black",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\goat\\black_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Goat Skins": "black"},
+    },
+    {
+        "LogName": "Goat Skin - brown",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Goat", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_goat_brown": {
+            "Id": "siamece.FarmAnimalFacelift_goat_brown",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\goat\\brown",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\goat\\brown_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Goat Skins": "brown"},
+    },
+    {
+        "LogName": "Goat Skin - white blaze",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Goat", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_goat_white blaze": {
+            "Id": "siamece.FarmAnimalFacelift_goat_white blaze",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\goat\\white blaze",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\goat\\white blaze_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Goat Skins": "white blaze"},
+    },
+    {
+        "LogName": "Goat Skin - black blaze",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Goat", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_goat_black blaze": {
+            "Id": "siamece.FarmAnimalFacelift_goat_black blaze",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\goat\\black blaze",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\goat\\black blaze_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Goat Skins": "black blaze"},
+    },
+{
+        "LogName": "Goat Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Goat", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_goat_void": {
+            "Id": "siamece.FarmAnimalFacelift_goat_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\goat\\void",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\goat\\void_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Goat Skins": "void"},
+    },
+
+
+    {
+        "LogName": "Load Goat Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\goat\\blonde, Mods\\siamece.FarmAnimalFacelift\\goat\\blonde_baby, Mods\\siamece.FarmAnimalFacelift\\goat\\white, Mods\\siamece.FarmAnimalFacelift\\goat\\white_baby, Mods\\siamece.FarmAnimalFacelift\\goat\\black, Mods\\siamece.FarmAnimalFacelift\\goat\\black_baby, Mods\\siamece.FarmAnimalFacelift\\goat\\brown, Mods\\siamece.FarmAnimalFacelift\\goat\\brown_baby, Mods\\siamece.FarmAnimalFacelift\\goat\\white blaze, Mods\\siamece.FarmAnimalFacelift\\goat\\white blaze_baby, Mods\\siamece.FarmAnimalFacelift\\goat\\black blaze, Mods\\siamece.FarmAnimalFacelift\\goat\\black blaze_baby, Mods\\siamece.FarmAnimalFacelift\\goat\\void, Mods\\siamece.FarmAnimalFacelift\\goat\\void_baby",
+        "FromFile": "assets/goat/{{TargetWithoutPath}}.png"
+    },
+    //Sheep
+    {
+        "LogName": "Sheep Default",
+        "Action": "EditImage",
+        "Target": "Animals/Sheep",
+        "FromFile": "assets/sheep/{{Sheep Default}}.png",
+        "When": {"Sheep Default": "suffolk, white, black, void, bighorn"}
+    },
+    {
+        "LogName": "Sheep Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabySheep",
+        "FromFile": "assets/sheep/{{Sheep Default}}_baby.png",
+        "When": {"Sheep Default": "suffolk, white, black, void, bighorn"}
+    },
+    {
+        "LogName": "Sheep Sheared Default",
+        "Action": "EditImage",
+        "Target": "Animals/ShearedSheep",
+        "FromFile": "assets/sheep/{{Sheep Default}}_sheared.png",
+        "When": {"Sheep Default": "suffolk, white, black, void, bighorn"}
+    },
+    {
+        "LogName": "Sheep Skin - suffolk",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Sheep", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_sheep_suffolk": {
+            "Id": "siamece.FarmAnimalFacelift_sheep_suffolk",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\suffolk",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\suffolk_baby",
+                "HarvestedTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\suffolk_sheared",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Sheep Skins": "suffolk"},
+    },
+    {
+        "LogName": "Sheep Skin - white",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Sheep", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_sheep_white": {
+            "Id": "siamece.FarmAnimalFacelift_sheep_white",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\white",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\white_baby",
+                "HarvestedTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\white_sheared",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Sheep Skins": "white"},
+    },
+    {
+        "LogName": "Sheep Skin - black",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Sheep", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_sheep_black": {
+            "Id": "siamece.FarmAnimalFacelift_sheep_black",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\black",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\black_baby",
+                "HarvestedTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\black_sheared",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Sheep Skins": "black"},
+    },
+{
+        "LogName": "Sheep Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Sheep", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_sheep_void": {
+            "Id": "siamece.FarmAnimalFacelift_sheep_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\void",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\void_baby",
+                "HarvestedTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\void_sheared",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Sheep Skins": "void"},
+    },
+{
+        "LogName": "Sheep Skin - bighorn",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Sheep", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_sheep_bighorn": {
+            "Id": "siamece.FarmAnimalFacelift_sheep_bighorn",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\bighorn",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\bighorn_baby",
+                "HarvestedTexture": "Mods\\siamece.FarmAnimalFacelift\\sheep\\bighorn_sheared",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Sheep Skins": "bighorn"},
+    },
+
+    {
+        "LogName": "Load Sheep Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\sheep\\suffolk, Mods\\siamece.FarmAnimalFacelift\\sheep\\suffolk_baby, Mods\\siamece.FarmAnimalFacelift\\sheep\\suffolk_sheared, Mods\\siamece.FarmAnimalFacelift\\sheep\\white, Mods\\siamece.FarmAnimalFacelift\\sheep\\white_baby, Mods\\siamece.FarmAnimalFacelift\\sheep\\white_sheared, Mods\\siamece.FarmAnimalFacelift\\sheep\\black, Mods\\siamece.FarmAnimalFacelift\\sheep\\black_baby, Mods\\siamece.FarmAnimalFacelift\\sheep\\black_sheared, Mods\\siamece.FarmAnimalFacelift\\sheep\\void, Mods\\siamece.FarmAnimalFacelift\\sheep\\void_baby, Mods\\siamece.FarmAnimalFacelift\\sheep\\void_sheared, Mods\\siamece.FarmAnimalFacelift\\sheep\\bighorn, Mods\\siamece.FarmAnimalFacelift\\sheep\\bighorn_baby, Mods\\siamece.FarmAnimalFacelift\\sheep\\bighorn_sheared,",
+        "FromFile": "assets/sheep/{{TargetWithoutPath}}.png"
+    },
+    //Ducks
+    {
+        "LogName": "Duck Default",
+        "Action": "EditImage",
+        "Target": "Animals/Duck",
+        "FromFile": "assets/duck/{{Duck Default}}.png",
+        "When": {"Duck Default": "mallard, brown, black, white, void"}
+    },
+    {
+        "LogName": "Duck Skin - mallard",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Duck", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_duck_mallard": {
+            "Id": "siamece.FarmAnimalFacelift_duck_mallard",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\duck\\mallard",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Duck Skins": "mallard"},
+    },
+    {
+        "LogName": "Duck Skin - brown",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Duck", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_duck_brown": {
+            "Id": "siamece.FarmAnimalFacelift_duck_brown",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\duck\\brown",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Duck Skins": "brown"},
+    },
+    {
+        "LogName": "Duck Skin - black",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Duck", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_duck_black": {
+            "Id": "siamece.FarmAnimalFacelift_duck_black",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\duck\\black",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Duck Skins": "black"},
+    },
+    {
+        "LogName": "Duck Skin - white",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Duck", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_duck_white": {
+            "Id": "siamece.FarmAnimalFacelift_duck_white",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\duck\\white",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Duck Skins": "white"},
+    },
+{
+        "LogName": "Duck Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Duck", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_duck_void": {
+            "Id": "siamece.FarmAnimalFacelift_duck_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\duck\\void",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Duck Skins": "void"},
+    },
+
+    {
+        "LogName": "Load Duck Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\duck\\mallard, Mods\\siamece.FarmAnimalFacelift\\duck\\brown, Mods\\siamece.FarmAnimalFacelift\\duck\\black, Mods\\siamece.FarmAnimalFacelift\\duck\\white, Mods\\siamece.FarmAnimalFacelift\\duck\\void", 
+        "FromFile": "assets/duck/{{TargetWithoutPath}}.png"
+    },
+    //Rabbits
+    {
+        "LogName": "Rabbit Default",
+        "Action": "EditImage",
+        "Target": "Animals/Rabbit",
+        "FromFile": "assets/rabbit/{{Rabbit Default}}.png",
+        "When": {"Rabbit Default": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots, void"}
+    },
+    {
+        "LogName": "Rabbit Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyRabbit",
+        "FromFile": "assets/rabbit/{{Rabbit Default}}_baby.png",
+        "When": {"Rabbit Default": "blonde, black, white, brown, blonde blaze, brown blaze, black blaze, brown spots, black spots, void"}
+    },
+    {
+        "LogName": "Rabbit Skin - blonde",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_blonde": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_blonde",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "blonde"},
+    },
+    {
+        "LogName": "Rabbit Skin - black",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_black": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_black",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\black",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\black_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "black"},
+    },
+    {
+        "LogName": "Rabbit Skin - white",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_white": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_white",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\white",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\white_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "white"},
+    },
+    {
+        "LogName": "Rabbit Skin - brown",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_brown": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_brown",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "brown"},
+    },
+    {
+        "LogName": "Rabbit Skin - blonde blaze",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_blonde blaze": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_blonde blaze",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde blaze",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde blaze_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "blonde blaze"},
+    },
+    {
+        "LogName": "Rabbit Skin - brown blaze",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_brown blaze": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_brown blaze",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown blaze",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown blaze_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "brown blaze"},
+    },
+    {
+        "LogName": "Rabbit Skin - black blaze",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_black blaze": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_black blaze",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\black blaze",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\black blaze_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "black blaze"},
+    },
+    {
+        "LogName": "Rabbit Skin - brown spots",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_brown spots": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_brown spots",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown spots",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown spots_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "brown spots"},
+    },
+    {
+        "LogName": "Rabbit Skin - black spots",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_black spots": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_black spots",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\black spots",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\black spots_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "black spots"},
+    },
+    {
+        "LogName": "Rabbit Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Rabbit", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_rabbit_void": {
+            "Id": "siamece.FarmAnimalFacelift_rabbit_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\void",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\void_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Rabbit Skins": "void"},
+    },
+
+    {
+        "LogName": "Load Rabbit Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde, Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\black, Mods\\siamece.FarmAnimalFacelift\\rabbit\\black_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\white, Mods\\siamece.FarmAnimalFacelift\\rabbit\\white_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown, Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde blaze, Mods\\siamece.FarmAnimalFacelift\\rabbit\\blonde blaze_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown blaze, Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown blaze_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\black blaze, Mods\\siamece.FarmAnimalFacelift\\rabbit\\black blaze_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown spots, Mods\\siamece.FarmAnimalFacelift\\rabbit\\brown spots_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\black spots, Mods\\siamece.FarmAnimalFacelift\\rabbit\\black spots_baby, Mods\\siamece.FarmAnimalFacelift\\rabbit\\void, Mods\\siamece.FarmAnimalFacelift\\rabbit\\void_baby",
+        "FromFile": "assets/rabbit/{{TargetWithoutPath}}.png"
+    },
+    //Void Chickens
+    {
+        "LogName": "Void Chicken Default",
+        "Action": "EditImage",
+        "Target": "Animals/Void Chicken",
+        "FromFile": "assets/chicken/{{Void Chicken Default}}.png",
+        "When": {"Void Chicken Default": "void, space"}
+    },
+    {
+        "LogName": "Void Chicken Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyVoid Chicken",
+        "FromFile": "assets/chicken/{{Void Chicken Default}}_baby.png",
+        "When": {"Void Chicken Default": "void, space"}
+    },
+    {
+        "LogName": "Void Chicken Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Void Chicken", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_voidchicken_void": {
+            "Id": "siamece.FarmAnimalFacelift_voidchicken_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\chicken\\void",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\chicken\\void_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Void Chicken Skins": "void"},
+    },
+    {
+        "LogName": "Void Chicken Skin - space",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Void Chicken", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_voidchicken_space": {
+            "Id": "siamece.FarmAnimalFacelift_voidchicken_space",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\chicken\\space",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\chicken\\space_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Void Chicken Skins": "space"},
+    },
+    {
+        "LogName": "Load Void Chicken Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\chicken\\void, Mods\\siamece.FarmAnimalFacelift\\chicken\\void_baby, Mods\\siamece.FarmAnimalFacelift\\chicken\\space, Mods\\siamece.FarmAnimalFacelift\\chicken\\space_baby", 
+        "FromFile": "assets/chicken/{{TargetWithoutPath}}.png"
+    },
+    //Other Chickens
+    {
+        "LogName": "White Chicken Default",
+        "Action": "EditImage",
+        "Target": "Animals/White Chicken",
+        "FromFile": "assets/white chicken.png",
+        "When": { "Chicken Default": "edited" }
+    },
+    {
+        "LogName": "White Chicken Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyWhite Chicken",
+        "FromFile": "assets/white chicken_baby.png",
+        "When": { "Chicken Default": "edited" }
+    },
+    {
+        "LogName": "Brown Chicken Default",
+        "Action": "EditImage",
+        "Target": "Animals/Brown Chicken",
+        "FromFile": "assets/brown chicken.png",
+        "When": { "Chicken Default": "edited" }
+    },
+    {
+        "LogName": "Brown Chicken Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyBrown Chicken",
+        "FromFile": "assets/brown chicken_baby.png",
+        "When": { "Chicken Default": "edited" }
+    },
+    {
+        "LogName": "Blue Chicken Default",
+        "Action": "EditImage",
+        "Target": "Animals/Blue Chicken",
+        "FromFile": "assets/blue chicken.png",
+        "When": { "Chicken Default": "edited" }
+    },
+    {
+        "LogName": "Blue Chicken Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyBlue Chicken",
+        "FromFile": "assets/blue chicken_baby.png",
+        "When": { "Chicken Default": "edited" }
+    },
+    {
+        "LogName": "Golden Chicken Default",
+        "Action": "EditImage",
+        "Target": "Animals/Golden Chicken",
+        "FromFile": "assets/golden chicken.png",
+        "When": { "Chicken Default": "edited" }
+    },
+    {
+        "LogName": "Golden Chicken Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyGolden Chicken",
+        "FromFile": "assets/golden chicken_baby.png",
+        "When": { "Chicken Default": "edited" }
+    },
+
+
+// Dinosaurs
+    {
+        "LogName": "Dinosaur Default",
+        "Action": "EditImage",
+        "Target": "Animals/Dinosaur",
+        "FromFile": "assets/dinosaur/{{Dinosaur Default}}.png",
+        "When": {"Dinosaur Default": "green, void"}
+    },
+    {
+        "LogName": "Dinosaur Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyDinosaur",
+        "FromFile": "assets/dinosaur/{{Dinosaur Default}}_baby.png",
+        "When": {"Dinosaur Default": "green, void"}
+    },
+    {
+        "LogName": "Dinosaur Skin - green",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Dinosaur", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_dinosaur_green": {
+            "Id": "siamece.FarmAnimalFacelift_dinosaur_green",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\dinosaur\\green",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Dinosaur Skins": "green"},
+    },
+    {
+        "LogName": "Dinosaur Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Dinosaur", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_dinosaur_void": {
+            "Id": "siamece.FarmAnimalFacelift_dinosaur_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\dinosaur\\void",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Dinosaur Skins": "void"},
+    },    {
+        "LogName": "Load Dinosaur Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\dinosaur\\green, Mods\\siamece.FarmAnimalFacelift\\dinosaur\\void", 
+        "FromFile": "assets/dinosaur/{{TargetWithoutPath}}.png"
+    },
+
+
+// Ostriches
+    {
+        "LogName": "Ostrich Default",
+        "Action": "EditImage",
+        "Target": "Animals/Ostrich",
+        "FromFile": "assets/ostrich/{{Ostrich Default}}.png",
+        "When": {"Ostrich Default": "brown, void"}
+    },
+    {
+        "LogName": "Ostrich Baby Default",
+        "Action": "EditImage",
+        "Target": "Animals/BabyOstrich",
+        "FromFile": "assets/ostrich/{{Ostrich Default}}_baby.png",
+        "When": {"Ostrich Default": "brown, void"}
+    },
+    {
+        "LogName": "Ostrich Skin - brown",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Ostrich", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_ostrich_brown": {
+            "Id": "siamece.FarmAnimalFacelift_ostrich_brown",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\ostrich\\brown",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\ostrich\\brown_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Ostrich Skins": "brown"},
+    },
+    {
+        "LogName": "Ostrich Skin - void",
+        "Action": "EditData",
+        "Target": "Data/FarmAnimals",
+        "TargetField": ["Ostrich", "Skins"],
+        "Entries": {
+        "siamece.FarmAnimalFacelift_ostrich_void": {
+            "Id": "siamece.FarmAnimalFacelift_ostrich_void",
+                "Texture": "Mods\\siamece.FarmAnimalFacelift\\ostrich\\void",
+                "BabyTexture": "Mods\\siamece.FarmAnimalFacelift\\ostrich\\void_baby",
+                "Weight": "1.0",
+                },
+            },
+        "When": {"Ostrich Skins": "void"},
+    },    {
+        "LogName": "Load Ostrich Images",
+        "Action": "Load",
+        "Target": "Mods\\siamece.FarmAnimalFacelift\\ostrich\\brown, Mods\\siamece.FarmAnimalFacelift\\ostrich\\brown_baby, Mods\\siamece.FarmAnimalFacelift\\ostrich\\void, Mods\\siamece.FarmAnimalFacelift\\ostrich\\void_baby", 
+        "FromFile": "assets/ostrich/{{TargetWithoutPath}}.png"
+    }
+
+    ]
+}

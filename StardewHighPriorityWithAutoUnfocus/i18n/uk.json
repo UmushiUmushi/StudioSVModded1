@@ -1,0 +1,24 @@
+{
+  "log.invalid_priority": "Недійсне значення пріоритету: '{{value}}'. Дозволені: Normal, AboveNormal, High.",
+  "log.set_priority_focused": "Гра у фокусі: пріоритет процесу встановлено на {{value}}.",
+  "log.set_priority_unfocused": "Гра поза фокусом: пріоритет процесу встановлено на {{value}}.",
+  "log.failed": "Не вдалося встановити пріоритет процесу ({{error}}): {{message}}",
+
+  "gmcm.section.general": "Налаштування пріоритету",
+  "gmcm.section.general.tooltip": "Відрегулюйте, як змінюється пріоритет процесу Stardew Valley залежно від фокуса вікна.",
+
+  "gmcm.enabled": "Увімкнути мод",
+  "gmcm.enabled.tooltip": "Якщо вимкнено, мод не змінюватиме пріоритет процесу.",
+
+  "gmcm.focusedPriority": "Пріоритет у фокусі",
+  "gmcm.focusedPriority.tooltip": "Пріоритет, який використовується, коли вікно гри у фокусі.",
+
+  "gmcm.unfocusedPriority": "Пріоритет поза фокусом",
+  "gmcm.unfocusedPriority.tooltip": "Пріоритет, який використовується, коли вікно гри не у фокусі.",
+
+  "gmcm.logSuccess": "Журнал успішних повідомлень",
+  "gmcm.logSuccess.tooltip": "Показувати повідомлення в журналі, коли пріоритет застосовано.",
+
+  "gmcm.logFailure": "Журнал повідомлень про помилки",
+  "gmcm.logFailure.tooltip": "Показувати повідомлення в журналі, якщо застосувати пріоритет не вдалося."
+}

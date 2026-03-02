@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/AnimalShop",
+			"Entries":
+				{
+					"92/e 91/i 78/t 900 1700": "jaunty/13 17/farmer 13 19 0 Marnie 13 14 2/move farmer 0 -1 0/removeQuest 21/removeItem 78/friendship Marnie 100/skippable/emote Marnie 16/speed Marnie 4/move Marnie 0 -1 2/speed Marnie 4/move Marnie 2 0 2/speed Marnie 4/move Marnie 0 3 2/move Marnie -2 0 2/pause 300/speak Marnie \"Oh! You brought the cave carrot! Thank you so much, {{Random: {{Hana.GNMTokens/Title}} }} @.$h\"/pause 500/move farmer 0 -1 1/faceDirection farmer 1/pause 500/playSound woodyStep/addObject 14 17 78/showFrame 35/pause 500/showFrame 6/pause 400/faceDirection farmer 1/move Marnie 1 0 2/emote Marnie 32/speak Marnie \"This looks great... I almost want to eat it myself!$h#$b#...almost.\"/faceDirection farmer 1/pause 600/speak Marnie \"I hope it wasn't too much trouble... I really do appreciate it.\"/pause 300/removeObject 14 17/pause 400/end dialogue Marnie \"Thanks again for helping me out.$h#$e#...and my goats say 'thanks' too.\""
+				},
+			"LogName": "Fix AnimalShop"
+		}
+	]
+}

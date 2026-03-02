@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Evelyn",
+			"Entries":
+				{
+					"fall_Sat_inlaw_Alex": "Oh, hello my dear. I think of you as my own grand{{Lowercase: {{Random: {{Hana.GNMTokens/ElderFamilialNoun}} }} }} now.$h"
+				},
+			"LogName":"Fix Evelyn"
+		}
+	]
+}

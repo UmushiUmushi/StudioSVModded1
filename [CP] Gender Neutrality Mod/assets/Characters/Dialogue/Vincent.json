@@ -1,0 +1,16 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Vincent",
+			"Entries":
+				{
+					"Tue6": "Can you keep a secret, @?$u#$b#I wanna marry Miss Penny when I grow up.#$e#Just don't tell her, okay?$u",
+					"Sun": "Hi there, @!",
+					"Sun10": "Hi {{Lowercase: {{Random: {{Hana.GNMTokens/ChildFamilialNoun}} }} }} @!#$e#Don't tell Mom... but you're my favorite grown-up.$h"
+				},
+			"LogName":"Fix Vincent"
+		}
+	]
+}

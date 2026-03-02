@@ -1,0 +1,23 @@
+{
+    "Changes": [
+        {
+            "LogName": "Question Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/schedules/EdithHart",
+            "Entries": {
+                "spring": "630 EastScarp_VillageInn 43 10 0 square_3_1_0/750 EastScarp_VillageInn 63 20 2/1200 EastScarp_VillageInn 43 10 0 square_3_1_0/1300 EastScarp_VillageInn 47 31 2/1900 EastScarp_Village 53 63 2/2030 EastScarp_VillageInn 55 30 0/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "rain": "630 EastScarp_VillageInn 43 10 0 square_3_1_0/750 EastScarp_VillageInn 47 31 2/1200 EastScarp_VillageInn 43 10 0 square_3_1_0/1300 EastScarp_VillageInn 47 31 2/2030 EastScarp_VillageInn 55 30 0/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "Tue": "630 EastScarp_VillageInn 43 10 0 square_3_1_0/750 EastScarp_VillageInn 63 20 2/1100 SeedShop 26 21 2/1300 SeedShop 26 21 2 edith_exercise \"Strings\\schedules\\EdithHart:Tue.000\"/1600 SeedShop 26 21 2/1700 Town 41 57 0/1800 EastScarp_VillageInn 43 11 2/1900 EastScarp_Village 53 63/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "Wed": "630 EastScarp_VillageInn 43 10 0 square_3_1_0/750 EastScarp_VillageInn 63 20 2/1200 EastScarp_VillageInn 43 10 0 square_3_1_0/1300 EastScarp_VillageInn 47 31 2/1800 Saloon 4 23 3 edith_drink \"Strings\\schedules\\EdithHart:Wed.000\"/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "Thu": "630 EastScarp_VillageInn 43 10 0 square_3_1_0/0930 EastScarp_VillageInn 45 31 2/1800 EastScarp_Village 53 63 2/2030 EastScarp_VillageInn 55 30 0/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                //630 EastScarp_VillageInn 43 10 0 square_3_1_0/0930",
+                //Night Market
+                "winter_15": "630 EastScarp_VillageInn 43 10 0 square_3_1_0/750 EastScarp_VillageInn 47 31 2/1200 EastScarp_VillageInn 43 10 0 square_3_1_0/1300 EastScarp_VillageInn 47 31 2/1700 Beach 41 36 0 \"Strings\\schedules\\EdithHart:winter_15.000\"/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "EastScarpe_SpiritsEve": "630 EastScarp_VillageInn 43 10 0 square_3_1_0/750 EastScarp_VillageInn 63 20 2/1200 EastScarp_VillageInn 16 27 2/1450 EastScarp_VillageInn 22 35 0/1900 EastScarp_Village 53 63 2/2030 EastScarp_VillageInn 55 30 0/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "Sat": "MAIL EastScarp.SpecialOrders.ScarpGreenHouse_Complete/GOTO Thu/630 EastScarp_VillageInn 43 10 0 square_3_1_0/900 EastScarp_CommunityGreenhouse 9 13 0 square_5_1_0/1200 EastScarp_CommunityGreenhouse 6 20 1 square_1_11_3/1300 EastScarp_CommunityGreenhouse 6 20 1 square_1_11_1/1500 EastScarp_VillageInn 47 31 2/1900 EastScarp_Village 53 63 2/2030 EastScarp_VillageInn 55 30 0/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "Sun":"630 EastScarp_VillageInn 43 10 0 square_3_1_0/750 EastScarp_VillageInn 47 31 2/a1530 Town 47 34 1/1830 EastScarp_Village 53 63/2300 EastScarp_VillageInn 52 30 1 edith_sleep",
+                "summer_Wed":"GOTO spring"
+            }
+        }
+    ]
+}

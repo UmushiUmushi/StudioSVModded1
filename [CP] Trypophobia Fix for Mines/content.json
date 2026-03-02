@@ -1,0 +1,15 @@
+{
+    "Format": "2.3.0",
+    "Changes": [
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Mines/mine_slime",
+            "FromFile": "assets/mine_slime.png"
+        },
+        {
+            "Action": "EditImage",
+            "Target": "Maps/Mines/mine_slime_dangerous",
+            "FromFile": "assets/mine_slime_dangerous.png"
+        }
+    ]
+}

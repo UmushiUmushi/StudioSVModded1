@@ -1,0 +1,43 @@
+{
+   // "$schema": "https://smapi.io/schemas/content-patcher.json",
+    "Changes": [
+        {
+            "Action": "EditMap",
+            "Target": "Maps/EastScarp_DaleHouse",
+            "MapTiles": [
+                {
+                    "Position": {
+                        "X": 17,
+                        "Y": 4
+                    },
+                    "Layer": "Buildings",
+                    "SetProperties": {
+                        "Action": "ES.BarberShop DaleWaede 500 4"
+                    }
+                },
+            ]
+        },
+        {
+            "Action": "Load",
+            "Target": "ES.BarberShop/BarberBG",
+            "FromFile": "assets/images/barber-bg.png",
+            "Priority": "Medium"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/DaleWaede",
+            "Entries": {
+                // These are UI strings and don't accept dialogue syntax
+                "ES.BarberShop_Title": "Barber Shop",
+                "ES.BarberShop_Message": "What style would you like today?",
+                "ES.BarberShop_Confirm": "Are you satisfied with this style?",
+                "ES.BarberShop_NotHere": "The barber is not here right now.",
+                // These are dialogue and use normal dialogue syntax
+                "ES.BarberShop_NotEnoughMoney": "Looks like you're short on cash, sorry.",
+                "ES.BarberShop_Start": "Here for a haircut? Certainly!$1",
+                "ES.BarberShop_Finished": "Glad you liked it, please do come see me again!$1",
+                "ES.BarberShop_Canceled": "Sorry to hear that, hope we can see you again soon.",
+            }
+        }
+    ]
+}

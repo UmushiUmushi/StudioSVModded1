@@ -1,0 +1,69 @@
+{
+    "Changes": [
+        {
+            "LogName": "Tristan moves into Shane's room",
+            "Action": "EditMap",
+            "Target": "Maps/AnimalShop",
+            "FromFile": "assets/Maps/TristanRoom.tmx",
+            "ToArea": {
+                "X": 20,
+                "Y": 0,
+                "Width": 10,
+                "Height": 10
+            }
+        },
+        {
+            "LogName": "Edits Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/MisterGinger",
+            "Entries": {
+                "Sun10": "{{i18n:tristan.dialogue.animalshop.sun10}}",
+                "summer_Fri": "{{i18n:tristan.dialogue.animalshop.summer_fri}}",
+                "summer_Sat6": "{{i18n:tristan.dialogue.animalshop.summer_sat6}}",
+                "summer_Fri6": "{{i18n:tristan.dialogue.animalshop.summer_fri6}}",
+                "summer_Sun8": "{{i18n:tristan.dialogue.animalshop.summer_sun8}}",
+                "fall_Sun6": "{{i18n:tristan.dialogue.animalshop.fall_sun6}}",
+                "winter_Mon": "{{i18n:tristan.dialogue.animalshop.winter_mon}}",
+                "Sat6": "{{i18n:tristan.dialogue.animalshop.sat6}}"
+            }
+        },
+        {
+            "LogName": "Edits Jas schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Jas",
+            "Entries": {
+                "summer_Sun": "900 AnimalShop 7 5 0/1000 Town 47 87 0/1200 Beach 38 24 jas_jumprope/1500 AnimalShop 17 15 3 jas_read/1900 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep",
+                "Sun": "900 AnimalShop 7 5 0/1000 Town 47 87 0/1200 Beach 38 24 jas_jumprope/1500 AnimalShop 17 15 3 jas_read/1900 AnimalShop 4 7 2/2100 AnimalShop 1 7 3 jas_sleep"
+            }
+        },
+        {
+            "LogName": "Edits Tristan schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/MisterGinger",
+            "Entries": {
+                "rain": "800 AnimalShop 21 7 2 misterginger_knit/1110 AnimalShop 3 15 2/1510 AnimalShop 21 6 2 misterginger_knit/1800 AnimalShop 26 15 0/2000 AnimalShop 26 9 3/2300 AnimalShop 27 4 2 misterginger_sleep",
+                "spring_28": "700 AnimalShop 21 7 2 misterginger_knit/900 AnimalShop 8 5 0/1000 Town 48 87 0/1200 Beach 40 22 2/2000 AnimalShop 26 9 3/2300 AnimalShop 27 4 2 misterginger_sleep",
+                "summer_Mon": "800 AnimalShop 21 7 2 misterginger_knit/1030 Beach 37 20 2/1600 AnimalShop 23 15 1/1800 AnimalShop 17 16 0/1830 AdventureGuild 9 16 1",
+                "Mon": "800 AnimalShop 21 7 2 misterginger_knit/1100 Forest 42 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 misterginger_knit/2000 AdventureGuild 9 16 1",
+                "Tue": "800 AnimalShop 21 7 2 misterginger_knit/910 Town 99 91 2/1030 Beach 32 34 2/1300 Town 47 87 0/1640 Town 24 97 2/1700 Saloon 20 19 3/2200 AdventureGuild 9 16 1",
+                "Wed": "800 AnimalShop 21 7 2 misterginger_knit/910 Town 99 91 2/1030 Town 49 22 0/1400 Town 86 103 2/1620 Town 18 94 0/1750 Town 46 87 0/2000 AnimalShop 26 9 3/2300 AnimalShop 27 4 2 misterginger_sleep",
+                "spring_Thu": "800 AnimalShop 21 7 2 misterginger_knit/1110 Forest 42 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 misterginger_knit/2000 AdventureGuild 9 16 1",
+                "summer_Thu": "800 AnimalShop 21 7 2 misterginger_knit/1110 Forest 42 10 2/1320 Beach 46 11 2/1600 AnimalShop 23 15 1/1800 WizardHouse 2 17 2",
+                "fall_Thu": "800 AnimalShop 21 7 2 misterginger_knit/1030 Beach 32 34 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 misterginger_knit/2000 AdventureGuild 9 16 1",
+                "fall_Sun": "GOTO Sun",
+                "winter_Sun": "GOTO Sun",
+                "summer_Sun": "GOTO Sun",
+                "summer_20": "GOTO Sat",
+                "summer_21": "GOTO Sun",
+                "winter_Thu": "800 AnimalShop 21 7 2 misterginger_knit/1030 Forest 42 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 misterginger_knit/2000 AdventureGuild 9 16 1",
+                "winter_15": "800 AnimalShop 21 7 2 misterginger_knit/1100 Forest 42 10 2/1300 Town 39 57 2/1600 Beach 22 24 2 \"Strings\\schedules\\MisterGinger:winter_15.000\"/2300 AnimalShop 27 4 2 misterginger_sleep",
+                "winter_18": "GOTO Tue",
+                "Fri": "800 AnimalShop 21 7 2 misterginger_knit/910 Town 99 91 2/1030 Town 86 103 2/1620 Town 18 94 0/2000 AnimalShop 26 9 3/2300 AnimalShop 27 4 2 misterginger_sleep",
+                "Sat": "800 AnimalShop 21 7 2 misterginger_knit/1000 Forest 92 23 0/1030 Town 31 89 2/1200 Town 63 15 2 misterginger_knit/1700 Town 28 92 3/2000 AnimalShop 3 7 2/2300 AnimalShop 27 4 2 misterginger_sleep",
+                "Sun": "700 AnimalShop 21 7 2 misterginger_knit/900 AnimalShop 8 5 0/1000 Town 48 87 0/1200 Beach 40 22 2/2000 AnimalShop 26 9 3/2300 AnimalShop 27 4 2 misterginger_sleep",
+                "marriage_Fri:": "900 Forest 21 29 2/1300 Town 86 103 2/1620 Town 18 94 0/1750 AnimalShop 7 16 2/2430 bed",
+                "marriage_Mon": "0800 Forest 41 10 2/1510 AnimalShop 14 16 0/1530 AnimalShop 16 13 2 misterginger_knit/2000 bed",
+            }
+        }
+    ]
+}

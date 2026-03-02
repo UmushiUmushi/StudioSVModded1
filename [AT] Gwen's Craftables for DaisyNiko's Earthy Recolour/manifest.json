@@ -1,0 +1,12 @@
+{
+   "Name": "AT_GwenCraft_DNER",
+   "Author": "Gweniaczek",
+   "Version": "1.1.0",
+   "Description": "My craftables retextures for Alternative Textures mod. DaisyNiko's Earthy Recolour matching version",
+   "UniqueID": "Gweniaczek.AT_GwenCraft_DNER",
+   "UpdateKeys": ["Nexus:13897"],
+   "ContentPackFor": {
+		"UniqueID": "PeacefulEnd.AlternativeTextures",
+		"MinimumVersion": "7.0.0"
+	},
+}

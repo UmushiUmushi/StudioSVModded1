@@ -1,0 +1,12 @@
+{
+    "Name": "[CP] Deluxe Shed",
+    "Author": "genevieve",
+    "Version": "1.0.3",
+    "Description": "Add a second upgrade to sheds.",
+    "UniqueID": "genevieve.deluxeshed",
+    "MinimumGameVersion": "1.6.0",
+    "UpdateKeys": ["Nexus:22524"],
+    "ContentPackFor": {
+        "UniqueID": "Pathoschild.ContentPatcher"
+    }
+}

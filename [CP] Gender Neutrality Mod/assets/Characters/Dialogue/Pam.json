@@ -1,0 +1,16 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pam",
+			"Entries":
+				{
+					"MovieInvitation": "Date night with ol' Pam, huh? Hah!$h#$b#Sure thing, kid... I'll see you there.",
+					"summer_Tue2": "Oh, it's {{Random: {{Hana.GNMTokens/Title}} }} @.#$e#Do you need my help or something?",
+					"summer_Fri": "...Yeah?#$e#You're a fine lookin' young {{Lowercase: {{Random: {{Hana.GNMTokens/AdultAntiquatedNoun}} }} }}. What're you wastin' your time talkin' to someone like me for?"
+				},
+			"LogName":"Fix Pam"
+		}
+	]
+}

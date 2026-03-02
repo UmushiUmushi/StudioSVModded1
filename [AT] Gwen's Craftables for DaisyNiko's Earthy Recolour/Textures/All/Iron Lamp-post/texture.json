@@ -1,0 +1,117 @@
+{
+	"ItemName": "Iron Lamp-post",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors" ],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 1,
+		"Name": "2-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 2,
+		"Name": "3-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 3,
+		"Name": "4-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 4,
+		"Name": "5-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 5,
+		"Name": "6-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 6,
+		"Name": "7-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 7,
+		"Name": "8-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 8,
+		"Name": "9-Indoors-Foliage",
+		"Keywords": ["Foliage"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 9,
+		"Name": "1-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 10,
+		"Name": "2-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 11,
+		"Name": "3-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 12,
+		"Name": "4-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 13,
+		"Name": "5-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 14,
+		"Name": "6-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 15,
+		"Name": "7-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 16,
+		"Name": "8-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+		{
+		"Id": 17,
+		"Name": "9-Indoors-Clean",
+		"Keywords": ["Clean"],
+		"ChanceWeight": 0,
+		},
+	]
+}

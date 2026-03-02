@@ -1,0 +1,209 @@
+{
+    "Format": "1.20.0",
+	
+	"ConfigSchema": {
+	
+		"WoodFence": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Settign as 'false' disales retextre" },
+		"WoodFExtra": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Enables vines/flowers/moss/petals" },
+		"StoneFence": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Settign as 'false' disales retextre" },
+		"StoneFExtra": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Enables vines/flowers/moss/petals" },
+		"IronFence": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Settign as 'false' disales retextre" },
+		"IronFExtra": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Enables vines/flowers/moss/petals" },			
+		"HardwoodFence": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Settign as 'false' disales retextre" },
+		"HardwoodFExtra": {"AllowValues": "true, false",
+					"Default": "true",
+					"Description": "Enables vines/flowers/moss/petals" },
+					
+	
+		"RecolorOverwrite":{"AllowValues": "Vanilla, DNEarthyRecolour, Eemie's, Starblue, VibrantPastoral, WittilyNamed",
+					"AllowBlank": true,
+					"Default": "",
+					"Description": " Change ONLY when you want to change automaticaly matched recolor palette" },
+	},				
+			
+	"DynamicTokens": [
+	
+	//checking what recolor is used
+		{
+		"Name": "recolor",
+		"Value": "Vanilla",
+		},
+		{
+		"Name": "recolor",
+		"Value": "DNEarthyRecolour",
+			"When": { "HasMod": "DaisyNiko.EarthyRecolour" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "Eemie's",
+			"When": { "HasMod": "minervamaga.CP.eemieMapRecolour" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "Starblue",
+			"When": { "HasMod": "Lita.StarblueValley" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "VibrantPastoral",
+			"When": { "HasMod": "grapeponta.VibrantPastoralRecolor" },
+		},
+		{
+		"Name": "recolor",
+		"Value": "WittilyNamed",
+			"When": { "HasMod": "Acerbicon.Recolor" },
+		},
+
+	//recolor overwrite
+		{
+		"Name": "recolor",
+		"Value": "{{RecolorOverwrite}}",
+			"When": { "RecolorOverwrite |contains=Vanilla, DNEarthyRecolour, Eemie's, Starblue, VibrantPastoral, WittilyNamed": true },
+		},
+	],
+
+		
+    "Changes": [
+		
+		{
+		"LogName": "Wood fence icon",
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/wood.png",
+			"ToArea": { "X": 160, "Y": 208, "Width": 16, "Height": 16 },
+			"When": { "WoodFence": true },
+		},
+		{
+		"LogName": "Stone fence icon",
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/stone.png",
+			"ToArea": { "X": 176, "Y": 208, "Width": 16, "Height": 16 },
+			"When": { "StoneFence": true },
+		},
+		{
+		"LogName": "Iron fence icon",
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/iron.png",
+			"ToArea": { "X": 192, "Y": 208, "Width": 16, "Height": 16 },
+			"When": { "IronFence": true },
+		},
+		{
+		"LogName": "Hardwood fence icon",
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/hardwood.png",
+			"ToArea": { "X": 160, "Y": 192, "Width": 16, "Height": 16 },
+			"When": { "HardwoodFence": true },
+		},
+		{
+		"LogName": "Gate icon",
+		"Action": "EditImage",
+		"Target": "Maps/springobjects",
+		"FromFile": "assets/gate.png",
+			"ToArea": { "X": 208, "Y": 208, "Width": 16, "Height": 16 },
+		},
+		
+/*	
+	----------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------
+
+					Farm seasonal edits
+	
+	----------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------
+*/
+		
+		{
+		"LogName": "Wood fence",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence1",
+		"FromFile": "assets/wood/{{recolor}}/{{WoodFExtra}}_{{season}}.png",
+			"When": { "WoodFence": true },
+		},
+		{
+		"LogName": "Stone fence",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence2",
+		"FromFile": "assets/stone/{{recolor}}/{{StoneFExtra}}_{{season}}.png",
+			"When": { "StoneFence": true },
+		},
+		{
+		"LogName": "Iron fence",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence3",
+		"FromFile": "assets/iron/{{recolor}}/{{IronFExtra}}_{{season}}.png",
+			"When": { "IronFence": true },
+		},
+		{
+		"LogName": "Hardwood fence",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence5",
+		"FromFile": "assets/hardwood/{{recolor}}/{{HardwoodFExtra}}_{{season}}.png",
+			"When": { "HardwoodFence": true },
+		},
+		
+		
+/*	
+	----------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------
+
+					Island summer overwrites
+	
+	----------------------------------------------------------------------------------------------------------------------
+	----------------------------------------------------------------------------------------------------------------------
+*/
+		
+		{
+		"LogName": "Wood fence island",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence1",
+		"FromFile": "assets/wood/{{recolor}}/{{WoodFExtra}}_summer.png",
+			"When": { "WoodFence": true,
+					"LocationContext": "Island" },
+		"Update": "OnLocationChange",
+		},
+		{
+		"LogName": "Stone fence island",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence2",
+		"FromFile": "assets/stone/{{recolor}}/{{StoneFExtra}}_summer.png",
+			"When": { "StoneFence": true,
+					"LocationContext": "Island" },
+		"Update": "OnLocationChange",
+		},
+		{
+		"LogName": "Iron fence island",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence3",
+		"FromFile": "assets/iron/{{recolor}}/{{IronFExtra}}_summer.png",
+			"When": { "IronFence": true,
+					"LocationContext": "Island" },
+		"Update": "OnLocationChange",
+		},
+		{
+		"LogName": "Hardwood fence island",
+		"Action": "EditImage",
+		"Target": "LooseSprites/Fence5",
+		"FromFile": "assets/hardwood/{{recolor}}/{{HardwoodFExtra}}_summer.png",
+			"When": { "HardwoodFence": true,
+					"LocationContext": "Island" },
+		"Update": "OnLocationChange",
+		},
+  	]
+}

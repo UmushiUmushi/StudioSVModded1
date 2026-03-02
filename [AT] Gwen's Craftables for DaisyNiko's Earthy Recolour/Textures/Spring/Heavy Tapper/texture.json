@@ -1,0 +1,26 @@
+{
+	"ItemName": "Heavy Tapper",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors" ],
+		"Seasons": ["Spring", "Summer", "Fall"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors",
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors",
+		},
+		{
+		"Id": 2,
+		"Name": "3-Outdoors",
+		},
+		{
+		"Id": 3,
+		"Name": "4-Outdoors",
+		},
+	]
+}

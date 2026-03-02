@@ -1,0 +1,3665 @@
+{
+    "Changes": [
+        //Loads Textures
+        {
+            "LogName": "ESObjects textures",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/esobjects",
+            "FromFile": "assets/Textures/esobjects.png"
+        },
+        {
+            "LogName": "ESObjects textures",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/esfurniture",
+            "FromFile": "assets/Textures/esfurniture.png"
+        },
+        {
+            "LogName": "ESObjects textures",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/estrees",
+            "FromFile": "assets/Textures/estrees.png"
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/eshats",
+            "FromFile": "assets/Textures/eshats.png"
+        },
+        {
+            "LogName": "ESObjects textures",
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/espaths",
+            "FromFile": "assets/Textures/ESPaths.png"
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "Entries": {
+                "EastScarp_Azure_Chrysanthemum": {
+                    "Name": "EastScarp_Azure_Chrysanthemum",
+                    "DisplayName": "{{i18n:object.azure-chrysanthemum.name}}",
+                    "Description": "{{i18n:object.azure-chrysanthemum.description}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 250,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 0,
+                    "Edibility": 5,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_blue",
+                        "dye_medium",
+                        "flower_item",
+                        "season_fall",
+                        "season_summer",
+                        "season_winter",
+                        "chrysanthemum_item",
+                        "edible_flower_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Azure_Chrysanthemum_Seed": {
+                    "Name": "EastScarp_Azure_Chrysanthemum_Seed",
+                    "DisplayName": "{{i18n:object.azure-chrysanthemum-seed.name}}",
+                    "Description": "{{i18n:object.azure-chrysanthemum-seed.description}}",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 125,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 1,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "EastScarp_Serruria": {
+                    "Name": "EastScarp_Serruria",
+                    "DisplayName": "{{i18n:object.serruria.name}}",
+                    "Description": "{{i18n:object.serruria.description}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 300,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 2,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_white",
+                        "dye_medium",
+                        "flower_item",
+                        "season_spring",
+                        "season_summer",
+                        "season_winter"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Serruria_Seed": {
+                    "Name": "EastScarp_Serruria_Seed",
+                    "DisplayName": "{{i18n:crop.serruria-seed.name}}",
+                    "Description": "{{i18n:crop.serruria-seed.description}}",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 125,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 3,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "EastScarp_Bird_Of_Paradise": {
+                    "Name": "EastScarp_Bird_Of_Paradise",
+                    "DisplayName": "{{i18n:object.birdofparadise-flower.name}}",
+                    "Description": "{{i18n:object.birdofparadise-flower.description}}",
+                    "Type": "Basic",
+                    "Category": -80,
+                    "Price": 200,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 4,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_orange",
+                        "dye_medium",
+                        "flower_item",
+                        "season_summer"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Bird_Of_Paradise_Seed": {
+                    "Name": "EastScarp_Bird_Of_Paradise_Seed",
+                    "DisplayName": "{{i18n:crop.birdofparadise-seed.name}}",
+                    "Description": "{{i18n:crop.birdofparadise-seed.description}}",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 125,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 5,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "EastScarp_Moonflower_Seed": {
+                    "Name": "EastScarp_Moonflower_Seed",
+                    "DisplayName": "{{i18n:crop.moonflower-seed.name}}",
+                    "Description": "{{i18n:crop.moonflower-seed.description}}",
+                    "Type": "Seeds",
+                    "Category": -74,
+                    "Price": 125,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 6,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "EastScarp_Ornate_Nudibranch": {
+                    "Name": "EastScarp_Ornate_Nudibranch",
+                    "DisplayName": "{{i18n:object.ornatenudibranch-fish.name}}",
+                    "Description": "{{i18n:object.ornatenudibranch-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 110,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 12,
+                    "Edibility": -1,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_red",
+                        "fish_nudibranch",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Cerulean_Nudibranch": {
+                    "Name": "EastScarp_Cerulean_Nudibranch",
+                    "DisplayName": "{{i18n:object.ceruleannudibranch-fish.name}}",
+                    "Description": "{{i18n:object.ceruleannudibranch-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 120,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 11,
+                    "Edibility": -1,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_blue",
+                        "fish_nudibranch",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Sea_Bunny_Nudibranch": {
+                    "Name": "EastScarp_Sea_Bunny_Nudibranch",
+                    "DisplayName": "{{i18n:object.seabunnynudibranch-fish.name}}",
+                    "Description": "{{i18n:object.seabunnynudibranch-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 130,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 13,
+                    "Edibility": -1,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_red",
+                        "fish_nudibranch",
+                        "fish_ocean",
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Sunset_Nudibranch": {
+                    "Name": "EastScarp_Sunset_Nudibranch",
+                    "DisplayName": "{{i18n:object.sunsetnudibranch-fish.name}}",
+                    "Description": "{{i18n:object.sunsetnudibranch-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 130,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 14,
+                    "Edibility": -1,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_blue",
+                        "fish_nudibranch",
+                        "fish_ocean"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Red_Herring": {
+                    "Name": "EastScarp_Red_Herring",
+                    "DisplayName": "{{i18n:object.redherring-fish.name}}",
+                    "Description": "{{i18n:object.redherring-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 55,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 15,
+                    "Edibility": 10,
+                    "ExcludeFromFishingCollection": true,
+                    "ContextTags": [
+                        "color_red",
+                        "fish_red_herring",
+                        "fish_ocean",
+                        "herring_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Golden_Trout": {
+                    "Name": "EastScarp_Golden_Trout",
+                    "DisplayName": "{{i18n:object.goldentrout-fish.name}}",
+                    "Description": "{{i18n:object.goldentrout-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 110,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 16,
+                    "Edibility": 20,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_gold",
+                        "fish_golden_trout",
+                        "fish_lake",
+                        "trout_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Kokanee_Salmon": {
+                    "Name": "EastScarp_Kokanee_Salmon",
+                    "DisplayName": "{{i18n:object.kokaneesalmon-fish.name}}",
+                    "Description": "{{i18n:object.kokaneesalmon-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 120,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 17,
+                    "Edibility": 20,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_red",
+                        "fish_kokanee_salmon",
+                        "fish_lake",
+                        "salmon_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_King_Carp": {
+                    "Name": "EastScarp_King_Carp",
+                    "DisplayName": "{{i18n:object.kingcarp-fish.name}}",
+                    "Description": "{{i18n:object.kingcarp-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 450,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 18,
+                    "Edibility": 40,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_gold",
+                        "fish_king_carp",
+                        "fish_lake",
+                        "carp_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Fairy_Betta": {
+                    "Name": "EastScarp_Fairy_Betta",
+                    "DisplayName": "{{i18n:object.fairybetta-fish.name}}",
+                    "Description": "{{i18n:object.fairybetta-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 140,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 19,
+                    "Edibility": 20,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_pale_violet_red",
+                        "fish_fairy_betta",
+                        "fish_pond",
+                        "season_spring",
+                        "season_summer",
+                        "season_fall"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Obsidian_Maw": {
+                    "Name": "EastScarp_Obsidian_Maw",
+                    "DisplayName": "{{i18n:object.obsidianmaw-fish.name}}",
+                    "Description": "{{i18n:object.obsidianmaw-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 225,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 10,
+                    "Edibility": -10,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_black",
+                        "fish_obsidian_maw",
+                        "fish_lake"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Slime_Barbel": {
+                    "Name": "EastScarp_Slime_Barbel",
+                    "DisplayName": "{{i18n:object.slimebarbel-fish.name}}",
+                    "Description": "{{i18n:object.slimebarbel-fish.description}}",
+                    "Type": "Fish",
+                    "Category": -4,
+                    "Price": 210,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 20,
+                    "Edibility": -2,
+                    "ExcludeFromFishingCollection": "{{ExcludeObjects}}",
+                    "ContextTags": [
+                        "color_green",
+                        "fish_slime_barbel",
+                        "fish_lake"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Scarp_Warp_Totem": {
+                    "Name": "EastScarp_Scarp_Warp_Totem",
+                    "DisplayName": "{{i18n:object.scarpwarptotem-crafting.name}}",
+                    "Description": "{{i18n:object.scarpwarptotem-crafting.description}}",
+                    "Type": "Crafting",
+                    "Category": 0,
+                    "Price": 20,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 21,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_brown",
+                        "not_placeable",
+                        "totem_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Vintage_Ruby_Ring": {
+                    "Name": "EastScarp_Vintage_Ruby_Ring",
+                    "DisplayName": "{{i18n:object.vintagerubyring.name}}",
+                    "Description": "{{i18n:object.vintagerubyring.description}}",
+                    "Type": "Quest",
+                    "Category": 0,
+                    "Price": 0,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 22,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": null,
+                    "CustomFields": {}
+                },
+                "EastScarp_Pheasant_Feather": {
+                    "Name": "EastScarp_Pheasant_Feather",
+                    "DisplayName": "{{i18n:object.pheasantfeather.name}}",
+                    "Description": "{{i18n:object.pheasantfeather.description}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 350,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 23,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "ExcludeFromShippingCollection": "true",
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_yellow",
+                        "feather_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Wood_Duck_Feather": {
+                    "Name": "EastScarpWood_Duck_Feather",
+                    "DisplayName": "{{i18n:object.woodduckfeather.name}}",
+                    "Description": "{{i18n:object.woodduckfeather.description}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 150,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 24,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_orange",
+                        "feather_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Blue_Jay_Feather": {
+                    "Name": "EastScarp_Blue_Jay_Feather",
+                    "DisplayName": "{{i18n:object.bluejayfeather.name}}",
+                    "Description": "{{i18n:object.bluejayfeather.description}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 100,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 25,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_blue",
+                        "feather_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Pelican_Feather": {
+                    "Name": "EastScarp_Pelican_Feather",
+                    "DisplayName": "{{i18n:object.pelicanfeather.name}}",
+                    "Description": "{{i18n:object.pelicanfeather.description}}",
+                    "Type": "Basic",
+                    "Category": -81,
+                    "Price": 125,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 26,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_white",
+                        "feather_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_CherryPit": {
+                    "Name": "EastScarp_CherryPit",
+                    "DisplayName": "{{i18n:object.cherrypit.name}}",
+                    "Description": "{{i18n:object.cherrypit.description}}",
+                    "Type": "Basic",
+                    "Category": -20,
+                    "Price": 0,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 27,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_red"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_SeaGlass": {
+                    "Name": "EastScarp_SeaGlass",
+                    "DisplayName": "{{i18n:object.seaglass.name}}",
+                    "Description": "{{i18n:object.seaglass.description}}",
+                    "Type": "Basic",
+                    "Category": -12,
+                    "Price": 100,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 28,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "color_blue"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Rosas_Baklava": {
+                    "Name": "EastScarp_Rosas_Baklava",
+                    "DisplayName": "{{i18n:object.rosabaklava-cooking.name}}",
+                    "Description": "{{i18n:object.rosabaklava-cooking.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 120,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 29,
+                    "Edibility": 50,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 180,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagnetRadius": 0,
+                                "Speed": 1,
+                                "Defense": 0,
+                                "Attack": 0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_brown",
+                        "food_sweet"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Rosas_Spanakopita": {
+                    "Name": "EastScarp_Rosas_Spanakopita",
+                    "DisplayName": "{{i18n:object.rosaspanakopita-cooking.name}}",
+                    "Description": "{{i18n:object.rosaspanakopita-cooking.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 580,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 30,
+                    "Edibility": 100,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 220,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 2,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagnetRadius": 0,
+                                "Speed": 0,
+                                "Defense": 0,
+                                "Attack": 0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_brown"
+                    ],
+                    "CustomFields": {}
+                },
+                /*"EastScarp_Toast": {
+                    "Name": "EastScarp_Toast",
+                    "DisplayName": "{{i18n:object.toast.name}}",
+                    "Description": "{{i18n:object.toast.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 25,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 31,
+                    "Edibility": 20,
+                    "ContextTags": [
+                        "color_brown",
+                        "food_bakery"
+                    ],
+                    "CustomFields": {}
+                },*/
+                "EastScarp_Cheesy_Jelly_Toast": {
+                    "Name": "EastScarp_Cheesy_Jelly_Toast",
+                    "DisplayName": "{{i18n:object.cheesejellytoast.name}}",
+                    "Description": "{{i18n:object.cheesejellytoast.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 90,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 32,
+                    "Edibility": 30,
+                    "ContextTags": [
+                        "color_brown",
+                        "food_bakery"
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat_Heirloom_Cherry_Tree": {
+                    "Name": "Lemurkat_Heirloom_Cherry_Tree",
+                    "DisplayName": "{{i18n:object.HeirloomCherrySapling_Name}}",
+                    "Description": "{{i18n:object.HeirloomCherrySapling_Description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": 850,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 7,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "Lemurkat_Wild_Plum_Tree": {
+                    "Name": "Lemurkat_Heirloom_Cherry_Tree",
+                    "DisplayName": "{{i18n:object.WildPlumSapling_Name}}",
+                    "Description": "{{i18n:object.WildPlumSapling_Description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": 850,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 8,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_Golden_Apple_Tree": {
+                    "Name": "Lemurkat.EastScarp_Golden_Apple_Tree",
+                    "DisplayName": "{{i18n:object.Golden_Apple_Tree_Name}}",
+                    "Description": "{{i18n:object.Golden_Apple_Tree_Description}}",
+                    "Type": "Basic",
+                    "Category": -74,
+                    "Price": 100000,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 9,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": false,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": null,
+                    "CustomFields": null
+                },
+                "EastScarp_PuckerWort_Seed": {
+                    "Name": "EastScarp_PuckerWort_Seed",
+                    "DisplayName": "{{i18n:object.puckerwortseed.name}}",
+                    "Description": "{{i18n:object.puckerwortseed.description}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 20,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 35,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds"
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_PuckerWort": {
+                    "Name": "EastScarp_PuckerWort",
+                    "DisplayName": "{{i18n:object.puckerwort.name}}",
+                    "Description": "{{i18n:object.PuckerWort.description}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 50,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 36,
+                    "Edibility": 10,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ArtifactSpotChances": null,
+                    "ContextTags": [
+                        "category_vegetable",
+                        "category_ingredients"
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_BiteBackMelon_Seed": {
+                    "Name": "EastScarp_BiteBackMelon_Seed",
+                    "DisplayName": "{{i18n:object.bitebackmelonseed.name}}",
+                    "Description": "{{i18n:object.bitebackmelonseed.description}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 70,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 33,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_BiteBackMelon": {
+                    "Name": "EastScarp_BiteBackMelon",
+                    "DisplayName": "{{i18n:object.bitebackmelon.name}}",
+                    "Description": "{{i18n:object.bitebackmelon.description}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 120,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 34,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruit",
+                        "category_ingredients",
+                        "melon_item"
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_Cuccaroot_Seed": {
+                    "Name": "EastScarp_CuccarootSeeds",
+                    "DisplayName": "{{i18n:object.cuccarootseed.name}}",
+                    "Description": "{{i18n:object.cuccarootseed.description}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 30,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 37,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_Cuccaroot": {
+                    "Name": "EastScarp_Cuccaroot",
+                    "DisplayName": "{{i18n:object.cuccaroot.name}}",
+                    "Description": "{{i18n:object.cuccaroot.description}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 75,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 38,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_vegetable",
+                        "category_ingredients",
+                        "root_vegetable_item"
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_FrostBerry_Seed": {
+                    "Name": "EastScarp_FrostBerrySeeds",
+                    "DisplayName": "{{i18n:object.frostberryseed.name}}",
+                    "Description": "{{i18n:object.frostberryseed.description}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 75,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 39,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_FrostBerry": {
+                    "Name": "EastScarp_FrostBerry",
+                    "DisplayName": "{{i18n:object.frostberry.name}}",
+                    "Description": "{{i18n:object.frostberry.description}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 50,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 40,
+                    "Edibility": 17,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruit",
+                        "color_blue",
+                        "berry_item"
+                    ],
+                    "CustomFields": null
+                },
+                "EastScarp_Biteback_Curry": {
+                    "Name": "EastScarp_Biteback_Curry",
+                    "DisplayName": "{{i18n:object.bitebackcurry.name}}",
+                    "Description": "{{i18n:object.bitebackcurry.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 350,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 41,
+                    "Edibility": 70,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 450,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 1.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_pink"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Pucker_Green_Smoothie": {
+                    "Name": "EastScarp_Pucker_Green_Smoothie",
+                    "DisplayName": "{{i18n:object.puckergreensmoothie.name}}",
+                    "Description": "{{i18n:object.puckergreensmoothie.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 220,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 42,
+                    "Edibility": 100,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 500,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 1.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_green"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Candied_Cuccaroot": {
+                    "Name": "EastScarp_Candied_Cuccaroot",
+                    "DisplayName": "{{i18n:object.candiedcuccaroot.name}}",
+                    "Description": "{{i18n:object.candiedcuccaroot.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 300,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 43,
+                    "Edibility": 70,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 650,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 1.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_orange"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_FrostBerry_Bliss_Balls": {
+                    "Name": "EastScarp_FrostBerry_Bliss_Balls",
+                    "DisplayName": "{{i18n:object.frostberrybliss.name}}",
+                    "Description": "{{i18n:object.frostberrybliss.description}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 100,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 44,
+                    "Edibility": 60,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 400,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 1.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ContextTags": [
+                        "color_white"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_PheasantEgg_male": {
+                    "Name": "EastScarp_PheasantEgg_male",
+                    "DisplayName": "{{i18n:object.pheasantegg.name}}",
+                    "Description": "{{i18n:object.pheasantegg.description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": 250,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 45,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_yellow",
+                        //"egg_item",
+                        "pheasant_egg_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_PheasantEgg_female": {
+                    "Name": "EastScarp_PheasantEgg_female",
+                    "DisplayName": "{{i18n:object.pheasantegg.name}}",
+                    "Description": "{{i18n:object.pheasantegg_female.description}}",
+                    "Type": "Basic",
+                    "Category": -5,
+                    "Price": 250,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 46,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "Buff": null,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_yellow",
+                        //"egg_item",
+                        "pheasant_egg_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Chamomile_Tea": {
+                    "Name": "EastScarp_Chamomile_Tea",
+                    "DisplayName": "{{i18n:object.chamomiletea.name}}",
+                    "Description": "{{i18n:object.chamomiletea.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 80,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 47,
+                    "IsDrink": true,
+                    "Edibility": 45,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 300,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 1.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0,
+                                "Immunity": 2.0,
+                            }
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_yellow",
+                        "tea_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Ginger_Tea": {
+                    "Name": "EastScarp_Ginger_Tea",
+                    "DisplayName": "{{i18n:object.gingertea.name}}",
+                    "Description": "{{i18n:object.gingertea.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 130,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 48,
+                    "IsDrink": true,
+                    "Edibility": 40,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 500,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 1.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0,
+                                "Immunity": 1.0,
+                            }
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_yellow",
+                        "tea_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Peppermint_Tea": {
+                    "Name": "EastScarp_Peppermint_Tea",
+                    "DisplayName": "{{i18n:object.pepperminttea.name}}",
+                    "Description": "{{i18n:object.pepperminttea.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 90,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 49,
+                    "IsDrink": true,
+                    "Edibility": 35,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 340,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 1.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0,
+                                "Immunity": 1.0,
+                            }
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_green",
+                        "tea_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Black_Wool": {
+                    "Name": "EastScarp_Black_Wool",
+                    "DisplayName": "{{i18n:object.blackwool.name}}",
+                    "Description": "{{i18n:object.blackwool.description}}",
+                    "Type": "Basic",
+                    "Category": -18,
+                    "Price": 460,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 50,
+                    "Edibility": -300,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "item_wool"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Black_Cloth": {
+                    "Name": "EastScarp_Black_Cloth",
+                    "DisplayName": "{{i18n:object.blackcloth.name}}",
+                    "Description": "{{i18n:object.blackcloth.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 580,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 51,
+                    "Edibility": -300,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "item_cloth"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Void_Goat_Milk": {
+                    "Name": "EastScarp_Void_Goat_Milk",
+                    "DisplayName": "{{i18n:object.voidgoatmilk.name}}",
+                    "Description": "{{i18n:object.voidgoatmilk.description}}",
+                    "Type": "Basic",
+                    "Category": -6,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 900,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 10.0,
+                                "MagnetRadius": 0,
+                                "Speed": 0,
+                                "Defense": 1,
+                                "Attack": 1
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "Price": 245,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 52,
+                    "Edibility": -15,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "goat_milk_item",
+                        "milk_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_L_Void_Goat_Milk": {
+                    "Name": "EastScarp_L_Void_Goat_Milk",
+                    "DisplayName": "{{i18n:object.lvoidgoatmilk.name}}",
+                    "Description": "{{i18n:object.lvoidgoatmilk.description}}",
+                    "Type": "Basic",
+                    "Category": -6,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 900,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 0,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 20.0,
+                                "MagnetRadius": 0,
+                                "Speed": 0,
+                                "Defense": 1,
+                                "Attack": 1
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "Price": 350,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 53,
+                    "Edibility": -25,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "goat_milk_item",
+                        "milk_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Void_Goat_Cheese": {
+                    "Name": "EastScarp_Void_Goat_Cheese",
+                    "DisplayName": "{{i18n:object.voidgoatcheese.name}}",
+                    "Description": "{{i18n:object.voidgoatcheese.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "Price": 420,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 54,
+                    "Edibility": 50,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "cheese_item",
+                        "goat_cheese_item",
+                        "soft_cheese_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Void_Goat_Cheese_Aged": {
+                    "Name": "EastScarp_Void_Goat_Cheese_Aged",
+                    "DisplayName": "{{i18n:object.voidgoatcheeseaged.name}}",
+                    "Description": "{{i18n:object.voidgoatcheeseaged.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "Price": 420,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 55,
+                    "Edibility": 50,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "cheese_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Void_Cake": {
+                    "Name": "EastScarp_Void_Cake",
+                    "DisplayName": "{{i18n:object.voidcake.name}}",
+                    "Description": "{{i18n:object.voidcake.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "IsDrink": false,
+                    "Price": 220,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 57,
+                    "Edibility": 50,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 400,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 1.0,
+                                "Attack": 1.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Void_CheeseCake": {
+                    "Name": "EastScarp_Void_CheeseCake",
+                    "DisplayName": "{{i18n:object.voidcheesecake.name}}",
+                    "Description": "{{i18n:object.voidcheesecake.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 400,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 1.0,
+                                "Defense": 1.0,
+                                "Attack": 0.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "Price": 260,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 58,
+                    "Edibility": 50,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "cheese_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Void_SalmonCake": {
+                    "Name": "EastScarp_Void_SalmonCake",
+                    "DisplayName": "{{i18n:object.voidsalmoncake.name}}",
+                    "Description": "{{i18n:object.voidsalmoncake.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "IsDrink": false,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 400,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 0.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 1.0,
+                                "Defense": 0.0,
+                                "Attack": 1.0
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "Price": 290,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 59,
+                    "Edibility": -4,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_black",
+                        "cheese_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "EastScarp_Tristan_Oversized_Woolly_Hat": {
+                    "Name": "EastScarp_Tristan_Oversized_Woolly_Hat",
+                    "DisplayName": "{{i18n:object.oversizedwoollyhat.name}}",
+                    "Description": "{{i18n:object.oversizedwoollyhat.description}}",
+                    "Type": "Quest",
+                    "Category": 0,
+                    "IsDrink": false,
+                    "Buffs": null,
+                    "Price": 0,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 60,
+                    "Edibility": -300,
+                    "CanBeGivenAsGift": false,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_purple"
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_Cherry_Orchard_Wine": {
+                    "Name": "Lemurkat.EastScarp_Cherry_Orchard_Wine",
+                    "DisplayName": "{{i18n:object.cherryorchardwine.name}}",
+                    "Description": "{{i18n:object.cherryorchardwine.description}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "IsDrink": true,
+                    "Buffs": [
+                        {
+                            "Id": "Tipsy",
+                            "BuffId": "17",
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 0,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": null,
+                            "CustomFields": null
+                        }
+                    ],
+                    "Price": 100,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 61,
+                    "Edibility": 5,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_red",
+                        "alcohol_item",
+                        "drink_item",
+                        "wine_item"
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_Prismatic_Slime_Egg": {
+                    "Name": "Lemurkat.EastScarp_Prismatic_Slime_Egg",
+                    "DisplayName": "{{i18n:object.prismaticslimeegg.name}}",
+                    "Description": "{{i18n:object.prismaticslimeegg.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "IsDrink": false,
+                    "Price": 7500,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 62,
+                    "Edibility": -300,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "color_prismatic",
+                        "slime_egg_item"
+                    ],
+                    "CustomFields": {
+                        "selph.ExtraMachineConfig.SlimeColorToHatch": "Prismatic"
+                    }
+                },
+                "Lemurkat.EastScarp_Golden_Apple": {
+                    "Name": "Lemurkat.EastScarp_Golden_Apple",
+                    "DisplayName": "{{i18n:object.goldenapple.name}}",
+                    "Description": "{{i18n:object.goldenapple.description}}",
+                    "Type": "Basic",
+                    "Category": 0,
+                    "IsDrink": false,
+                    "Price": 1500,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 63,
+                    "Edibility": -300,
+                    "ExcludeFromShippingCollection": true,
+                    "ContextTags": [
+                        "propose_roommate_lumajunimo"
+                    ],
+                    "CustomFields": {}
+                },
+                "Lemurkat.EastScarp_FrostBerryTea": {
+                    "Name": "Lemurkat.EastScarp_FrostBerryTea",
+                    "DisplayName": "{{i18n:object.FrostBerryTea}}",
+                    "Description": "{{i18n:object.FrostBerryTea.Desc}}",
+                    "Type": "Basic",
+                    "Category": -26,
+                    "Price": 80,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 90,
+                    "IsDrink": true,
+                    "Edibility": 70,
+                    "Buffs": [
+                        {
+                            "Id": "Drink",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 340,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0.0,
+                                "FishingLevel": 0.0,
+                                "MiningLevel": 0.0,
+                                "LuckLevel": 0.0,
+                                "ForagingLevel": 0.0,
+                                "MaxStamina": 1.0,
+                                "MagneticRadius": 0.0,
+                                "Speed": 0.0,
+                                "Defense": 0.0,
+                                "Attack": 0.0,
+                                "Immunity": 1.0,
+                            }
+                        }
+                    ],
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "tea_item",
+                        "color_blue",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_GlassTile": {
+                    "Name": "Lemurkat.EastScarp_GlassTile",
+                    "DisplayName": "{{i18n:object.glasstile.name}}",
+                    "Description": "{{i18n:object.glasstile.description}}",
+                    "Type": "Crafting",
+                    "Category": -24,
+                    "Price": 1,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 100,
+                    "Edibility": -300,
+                    "ExcludeFromShippingCollection": true,
+                    "CustomFields": {}
+                },
+                //Hot Choco
+                "{{ModID}}_HotChoco": {
+                    "Name": "{{ModID}}_HotChoco",
+                    "DisplayName": "{{i18n:object.HotChoco.name}}",
+                    "Description": "{{i18n:object.HotChoco.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 430,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 93,
+                    "Edibility": 16,
+                    "IsDrink": true,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360, // 4min 20s
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "MaxStamina": 1.0,
+                                "Speed": 2.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                        "color_brown"
+                    ]
+                },
+                "Lemurkat.EastScarp_GiggleFitSeeds": {
+                    "Name": "Lemurkat.EastScarp_GiggleFitSeeds",
+                    "DisplayName": "{{i18n:object.GiggleFitSeeds}}",
+                    "Description": "{{i18n:object.GiggleFitSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 80,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 82,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_GiggleFit": {
+                    "Name": "Lemurkat.EastScarp_GiggleFit",
+                    "DisplayName": "{{i18n:object.GiggleFit}}",
+                    "Description": "{{i18n:object.GiggleFit.Desc}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 175,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 83,
+                    "Edibility": 10,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_vegetable",
+                        "category_ingredients",
+                        "color_white",
+                        "mandrake_item",
+                        "root_vegetable_item"
+                    ],
+                    "CustomFields": null
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                //UNIVERSALS
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Hate"
+                    ],
+                    "Value": "EastScarp_Void_Goat_Milk",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Hate"
+                    ],
+                    "Value": "EastScarp_L_Void_Goat_Milk",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Hate"
+                    ],
+                    "Value": "EastScarp_Void_Goat_Cheese",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Hate"
+                    ],
+                    "Value": "EastScarp_Void_Goat_Cheese_Aged",
+                    "Delimiter": " "
+                },
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "When": {
+                "AdditionalCrops": true
+            },
+            "Entries": {
+                //Passerby Crops Claimed
+                "Lemurkat.EastScarp_ButterTuffSeeds": {
+                    "Name": "Lemurkat.EastScarp_ButterTuffSeeds",
+                    "DisplayName": "{{i18n:object.ButterTuffSeeds}}",
+                    "Description": "{{i18n:object.ButterTuffSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 40,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 64,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_ButterTuff": {
+                    "Name": "Lemurkat.EastScarp_ButterTuff",
+                    "DisplayName": "{{i18n:object.ButterTuff}}",
+                    "Description": "{{i18n:object.ButterTuff.Desc}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 75,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 65,
+                    "Edibility": 3,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_ingredients",
+                        "color_Yellow",
+                        "broccoli_item",
+                        "cauliflower_item"
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_FairyCapSeeds": {
+                    "Name": "Lemurkat.EastScarp_FairyCapSeeds",
+                    "DisplayName": "{{i18n:object.FairyCapSeeds}}",
+                    "Description": "{{i18n:object.FairyCapSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 60,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 66,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_FairyCap": {
+                    "Name": "Lemurkat.EastScarp_FairyCap",
+                    "DisplayName": "{{i18n:object.FairyCap}}",
+                    "Description": "{{i18n:object.FairyCap.Desc}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 90,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 67,
+                    "Edibility": 20,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruits",
+                        "category_ingredients",
+                        "color_blue",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_PaneekiSeeds": {
+                    "Name": "Lemurkat.EastScarp_PaneekiSeeds",
+                    "DisplayName": "{{i18n:object.PaneekiSeeds}}",
+                    "Description": "{{i18n:object.PaneekiSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 100,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 68,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_Paneeki": {
+                    "Name": "Lemurkat.EastScarp_Paneeki",
+                    "DisplayName": "{{i18n:object.Paneeki}}",
+                    "Description": "{{i18n:object.Paneeki.Desc}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 170,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 69,
+                    "Edibility": 18,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_vegetable",
+                        "category_ingredients",
+                        "color_red",
+                        "root_vegetable_item"
+                    ],
+                    "CustomFields": null
+                },
+                /* "Lemurkat.EastScarp_GaggleShroomsSeeds": {
+                    "Name": "Lemurkat.EastScarp_GaggleShroomsSeeds",
+                    "DisplayName": "{{i18n:object.GaggleShroomsSeeds}}",
+                    "Description": "{{i18n:object.GaggleShroomsSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 30,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 70,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_GaggleShrooms": {
+                    "Name": "Lemurkat.EastScarp_GaggleShrooms",
+                    "DisplayName": "{{i18n:object.GaggleShrooms}}",
+                    "Description": "{{i18n:object.GaggleShrooms.Desc}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 50,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 71,
+                    "Edibility": 2,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_ingredients",
+                        "category_greens",
+                        "color_red",
+                    ],
+                    "CustomFields": null
+                },*/
+                "Lemurkat.EastScarp_ZinfazuFruitSeeds": {
+                    "Name": "Lemurkat.EastScarp_ZinfazuFruitSeeds",
+                    "DisplayName": "{{i18n:object.ZinfazuFruitSeeds}}",
+                    "Description": "{{i18n:object.ZinfazuFruitSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 400,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 72,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_ZinfazuFruit": {
+                    "Name": "Lemurkat.EastScarp_ZinfazuFruit",
+                    "DisplayName": "{{i18n:object.ZinfazuFruit}}",
+                    "Description": "{{i18n:object.ZinfazuFruit.Desc}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 600,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 73,
+                    "Edibility": 15,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruits",
+                        "category_ingredients",
+                        "color_purple",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_YohoFruitSeeds": {
+                    "Name": "Lemurkat.EastScarp_YohoFruitSeeds",
+                    "DisplayName": "{{i18n:object.YohoFruitSeeds}}",
+                    "Description": "{{i18n:object.YohoFruitSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 20,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 74,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_YohoFruit": {
+                    "Name": "Lemurkat.EastScarp_YohoFruit",
+                    "DisplayName": "{{i18n:object.YohoFruit}}",
+                    "Description": "{{i18n:object.YohoFruit.Desc}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 45,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 75,
+                    "Edibility": 6,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruits",
+                        "category_ingredients",
+                        "color_yellow",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_DeepCaveFruitSeeds": {
+                    "Name": "Lemurkat.EastScarp_DeepCaveFruitSeeds",
+                    "DisplayName": "{{i18n:object.DeepCaveFruitSeeds}}",
+                    "Description": "{{i18n:object.DeepCaveFruitSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 100,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 76,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_DeepCaveFruit": {
+                    "Name": "Lemurkat.EastScarp_DeepCaveFruit",
+                    "DisplayName": "{{i18n:object.DeepCaveFruit}}",
+                    "Description": "{{i18n:object.DeepCaveFruit.Desc}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 175,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 77,
+                    "Edibility": 3,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruits",
+                        "category_ingredients",
+                        "color_blue",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_CaveFlowerSeeds": {
+                    "Name": "Lemurkat.EastScarp_CaveFlowerSeeds",
+                    "DisplayName": "{{i18n:object.CaveFlowerSeeds}}",
+                    "Description": "{{i18n:object.CaveFlowerSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 80,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 78,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_CaveFlower": {
+                    "Name": "Lemurkat.EastScarp_CaveFlower",
+                    "DisplayName": "{{i18n:object.CaveFlower}}",
+                    "Description": "{{i18n:object.CaveFlower.Desc}}",
+                    "Type": "Flower",
+                    "Category": -80,
+                    "Price": 150,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 79,
+                    "Edibility": 1,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_orange",
+                        "category_flower",
+                        "edible_flower_item"
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_FirePepperSeeds": {
+                    "Name": "Lemurkat.EastScarp_FirePepperSeeds",
+                    "DisplayName": "{{i18n:object.FirePepperSeeds}}",
+                    "Description": "{{i18n:object.FirePepperSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 175,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 80,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                        "color_orange",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_FirePepper": {
+                    "Name": "Lemurkat.EastScarp_FirePepper",
+                    "DisplayName": "{{i18n:object.FirePepper}}",
+                    "Description": "{{i18n:object.FirePepper.Desc}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 175,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 81,
+                    "Edibility": 4,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "color_orange",
+                        "category_vegetable",
+                        "chili_item"
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_ChocoFruitSeeds": {
+                    "Name": "Lemurkat.EastScarp_ChocoFruitSeeds",
+                    "DisplayName": "{{i18n:object.ChocoFruitSeeds}}",
+                    "Description": "{{i18n:object.ChocoFruitSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 50,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 84,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_ChocoFruit": {
+                    "Name": "Lemurkat.EastScarp_ChocoFruit",
+                    "DisplayName": "{{i18n:object.ChocoFruit}}",
+                    "Description": "{{i18n:object.ChocoFruit.Desc}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 70,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 85,
+                    "Edibility": 5,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruits",
+                        "category_ingredients",
+                        "category_Lemurkat.EastScarp_extractproduct",
+                        "color_brown",
+                        "cocoa_fruit_item"
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_ButtonFruitSeeds": {
+                    "Name": "Lemurkat.EastScarp_ButtonFruitSeeds",
+                    "DisplayName": "{{i18n:object.ButtonFruitSeeds}}",
+                    "Description": "{{i18n:object.ButtonFruitSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 60,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 86,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_ButtonFruit": {
+                    "Name": "Lemurkat.EastScarp_ButtonFruit",
+                    "DisplayName": "{{i18n:object.ButtonFruit}}",
+                    "Description": "{{i18n:object.ButtonFruit.Desc}}",
+                    "Type": "Fruit",
+                    "Category": -79,
+                    "Price": 50,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 87,
+                    "Edibility": 6,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_fruits",
+                        "category_ingredients",
+                        "color_pink",
+                    ],
+                    "CustomFields": null
+                },
+                /*"Lemurkat.EastScarp_WarpRootSeeds": {
+                    "Name": "Lemurkat.EastScarp_WarpRootSeeds",
+                    "DisplayName": "{{i18n:object.WarpRootSeeds}}",
+                    "Description": "{{i18n:object.WarpRootSeeds.Desc}}",
+                    "Type": "Seed",
+                    "Category": -74,
+                    "Price": 55,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 88,
+                    "Edibility": -300,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": true,
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_seeds",
+                    ],
+                    "CustomFields": null
+                },
+                "Lemurkat.EastScarp_WarpRoot": {
+                    "Name": "Lemurkat.EastScarp_WarpRoot",
+                    "DisplayName": "{{i18n:object.WarpRoot}}",
+                    "Description": "{{i18n:object.WarpRoot.Desc}}",
+                    "Type": "Vegetable",
+                    "Category": -75,
+                    "Price": 40,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 89,
+                    "Edibility": 10,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 180,
+                            "IsDebuff": true,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 0,
+                                "FishingLevel": 0,
+                                "MiningLevel": 0,
+                                "LuckLevel": 4,
+                                "ForagingLevel": 0,
+                                "MaxStamina": 0,
+                                "MagnetRadius": 0,
+                                "Speed": -1,
+                                "Defense": -1,
+                                "Attack": -1
+                            },
+                            "CustomFields": null
+                        }
+                    ],
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_vegetable",
+                        "category_ingredients",
+                        "color_blue"
+                    ],
+                    "CustomFields": null
+                },
+                //Warp Root Tea
+                "{{ModID}}_WarpRootTea": {
+                    "Name": "{{ModID}}_WarpRootTea",
+                    "DisplayName": "{{i18n:object.WarpRootTea.name}}",
+                    "Description": "{{i18n:object.WarpRootTea.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 405, //Warp Root x2 80 Goat Milk 225 Sugar 50
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 90,
+                    "Edibility": 15,
+                    "IsDrink": true,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360, // 4min 20sec
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "MiningLevel": 2.0,
+                                "MaxStamina": 32.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                    ]
+                },*/
+                //Cap Wedges
+                "{{ModID}}_FairyCapAmbrosia": {
+                    "Name": "{{ModID}}_FairyCapAmbrosia",
+                    "DisplayName": "{{i18n:object.FairyCapAmbrosia.name}}",
+                    "Description": "{{i18n:object.FairyCapAmbrosia.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 330,
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 91,
+                    "Edibility": 25,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360,
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 2.0,
+                                "ForagingLevel": 1.0,
+                                "MaxStamina": 1.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                        "color_blue"
+                    ]
+                },
+                //Zinfazu Ice Cream
+                "{{ModID}}_ZinfazuIcecream": {
+                    "Name": "{{ModID}}_ZinfazuIcecream",
+                    "DisplayName": "{{i18n:object.ZinfazuIcecream.name}}",
+                    "Description": "{{i18n:object.ZinfazuIcecream.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 1270, // zinfazu fruit x2 1200 ice berry 20 
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 92,
+                    "Edibility": 40,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360, // 4min 20s
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "MaxStamina": 1.0,
+                                "Speed": 2.0,
+                                "Attack": 1.0
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                        "color_yellow",
+                        "arcanian_goods"
+                    ]
+                },
+                //Soothing Cure
+                "{{ModID}}_SoothingCure": {
+                    "Name": "{{ModID}}_SoothingCure",
+                    "DisplayName": "{{i18n:object.SoothingCure.name}}",
+                    "Description": "{{i18n:object.SoothingCure.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 290, // Yoho Fruit x2 90 Button Fruit x2 100 Sugar 50
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 94,
+                    "Edibility": 50,
+                    "IsDrink": true,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360, // 4min 20s
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "MiningLevel": 3.0,
+                                "MaxStamina": 30.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                        "color_orange",
+                        "magical_goods"
+                    ]
+                },
+                //Button Fruit Cake
+                "{{ModID}}_ButtonFruitCake": {
+                    "Name": "{{ModID}}_ButtonFruitCake",
+                    "DisplayName": "{{i18n:object.ButtonFruitCake.name}}",
+                    "Description": "{{i18n:object.ButtonFruitCake.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 200, //button fruit 50, sugar 50, wheat flour 50
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 95,
+                    "Edibility": 36,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "Duration": 360, //4min 20s
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 2.0,
+                                "Defense": 1.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                        "color_red",
+                    ]
+                },
+                //Yoho Hash
+                "{{ModID}}_YohoHash": {
+                    "Name": "{{ModID}}_YohoHash",
+                    "DisplayName": "{{i18n:object.YohoHash.name}}",
+                    "Description": "{{i18n:object.YohoHash.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 320, // yoho fruit x2 45 potato 80 oil 100 
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 96,
+                    "Edibility": 26,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360, // 4min 20s
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "FarmingLevel": 3.0,
+                                "LuckLevel": 1.0,
+                                "Defense": 2.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                        "color_yellow"
+                    ]
+                }, //Choco Bun
+                "{{ModID}}_ChocoBun": {
+                    "Name": "{{ModID}}_ChocoBun",
+                    "DisplayName": "{{i18n:object.ChocoBun.name}}",
+                    "Description": "{{i18n:object.ChocoBun.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 430, // choco fruit extract 100 sugar 50 wheat flour 50 small gouud milk 180
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 97,
+                    "Edibility": 50,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360, //4min 20s
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "LuckLevel": 1.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                        "color_brown"
+                    ]
+                },
+                //Giggle Smoothie
+                "{{ModID}}_GiggleSmoothie": {
+                    "Name": "{{ModID}}_GiggleSmoothie",
+                    "DisplayName": "{{i18n:object.GiggleSmoothie.name}}",
+                    "Description": "{{i18n:object.GiggleSmoothie.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 745, //Giggle Fit Tuber 50 Truffle 625 Seaweed 20
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 98,
+                    "Edibility": 5,
+                    "IsDrink": true,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "Buffs": [
+                        {
+                            "Id": "Food",
+                            "BuffId": null,
+                            "IconTexture": null,
+                            "IconSpriteIndex": 0,
+                            "Duration": 360, // 4min 20sec
+                            "IsDebuff": false,
+                            "GlowColor": null,
+                            "CustomAttributes": {
+                                "MiningLevel": 3.0,
+                            },
+                        }
+                    ],
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                    ]
+                }, //Mashed Giggles
+                /* "{{ModID}}_MashedGiggles": {
+                    "Name": "{{ModID}}_MashedGiggles",
+                    "DisplayName": "{{i18n:object.MashedGiggles.name}}",
+                    "Description": "{{i18n:object.MashedGiggles.Desc}}",
+                    "Type": "Cooking",
+                    "Category": -7,
+                    "Price": 260, //Giggle Fit Tuber 50 Kale 110 Oil 50
+                    "Texture": "Mods\\Lemurkat.EastScarp\\esobjects",
+                    "SpriteIndex": 99,
+                    "Edibility": 10,
+                    "IsDrink": false,
+                    "CanBeGivenAsGift": true,
+                    "CanBeTrashed": true,
+                    "GeodeDropsDefaultItems": false,
+                    "GeodeDrops": null,
+                    "ArtifactSpotChances": null,
+                    "ExcludeFromFishingCollection": true,
+                    "ExcludeFromShippingCollection": "{{ExcludeObjects}}",
+                    "ExcludeFromRandomSale": true,
+                    "ContextTags": [
+                        "category_cooking",
+                    ]
+                },*/
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/NPCGiftTastes",
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Hate"
+                    ],
+                    "Value": "EastScarp_Void_Goat_Cheese_Aged EastScarp_Void_Goat_Cheese EastScarp_L_Void_Goat_Milk EastScarp_Void_Goat_Milk",
+                    "Delimiter": " "
+                },
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Universal_Dislike"
+                    ],
+                    "Value": "Lemurkat.EastScarp_Cherry_Orchard_Wine",
+                    "Delimiter": " "
+                }
+            ]
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "Entries": {
+                "EastScarp_Cheesy_Jelly_Toast": "216 1 344 1 424 1/1 10/EastScarp_Cheesy_Jelly_Toast 5/f Eloise 7/{{i18n:object.cheesejellytoast.name}}",
+                "EastScarp_Rosas_Baklava": "340 1 246 1 408 1/1 10/EastScarp_Rosas_Baklava 3/f Rosa 7/{{i18n:object.rosabaklava-cooking.name}}",
+                "EastScarp_Rosas_Spanakopita": "250 1 426 1 246 1 399 2/1 10/EastScarp_Rosas_Spanakopita/none/{{i18n:object.rosaspanakopita-cooking.name}}",
+                "EastScarp_FrostBerry_Bliss_Balls": "EastScarp_FrostBerry 1 431 1/1 10/EastScarp_FrostBerry_Bliss_Balls/f ToriLK 7/{{i18n:object.frostberrybliss.name}}",
+                "EastScarp_Candied_Cuccaroot": "EastScarp_Cuccaroot 1 724 1/1 10/EastScarp_Candied_Cuccaroot/f Jacob 7/{{i18n:object.candiedcuccaroot.name}}",
+                "EastScarp_Pucker_Green_Smoothie": "EastScarp_PuckerWort 1 88 1/1 10/EastScarp_Pucker_Green_Smoothie/f Jessie 7/{{i18n:object.puckergreensmoothie.name}}",
+                "EastScarp_Biteback_Curry": "EastScarp_BiteBackMelon 1 Carrot 1 423 1/1 10/EastScarp_Biteback_Curry/f Beatrice 7/{{i18n:object.bitebackcurry.name}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CookingRecipes",
+            "When": {
+                "EnableAdditionalCrops": true
+            },
+            "Entries": {
+                "Lemurkat.EastScarp_ZinfazuIcecream": "Lemurkat.EastScarp_ZinfazuFruit 1 EastScarp_FrostBerry 5/1 10/Lemurkat.EastScarp_ZinfazuIcecream/f JosephineK 7/{{i18n:object.ZinfazuIcecream.name}}",
+                "Lemurkat.EastScarp_ButtonFruitCake": "Lemurkat.EastScarp_ButtonFruit 1 246 1 245 1 -6 1/1 10/Lemurkat.EastScarp_ButtonFruitCake/f EdithHart 5/{{i18n:object.ButtonFruitCake.name}}",
+                "Lemurkat.EastScarp_FairyCapAmbrosia": "Lemurkat.EastScarp_FairyCap 2 -6 1 245 1/1 10/Lemurkat.EastScarp_FairyCapAmbrosia/f JadeMalic 7/{{i18n:object.FairyCapAmbrosia.name}}",
+                "Lemurkat.EastScarp_YohoHash": "Lemurkat.EastScarp_YohoFruit 2 192 1 247 1/1 10/Lemurkat.EastScarp_YohoHash/f CorwinLK 7/{{i18n:object.YohoHash.name}}",
+                "Lemurkat.EastScarp_HotChoco": "Lemurkat.EastScarp_ChocoFruit 1 -6 1 245 2/1 10/Lemurkat.EastScarp_HotChoco/f MichaelHart 5/{{i18n:object.HotChoco.name}}",
+                "Lemurkat.EastScarp_ChocoBun": "Lemurkat.EastScarp_ChocoFruit 1 246 1 245 1 -6 1/1 10/Lemurkat.EastScarp_ChocoBun/f Juliet 7/{{i18n:object.ChocoBun.name}}",
+                "Lemurkat.EastScarp_GiggleSmoothie": "Lemurkat.EastScarp_GiggleFit 1 430 1 152 1/1 1/Lemurkat.EastScarp_GiggleSmoothie/f Jasper 3/{{i18n:object.GiggleSmoothie.name}}",
+                "Lemurkat.EastScarp_SoothingCure": "Lemurkat.EastScarp_YohoFruit 2 Lemurkat.EastScarp_ButtonFruit 1 245 1/1 10/Lemurkat.EastScarp_SoothingCure//{{i18n:object.SoothingCure.name}}",
+                //"Lemurkat.EastScarp_MashedGiggles": "Lemurkat.EastScarp_GiggleFit 1 250 1 247 1/1 1/Lemurkat.EastScarp_MashedGiggles//{{i18n:object.MashedGiggles.name}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "EastScarp_Cheesy_Jelly_Recipe": {
+                    "ID": "EastScarp_Cheesy_Jelly_Recipe",
+                    "Trigger": "DayStarted",
+                    //"Location": "Farm",
+                    "Condition": "PLAYER_HAS_COOKING_RECIPE Current Cheesy Jelly Toast",
+                    "Action": "MarkCookingRecipeKnown Current EastScarp_Cheesy_Jelly_Toast"
+                },
+                "EastScarp_Rosas_Baklava_Recipe": {
+                    "ID": "EastScarp_Rosas_Baklava_Recipe",
+                    "Trigger": "DayStarted",
+                    //"Location": "Farm",
+                    "Condition": "PLAYER_HAS_COOKING_RECIPE Current Rosa's Baklava",
+                    "Action": "MarkCookingRecipeKnown Current EastScarp_Rosas_Baklava"
+                },
+                "EastScarp_Rosas_Spanakopita_Recipe": {
+                    "ID": "EastScarp_Rosas_Spanakopita_Recipe",
+                    "Trigger": "DayStarted",
+                    //"Location": "Farm",
+                    "Condition": "PLAYER_HAS_COOKING_RECIPE Current Rosa's Spanakopita",
+                    "Action": "MarkCookingRecipeKnown Current EastScarp_Rosas_Spanakopita"
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "EastScarp_Scarp_Warp_Totem": "709 1 717 1 296 5/Field/EastScarp_Scarp_Warp_Totem/false/null/{{i18n:object.scarpwarptotem-crafting.name}}",
+                "Lemurkat.EastScarp_GlassTile": "EastScarp_SeaGlass 1 330 1/Field/Lemurkat.EastScarp_GlassTile/false/1 0/{{i18n:object.glasstile.name}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "spacechase0.SpaceCore/ObjectExtensionData",
+            "Entries": {
+                "EastScarp_Scarp_Warp_Totem": { // The object ID
+                    "TotemWarp": {
+                        "Location": "EastScarp_Village",
+                        "Position": "24, 97",
+                        "Color": {
+                            "R": 0,
+                            "G": 0,
+                            "B": 255,
+                            "A": 255
+                        }
+                    }
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/fruitTrees",
+            "Entries": {
+                "Lemurkat_Heirloom_Cherry_Tree": {
+                    "DisplayName": "{{i18n:fruittree.heirloomcherry}}",
+                    "Seasons": [
+                        "spring"
+                    ],
+                    "Fruit": [
+                        {
+                            "Id": "lemurkat.eastscarp.orchard-cherry",
+                            "ItemId": "(O)638",
+                            "Season": "Spring",
+                            "Chance": 0.1,
+                            "Condition": null,
+                            "RandomItemId": null,
+                            "MinStack": 0,
+                            "MaxStack": 1,
+                            "Quality": 0
+                        }
+                    ],
+                    "Texture": "TileSheets\\fruitTrees",
+                    "TextureSpriteRow": 0
+                },
+                "Lemurkat_Wild_Plum_Tree": {
+                    "DisplayName": "{{i18n:fruittree.wildplum}}",
+                    "Seasons": [
+                        "fall"
+                    ],
+                    "Fruit": [
+                        {
+                            "Id": "lemurkat.eastscarp.wild-plum",
+                            "ItemId": "(O)406",
+                            "Season": "fall",
+                            "Chance": 0.1,
+                            "Condition": null,
+                            "RandomItemId": null,
+                            "MinStack": 0,
+                            "MaxStack": 1,
+                            "Quality": -1
+                        }
+                    ],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\estrees",
+                    "TextureSpriteRow": 0
+                },
+                "Lemurkat.EastScarp_Golden_Apple_Tree": {
+                    "PlantableLocationRules": null,
+                    "DisplayName": "{{i18n:fruittree.GoldenAppleTree}}",
+                    "Seasons": [
+                        "spring, summer, fall, winter"
+                    ],
+                    "Fruit": [
+                        {
+                            "Chance": 1,
+                            "Id": "Lemurkat.EastScarp_Golden_Apple",
+                            "ItemId": "(O)Lemurkat.EastScarp_Golden_Apple",
+                            "MaxItems": 1,
+                            "MinStack": 0,
+                            "MaxStack": 1,
+                            "Quality": 0,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ObjectColor": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "Texture": "Mods\\Lemurkat.EastScarp\\estrees",
+                    "TextureSpriteRow": 1,
+                    "CustomFields": null
+                },
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Furniture",
+            "Entries": {
+                "EastScarp_StoneGoat": "Stone Goat/decor/1 1/1 1/1/500/-1/{{i18n:object.furniture.stonegoat}}/0/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_FatKakapo": "Plush Kakapo/decor/1 1/1 1/1/500/-1/{{i18n:object.furniture.fatkakapo}}/9/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_FatBlueJay": "Plush Blue Jay/decor/1 1/1 1/1/500/-1/{{i18n:object.furniture.fatbluejay}}/10/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_JasperPortrait": "Jasper Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.jasperportrait}}/1/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_JacobPortrait": "Jacob Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.jacobportrait}}/3/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_LemurPainting": "Lemur Painting/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.lemurpainting}}/5/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_AideenPortrait": "AideenPortrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.aideenportrait}}/20/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_JulietPortrait": "JulietPortrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.julietportrait}}/22/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_MrGingerPortrait": "MrGingerPortrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.mrgingerportrait}}/24/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_KatarynaPortrait": "KatarynaPortrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.katarynaportrait}}/26/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_DuckLovePortrait": "DuckLovePortrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.duckloveportrait}}/28/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_PlushKitty": "Kitty Plush/decor/1 2/1 1/1/500/-1/{{i18n:object.furniture.kittyplush}}/40/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_PlushLemur": "Lemur Plushie/decor/1 2/1 1/1/500/-1/{{i18n:object.furniture.lemurplushie}}/41/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_DalePortrait": "Dale Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.daleportrait}}/42/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_CorwinPortrait": "Corwin Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.corwinportrait}}/44/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_VictoriaPortrait": "Victoria Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.victoriaportrait}}/46/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_LumaPortrait": "Luma Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.lumaportrait}}/48/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_TristanPortrait": "Tristan Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.tristanportrait}}/62/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_JadePortrait": "Jade Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.jadeportrait}}/64/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_MountainLandscape": "Mountain Landscape/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.mountainlandscape}}/66/Mods\\Lemurkat.EastScarp\\esfurniture/true",
+                "EastScarp_MunchiePortrait": "Munchington Portrait/painting/2 2/2 2/1/500/-1/{{i18n:object.furniture.MunchiePortrait}}/68/Mods\\Lemurkat.EastScarp\\esfurniture/true"
+            }
+        },
+        {
+            "LogName": "TailoringRecipes",
+            "Action": "EditData",
+            "Target": "Data/TailoringRecipes",
+            "Entries": {
+                "Lemurkat.TristanWoollyHat": {
+                    "FirstItemTags": [
+                        "item_EastScarp_Tristan_Oversized_Woolly_Hat"
+                    ],
+                    "SecondItemTags": [
+                        "item_wool"
+                    ],
+                    "SpendRightItem": true,
+                    "CraftedItemId": "(H)EastScarp_Tristan_Woolly_Hat",
+                    "Id": "(H)EastScarp_Tristan_Woolly_Hat"
+                },
+            }
+        },
+        {
+            "LogName": "Black wool in loom",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)17",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.BlackWoolLoom": {
+                    "Id": "EastScarp.BlackWoolLoom",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)EastScarp_Black_Wool",
+                            "RequiredCount": 1,
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.BlackWooltoCloth",
+                            "ItemId": "(O)EastScarp_Black_Cloth",
+                            "MinStack": 1,
+                            "StackModifiers": [
+                                {
+                                    "Id": "DoubleQuality",
+                                    "Condition": "ANY \"ITEM_QUALITY Input 1 1, RANDOM 0.075\" \"ITEM_QUALITY Input 2 2, RANDOM 0.25\" \"ITEM_QUALITY Input 4 4, RANDOM 1\"",
+                                    "Modification": "Multiply",
+                                    "Amount": 2.0,
+                                    "RandomAmount": null
+                                }
+                            ],
+                        }
+                    ],
+                    "MinutesUntilReady": 240,
+                    "DaysUntilReady": -1,
+                }
+            }
+        },
+        {
+            "LogName": "Black wool in loom",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)16",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.VoidGoatMilkToCheese": {
+                    "Id": "EastScarp.VoidGoatMilkToCheese",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)EastScarp_Void_Goat_Milk",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.VoidGoatMilkCheese",
+                            "ItemId": "(O)EastScarp_Void_Goat_Cheese",
+                            "MinStack": 1
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "DaysUntilReady": -1,
+                },
+                "EastScarp.LVoidGoatMilkToCheese": {
+                    "Id": "EastScarp.LVoidGoatMilkToCheese",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)EastScarp_L_Void_Goat_Milk",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.LVoidGoatMilkCheese",
+                            "ItemId": "(O)EastScarp_Void_Goat_Cheese",
+                            "MinStack": 1,
+                            "Quality": 2,
+                        }
+                    ],
+                    "MinutesUntilReady": 200,
+                    "DaysUntilReady": -1,
+                },
+            }
+        },
+        {
+            "LogName": "Aging Void Cheese",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)163",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.AgingVoidCheese": {
+                    "Id": "EastScarp.AgingVoidCheese",
+                    "Triggers": [
+                        {
+                            "Id": "ItemPlacedInMachine",
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)EastScarp_Void_Goat_Cheese",
+                            "RequiredTags": null,
+                            "RequiredCount": 1,
+                            "Condition": null
+                        }
+                    ],
+                    "UseFirstValidOutput": false,
+                    "OutputItem": [
+                        {
+                            "CustomData": {
+                                "AgingMultiplier": "4"
+                            },
+                            "OutputMethod": "StardewValley.Objects.Cask, Stardew Valley: OutputCask",
+                            "CopyColor": false,
+                            "CopyPrice": false,
+                            "CopyQuality": false,
+                            "PreserveType": null,
+                            "PreserveId": null,
+                            "IncrementMachineParentSheetIndex": 0,
+                            "PriceModifiers": null,
+                            "PriceModifierMode": "Stack",
+                            "Condition": null,
+                            "Id": "EastScarp_Void_Goat_Cheese_Aged",
+                            "ItemId": "(O)EastScarp_Void_Goat_Cheese_Aged",
+                            "RandomItemId": null,
+                            "MaxItems": null,
+                            "MinStack": -1,
+                            "MaxStack": -1,
+                            "Quality": -1,
+                            "ObjectInternalName": null,
+                            "ObjectDisplayName": null,
+                            "ObjectColor": null,
+                            "ToolUpgradeLevel": -1,
+                            "IsRecipe": false,
+                            "StackModifiers": null,
+                            "StackModifierMode": "Stack",
+                            "QualityModifiers": null,
+                            "QualityModifierMode": "Stack",
+                            "ModData": null,
+                            "PerItemCondition": null
+                        }
+                    ],
+                    "MinutesUntilReady": -1,
+                    "DaysUntilReady": -1,
+                    "InvalidCountMessage": null,
+                    "RecalculateOnCollect": false
+                },
+            }
+        },
+        {
+            "LogName": "Cherry Pit Recycling",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)20",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.CherryPitRecycling": {
+                    "Id": "EastScarp.CherryPitRecycling",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)EastScarp_CherryPit",
+                            "RequiredCount": 1,
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.CherryPitToCherryBomb",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)286",
+                            "MinStack": 1,
+                        },
+                        {
+                            "Id": "EastScarp.CherryPitToCoal",
+                            "ItemId": "(O)382",
+                            "MinStack": 1
+                        },
+                    ],
+                    "MinutesUntilReady": 60,
+                    "DaysUntilReady": -1,
+                },
+            },
+        },
+        {
+            "LogName": "Prismatic Jelly in Charcoal Kiln",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "When": {
+                "HasMod": "selph.ExtraMachineConfig"
+            },
+            "TargetField": [
+                "(BC)114",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.PrismaticJellyKiln": {
+                    "Id": "EastScarp.PrismaticJellyKiln",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)876",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.PrismaticJellyToEgg",
+                            "Condition": "RANDOM 0.25",
+                            "ItemId": "(O)Lemurkat.EastScarp_Prismatic_Slime_Egg",
+                            "MinStack": 1,
+                        },
+                        {
+                            "Id": "EastScarp.PrismaticJellyToShard",
+                            "ItemId": "(O)74",
+                            "MinStack": 1
+                        }
+                    ],
+                    "MinutesUntilReady": 2000,
+                    "DaysUntilReady": -1,
+                }
+            }
+        },
+        {
+            "LogName": "Ginger Tea Kegging",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)12",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.BrewingGingerTea": {
+                    "Id": "EastScarp.BrewingGingerTea",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)829",
+                            "RequiredCount": 1,
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.BrewedGingerTea",
+                            "ItemId": "(O)EastScarp_Ginger_Tea",
+                            "MinStack": 1,
+                        },
+                    ],
+                    "MinutesUntilReady": 180,
+                    "DaysUntilReady": -1,
+                },
+                "EastScarp.BrewingFrostBerryTea": {
+                    "Id": "EastScarp.BrewingFrostBerryTea",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)EastScarp_FrostBerry",
+                            "RequiredCount": 5,
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.BrewedFrostBerryTea",
+                            "ItemId": "(O)Lemurkat.EastScarp_FrostBerryTea",
+                            "MinStack": 1,
+                        },
+                    ],
+                    "MinutesUntilReady": 180,
+                    "DaysUntilReady": -1,
+                },
+            },
+            "MoveEntries": [
+                {
+                    "Id": "EastScarp.BrewingGingerTea",
+                    "ToPosition": "Top"
+                },
+                {
+                    "Id": "EastScarp.BrewingFrostBerryTea",
+                    "ToPosition": "Top"
+                }
+            ],
+        },
+        {
+            "LogName": "Turning Pheasant eggs into mayo",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)24",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.PheasantMayonnaise1": {
+                    "Id": "PheasantMayonnaise",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredTags": [
+                                "pheasant_egg_item"
+                            ],
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "CustomData": null,
+                            "Id": "(O)306",
+                            "ItemId": "(O)306",
+                            "MinStack": 2,
+                            "MaxStack": 3,
+                            "Quality": 2,
+                            //"CopyQuality": true
+                        }
+                    ],
+                    "MinutesUntilReady": 180,
+                    "DaysUntilReady": -1,
+                },
+            }
+        },
+        {
+            "LogName": "Glass Shards to Sea Glass",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)13",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.GlassShardsToSeaGlassFurnace": {
+                    "Id": "EastScarp.GlassShardsToSeaGlassFurnace",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)118",
+                            "RequiredCount": 1
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.GlassShardsToSeaGlass",
+                            "ItemId": "(O)EastScarp_SeaGlass",
+                            "MinStack": 1,
+                        }
+                    ],
+                    "MinutesUntilReady": 30,
+                    "DaysUntilReady": -1,
+                }
+            }
+        },
+        {
+            "LogName": "Sea Glass to Quartz",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "TargetField": [
+                "(BC)HeavyFurnace",
+                "OutputRules"
+            ],
+            "Entries": {
+                "EastScarp.SeaGlassToRefinedQuartzFurnace": {
+                    "Id": "EastScarp.SeaGlassToRefinedQuartzFurnace",
+                    "Triggers": [
+                        {
+                            "Trigger": "ItemPlacedInMachine",
+                            "RequiredItemId": "(O)EastScarp_SeaGlass",
+                            "RequiredCount": 5
+                        }
+                    ],
+                    "UseFirstValidOutput": true,
+                    "OutputItem": [
+                        {
+                            "Id": "EastScarp.SeaGlassToRefinedQuartz",
+                            "ItemId": "(O)338",
+                            "MinStack": 5,
+                            "MaxStack": 6,
+                        }
+                    ],
+                    "MinutesUntilReady": 300,
+                    "DaysUntilReady": -1,
+                }
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [
+                "444",
+                "ContextTags"
+            ],
+            "Entries": {
+                "feather_item": "feather_item"
+            },
+        },
+        {
+            "LogName": "Hats",
+            "Action": "EditData",
+            "Target": "Data/Hats",
+            "Entries": {
+                "EastScarp_Tristan_Woolly_Hat": "EastScarp Tristan Woolly Hat/{{i18n:object.tristanwoollyhat.description}}/false/true//{{i18n:object.tristanwoollyhat.name}}/0/Mods\\Lemurkat.EastScarp\\eshats",
+            }
+        },
+        //Prismatic Jelly adjustments for Extra Machine Config
+        {
+            "LogName": "Prismatic Jelly - pre-Special Order",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "When": {
+                "HasFlag |Contains=WizardReward": false,
+                "HasMod": "selph.ExtraMachineConfig"
+            },
+            "TargetField": [
+                "(BC)156",
+                "CustomFields"
+            ],
+            "Entries": {
+                "selph.ExtraMachineConfig.HatchedPrismaticJellyChance": 0.0000001
+            }
+        },
+        {
+            "LogName": "Prismatic Jelly - post-special order",
+            "Action": "EditData",
+            "Target": "Data/Machines",
+            "When": {
+                "HasFlag |Contains=WizardReward": true,
+                "HasMod": "selph.ExtraMachineConfig"
+            },
+            "TargetField": [
+                "(BC)156",
+                "CustomFields"
+            ],
+            "Entries": {
+                "selph.ExtraMachineConfig.HatchedPrismaticJellyChance": 0.1
+            }
+        },
+        {
+            "LogName": "Prismatic Jelly - changing the object away from 'quest'",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "When": {
+                "HasMod": "selph.ExtraMachineConfig",
+                "HasFlag |Contains=WizardReward": true
+            },
+            "TargetField": [
+                "876"
+            ],
+            "Entries": {
+                "Type": "Object",
+                "Price": 1000
+            }
+        },
+        {
+            "LogName": "Prismatic Jelly - stops prismatic jelly being removed automatically",
+            "Action": "EditData",
+            "Target": "Data/SpecialOrders",
+            "When": {
+                "HasMod": "selph.ExtraMachineConfig",
+            },
+            "TargetField": [
+                "Wizard2"
+            ],
+            "Entries": {
+                "ItemToRemoveOnEnd": null
+            }
+        },
+        //Gigglefit giggles when eaten
+        {
+            "LogName": "Trigger Action - GiggleFit Giggles",
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+                "{{ModID}}_GiggleFitEat": {
+                    "Id": "{{ModID}}_GiggleFit",
+                    "Trigger": "spacechase0.SpaceCore_OnItemEaten",
+                    "Action": "spacechase0.SpaceCore_PlaySound {{ModID}}_GiggleFitGiggle true",
+                    "MarkActionApplied": false,
+                    "Condition": "ITEM_ID Input (O){{ModID}}_GiggleFit"
+                }
+            }
+        },
+        {
+            "LogName": "Floors",
+            "Action": "EditData",
+            "Target": "Data/FloorsAndPaths",
+            "Entries": {
+                "Lemurkat.EastScarp_GlassTilePath": {
+                    "Id": "Lemurkat.EastScarp_GlassTilePath",
+                    "ItemId": "Lemurkat.EastScarp_GlassTile",
+                    "Texture": "Mods\\Lemurkat.EastScarp\\espaths",
+                    "Corner": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "WinterTexture": "Mods\\Lemurkat.EastScarp\\espaths",
+                    "WinterCorner": {
+                        "X": 0,
+                        "Y": 0
+                    },
+                    "PlacementSound": "axchop",
+                    "RemovalSound": "breakingGlass",
+                    "RemovalDebrisType": 12,
+                    "FootstepSound": "stoneStep",
+                    "ConnectType": "Default",
+                    "ShadowType": "Square",
+                    "CornerSize": 4,
+                    "FarmSpeedBuff": -1.0
+                }
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Mods/Lemurkat.EastScarp/eschairtiles",
+            "FromFile": "assets/Textures/eschairtiles.png"
+        },
+        //Chair Tiles
+        {
+            "Action": "EditData",
+            "Target": "Data/ChairTiles",
+            "Entries": {
+                //Chairs
+                "lemurfurniture/20/1": "1/1/up/highback_chair/20/1/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                "lemurfurniture/7/1": "1/1/right/chair/-1/-1/false",
+                "lemurfurniture/7/5": "1/1/left/chair/-1/-1/false",
+                //salon chairs
+                "lemurfurniture/24/1": "1/1/down/chair/-1/-1/false",
+                "lemurfurniture/25/1": "1/1/right/chair/-1/-1/false",
+                "lemurfurniture/26/1": "1/1/up/highback_chair/26/1/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                //reddish armchairs
+                "lemurfurniture/6/10": "1/1/down/custom 0.5 0 0/-1/-1/false",
+                "lemurfurniture/7/10": "1/1/down/custom -0.5 0 0/-1/-1/false", //These two are for the same chair because it crosses two tiles
+                "lemurfurniture/9/10": "1/1/right/armchair/9/10/false/Mods\\Lemurkat.EastScarp\\eschairtiles", //the tile on the right end
+                "lemurfurniture/10/10": "1/1/up/highback_chair/10/10/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                "lemurfurniture/11/10": "1/1/up/highback_chair/11/10/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                "lemurfurniture/8/12": "1/1/left/armchair/8/12/false/Mods\\Lemurkat.EastScarp\\eschairtiles", //the tile on the left end
+                "lemurfurniture/14/14": "1/1/up/highback_chair/14/14/false/Mods\\Lemurkat.EastScarp\\eschairtiles", //red couch facing up
+                "lemurfurniture/8/14": "1/1/down/custom 0.2 0 0/-1/-1/false",
+                "lemurfurniture/9/14": "1/1/down/couch/-1/-1/false",
+                "lemurfurniture/10/14": "1/1/down/custom -0.2 0 0/-1/-1/false",
+                //yellow armchair
+                "lemurfurniture/6/12": "1/1/left/armchair/6/12/false/Mods\\Lemurkat.EastScarp\\eschairtiles", //the tile on the left end
+                //neon green archairs
+                "lemurfurniture/12/10": "1/1/down/custom 0.5 0 0/-1/-1/false",
+                "lemurfurniture/13/10": "1/1/down/custom -0.5 0 0/-1/-1/false",
+                "lemurfurniture/15/10": "1/1/right/armchair/15/10/false/Mods\\Lemurkat.EastScarp\\eschairtiles", //the tile on the right end
+                "lemurfurniture/16/10": "1/1/up/highback_chair/16/10/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                "lemurfurniture/17/10": "1/1/up/highback_chair/17/10/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                //neon green couch
+                "lemurfurniture/16/14": "1/1/down/custom 0.2 0 0/-1/-1/false",
+                "lemurfurniture/17/14": "1/1/down/couch/-1/-1/false",
+                "lemurfurniture/18/14": "1/1/down/custom -0.2 0 0/-1/-1/false",
+                "lemurfurniture/22/14": "1/1/up/highback_chair/22/14/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                //Blue couch
+                "lemurfurniture/6/14": "1/1/up/highback_chair/14/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+                //Dark Spooky couches (for Spirit's Eve)
+                "lemurfurniture/8/17": "1/1/down/custom 0.2 0 0/-1/-1/false",
+                "lemurfurniture/9/17": "1/1/down/couch/-1/-1/false",
+                "lemurfurniture/10/17": "1/1/down/custom -0.2 0 0/-1/-1/false",
+                "lemurfurniture/5/20": "1/2/left/couch/5/20/false/Mods\\Lemurkat.EastScarp\\eschairtiles",
+            }
+        }
+        /*  {
+            "LogName": "Sen ID change for LA", This is sample data
+            "Action": "EditData",
+            "Target": "Data/TriggerActions",
+            "Entries": {
+            "{{ModID}}_TriggerActions.FurnitureIDMirgration.1": {
+                "Id": "{{ModID}}_TriggerActions.FurnitureIDMirgration.1",
+                "Trigger": "DayStarted",
+                "HostOnly": true,
+                "Actions": [                
+                    "Pathoschild.ContentPatcher_MigrateIds Items (F)LitD_SenPortrait (F){{ModID}}_Furniture.SenPortrait",
+                    "Pathoschild.ContentPatcher_MigrateIds Items (F)LitD_SenBabyPhoto (F){{ModID}}_Furniture.SenBabyPhoto"
+                    ]
+                }
+            }
+        },*/
+    ]
+}

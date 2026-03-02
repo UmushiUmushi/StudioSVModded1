@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueMaru",
+			"Entries":
+				{
+					"Good_4": "For a while there I was considering building a robotic {{Lowercase: {{Random: {{Hana.GNMTokens/SpouseNoun}} }} }}. But you're a lot more fun!$h"
+				},
+			"LogName":"Fix MarriageDialogueMaru"
+		}
+	]
+}

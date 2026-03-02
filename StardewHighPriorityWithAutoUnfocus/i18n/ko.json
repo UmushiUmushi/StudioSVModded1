@@ -1,0 +1,24 @@
+{
+  "log.invalid_priority": "잘못된 우선순위 값입니다: '{{value}}'. 사용 가능: Normal, AboveNormal, High.",
+  "log.set_priority_focused": "게임이 포커스됨: 프로세스 우선순위를 {{value}}(으)로 설정했습니다.",
+  "log.set_priority_unfocused": "게임이 포커스 벗어남: 프로세스 우선순위를 {{value}}(으)로 설정했습니다.",
+  "log.failed": "프로세스 우선순위를 설정하지 못했습니다 ({{error}}): {{message}}",
+
+  "gmcm.section.general": "우선순위 설정",
+  "gmcm.section.general.tooltip": "창 포커스에 따라 Stardew Valley의 프로세스 우선순위가 어떻게 바뀌는지 조정합니다.",
+
+  "gmcm.enabled": "모드 활성화",
+  "gmcm.enabled.tooltip": "비활성화하면 모드가 프로세스 우선순위를 변경하지 않습니다.",
+
+  "gmcm.focusedPriority": "포커스 상태 우선순위",
+  "gmcm.focusedPriority.tooltip": "게임 창이 포커스될 때 사용할 우선순위입니다.",
+
+  "gmcm.unfocusedPriority": "비포커스 상태 우선순위",
+  "gmcm.unfocusedPriority.tooltip": "게임 창이 포커스를 잃었을 때 사용할 우선순위입니다.",
+
+  "gmcm.logSuccess": "성공 메시지 기록",
+  "gmcm.logSuccess.tooltip": "우선순위가 적용될 때 로그 메시지를 표시합니다.",
+
+  "gmcm.logFailure": "실패 메시지 기록",
+  "gmcm.logFailure.tooltip": "우선순위 적용에 실패하면 로그 메시지를 표시합니다."
+}

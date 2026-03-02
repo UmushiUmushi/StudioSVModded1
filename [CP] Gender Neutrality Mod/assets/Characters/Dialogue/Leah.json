@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Leah",
+			"Entries":
+				{
+					"event_sculpt3": "You pig!%fork$a#$b#Get out!$a"
+				},
+			"LogName":"Fix Leah"
+		}
+	]
+}

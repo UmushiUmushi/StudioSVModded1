@@ -1,0 +1,32 @@
+{
+  "ItemName": "BabyBrown Cow",
+  "Type": "Character",
+  "TextureWidth": 128,
+  "TextureHeight": 160,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0,
+    },
+    {
+      "Id": 0,
+      "Keywords": [ "Black" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Brown" ]
+    },
+    {
+      "Id": 2,
+      "Keywords": [ "Highland" ]
+    },
+    {
+      "Id": 3,
+      "Keywords": [ "Solid" ]
+    },
+  {
+      "Id": 4,
+      "Keywords": [ "Void" ]
+    }
+  ]
+}

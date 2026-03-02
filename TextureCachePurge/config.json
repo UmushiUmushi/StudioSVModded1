@@ -1,0 +1,8 @@
+{
+  "AutoClearAtSleep": true,
+  "PurgeFrequencyDays": 3,
+  "MinimumRamForSleepPurge": 3072,
+  "ManualClearKey": "F5",
+  "EnableRamThreshold": false,
+  "RamThresholdMB": 2048
+}

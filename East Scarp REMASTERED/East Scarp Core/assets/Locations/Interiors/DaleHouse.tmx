@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="12" nextobjectid="26">
+ <properties>
+  <property name="AmbientLight" value="95 95 95"/>
+  <property name="DayTiles" value="Front 2 1 469 Buildings 2 2 501 Front 3 1 469 Buildings 3 2 501 Front 4 1 469 Buildings 4 2 501"/>
+  <property name="Doors" value="8 8 1 120"/>
+   <property name="LocationContext" value="Lemurkat_EastScarp"/>
+  <property name="NightTiles" value="Front 2 1 1219 Buildings 2 2 1251 Front 3 1 1219 Buildings 3 2 1251 Front 4 1 1219 Buildings 4 2 1251"/>
+  <property name="Warp" value="10 11 EastScarp_Village 49 35 11 11 EastScarp_Village 50 35"/>
+ </properties>
+ <tileset firstgid="1" name="lemurfurniture" tilewidth="16" tileheight="16" tilecount="3264" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1632"/>
+ </tileset>
+ <tileset firstgid="3265" name="paths" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="3301" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="5477" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <tileset firstgid="8527" name="townInterior_2" tilewidth="16" tileheight="16" tilecount="1312" columns="32">
+  <image source="townInterior_2.png" width="512" height="656"/>
+ </tileset>
+ <layer id="1" name="Back" width="20" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,5224,5224,5224,5224,5224,5224,5224,5224,0,0,5224,5224,5224,5224,5224,5224,5224,5224,0,
+0,5256,5256,5256,5256,5256,5256,5256,5256,0,0,5256,5256,5256,5256,5256,5256,5256,5256,0,
+0,5288,5288,5288,5288,5288,5288,5288,5288,0,0,5288,5288,5288,5288,5288,5288,5288,0,0,
+0,5255,5255,5255,5255,5190,5190,5190,5190,0,0,7635,7635,7635,7635,7635,7635,7660,7636,0,
+0,5190,5190,5190,5190,3361,5190,0,5190,3340,3340,7660,7660,7660,7660,7660,7660,7660,7661,0,
+0,5190,5190,5190,5190,5190,5190,5190,5190,5224,5224,7660,7660,7660,7660,7660,7660,7660,7660,0,
+0,5190,5190,5190,5190,5190,5190,5190,5190,5256,5256,7660,7660,7660,7660,7660,7660,7660,7661,0,
+0,5190,5190,5190,5190,5190,5190,3361,5190,3361,7659,7660,7660,7660,7660,7660,7660,7660,7661,0,
+0,5190,5190,5190,5190,5190,5190,3361,7635,7660,7660,7660,7685,7685,7685,7685,7685,7661,7686,0,
+0,0,0,0,0,0,0,0,0,7685,7685,7685,7685,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,4344,4344,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="10" name="Back2" width="20" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5288,5288,5288,0,0,
+0,0,0,0,2791,2792,2792,2793,2794,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,2823,2824,2824,2825,2826,0,0,0,7753,0,0,0,0,0,0,0,
+0,0,0,0,2855,2856,2856,2857,2858,0,0,0,0,0,0,0,0,0,0,0,
+0,6127,6128,6129,0,0,0,2857,0,0,0,0,0,0,0,0,0,0,0,0,
+0,6152,6153,6154,0,0,0,0,0,0,0,0,0,5921,5922,5923,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,5946,5947,5948,0,0,0,0,
+0,0,0,0,0,1661,1662,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="20" height="12">
+  <data encoding="csv">
+3310,3311,3311,3311,3311,3311,3311,3311,3311,0,0,3303,3311,3311,3311,3311,3311,3311,3303,3312,
+3365,0,0,0,0,0,0,0,0,3369,3365,7703,0,0,0,0,0,0,0,3369,
+3365,0,3802,3802,3802,0,0,0,0,3369,3365,7702,0,0,0,0,0,0,0,3369,
+3365,8797,8798,5288,5288,5288,9263,5288,5288,3369,3365,5288,5288,7754,5288,5288,7134,7135,5288,3369,
+3365,7862,7863,8645,697,698,9296,9299,8787,3369,3365,0,0,0,7158,3213,7159,7160,657,3369,
+3365,0,0,0,0,0,0,0,0,3369,3365,0,25,0,7183,0,59,0,0,3369,
+3365,7937,7938,0,0,0,0,0,0,3355,3356,0,57,0,0,0,0,0,7158,3369,
+3365,0,0,0,0,0,0,3433,0,3387,3388,0,0,0,0,0,0,0,7158,3369,
+3365,0,0,0,0,3854,0,3433,3421,3419,3420,0,0,0,0,0,0,0,7183,3369,
+3397,4076,4077,7473,4076,4077,2965,3465,0,0,0,0,0,0,0,0,3796,7162,7163,3431,
+3301,3301,3301,3301,3301,3301,3301,3301,3301,3301,0,0,3369,3301,3301,3301,3301,3301,3301,3301,
+3301,3301,3301,3301,3301,3301,3301,3301,3301,3397,0,0,3431,3301,3301,3301,3301,3301,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="14" name="TileData" x="128" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door DaleWaede"/>
+   </properties>
+  </object>
+  <object id="15" name="TileData" x="48" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.1&quot;"/>
+   </properties>
+  </object>
+  <object id="16" name="TileData" x="64" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.2&quot;"/>
+   </properties>
+  </object>
+  <object id="17" name="TileData" x="80" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.3&quot;"/>
+   </properties>
+  </object>
+  <object id="18" name="TileData" x="288" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.4&quot;"/>
+   </properties>
+  </object>
+  <object id="19" name="TileData" x="288" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.4&quot;"/>
+   </properties>
+  </object>
+  <object id="20" name="TileData" x="272" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.5&quot;"/>
+   </properties>
+  </object>
+  <object id="21" name="TileData" x="128" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.6&quot;"/>
+   </properties>
+  </object>
+  <object id="22" name="TileData" x="288" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.5&quot;"/>
+   </properties>
+  </object>
+  <object id="23" name="TileData" x="288" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.7&quot;"/>
+   </properties>
+  </object>
+  <object id="24" name="TileData" x="288" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.7&quot;"/>
+   </properties>
+  </object>
+  <object id="25" name="TileData" x="288" y="96" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;DaleHouse.7&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="20" height="12">
+  <properties>
+   <property name="Action" value=""/>
+  </properties>
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,3312,3310,0,0,0,0,0,0,0,0,0,
+0,4645,3770,3770,3770,4645,9201,9202,8691,0,0,0,7730,7704,4645,7631,7632,7632,7633,0,
+0,8765,8766,0,0,9269,9233,9234,8723,0,0,0,7755,7729,0,7656,7657,7657,7658,0,
+0,7837,7838,0,0,9301,4331,9267,8755,0,0,0,0,0,7133,3181,3976,0,625,0,
+0,7887,7888,0,0,0,0,0,0,0,0,0,7728,0,7779,0,27,0,0,0,
+0,7912,7913,0,0,0,0,0,0,3494,3495,0,0,0,0,0,0,0,7133,0,
+0,0,0,0,0,0,0,3401,3357,0,0,0,0,0,0,0,0,0,7600,0,
+0,0,0,0,0,0,2901,0,3389,0,0,0,0,0,0,0,0,0,7571,0,
+0,3980,3981,0,3980,3981,2933,0,0,0,0,0,0,0,0,0,3764,7137,3764,0,
+0,0,3497,3497,3497,3497,3497,0,3497,3463,0,0,3464,3497,3497,3497,3497,9735,3497,0,
+0,0,0,0,0,0,0,0,0,3365,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,3497,3497,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="9" name="AlwaysFront" width="20" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3149,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,7805,0,7804,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,3620,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,370,3652,0,8582,3975,0,0,0,0,0,0,0,0,0,0,0,0,8333,0,
+0,3497,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3497,8358,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="7" name="Paths" width="20" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3273,0,0,0,3273,0,0,0,0,0,0,0,0,3273,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,3273,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,3273,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,3273,0,0,3273,0,0,3273,0,0,0,0,0,3273,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

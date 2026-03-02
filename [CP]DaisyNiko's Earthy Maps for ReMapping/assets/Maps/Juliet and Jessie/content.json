@@ -1,0 +1,48 @@
+{
+  "Changes": [
+    {
+      "LogName": "Juliet and Jessie Map Overlay",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Juliet and Jessie/Juliet.Jessie_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": false,
+        "HasMod:|contains=LemurKat.JulietHouse.NPC": true,
+        "N3cro_92.ReMappingEarthySync/JulietJessie": "true"
+      },
+
+      "ToArea": {
+        "X": 156,
+        "Y": 36,
+        "Width": 19,
+        "Height": 17
+      }
+    },
+    {
+      "LogName": "Juliet and Jessie Map Overlay SVE",
+      "Action": "EditImage",
+      "Target": "LooseSprites/map, LooseSprites/map_{{season}}",
+      "FromFile": "assets/Maps/Juliet and Jessie/Juliet.Jessie_{{season}}.png",
+      "PatchMode": "Overlay",
+      "Update": "OnLocationChange",
+
+      "When": {
+        "HasMod:|contains=N3cro_92.ReMappingEarthySync": true,
+        "HasMod:|contains=FlashShifter.StardewValleyExpandedCP": true,
+        "HasMod:|contains=LemurKat.JulietHouse.NPC": true,
+        "N3cro_92.ReMappingEarthySync/JulietJessie": "true"
+      },
+
+      "ToArea": {
+        "X": 156,
+        "Y": 36,
+        "Width": 19,
+        "Height": 17
+      }
+    }
+  ]
+}

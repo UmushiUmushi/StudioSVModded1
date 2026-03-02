@@ -1,0 +1,14 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialoguePenny",
+			"Entries":
+				{
+					"Good_3": "Wow, you look {{Lowercase: {{Random: {{Hana.GNMTokens/Adjective}} }} }} today. Did you do something different?$l"
+				},
+			"LogName":"Fix MarriageDialoguePenny"
+		}
+	]
+}

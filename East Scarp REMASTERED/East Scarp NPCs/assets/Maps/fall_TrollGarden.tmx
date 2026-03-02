@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="12" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="11" nextobjectid="1">
+ <tileset firstgid="1" name="z_ancientFlower" tilewidth="16" tileheight="16" tilecount="96" columns="8">
+  <image source="serruria.png" width="128" height="192"/>
+ </tileset>
+ <tileset firstgid="97" name="spring_town" tilewidth="16" tileheight="16" tilecount="2304" columns="32">
+  <image source="spring_town.png" width="512" height="1152"/>
+ </tileset>
+ <layer id="3" name="Buildings" width="12" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+16,0,0,0,0,16,64,78,0,80,16,78,
+76,77,0,80,78,0,78,77,16,0,77,0,
+0,76,79,0,0,79,0,0,0,0,0,0,
+80,0,0,0,0,0,0,0,0,0,0,0,
+0,79,0,0,0,184,0,0,0,0,0,0,
+48,76,16,0,0,0,0,0,0,0,0,0,
+0,77,0,79,0,0,0,0,0,0,0,0,
+78,0,80,0,79,0,16,0,0,0,0,0,
+77,79,0,16,0,80,77,0,0,0,0,0,
+0,0,77,0,79,76,0,0,0,0,0,0,
+79,48,0,78,0,64,78,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="7" name="Front" width="12" height="12">
+  <data encoding="csv">
+8,0,0,0,0,8,56,70,0,72,8,70,
+0,0,0,72,71,0,70,0,8,0,0,0,
+0,0,71,0,0,71,78,0,0,0,0,0,
+72,0,0,0,0,0,0,0,0,0,0,0,
+0,71,0,0,0,0,0,0,0,0,0,0,
+40,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,71,0,0,0,0,0,0,0,0,
+70,0,72,0,71,0,8,0,0,0,0,0,
+0,71,0,8,0,72,0,0,0,0,0,0,
+0,0,0,0,71,0,0,0,0,0,0,0,
+71,40,0,70,0,56,70,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Front"/>
+</map>

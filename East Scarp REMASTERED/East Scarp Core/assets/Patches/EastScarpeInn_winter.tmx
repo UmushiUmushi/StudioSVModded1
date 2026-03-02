@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.8" tiledversion="1.8.4" orientation="orthogonal" renderorder="right-down" width="3" height="7" tilewidth="16" tileheight="16" infinite="0" nextlayerid="17" nextobjectid="121">
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="546">
+   <animation>
+    <frame tileid="546" duration="250"/>
+    <frame tileid="547" duration="250"/>
+    <frame tileid="548" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2177" name="p" tilewidth="16" tileheight="16" tilecount="36" columns="4">
+  <image source="paths.png" width="64" height="144"/>
+ </tileset>
+ <tileset firstgid="2213" name="z_lemurfurniture" tilewidth="16" tileheight="16" tilecount="3264" columns="32">
+  <image source="lemurfurniture.png" width="512" height="1632"/>
+ </tileset>
+ <tileset firstgid="5477" name="lumi_towninterior" tilewidth="16" tileheight="16" tilecount="3050" columns="25">
+  <image source="lumi_towninterior.png" width="400" height="1952"/>
+ </tileset>
+ <layer id="1" name="Back" width="3" height="7">
+  <data encoding="csv">
+71,72,72,
+103,113,0,
+199,200,201,
+233,232,233,
+265,264,265,
+1310,232,233,
+1248,264,265
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="11" name="Back2" width="3" height="7">
+  <properties>
+   <property name="Draw" value="Back"/>
+  </properties>
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+1610617750,1610617782,1610617814,
+1610617749,1610617781,1610617813,
+1610617748,1610617780,1610617812,
+1610617747,1610617779,1610617811,
+0,0,0
+</data>
+ </layer>
+ <layer id="13" name="Back3" width="3" height="7">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="12" name="Back2"/>
+ <layer id="3" name="Buildings" width="3" height="7">
+  <data encoding="csv">
+80,81,188,
+112,5572,220,
+144,5597,5598,
+0,0,0,
+3781,3782,3783,
+5341,5342,5343,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <properties>
+   <property name="Shop" value="ESInnShop"/>
+  </properties>
+ </objectgroup>
+ <layer id="5" name="Front" width="3" height="7">
+  <data encoding="csv">
+0,1286,0,
+0,5572,5573,
+3717,3718,3719,
+3749,3750,3751,
+5309,5310,5311,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <layer id="15" name="Front1" width="3" height="7">
+  <data encoding="csv">
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="3" height="7">
+  <data encoding="csv">
+0,2185,0,
+0,2185,0,
+0,0,0,
+0,2185,0,
+2185,0,2185,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+ <layer id="9" name="AlwaysFront" width="3" height="7">
+  <data encoding="csv">
+3653,3654,3655,
+3685,3686,3687,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0,
+0,0,0
+</data>
+ </layer>
+ <objectgroup id="10" name="AlwaysFront"/>
+</map>

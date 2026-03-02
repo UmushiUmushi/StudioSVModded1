@@ -1,0 +1,30 @@
+{
+	"ItemName": "Big Chest",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Outdoors"],
+		"Seasons": ["Spring", "Summer", "Fall"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Outdoors-Bronze",
+		"Keywords": ["Bronze"],
+		},
+		{
+		"Id": 1,
+		"Name": "2-Outdoors-Bronze",
+		"Keywords": ["Bronze"],
+		},
+		{
+		"Id": 2,
+		"Name": "1-Outdoors-Steel",
+		"Keywords": ["Steel"],
+		},
+		{
+		"Id": 3,
+		"Name": "2-Outdoors-Steel",
+		"Keywords": ["Steel"],
+		},
+	]
+}

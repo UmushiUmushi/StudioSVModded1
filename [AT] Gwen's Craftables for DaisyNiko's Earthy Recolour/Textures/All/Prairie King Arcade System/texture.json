@@ -1,0 +1,13 @@
+{
+	"ItemName": "Prairie King Arcade System",
+	"Type": "Craftable",
+		"Keywords": ["Gwen", "Indoors"],
+	"TextureWidth": 16,
+	"TextureHeight": 32,
+	"ManualVariations": [
+		{
+		"Id": 0,
+		"Name": "1-Indoors",
+		},
+	]
+}

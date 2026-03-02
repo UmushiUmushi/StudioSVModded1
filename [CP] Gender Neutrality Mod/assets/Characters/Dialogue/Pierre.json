@@ -1,0 +1,17 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Pierre",
+			"Entries":
+				{
+					"Introduction": "Hey, it's {{Random: {{Hana.GNMTokens/Title}} }} @, the new farmer! I'm Pierre, owner of the local general store.#$b#If you're looking for seeds, my shop is the place to go. I'll also buy produce from you for a good price!#$e#A little agriculture could really inject new life into the local economy!",
+					"Mon_inlaw_Abigail": "Hello, er... my {{Lowercase: {{Random: {{Hana.GNMTokens/AdultFamilialNoun}} }} }}?$s",
+					"Thu2": "I really do appreciate your business, {{Random: {{Hana.GNMTokens/Title}} }} @. I've been having a harder and harder time turning a decent profit.",
+					"married_Abigail_memory_oneday": "Hello, er... my {{Lowercase: {{Random: {{Hana.GNMTokens/AdultFamilialNoun}} }} }}?$s"
+				},
+			"LogName":"Fix Pierre"
+		}
+	]
+}

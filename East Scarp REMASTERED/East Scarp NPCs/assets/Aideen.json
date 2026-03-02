@@ -1,0 +1,233 @@
+{
+    "Changes": [
+        {
+            "LogName": "NPC Manifestation removes datable status",
+            "Action": "EditData",
+            "Target": "Data/NPCDispositions",
+            "Update": "OnLocationChange",
+            "Fields": {
+                "Aideen": {
+                    "5": "not-datable"
+                }
+            },
+            "When": {
+                "HasFlag": "RivalHearts_AideenMateo" //add later PlatonicAideen maybe? > will unlock revised Aideen 10 heart and 14 heart event at a later date
+            }
+        },
+        {
+            "LogName": "Aideen becomes non-datable",
+            "Action": "EditData",
+            "Target": "Data/Characters",
+            "TargetField": [
+                "Aideen"
+            ],
+            "Entries": {
+                "CanBeRomanced": false
+            },
+            "When": {
+                "HasFlag": "RivalHearts_AideenMateo"
+            }
+        },
+        //Loves: Bue Jazz, Elvish Jewelry, Ornamental fan
+        //Likes flowers, baryte
+        //hates Beer, cauliflower and cauliflower dishes, pizza.
+        //Aideen
+        {
+            "LogName": "Aideen Portraits",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Aideen, Characters/Aideen",
+            "FromFile": "assets/{{Target}}/Aideen.png"
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "Load",
+            "Target": "Characters/schedules/Aideen",
+            "FromFile": "assets/{{Target}}.json"
+        },
+        {
+            "LogName": "Dialogue",
+            "Action": "Include",
+            "FromFile": "assets/Characters/Dialogue/Aideen.json"
+        },
+        {
+            "LogName": "Animations",
+            "Action": "EditData",
+            "Target": "Data/animationDescriptions",
+            "Entries": {
+                "aideen_sleep": "24/24/24"
+            }
+        },
+        {
+            "LogName": "Baron Munchington",
+            "Action": "Load",
+            "Target": "Characters/Munchboi",
+            "FromFile": "assets/Characters/Menagerie/munchboi.png"
+        },
+        {
+            "LogName": "Baron Munchington",
+            "Action": "Load",
+            "Priority": "Low",
+            "Target": "Portraits/Munchboi",
+            "FromFile": "assets/Portraits/Menagerie/munchboi_portrait.png"
+        },
+        {
+            "LogName": "Ancient Flowers Garden",
+            "Action": "Load",
+            "Target": "Maps/DeepMountainsAideen",
+            "FromFile": "assets/Maps/DeepMountains_TrollGarden_Aideen.tmx",
+        },
+        //With Mateo
+        {
+            "LogName": "Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Aideen",
+            "Entries": {
+                "MateoPain": "{{i18n:dialogue.aideen.mateopain}}"
+            },
+            "When": {
+                "HasSeenEvent": "57871052"
+            }
+        },
+        // E V E N T S
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_AideenHouse",
+            "Entries": {
+                "57871001/p Aideen/f Aideen 500": "breezy/-1000 -1000/farmer -100 -100 0 Aideen 10 19 1/addTemporaryActor Munchboi 32 32 11 19 3 false/skippable/viewport 11 18/pause 500/speak Aideen \"{{i18n:57871001.01}}\"/pause 500/faceDirection Aideen 2/pause 1000/faceDirection Aideen 1/speak Aideen \"{{i18n:57871001.02}}\"/playSound doorOpen/pause 500/warp farmer 10 24/move farmer 0 -1 0/faceDirection Aideen 2/jump Aideen 5/emote Aideen 16/faceDirection Munchboi 2/speak Aideen \"{{i18n:57871001.03}}\"/emote Aideen 12/pause 500/emote farmer 28/pause 500/speak Aideen \"{{i18n:57871001.04}}\"/pause 500/emote farmer 8/move farmer 0 -2 0/pause 500/faceDirection Aideen 0/pause 1000/faceDirection Aideen 2/speak Aideen \"{{i18n:57871001.05}}\"/speak Aideen \"$q 578101 null#{{i18n:57871001.06}}#$r 578102 25 Ai2_1#{{i18n:57871001.07}}#$r 578102 15 Ai2_2#{{i18n:57871001.08}}#$r 578103 -25 Ai2_3#{{i18n:57871001.09}}#$r 578104 -25 Ai2_4#{{i18n:57871001.10}}\"/fork 578102 Ai2_Continue/pause 500/emote Aideen 12/pause 500/playSound cat/speak Aideen \"{{i18n:57871001.11}}\"/pause 500/faceDirection Aideen 0/emote farmer 40/pause 1500/end dialogue Aideen \"$p 578104#{{i18n:57871001.12}}|{{i18n:57871001.13}}\"",
+                "Ai2_Continue": "pause 500/speak Aideen \"{{i18n:Ai2_Continue.01}}\"/playSound cat/pause 500/faceDirection Aideen 0/speak Aideen \"{{i18n:Ai2_Continue.02}}\"/end",
+                "57871006/i 402/i 591/i 597/e 57871002": "breezy/-1000 -1000/farmer -100 -100 0 Aideen 8 19 2/addTemporaryActor Munchboi 32 32 15 19 2 false/removeItem 402/removeItem 591/removeItem 597/removeQuest 578/addCraftingRecipe Bouquet/skippable/viewport 11 18/showFrame Munchboi 19/pause 500/playSound stairsdown/jump Aideen 3/textAboveHead Aideen \"{{i18n:57871006.00}}\"/pause 500/playSound doorOpen/warp farmer 10 23/move farmer 0 -2 0 true/move Aideen 2 0 2 true/pause 1000/emote Aideen 16/speak Aideen \"{{i18n:57871006.01}}\"/quickQuestion #{{i18n:57871006.q1}}#{{i18n:57871006.q2}}#{{i18n:57871006.q3}}(break)speak Aideen \"{{i18n:57871006.r1}}\"(break)speak Aideen \"{{i18n:57871006.r2}}\"(break)speak Aideen \"{{i18n:57871006.r3}}\"/pause 500/faceDirection Aideen 0/speak Aideen \"{{i18n:57871006.02}}\"/move Aideen -3 0 1/move Aideen 3 0 2/speak Aideen \"{{i18n:57871006.03}}\"/pause 500/move Aideen 3 0 3/move Aideen -3 0 2/speak Aideen \"{{i18n:57871006.04}}\"/pause 500/emote farmer 40/pause 1500/jump Aideen 3/textAboveHead Aideen \"{{i18n:57871006.14}}\"/pause 500/speak Aideen \"{{i18n:57871006.05}}\"/pause 500/emote farmer 60/speak Aideen \"{{i18n:57871006.06.{{pierreorpiper}}}}\"/move Aideen 0 1 2/speak Aideen \"{{i18n:57871006.07.{{pierreorpiper}}}}\"/playSound newRecipe/pause 500/speak Aideen \"{{i18n:57871006.08}}\"/itemAboveHead/playSound getNewSpecialItem/message \"{{i18n:57871006.09}}\"/pause 1000/move Aideen 0 -1 2/faceDirection farmer 0/speak Aideen \"{{i18n:57871006.10}}\"/pause 500/emote farmer 12/speak Aideen \"{{i18n:57871006.11}}\"/playSound purchase/money 150/speak Aideen \"{{i18n:57871006.12}}\"/pause 1000/end dialogue Aideen \"{{i18n:57871006.13.{{pierreorpiper}}}}\"",
+                "57871008/e 57871007/f Aideen 2000/p Aideen": "breezy/-1000 -1000/farmer 10 23 0 Aideen 2 19 3/skippable/pause 500/playSound doorOpen/viewport 11 18/move farmer 0 -4 3/faceDirection Aideen 1/jump Aideen 3/pause 500/speak Aideen \"{{i18n:57871008.01}}\"/emote farmer 40/speak Aideen \"{{i18n:57871008.02}}\"/move farmer -5 0 3/emote farmer 16/move Aideen 1 0 1/pause 1000/speak Aideen \"{{i18n:57871008.03}}\"/emote farmer 8/speak Aideen \"{{i18n:57871008.04}}\"/stopMusic/pause 1500/faceDirection Aideen 0/pause 500/playMusic desolate/pause 500/speak Aideen \"{{i18n:57871008.05}}\"/faceDirection Aideen 1/speak Aideen \"{{i18n:57871008.06}}\"/pause 1000/speak Aideen \"$q 5787101 null#{{i18n:57871008.07}}#$r 5787102 50 Aideen_102#{{i18n:57871008.08}}#$r 5787103 0 Aideen_103#{{i18n:57871008.09}}#$r 5787104 25 Aideen_104#{{i18n:57871008.10}}#$r 5787105 -25 Aideen_105#{{i18n:57871008.11}}\"/pause 1000/emote Aideen 40/pause 1000/speak Aideen \"{{i18n:57871008.12}}\"/pause 500/faceDirection Aideen 0/pause 500/emote farmer 8/pause 2000/end",
+                "57871010/e 57871009/D Aideen/n Aideen_10HeartInvite_Dating/z winter/t 600 1200": "continue/-1000 -1000/farmer -100 -100 0 Aideen 14 19 0/addTemporaryActor Munchboi 32 32 11 19 3 false/showFrame Munchboi 27/skippable/viewport 11 20/pause 1000/speak Aideen \"{{i18n:57871010.01}}\"/playSound doorOpen/warp farmer 10 23/pause 500/faceDirection Aideen 2/jump Aideen 3/pause 500/speed Aideen 5/move Aideen 0 1 2/speak Aideen \"{{i18n:57871010.02}}\"/move farmer 0 -3 1 true/move Aideen -3 0 3 true/pause 1000/speak Aideen \"{{i18n:57871010.03}}\"/emote farmer 32/textAboveHead Aideen \"{{i18n:57871010.031}}\"/faceDirection Aideen 0/faceDirection Munchboi 2/speak Aideen \"{{i18n:57871010.04}}\"/pause 500/playSound cat/pause 1000/faceDirection Aideen 2/textAboveHead Aideen \"{{i18n:57871010.041}}\"/move Aideen 0 2 0 true/move farmer 0 2 0 true/pause 500/fade/viewport -100 -100/warp Munchboi -1000 -1000/playMusic {{season}}1/changeLocation EastScarp_Village/viewport -100 -100/pause 1000/warp Aideen 63 31/warp farmer 64 31/viewport 62 26/move Aideen 0 -5 3 true/move farmer 0 -5 1 true/pause 1500/speak Aideen \"{{i18n:57871010.05}}\"/emote farmer 8/pause 1000/faceDirection Aideen 0/speak Aideen \"{{i18n:57871010.06}}\"/jump farmer 3/faceDirection farmer 0/pause 500/move Aideen 0 -3 1 true/move farmer 0 -3 0 true/pause 1500/viewport -100 -100/changeToTemporaryMap DeepMountainsAideen/viewport -100 -100/pause 2000/warp Aideen 46 48/warp farmer 47 49/viewport 47 48/emote Aideen 8/faceDirection farmer 0/speak Aideen \"{{i18n:57871010.07}}\"/jump farmer 3/faceDirection Aideen 0/faceDirection Aideen 3/pause 500/faceDirection Aideen 2/speak Aideen \"{{i18n:57871010.08}}\"/playSound sheep/jump farmer 3/playSound sheep/emote farmer 16/speak Aideen \"{{i18n:57871010.09}}\"/pause 500/textAboveHead Aideen \"{{i18n:57871010.091}}\"/move Aideen 0 2 2/move farmer 0 2 2/fade/viewport -100 -100/faceDirection farmer 1/faceDirection Aideen 0/warp Aideen 81 35/warp farmer 80 35/viewport 80 33/speak Aideen \"{{i18n:57871010.10}}\"/jump farmer 3/move Aideen 1 0 3 true/move farmer 1 0 0 true/pause 1000/Message \"{{i18n:57871010.101}}\"/faceDirection farmer 1/emote farmer 16/speak Aideen \"{{i18n:57871010.11}}\"/textAboveHead Aideen \"{{i18n:57871010.111}}\"/faceDirection farmer 1/move Aideen 0 -1 1/move Aideen 2 0 0/move Aideen 0 -2 2/faceDirection farmer 0/speak Aideen \"{{i18n:57871010.12}}\"/jump farmer 3/speed farmer 5/move farmer 1 0 0/speed farmer 5/move farmer 0 -2 1/faceDirection Aideen 0/fade/viewport -100 -100/warp farmer 91 13/warp Aideen 90 13/faceDirection Aideen 3 true/faceDirection farmer 3 true/viewport 90 13/pause 500/jump Aideen 5/speed Aideen 5/move Aideen -5 0 2 true/viewport move -2 0 1500/emote Aideen 20/pause 1500/move farmer -3 0 1/pause 100/faceDirection farmer 2/pause 100/faceDirection farmer 1/pause 100/move Aideen 0 2 3/move farmer -2 0 1/speak Aideen \"{{i18n:57871010.13}}\"/move Aideen 0 1 3/emote farmer 40/pause 500/faceDirection farmer 1/pause 250/faceDirection farmer 3/speak Aideen \"{{i18n:57871010.14}}\"/move Aideen -2 0 0/move farmer 0 3 3/speak Aideen \"{{i18n:57871010.15}}\"/emote farmer 12/move farmer -2 0 0/pause 1000/speak Aideen \"{{i18n:57871010.16}}\"/playSound fireball/jump Aideen 5/speak Aideen \"{{i18n:57871010.17}}\"/faceDirection farmer 1/speed farmer 5/speed Aideen 5/move farmer 0 5 2 true/move Aideen 0 5 2 true/pause 1500/fade/viewport -100 -100/playSound fireball/pause 1000/speak Aideen \"{{i18n:57871010.18}}\"/pause 1000/changeLocation EastScarp_Village/warp Aideen 61 17/warp farmer 62 17/faceDirection farmer 3 true/faceDirection Aideen 1 true/viewport 61 17/pause 1000/speak Aideen \"{{i18n:57871010.19}}\"/emote farmer 40/pause 1000/speak Aideen \"{{i18n:57871010.20}}\"/pause 500/emote farmer 8/pause 500/speak Aideen \"{{i18n:57871010.21}}\"/faceDirection Aideen 3/pause 500/textAboveHead Aideen \"{{i18n:57871010.211}}\"/emote farmer 28/pause 1000/end dialogue Aideen \"{{i18n:57871010.22}}\""
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "57871007/f Aideen 1500/t 700 1400": "continue/-1000 -1000/farmer 10 55 1 Aideen -100 -100 2/ignoreCollisions farmer/addTemporaryActor Munchboi 32 32 -100 -100 3 false/addConversationTopic Jacob_Munchboi 7/skippable/viewport 16 54 clamp true/move farmer 7 0 1/playSound doorOpen/warp Aideen 16 49/emote Aideen 56/faceDirection farmer 0/speed Aideen 5/move Aideen 0 5 2/faceDirection farmer 0/emote farmer 8/speak Aideen \"{{i18n:57871007.01}}\"/emote farmer 16/speak Aideen \"{{i18n:57871007.02}}\"/shake Aideen 240/pause 500/speak Aideen \"{{i18n:57871007.03}}\"/pause 500/quickQuestion #{{i18n:57871007.q1}}#{{i18n:57871007.q2}}(break)speak Aideen \"{{i18n:57871007.r1}}\"(break)friendship Aideen -50\\speak Aideen \"{{i18n:57871007.r2}}\"/pause 500/shake Aideen 5/speak Aideen \"{{i18n:57871007.04}}\"/question fork0 \"...#{{i18n:57871007.05}}#{{i18n:57871007.06}}\"/fork FindMunchie/pause 500/emote Aideen 12/pause 1000/move Aideen 0 1 3/move Aideen -7 0 0/textAboveHead Aideen \"{{i18n:57871007.07}}\"/pause 500/move farmer 0 7 2/fade/end",
+                "FindMunchie": "pause 500/emote Aideen 20/speak Aideen \"{{i18n:FindMunchie.01}}\"/pause 500/emote farmer 8/pause 500/speak Aideen \"{{i18n:FindMunchie.02}}\"/faceDirection Aideen 0/emote Aideen 40/pause 500/faceDirection Aideen 3/pause 500/faceDirection Aideen 2/pause 500/speak Aideen \"{{i18n:FindMunchie.03}}\"/jump farmer 3/emote farmer 16/pause 500/speak Aideen \"{{i18n:FindMunchie.04}}\"/move Aideen 0 1 1/emote farmer 32/pause 1000/advancedMove Aideen false -3 0 3 1000/move farmer 0 3 2/fade/viewport -1000 -1000/pause 50/stopAdvancedMoves/warp Aideen -100 -100/pause 500/warp farmer 33 68/viewport 42 68/move farmer 6 0 1/pause 500/faceDirection farmer 0/pause 1000/faceDirection farmer 3/pause 1000/faceDirection farmer 2/emote farmer 56/move farmer 4 0 2/pause 500/playSound cat/jump farmer 5/emote farmer 16/faceDirection farmer 0/move farmer 0 -1 1/pause 500/playSound cat/pause 1000/emote farmer 56/warp Munchboi 46 67/advancedMove Munchboi false -3 0 3 1000/pause 2000/emote Munchboi 40/faceDirection Munchboi 2/playSound cat/shake Munchboi 350/pause 500/message \"{{i18n:FindMunchie.05}}\"/pause 500/faceDirection farmer 3/emote farmer 16/pause 1000/fade/viewport -1000 -1000/warp Munchboi 16 54/warp Aideen 6 55/warp farmer 17 55/speed Aideen 5/move Aideen 9 0 0 true/pause 100/viewport 16 54 clamp true/pause 2000/faceDirection Munchboi 3/playSound cat/pause 1000/speak Aideen \"{{i18n:FindMunchie.06}}\"/move Aideen 0 -1 1/playSound cat/faceDirection farmer 0/pause 500/speak Aideen \"{{i18n:FindMunchie.07}}\"/positionOffset Munchboi -16 0/pause 1000/faceDirection Aideen 1/speak Aideen \"{{i18n:FindMunchie.08}}\"/emote Aideen 20/faceDirection Aideen 0/speak Aideen \"{{i18n:FindMunchie.09}}\"/playSound cat/faceDirection farmer 2/pause 1000/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/Town",
+            "Entries": {
+                "57871014/f Aideen 3500/e 191393/O Aideen/w sunny/t 1100 1700/z winter": "{{season}}_day_ambient/62 20/Aideen 63 20 0 farmer 62 25 0 Lewis -100 -100 2/addQuest 578711/skippable/addConversationTopic Aideen_Garden_Begin 5/ignoreCollisions farmer/ignoreCollisions Aideen/pause 500/move farmer 0 -5 0/pause 1000/faceDirection Aideen 3/faceDirection farmer 1/speak Aideen \"{{i18n:57871014.01}}\"/emote farmer 8/pause 500/textAboveHead Aideen \"{{i18n:57871014.02}}\"/pause 500/faceDirection Aideen 0/faceDirection farmer 0/speak Aideen \"{{i18n:57871014.03}}\"/faceDirection Aideen 3/faceDirection farmer 1/emote farmer 8/pause 1000/faceDirection Aideen 0/pause 100/speak Aideen \"{{i18n:57871014.04}}\"/faceDirection Aideen 3/speak Aideen \"{{i18n:57871014.05}}\"/emote farmer 32/pause 1000/playSound doorOpen/warp Lewis 53 20/move Lewis 0 1 2/jump Aideen 5/textAboveHead Aideen \"{{i18n:57871014.06}}\"/speak Aideen \"{{i18n:57871014.07}}\"/speed Aideen 5/viewport move -2 0 4000 true/advancedMove Aideen false 0 1 -8 0 3 1000/pause 500/textAboveHead Aideen \"{{i18n:57871014.08}}\"/jump Lewis 5/faceDirection Lewis 1/advancedMove farmer false 0 1 -6 0 0 1 -2 0 4 1000/pause 500/speak Lewis \"{{i18n:57871014.09}}\"/pause 500/speak Lewis \"{{i18n:57871014.10.{{GenderNeutral}} }}\"/pause 500/emote farmer 32/speak Aideen \"{{i18n:57871014.11}}\"/pause 500/textAboveHead Lewis \"{{i18n:57871014.12}}\"/pause 500/speak Aideen \"{{i18n:57871014.13}}\"/emote Lewis 16/pause 500/speak Aideen \"{{i18n:57871014.14}}\"/emote Lewis 40/speak Lewis \"{{i18n:57871014.15}}\"/emote Aideen 32/pause 1000/fade/viewport -100 -100/warp Aideen 63 20/warp farmer 64 21/warp Lewis 62 20/faceDirection Lewis 0 true/faceDirection Aideen 0 true/faceDirection farmer 0 true/viewport 63 20/pause 1500/faceDirection Lewis 1/faceDirection Aideen 3/emote Aideen 40/pause 500/speak Lewis \"{{i18n:57871014.16}}\"/pause 500/speak Aideen \"{{i18n:57871014.17}}\"/faceDirection Aideen 1/move farmer 0 -1 3/emote farmer 28/pause 500/speak Aideen \"{{i18n:57871014.18}}\"/faceDirection Aideen 0/pause 500/emote Aideen 40/pause 500/speak Aideen \"{{i18n:57871014.19}}\"/faceDirection Aideen 1/pause 1000/speak Aideen \"{{i18n:57871014.20}}\"/pause 500/emote farmer 56/pause 1000/speak Aideen \"{{i18n:57871014.21}}\"/pause 500/emote Aideen 20/pause 1000/end",
+                "57871017/e 57871016/w sunny": "CloudCountry/63 19/Aideen 63 27 0 farmer 62 25 0 Robin 64 19 1 Lewis 65 21 0/skippable/addConversationTopic Aideen_Garden 5/positionOffset Aideen 16 0/positionOffset farmer 16 0/pause 500/advancedMove farmer false 0 -6 4 4000 0 -2 1 4000 3 4000 2 5000/advancedMove Aideen false 0 -6 1 100/animate Robin true true 100 24 25 26 27 27 27 27 27 27 27 27/pause 200/playSound crafting/pause 1200/playSound crafting/pause 1200/playSound crafting/pause 1200/playSound crafting/pause 500/stopAnimation Robin/faceDirection Lewis 3/faceDirection Robin 2/speak Lewis \"{{i18n:57871017.01}}\"/faceDirection Aideen 0/pause 500/textAboveHead Aideen \"{{i18n:57871017.02}}\"/pause 1000/faceDirection Aideen 1/speak Aideen \"{{i18n:57871017.03}}\"/pause 500/emote Lewis 32/pause 500/speak Lewis \"{{i18n:57871017.04}}\"/pause 500/emote Aideen 32/pause 500/faceDirection Robin 2/speak Robin \"{{i18n:57871017.05}}\"/pause 500/faceDirection Lewis 0/speak Lewis \"{{i18n:57871017.06}}\"/faceDirection Robin 0/speak Robin \"{{i18n:57871017.07}}\"/faceDirection Robin 2/speak Robin \"{{i18n:57871017.08}}\"/pause 500/textAboveHead Aideen \"{{i18n:57871017.09}}\"/pause 1000/advancedMove Robin false 0 10 -10 0 0 10 2 1000/advancedMove Lewis false 0 10 -10 0 0 10 2 1000/pause 1000/advancedMove Aideen false 0 -1 4 100/proceedPosition Aideen/advancedMove farmer false 0 3 1 100/faceDirection Aideen 3/proceedPosition farmer/speak Aideen \"{{i18n:57871017.10}}\"/emote farmer 40/pause 500/emote Aideen 28/pause 1500/pause 500/speak Aideen \"{{i18n:57871017.11}}\"/quickQuestion #{{i18n:57871017.12}}#{{i18n:57871017.13}}#{{i18n:57871017.14}}#{{i18n:57871017.15}}(break)emote Aideen 20\\pause 500\\speak Aideen \"{{i18n:57871017.16}}\"(break)emote Aideen 32\\pause 500\\speak Aideen \"{{i18n:57871017.17}}\"(break)emote Aideen 12\\pause 500\\speak Aideen \"{{i18n:57871017.18}}\"(break)emote Aideen 12\\pause 500\\speak Aideen \"{{i18n:57871017.19}}\"/pause 1000/faceDirection Aideen 0/faceDirection farmer 0/pause 1000/end",
+            },
+            "When": {
+                "HasMod": "Esca.DestroyableBushes, MabelSyrup.ResetTerrainFeatures",
+                "HasMod |contains=Lumisteria.TtilesheetsOutdoor": true,
+                "FarmhouseUpgrade|contains=0,1": false,
+                "KeepNonDatable | contains=Aideen": false
+            }
+        },
+        {
+            "Action": "Include",
+            "FromFile": "assets/Platonic/Aideen.json",
+            "When": {
+                "KeepNonDatable | contains=Aideen": true
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Events/FarmHouse",
+            "Entries": {
+                "57871016/n AideenStones/e 57871014/O Aideen/A Aideen_Garden_Begin/t 600 700/w sunny/L": "continue/-100 -100/farmer 24 24 3 Aideen 22 24 1/viewport 28 25 clamp true/ignoreCollisions farmer/pause 500/speak Aideen \"{{i18n:57871016.01}}\"/emote farmer 32/pause 500/move Aideen 1 0 1/speak Aideen \"{{i18n:57871016.02}}\"/pause 500/emote farmer 8/pause 500/speak Aideen \"{{i18n:57871016.03}}\"/pause 500/emote farmer 56/pause 500/end"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/CraftingRecipes",
+            "Entries": {
+                "Bouquet": "402 1 591 1 597 1/Home/458 1/false/null/{{i18n:crafting.bouquet}}"
+            }
+        },
+        {
+            "LogName": "Bouquet price changes",
+            "Action": "EditData",
+            "Target": "Data/Objects",
+            "TargetField": [
+                "458"
+            ],
+            "Entries": {
+                "Price": 175
+            },
+            "When": {
+                "HasSeenEvent": "57871006"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Quests",
+            "Entries": {
+                "578": "Basic/{{i18n:quest.aideen.1}}/{{i18n:quest.aideen.2}}/{{i18n:quest.aideen.3}}/-1/-1/0/-1/true",
+                "578711": "ItemDelivery/{{i18n:quest.578711.aideen.1}}/{{i18n:quest.578711.aideen.2}}/{{i18n:quest.578711.aideen.3}}/Aideen 390 50/-1/0/-1/true/$1 AideenStones#{{i18n:quest.578711.aideen.4}}",
+            }
+        },
+        //M A R R I A G E
+        {
+            "LogName": "Engagement Dialogue",
+            "Action": "EditData",
+            "Target": "Data/EngagementDialogue",
+            "Entries": {
+                "Aideen0": "{{i18n:engagement.aideen0}}",
+                "Aideen1": "{{i18n:engagement.aideen1}}"
+            }
+        },
+        /*{
+            "Action": "EditData",
+            "Target": "strings/StringsFromCSFiles",
+            "Entries": {
+                "Utility.cs.5367": "{{i18n:3567.aideen}}",
+                "Utility.cs.5369": "{{i18n:5369.aideen}}",
+                "Utility.cs.5371": "{{i18n:5371.aideen}}",
+                "Utility.cs.5377": "{{i18n:5377.aideen}}"
+            },
+            "When": {
+                "Relationship:Aideen": "Engaged"
+            }
+        },*/
+        {
+            "LogName": "Adds special sprites to Aideen",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen_Winter, Characters/Aideen_Fall",
+            "FromFile": "assets/Characters/Aideen/{{TargetWithoutPath}}_SCA_Scarf.png",
+            "ToArea": {
+                "X": 16,
+                "Y": 192,
+                "Width": 32,
+                "Height": 32
+            },
+            "When": {
+                "HasMod |contains=Poltergeister.SeasonalCuteSpritesES": true
+            }
+        },
+        {
+            "LogName": "Adds special sprites to Aideen",
+            "Action": "EditImage",
+            "Target": "Characters/Aideen",
+            "FromFile": "assets/Characters/Aideen/Aideen_{{season}}_SCA_Scarf.png",
+            "ToArea": {
+                "X": 16,
+                "Y": 192,
+                "Width": 32,
+                "Height": 32
+            },
+            "When": {
+                "HasMod |contains=Poltergeister.SeasonalCuteSpritesES": true,
+                "Season": "Winter, Fall"
+            }
+        },
+        /*{
+            "LogName": "Custom Scarp Weddings",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_Village",
+            "Entries": {
+                "Wedding_Aideen": "sweet/-1000 -1000/farmer 26 63 1 Aideen 27 63 3 LadySheba 26 56 1 Jasper 30 66 0 Beatrice 30 65 0 CorwinLK? 31 65 0 EdithHart 24 65 0 Eloise 25 66 0 EthanHart 25 65 0 Jacob 24 66 0 JadeMalic 29 67 0 Jessie 25 70 0 Juliet 28 66 0 MichaelHart 23 65 0 Rosa 29 66 0 StellaHart 22 65 0 {{ESWeddingGuests}} George 28 65 0 Evelyn 29 65 0 LumaJunimo -100 -100 2 Nova.Dylan? 28 68 0 Nova.Eli? 29 68 0 Nora? 31 67 0 Fievel? 31 68 0 RodneyOBrien? 30 68 0 MadDog.HashtagBearFam.Teren? 22 69 0 MadDog.HashtagBearFam.Sigurd? 22 68 0 MadDog.HashtagBearFam.Gunnar? 24 68 0 MadDog.HashtagBearFam.Sondra 23 68 0 MadDog.HashtagBearFam.Gudrun 25 68 0 KatarynaLK 31 66 0/addTemporaryActor Munchboi 32 32 26 71 0 false/changeToTemporaryMap EastScarp_Village_Wedding/viewport -1000 -1000/warp Mateo? 28 69/faceDirection JadeMalic 0/showFrame Aideen 37/changeSprite Jessie Celebrant/viewport 26 64 true/globalFadeToClear/advancedMove Munchboi false 0 -7 4 10/proceedPosition Munchboi/showFrame Aideen 36/emote Aideen 20/pause 500/advancedMove Munchboi false 2 0 0 -1 2 100/showFrame Aideen 37/advancedMove Jessie false 1 0 0 -6 4 100/proceedPosition Jessie/pause 500/emote Jessie 40/showFrame Munchboi 32/animate Munchboi false true 6000 32 33/pause 500/faceDirection farmer 2/showFrame Aideen 36/emote Aideen 32 true/pause 100/emote farmer 32 true/pause 600/faceDirection Jessie 2/pause 500/speak Jessie \"Welcome, everyone. And thank you for joining us today, as we celebrate the union of two of our beloved villagers.$6\"/pause 500/faceDirection Jessie 0/speak Jessie \"@, who may not live in the Scarp, but whom, I think we can all agree, has been an honest and true friend....$6\"/pause 500/emote Jessie 20 true/pause 500/emote Fievel? 32 true/emote SenS? 20 true/pause 500/emote ToriLK 32 true/pause 750/emote EdithHart 32 true/pause 500/speak Jessie \"... and our lovely Aideen.$7\"/pause 500/emote Aideen 60/pause 500/emote Jessie 20 true/pause 500/emote Evelyn 32 true/pause 500/emote Jacob 32 true/pause 300/showFrame Aideen 37/pause 200/textAboveHead Aideen \"Ready, dear?\"/pause 500/faceDirection farmer 1/pause 1000/emote farmer 56/advancedMove Jessie false 0 1 4 100/proceedPosition Jessie/emote Jessie 40/speak Jessie \"By the power vested in me, and by the strength of your love, I now pronounce you, married!$6#$b#You may kiss.$7\"/pause 1000/faceDirection Jessie 2/pause 500/positionOffset Aideen -16 0/showFrame farmer 101/showFrame Aideen 38/specificTemporarySprite heart 21 106/pause 500/textAboveHead Juliet \"Woohoo!\"/pause 1500/playSound dwop/pause 2000/stopAnimation Munchboi 32/advancedMove LadySheba false -2 0 0 2 1 0 0 5 2 100/specificTemporarySprite wed/positionOffset Aideen 16 0/faceDirection farmer 2/showFrame Aideen 36/faceDirection MichaelHart 1 true/faceDirection EdithHart 3 true/faceDirection JadeMalic 1/faceDirection ToriLK 3/advancedMove Jessie false 0 3 4 100/proceedPosition LadySheba/showFrame LadySheba 18/pause 4000/faceDirection farmer 1/showFrame Aideen 37/pause 500/animate Munchboi true true 120 36 37 38 39/pause 1000/globalFade/viewport -1000 -1000/pause 1000/message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5381]\"/pause 500/message \"[LocalizedText Strings\\StringsFromCSFiles:Utility.cs.5383]\"/pause 4000/waitForOtherPlayers weddingEnd[FarmerUniqueId]/viewport move 0 -1 6000/globalFade/viewport -1000 -1000/end",
+            }
+        }*/
+        //positionOffset farmer 0 16/
+    ]
+}

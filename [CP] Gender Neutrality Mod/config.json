@@ -1,0 +1,10 @@
+{
+  "ReplaceGenderSymbols": "true",
+  "FixBathHouseDoors": "true",
+  "FixBathHouseTiles": "true",
+  "FixOtherPlayers": "true",
+  "OtherPlayerSubjectivePronoun": "They",
+  "OtherPlayerObjectivePronoun": "Them",
+  "OtherPlayerPossessivePronoun": "Their",
+  "Priority": "Default"
+}

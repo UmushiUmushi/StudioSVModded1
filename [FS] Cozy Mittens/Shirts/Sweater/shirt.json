@@ -1,0 +1,88 @@
+{
+  "Name": "Sweater",
+  "FrontShirt": {
+    "ColorMasks": [
+      [ 71, 68, 57 ],
+      [ 36, 36, 36 ],
+      [ 119, 119, 119 ],
+      [ 158, 158, 158 ],
+      [ 173, 173, 173 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 8
+    }
+  },
+  "RightShirt": {
+    "ColorMasks": [
+      [ 71, 68, 57 ],
+      [ 36, 36, 36 ],
+      [ 119, 119, 119 ],
+      [ 158, 158, 158 ],
+      [ 173, 173, 173 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 8,
+      "Length": 8
+    }
+  },
+  "LeftShirt": {
+    "Flipped": true,
+    "ColorMasks": [
+      [ 71, 68, 57 ],
+      [ 36, 36, 36 ],
+      [ 119, 119, 119 ],
+      [ 158, 158, 158 ],
+      [ 173, 173, 173 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 8
+    },
+    "BodyPosition": {
+      "X": 1,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 8
+    }
+  },
+  "BackShirt": {
+    "ColorMasks": [
+      [ 71, 68, 57 ],
+      [ 36, 36, 36 ],
+      [ 119, 119, 119 ],
+      [ 158, 158, 158 ],
+      [ 173, 173, 173 ]
+    ],
+    "StartingPosition": {
+      "X": 0,
+      "Y": 24
+    },
+    "BodyPosition": {
+      "X": 0,
+      "Y": 0
+    },
+    "ShirtSize": {
+      "Width": 10,
+      "Length": 8
+    }
+  }
+}

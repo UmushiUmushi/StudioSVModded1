@@ -1,0 +1,20 @@
+{
+  "ItemName": "Void Chicken",
+  "Type": "Character",
+  "TextureWidth": 64,
+  "TextureHeight": 112,
+  "ManualVariations": [
+    {
+      "Id": -1,
+      "ChanceWeight": 0,
+    },
+    {
+      "Id": 0,
+      "Keywords": [ "Space" ]
+    },
+    {
+      "Id": 1,
+      "Keywords": [ "Void" ]
+    }
+  ]
+}

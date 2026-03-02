@@ -1,0 +1,40 @@
+{
+    "Changes": [
+        {
+            "LogName": "Question Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/schedules/MichaelHart",
+            "Entries": {
+                "spring": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 64 20 square 2_1_0/1800 EastScarp_Village 20 67 1/1900 EastScarp_InnBath 29 6 0/2200 EastScarp_VillageInn 57 32 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "rain": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 64 20 square 2_1_0/1800 EastScarp_VillageInn 58 21 0 michael_drink/2200 EastScarp_VillageInn 57 32 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                //"Sat": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 45 31 2/1800 Saloon 1 22 1 michael_drink \"Strings\\schedules\\MichaelHart:Wed.000\"/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "Sun": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 46 31 1/1320 EastScarp_Village 53 89 2 \"Strings\\schedules\\MichaelHart:Thu.000{{Random:a, b, c}}\"/1600 EastScarp_Village 53 113 2/1900 EastScarp_VillageInn 44 10 0 michael_dishes/2200 EastScarp_VillageInn 57 32 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "Wed":"620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 64 20 square 2_1_0/1600 EastScarp_VillageInn 46 31 1/1800 Saloon 3 23 1 michael_drink/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "Fri": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 46 10 1/820 EastScarp_VillageInn 46 12 1 michael_note \"Strings\\schedules\\MichaelHart:Fri.000.{{season}}\"/900 EastScarp_VillageInn 42 17 0/930 SeedShop 10 20 0/1240 SeedShop 13 20 2/1400 EastScarp_VillageInn 46 12 1/1530 EastScarp_VillageInn 31 6 0/1650 EastScarp_VillageInn 24 20 1/1900 EastScarp_InnBath 29 6 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "summer": "0 EastScarp_FireTower 7 5 0/0800 EastScarp_MtEvermore 54 18 0/0930 EastScarp_MtEvermore 41 8 3 michael_painting/1300 EastScarp_MtEvermore 41 13 2 square_5_5/1600 EastScarp_FireTower 8 5 1/1800 8 6 2 michael_newspaper/2200 2 8 3 michael_sleep",
+                "spring_28": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_FireTower 8 5 1/2200 2 8 3 michael_sleep",
+                "summer_28": "0 EastScarp_FireTower 7 5 0/800 EastScarp_VillageInn 57 32 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "summer_Wed":"GOTO summer",
+                "summer_Fri": "0 EastScarp_FireTower 7 5 0/800 EastScarp_VillageInn 57 32 0/1400 EastScarp_FireTower 7 5 0/2300 2 8 3 michael_sleep",
+                "summer_Sat": "GOTO summer",
+                "summer_Sun": "GOTO summer",
+                //Night market
+                "winter_15": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 64 20 square 2_1_0/1700 Beach 40 36 0 \"Strings\\schedules\\MichaelHart:winter_15.000\"/2200 EastScarp_VillageInn 57 32 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "winter_16": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 64 20 square 2_1_0/1700 Beach 40 36 0 \"Strings\\schedules\\MichaelHart:winter_16.000\"/2200 EastScarp_VillageInn 57 32 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "winter_17": "620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 64 20 square 2_1_0/1700 Beach 24 34 3 \"Strings\\schedules\\MichaelHart:winter_17.000\"/2300 EastScarp_VillageInn 53 30 0 michael_sleep",
+                "EastScarpe_SpiritsEve":"620 EastScarp_VillageInn 45 10 0/800 EastScarp_VillageInn 64 20 square 2_1_0/1200 EastScarp_VillageInn 12 31 2/1800 EastScarp_VillageInn 58 21 0 michael_drink/2200 EastScarp_VillageInn 57 32 0/2300 EastScarp_VillageInn 53 30 0 michael_sleep"
+            }
+        },
+        {
+            "LogName": "Question Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/schedules/MichaelHart",
+            "When": {
+                "Season": "summer"
+            },
+            "Entries": {
+                "rain": "0 EastScarp_FireTower 7 5 0/1200 EastScarp_MtEvermore 54 18 0/1300 EastScarp_FireTower 8 6 2 michael_note/1600 EastScarp_FireTower 8 5 1/1800 8 6 2 michael_newspaper/2200 2 8 3 michael_sleep",
+            }
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+"Changes":
+	[
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sebastian",
+			"Entries":
+				{
+					"dating_Sebastian": "Don't make fun of me... but I've never been in a relationship before.$l",
+					"event_garage3": "There's no need to worry... I'll make sure you're safe.$8"
+				},
+			"LogName":"Fix Sebastian"
+		}
+	]
+}

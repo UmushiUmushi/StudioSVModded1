@@ -1,0 +1,169 @@
+{
+    "Changes": [
+ 
+        //Forest with Shane
+        {
+            "LogName": "Talking to Shane",
+            "Action": "EditData",
+            "Target": "Data/Events/Forest",
+            "Entries": {
+                "5295004/e 5295002/t 1730 2000/w sunny": "nightTime/-1000 -1000/TristanLK 33 18 2 Shane 34 25 2 farmer -100 -100 1/addConversationTopic ShaneTrissRH1 5/skippable/addLantern 735 35 24 1/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/viewport 34 25 true/move TristanLK 0 7 1/pause 500/textAboveHead TristanLK \"{{i18n:5295004.0}}\"/stopAnimation Shane/pause 500/jump Shane 5/faceDirection Shane 3/pause 1000/emote Shane 12/pause 500/speak Shane \"{{i18n:5295004.1}}\"/pause 500/faceDirection Shane 2/pause 500/speak Shane \"{{i18n:5295004.2}}\"/pause 500/speak TristanLK \"{{i18n:5295004.3}}\"/pause 500/faceDirection Shane 1/pause 500/emote Shane 40/pause 2000/speak Shane \"{{i18n:5295004.4}}\"/pause 500/textAboveHead TristanLK \"{{i18n:5295004.5}}\"/faceDirection TristanLK 2/pause 500/move TristanLK 0 1 2/animate TristanLK false true 480 16 17/pause 500/faceDirection Shane 3/pause 500/emote Shane 16/pause 500/speak Shane \"{{i18n:5295004.6}}\"/pause 500/speak TristanLK \"{{i18n:5295004.7}}\"/pause 500/faceDirection Shane 2/pause 500/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 2000/stopAnimation Shane/faceDirection Shane 3/emote Shane 40/pause 2000/faceDirection Shane 2/speak Shane \"{{i18n:5295004.8}}\"/textAboveHead TristanLK \"{{i18n:5295004.9}}\"/pause 2000/faceDirection Shane 3/textAboveHead Shane \"{{i18n:5295004.10}}\"/pause 500/stopAnimation TristanLK/move TristanLK 0 -1 2/speak TristanLK \"{{i18n:5295004.11}}\"/faceDirection TristanLK 1/pause 500/speak Shane \"{{i18n:5295004.12}}\"/pause 500/speak TristanLK \"{{i18n:5295004.13}}\"/pause 500/speak Shane \"{{i18n:5295004.14}}\"/pause 500/speak TristanLK \"{{i18n:5295004.15}}\"/pause 500/faceDirection Shane 1/pause 500/speak Shane \"{{i18n:5295004.16}}\"/pause 500/speak TristanLK \"{{i18n:5295004.17}}\"/pause 500/speak Shane \"{{i18n:5295004.18}}\"/pause 500/speak TristanLK \"{{i18n:5295004.19}}\"/pause 500/faceDirection Shane 3/pause 500/speak TristanLK \"{{i18n:5295004.20}}\"/pause 500/emote Shane 32/pause 1500/speak TristanLK \"{{i18n:5295004.21}}\"/pause 500/speak Shane \"{{i18n:5295004.22}}\"/pause 500/move Shane 1 0 3/pause 500/addObject 34 25 167 1/jump TristanLK 5/textAboveHead TristanLK \"{{i18n:5295004.23}}\"/pause 500/speak Shane \"{{i18n:5295004.24}}\"/move Shane -1 0 3/pause 500/speak Shane \"{{i18n:5295004.25}}\"/pause 500/emote Shane 12/faceDirection Shane 0/move Shane 0 -10 0 true/faceDirection TristanLK 0/pause 500/textAboveHead TristanLK \"{{i18n:5295004.26}}\"/pause 1000/speak TristanLK \"{{i18n:5295004.27}}\"/faceDirection Shane 2/pause 500/end warpOut",
+                "5295013/e 5295004/A ShaneTrissRH1/w sunny/t 2000 2500": "nightTime/-1000 -1000/TristanLK -100 -100 3 Shane 34 25 2 Harvey -100 -100 3 Marnie -100 -100 1 Jas -100 -100 1 farmer -100 -100 1/addConversationTopic ShaneTrissRH2 3/skippable/addLantern 735 35 24 1/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/viewport 31 21 true/pause 1000/playSound swordswipe/pause 1000/playSound stoneCrack/pause 1000/playSound rabbit/pause 500/stopAnimation Shane/faceDirection Shane 0/textAboveHead Shane \"{{i18n:5295013.0}}\"/pause 500/warp TristanLK 20 12/move TristanLK 4 0 1/move TristanLK 0 1 2/move TristanLK 3 0 1/textAboveHead Shane \"{{i18n:5295013.1}}\"/move TristanLK 0 -1 1/move TristanLK 3 0 2/move TristanLK 0 3 1/move TristanLK 4 0 2/emote TristanLK 40/pause 1000/shake TristanLK 3000/pause 500/pause 500/jump Shane 5/speed Shane 5/move Shane 0 -7 0/speak Shane \"{{i18n:5295013.2}}\"/pause 500/speak TristanLK \"{{i18n:5295013.3}}\"/pause 500/emote Shane 12/pause 500/speak Shane \"{{i18n:5295013.4}}\"/pause 500/speak TristanLK \"{{i18n:5295013.5}}\"/pause 500/showFrame TristanLK 0/speak TristanLK \"{{i18n:5295013.6}}\"/shake TristanLK 500/showFrame TristanLK 20/pause 500/move Shane 0 -1 0/fade/stopMusic/viewport -1000 -1000/changeLocation AnimalShop/viewport -1000 -1000/warp TristanLK 27 4/warp Shane 25 4/warp Jas 1 7/warp Marnie 24 15/warp Harvey 25 15/showFrame TristanLK 0/faceDirection Shane 1/viewport 22 9 true/pause 500/emote Shane 28/pause 500/faceDirection TristanLK 3/textAboveHead TristanLK \"{{i18n:5295013.7}}\"/pause 500/jump Shane 3/pause 500/speak Shane \"{{i18n:5295013.8}}\"/playMusic shaneTheme/pause 500/speak TristanLK \"{{i18n:5295013.9}}\"/speak Shane \"{{i18n:5295013.10}}\"/pause 500/speak TristanLK \"{{i18n:5295013.11}}\"/move TristanLK -1 0 3/pause 500/speak Shane \"{{i18n:5295013.12}}\"/pause 500/speak TristanLK \"{{i18n:5295013.13}}\"/pause 500/emote Shane 40/pause 1500/emote TristanLK 60/pause 1000/faceDirection Shane 3/pause 500/speak Shane \"{{i18n:5295013.14}}\"/speak TristanLK \"{{i18n:5295013.15}}\"/emote Shane 12/pause 500/speak Shane \"{{i18n:5295013.16}}\"/pause 500/move Shane 0 3 3/pause 500/textAboveHead TristanLK \"{{i18n:5295013.17}}\"/pause 1000/faceDirection Shane 0/pause 1500/textAboveHead TristanLK \"{{i18n:5295013.18}}\"/pause 500/emote Shane 32/pause 500/speak Shane \"{{i18n:5295013.19}}\"/pause 1000/end warpOut",
+                "5295014/e 5295013/A ShaneTrissRH2/w sunny": "none/90 24/Shane 90 17 2 farmer 96 23 3/skippable/pause 500/move Shane 0 5 2 true/move farmer -5 0 3 true/pause 1500/textAboveHead Shane \"{{i18n:5295014.0}}\"/pause 1500/speak Shane \"{{i18n:5295014.1}}\"/faceDirection Shane 3/pause 500/faceDirection Shane 1/pause 500/faceDirection Shane 2/question fork1 \"{{i18n:5295014.2}}\"/fork NoHelpShaneTriss/pause 500/speak Shane \"{{i18n:5295014.3}}\"/faceDirection Shane 3/fade/viewport -1000 -1000/warp Shane 34 25/warp farmer 33 25/faceDirection farmer 1/positionOffset farmer 0 20/viewport 34 25 true/pause 1000/playMusic shaneTheme/speak Shane \"{{i18n:5295014.4}}\"/emote farmer 8/pause 500/faceDirection Shane 1/pause 500/speak Shane \"{{i18n:5295014.5}}\"/pause 500/faceDirection Shane 3/pause 500/emote Shane 40/pause 1500/speak Shane \"{{i18n:5295014.6}}\"/pause 500/faceDirection Shane 1/emote Shane 40/pause 500/speak Shane \"{{i18n:5295014.7}}\"/pause 500/end warpOut",
+                "NoHelpShaneTriss": "pause 500/emote Shane 12/speak Shane \"{{i18n:NoHelpShaneTriss.0}}\"/pause 500/move Shane 0 2 1/faceDirection farmer 2/speak Shane \"{{i18n:NoHelpShaneTriss.1}}\"/move Shane 7 0 1 true/pause 1000/emote farmer 40/end"
+            }
+        },
+        {
+            "LogName": "Shane drops by",
+            "Action": "EditData",
+            "Target": "Data/Events/EastScarp_AideenHouse",
+            "Entries": {
+                "5295015/e 5295013/t 900 1300/q 529516/p TristanLK": "none/14 18/farmer 10 24 0 TristanLK 7 18 2 Shane -100 -100 0/addConversationTopic TrissShaneDate 7/skippable/animate TristanLK false true 480 16 17/pause 500/textAboveHead TristanLK \"{{i18n:5295015.0}}\"/move farmer 0 -2 0/speak TristanLK \"{{i18n:5295015.1}}\"/move farmer -5 0 0/move farmer 0 -2 0/stopAnimation TristanLK 0/move TristanLK 0 1 2/speak TristanLK \"{{i18n:5295015.2}}\"/move farmer 1 0 1/pause 500/speak TristanLK \"{{i18n:5295015.3}}\"/pause 500/emote farmer 40/pause 500/playSound stairsdown/pause 500/jump TristanLK 5/pause 500/speak TristanLK \"{{i18n:5295015.4}}\"/speed TristanLK 4/move TristanLK 3 0 2/textAboveHead TristanLK \"{{i18n:5295015.5}}\"/pause 1000/playSound doorOpen/pause 500/warp Shane 10 24/pause 500/textAboveHead TristanLK \"{{i18n:5295015.6}}\"/pause 500/speak TristanLK \"{{i18n:5295015.7}}\"/pause 500/move Shane 0 -3 0/pause 500/emote Shane 28/pause 500/faceDirection Shane 1/pause 1000/faceDirection Shane 3/emote farmer 32/emote Shane 60/speak Shane \"{{i18n:5295015.8}}\"/faceDirection Shane 2/pause 500/speed Shane 4/move Shane 0 3 2 true/textAboveHead TristanLK \"{{i18n:5295015.9}}\"/pause 1000/warp Shane -100 -100/pause 500/move TristanLK 0 1 3/pause 500/emote TristanLK 28/quickQuestion {{i18n:5295015.10}}(break)pause 500\\jump TristanLK 5\\speak TristanLK \"{{i18n:5295015.11}}\"(break)pause 500\\emote TristanLK 40\\pause 1000\\speak TristanLK \"{{i18n:5295015.12}}\"(break)pause 500\\emote TristanLK 12\\pause 1000\\speak TristanLK \"{{i18n:5295015.13}}\"/pause 500/speed TristanLK 5/move TristanLK 0 4 2/warp TristanLK -100 -100/pause 500/question fork0 \"{{i18n:5295015.14}}\"/fork FollowTriss/pause 1000/faceDirection farmer 3/pause 500/move farmer 0 -1 1/move farmer 2 0 0/pause 500/message \"{{i18n:5295015.15}}\"/pause 500/fade/pause 100/viewport -1000 -1000/message \"{{i18n:5295015.16}}\"/pause 500/playSound thudStep/warp TristanLK 9 19/faceDirection TristanLK 3/speak TristanLK \"{{i18n:5295015.17}}\"/pause 500/viewport 14 18/pause 500/speak TristanLK \"{{i18n:5295015.18}}\"/pause 500/faceDirection farmer 1/pause 500/emote farmer 8/pause 500/speak TristanLK \"{{i18n:5295015.19}}\"/pause 500/emote farmer 16/pause 500/speak TristanLK \"{{i18n:5295015.20}}\"/pause 500/emote farmer 20/pause 500/emote TristanLK 60/pause 1500/end warpOut",
+                "FollowTriss": "pause 500/speed farmer 3/move farmer 0 -1 1/move farmer 4 0 1/fade/viewport -1000 -1000/changeLocation EastScarp_Village/viewport -1000 -1000/warp Shane 32 100/warp TristanLK 32 88/warp farmer 24 97/faceDirection farmer 2/viewport 30 101 true/emote Shane 28/move TristanLK 0 10 2 true/pause 500/textAboveHead Shane \"{{i18n:FollowTriss.0}}\"/pause 2000/speak TristanLK \"{{i18n:FollowTriss.1}}\"/jump Shane 5/faceDirection Shane 0/pause 500/emote Shane 28/pause 2000/faceDirection Shane 2/speak Shane \"{{i18n:FollowTriss.2}}\"/pause 500/move TristanLK -1 0 2/move TristanLK 0 2 2/pause 500/positionOffset TristanLK 0 20/speak TristanLK \"{{i18n:FollowTriss.3}}\"/pause 500/faceDirection TristanLK 1/faceDirection Shane 3/jump Shane 3/move Shane 1 0 3/pause 500/emote Shane 28/pause 500/speak TristanLK \"{{i18n:FollowTriss.4}}\"/pause 500/emote Shane 40/pause 1500/faceDirection Shane 1/pause 500/faceDirection Shane 3/textAboveHead Shane \"{{i18n:FollowTriss.5}}\"/pause 1500/speak Shane \"{{i18n:FollowTriss.6}}\"/pause 500/emote TristanLK 40/pause 500/emote Shane 28/speak Shane \"{{i18n:FollowTriss.7}}\"/pause 1000/speak TristanLK \"{{i18n:FollowTriss.8}}\"/emote Shane 12/speak Shane \"{{i18n:FollowTriss.9}}\"/pause 500/speak TristanLK \"{{i18n:FollowTriss.10}}\"/pause 500/emote Shane 60/pause 500/emote farmer 32/pause 1000/end"
+            }
+        },
+        {
+            "LogName": "Shane and Tristan's 'date'",
+            "Action": "EditData",
+            "Target": "Data/Events/BusStop",
+            "Entries": {
+                "5295016/e 5295015/t 1700 2000/A TrissShaneDate": "continue/-1000 -1000/TristanLK 22 19 0 Shane 23 10 2 Alex 25 21 3 Pam 20 10 2 farmer 24 23 0/skippable/changePortrait TristanLK date/changeSprite TristanLK date/viewport 12 11 clamp true/move TristanLK 0 -6 0/move Alex 0 -4 0/speak Shane \"{{i18n:5295016.0}}\"/speak TristanLK \"{{i18n:5295016.1}}\"/emote Alex 8/speak Shane \"{{i18n:5295016.2}}\"/pause 500/emote TristanLK 28/speak TristanLK \"{{i18n:5295016.3}}\"/emote Shane 60/pause 1000/speak Shane \"{{i18n:5295016.4}}\"/speak TristanLK \"{{i18n:5295016.5}}\"/pause 500/emote Shane 40/pause 1500/TextAboveHead Shane \"{{i18n:5295016.5a}}\"/pause 1500/speak TristanLK \"{{i18n:5295016.6}}\"/pause 500/emote Pam 12/faceDirection Shane 3/move TristanLK 0 -2 0 true/move Alex 0 -2 0 true/pause 1000/move TristanLK 0 -1 0/playSound thudStep/warp TristanLK -100 -100/move Shane -1 0 0/move Shane 0 -1 0/playSound thudStep/warp Shane -100 -100/move farmer 0 -8 0/faceDirection Alex 3/faceDirection farmer 1/speak Alex \"{{i18n:5295016.7}}\"/pause 500/quickQuestion {{i18n:5295016.8}}(break)speak Alex \"{{i18n:5295016.8a}}\"(break)speak Alex \"{{i18n:5295016.9}}\"(break)speak Alex \"{{i18n:5295016.10}}\"(break)speak Alex \"{{i18n:5295016.11}}\"/pause 500/question fork0 \"{{i18n:5295016.12}}\"/fork Tristan_NoGame/pause 500/textAboveHead Alex \"{{i18n:5295016.13}}\"/move Alex 0 -5 0 true/move farmer 0 -5 0 true/pause 3000/fade/viewport -1000 -1000/playMusic none/pause 800/playSound busDriveOff/pause 4000/changeToTemporaryMap Stadium false/pause 1000/playMusic Stadium_ambient/warp farmer 13 12/warp Alex 14 12/faceDirection farmer 2/faceDirection Alex 2/warp TristanLK 19 16/faceDirection TristanLK 2/positionOffset TristanLK 0 12/warp Shane 22 9/advancedMove Shane false 0 7 -2 0/viewport 22 18 clamp true/proceedPosition Shane/positionOffset Shane 0 12/faceDirection Shane 2/speak Shane \"{{i18n:5295016.14}}\"/showFrame Shane 25/pause 1000/playSound coin/showFrame Shane 0/emote TristanLK 8/speak Shane \"{{i18n:5295016.15}}\"/emote TristanLK 32/speak Shane \"{{i18n:5295016.16}}\"/animate Shane false true 200 20 20 20 20 20 20 20 20 20 20 21 22 23 24 24 24 24 23 22 21 20 20 20 20/pause 1000/speak TristanLK \"{{i18n:5295016.17}}\"/faceDirection TristanLK 1/stopAnimation Shane/faceDirection Shane 3/pause 1000/speak TristanLK \"{{i18n:5295016.18}}\"/emote Shane 60/pause 500/speak TristanLK \"{{i18n:5295016.19}}\"/pause 500/speak Shane \"{{i18n:5295016.20}}\"/speak TristanLK \"{{i18n:5295016.21}}\"/positionOffset TristanLK 2 0/pause 10/positionOffset TristanLK 2 0/pause 10/positionOffset TristanLK 2 0/pause 10/positionOffset TristanLK 2 0/showFrame TristanLK 28/pause 1000/showFrame Shane 34/pause 1000/playSound Stadium_cheer/pause 1000/faceDirection Shane 2/jump Shane 5/showFrame TristanLK 4/speak Shane \"{{i18n:5295016.22}}\"/faceDirection TristanLK 2/emote TristanLK 12/pause 1000/playSound Stadium_cheer/pause 1000/textAboveHead Shane \"{{i18n:5295016.23}}\"/jump Alex/pause 100/textAboveHead Alex \"{{i18n:5295016.24}}\"/pause 2500/end dialogue TristanLK \"{{i18n:5295016.25}}\"",
+                "Tristan_NoGame": "pause 500/emote Alex 12/pause 1000/speak Alex \"{{i18n:Tristan_NoGame.0}}\"/pause 500/faceDirection Alex 0/move Alex 0 -3 0 true/pause 2500/end dialogue TristanLK \"{{i18n:Tristan_NoGame.1}}\""
+            }
+        },
+        //Changes schedules on Tuesdays, 9 and 23
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Shane",
+            "When": {
+                "HasSeenEvent|contains=5295016": true,
+                "HasSeenEvent |contains=191393": false
+            },
+            "Entries": {
+                "9": "700 JojaMart 9 17 2 shane_work/1230 JojaMart 5 13 2 shane_work/1330 JojaMart 21 16 2 shane_work/1430 JojaMart 25 12 2 shane_work/1530 JojaMart 17 12 2 shane_work/1630 JojaMart 7 25 1/1700 EastScarp_AideenHouse 18 22 1/2000 EastScarp_AideenHouse 6 20 1/2300 EastScarp_AideenHouse 22 4 1 shane_sleep",
+                "23": "GOTO 9"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Shane",
+            "When": {
+                "HasSeenEvent|contains=5295016": true,
+                "HasSeenEvent |contains=191393": true
+            },
+            "Entries": {
+                "9": "900 AnimalShop 24 17 1/1000 AnimalShop 24 15 0/1100 AnimalShop 24 5 0/1200 AnimalShop 5 14 2/1300 Saloon 11 20 0/1600 EastScarp_AideenHouse 18 22 1 \"Strings\\schedules\\Shane:TristanHouse_{{Random:ST1, ST2, ST3 |key=dinner}}/2000 EastScarp_AideenHouse 6 20 1 \"Strings\\schedules\\Shane:TristanHouse_{{Random:ST4, ST5, ST6 |key=game}}\"/2300 EastScarp_AideenHouse 22 4 1 shane_sleep",
+                "23": "GOTO 9"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Shane",
+            "When": {
+                "HasSeenEvent|contains=5295016": true,
+                "HasSeenEvent |contains=191393": true,
+                "HasMod": "tenthousandcats.ImmersiveCShane",
+                "Weather": "Rain, Storm"
+            },
+            "Entries": {
+                "9": "700 AnimalShop 24 15 0/850 AnimalShop 24 5 0/1200 AnimalShop 24 15 0/1600 EastScarp_AideenHouse 18 22 1 \"Strings\\schedules\\Shane:TristanHouse_{{Random:ST1, ST2, ST3 |key=dinner}}\"/2000 EastScarp_AideenHouse 6 20 1 \"Strings\\schedules\\Shane:TristanHouse_{{Random:ST4, ST5, ST6 |key=game}}\"/2300 EastScarp_AideenHouse 22 4 1 shane_sleep",
+                "23": "GOTO 9"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/Shane",
+            "When": {
+                "HasSeenEvent|contains=5295016": true,
+                "HasSeenEvent |contains=191393": true,
+                "HasMod": "tenthousandcats.ImmersiveCShane",
+                "Weather": "Sun,Wind"
+            },
+            "Entries": {
+                "9": "700 AnimalShop 24 15 0/850 AnimalShop 12 14 2/1600 EastScarp_AideenHouse 18 22 1 \"Strings\\schedules\\Shane:TristanHouse_{{Random:ST1, ST2, ST3 |key=dinner}}\"/2000 EastScarp_AideenHouse 6 20 1 \"Strings\\schedules\\Shane:TristanHouse_{{Random:ST4, ST5, ST6 |key=game}}\"/2300 EastScarp_AideenHouse 22 4 1 shane_sleep",
+                "23": "GOTO 9"
+            }
+        },
+        {
+            "LogName": "Schedule",
+            "Action": "EditData",
+            "Target": "Characters/schedules/TristanLK",
+            "When": {
+                "HasSeenEvent|contains=5295016": true
+            },
+            "Entries": {
+                "9": "800 EastScarp_AideenHouse 20 19 0/1100 EastScarp_Village 26 60 2/1200 EastScarp_Village 30 117 2/1400 EastScarp_Village 55 40 2 TristanLK_knit/1500 EastScarp_AideenHouse 20 19 0/1900 EastScarp_AideenHouse 19 20 2 \"Strings\\schedules\\TristanLK:TristanHouse_{{Random:ST1, ST2, ST3 |key=dinner}}\"/2000 EastScarp_AideenHouse 7 19 \"Strings\\schedules\\TristanLK:TristanHouse_{{Random:ST4, ST5, ST6 |key=game}}\"/2300 EastScarp_AideenHouse 23 4 2 TristanLK_sleep",
+                "23": "GOTO 9"
+            }
+        },
+        {
+            "LogName": "Marnie Dialogue",
+            "Action": "EditData",
+            "Target": "Characters/Dialogue/Marnie",
+            "When": {
+                "HasSeenEvent|contains=5295016": true
+            },
+            "Entries": {
+                "winter_Fri10": "{{i18n:Dialogue.Marnie.Winter_Fri10}}"
+            }
+        },
+        {
+            "LogName": "Strings - Shane",
+            "Action": "EditData",
+            "Target": "Strings/schedules/Shane",
+            "Entries": {
+                "TristanHouse_ST1": "{{i18n:ScheduleDialogue.Shane.TristanHouse_ST1}}",
+                "TristanHouse_ST2": "{{i18n:ScheduleDialogue.Shane.TristanHouse_ST2}}",
+                "TristanHouse_ST3": "{{i18n:ScheduleDialogue.Shane.TristanHouse_ST3}}",
+                "TristanHouse_ST4": "{{i18n:ScheduleDialogue.Shane.TristanHouse_ST4}}",
+                "TristanHouse_ST5": "{{i18n:ScheduleDialogue.Shane.TristanHouse_ST5}}",
+                "TristanHouse_ST6": "{{i18n:ScheduleDialogue.Shane.TristanHouse_ST6}}",
+            }
+        },
+        {
+            "LogName": "Strings - Tristan",
+            "Action": "EditData",
+            "Target": "Strings/schedules/TristanLK",
+            "Entries": {
+                "TristanHouse_ST1": "{{i18n:ScheduleDialogue.Tristan.TristanHouse_ST1}}",
+                "TristanHouse_ST2": "{{i18n:ScheduleDialogue.Tristan.TristanHouse_ST2}}",
+                "TristanHouse_ST3": "{{i18n:ScheduleDialogue.Tristan.TristanHouse_ST3}}",
+                "TristanHouse_ST4": "{{i18n:ScheduleDialogue.Tristan.TristanHouse_ST4}}",
+                "TristanHouse_ST5": "{{i18n:ScheduleDialogue.Tristan.TristanHouse_ST5}}",
+                "TristanHouse_ST6": "{{i18n:ScheduleDialogue.Tristan.TristanHouse_ST6}}",
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/spring24",
+            "Entries": {
+              "TristanLK": "{{i18n:Festival.Tristan.FlowerDance.RH}}",
+            },
+            "When": {
+                "HasSeenEvent": "5295016"
+            }
+        },
+        {
+            "Action": "EditData",
+            "Target": "Data/Festivals/fall16",
+            "When": {
+                "HasSeenEvent": "5295016"
+            },
+            "TextOperations": [
+                {
+                    "Operation": "Append",
+                    "Target": [
+                        "Entries",
+                        "Set-Up_additionalCharacters"
+                    ],
+                    "Value": "TristanLK 39 73 3",
+                    "Delimiter": "/"
+                },
+            ]
+        }
+    ]
+}

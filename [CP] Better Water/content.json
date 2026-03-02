@@ -1,0 +1,560 @@
+{
+	"Format": "2.8.0",
+	"ConfigSchema": {
+		"Color": {
+		"AllowValues": "Teal, Blue, Bright, Dark, Disabled",
+		"Default": "Teal",
+        "Section": "Color and Transparency",
+		},
+		"Color Island": {
+		"AllowValues": "Island, Teal, Blue, Bright, Dark, Disabled",
+		"Default": "Island",
+        "Section": "Color and Transparency",
+		},
+		"Map Tiles Transparency": {
+		"AllowValues": "Mixed, Translucent, Semi-Opaque, Opaque, Disabled",
+		"Default": "Mixed",
+        "Section": "Color and Transparency",
+		},
+		"White water lines": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"White water lines Bath House": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Caves": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Caves White water lines": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Sewers": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Sewers White water lines": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Fountain": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Fountain White water lines": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Fill bridge holes": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Witch Swamp": {
+		"AllowValues": "Green, Blue, Brown, Disabled",
+		"Default": "Green",
+        "Section": "Extra",
+		},
+		"Mutant Bug Lair": {
+		"AllowValues": "Dark, Blue, Disabled",
+		"Default": "Dark",
+        "Section": "Extra",
+		},
+		"Desert": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Fish pond": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Extra",
+		},
+		"Caves mode": {
+		"AllowValues": "Default, Seasonal, Dirt",
+		"Default": "Default",
+        "Section": "Advanced",
+		},
+		"Waterfalls mode": {
+		"AllowValues": "Replace, Overlay",
+		"Default": "Replace",
+        "Section": "Advanced",
+		},
+		"Beach Farm sand": {
+		"AllowValues": "true, false",
+		"Default": "true",
+        "Section": "Advanced",
+		},
+	},
+	"DynamicTokens": [
+// Dynamic token to change water color animation on or outside island under a single logic
+	// Water color when on the island 
+		{
+		"Name": "watercolors",
+		"Value": "{{Color Island}}",
+		"When": {
+			"Color Island": "Island, Teal, Blue, Bright, Dark",
+			"LocationContext": "Island",
+			},
+		},
+	// Water color normally
+		{
+		"Name": "watercolors",
+		"Value": "{{Color}}",
+		"When": {"Color": "Teal, Blue, Bright, Dark"},
+		},
+// Dynamic token to change map tiles transparency with Mixed option
+	// Use the selected option if it's Translucent, Semi-Opaque or Opaque
+		// Translucent when Mixed option selected
+		{
+		"Name": "Transparencies_Mixed_Translucent",
+		"Value": "{{Map Tiles Transparency}}",
+		"When": {"Map Tiles Transparency": "Translucent, Semi-Opaque, Opaque"},
+		},
+		{
+		"Name": "Transparencies_Mixed_Translucent",
+		"Value": "Translucent",
+		"When": {"Map Tiles Transparency": "Mixed"},
+		},
+		// Semi-Opaque when Mixed option selected
+		{
+		"Name": "Transparencies_Mixed_SemiOpaque",
+		"Value": "{{Map Tiles Transparency}}",
+		"When": {"Map Tiles Transparency": "Translucent, Semi-Opaque, Opaque"},
+		},
+		{
+		"Name": "Transparencies_Mixed_SemiOpaque",
+		"Value": "Semi-Opaque",
+		"When": {"Map Tiles Transparency": "Mixed"},
+		},
+// Dynamic token to change caves under a single logic
+	// Default: uses Map Tiles Transparency
+		// the same for options Mixed, Translucent and Semi-Opaque
+		{
+		"Name": "CaveMode",
+		"Value": "mixed",
+		"When": {
+			"Caves": true,
+			"Map Tiles Transparency": "Mixed, Translucent, Semi-Opaque",
+			"Caves mode": "Default",
+			},
+		},
+		// opaque
+		{
+		"Name": "CaveMode",
+		"Value": "opaque",
+		"When": {
+			"Caves": true,
+			"Map Tiles Transparency": "Opaque",
+			"Caves mode": "Default",
+			},
+		},
+	// Dirt
+		{
+		"Name": "CaveMode",
+		"Value": "Dirt",
+		"When": {
+			"Caves": true,
+			"Caves mode": "Dirt"},
+		},
+	// Seasonal
+		{
+		"Name": "CaveMode",
+		"Value": "{{season}}",
+		"When": {
+			"Caves": true,
+			"Caves mode": "Seasonal"},
+		},
+	],
+	"Changes": [
+// Color option
+	// Water animation
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "LooseSprites/Cursors",
+		"FromFile": "assets/{{Target}}_{{watercolors}}.png",
+		"FromArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+		"ToArea": { "X": 0, "Y": 2000, "Width": 640, "Height": 256 },
+		"Update": "OnLocationChange",
+		"Priority": "Late+1",
+		},
+	// Waterfalls Replace
+		{
+		"Action": "EditImage",
+		"PatchMode": "Replace",
+		"Target": "Maps/fall_Waterfalls, Maps/summer_Waterfalls, Maps/spring_Waterfalls, Maps/winter_Waterfalls",
+		"FromFile": "assets/waterfalls/{{color}}/{{TargetWithoutPath}}.png",
+		"When": {
+			"Waterfalls mode": "Replace",
+			"Color": "Teal, Blue, Bright, Dark"
+			},
+		"Priority": "Late+1",
+		},
+		// Waterfalls Overlay
+			{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Maps/fall_Waterfalls, Maps/summer_Waterfalls, Maps/spring_Waterfalls, Maps/winter_Waterfalls",
+			"FromFile": "assets/waterfalls_overlay/{{color}}/{{TargetWithoutPath}}.png",
+			"When": {
+				"Waterfalls mode": "Overlay",
+				"Color": "Teal, Blue, Bright, Dark"
+				},
+			"Priority": "Late+1",
+			},
+	// Willy Boat water color
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/boatTunnelTiles",
+		"FromFile": "assets/other/boatTunnelTiles_{{color}}.png",
+		"When": {"Color": "Teal, Blue, Bright, Dark"},
+		"Priority": "Late+1",
+		},
+	// Town fountain
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_town, Maps/spring_town, Maps/summer_town",
+		"FromFile": "assets/extra_fountain/Town_{{season}}_{{color}}.png",
+		"When": {
+			"Season": "spring, summer, fall",
+			"Color": "Teal, Blue, Bright, Dark",
+			"fountain": true,
+			},
+		"Priority": "Late+1",
+		},
+	// Desert
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/DesertTiles",
+		"FromFile": "assets/other/Desert_{{color}}.png",
+		"When": {
+			"Color": "Teal, Blue, Bright, Dark",
+			"Desert": true,
+			},
+		"Priority": "Late+1",
+		},
+// Map tiles transparency
+	// beach
+	// {{season}}_beach
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_beach, Maps/spring_beach, Maps/summer_beach, Maps/winter_beach",
+		"FromFile": "assets/beach/{{Transparencies_Mixed_SemiOpaque}}_{{season}}.png",
+		"Priority": "Late+1",
+		},
+	// Beach Farm
+	// {{season}}_island_tilesheet_1
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_island_tilesheet_1, Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/winter_island_tilesheet_1",
+		"FromFile": "assets/island_tilesheet_1/{{Transparencies_Mixed_SemiOpaque}}_{{season}}.png",
+		"Priority": "Late+1",
+		},
+	// Outdoors
+		// outdoorsTileSheet
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/winter_outdoorsTileSheet",
+		"FromFile": "assets/outdoors/{{Transparencies_Mixed_Translucent}}/{{TargetWithoutPath}}.png",
+		"Priority": "Late+1",
+		},
+		// outdoorsTileSheet2
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_outdoorsTileSheet2, Maps/spring_outdoorsTileSheet2, Maps/summer_outdoorsTileSheet2, Maps/winter_outdoorsTileSheet2",
+		"FromFile": "assets/outdoors/{{Transparencies_Mixed_Translucent}}/{{TargetWithoutPath}}.png",
+		"Priority": "Late+1",
+		},
+	// Town
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_town, Maps/winter_town, Maps/summer_town, Maps/spring_town",
+		"FromFile": "assets/town/{{Transparencies_Mixed_Translucent}}_{{season}}.png",
+		"Priority": "Late+1",
+		},
+	// Ginger Island
+		// island_tilesheet_1
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/island_tilesheet_1",
+		"FromFile": "assets/ginger_island/island_tilesheet_1_{{Transparencies_Mixed_SemiOpaque}}.png",
+		"Priority": "Late+1",
+		},
+		// island_tilesheet_2
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/island_tilesheet_2",
+		"FromFile": "assets/ginger_island/island_tilesheet_2_{{Transparencies_Mixed_SemiOpaque}}.png",
+		"Priority": "Late+1",
+		},
+	// Caves
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/Mines/mine, Maps/Mines/mine_dangerous, Maps/Mines/mine_frost, Maps/Mines/mine_frost_dangerous, Maps/Mines/mine_lava, Maps/Mines/mine_lava_dangerous",
+		"FromFile": "assets/caves/{{CaveMode}}.png",
+		"FromArea": {"X": 48, "Y": 256, "Width": 128, "Height": 32},
+		"ToArea": {"X": 48, "Y": 256, "Width": 128, "Height": 32},
+		"When": {
+			"Caves": true,
+			"Caves mode": "Default, Dirt, Seasonal",
+			},
+		"Priority": "Late+1",
+		},
+		// Caves Ginger Island
+			{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Maps/island_tilesheet_2",
+			"FromFile": "assets/caves/{{CaveMode}}.png",
+			"FromArea": {"X": 192, "Y": 0, "Width": 112, "Height": 32},
+			"ToArea": {"X": 192, "Y": 0, "Width": 112, "Height": 32},
+			"When": {
+				"Caves": true,
+				"Caves mode": "Default, Dirt, Seasonal",
+				},
+			"Priority": "Late+1",
+			},
+		// Caves Daisyniko's
+			{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Maps/cave_daisyextras",
+			"FromFile": "assets/caves/{{CaveMode}}.png",
+			"FromArea": {"X": 48, "Y": 48, "Width": 272, "Height": 80},
+			"ToArea": {"X": 48, "Y": 48, "Width": 272, "Height": 80},
+			"When": {
+				"Caves": true,
+				"Caves mode": "Default, Dirt, Seasonal",
+				},
+			"Priority": "Late+1",
+			},
+	// Mod compatibility option Beach Farm Sand
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_island_tilesheet_1, Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/winter_island_tilesheet_1",
+		"FromFile": "assets/island_tilesheet_1_farmsand/{{Transparencies_Mixed_SemiOpaque}}_{{season}}.png",
+		"When": {"Beach Farm Sand": true,},
+		"Priority": "Late+1",
+		},
+// New water white lines detail
+	// Beach extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_beach, Maps/spring_beach, Maps/summer_beach, Maps/winter_beach",
+		"FromFile": "assets/extra_foam/beach_{{season}}.png",
+		"When": {"White water lines": true,},
+		"Priority": "Late+1",
+		},
+	// Beach farm extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_island_tilesheet_1, Maps/spring_island_tilesheet_1, Maps/summer_island_tilesheet_1, Maps/winter_island_tilesheet_1",
+		"FromFile": "assets/extra_foam/bfarm_{{season}}.png",
+		"When": {"White water lines": true,},
+		"Priority": "Late+1",
+		},
+	// Outdoors extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/winter_outdoorsTileSheet",
+		"FromFile": "assets/extra_foam/Outdoors_{{season}}.png",
+		"When": {"White water lines": true,},
+		"Priority": "Late+1",
+		},
+	// Outdoors Bath House extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/winter_outdoorsTileSheet",
+		"FromFile": "assets/extra_foam/bathhouse_{{season}}.png",
+		"When": {
+			"Season": "spring, summer, fall",
+			"White water lines Bath House": true,
+			"HasMod |contains=Elle.TownBuildings": false,
+			"HasMod |contains=Gweniaczek.WayBackPT": false,},
+		"Priority": "Late+1",
+		},
+	// Town extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_town, Maps/winter_town, Maps/summer_town, Maps/spring_town",
+		"FromFile": "assets/extra_foam/Town_{{season}}.png",
+		"When": {"White water lines": true,},
+		"Priority": "Late+1",
+		},
+	// Ginger extra white lines detail
+		// island_tilesheet_1
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/island_tilesheet_1",
+		"FromFile": "assets/extra_foam/island_tilesheet_1.png",
+		"When": {"White water lines": true,},
+		"Priority": "Late+1",
+		},
+		// island_tilesheet_2
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/island_tilesheet_2",
+		"FromFile": "assets/extra_foam/island_tilesheet_2.png",
+		"When": {"White water lines": true,},
+		"Priority": "Late+1",
+		},
+	// Fountain extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_town, Maps/summer_town, Maps/spring_town",
+		"FromFile": "assets/extra_foam/fountain_{{season}}.png",
+		"When": {
+			"Season": "spring, summer, fall",
+			"Fountain White water lines": true,},
+		"Priority": "Late-1",
+		},
+	// Sewer extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/SewerTiles",
+		"FromFile": "assets/extra_foam/SewerTiles.png",
+		"When": {"Sewers White water lines": true,},
+		"Priority": "Late-1",
+		},
+	// Mines extra white lines detail
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/Mines/mine, Maps/Mines/mine_dangerous, Maps/Mines/mine_frost, Maps/Mines/mine_frost_dangerous",
+		"FromFile": "assets/caves/whitelines.png",
+		"FromArea": {"X": 48, "Y": 240, "Width": 144, "Height": 48},
+		"ToArea": {"X": 48, "Y": 240, "Width": 144, "Height": 48},
+		"When": {"Caves White water lines": true,},
+		"Priority": "Late+1",
+		},
+			// Mines island_tilesheet_2
+			{
+			"Action": "EditImage",
+			"PatchMode": "Overlay",
+			"Target": "Maps/island_tilesheet_2",
+			"FromFile": "assets/caves/whitelines.png",
+			"FromArea": {"X": 144, "Y": 48, "Width": 48, "Height": 16},
+			"ToArea": {"X": 144, "Y": 48, "Width": 48, "Height": 16},
+			"When": {"Caves White water lines": true,},
+			"Priority": "Late+1",
+			},
+// Fill bridge holes option
+	// Beach extra fill hole
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_beach, Maps/spring_beach, Maps/summer_beach, Maps/winter_beach",
+		"FromFile": "assets/extra_holes/beach.png",
+		"When": {"fill bridge holes": true,},
+		"Priority": "Late+1",
+		},
+	// Outdoors extra fill hole
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/fall_outdoorsTileSheet, Maps/spring_outdoorsTileSheet, Maps/summer_outdoorsTileSheet, Maps/winter_outdoorsTileSheet",
+		"FromFile": "assets/extra_holes/outdoors.png",
+		"When": {"fill bridge holes": true,},
+		"Priority": "Late+1",
+		},
+// Witch Swamp
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/witchSwampTiles",
+		"FromFile": "assets/witchswamptiles/{{Witch Swamp}}.png",
+		"When": {"Witch Swamp": "blue, brown, green"},
+		"Priority": "Late-1",
+		},
+// Mutant Bug Lair
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/bugLandTiles",
+		"FromFile": "assets/other/bugLandTiles_{{Mutant Bug Lair}}.png",
+		"When": {"Mutant Bug Lair": "dark, blue",},
+		"Priority": "Late-1",
+		}, 
+// Sewers
+		{
+		"Action": "EditImage",
+		"PatchMode": "Overlay",
+		"Target": "Maps/SewerTiles",
+		"FromFile": "assets/other/SewerTiles.png",
+		"When": {"Sewers": true,},
+		"Priority": "Late-1",
+		},
+// Fish pond
+        {
+        "Action": "EditImage",
+        "Target": "Buildings/Fish Pond",
+        "FromFile": "assets/other/pond.png",
+		"PatchMode": "Overlay",
+		"When": {"Fish pond": true,},
+		"Priority": "Late-1",
+		},
+// MODS:
+	// RDV waterfalls
+		{
+		"Action": "EditImage",
+		"Target": "Maps/fall_zridgeside, Maps/summer_zridgeside, Maps/spring_zridgeside, Maps/winter_zridgeside",
+		"FromFile": "assets/mods/rsv/w_{{season}}_{{color}}.png",
+		"PatchMode": "Overlay",
+		"When": {"Color": "Teal, Blue, Bright, Dark"},
+		"Priority": "Late+1",
+		},
+		// RDV fountain
+			{
+			"Action": "EditImage",
+			"Target": "Maps/spring_zrsvbettersquare, Maps/summer_zrsvbettersquare, Maps/fall_zrsvbettersquare, Maps/winter_zrsvbettersquare",
+			"FromFile": "assets/mods/rsv/fountain/f_{{season}}_{{color}}.png",
+			"PatchMode": "Overlay",
+			"When": {"Color": "Teal, Blue, Bright, Dark"},
+			"Priority": "Late+1",
+			},
+	// Daisyniko's Tilesheets
+		{
+		"Action": "EditImage",
+		"Target": "Maps/spring_daisyextras, Maps/summer_daisyextras, Maps/fall_daisyextras, Maps/winter_daisyextras",
+		"FromFile": "assets/mods/daisyneko/w_{{season}}_{{color}}.png",
+		"FromArea": { "X": 64, "Y": 0, "Width": 384, "Height": 672 },
+		"ToArea": { "X": 64, "Y": 0, "Width": 384, "Height": 672 },
+		"PatchMode": "Overlay",
+		"When": {"Color": "Teal, Blue, Bright, Dark"},
+		"Priority": "Late+1",
+		}
+	]
+}
