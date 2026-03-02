@@ -1,0 +1,10 @@
+{
+  "gmcm.enableLogs.name": "Debug- / Info-Logs aktivieren",
+  "gmcm.enableLogs.desc": "Wenn deaktiviert, werden nur Warnungen und Fehler protokolliert.",
+
+  "gmcm.enableSyncKey.name": "Sync-Hotkey aktivieren",
+  "gmcm.enableSyncKey.desc": "Wenn deaktiviert, ist der manuelle Sync-Hotkey vollständig ausgeschaltet. Automatischer Sync beim Laden bleibt aktiv.",
+
+  "gmcm.syncKey.name": "Sync-Hotkey",
+  "gmcm.syncKey.desc": "Hotkey zum manuellen Synchronisieren der Tokens aus der Remapping-Konfiguration."
+}
