@@ -186,43 +186,68 @@ switch ($packChoice) {
 }
 
 Write-Host ""
+
+$modsVersionFile = Join-Path $modsPath ".mod-version"
+$isFirstInstall = -not (Test-Path $modsVersionFile)
+
+# Check if already up to date
+if (-not $isFirstInstall) {
+    $versionContent = Get-Content $modsVersionFile -Raw
+    $installedBranch = if ($versionContent -match 'branch=(.+)') { $Matches[1].Trim() } else { "" }
+    $installedCommit = if ($versionContent -match 'commit=(.+)') { $Matches[1].Trim() } else { "" }
+
+    if ($installedBranch -eq $branch) {
+        Write-Host "Checking for updates..." -ForegroundColor Yellow
+        try {
+            [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+            $apiUrl = "https://api.github.com/repos/UmushiUmushi/StudioSVModded1/commits/$branch"
+            $response = Invoke-RestMethod -Uri $apiUrl -UseBasicParsing -ErrorAction Stop
+            $remoteCommit = $response.sha
+        } catch {
+            $remoteCommit = ""
+        }
+
+        if ($remoteCommit -and $remoteCommit -eq $installedCommit) {
+            Write-Host ""
+            Write-Host "========================================" -ForegroundColor Green
+            Write-Host "  Already up to date!" -ForegroundColor Green
+            Write-Host "========================================" -ForegroundColor Green
+            Write-Host ""
+            Write-Host "Mod pack: $branch" -ForegroundColor White
+            Write-Host "Location: $modsPath" -ForegroundColor White
+            Write-Host ""
+            Read-Host "Press Enter to exit"
+            exit 0
+        }
+    }
+}
+
 Write-Host "Installing '$branch' mod pack to: $modsPath" -ForegroundColor Cyan
 
-# Backup existing Mods folder
+# Backup on first install (no .mod-version = user had manually installed mods)
 $backupPath = $null
-if (Test-Path $modsPath) {
-    $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-    $backupPath = Join-Path $svPath "Mods_backup_$timestamp.zip"
-    Write-Host "Backing up existing Mods folder to zip..." -ForegroundColor Yellow
-    $zipJob = Start-Job -ScriptBlock {
-        param($src, $dst)
-        Add-Type -AssemblyName System.IO.Compression.FileSystem
-        [System.IO.Compression.ZipFile]::CreateFromDirectory($src, $dst)
-    } -ArgumentList $modsPath, $backupPath
-    $spinCharsBackup = @('|','/','-','\')
-    $spinIdxBackup = 0
-    while ($zipJob.State -eq 'Running') {
-        Write-Host "`r  $($spinCharsBackup[$spinIdxBackup % 4]) Zipping..." -NoNewline -ForegroundColor DarkGray
-        $spinIdxBackup++
-        Start-Sleep -Milliseconds 300
+if ($isFirstInstall -and (Test-Path $modsPath)) {
+    $hasExistingMods = @(Get-ChildItem -Path $modsPath -Force -ErrorAction SilentlyContinue).Count -gt 0
+    if ($hasExistingMods) {
+        $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
+        $backupPath = Join-Path $svPath "Mods_backup_$timestamp.zip"
+        Write-Host "Backing up existing Mods folder to zip..." -ForegroundColor Yellow
+        $zipJob = Start-Job -ScriptBlock {
+            param($src, $dst)
+            Add-Type -AssemblyName System.IO.Compression.FileSystem
+            [System.IO.Compression.ZipFile]::CreateFromDirectory($src, $dst)
+        } -ArgumentList $modsPath, $backupPath
+        $spinCharsBackup = @('|','/','-','\')
+        $spinIdxBackup = 0
+        while ($zipJob.State -eq 'Running') {
+            Write-Host "`r  $($spinCharsBackup[$spinIdxBackup % 4]) Zipping..." -NoNewline -ForegroundColor DarkGray
+            $spinIdxBackup++
+            Start-Sleep -Milliseconds 300
+        }
+        Receive-Job $zipJob -ErrorAction Stop
+        Remove-Job $zipJob
+        Write-Host "`r  Backup saved: $backupPath                    " -ForegroundColor DarkGray
     }
-    Receive-Job $zipJob -ErrorAction Stop
-    Remove-Job $zipJob
-    Write-Host "`r  Backup saved: $backupPath                    " -ForegroundColor DarkGray
-
-    Write-Host "Clearing existing Mods folder..." -ForegroundColor Yellow
-    $clearItems = @(Get-ChildItem -Path $modsPath -Force)
-    $clearTotal = $clearItems.Count
-    $clearCurrent = 0
-    foreach ($item in $clearItems) {
-        $clearCurrent++
-        $pct = [math]::Floor(($clearCurrent / $clearTotal) * 100)
-        $barLen = [math]::Floor($pct / 2)
-        $bar = ('#' * $barLen).PadRight(50)
-        Write-Host "`r  [$bar] $pct% - Removing: $($item.Name)                    " -NoNewline -ForegroundColor DarkGray
-        Remove-Item -Path $item.FullName -Recurse -Force
-    }
-    Write-Host ""
 }
 
 # Clone the repo (shallow, single branch for speed)
@@ -256,34 +281,34 @@ Remove-Job $cloneJob
 if (-not (Test-Path (Join-Path $tempClone ".git"))) {
     Write-Host "ERROR: Failed to download mods." -ForegroundColor Red
     Write-Host ($cloneOutput | Out-String) -ForegroundColor Red
-    # Restore backup if we have one
-    if ($backupPath -and (Test-Path $backupPath)) {
-        Get-ChildItem -Path $modsPath -Force -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
-        [System.IO.Compression.ZipFile]::ExtractToDirectory($backupPath, $modsPath)
-        Write-Host "Restored your original Mods folder from backup." -ForegroundColor Yellow
-    }
     Read-Host "Press Enter to exit"
     exit 1
 }
 Write-Host "  Download complete!" -ForegroundColor Green
 
-# Copy mods to Stardew Valley
+# Sync mods using robocopy (only copies changed files, removes deleted ones)
 New-Item -ItemType Directory -Path $modsPath -Force | Out-Null
 
-# Copy all mod folders (skip git metadata and deploy scripts)
-$skipItems = @(".git", ".gitignore", ".gitattributes", "deploy-mods.ps1", "deploy-mods.sh", "setup.bat", "setup.command")
-$modFolders = @(Get-ChildItem -Path $tempClone -Force | Where-Object { $skipItems -notcontains $_.Name })
-$total = $modFolders.Count
-$current = 0
-foreach ($mod in $modFolders) {
-    $current++
-    $pct = [math]::Floor(($current / $total) * 100)
-    $barLen = [math]::Floor($pct / 2)
-    $bar = ('#' * $barLen).PadRight(50)
-    Write-Host "`r  [$bar] $pct% - $($mod.Name)" -NoNewline -ForegroundColor Cyan
-    Copy-Item -Path $mod.FullName -Destination $modsPath -Recurse -Force
+Write-Host "Syncing mods..." -ForegroundColor Yellow
+$robocopyExcludes = @(".git", ".gitignore", ".gitattributes", "deploy-mods.ps1", "deploy-mods.sh", "setup.bat", "setup.command", ".mod-version")
+$roboArgs = @($tempClone, $modsPath, "/MIR", "/NFL", "/NDL", "/NJH", "/NJS", "/NP")
+$roboArgs += "/XD"
+$roboArgs += ".git"
+$roboArgs += "/XF"
+$roboArgs += $robocopyExcludes
+$roboResult = & robocopy @roboArgs
+# Robocopy exit codes: 0 = no changes, 1 = files copied, 2 = extras deleted, 3 = both. 8+ = error
+if ($LASTEXITCODE -ge 8) {
+    Write-Host "WARNING: Some files may not have synced correctly." -ForegroundColor Yellow
 }
-Write-Host ""
+Write-Host "  Sync complete!" -ForegroundColor Green
+
+# Get the commit hash from the cloned repo
+$commitHash = (git -C $tempClone rev-parse HEAD 2>$null)
+if (-not $commitHash) { $commitHash = "unknown" }
+
+# Write version marker
+Set-Content -Path $modsVersionFile -Value "branch=$branch`ncommit=$commitHash" -Force
 
 # Clean up temp clone
 Remove-Item -Recurse -Force $tempClone -ErrorAction SilentlyContinue
