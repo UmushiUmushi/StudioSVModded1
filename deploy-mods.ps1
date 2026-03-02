@@ -11,7 +11,8 @@ if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdenti
 
 $ErrorActionPreference = "Stop"
 
-$RepoUrl = "https://github.com/UmushiUmushi/StudioSVModded1.git"
+$RepoOwner = "UmushiUmushi"
+$RepoName = "StudioSVModded1"
 
 # ---- Functions ----
 
@@ -61,34 +62,6 @@ function Show-FolderPicker {
         return $dialog.SelectedPath
     }
     return $null
-}
-
-function Test-GitInstalled {
-    try {
-        $null = git --version 2>&1
-        return $true
-    } catch {
-        return $false
-    }
-}
-
-function Install-GitPortable {
-    param([string]$TempDir)
-
-    $gitZipUrl = "https://github.com/git-for-windows/git/releases/download/v2.47.1.windows.2/MinGit-2.47.1.2-64-bit.zip"
-    $gitZip = Join-Path $TempDir "mingit.zip"
-    $gitDir = Join-Path $TempDir "mingit"
-
-    Write-Host "Downloading portable Git..." -ForegroundColor Yellow
-    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    Invoke-WebRequest -Uri $gitZipUrl -OutFile $gitZip -UseBasicParsing
-
-    Write-Host "Extracting Git..." -ForegroundColor Yellow
-    Expand-Archive -Path $gitZip -DestinationPath $gitDir -Force
-    Remove-Item $gitZip -Force
-
-    $env:PATH = (Join-Path $gitDir "cmd") + ";" + $env:PATH
-    return $gitDir
 }
 
 # ---- Main ----
@@ -174,35 +147,35 @@ Write-Host ""
 $modsVersionFile = Join-Path $modsPath ".mod-version"
 $isFirstInstall = -not (Test-Path $modsVersionFile)
 
+# Get latest commit hash from GitHub API
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+$remoteCommit = ""
+try {
+    $apiUrl = "https://api.github.com/repos/$RepoOwner/$RepoName/commits/$branch"
+    $response = Invoke-RestMethod -Uri $apiUrl -UseBasicParsing -ErrorAction Stop
+    $remoteCommit = $response.sha
+} catch {
+    $remoteCommit = ""
+}
+
 # Check if already up to date
 if (-not $isFirstInstall) {
     $versionContent = Get-Content $modsVersionFile -Raw
     $installedBranch = if ($versionContent -match 'branch=(.+)') { $Matches[1].Trim() } else { "" }
     $installedCommit = if ($versionContent -match 'commit=(.+)') { $Matches[1].Trim() } else { "" }
 
-    if ($installedBranch -eq $branch) {
+    if ($installedBranch -eq $branch -and $remoteCommit -and $remoteCommit -eq $installedCommit) {
         Write-Host "Checking for updates..." -ForegroundColor Yellow
-        try {
-            [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-            $apiUrl = "https://api.github.com/repos/UmushiUmushi/StudioSVModded1/commits/$branch"
-            $response = Invoke-RestMethod -Uri $apiUrl -UseBasicParsing -ErrorAction Stop
-            $remoteCommit = $response.sha
-        } catch {
-            $remoteCommit = ""
-        }
-
-        if ($remoteCommit -and $remoteCommit -eq $installedCommit) {
-            Write-Host ""
-            Write-Host "========================================" -ForegroundColor Green
-            Write-Host "  Already up to date!" -ForegroundColor Green
-            Write-Host "========================================" -ForegroundColor Green
-            Write-Host ""
-            Write-Host "Mod pack: $branch" -ForegroundColor White
-            Write-Host "Location: $modsPath" -ForegroundColor White
-            Write-Host ""
-            Read-Host "Press Enter to exit"
-            exit 0
-        }
+        Write-Host ""
+        Write-Host "========================================" -ForegroundColor Green
+        Write-Host "  Already up to date!" -ForegroundColor Green
+        Write-Host "========================================" -ForegroundColor Green
+        Write-Host ""
+        Write-Host "Mod pack: $branch" -ForegroundColor White
+        Write-Host "Location: $modsPath" -ForegroundColor White
+        Write-Host ""
+        Read-Host "Press Enter to exit"
+        exit 0
     }
 }
 
@@ -234,39 +207,26 @@ if ($isFirstInstall -and (Test-Path $modsPath)) {
     }
 }
 
-# Check for Git (only needed if we're actually downloading)
-$gitPortableDir = $null
-if (-not (Test-GitInstalled)) {
-    Write-Host "Git is not installed. Downloading a portable copy..." -ForegroundColor Yellow
-    $tempDir = Join-Path $env:TEMP "sv-mod-deploy"
-    if (-not (Test-Path $tempDir)) { New-Item -ItemType Directory -Path $tempDir -Force | Out-Null }
-    try {
-        $gitPortableDir = Install-GitPortable -TempDir $tempDir
-    } catch {
-        Write-Host "ERROR: Failed to download Git. Please install Git manually from https://git-scm.com" -ForegroundColor Red
-        Write-Host $_.Exception.Message -ForegroundColor Red
-        Read-Host "Press Enter to exit"
-        exit 1
-    }
-}
-
-# Clone the repo (shallow, single branch for speed)
-$tempClone = Join-Path $env:TEMP "sv-mod-deploy-clone"
+# Download the branch as a zip from GitHub
+$tempDir = Join-Path $env:TEMP "sv-mod-deploy"
+if (-not (Test-Path $tempDir)) { New-Item -ItemType Directory -Path $tempDir -Force | Out-Null }
+$tempZip = Join-Path $tempDir "mods.zip"
+$tempClone = Join-Path $tempDir "extract"
 if (Test-Path $tempClone) { Remove-Item -Recurse -Force $tempClone }
 
+$zipUrl = "https://github.com/$RepoOwner/$RepoName/archive/refs/heads/$branch.zip"
 Write-Host "Downloading mods (this may take a few minutes)..." -ForegroundColor Yellow
 Write-Host ""
 
-# Run git clone and show a spinner
+$downloadJob = Start-Job -ScriptBlock {
+    param($url, $outFile)
+    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+    Invoke-WebRequest -Uri $url -OutFile $outFile -UseBasicParsing
+} -ArgumentList $zipUrl, $tempZip
+
 $spinChars = @('|','/','-','\')
 $spinIdx = 0
-$cloneJob = Start-Job -ScriptBlock {
-    param($url, $br, $dest)
-    & git clone --depth 1 --branch $br --single-branch $url $dest 2>&1
-    $LASTEXITCODE
-} -ArgumentList $RepoUrl, $branch, $tempClone
-
-while ($cloneJob.State -eq 'Running') {
+while ($downloadJob.State -eq 'Running') {
     Write-Host "`r  $($spinChars[$spinIdx % 4]) Downloading..." -NoNewline -ForegroundColor DarkGray
     $spinIdx++
     Start-Sleep -Milliseconds 300
@@ -274,26 +234,33 @@ while ($cloneJob.State -eq 'Running') {
 Write-Host "`r                                                                    " -NoNewline
 Write-Host "`r" -NoNewline
 
-$cloneOutput = Receive-Job $cloneJob
-Remove-Job $cloneJob
-
-# Check if clone actually produced files
-if (-not (Test-Path (Join-Path $tempClone ".git"))) {
+try {
+    Receive-Job $downloadJob -ErrorAction Stop
+} catch {
+    Remove-Job $downloadJob
     Write-Host "ERROR: Failed to download mods." -ForegroundColor Red
-    Write-Host ($cloneOutput | Out-String) -ForegroundColor Red
+    Write-Host $_.Exception.Message -ForegroundColor Red
     Read-Host "Press Enter to exit"
     exit 1
 }
+Remove-Job $downloadJob
+
+# Extract the zip
+Write-Host "  Extracting..." -ForegroundColor DarkGray
+Add-Type -AssemblyName System.IO.Compression.FileSystem
+[System.IO.Compression.ZipFile]::ExtractToDirectory($tempZip, $tempClone)
+Remove-Item $tempZip -Force
+
+# GitHub zips extract to a subfolder like "RepoName-branch/"
+$extractedFolder = @(Get-ChildItem -Path $tempClone -Directory)[0].FullName
 Write-Host "  Download complete!" -ForegroundColor Green
 
 # Sync mods using robocopy (only copies changed files, removes deleted ones)
 New-Item -ItemType Directory -Path $modsPath -Force | Out-Null
 
 Write-Host "Syncing mods..." -ForegroundColor Yellow
-$robocopyExcludes = @(".git", ".gitignore", ".gitattributes", "deploy-mods.ps1", "deploy-mods.sh", "setup.bat", "setup.command", ".mod-version")
-$roboArgs = @($tempClone, $modsPath, "/MIR", "/NFL", "/NDL", "/NJH", "/NJS", "/NP")
-$roboArgs += "/XD"
-$roboArgs += ".git"
+$robocopyExcludes = @(".gitignore", ".gitattributes", "deploy-mods.ps1", "deploy-mods.sh", "setup.bat", "setup.command", ".mod-version")
+$roboArgs = @($extractedFolder, $modsPath, "/MIR", "/NFL", "/NDL", "/NJH", "/NJS", "/NP")
 $roboArgs += "/XF"
 $roboArgs += $robocopyExcludes
 $roboResult = & robocopy @roboArgs
@@ -303,20 +270,12 @@ if ($LASTEXITCODE -ge 8) {
 }
 Write-Host "  Sync complete!" -ForegroundColor Green
 
-# Get the commit hash from the cloned repo
-$commitHash = (git -C $tempClone rev-parse HEAD 2>$null)
-if (-not $commitHash) { $commitHash = "unknown" }
-
-# Write version marker
+# Write version marker (commit hash from API, or "unknown" if API failed)
+$commitHash = if ($remoteCommit) { $remoteCommit } else { "unknown" }
 Set-Content -Path $modsVersionFile -Value "branch=$branch`ncommit=$commitHash" -Force
 
-# Clean up temp clone
+# Clean up temp files
 Remove-Item -Recurse -Force $tempClone -ErrorAction SilentlyContinue
-
-# Clean up portable git if we downloaded it
-if ($gitPortableDir -and (Test-Path $gitPortableDir)) {
-    Remove-Item -Recurse -Force $gitPortableDir -ErrorAction SilentlyContinue
-}
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Green

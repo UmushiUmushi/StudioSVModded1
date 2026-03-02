@@ -7,7 +7,8 @@
 
 set -e
 
-REPO_URL="https://github.com/UmushiUmushi/StudioSVModded1.git"
+REPO_OWNER="UmushiUmushi"
+REPO_NAME="StudioSVModded1"
 
 # ---- Colors ----
 RED='\033[0;31m'
@@ -130,13 +131,6 @@ folder_picker() {
     echo "$result"
 }
 
-check_git() {
-    if command -v git &>/dev/null; then
-        return 0
-    fi
-    return 1
-}
-
 # ---- Main ----
 
 clear
@@ -234,27 +228,26 @@ if [ -f "$mods_version_file" ]; then
     is_first_install=false
 fi
 
+# Get latest commit hash from GitHub API
+remote_commit=$(curl -s "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/commits/$branch" 2>/dev/null | grep '"sha"' | head -1 | sed 's/.*"sha": *"\([^"]*\)".*/\1/')
+
 # Check if already up to date
 if [ "$is_first_install" = false ]; then
     installed_branch=$(grep '^branch=' "$mods_version_file" 2>/dev/null | cut -d= -f2)
     installed_commit=$(grep '^commit=' "$mods_version_file" 2>/dev/null | cut -d= -f2)
 
-    if [ "$installed_branch" = "$branch" ]; then
+    if [ "$installed_branch" = "$branch" ] && [ -n "$remote_commit" ] && [ "$remote_commit" = "$installed_commit" ]; then
         echo -e "${YELLOW}Checking for updates...${NC}"
-        remote_commit=$(curl -s "https://api.github.com/repos/UmushiUmushi/StudioSVModded1/commits/$branch" 2>/dev/null | grep '"sha"' | head -1 | sed 's/.*"sha": *"\([^"]*\)".*/\1/')
-
-        if [ -n "$remote_commit" ] && [ "$remote_commit" = "$installed_commit" ]; then
-            echo ""
-            echo -e "${GREEN}========================================${NC}"
-            echo -e "${GREEN}  Already up to date!${NC}"
-            echo -e "${GREEN}========================================${NC}"
-            echo ""
-            echo -e "Mod pack: $branch"
-            echo -e "Location: $mods_path"
-            echo ""
-            read -p "Press Enter to exit..."
-            exit 0
-        fi
+        echo ""
+        echo -e "${GREEN}========================================${NC}"
+        echo -e "${GREEN}  Already up to date!${NC}"
+        echo -e "${GREEN}========================================${NC}"
+        echo ""
+        echo -e "Mod pack: $branch"
+        echo -e "Location: $mods_path"
+        echo ""
+        read -p "Press Enter to exit..."
+        exit 0
     fi
 fi
 
@@ -262,7 +255,7 @@ echo -e "${CYAN}Installing '$branch' mod pack to: $mods_path${NC}"
 
 # Check dependencies (only needed if we're actually installing)
 missing_deps=()
-if ! check_git; then missing_deps+=("git"); fi
+if ! command -v unzip &>/dev/null; then missing_deps+=("unzip"); fi
 if ! command -v rsync &>/dev/null; then missing_deps+=("rsync"); fi
 if ! command -v zip &>/dev/null; then missing_deps+=("zip"); fi
 
@@ -270,13 +263,7 @@ if [ ${#missing_deps[@]} -gt 0 ]; then
     echo -e "${RED}ERROR: Missing required tools: ${missing_deps[*]}${NC}"
     echo ""
     if [ "$OS" = "Darwin" ]; then
-        if ! check_git; then
-            echo -e "${YELLOW}Installing Xcode Command Line Tools (includes Git)...${NC}"
-            echo -e "${YELLOW}A popup may appear - click 'Install' and wait for it to finish.${NC}"
-            xcode-select --install 2>/dev/null || true
-            echo ""
-        fi
-        echo -e "${YELLOW}For other tools, install Homebrew (https://brew.sh) then run:${NC}"
+        echo -e "${YELLOW}Install Homebrew (https://brew.sh) then run:${NC}"
         echo -e "  ${CYAN}brew install ${missing_deps[*]}${NC}"
     else
         echo -e "${YELLOW}Please install using your package manager:${NC}"
@@ -304,23 +291,35 @@ if [ "$is_first_install" = true ] && [ -d "$mods_path" ]; then
     fi
 fi
 
-# Clone the repo (shallow, single branch for speed)
-temp_clone="/tmp/sv-mod-deploy-clone"
-rm -rf "$temp_clone"
+# Download the branch as a zip from GitHub
+temp_dir="/tmp/sv-mod-deploy"
+mkdir -p "$temp_dir"
+temp_zip="$temp_dir/mods.zip"
+temp_extract="$temp_dir/extract"
+rm -rf "$temp_extract"
 
+zip_url="https://github.com/$REPO_OWNER/$REPO_NAME/archive/refs/heads/$branch.zip"
 echo -e "${YELLOW}Downloading mods (this may take a few minutes)...${NC}"
 echo ""
-git clone --depth 1 --branch "$branch" --single-branch --progress "$REPO_URL" "$temp_clone" 2>&1 | while IFS= read -r line; do
-    printf "\r  ${GRAY}%-80s${NC}" "$line"
+curl -L -# -o "$temp_zip" "$zip_url" 2>&1 | while IFS= read -r line; do
+    printf "\r  ${GRAY}%s${NC}" "$line"
 done
-clone_status=${PIPESTATUS[0]}
 echo ""
 
-if [ "$clone_status" -ne 0 ]; then
+if [ ! -f "$temp_zip" ] || [ ! -s "$temp_zip" ]; then
     echo -e "${RED}ERROR: Failed to download mods.${NC}"
     read -p "Press Enter to exit..."
     exit 1
 fi
+
+# Extract the zip
+echo -e "  ${GRAY}Extracting...${NC}"
+mkdir -p "$temp_extract"
+unzip -q -o "$temp_zip" -d "$temp_extract"
+rm -f "$temp_zip"
+
+# GitHub zips extract to a subfolder like "RepoName-branch/"
+extracted_folder=$(find "$temp_extract" -mindepth 1 -maxdepth 1 -type d | head -1)
 echo -e "  ${GREEN}Download complete!${NC}"
 
 # Sync mods using rsync (only copies changed files, removes deleted ones)
@@ -328,7 +327,6 @@ mkdir -p "$mods_path"
 
 echo -e "${YELLOW}Syncing mods...${NC}"
 rsync -a --delete \
-    --exclude='.git' \
     --exclude='.gitignore' \
     --exclude='.gitattributes' \
     --exclude='deploy-mods.ps1' \
@@ -336,17 +334,15 @@ rsync -a --delete \
     --exclude='setup.bat' \
     --exclude='setup.command' \
     --exclude='.mod-version' \
-    "$temp_clone/" "$mods_path/"
+    "$extracted_folder/" "$mods_path/"
 echo -e "  ${GREEN}Sync complete!${NC}"
 
-# Get the commit hash from the cloned repo
-commit_hash=$(git -C "$temp_clone" rev-parse HEAD 2>/dev/null || echo "unknown")
-
-# Write version marker
+# Write version marker (commit hash from API, or "unknown" if API failed)
+commit_hash="${remote_commit:-unknown}"
 printf "branch=%s\ncommit=%s\n" "$branch" "$commit_hash" > "$mods_version_file"
 
-# Clean up temp clone
-rm -rf "$temp_clone"
+# Clean up temp files
+rm -rf "$temp_extract"
 
 echo ""
 echo -e "${GREEN}========================================${NC}"
