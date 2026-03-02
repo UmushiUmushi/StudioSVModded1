@@ -101,22 +101,6 @@ Write-Host "  Stardew Valley Mod Deployer" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-# Check for Git
-$gitPortableDir = $null
-if (-not (Test-GitInstalled)) {
-    Write-Host "Git is not installed. Downloading a portable copy..." -ForegroundColor Yellow
-    $tempDir = Join-Path $env:TEMP "sv-mod-deploy"
-    if (-not (Test-Path $tempDir)) { New-Item -ItemType Directory -Path $tempDir -Force | Out-Null }
-    try {
-        $gitPortableDir = Install-GitPortable -TempDir $tempDir
-    } catch {
-        Write-Host "ERROR: Failed to download Git. Please install Git manually from https://git-scm.com" -ForegroundColor Red
-        Write-Host $_.Exception.Message -ForegroundColor Red
-        Read-Host "Press Enter to exit"
-        exit 1
-    }
-}
-
 # Find Stardew Valley
 Write-Host "Looking for Stardew Valley..." -ForegroundColor Yellow
 $found = @(Find-StardewValley)
@@ -247,6 +231,22 @@ if ($isFirstInstall -and (Test-Path $modsPath)) {
         Receive-Job $zipJob -ErrorAction Stop
         Remove-Job $zipJob
         Write-Host "`r  Backup saved: $backupPath                    " -ForegroundColor DarkGray
+    }
+}
+
+# Check for Git (only needed if we're actually downloading)
+$gitPortableDir = $null
+if (-not (Test-GitInstalled)) {
+    Write-Host "Git is not installed. Downloading a portable copy..." -ForegroundColor Yellow
+    $tempDir = Join-Path $env:TEMP "sv-mod-deploy"
+    if (-not (Test-Path $tempDir)) { New-Item -ItemType Directory -Path $tempDir -Force | Out-Null }
+    try {
+        $gitPortableDir = Install-GitPortable -TempDir $tempDir
+    } catch {
+        Write-Host "ERROR: Failed to download Git. Please install Git manually from https://git-scm.com" -ForegroundColor Red
+        Write-Host $_.Exception.Message -ForegroundColor Red
+        Read-Host "Press Enter to exit"
+        exit 1
     }
 }
 

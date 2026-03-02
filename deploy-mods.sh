@@ -145,28 +145,13 @@ echo -e "${CYAN}  Stardew Valley Mod Deployer${NC}"
 echo -e "${CYAN}========================================${NC}"
 echo ""
 
-# Check for Git
-if ! check_git; then
-    echo -e "${YELLOW}Git is not installed.${NC}"
-    echo ""
-    if [ "$OS" = "Darwin" ]; then
-        if xcode-select -p &>/dev/null; then
-            echo -e "${RED}ERROR: Git not found even though Xcode tools appear installed.${NC}"
-        else
-            echo -e "${YELLOW}Installing Xcode Command Line Tools (includes Git)...${NC}"
-            echo -e "${YELLOW}A popup may appear - click 'Install' and wait for it to finish.${NC}"
-            xcode-select --install 2>/dev/null || true
-            echo ""
-            echo -e "${YELLOW}After installation completes, please run this script again.${NC}"
-        fi
-    else
-        echo -e "${YELLOW}Please install Git using your package manager:${NC}"
-        echo -e "  Ubuntu/Debian: ${CYAN}sudo apt install git${NC}"
-        echo -e "  Fedora:        ${CYAN}sudo dnf install git${NC}"
-        echo -e "  Arch:          ${CYAN}sudo pacman -S git${NC}"
-        echo ""
-        echo -e "${YELLOW}Then run this script again.${NC}"
-    fi
+# Check for curl (needed for update check)
+if ! command -v curl &>/dev/null; then
+    echo -e "${RED}ERROR: curl is not installed.${NC}"
+    echo -e "${YELLOW}Please install it using your package manager:${NC}"
+    echo -e "  Ubuntu/Debian: ${CYAN}sudo apt install curl${NC}"
+    echo -e "  Fedora:        ${CYAN}sudo dnf install curl${NC}"
+    echo -e "  Arch:          ${CYAN}sudo pacman -S curl${NC}"
     echo ""
     read -p "Press Enter to exit..."
     exit 1
@@ -274,6 +259,37 @@ if [ "$is_first_install" = false ]; then
 fi
 
 echo -e "${CYAN}Installing '$branch' mod pack to: $mods_path${NC}"
+
+# Check dependencies (only needed if we're actually installing)
+missing_deps=()
+if ! check_git; then missing_deps+=("git"); fi
+if ! command -v rsync &>/dev/null; then missing_deps+=("rsync"); fi
+if ! command -v zip &>/dev/null; then missing_deps+=("zip"); fi
+
+if [ ${#missing_deps[@]} -gt 0 ]; then
+    echo -e "${RED}ERROR: Missing required tools: ${missing_deps[*]}${NC}"
+    echo ""
+    if [ "$OS" = "Darwin" ]; then
+        if ! check_git; then
+            echo -e "${YELLOW}Installing Xcode Command Line Tools (includes Git)...${NC}"
+            echo -e "${YELLOW}A popup may appear - click 'Install' and wait for it to finish.${NC}"
+            xcode-select --install 2>/dev/null || true
+            echo ""
+        fi
+        echo -e "${YELLOW}For other tools, install Homebrew (https://brew.sh) then run:${NC}"
+        echo -e "  ${CYAN}brew install ${missing_deps[*]}${NC}"
+    else
+        echo -e "${YELLOW}Please install using your package manager:${NC}"
+        echo -e "  Ubuntu/Debian: ${CYAN}sudo apt install ${missing_deps[*]}${NC}"
+        echo -e "  Fedora:        ${CYAN}sudo dnf install ${missing_deps[*]}${NC}"
+        echo -e "  Arch:          ${CYAN}sudo pacman -S ${missing_deps[*]}${NC}"
+    fi
+    echo ""
+    echo -e "${YELLOW}Then run this script again.${NC}"
+    echo ""
+    read -p "Press Enter to exit..."
+    exit 1
+fi
 
 # Backup on first install (no .mod-version = user had manually installed mods)
 backup_path=""
