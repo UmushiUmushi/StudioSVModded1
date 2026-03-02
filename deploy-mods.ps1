@@ -194,9 +194,21 @@ if (Test-Path $modsPath) {
     $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
     $backupPath = Join-Path $svPath "Mods_backup_$timestamp.zip"
     Write-Host "Backing up existing Mods folder to zip..." -ForegroundColor Yellow
-    Add-Type -AssemblyName System.IO.Compression.FileSystem
-    [System.IO.Compression.ZipFile]::CreateFromDirectory($modsPath, $backupPath)
-    Write-Host "  Backup saved: $backupPath" -ForegroundColor DarkGray
+    $zipJob = Start-Job -ScriptBlock {
+        param($src, $dst)
+        Add-Type -AssemblyName System.IO.Compression.FileSystem
+        [System.IO.Compression.ZipFile]::CreateFromDirectory($src, $dst)
+    } -ArgumentList $modsPath, $backupPath
+    $spinCharsBackup = @('|','/','-','\')
+    $spinIdxBackup = 0
+    while ($zipJob.State -eq 'Running') {
+        Write-Host "`r  $($spinCharsBackup[$spinIdxBackup % 4]) Zipping..." -NoNewline -ForegroundColor DarkGray
+        $spinIdxBackup++
+        Start-Sleep -Milliseconds 300
+    }
+    Receive-Job $zipJob -ErrorAction Stop
+    Remove-Job $zipJob
+    Write-Host "`r  Backup saved: $backupPath                    " -ForegroundColor DarkGray
 
     Write-Host "Clearing existing Mods folder..." -ForegroundColor Yellow
     $clearItems = @(Get-ChildItem -Path $modsPath -Force)
