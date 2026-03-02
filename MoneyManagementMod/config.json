@@ -3,7 +3,7 @@
   "RenderHUD": true,
   "ShowHUDInMenus": true,
   "HUDX": 0,
-  "HUDY": 200,
+  "HUDY": 250,
   "WithdrawFromPublicAccount": "Down, LeftStick + DPadDown",
   "DepositToPublicAccount": "Up, LeftStick + DPadUp",
   "IncreaseTransferAmount": "Left, LeftStick + DPadLeft",
