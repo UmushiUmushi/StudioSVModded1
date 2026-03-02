@@ -247,54 +247,15 @@ echo -e "${CYAN}Installing '$branch' mod pack to: $mods_path${NC}"
 # Backup existing Mods folder
 if [ -d "$mods_path" ]; then
     timestamp=$(date +"%Y%m%d_%H%M%S")
-    backup_path="$sv_path/Mods_backup_$timestamp"
-    echo -e "${YELLOW}Backing up existing Mods folder...${NC}"
-    mkdir -p "$backup_path"
-
-    backup_items=()
-    for item in "$mods_path"/*; do
-        [ -e "$item" ] && backup_items+=("$item")
-    done
-    for item in "$mods_path"/.*; do
-        name=$(basename "$item")
-        case "$name" in .|..) continue ;; *) backup_items+=("$item") ;; esac
-    done
-
-    backup_total=${#backup_items[@]}
-    backup_current=0
-    for item in "${backup_items[@]}"; do
-        backup_current=$((backup_current + 1))
-        name=$(basename "$item")
-        pct=$((backup_current * 100 / backup_total))
-        filled=$((pct / 2))
-        bar=$(printf '%0.s#' $(seq 1 $filled 2>/dev/null) 2>/dev/null)
-        printf "\r  ${GRAY}[%-50s] %3d%% - Backing up: %s${NC}                    " "$bar" "$pct" "$name"
-        cp -R "$item" "$backup_path/"
-    done
-    echo ""
+    backup_path="$sv_path/Mods_backup_$timestamp.zip"
+    echo -e "${YELLOW}Backing up existing Mods folder to zip...${NC}"
+    (cd "$mods_path" && zip -r -q "$backup_path" .)
+    echo -e "  ${GRAY}Backup saved: $backup_path${NC}"
 
     echo -e "${YELLOW}Clearing existing Mods folder...${NC}"
-    clear_items=()
-    for item in "$mods_path"/*; do
-        [ -e "$item" ] && clear_items+=("$item")
-    done
-    for item in "$mods_path"/.*; do
-        name=$(basename "$item")
-        case "$name" in .|..) continue ;; *) clear_items+=("$item") ;; esac
-    done
-
-    clear_total=${#clear_items[@]}
-    clear_current=0
-    for item in "${clear_items[@]}"; do
-        clear_current=$((clear_current + 1))
-        name=$(basename "$item")
-        pct=$((clear_current * 100 / clear_total))
-        filled=$((pct / 2))
-        bar=$(printf '%0.s#' $(seq 1 $filled 2>/dev/null) 2>/dev/null)
-        printf "\r  ${GRAY}[%-50s] %3d%% - Removing: %s${NC}                    " "$bar" "$pct" "$name"
-        rm -rf "$item"
-    done
-    echo ""
+    rm -rf "$mods_path"/*
+    rm -rf "$mods_path"/.[!.]*
+    echo -e "  ${GRAY}Done${NC}"
 fi
 
 # Clone the repo (shallow, single branch for speed)
@@ -312,9 +273,10 @@ echo ""
 if [ "$clone_status" -ne 0 ]; then
     echo -e "${RED}ERROR: Failed to download mods.${NC}"
     # Restore backup if we renamed
-    if [ -n "$backup_path" ] && [ -d "$backup_path" ]; then
-        mv "$backup_path" "$mods_path"
-        echo -e "${YELLOW}Restored your original Mods folder.${NC}"
+    if [ -n "$backup_path" ] && [ -f "$backup_path" ]; then
+        mkdir -p "$mods_path"
+        unzip -q -o "$backup_path" -d "$mods_path"
+        echo -e "${YELLOW}Restored your original Mods folder from backup.${NC}"
     fi
     read -p "Press Enter to exit..."
     exit 1
@@ -367,7 +329,7 @@ echo -e "${GREEN}========================================${NC}"
 echo ""
 echo -e "Mod pack: $branch"
 echo -e "Location: $mods_path"
-if [ -n "$backup_path" ] && [ -d "$backup_path" ]; then
+if [ -n "$backup_path" ] && [ -f "$backup_path" ]; then
     echo -e "Backup:   $backup_path"
 fi
 echo ""
