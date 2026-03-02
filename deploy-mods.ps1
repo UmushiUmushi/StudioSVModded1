@@ -52,6 +52,31 @@ function Find-StardewValley {
     return $candidates
 }
 
+function Invoke-WithSpinner {
+    param(
+        [scriptblock]$ScriptBlock,
+        [string]$SpinMessage,
+        [string]$DoneMessage,
+        [array]$ArgumentList = @()
+    )
+    $job = Start-Job -ScriptBlock $ScriptBlock -ArgumentList $ArgumentList
+    $spinChars = @('|','/','-','\')
+    $idx = 0
+    while ($job.State -eq 'Running') {
+        Write-Host "`r  $($spinChars[$idx % 4]) $SpinMessage" -NoNewline -ForegroundColor DarkGray
+        $idx++
+        Start-Sleep -Milliseconds 300
+    }
+    try {
+        Receive-Job $job -ErrorAction Stop
+    } catch {
+        Remove-Job $job
+        throw
+    }
+    Remove-Job $job
+    Write-Host "`r  $DoneMessage                                        " -ForegroundColor Green
+}
+
 function Show-FolderPicker {
     Add-Type -AssemblyName System.Windows.Forms
     $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
@@ -148,14 +173,21 @@ $modsVersionFile = Join-Path $modsPath ".mod-version"
 $isFirstInstall = -not (Test-Path $modsVersionFile)
 
 # Get latest commit hash from GitHub API
-[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+Write-Host "Checking for updates..." -ForegroundColor Yellow
 $remoteCommit = ""
 try {
     $apiUrl = "https://api.github.com/repos/$RepoOwner/$RepoName/commits/$branch"
-    $response = Invoke-RestMethod -Uri $apiUrl -UseBasicParsing -ErrorAction Stop
-    $remoteCommit = $response.sha
+    $apiResult = & curl.exe -s $apiUrl 2>$null
+    if ($apiResult) {
+        $remoteCommit = ($apiResult | ConvertFrom-Json).sha
+    }
 } catch {
     $remoteCommit = ""
+}
+if ($remoteCommit) {
+    Write-Host "  Update check complete." -ForegroundColor Green
+} else {
+    Write-Host "  Could not reach GitHub, will do full install." -ForegroundColor Yellow
 }
 
 # Check if already up to date
@@ -165,7 +197,6 @@ if (-not $isFirstInstall) {
     $installedCommit = if ($versionContent -match 'commit=(.+)') { $Matches[1].Trim() } else { "" }
 
     if ($installedBranch -eq $branch -and $remoteCommit -and $remoteCommit -eq $installedCommit) {
-        Write-Host "Checking for updates..." -ForegroundColor Yellow
         Write-Host ""
         Write-Host "========================================" -ForegroundColor Green
         Write-Host "  Already up to date!" -ForegroundColor Green
@@ -188,22 +219,12 @@ if ($isFirstInstall -and (Test-Path $modsPath)) {
     if ($hasExistingMods) {
         $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
         $backupPath = Join-Path $svPath "Mods_backup_$timestamp.zip"
-        Write-Host "Backing up existing Mods folder to zip..." -ForegroundColor Yellow
-        $zipJob = Start-Job -ScriptBlock {
+        Write-Host "Backing up existing Mods folder..." -ForegroundColor Yellow
+        Invoke-WithSpinner -SpinMessage "Creating backup zip..." -DoneMessage "Backup saved: $backupPath" -ArgumentList @($modsPath, $backupPath) -ScriptBlock {
             param($src, $dst)
             Add-Type -AssemblyName System.IO.Compression.FileSystem
             [System.IO.Compression.ZipFile]::CreateFromDirectory($src, $dst)
-        } -ArgumentList $modsPath, $backupPath
-        $spinCharsBackup = @('|','/','-','\')
-        $spinIdxBackup = 0
-        while ($zipJob.State -eq 'Running') {
-            Write-Host "`r  $($spinCharsBackup[$spinIdxBackup % 4]) Zipping..." -NoNewline -ForegroundColor DarkGray
-            $spinIdxBackup++
-            Start-Sleep -Milliseconds 300
         }
-        Receive-Job $zipJob -ErrorAction Stop
-        Remove-Job $zipJob
-        Write-Host "`r  Backup saved: $backupPath                    " -ForegroundColor DarkGray
     }
 }
 
@@ -215,67 +236,49 @@ $tempClone = Join-Path $tempDir "extract"
 if (Test-Path $tempClone) { Remove-Item -Recurse -Force $tempClone }
 
 $zipUrl = "https://github.com/$RepoOwner/$RepoName/archive/refs/heads/$branch.zip"
-Write-Host "Downloading mods (this may take a few minutes)..." -ForegroundColor Yellow
-Write-Host ""
-
-$downloadJob = Start-Job -ScriptBlock {
-    param($url, $outFile)
-    [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
-    Invoke-WebRequest -Uri $url -OutFile $outFile -UseBasicParsing
-} -ArgumentList $zipUrl, $tempZip
-
-$spinChars = @('|','/','-','\')
-$spinIdx = 0
-while ($downloadJob.State -eq 'Running') {
-    Write-Host "`r  $($spinChars[$spinIdx % 4]) Downloading..." -NoNewline -ForegroundColor DarkGray
-    $spinIdx++
-    Start-Sleep -Milliseconds 300
-}
-Write-Host "`r                                                                    " -NoNewline
-Write-Host "`r" -NoNewline
-
-try {
-    Receive-Job $downloadJob -ErrorAction Stop
-} catch {
-    Remove-Job $downloadJob
-    Write-Host "ERROR: Failed to download mods." -ForegroundColor Red
-    Write-Host $_.Exception.Message -ForegroundColor Red
+Write-Host "Downloading mods..." -ForegroundColor Yellow
+& curl.exe -L -# -o $tempZip $zipUrl
+if (-not (Test-Path $tempZip) -or (Get-Item $tempZip).Length -eq 0) {
+    Write-Host "  ERROR: Failed to download mods." -ForegroundColor Red
     Read-Host "Press Enter to exit"
     exit 1
 }
-Remove-Job $downloadJob
+Write-Host "  Download complete!" -ForegroundColor Green
 
 # Extract the zip
-Write-Host "  Extracting..." -ForegroundColor DarkGray
+Write-Host "Extracting mods..." -ForegroundColor Yellow
 Add-Type -AssemblyName System.IO.Compression.FileSystem
 [System.IO.Compression.ZipFile]::ExtractToDirectory($tempZip, $tempClone)
 Remove-Item $tempZip -Force
+Write-Host "  Extraction complete!" -ForegroundColor Green
 
 # GitHub zips extract to a subfolder like "RepoName-branch/"
 $extractedFolder = @(Get-ChildItem -Path $tempClone -Directory)[0].FullName
-Write-Host "  Download complete!" -ForegroundColor Green
 
 # Sync mods using robocopy (only copies changed files, removes deleted ones)
 New-Item -ItemType Directory -Path $modsPath -Force | Out-Null
 
-Write-Host "Syncing mods..." -ForegroundColor Yellow
+Write-Host "Syncing mods to Stardew Valley..." -ForegroundColor Yellow
 $robocopyExcludes = @(".gitignore", ".gitattributes", "deploy-mods.ps1", "deploy-mods.sh", "setup.bat", "setup.command", ".mod-version")
 $roboArgs = @($extractedFolder, $modsPath, "/MIR", "/NFL", "/NDL", "/NJH", "/NJS", "/NP")
 $roboArgs += "/XF"
 $roboArgs += $robocopyExcludes
-$roboResult = & robocopy @roboArgs
+& robocopy @roboArgs | Out-Null
 # Robocopy exit codes: 0 = no changes, 1 = files copied, 2 = extras deleted, 3 = both. 8+ = error
 if ($LASTEXITCODE -ge 8) {
-    Write-Host "WARNING: Some files may not have synced correctly." -ForegroundColor Yellow
+    Write-Host "  WARNING: Some files may not have synced correctly." -ForegroundColor Yellow
+} else {
+    Write-Host "  Sync complete!" -ForegroundColor Green
 }
-Write-Host "  Sync complete!" -ForegroundColor Green
 
 # Write version marker (commit hash from API, or "unknown" if API failed)
 $commitHash = if ($remoteCommit) { $remoteCommit } else { "unknown" }
 Set-Content -Path $modsVersionFile -Value "branch=$branch`ncommit=$commitHash" -Force
 
 # Clean up temp files
+Write-Host "Cleaning up..." -ForegroundColor Yellow
 Remove-Item -Recurse -Force $tempClone -ErrorAction SilentlyContinue
+Write-Host "  Done!" -ForegroundColor Green
 
 Write-Host ""
 Write-Host "========================================" -ForegroundColor Green
