@@ -4,6 +4,5 @@ desktop.ini
 .DS_Store
 ehthumbs.db
 
-# Deploy scripts (not part of mod content)
-deploy-mods.ps1
-setup.bat
+# Deploy scripts excluded from mod deployment (filtered in script itself)
+# These are kept IN the repo so they can be fetched via one-liner commands
