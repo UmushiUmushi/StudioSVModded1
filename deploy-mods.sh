@@ -8,8 +8,6 @@
 set -e
 
 REPO_URL="https://github.com/UmushiUmushi/StudioSVModded1.git"
-PAT="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"
-AUTH_REPO_URL="https://${PAT}@github.com/UmushiUmushi/StudioSVModded1.git"
 
 # ---- Colors ----
 RED='\033[0;31m'
@@ -250,8 +248,53 @@ echo -e "${CYAN}Installing '$branch' mod pack to: $mods_path${NC}"
 if [ -d "$mods_path" ]; then
     timestamp=$(date +"%Y%m%d_%H%M%S")
     backup_path="$sv_path/Mods_backup_$timestamp"
-    echo -e "${YELLOW}Backing up existing Mods folder to: $backup_path${NC}"
-    mv "$mods_path" "$backup_path"
+    echo -e "${YELLOW}Backing up existing Mods folder...${NC}"
+    mkdir -p "$backup_path"
+
+    backup_items=()
+    for item in "$mods_path"/*; do
+        [ -e "$item" ] && backup_items+=("$item")
+    done
+    for item in "$mods_path"/.*; do
+        name=$(basename "$item")
+        case "$name" in .|..) continue ;; *) backup_items+=("$item") ;; esac
+    done
+
+    backup_total=${#backup_items[@]}
+    backup_current=0
+    for item in "${backup_items[@]}"; do
+        backup_current=$((backup_current + 1))
+        name=$(basename "$item")
+        pct=$((backup_current * 100 / backup_total))
+        filled=$((pct / 2))
+        bar=$(printf '%0.s#' $(seq 1 $filled 2>/dev/null) 2>/dev/null)
+        printf "\r  ${GRAY}[%-50s] %3d%% - Backing up: %s${NC}                    " "$bar" "$pct" "$name"
+        cp -R "$item" "$backup_path/"
+    done
+    echo ""
+
+    echo -e "${YELLOW}Clearing existing Mods folder...${NC}"
+    clear_items=()
+    for item in "$mods_path"/*; do
+        [ -e "$item" ] && clear_items+=("$item")
+    done
+    for item in "$mods_path"/.*; do
+        name=$(basename "$item")
+        case "$name" in .|..) continue ;; *) clear_items+=("$item") ;; esac
+    done
+
+    clear_total=${#clear_items[@]}
+    clear_current=0
+    for item in "${clear_items[@]}"; do
+        clear_current=$((clear_current + 1))
+        name=$(basename "$item")
+        pct=$((clear_current * 100 / clear_total))
+        filled=$((pct / 2))
+        bar=$(printf '%0.s#' $(seq 1 $filled 2>/dev/null) 2>/dev/null)
+        printf "\r  ${GRAY}[%-50s] %3d%% - Removing: %s${NC}                    " "$bar" "$pct" "$name"
+        rm -rf "$item"
+    done
+    echo ""
 fi
 
 # Clone the repo (shallow, single branch for speed)
@@ -259,7 +302,14 @@ temp_clone="/tmp/sv-mod-deploy-clone"
 rm -rf "$temp_clone"
 
 echo -e "${YELLOW}Downloading mods (this may take a few minutes)...${NC}"
-if ! git clone --depth 1 --branch "$branch" --single-branch "$AUTH_REPO_URL" "$temp_clone" 2>&1 | while read -r line; do echo -e "  ${GRAY}$line${NC}"; done; then
+echo ""
+git clone --depth 1 --branch "$branch" --single-branch --progress "$REPO_URL" "$temp_clone" 2>&1 | while IFS= read -r line; do
+    printf "\r  ${GRAY}%-80s${NC}" "$line"
+done
+clone_status=${PIPESTATUS[0]}
+echo ""
+
+if [ "$clone_status" -ne 0 ]; then
     echo -e "${RED}ERROR: Failed to download mods.${NC}"
     # Restore backup if we renamed
     if [ -n "$backup_path" ] && [ -d "$backup_path" ]; then
@@ -269,36 +319,43 @@ if ! git clone --depth 1 --branch "$branch" --single-branch "$AUTH_REPO_URL" "$t
     read -p "Press Enter to exit..."
     exit 1
 fi
+echo -e "  ${GREEN}Download complete!${NC}"
 
 # Copy mods to Stardew Valley
-echo -e "${YELLOW}Copying mods to Stardew Valley...${NC}"
 mkdir -p "$mods_path"
 
-# Copy all mod folders (skip git metadata and deploy scripts)
+# Count mod folders for progress bar
+skip_pattern='^(\.git|\.gitignore|\.gitattributes|deploy-mods\.ps1|deploy-mods\.sh|setup\.bat|setup\.command)$'
+mod_items=()
 for item in "$temp_clone"/*; do
     name=$(basename "$item")
-    case "$name" in
-        .git|.gitignore|.gitattributes|deploy-mods.ps1|deploy-mods.sh|setup.bat|setup.command)
-            continue
-            ;;
-        *)
-            cp -R "$item" "$mods_path/"
-            ;;
-    esac
+    if ! echo "$name" | grep -qE "$skip_pattern"; then
+        mod_items+=("$item")
+    fi
 done
-
-# Also copy hidden dirs that aren't .git
+# Also include hidden dirs that aren't .git
 for item in "$temp_clone"/.*; do
     name=$(basename "$item")
     case "$name" in
-        .|..|.git|.gitignore|.gitattributes)
-            continue
-            ;;
-        *)
-            cp -R "$item" "$mods_path/"
-            ;;
+        .|..|.git|.gitignore|.gitattributes) continue ;;
+        *) mod_items+=("$item") ;;
     esac
 done
+
+total=${#mod_items[@]}
+current=0
+
+for item in "${mod_items[@]}"; do
+    current=$((current + 1))
+    name=$(basename "$item")
+    pct=$((current * 100 / total))
+    filled=$((pct / 2))
+    empty=$((50 - filled))
+    bar=$(printf '%0.s#' $(seq 1 $filled 2>/dev/null) 2>/dev/null)$(printf '%0.s ' $(seq 1 $empty 2>/dev/null) 2>/dev/null)
+    printf "\r  ${CYAN}[%-50s] %3d%% - %s${NC}" "$bar" "$pct" "$name"
+    cp -R "$item" "$mods_path/"
+done
+echo ""
 
 # Clean up temp clone
 rm -rf "$temp_clone"
