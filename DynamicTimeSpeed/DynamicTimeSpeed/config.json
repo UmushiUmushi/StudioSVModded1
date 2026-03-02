@@ -1,0 +1,14 @@
+{
+  "SpeedTiers": [
+    {
+      "MinPlayers": 0,
+      "SecondsPerMinute": 3.0
+    },
+    {
+      "MinPlayers": 3,
+      "SecondsPerMinute": 1.2
+    }
+  ],
+  "CountHostAsPlayer": false,
+  "AnnounceChanges": true
+}
