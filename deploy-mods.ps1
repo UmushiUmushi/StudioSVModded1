@@ -3,11 +3,15 @@
 # Double-click setup.bat to run this script
 # ============================================================
 
+# Auto-elevate to admin if not already running as admin
+if (-not ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)) {
+    Start-Process powershell -Verb RunAs -ArgumentList "-ExecutionPolicy Bypass -File `"$PSCommandPath`""
+    exit
+}
+
 $ErrorActionPreference = "Stop"
 
 $RepoUrl = "https://github.com/UmushiUmushi/StudioSVModded1.git"
-$PAT = "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"
-$AuthRepoUrl = "https://${PAT}@github.com/UmushiUmushi/StudioSVModded1.git"
 
 # ---- Functions ----
 
@@ -89,6 +93,8 @@ function Install-GitPortable {
 
 # ---- Main ----
 
+try {
+
 Clear-Host
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host "  Stardew Valley Mod Deployer" -ForegroundColor Cyan
@@ -113,7 +119,7 @@ if (-not (Test-GitInstalled)) {
 
 # Find Stardew Valley
 Write-Host "Looking for Stardew Valley..." -ForegroundColor Yellow
-$found = Find-StardewValley
+$found = @(Find-StardewValley)
 
 if ($found.Count -eq 0) {
     Write-Host "Could not auto-detect Stardew Valley. Please select the folder manually." -ForegroundColor Yellow
@@ -183,11 +189,38 @@ Write-Host ""
 Write-Host "Installing '$branch' mod pack to: $modsPath" -ForegroundColor Cyan
 
 # Backup existing Mods folder
+$backupPath = $null
 if (Test-Path $modsPath) {
     $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
     $backupPath = Join-Path $svPath "Mods_backup_$timestamp"
-    Write-Host "Backing up existing Mods folder to: $backupPath" -ForegroundColor Yellow
-    Rename-Item -Path $modsPath -NewName "Mods_backup_$timestamp"
+    Write-Host "Backing up existing Mods folder..." -ForegroundColor Yellow
+    New-Item -ItemType Directory -Path $backupPath -Force | Out-Null
+    $backupItems = @(Get-ChildItem -Path $modsPath -Force)
+    $backupTotal = $backupItems.Count
+    $backupCurrent = 0
+    foreach ($item in $backupItems) {
+        $backupCurrent++
+        $pct = [math]::Floor(($backupCurrent / $backupTotal) * 100)
+        $barLen = [math]::Floor($pct / 2)
+        $bar = ('#' * $barLen).PadRight(50)
+        Write-Host "`r  [$bar] $pct% - Backing up: $($item.Name)                    " -NoNewline -ForegroundColor DarkGray
+        Copy-Item -Path $item.FullName -Destination $backupPath -Recurse -Force
+    }
+    Write-Host ""
+
+    Write-Host "Clearing existing Mods folder..." -ForegroundColor Yellow
+    $clearItems = @(Get-ChildItem -Path $modsPath -Force)
+    $clearTotal = $clearItems.Count
+    $clearCurrent = 0
+    foreach ($item in $clearItems) {
+        $clearCurrent++
+        $pct = [math]::Floor(($clearCurrent / $clearTotal) * 100)
+        $barLen = [math]::Floor($pct / 2)
+        $bar = ('#' * $barLen).PadRight(50)
+        Write-Host "`r  [$bar] $pct% - Removing: $($item.Name)                    " -NoNewline -ForegroundColor DarkGray
+        Remove-Item -Path $item.FullName -Recurse -Force
+    }
+    Write-Host ""
 }
 
 # Clone the repo (shallow, single branch for speed)
@@ -195,30 +228,60 @@ $tempClone = Join-Path $env:TEMP "sv-mod-deploy-clone"
 if (Test-Path $tempClone) { Remove-Item -Recurse -Force $tempClone }
 
 Write-Host "Downloading mods (this may take a few minutes)..." -ForegroundColor Yellow
-try {
-    git clone --depth 1 --branch $branch --single-branch $AuthRepoUrl $tempClone 2>&1 | ForEach-Object { Write-Host "  $_" -ForegroundColor DarkGray }
-    if ($LASTEXITCODE -ne 0) { throw "Git clone failed" }
-} catch {
+Write-Host ""
+
+# Run git clone and show a spinner
+$spinChars = @('|','/','-','\')
+$spinIdx = 0
+$cloneJob = Start-Job -ScriptBlock {
+    param($url, $br, $dest)
+    & git clone --depth 1 --branch $br --single-branch $url $dest 2>&1
+    $LASTEXITCODE
+} -ArgumentList $RepoUrl, $branch, $tempClone
+
+while ($cloneJob.State -eq 'Running') {
+    Write-Host "`r  $($spinChars[$spinIdx % 4]) Downloading..." -NoNewline -ForegroundColor DarkGray
+    $spinIdx++
+    Start-Sleep -Milliseconds 300
+}
+Write-Host "`r                                                                    " -NoNewline
+Write-Host "`r" -NoNewline
+
+$cloneOutput = Receive-Job $cloneJob
+Remove-Job $cloneJob
+
+# Check if clone actually produced files
+if (-not (Test-Path (Join-Path $tempClone ".git"))) {
     Write-Host "ERROR: Failed to download mods." -ForegroundColor Red
-    Write-Host $_.Exception.Message -ForegroundColor Red
-    # Restore backup if we renamed
+    Write-Host ($cloneOutput | Out-String) -ForegroundColor Red
+    # Restore backup if we have one
     if ($backupPath -and (Test-Path $backupPath)) {
-        Rename-Item -Path $backupPath -NewName "Mods"
-        Write-Host "Restored your original Mods folder." -ForegroundColor Yellow
+        Get-ChildItem -Path $modsPath -Force -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
+        Copy-Item -Path "$backupPath\*" -Destination $modsPath -Recurse -Force
+        Write-Host "Restored your original Mods folder from backup." -ForegroundColor Yellow
     }
     Read-Host "Press Enter to exit"
     exit 1
 }
+Write-Host "  Download complete!" -ForegroundColor Green
 
 # Copy mods to Stardew Valley
-Write-Host "Copying mods to Stardew Valley..." -ForegroundColor Yellow
 New-Item -ItemType Directory -Path $modsPath -Force | Out-Null
 
 # Copy all mod folders (skip git metadata and deploy scripts)
-$skipItems = @(".git", ".gitignore", ".gitattributes", "deploy-mods.ps1", "setup.bat")
-Get-ChildItem -Path $tempClone -Force | Where-Object { $skipItems -notcontains $_.Name } | ForEach-Object {
-    Copy-Item -Path $_.FullName -Destination $modsPath -Recurse -Force
+$skipItems = @(".git", ".gitignore", ".gitattributes", "deploy-mods.ps1", "deploy-mods.sh", "setup.bat", "setup.command")
+$modFolders = @(Get-ChildItem -Path $tempClone -Force | Where-Object { $skipItems -notcontains $_.Name })
+$total = $modFolders.Count
+$current = 0
+foreach ($mod in $modFolders) {
+    $current++
+    $pct = [math]::Floor(($current / $total) * 100)
+    $barLen = [math]::Floor($pct / 2)
+    $bar = ('#' * $barLen).PadRight(50)
+    Write-Host "`r  [$bar] $pct% - $($mod.Name)" -NoNewline -ForegroundColor Cyan
+    Copy-Item -Path $mod.FullName -Destination $modsPath -Recurse -Force
 }
+Write-Host ""
 
 # Clean up temp clone
 Remove-Item -Recurse -Force $tempClone -ErrorAction SilentlyContinue
@@ -242,3 +305,17 @@ Write-Host ""
 Write-Host "You can now launch Stardew Valley with SMAPI!" -ForegroundColor Cyan
 Write-Host ""
 Read-Host "Press Enter to exit"
+
+} catch {
+    Write-Host "" -ForegroundColor Red
+    Write-Host "========================================" -ForegroundColor Red
+    Write-Host "  AN ERROR OCCURRED" -ForegroundColor Red
+    Write-Host "========================================" -ForegroundColor Red
+    Write-Host ""
+    Write-Host "Error: $($_.Exception.Message)" -ForegroundColor Red
+    Write-Host ""
+    Write-Host "Location: $($_.InvocationInfo.ScriptName):$($_.InvocationInfo.ScriptLineNumber)" -ForegroundColor DarkGray
+    Write-Host ""
+    Read-Host "Press Enter to exit"
+    exit 1
+}
