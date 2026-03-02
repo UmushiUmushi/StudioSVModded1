@@ -242,20 +242,50 @@ case $pack_choice in
 esac
 
 echo ""
+
+mods_version_file="$mods_path/.mod-version"
+is_first_install=true
+if [ -f "$mods_version_file" ]; then
+    is_first_install=false
+fi
+
+# Check if already up to date
+if [ "$is_first_install" = false ]; then
+    installed_branch=$(grep '^branch=' "$mods_version_file" 2>/dev/null | cut -d= -f2)
+    installed_commit=$(grep '^commit=' "$mods_version_file" 2>/dev/null | cut -d= -f2)
+
+    if [ "$installed_branch" = "$branch" ]; then
+        echo -e "${YELLOW}Checking for updates...${NC}"
+        remote_commit=$(curl -s "https://api.github.com/repos/UmushiUmushi/StudioSVModded1/commits/$branch" 2>/dev/null | grep '"sha"' | head -1 | sed 's/.*"sha": *"\([^"]*\)".*/\1/')
+
+        if [ -n "$remote_commit" ] && [ "$remote_commit" = "$installed_commit" ]; then
+            echo ""
+            echo -e "${GREEN}========================================${NC}"
+            echo -e "${GREEN}  Already up to date!${NC}"
+            echo -e "${GREEN}========================================${NC}"
+            echo ""
+            echo -e "Mod pack: $branch"
+            echo -e "Location: $mods_path"
+            echo ""
+            read -p "Press Enter to exit..."
+            exit 0
+        fi
+    fi
+fi
+
 echo -e "${CYAN}Installing '$branch' mod pack to: $mods_path${NC}"
 
-# Backup existing Mods folder
-if [ -d "$mods_path" ]; then
-    timestamp=$(date +"%Y%m%d_%H%M%S")
-    backup_path="$sv_path/Mods_backup_$timestamp.zip"
-    echo -e "${YELLOW}Backing up existing Mods folder to zip...${NC}"
-    (cd "$mods_path" && zip -r -q "$backup_path" .)
-    echo -e "  ${GRAY}Backup saved: $backup_path${NC}"
-
-    echo -e "${YELLOW}Clearing existing Mods folder...${NC}"
-    rm -rf "$mods_path"/*
-    rm -rf "$mods_path"/.[!.]*
-    echo -e "  ${GRAY}Done${NC}"
+# Backup on first install (no .mod-version = user had manually installed mods)
+backup_path=""
+if [ "$is_first_install" = true ] && [ -d "$mods_path" ]; then
+    has_existing=$(ls -A "$mods_path" 2>/dev/null | head -1)
+    if [ -n "$has_existing" ]; then
+        timestamp=$(date +"%Y%m%d_%H%M%S")
+        backup_path="$sv_path/Mods_backup_$timestamp.zip"
+        echo -e "${YELLOW}Backing up existing Mods folder to zip...${NC}"
+        (cd "$mods_path" && zip -r -q "$backup_path" .)
+        echo -e "  ${GRAY}Backup saved: $backup_path${NC}"
+    fi
 fi
 
 # Clone the repo (shallow, single branch for speed)
@@ -272,52 +302,32 @@ echo ""
 
 if [ "$clone_status" -ne 0 ]; then
     echo -e "${RED}ERROR: Failed to download mods.${NC}"
-    # Restore backup if we renamed
-    if [ -n "$backup_path" ] && [ -f "$backup_path" ]; then
-        mkdir -p "$mods_path"
-        unzip -q -o "$backup_path" -d "$mods_path"
-        echo -e "${YELLOW}Restored your original Mods folder from backup.${NC}"
-    fi
     read -p "Press Enter to exit..."
     exit 1
 fi
 echo -e "  ${GREEN}Download complete!${NC}"
 
-# Copy mods to Stardew Valley
+# Sync mods using rsync (only copies changed files, removes deleted ones)
 mkdir -p "$mods_path"
 
-# Count mod folders for progress bar
-skip_pattern='^(\.git|\.gitignore|\.gitattributes|deploy-mods\.ps1|deploy-mods\.sh|setup\.bat|setup\.command)$'
-mod_items=()
-for item in "$temp_clone"/*; do
-    name=$(basename "$item")
-    if ! echo "$name" | grep -qE "$skip_pattern"; then
-        mod_items+=("$item")
-    fi
-done
-# Also include hidden dirs that aren't .git
-for item in "$temp_clone"/.*; do
-    name=$(basename "$item")
-    case "$name" in
-        .|..|.git|.gitignore|.gitattributes) continue ;;
-        *) mod_items+=("$item") ;;
-    esac
-done
+echo -e "${YELLOW}Syncing mods...${NC}"
+rsync -a --delete \
+    --exclude='.git' \
+    --exclude='.gitignore' \
+    --exclude='.gitattributes' \
+    --exclude='deploy-mods.ps1' \
+    --exclude='deploy-mods.sh' \
+    --exclude='setup.bat' \
+    --exclude='setup.command' \
+    --exclude='.mod-version' \
+    "$temp_clone/" "$mods_path/"
+echo -e "  ${GREEN}Sync complete!${NC}"
 
-total=${#mod_items[@]}
-current=0
+# Get the commit hash from the cloned repo
+commit_hash=$(git -C "$temp_clone" rev-parse HEAD 2>/dev/null || echo "unknown")
 
-for item in "${mod_items[@]}"; do
-    current=$((current + 1))
-    name=$(basename "$item")
-    pct=$((current * 100 / total))
-    filled=$((pct / 2))
-    empty=$((50 - filled))
-    bar=$(printf '%0.s#' $(seq 1 $filled 2>/dev/null) 2>/dev/null)$(printf '%0.s ' $(seq 1 $empty 2>/dev/null) 2>/dev/null)
-    printf "\r  ${CYAN}[%-50s] %3d%% - %s${NC}" "$bar" "$pct" "$name"
-    cp -R "$item" "$mods_path/"
-done
-echo ""
+# Write version marker
+printf "branch=%s\ncommit=%s\n" "$branch" "$commit_hash" > "$mods_version_file"
 
 # Clean up temp clone
 rm -rf "$temp_clone"
