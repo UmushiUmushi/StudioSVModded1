@@ -192,21 +192,10 @@ Write-Host "Installing '$branch' mod pack to: $modsPath" -ForegroundColor Cyan
 $backupPath = $null
 if (Test-Path $modsPath) {
     $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
-    $backupPath = Join-Path $svPath "Mods_backup_$timestamp"
-    Write-Host "Backing up existing Mods folder..." -ForegroundColor Yellow
-    New-Item -ItemType Directory -Path $backupPath -Force | Out-Null
-    $backupItems = @(Get-ChildItem -Path $modsPath -Force)
-    $backupTotal = $backupItems.Count
-    $backupCurrent = 0
-    foreach ($item in $backupItems) {
-        $backupCurrent++
-        $pct = [math]::Floor(($backupCurrent / $backupTotal) * 100)
-        $barLen = [math]::Floor($pct / 2)
-        $bar = ('#' * $barLen).PadRight(50)
-        Write-Host "`r  [$bar] $pct% - Backing up: $($item.Name)                    " -NoNewline -ForegroundColor DarkGray
-        Copy-Item -Path $item.FullName -Destination $backupPath -Recurse -Force
-    }
-    Write-Host ""
+    $backupPath = Join-Path $svPath "Mods_backup_$timestamp.zip"
+    Write-Host "Backing up existing Mods folder to zip..." -ForegroundColor Yellow
+    Compress-Archive -Path "$modsPath\*" -DestinationPath $backupPath -Force
+    Write-Host "  Backup saved: $backupPath" -ForegroundColor DarkGray
 
     Write-Host "Clearing existing Mods folder..." -ForegroundColor Yellow
     $clearItems = @(Get-ChildItem -Path $modsPath -Force)
@@ -257,7 +246,7 @@ if (-not (Test-Path (Join-Path $tempClone ".git"))) {
     # Restore backup if we have one
     if ($backupPath -and (Test-Path $backupPath)) {
         Get-ChildItem -Path $modsPath -Force -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
-        Copy-Item -Path "$backupPath\*" -Destination $modsPath -Recurse -Force
+        Expand-Archive -Path $backupPath -DestinationPath $modsPath -Force
         Write-Host "Restored your original Mods folder from backup." -ForegroundColor Yellow
     }
     Read-Host "Press Enter to exit"
