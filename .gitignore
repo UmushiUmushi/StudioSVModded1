@@ -9,3 +9,5 @@ ehthumbs.db
 
 # Deploy scripts excluded from mod deployment (filtered in script itself)
 # These are kept IN the repo so they can be fetched via one-liner commands
+
+*settings.local.json
