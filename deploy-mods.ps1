@@ -194,7 +194,8 @@ if (Test-Path $modsPath) {
     $timestamp = Get-Date -Format "yyyyMMdd_HHmmss"
     $backupPath = Join-Path $svPath "Mods_backup_$timestamp.zip"
     Write-Host "Backing up existing Mods folder to zip..." -ForegroundColor Yellow
-    Compress-Archive -Path "$modsPath\*" -DestinationPath $backupPath -Force
+    Add-Type -AssemblyName System.IO.Compression.FileSystem
+    [System.IO.Compression.ZipFile]::CreateFromDirectory($modsPath, $backupPath)
     Write-Host "  Backup saved: $backupPath" -ForegroundColor DarkGray
 
     Write-Host "Clearing existing Mods folder..." -ForegroundColor Yellow
@@ -246,7 +247,7 @@ if (-not (Test-Path (Join-Path $tempClone ".git"))) {
     # Restore backup if we have one
     if ($backupPath -and (Test-Path $backupPath)) {
         Get-ChildItem -Path $modsPath -Force -ErrorAction SilentlyContinue | Remove-Item -Recurse -Force -ErrorAction SilentlyContinue
-        Expand-Archive -Path $backupPath -DestinationPath $modsPath -Force
+        [System.IO.Compression.ZipFile]::ExtractToDirectory($backupPath, $modsPath)
         Write-Host "Restored your original Mods folder from backup." -ForegroundColor Yellow
     }
     Read-Host "Press Enter to exit"
