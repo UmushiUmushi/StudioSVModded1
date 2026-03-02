@@ -23,6 +23,19 @@ OS="$(uname -s)"
 
 # ---- Functions ----
 
+spinner() {
+    local pid=$1
+    local msg=$2
+    local spin_chars='|/-\'
+    local i=0
+    while kill -0 "$pid" 2>/dev/null; do
+        printf "\r  ${GRAY}%s %s${NC}" "${spin_chars:i%4:1}" "$msg"
+        i=$((i + 1))
+        sleep 0.3
+    done
+    printf "\r                                                          \r"
+}
+
 find_stardew() {
     local candidates=()
 
@@ -229,7 +242,17 @@ if [ -f "$mods_version_file" ]; then
 fi
 
 # Get latest commit hash from GitHub API
-remote_commit=$(curl -s "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/commits/$branch" 2>/dev/null | grep '"sha"' | head -1 | sed 's/.*"sha": *"\([^"]*\)".*/\1/')
+echo -e "${YELLOW}Checking for updates...${NC}"
+api_temp="/tmp/sv-mod-api-response"
+curl -s "https://api.github.com/repos/$REPO_OWNER/$REPO_NAME/commits/$branch" -o "$api_temp" 2>/dev/null &
+spinner $! "Contacting GitHub..."
+remote_commit=$(grep '"sha"' "$api_temp" 2>/dev/null | head -1 | sed 's/.*"sha": *"\([^"]*\)".*/\1/')
+rm -f "$api_temp"
+if [ -n "$remote_commit" ]; then
+    echo -e "  ${GREEN}Update check complete.${NC}"
+else
+    echo -e "  ${YELLOW}Could not reach GitHub, will do full install.${NC}"
+fi
 
 # Check if already up to date
 if [ "$is_first_install" = false ]; then
@@ -237,7 +260,6 @@ if [ "$is_first_install" = false ]; then
     installed_commit=$(grep '^commit=' "$mods_version_file" 2>/dev/null | cut -d= -f2)
 
     if [ "$installed_branch" = "$branch" ] && [ -n "$remote_commit" ] && [ "$remote_commit" = "$installed_commit" ]; then
-        echo -e "${YELLOW}Checking for updates...${NC}"
         echo ""
         echo -e "${GREEN}========================================${NC}"
         echo -e "${GREEN}  Already up to date!${NC}"
@@ -285,9 +307,11 @@ if [ "$is_first_install" = true ] && [ -d "$mods_path" ]; then
     if [ -n "$has_existing" ]; then
         timestamp=$(date +"%Y%m%d_%H%M%S")
         backup_path="$sv_path/Mods_backup_$timestamp.zip"
-        echo -e "${YELLOW}Backing up existing Mods folder to zip...${NC}"
-        (cd "$mods_path" && zip -r -q "$backup_path" .)
-        echo -e "  ${GRAY}Backup saved: $backup_path${NC}"
+        echo -e "${YELLOW}Backing up existing Mods folder...${NC}"
+        (cd "$mods_path" && zip -r -q "$backup_path" .) &
+        spinner $! "Creating backup zip..."
+        wait $!
+        echo -e "  ${GREEN}Backup saved: $backup_path${NC}"
     fi
 fi
 
@@ -299,33 +323,34 @@ temp_extract="$temp_dir/extract"
 rm -rf "$temp_extract"
 
 zip_url="https://github.com/$REPO_OWNER/$REPO_NAME/archive/refs/heads/$branch.zip"
-echo -e "${YELLOW}Downloading mods (this may take a few minutes)...${NC}"
-echo ""
-curl -L -# -o "$temp_zip" "$zip_url" 2>&1 | while IFS= read -r line; do
-    printf "\r  ${GRAY}%s${NC}" "$line"
-done
-echo ""
+echo -e "${YELLOW}Downloading mods...${NC}"
+curl -L -s -o "$temp_zip" "$zip_url" &
+spinner $! "Downloading from GitHub..."
+wait $!
 
 if [ ! -f "$temp_zip" ] || [ ! -s "$temp_zip" ]; then
-    echo -e "${RED}ERROR: Failed to download mods.${NC}"
+    echo -e "  ${RED}Download failed.${NC}"
     read -p "Press Enter to exit..."
     exit 1
 fi
+echo -e "  ${GREEN}Download complete!${NC}"
 
 # Extract the zip
-echo -e "  ${GRAY}Extracting...${NC}"
+echo -e "${YELLOW}Extracting mods...${NC}"
 mkdir -p "$temp_extract"
-unzip -q -o "$temp_zip" -d "$temp_extract"
+unzip -q -o "$temp_zip" -d "$temp_extract" &
+spinner $! "Extracting archive..."
+wait $!
 rm -f "$temp_zip"
 
 # GitHub zips extract to a subfolder like "RepoName-branch/"
 extracted_folder=$(find "$temp_extract" -mindepth 1 -maxdepth 1 -type d | head -1)
-echo -e "  ${GREEN}Download complete!${NC}"
+echo -e "  ${GREEN}Extraction complete!${NC}"
 
 # Sync mods using rsync (only copies changed files, removes deleted ones)
 mkdir -p "$mods_path"
 
-echo -e "${YELLOW}Syncing mods...${NC}"
+echo -e "${YELLOW}Syncing mods to Stardew Valley...${NC}"
 rsync -a --delete \
     --exclude='.gitignore' \
     --exclude='.gitattributes' \
@@ -334,7 +359,9 @@ rsync -a --delete \
     --exclude='setup.bat' \
     --exclude='setup.command' \
     --exclude='.mod-version' \
-    "$extracted_folder/" "$mods_path/"
+    "$extracted_folder/" "$mods_path/" &
+spinner $! "Syncing files..."
+wait $!
 echo -e "  ${GREEN}Sync complete!${NC}"
 
 # Write version marker (commit hash from API, or "unknown" if API failed)
@@ -342,7 +369,9 @@ commit_hash="${remote_commit:-unknown}"
 printf "branch=%s\ncommit=%s\n" "$branch" "$commit_hash" > "$mods_version_file"
 
 # Clean up temp files
+echo -e "${YELLOW}Cleaning up...${NC}"
 rm -rf "$temp_extract"
+echo -e "  ${GREEN}Done!${NC}"
 
 echo ""
 echo -e "${GREEN}========================================${NC}"
