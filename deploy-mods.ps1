@@ -99,55 +99,6 @@ Write-Host "  Stardew Valley Mod Deployer" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-# Find Stardew Valley
-Write-Host "Looking for Stardew Valley..." -ForegroundColor Yellow
-$found = @(Find-StardewValley)
-
-if ($found.Count -eq 0) {
-    Write-Host "Could not auto-detect Stardew Valley. Please select the folder manually." -ForegroundColor Yellow
-    $svPath = Show-FolderPicker
-    if (-not $svPath) {
-        Write-Host "No folder selected. Exiting." -ForegroundColor Red
-        Read-Host "Press Enter to exit"
-        exit 1
-    }
-} elseif ($found.Count -eq 1) {
-    $svPath = $found[0]
-    Write-Host "Found Stardew Valley at: $svPath" -ForegroundColor Green
-} else {
-    Write-Host "Found multiple installations:" -ForegroundColor Yellow
-    for ($i = 0; $i -lt $found.Count; $i++) {
-        Write-Host "  [$($i + 1)] $($found[$i])"
-    }
-    Write-Host "  [$($found.Count + 1)] Choose a different folder"
-    $choice = Read-Host "Select installation (1-$($found.Count + 1))"
-    $idx = [int]$choice - 1
-    if ($idx -ge 0 -and $idx -lt $found.Count) {
-        $svPath = $found[$idx]
-    } else {
-        $svPath = Show-FolderPicker
-        if (-not $svPath) {
-            Write-Host "No folder selected. Exiting." -ForegroundColor Red
-            Read-Host "Press Enter to exit"
-            exit 1
-        }
-    }
-}
-
-# Validate
-$exePath = Join-Path $svPath "Stardew Valley.dll"
-$exePath2 = Join-Path $svPath "StardewValley.exe"
-if (-not (Test-Path $exePath) -and -not (Test-Path $exePath2)) {
-    Write-Host "WARNING: This doesn't look like a Stardew Valley folder (no game executable found)." -ForegroundColor Yellow
-    $confirm = Read-Host "Continue anyway? (y/n)"
-    if ($confirm -ne 'y') {
-        Read-Host "Press Enter to exit"
-        exit 1
-    }
-}
-
-$modsPath = Join-Path $svPath "Mods"
-
 # Choose mod pack
 Write-Host ""
 Write-Host "Which mod pack do you want to install?" -ForegroundColor Cyan
@@ -165,6 +116,63 @@ switch ($packChoice) {
         Write-Host "Invalid choice. Defaulting to full mod pack." -ForegroundColor Yellow
         $branch = "main"
     }
+}
+
+# Determine install path
+if ($branch -eq "server") {
+    # Server mode: deploy to script's directory (lowercase "mods" for Linux servers)
+    $svPath = $PSScriptRoot
+    $modsPath = Join-Path $svPath "mods"
+    Write-Host "Server mode: mods will be installed to $modsPath" -ForegroundColor Green
+} else {
+    # Find Stardew Valley
+    Write-Host "Looking for Stardew Valley..." -ForegroundColor Yellow
+    $found = @(Find-StardewValley)
+
+    if ($found.Count -eq 0) {
+        Write-Host "Could not auto-detect Stardew Valley. Please select the folder manually." -ForegroundColor Yellow
+        $svPath = Show-FolderPicker
+        if (-not $svPath) {
+            Write-Host "No folder selected. Exiting." -ForegroundColor Red
+            Read-Host "Press Enter to exit"
+            exit 1
+        }
+    } elseif ($found.Count -eq 1) {
+        $svPath = $found[0]
+        Write-Host "Found Stardew Valley at: $svPath" -ForegroundColor Green
+    } else {
+        Write-Host "Found multiple installations:" -ForegroundColor Yellow
+        for ($i = 0; $i -lt $found.Count; $i++) {
+            Write-Host "  [$($i + 1)] $($found[$i])"
+        }
+        Write-Host "  [$($found.Count + 1)] Choose a different folder"
+        $choice = Read-Host "Select installation (1-$($found.Count + 1))"
+        $idx = [int]$choice - 1
+        if ($idx -ge 0 -and $idx -lt $found.Count) {
+            $svPath = $found[$idx]
+        } else {
+            $svPath = Show-FolderPicker
+            if (-not $svPath) {
+                Write-Host "No folder selected. Exiting." -ForegroundColor Red
+                Read-Host "Press Enter to exit"
+                exit 1
+            }
+        }
+    }
+
+    # Validate
+    $exePath = Join-Path $svPath "Stardew Valley.dll"
+    $exePath2 = Join-Path $svPath "StardewValley.exe"
+    if (-not (Test-Path $exePath) -and -not (Test-Path $exePath2)) {
+        Write-Host "WARNING: This doesn't look like a Stardew Valley folder (no game executable found)." -ForegroundColor Yellow
+        $confirm = Read-Host "Continue anyway? (y/n)"
+        if ($confirm -ne 'y') {
+            Read-Host "Press Enter to exit"
+            exit 1
+        }
+    }
+
+    $modsPath = Join-Path $svPath "Mods"
 }
 
 Write-Host ""
