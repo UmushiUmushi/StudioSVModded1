@@ -164,56 +164,6 @@ if ! command -v curl &>/dev/null; then
     exit 1
 fi
 
-# Find Stardew Valley
-echo -e "${YELLOW}Looking for Stardew Valley...${NC}"
-IFS=$'\n' read -r -d '' -a found < <(find_stardew && printf '\0') || true
-
-if [ ${#found[@]} -eq 0 ]; then
-    echo -e "${YELLOW}Could not auto-detect Stardew Valley. Please select the folder manually.${NC}"
-    sv_path=$(folder_picker)
-    if [ -z "$sv_path" ]; then
-        echo -e "${RED}No folder selected. Exiting.${NC}"
-        read -p "Press Enter to exit..."
-        exit 1
-    fi
-elif [ ${#found[@]} -eq 1 ]; then
-    sv_path="${found[0]}"
-    echo -e "${GREEN}Found Stardew Valley at: $sv_path${NC}"
-else
-    echo -e "${YELLOW}Found multiple installations:${NC}"
-    for i in "${!found[@]}"; do
-        echo "  [$((i + 1))] ${found[$i]}"
-    done
-    echo "  [$((${#found[@]} + 1))] Choose a different folder"
-    read -p "Select installation (1-$((${#found[@]} + 1))): " choice
-    idx=$((choice - 1))
-    if [ "$idx" -ge 0 ] && [ "$idx" -lt ${#found[@]} ]; then
-        sv_path="${found[$idx]}"
-    else
-        sv_path=$(folder_picker)
-        if [ -z "$sv_path" ]; then
-            echo -e "${RED}No folder selected. Exiting.${NC}"
-            read -p "Press Enter to exit..."
-            exit 1
-        fi
-    fi
-fi
-
-# Remove trailing slash
-sv_path="${sv_path%/}"
-
-# Validate - look for Stardew Valley binary or Mods folder
-if [ ! -f "$sv_path/StardewValley" ] && [ ! -f "$sv_path/Stardew Valley.dll" ] && [ ! -d "$sv_path/Mods" ]; then
-    echo -e "${YELLOW}WARNING: This doesn't look like a Stardew Valley folder.${NC}"
-    read -p "Continue anyway? (y/n): " confirm
-    if [ "$confirm" != "y" ]; then
-        read -p "Press Enter to exit..."
-        exit 1
-    fi
-fi
-
-mods_path="$sv_path/Mods"
-
 # Choose mod pack
 echo ""
 echo -e "${CYAN}Which mod pack do you want to install?${NC}"
@@ -232,6 +182,64 @@ case $pack_choice in
         branch="main"
         ;;
 esac
+
+# Determine install path
+if [ "$branch" = "server" ]; then
+    # Server mode: deploy to script's directory (lowercase "mods" for Linux servers)
+    sv_path="$(cd "$(dirname "$0")" && pwd)"
+    mods_path="$sv_path/mods"
+    echo -e "${GREEN}Server mode: mods will be installed to $mods_path${NC}"
+else
+    # Find Stardew Valley
+    echo -e "${YELLOW}Looking for Stardew Valley...${NC}"
+    IFS=$'\n' read -r -d '' -a found < <(find_stardew && printf '\0') || true
+
+    if [ ${#found[@]} -eq 0 ]; then
+        echo -e "${YELLOW}Could not auto-detect Stardew Valley. Please select the folder manually.${NC}"
+        sv_path=$(folder_picker)
+        if [ -z "$sv_path" ]; then
+            echo -e "${RED}No folder selected. Exiting.${NC}"
+            read -p "Press Enter to exit..."
+            exit 1
+        fi
+    elif [ ${#found[@]} -eq 1 ]; then
+        sv_path="${found[0]}"
+        echo -e "${GREEN}Found Stardew Valley at: $sv_path${NC}"
+    else
+        echo -e "${YELLOW}Found multiple installations:${NC}"
+        for i in "${!found[@]}"; do
+            echo "  [$((i + 1))] ${found[$i]}"
+        done
+        echo "  [$((${#found[@]} + 1))] Choose a different folder"
+        read -p "Select installation (1-$((${#found[@]} + 1))): " choice
+        idx=$((choice - 1))
+        if [ "$idx" -ge 0 ] && [ "$idx" -lt ${#found[@]} ]; then
+            sv_path="${found[$idx]}"
+        else
+            sv_path=$(folder_picker)
+            if [ -z "$sv_path" ]; then
+                echo -e "${RED}No folder selected. Exiting.${NC}"
+                read -p "Press Enter to exit..."
+                exit 1
+            fi
+        fi
+    fi
+
+    # Remove trailing slash
+    sv_path="${sv_path%/}"
+
+    # Validate - look for Stardew Valley binary or Mods folder
+    if [ ! -f "$sv_path/StardewValley" ] && [ ! -f "$sv_path/Stardew Valley.dll" ] && [ ! -d "$sv_path/Mods" ]; then
+        echo -e "${YELLOW}WARNING: This doesn't look like a Stardew Valley folder.${NC}"
+        read -p "Continue anyway? (y/n): " confirm
+        if [ "$confirm" != "y" ]; then
+            read -p "Press Enter to exit..."
+            exit 1
+        fi
+    fi
+
+    mods_path="$sv_path/Mods"
+fi
 
 echo ""
 
