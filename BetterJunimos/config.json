@@ -33,7 +33,7 @@
   "JunimoPayment": {
     "WorkForWages": true,
     "DailyWage": {
-      "ForagedItems": 1,
+      "ForagedItems": 3,
       "Flowers": 0,
       "Fruit": 0,
       "Wine": 0
